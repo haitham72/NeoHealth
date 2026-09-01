@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: reglens
+    runtime: python
+    buildCommand: pip install -r requirements.txt && cd frontend && npm install && npm run build && mkdir -p ../backend/static && cp -r dist/* ../backend/static/
+    startCommand: mkdir -p backend/static && cp -r frontend/dist/* backend/static/ 2>/dev/null; uvicorn api:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: LANGSMITH_TRACING
+        value: "true"
+      - key: LANGSMITH_PROJECT
+        value: reglens
+      - key: LANGSMITH_API_KEY
+        sync: false
+      - key: ALLOWED_ORIGINS
+        value: https://neohealth-gpzo.onrender.com
+      - key: DAILY_OPENAI_CALL_CAP
+        value: "300"
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: NARAROUTER_API_KEY
+        sync: false

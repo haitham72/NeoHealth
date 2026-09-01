@@ -1,0 +1,122 @@
+@import "tailwindcss";
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/500.css";
+@import "@fontsource/inter/600.css";
+@import "@fontsource/inter/700.css";
+@import "@fontsource/public-sans/500.css";
+@import "@fontsource/public-sans/600.css";
+@import "@fontsource/public-sans/700.css";
+@import "@fontsource/source-serif-4/400.css";
+@import "@fontsource/source-serif-4/400-italic.css";
+@import "@fontsource/source-serif-4/600.css";
+@import "@fontsource/source-serif-4/700.css";
+
+/* "Ledger, not terminal, not brochure": a cool-neutral paper surface with navy ink,
+   and exactly two warm accents used semantically (brass = verified, rust = superseded) —
+   never decoratively. No gradient, no glass, no dark near-black default. */
+:root {
+  --ink: #14203a;
+  --ink-dim: #4a5773;
+  --ink-faint: #8890a3;
+  --paper: #f1f2f0;
+  --surface: #ffffff;
+  --rule: #d7dad6;
+
+  --authority-navy: #1f3a5f;
+  --authority-navy-hover: #16293f;
+  --verified-brass: #96772e;
+  --verified-brass-bg: #f4ecd8;
+  --superseded-rust: #8c3b2e;
+  --superseded-rust-bg: #f6e6e2;
+
+  --dha-steel: #2b4c6f;
+  --dha-steel-bg: #e6edf3;
+  --doh-teal: #1f5c52;
+  --doh-teal-bg: #e2eeec;
+  --mohap-plum: #5c3d63;
+  --mohap-plum-bg: #ece5ef;
+
+  /* Medium retrieval confidence -- distinct from both brass (verified/in force) and
+     rust (superseded/low confidence), same warm-muted family. */
+  --caution-amber: #a8631f;
+  --caution-amber-bg: #f8ecdd;
+
+  --radius-card: 6px;
+  --radius-pill: 999px;
+  --shadow-card: 0 1px 2px rgba(20, 32, 58, 0.06), 0 4px 16px rgba(20, 32, 58, 0.05);
+
+  --font-display: "Inter", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Source Serif 4", Georgia, "Times New Roman", serif;
+  /* Arabic fallback so a stray bilingual excerpt renders instead of tofu boxes */
+  --font-arabic: "Segoe UI", "Tahoma", sans-serif;
+
+  /* FHIR/HL7-inspired chat redesign palette -- used only by the new chat shell
+     (AppShell/Sidebar/ChatHeader/message bubbles), the ledger tokens above are
+     untouched and still back every component that reads them. */
+  --fhir-blue: #0077b6;
+  --fhir-blue-light: #90e0ef;
+  --fhir-teal: #0096c7;
+  --fhir-green: #2d6a4f;
+  --fhir-surface: #ffffff;
+  --fhir-bg: #f8f9fa;
+  --fhir-dark: #023047;
+
+  /* Demo-identity screen only -- deliberately NOT named/branded after any real
+     identity provider. Navy/teal evokes "official-feeling government digital
+     ID" without claiming to be one. */
+  --demo-navy: #003865;
+  --demo-teal: #00a69c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-display);
+}
+
+:focus-visible {
+  outline: 2px solid var(--authority-navy);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: var(--authority-navy);
+  color: var(--surface);
+}
+
+/* Purely presentational curly quotes around a direct citation quotation -- the backend
+   answer text stays plain ASCII (see retrieval.py's _UNICODE_TO_ASCII), these glyphs
+   never touch the wire, they're generated content applied to the rendered DOM only.
+   Targets the nested <p> react-markdown always wraps blockquote content in, not the
+   <blockquote> itself -- putting the pseudo-elements on the block-level container left
+   the quote marks floating on their own line instead of hugging the actual text. */
+.answer-blockquote p {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+.answer-blockquote p:first-child::before {
+  content: open-quote;
+}
+.answer-blockquote p:last-child::after {
+  content: close-quote;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+tests/
+ingestion/
+cli/
+requirements-ingestion.txt
+requirements-dev.txt
+.env
+parsed_documents.json
+.git

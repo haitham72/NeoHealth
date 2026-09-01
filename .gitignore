@@ -1,0 +1,12 @@
+.env
+.venv/
+parsed_documents.json
+backend/needs_manual.json
+__pycache__/
+*.pyc
+static/
+.superpowers/
+.venv
+.DS_Store
+supabase/.temp/
+HANDOFF.md

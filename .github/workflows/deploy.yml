@@ -1,0 +1,49 @@
+name: Deploy
+
+# Test gate only. Production is a single Render web service that auto-deploys on push
+# independently of this workflow (see CLAUDE.md's "Containers & deploy") -- this job's
+# purpose is to fail loud on a broken push, not to perform the deploy itself.
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+
+      - name: Install backend dependencies
+        run: pip install -r backend/requirements.txt -r backend/requirements-dev.txt
+
+      - name: Backend tests
+        working-directory: backend
+        run: pytest
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install frontend dependencies
+        working-directory: frontend
+        run: npm ci
+
+      - name: Frontend type-check
+        working-directory: frontend
+        run: npx tsc --noEmit
+
+      - name: Frontend lint
+        working-directory: frontend
+        run: npm run lint
+
+      - name: Frontend tests
+        working-directory: frontend
+        run: npm run test

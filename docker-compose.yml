@@ -1,0 +1,38 @@
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_USER: regulense
+      POSTGRES_PASSWORD: regulense_dev_password
+      POSTGRES_DB: regulense
+    ports: ["5433:5432"]
+    volumes: [pgdata:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U regulense"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  backend:
+    build: { context: ./backend, target: runtime }
+    env_file: [./backend/.env]        # LANGSMITH_*
+    environment:                       #   local overrides — gitignored, not committed
+      PGHOST: db
+      PGPORT: 5432
+      PGUSER: regulense
+      PGPASSWORD: regulense_dev_password
+      PGDATABASE: regulense
+      ALLOWED_ORIGINS: http://localhost:5173,http://localhost:8080
+    depends_on: { db: { condition: service_healthy } }
+    ports: ["8000:8000"]
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        VITE_API_URL: http://localhost:8000
+    ports: ["8080:80"]
+    depends_on: [backend]
+
+volumes:
+  pgdata:
