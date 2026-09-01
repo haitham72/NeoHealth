@@ -2,7 +2,7 @@
 research-tier documents, and the API's tier-grouped corpus stats."""
 from app.api.routers import corpus as corpus_router
 from app.core import retrieval
-from tests.conftest import QUERY_VEC, seed_official_doc, seed_research_doc
+from tests.conftest import QUERY_VEC, fake_request, seed_official_doc, seed_research_doc
 
 
 def test_get_document_returns_tier_for_research(test_conn):
@@ -38,5 +38,5 @@ def test_corpus_stats_includes_research_count(test_conn, monkeypatch):
     seed_research_doc(test_conn)
     monkeypatch.setattr(corpus_router, "get_connection", lambda: test_conn)
     monkeypatch.setattr(corpus_router, "release_connection", lambda conn: None)
-    stats = corpus_router.corpus_stats()
+    stats = corpus_router.corpus_stats(fake_request())
     assert stats["research_documents"] == 1

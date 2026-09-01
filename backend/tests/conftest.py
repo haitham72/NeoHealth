@@ -10,11 +10,20 @@ import uuid
 import psycopg2
 import pytest
 from dotenv import load_dotenv
+from starlette.requests import Request
 
 load_dotenv()
 
 from app.core import retrieval
 from app.core.db import SCHEMA_SQL
+
+
+def fake_request() -> Request:
+    """A minimal real Request for tests that call a rate-limited route function
+    directly (not through a TestClient) -- slowapi's @limiter.limit decorator requires
+    an actual starlette.requests.Request instance (isinstance-checked), even though the
+    route bodies these tests exercise never read from it themselves."""
+    return Request(scope={"type": "http", "method": "GET", "path": "/", "query_string": b"", "headers": [], "client": ("testclient", 12345)})
 
 
 def _test_connect_kwargs() -> dict:
@@ -145,5 +154,5 @@ def stub_llm(monkeypatch):
     embed() always returns QUERY_VEC -- tests control relevance entirely via each
     seeded chunk's embedding (see vec()), not via what embed() returns."""
     monkeypatch.setattr(retrieval, "embed", lambda text: QUERY_VEC)
-    monkeypatch.setattr(retrieval, "generate_answer", lambda *a, **kw: "Stub answer text.")
+    monkeypatch.setattr(retrieval, "generate_answer", lambda *a, **kw: ("Stub answer text.", retrieval.CHAT_MODEL))
     return QUERY_VEC
