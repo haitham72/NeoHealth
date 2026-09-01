@@ -14,6 +14,24 @@ jobs:
   test:
     name: Test
     runs-on: ubuntu-latest
+    # Real Postgres+pgvector, not mocked -- tests/conftest.py's own docstring: "a mocked
+    # connection would test nothing real" (it exercises retrieval.py's actual SQL: tier
+    # filters, RRF, cosine distance). Only the two OpenAI-facing calls are ever mocked
+    # (see conftest.py's stub_llm), so no OPENAI_API_KEY is needed here at all.
+    services:
+      postgres:
+        image: pgvector/pgvector:pg16
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: test_regulense
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
     steps:
       - uses: actions/checkout@v4
 
@@ -26,6 +44,8 @@ jobs:
 
       - name: Backend tests
         working-directory: backend
+        env:
+          TEST_DATABASE_URL: postgresql://postgres:postgres@localhost:5432/test_regulense
         run: pytest
 
       - uses: actions/setup-node@v4

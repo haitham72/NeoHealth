@@ -49,7 +49,12 @@ DEFAULT_LOCAL_MODEL = "qwen/qwen3.5-9b"
 # embed() below is separately traced with @traceable. If LANGSMITH_TRACING isn't set,
 # both are harmless passthroughs -- calls behave identically, nothing is sent anywhere.
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
-client = wrap_openai(OpenAI(api_key=OPENAI_API_KEY))
+# The SDK raises at construction time on an empty key, which would break importing
+# this module at all (and every test file, via conftest.py) wherever no key is
+# configured -- tests mock embed()/generate_answer() directly (see conftest.py's
+# stub_llm) precisely so they never need a real key, so import itself must not
+# require one either. Only an actual unmocked call would fail, same as before.
+client = wrap_openai(OpenAI(api_key=OPENAI_API_KEY or "sk-not-configured"))
 # LM Studio ignores the API key entirely but the SDK requires a non-empty string.
 local_client = wrap_openai(OpenAI(base_url=LOCAL_BASE_URL, api_key="lm-studio"))
 
