@@ -73,6 +73,29 @@ BEGIN
         ALTER TABLE daily_usage RENAME COLUMN openai_call_count TO api_call_count;
     END IF;
 END $$;
+
+-- Per-visitor chat history. client_id is a UUID the frontend generates once and
+-- stores in localStorage -- there is no login, so this is anonymous grouping-by-
+-- browser, not a real account system. id is generated in Python (uuid.uuid4()), not
+-- via a Postgres default, so this table needs no extension (pgcrypto/uuid-ossp).
+CREATE TABLE IF NOT EXISTS chats (
+    id TEXT PRIMARY KEY,
+    client_id TEXT NOT NULL,
+    title TEXT,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+    updated_at TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+CREATE INDEX IF NOT EXISTS chats_client_id_idx ON chats(client_id, updated_at DESC);
+
+CREATE TABLE IF NOT EXISTS chat_messages (
+    id SERIAL PRIMARY KEY,
+    chat_id TEXT NOT NULL REFERENCES chats(id) ON DELETE CASCADE,
+    role TEXT NOT NULL,
+    content TEXT NOT NULL,
+    response JSONB,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+CREATE INDEX IF NOT EXISTS chat_messages_chat_id_idx ON chat_messages(chat_id, created_at);
 """
 # corpus is a few hundred chunks; a plain sequential scan on the embedding column
 # is fast enough for a demo, so no ANN index (ivfflat/hnsw) is built.

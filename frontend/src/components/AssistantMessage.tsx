@@ -17,6 +17,7 @@ interface Props {
   isStreaming: boolean;
   question: string;
   onAskFollowUp: (question: string) => void;
+  errorText?: string;
   /** True while any /ask is in flight (there's only ever one at a time) -- disables
    * follow-up buttons on already-completed messages so repeated clicks can't queue up
    * multiple concurrent requests. */
@@ -27,7 +28,7 @@ function textToNodes(text: string, chunks: RetrievedChunk[], onOpen: (i: number)
   return renderWithCitations(text, chunks, onOpen);
 }
 
-export default function AssistantMessage({ message, streamingText, steps, isStreaming, question, onAskFollowUp, askPending }: Props) {
+export default function AssistantMessage({ message, streamingText, steps, isStreaming, question, onAskFollowUp, askPending, errorText }: Props) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const response = message?.response;
   const chunks: RetrievedChunk[] = response && !response.abstained ? (response.retrieved_chunks ?? []).filter((c) => c.used_for_answer) : [];
@@ -55,6 +56,8 @@ export default function AssistantMessage({ message, streamingText, steps, isStre
         <ThinkingSteps steps={steps} active={isStreaming} />
 
         {isStreaming && !message && <div className="whitespace-pre-wrap">{streamingText}</div>}
+
+        {!message && errorText && <div className="text-[13px]" style={{ color: "var(--superseded-rust)" }}>{errorText}</div>}
 
         {message && response && response.abstained && (
           <>

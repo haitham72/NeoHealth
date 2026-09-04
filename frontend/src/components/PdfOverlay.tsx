@@ -3,6 +3,7 @@ import * as pdfjsLib from "pdfjs-dist";
 import type { PDFDocumentProxy } from "pdfjs-dist/types/src/display/api";
 import workerSrc from "pdfjs-dist/build/pdf.worker.min.mjs?url";
 import type { RetrievedChunk } from "../types/api";
+import { apiUrl } from "../api/url";
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = workerSrc;
 
@@ -17,7 +18,7 @@ const RENDER_SCALE = 1.5;
 
 /** Open PDF in new tab by fetching as blob and creating object URL. */
 async function openInNewTab(documentId: number, page: number) {
-  const res = await fetch(`/pdf/${documentId}`);
+  const res = await fetch(apiUrl(`/pdf/${documentId}`));
   if (!res.ok) return;
   const blob = await res.blob();
   const url = URL.createObjectURL(blob);
@@ -78,7 +79,7 @@ export default function PdfOverlay({ sources, startIndex, onClose }: Props) {
     setError(null);
     (async () => {
       const pdf = await pdfjsLib.getDocument({
-        url: `/pdf/${documentId}`,
+        url: apiUrl(`/pdf/${documentId}`),
       }).promise;
       if (cancelled) return;
       pdfRef.current = pdf;

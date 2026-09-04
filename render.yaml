@@ -14,7 +14,7 @@ services:
       - key: LANGSMITH_API_KEY
         sync: false
       - key: ALLOWED_ORIGINS
-        value: https://neohealth-gpzo.onrender.com
+        value: https://neohealth-gpzo.onrender.com,https://frontend-tawny-kappa-10.vercel.app,https://frontend-blue-zeta-82.vercel.app,http://localhost:5173
       - key: DAILY_OPENAI_CALL_CAP
         value: "300"
       - key: OPENAI_API_KEY

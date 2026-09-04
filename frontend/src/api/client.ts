@@ -2,6 +2,8 @@ import { useMutation, useQuery } from "@tanstack/react-query";
 import type {
   AskRequest,
   AskResponse,
+  ChatDetail,
+  ChatSummary,
   CrossCheckRegulationRequest,
   CrossCheckRegulationResponse,
   DiffFollowupRequest,
@@ -10,6 +12,7 @@ import type {
   ReportAnswerResponse,
   TraceStep,
 } from "../types/api";
+import { apiUrl } from "./url";
 
 const REQUEST_TIMEOUT_MS = 30_000; // chat completions can legitimately take a few seconds
 
@@ -52,7 +55,7 @@ async function postJson<T>(path: string, body: unknown): Promise<T> {
   const timeoutId = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
   let res: Response;
   try {
-    res = await fetch(path, {
+    res = await fetch(apiUrl(path), {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(body),
@@ -114,7 +117,7 @@ export function useLocalModels() {
   return useQuery({
     queryKey: ["local-models"],
     queryFn: async () => {
-      const res = await fetch("/local-models");
+      const res = await fetch(apiUrl("/local-models"));
       if (!res.ok) return { models: [] as string[] };
       return res.json() as Promise<{ models: string[] }>;
     },
@@ -129,7 +132,7 @@ export function useCorpusStats() {
   return useQuery({
     queryKey: ["corpus-stats"],
     queryFn: async () => {
-      const res = await fetch("/corpus-stats");
+      const res = await fetch(apiUrl("/corpus-stats"));
       if (!res.ok) throw new Error("failed to load corpus stats");
       return res.json() as Promise<{
         official_documents: number;
@@ -140,6 +143,48 @@ export function useCorpusStats() {
     staleTime: 60_000,
     retry: false,
   });
+}
+
+/** Per-visitor chat history (list/create/load chats, persist messages). Deliberately
+ * separate from useAskQuestion/streamAsk: these are best-effort side calls the caller
+ * fires without awaiting on the critical path, so a persistence failure never blocks or
+ * breaks asking a question -- same spirit as the backend's enrich_result(). */
+export function useChatList(clientId: string) {
+  return useQuery({
+    queryKey: ["chats", clientId],
+    queryFn: async () => {
+      const res = await fetch(apiUrl(`/chats?client_id=${encodeURIComponent(clientId)}`));
+      if (!res.ok) throw new Error("failed to load chats");
+      return res.json() as Promise<ChatSummary[]>;
+    },
+    staleTime: 10_000,
+  });
+}
+
+export async function createChat(clientId: string): Promise<ChatSummary> {
+  return postJson<ChatSummary>("/chats", { client_id: clientId });
+}
+
+export async function getChat(chatId: string, clientId: string): Promise<ChatDetail> {
+  const res = await fetch(apiUrl(`/chats/${chatId}?client_id=${encodeURIComponent(clientId)}`));
+  if (!res.ok) throw new Error("failed to load chat");
+  return res.json() as Promise<ChatDetail>;
+}
+
+/** Fire-and-forget: swallows its own errors so a persistence hiccup never surfaces as a
+ * chat-breaking error to the user. Callers should not await this on the critical path. */
+export async function saveChatMessage(
+  chatId: string,
+  clientId: string,
+  role: "user" | "assistant",
+  content: string,
+  response?: AskResponse | null
+): Promise<void> {
+  try {
+    await postJson(`/chats/${chatId}/messages`, { client_id: clientId, role, content, response: response ?? null });
+  } catch {
+    // Chat history is a convenience layer -- never let it break the live conversation.
+  }
 }
 
 const STREAM_IDLE_TIMEOUT_MS = 60_000; // resets on every frame -- a slow-but-live stream shouldn't be killed
@@ -165,7 +210,7 @@ export async function streamAsk(
   try {
     let res: Response;
     try {
-      res = await fetch("/ask-stream", {
+      res = await fetch(apiUrl("/ask-stream"), {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(req),

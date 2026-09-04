@@ -109,11 +109,23 @@ enrichment.py`'s `enrich_result()` bolts on two additive-only extras (sibling ve
 list for the version ledger, per-chunk document info for the source panel) that must
 never break the core answer if they fail.
 
+### Chat history
+
+`app/api/routers/chats.py` + two tables (`chats`, `chat_messages` in `app/core/db.py`'s
+`SCHEMA_SQL`) give each anonymous visitor real, persisted chat history — a sidebar
+list, switchable, like a normal chat product. There is no login: `frontend/src/api/
+clientId.ts` generates a UUID once into `localStorage` and every `/chats*` call is
+scoped to it server-side (a mismatched `client_id` 404s). A chat is created lazily on
+its first message, not on "New Chat" click, so idle visits don't clutter the list.
+Deliberately decoupled from `/ask` and `/ask-stream` — persistence calls are
+fire-and-forget from the frontend (`saveChatMessage()` swallows its own errors) so a
+DB hiccup can never break the live conversation, same spirit as `enrich_result()`.
+
 ### Frontend
 
-`frontend/src/`, React 19 + TypeScript + Vite + Tailwind v4. One page, no routing, no
-client-side history — every question is a fresh, isolated request via
-`@tanstack/react-query`, matching the CLI's own statelessness.
+`frontend/src/`, React 19 + TypeScript + Vite + Tailwind v4. One page, no routing —
+but *not* stateless anymore: see Chat history above. The CLI (`cli/ask.py`, `cli/
+demo.py`) remains genuinely stateless; only the web frontend persists.
 
 - `AnswerCard.tsx` renders the answer as real Markdown (`react-markdown`, not custom
   string parsing) with component overrides for the structured format (`Findings:`/
@@ -127,24 +139,48 @@ client-side history — every question is a fresh, isolated request via
 - `CitationPopover.tsx` shows a text excerpt plus a "View in PDF" control that opens
   `PdfOverlay.tsx`, which renders precise highlight rectangles directly from
   `backend/ingestion/rechunk.py`'s stored bounding boxes — no client-side text matching.
+- `OnboardingWelcome.tsx` — shown once per browser session (`sessionStorage`,
+  `regulense-onboarding-v2`), reopenable any time via the ReguLense logo in
+  `Sidebar.tsx`. A blocking modal wizard (dimmed backdrop, centered two-panel dialog,
+  3 horizontally-sliding steps), not a full-page takeover — that was tried
+  (`docs/ONBOARDING_REDESIGN_HANDOFF.md`) and deliberately replaced. Never gates on
+  backend readiness; purely local UI state.
+- `FeaturePopup.tsx` — shown once per browser (`localStorage`,
+  `regulense-feature-popup-v1`), reopenable from the `?` in `ChatHeader.tsx`. Same
+  blocking-modal-with-sliding-deck mechanic as onboarding, explaining three real UI
+  affordances (supersession filter, version diff, PDF citation trail) against the
+  components that actually implement them, per `docs/VERCEL_ONBOARDING_PLAN.md` §4.
+- Both onboarding and the feature popup share a "case file" visual language (ink
+  stamps for jurisdiction, an animated SVG confidence gauge, a highlighted doc-leaf
+  citation mockup) on the OS system-font stack (`--font-system` in `tokens.css`) so a
+  Mac/iOS visitor renders real SF Pro — Apple restricts embedding the font file
+  itself, so `-apple-system`/`BlinkMacSystemFont` is the actual correct way to get it
+  in a browser.
 
 Design tokens (`frontend/src/tokens.css`) are used semantically, never decoratively:
 brass = in force / medium confidence, rust = superseded / low confidence, amber =
 medium confidence specifically, plus one institutional color per authority (DHA
 steel-blue, DoH teal, MOHAP plum).
 
-Production is a single Render web service (`reglens`,
-https://neohealth-gpzo.onrender.com): `uvicorn api:app` from the repo root, where
-`api.py` is a thin compatibility shim that adds `backend/` to `sys.path` and imports
-`app.main:app`. The build step (`render.yaml`) builds the frontend and copies its
-`dist/` into `backend/static/`, which FastAPI mounts at `/` — frontend and backend are
-same-origin, no CORS involved for the real deployment. `app/core/config.py`'s
-`ALLOWED_ORIGINS` exists for local dev only (Vite on `:5173` talking to uvicorn on
-`:8000`; docker-compose's nginx on `:8080` talking to `:8000`). A previous Vercel
-frontend deployment (left over from an abandoned Cloud Run + Vercel plan) has been
-removed entirely -- it was never actually functional anyway, since `frontend/`'s API
-calls are relative paths with no base-URL config, so on Vercel's own origin they'd
-have had no backend to reach.
+**This section describes the target/in-progress split-deploy architecture, not yet
+fully live as of 2026-09-04 — see `docs/VERCEL_ONBOARDING_PLAN.md` for the full plan
+and current known gaps.** Render still also serves the old same-origin build
+(`uvicorn api:app` from the repo root, `api.py` a thin `sys.path` shim importing
+`app.main:app`, `render.yaml` copying the frontend's `dist/` into `backend/static/`)
+until it's redeployed with the current branch.
+
+The intended production split: Vercel serves the static frontend
+(`https://frontend-tawny-kappa-10.vercel.app`, Vercel project `frontend` under account
+`system722-1077` — no `vercel.json` in the repo, so it's not git-linked; it was
+deployed directly via `vercel --prod` from a local `frontend/` tree), and Render
+serves the API at `https://neohealth-gpzo.onrender.com`. This is a genuine
+cross-origin split, so **CORS is real now**, not local-dev-only:
+`app/core/config.py`'s `ALLOWED_ORIGINS` (set via `render.yaml`, `sync: false` for
+secrets but a literal `value:` for this one) must list the exact live Vercel URL or
+every request silently fails with no visible reason in the failing app — confirmed
+live 2026-09-04 (see `docs/VERCEL_ONBOARDING_PLAN.md` §0.2's note). `frontend/src/
+api/url.ts`'s `apiUrl()` + `VITE_API_URL` make the frontend's calls absolute instead
+of relative, precisely so it can be hosted on a different origin than the API.
 
 ### Containers & deploy
 

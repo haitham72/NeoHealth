@@ -9,12 +9,14 @@ export default defineConfig({
     proxy: {
       '/ask': { target: 'http://localhost:8000' },
       '/ask-stream': { target: 'http://localhost:8000' },
+      '/ready': { target: 'http://localhost:8000' },
       '/local-models': { target: 'http://localhost:8000' },
       '/corpus-stats': { target: 'http://localhost:8000' },
       '/pdf': { target: 'http://localhost:8000' },
       '/diff-followup': { target: 'http://localhost:8000' },
       '/cross-check-regulation': { target: 'http://localhost:8000' },
       '/report-answer': { target: 'http://localhost:8000' },
+      '/chats': { target: 'http://localhost:8000' },
     },
   },
   test: {

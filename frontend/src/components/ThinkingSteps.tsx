@@ -8,6 +8,8 @@ const STEP_LABELS: Record<string, (s: TraceStep) => string> = {
   citing_source: (s) => `Citing: ${[s.doc_code, s.title].filter(Boolean).join(" — ")}`,
   generating_answer: (s) => `Generating (${s.detail ?? "chat model"})`,
   provider_fallback: (s) => s.detail ?? "Switching provider",
+  waiting_for_backend: (s) => `Starting the server — ${s.detail ?? "0"}s`,
+  backend_unavailable: () => "The server did not start. Try again later.",
 };
 
 function labelFor(step: TraceStep): string {

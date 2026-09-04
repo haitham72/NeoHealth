@@ -154,6 +154,24 @@ export interface Message {
   response?: AskResponse;
 }
 
+export interface ChatSummary {
+  id: string;
+  title: string | null;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface ChatMessageRecord {
+  role: "user" | "assistant";
+  content: string;
+  response: AskResponse | null;
+  created_at: string;
+}
+
+export interface ChatDetail extends ChatSummary {
+  messages: ChatMessageRecord[];
+}
+
 export type ReportReason = "wrong_citation" | "unrelated" | "incorrect_abstention" | "other";
 
 export interface ReportAnswerRequest {

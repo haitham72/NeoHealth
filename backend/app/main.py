@@ -14,7 +14,7 @@ from fastapi.staticfiles import StaticFiles
 from slowapi import _rate_limit_exceeded_handler
 from slowapi.errors import RateLimitExceeded
 
-from app.api.routers import ask, corpus, cross_check, diff, feedback, health, models, pdf
+from app.api.routers import ask, chats, corpus, cross_check, diff, feedback, health, models, pdf
 from app.core.config import ALLOWED_ORIGINS, STATIC_DIR
 from app.core.db import ensure_schema, get_connection, release_connection
 from app.core.limiter import limiter
@@ -24,10 +24,9 @@ app = FastAPI(title="ReguLense API")
 app.state.limiter = limiter
 app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 
-# Production is same-origin (single Render service serves both frontend and backend --
-# see CLAUDE.md's "Containers & deploy"). ALLOWED_ORIGINS exists for local dev:
-# docker-compose (nginx on :8080 talking to uvicorn on :8000) and Vite dev (:5173
-# talking to :8000) unless proxied.
+# Production may be split across Vercel (frontend) and Render (API), so the browser
+# needs explicit CORS permission for the configured frontend origins. It also covers
+# docker-compose (nginx on :8080 talking to uvicorn on :8000) and Vite dev (:5173).
 app.add_middleware(
     CORSMiddleware,
     allow_origins=ALLOWED_ORIGINS,
@@ -67,6 +66,7 @@ app.include_router(diff.router)
 app.include_router(cross_check.router)
 app.include_router(feedback.router)
 app.include_router(pdf.router)
+app.include_router(chats.router)
 
 
 # --- Static files: serve the built React frontend (production only) ---
