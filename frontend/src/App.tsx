@@ -6,6 +6,7 @@ import ChatInput from "./components/ChatInput";
 import MessageList from "./components/MessageList";
 import UserMessage from "./components/UserMessage";
 import AssistantMessage from "./components/AssistantMessage";
+import OnboardingHome, { ONBOARDING_HOME_STORAGE_KEY } from "./components/OnboardingHome";
 import OnboardingWelcome, { ONBOARDING_STORAGE_KEY } from "./components/OnboardingWelcome";
 import FeaturePopup, { hasSeenFeaturePopup, markFeaturePopupSeen } from "./components/FeaturePopup";
 import { AskError, createChat, getChat, saveChatMessage, streamAsk, useChatList } from "./api/client";
@@ -18,6 +19,14 @@ const MAX_HISTORY = 10;
 interface QueuedAsk {
   question: string;
   request: AskRequest;
+}
+
+function shouldShowHome(): boolean {
+  try {
+    return sessionStorage.getItem(ONBOARDING_HOME_STORAGE_KEY) !== "complete";
+  } catch {
+    return true;
+  }
 }
 
 function shouldShowOnboarding(): boolean {
@@ -38,8 +47,18 @@ function Chat() {
   const [streamingText, setStreamingText] = useState("");
   const [pendingQuestion, setPendingQuestion] = useState("");
   const [showWaitWarning, setShowWaitWarning] = useState(false);
-  const [showOnboarding, setShowOnboarding] = useState(shouldShowOnboarding);
+  // Three layers, shown in order: the full-page Home (vertical SaaS page) first, then
+  // the blocking modal (OnboardingWelcome) over the chat, then the chat itself -- each
+  // gated by its own sessionStorage key so a same-session remount doesn't replay any
+  // of them once dismissed.
+  const [showHome, setShowHome] = useState(shouldShowHome);
+  const [showOnboarding, setShowOnboarding] = useState(() => !shouldShowHome() && shouldShowOnboarding());
   const [showFeaturePopup, setShowFeaturePopup] = useState(false);
+
+  const completeHome = () => {
+    setShowHome(false);
+    if (shouldShowOnboarding()) setShowOnboarding(true);
+  };
   // The chat a message gets persisted into. A ref because persistence side effects
   // (fired from async callbacks) need the current value synchronously, not a stale
   // closure from the render that scheduled them; mirrored into state so the sidebar
@@ -113,13 +132,13 @@ function Chat() {
     mutation.mutate(queuedAsk.request);
   };
 
-  // Shown once, the first time the user actually reaches the chat (not during
-  // onboarding itself) -- persisted in localStorage so it never resurfaces
-  // automatically after that, unlike onboarding's per-session sessionStorage.
+  // Shown once, the first time the user actually reaches the chat (not during the
+  // Home page or the onboarding modal) -- persisted in localStorage so it never
+  // resurfaces automatically after that, unlike the per-session sessionStorage above.
   useEffect(() => {
-    if (showOnboarding) return;
+    if (showHome || showOnboarding) return;
     if (!hasSeenFeaturePopup()) setShowFeaturePopup(true);
-  }, [showOnboarding]);
+  }, [showHome, showOnboarding]);
 
   useEffect(() => {
     if (!ready || failed || mutation.isPending || askInFlightRef.current || queuedAsks.length === 0) return;
@@ -247,7 +266,7 @@ function Chat() {
     <>
       <AppShell
         onNewChat={startNewChat}
-        onHome={() => setShowOnboarding(true)}
+        onHome={() => setShowHome(true)}
         chats={chats}
         activeChatId={currentChatId}
         onSelectChat={selectChat}
@@ -299,7 +318,8 @@ function Chat() {
         lastModelUsed={lastModelUsed?.model_used}
       />
       </AppShell>
-      {showOnboarding && <OnboardingWelcome onComplete={() => setShowOnboarding(false)} />}
+      {showHome && <OnboardingHome onComplete={completeHome} />}
+      {!showHome && showOnboarding && <OnboardingWelcome onComplete={() => setShowOnboarding(false)} />}
       {showFeaturePopup && (
         <FeaturePopup
           onClose={() => {
