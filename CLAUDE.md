@@ -162,34 +162,52 @@ brass = in force / medium confidence, rust = superseded / low confidence, amber 
 medium confidence specifically, plus one institutional color per authority (DHA
 steel-blue, DoH teal, MOHAP plum).
 
-**This section describes the target/in-progress split-deploy architecture, not yet
-fully live as of 2026-09-04 — see `docs/VERCEL_ONBOARDING_PLAN.md` for the full plan
-and current known gaps.** Render still also serves the old same-origin build
-(`uvicorn api:app` from the repo root, `api.py` a thin `sys.path` shim importing
-`app.main:app`, `render.yaml` copying the frontend's `dist/` into `backend/static/`)
-until it's redeployed with the current branch.
+**Production is now genuinely two live deployments at once, confirmed working
+2026-09-04 — this is a deliberate choice, not a leftover mid-migration state.**
 
-The intended production split: Vercel serves the static frontend
-(`https://frontend-tawny-kappa-10.vercel.app`, Vercel project `frontend` under account
-`system722-1077` — no `vercel.json` in the repo, so it's not git-linked; it was
-deployed directly via `vercel --prod` from a local `frontend/` tree), and Render
-serves the API at `https://neohealth-gpzo.onrender.com`. This is a genuine
-cross-origin split, so **CORS is real now**, not local-dev-only:
-`app/core/config.py`'s `ALLOWED_ORIGINS` (set via `render.yaml`, `sync: false` for
-secrets but a literal `value:` for this one) must list the exact live Vercel URL or
-every request silently fails with no visible reason in the failing app — confirmed
-live 2026-09-04 (see `docs/VERCEL_ONBOARDING_PLAN.md` §0.2's note). `frontend/src/
-api/url.ts`'s `apiUrl()` + `VITE_API_URL` make the frontend's calls absolute instead
-of relative, precisely so it can be hosted on a different origin than the API.
+1. **Render** (`https://neohealth-gpzo.onrender.com`) is a complete, self-contained,
+   same-origin deployment: `uvicorn api:app` from the repo root (`api.py` a thin
+   `sys.path` shim importing `app.main:app`), building the frontend and copying its
+   `dist/` into `backend/static/`, which FastAPI mounts at `/` as a catch-all *after*
+   every API route. It needs no CORS to work standalone, and it's kept this way on
+   purpose — do not strip the frontend build back out of it.
+2. **Vercel** (`https://frontend-tawny-kappa-10.vercel.app`, project `frontend` under
+   account `system722-1077`) serves just the static frontend, calling Render's API
+   cross-origin. This is the split described in `docs/VERCEL_ONBOARDING_PLAN.md`.
+
+Both read from the *same* Render backend, so CORS is real for path 2:
+`app/core/config.py`'s `ALLOWED_ORIGINS` must list the exact live Vercel URL or every
+cross-origin request silently fails with no visible reason in the failing app —
+confirmed live 2026-09-04 (see `docs/VERCEL_ONBOARDING_PLAN.md` §0.2's note).
+`frontend/src/api/url.ts`'s `apiUrl()` + `VITE_API_URL` make the frontend's calls
+absolute instead of relative, precisely so it can be hosted on a different origin
+than the API — this only matters for the Vercel deployment; Render's own build still
+gets `VITE_API_URL=""` (relative paths), matching its same-origin setup.
+
+**Important gotcha for anyone editing `render.yaml` or `ALLOWED_ORIGINS`'s default in
+`config.py`:** this Render service does not appear to be Blueprint-synced to
+`render.yaml` — editing the file alone did not change the live service's actual
+Build/Start Command or environment variables in testing. Confirm any deploy-config
+change actually took effect (`curl` the live URL) rather than trusting the file;
+if it didn't, the fix has to go through the Render dashboard directly.
+
+Vercel has an equivalent gotcha: its "Root Directory" project setting must be
+`frontend`, not `.` (the repo root) — it was found misconfigured as `.` once, which
+made every git-triggered deploy fail (`vite: command not found`, since it tried to
+build from the repo root, which has no frontend `package.json`). Manual `vercel
+--prod` deploys run from inside `frontend/` bypass this setting, so a broken
+git-triggered deploy can co-exist with a working manual one — check which path
+actually produced the live deployment before assuming a green build means the
+Root Directory is correct.
 
 ### Containers & deploy
 
 - `docker-compose.yml` (repo root) — one-command local dev: Postgres+pgvector, backend,
   frontend. See `RUN.md`'s quick-start.
 - `backend/Dockerfile`, `frontend/Dockerfile` — multi-stage builds for each service;
-  used for local `docker compose` parity. Production doesn't use either directly --
-  Render builds and runs the backend from source (`render.yaml`), with the frontend
-  build folded into that same build step.
+  used for local `docker compose` parity. Render doesn't use either directly -- it
+  builds and runs the backend from source per `render.yaml` (or its own dashboard
+  config, per the gotcha above), with the frontend build folded into that same step.
 - `.github/workflows/deploy.yml` — CI/CD test gate only (pytest, frontend
-  typecheck/lint/test) on push to `main`. Render deploys independently via its own
-  auto-deploy-on-push, not through this workflow.
+  typecheck/lint/test) on push to `main`. Render and Vercel both deploy independently
+  via their own auto-deploy-on-push, not through this workflow.
