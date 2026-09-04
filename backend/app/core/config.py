@@ -16,12 +16,13 @@ CORPUS_URLS_FILE = BACKEND_DIR / "corpus_urls.txt"
 PARSED_DOCUMENTS_FILE = BACKEND_DIR / "parsed_documents.json"
 NEEDS_MANUAL_FILE = BACKEND_DIR / "needs_manual.json"
 
-# Frontend and API are same-origin in the current Render deployment, but the Vercel
-# frontend calls the API directly. ALLOWED_ORIGINS can still override this list for
-# another deployment or local setup.
+# Render is API-only now; the Vercel frontend calls it cross-origin, so this must list
+# every real frontend origin. ALLOWED_ORIGINS overrides this default entirely -- if
+# Render has that env var set to something stale, this default is never even reached,
+# so a stale live deployment needs the dashboard value updated directly, not just this.
 ALLOWED_ORIGINS = os.environ.get(
     "ALLOWED_ORIGINS",
-    "http://localhost:5173,https://frontend-blue-zeta-82.vercel.app",
+    "http://localhost:5173,https://frontend-tawny-kappa-10.vercel.app",
 ).split(",")
 
 # Worst-case ceiling on API calls/day (every /ask or /ask-stream call, including
