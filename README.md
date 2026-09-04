@@ -5,7 +5,7 @@
 [![CI](https://github.com/haitham72/NeoHealth/actions/workflows/deploy.yml/badge.svg)](https://github.com/haitham72/NeoHealth/actions/workflows/deploy.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-**Live demo:** https://neohealth-gpzo.onrender.com
+**Live demo:** https://frontend-tawny-kappa-10.vercel.app
 
 <!-- TODO: docs/screenshots/*.png predate both the RegLens → ReguLense rebrand and the chat-UI
      redesign — they still show the old "REGLENS" wordmark and the old single-page layout, not
@@ -70,7 +70,7 @@ flowchart TB
 | Generation | OpenAI `gpt-4o-mini` primary, with an automatic NaraRouter fallback (rate limit or outage) and an optional local LM Studio model — temperature 0, strictly grounded in retrieved chunks |
 | Backend | FastAPI (`backend/app/`), public with IP-based rate limiting (no auth) |
 | Frontend | React 19 + TypeScript + Vite + Tailwind v4 |
-| Containers / deploy | Docker + docker-compose (local), single Render web service (production) |
+| Containers / deploy | Docker + docker-compose (local); Vercel (frontend) + Render (API), production |
 
 ## Running it
 
