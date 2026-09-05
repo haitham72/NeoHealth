@@ -253,14 +253,12 @@ function Chat() {
     .find((m) => m.role === "assistant" && m.response && m.response.abstained === false)
     ?.response as Answered | undefined;
 
-  const waitingForBackend = queuedAsks.length > 0 && !ready && !failed;
-  const backendFailed = queuedAsks.length > 0 && failed;
-  const showPendingAssistant = mutation.isPending || waitingForBackend || backendFailed;
+  const waitingForBackend = queuedAsks.length > 0 && !ready;
+  const backendSlow = waitingForBackend && failed;
+  const showPendingAssistant = mutation.isPending || waitingForBackend;
   const pendingSteps = waitingForBackend
     ? [{ step: "waiting_for_backend", detail: String(elapsed) }]
-    : backendFailed
-      ? [{ step: "backend_unavailable" }]
-      : steps;
+    : steps;
 
   return (
     <>
@@ -297,7 +295,7 @@ function Chat() {
             question={pendingQuestion}
             onAskFollowUp={askFollowUp}
             askPending={mutation.isPending}
-            errorText={backendFailed ? "The backend did not become ready within 120 seconds. Your question was not sent." : undefined}
+            errorText={backendSlow ? "The backend is taking longer than expected. Your question will send automatically when it is ready." : undefined}
           />
         )}
       </MessageList>
@@ -308,7 +306,7 @@ function Chat() {
       )}
       {showWaitWarning && (
         <p className="px-4 pb-2 text-[12px]" style={{ color: "var(--ink-dim)" }}>
-          {failed ? "The server did not start. Please try again later." : "Wait for the current response to finish before asking another question."}
+          {backendSlow ? "The server is still starting. Your question will send automatically when it is ready." : "Wait for the current response to finish before asking another question."}
         </p>
       )}
       <ChatInput

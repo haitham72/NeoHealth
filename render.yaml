@@ -15,6 +15,8 @@ services:
         sync: false
       - key: ALLOWED_ORIGINS
         value: https://neohealth-gpzo.onrender.com,https://frontend-tawny-kappa-10.vercel.app,https://frontend-blue-zeta-82.vercel.app,http://localhost:5173
+      - key: ALLOWED_ORIGIN_REGEX
+        value: https://frontend-[a-z0-9]+-system722-1077s-projects\.vercel\.app
       - key: DAILY_OPENAI_CALL_CAP
         value: "300"
       - key: OPENAI_API_KEY

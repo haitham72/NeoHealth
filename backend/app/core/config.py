@@ -25,6 +25,14 @@ ALLOWED_ORIGINS = os.environ.get(
     "http://localhost:5173,https://frontend-tawny-kappa-10.vercel.app",
 ).split(",")
 
+# Vercel's generated deployment URLs change on each deploy
+# (for example, frontend-k6q7eskv2-system722-1077s-projects.vercel.app).
+# Keep this scoped to this project/account shape rather than all of vercel.app.
+ALLOWED_ORIGIN_REGEX = os.environ.get(
+    "ALLOWED_ORIGIN_REGEX",
+    r"https://frontend-[a-z0-9]+-system722-1077s-projects\.vercel\.app",
+)
+
 # Worst-case ceiling on API calls/day (every /ask or /ask-stream call, including
 # provider="local", costs at least one embeddings call -- see app.core.retrieval.embed()).
 # Not a precision budget, just a bound on the blast radius of a runaway client.

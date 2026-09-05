@@ -15,7 +15,7 @@ from slowapi import _rate_limit_exceeded_handler
 from slowapi.errors import RateLimitExceeded
 
 from app.api.routers import ask, chats, corpus, cross_check, diff, feedback, health, models, pdf
-from app.core.config import ALLOWED_ORIGINS, STATIC_DIR
+from app.core.config import ALLOWED_ORIGIN_REGEX, ALLOWED_ORIGINS, STATIC_DIR
 from app.core.db import ensure_schema, get_connection, release_connection
 from app.core.limiter import limiter
 
@@ -30,6 +30,7 @@ app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=ALLOWED_ORIGINS,
+    allow_origin_regex=ALLOWED_ORIGIN_REGEX,
     allow_methods=["GET", "POST"],
     allow_headers=["Content-Type"],
 )

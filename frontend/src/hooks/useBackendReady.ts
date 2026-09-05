@@ -5,6 +5,7 @@ const READY_STORAGE_KEY = "regulense-backend-ready";
 const POLL_INTERVAL_MS = 5_000;
 const REQUEST_TIMEOUT_MS = 4_500;
 const MAX_WAIT_MS = 120_000;
+const MAX_WAIT_SECONDS = MAX_WAIT_MS / 1000;
 
 interface BackendReadyState {
   ready: boolean;
@@ -37,32 +38,30 @@ export function useBackendReady(): BackendReadyState {
   }));
 
   useEffect(() => {
-    if (state.ready || state.failed) return;
+    if (state.ready) return;
 
     const startedAt = Date.now();
     let stopped = false;
     let inFlight = false;
     let controller: AbortController | null = null;
 
-    const elapsedSeconds = () => Math.min(120, Math.floor((Date.now() - startedAt) / 1000));
+    const elapsedSeconds = () => Math.min(MAX_WAIT_SECONDS, Math.floor((Date.now() - startedAt) / 1000));
 
     const stop = () => {
       stopped = true;
       controller?.abort();
     };
 
-    const fail = () => {
+    const markSlow = () => {
       if (stopped) return;
-      stop();
-      setState({ ready: false, elapsed: 120, failed: true });
+      setState((current) => {
+        if (current.ready || (current.failed && current.elapsed === MAX_WAIT_SECONDS)) return current;
+        return { ready: false, elapsed: MAX_WAIT_SECONDS, failed: true };
+      });
     };
 
     const poll = async () => {
       if (stopped || inFlight) return;
-      if (Date.now() - startedAt >= MAX_WAIT_MS) {
-        fail();
-        return;
-      }
 
       inFlight = true;
       controller = new AbortController();
@@ -70,7 +69,7 @@ export function useBackendReady(): BackendReadyState {
 
       try {
         const response = await fetch(apiUrl("/ready"), { signal: controller.signal });
-        if (!stopped && Date.now() - startedAt < MAX_WAIT_MS && response.status === 200) {
+        if (!stopped && response.ok) {
           cacheReady();
           setState({ ready: true, elapsed: elapsedSeconds(), failed: false });
           stop();
@@ -87,8 +86,8 @@ export function useBackendReady(): BackendReadyState {
     const pollInterval = window.setInterval(() => void poll(), POLL_INTERVAL_MS);
     const elapsedInterval = window.setInterval(() => {
       const elapsed = elapsedSeconds();
-      if (elapsed >= MAX_WAIT_MS / 1000) {
-        fail();
+      if (elapsed >= MAX_WAIT_SECONDS) {
+        markSlow();
       } else if (!stopped) {
         setState((current) => ({ ...current, elapsed }));
       }
@@ -102,7 +101,7 @@ export function useBackendReady(): BackendReadyState {
       window.clearInterval(pollInterval);
       window.clearInterval(elapsedInterval);
     };
-  }, [state.failed, state.ready]);
+  }, [state.ready]);
 
   return state;
 }
