@@ -1,4 +1,5 @@
 .env
+node_modules/
 .venv/
 parsed_documents.json
 backend/needs_manual.json
