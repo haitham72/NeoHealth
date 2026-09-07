@@ -8,11 +8,15 @@ the dict it returns is passed straight through as JSON.
 
 Run: python -m app.main   (from backend/, serves on http://localhost:8000)
 """
+import os
+
 from fastapi import Depends, FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.staticfiles import StaticFiles
 from slowapi import _rate_limit_exceeded_handler
 from slowapi.errors import RateLimitExceeded
+from starlette.datastructures import Headers
+from starlette.responses import FileResponse
+from starlette.staticfiles import NotModifiedResponse, StaticFiles
 
 from app.api.routers import ask, chats, corpus, cross_check, diff, feedback, health, models, pdf
 from app.core.config import ALLOWED_ORIGINS, STATIC_DIR
@@ -69,12 +73,34 @@ app.include_router(pdf.router)
 app.include_router(chats.router)
 
 
+class SPAStaticFiles(StaticFiles):
+    """Vite hashes every JS/CSS filename under assets/ on content change, so those files
+    are safe to cache forever -- but plain StaticFiles sends no Cache-Control at all,
+    leaving browsers to apply their own heuristic caching to index.html too. Each deploy
+    replaces the static dir wholesale (old hashed assets don't survive it), so a browser
+    that heuristically cached an old index.html keeps requesting a bundle the server no
+    longer has -- a 404 that can leave the app half-loaded with dead event handlers,
+    which is exactly the "onboarding modal won't dismiss" failure mode this was written
+    to rule out. index.html must always revalidate; hashed assets never need to."""
+
+    def file_response(self, full_path, stat_result, scope, status_code: int = 200):
+        request_headers = Headers(scope=scope)
+        response = FileResponse(full_path, status_code=status_code, stat_result=stat_result)
+        is_hashed_asset = f"{os.sep}assets{os.sep}" in str(full_path)
+        response.headers["Cache-Control"] = (
+            "public, max-age=31536000, immutable" if is_hashed_asset else "no-cache"
+        )
+        if self.is_not_modified(response.headers, request_headers):
+            return NotModifiedResponse(response.headers)
+        return response
+
+
 # --- Static files: serve the built React frontend (production only) ---
 # This mount MUST be last — it's a catch-all that would shadow API routes
 # if placed above them. In dev, the Vite proxy handles frontend requests
 # so this directory can be empty or absent without breaking anything.
 if STATIC_DIR.is_dir() and any(STATIC_DIR.iterdir()):
-    app.mount("/", StaticFiles(directory=str(STATIC_DIR), html=True), name="static")
+    app.mount("/", SPAStaticFiles(directory=str(STATIC_DIR), html=True), name="static")
 
 
 if __name__ == "__main__":

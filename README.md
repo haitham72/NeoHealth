@@ -5,7 +5,7 @@
 [![CI](https://github.com/haitham72/NeoHealth/actions/workflows/deploy.yml/badge.svg)](https://github.com/haitham72/NeoHealth/actions/workflows/deploy.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-**Live demo:** https://frontend-tawny-kappa-10.vercel.app
+**Live demo:** https://neohealth-gpzo.onrender.com
 
 <!-- TODO: docs/screenshots/*.png predate both the RegLens → ReguLense rebrand and the chat-UI
      redesign — they still show the old "REGLENS" wordmark and the old single-page layout, not

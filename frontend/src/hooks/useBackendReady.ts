@@ -5,6 +5,13 @@ const READY_STORAGE_KEY = "regulense-backend-ready";
 const POLL_INTERVAL_MS = 5_000;
 const REQUEST_TIMEOUT_MS = 4_500;
 const MAX_WAIT_MS = 120_000;
+// Render's free tier spins the service back down after ~15 minutes of inactivity, so a
+// "ready" result cached earlier in the same browser session can go stale well before the
+// sessionStorage entry itself would ever expire. Without a TTL, a visitor who fought
+// through the onboarding modal for a few minutes (or just left the tab open a while) would
+// have this hook skip re-checking entirely, assume the backend was still warm, and send
+// their first /ask straight into a cold start with no loading indicator to show for it.
+const READY_CACHE_TTL_MS = 10 * 60 * 1000;
 
 interface BackendReadyState {
   ready: boolean;
@@ -14,7 +21,10 @@ interface BackendReadyState {
 
 function wasReadyThisSession(): boolean {
   try {
-    return sessionStorage.getItem(READY_STORAGE_KEY) === "true";
+    const raw = sessionStorage.getItem(READY_STORAGE_KEY);
+    if (!raw) return false;
+    const cachedAt = Number(raw);
+    return Number.isFinite(cachedAt) && Date.now() - cachedAt < READY_CACHE_TTL_MS;
   } catch {
     return false;
   }
@@ -22,7 +32,7 @@ function wasReadyThisSession(): boolean {
 
 function cacheReady(): void {
   try {
-    sessionStorage.setItem(READY_STORAGE_KEY, "true");
+    sessionStorage.setItem(READY_STORAGE_KEY, String(Date.now()));
   } catch {
     // Storage can be unavailable in privacy-restricted browser contexts.
   }
