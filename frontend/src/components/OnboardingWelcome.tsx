@@ -2,7 +2,6 @@ import { useEffect, useRef, useState, type KeyboardEvent } from "react";
 
 export const ONBOARDING_STORAGE_KEY = "regulense-onboarding-v2";
 const COMPLETE = "complete";
-const MIN_ONBOARDING_MS = 22_000;
 
 function markOnboardingComplete(): void {
   try {
@@ -119,13 +118,10 @@ interface Props {
  * available. Session-persisted the same way as before. */
 export default function OnboardingWelcome({ onComplete }: Props) {
   const [step, setStep] = useState(0);
-  const [canComplete, setCanComplete] = useState(false);
-  const startedAtRef = useRef(Date.now());
   const modalRef = useRef<HTMLDivElement | null>(null);
   const isLast = step === STEPS.length - 1;
 
   const complete = () => {
-    if (!canComplete) return;
     markOnboardingComplete();
     onComplete();
   };
@@ -141,12 +137,6 @@ export default function OnboardingWelcome({ onComplete }: Props) {
 
   useEffect(() => {
     modalRef.current?.focus();
-  }, []);
-
-  useEffect(() => {
-    const remaining = Math.max(0, MIN_ONBOARDING_MS - (Date.now() - startedAtRef.current));
-    const timer = window.setTimeout(() => setCanComplete(true), remaining);
-    return () => window.clearTimeout(timer);
   }, []);
 
   const handleKeyDown = (event: KeyboardEvent<HTMLDivElement>) => {
@@ -202,7 +192,6 @@ export default function OnboardingWelcome({ onComplete }: Props) {
             className="onboarding-close"
             onClick={complete}
             aria-label="Skip introduction"
-            disabled={!canComplete}
           >
             &times;
           </button>
@@ -232,8 +221,8 @@ export default function OnboardingWelcome({ onComplete }: Props) {
               {step > 0 && (
                 <button type="button" className="onboarding-secondary" onClick={back}>Back</button>
               )}
-              <button type="button" className="onboarding-secondary" onClick={complete} disabled={!canComplete}>Skip</button>
-              <button type="button" className="onboarding-primary" onClick={next} disabled={isLast && !canComplete}>
+              <button type="button" className="onboarding-secondary" onClick={complete}>Skip</button>
+              <button type="button" className="onboarding-primary" onClick={next}>
                 {isLast ? "Begin Your Case" : "Continue"}<span aria-hidden>&rarr;</span>
               </button>
             </div>
