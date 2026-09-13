@@ -3,6 +3,7 @@ Hybrid retrieval (pgvector cosine + Postgres full-text) with RRF fusion, superse
 filtering, and mandatory-citation-or-abstain answering. Shared by ask.py (CLI) and
 demo.py (naive-vs-ReguLense side-by-side).
 """
+import logging
 import os
 import re
 import time
@@ -13,6 +14,8 @@ from langsmith.wrappers import wrap_openai
 
 from app.core.answer_cache import decorate_cached_result, lookup_answer_cache, store_answer_cache
 from app.core.config import CACHE_HIT_THRESHOLD
+
+logger = logging.getLogger(__name__)
 
 EMBED_MODEL = "text-embedding-3-small"
 CHAT_MODEL = "gpt-4o-mini"
@@ -208,6 +211,24 @@ def _flag_cache_event(
         "cache_matched_question": matched_question,
         "cache_skipped_reason": skipped_reason,
     })
+
+
+def _safe_lookup_answer_cache(
+    conn, question: str, query_vec: list[float] | None, superseded_filter: bool, authority_filter: str | None,
+) -> dict | None:
+    """Best-effort wrapper around answer_cache.lookup_answer_cache -- a transient
+    Redis or Postgres failure during the cache gate must never break the actual
+    answer (same "cache reads/writes are best-effort" contract store_answer_cache
+    already honors internally). Any exception here is logged and treated as a plain
+    cache miss so callers fall straight through to the real pipeline, exactly as if
+    nothing had ever been cached. Shared by both answer_question() and
+    answer_question_stream()'s four call sites (two probes each) since the wrapping
+    logic is identical regardless of which of the two functions is calling it."""
+    try:
+        return lookup_answer_cache(conn, question, query_vec, superseded_filter, authority_filter)
+    except Exception:
+        logger.warning("lookup_answer_cache failed; treating as a cache miss", exc_info=True)
+        return None
 
 
 def _current_run_id() -> str | None:
@@ -540,7 +561,7 @@ def answer_question_stream(
     cache_eligible = not history
     if cache_eligible:
         yield {"step": "checking_cache"}
-        hit = lookup_answer_cache(conn, question, None, superseded_filter, authority_filter)
+        hit = _safe_lookup_answer_cache(conn, question, None, superseded_filter, authority_filter)
         if hit:
             _flag_cache_event(
                 hit=True, layer=hit["cache_layer"], match_mode=hit["match_mode"],
@@ -561,7 +582,7 @@ def answer_question_stream(
     query_vec = embed(question)
 
     if cache_eligible:
-        hit = lookup_answer_cache(conn, question, query_vec, superseded_filter, authority_filter)
+        hit = _safe_lookup_answer_cache(conn, question, query_vec, superseded_filter, authority_filter)
         if hit:
             _flag_cache_event(
                 hit=True, layer=hit["cache_layer"], match_mode=hit["match_mode"],
@@ -705,7 +726,7 @@ def answer_question(
 
     cache_eligible = not history
     if cache_eligible:
-        hit = lookup_answer_cache(conn, question, None, superseded_filter, authority_filter)
+        hit = _safe_lookup_answer_cache(conn, question, None, superseded_filter, authority_filter)
         if hit:
             _flag_cache_event(
                 hit=True, layer=hit["cache_layer"], match_mode=hit["match_mode"],
@@ -722,7 +743,7 @@ def answer_question(
     query_vec = embed(question)
 
     if cache_eligible:
-        hit = lookup_answer_cache(conn, question, query_vec, superseded_filter, authority_filter)
+        hit = _safe_lookup_answer_cache(conn, question, query_vec, superseded_filter, authority_filter)
         if hit:
             _flag_cache_event(
                 hit=True, layer=hit["cache_layer"], match_mode=hit["match_mode"],

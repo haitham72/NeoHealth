@@ -472,3 +472,64 @@ def test_stream_history_present_skips_cache_entirely(conn, redis_conn, spy_llm):
     still_cached = lookup_answer_cache(conn, question, None, False, None)
     assert still_cached is not None
     assert still_cached["result"]["answer"] == SAMPLE_RESULT["answer"]
+
+
+# --- cache-read failure must degrade to a normal answer, never propagate -----------
+#
+# Code review finding on the first version of this task's wiring: lookup_answer_cache
+# was called bare at all four call sites (stream x2, non-stream x2) -- store_answer_cache
+# was wrapped in try/except per the brief's Step 9, but the read side had no equivalent
+# guard, so a transient Redis/Postgres failure (lock timeout, schema drift, whatever)
+# during the cache gate would propagate all the way out of answer_question()/
+# answer_question_stream() and surface as a 500 to the user, instead of degrading to a
+# plain cache miss. Fixed via _safe_lookup_answer_cache(), a shared wrapper around
+# lookup_answer_cache() that catches, logs, and returns None. These two tests are the
+# regression coverage for that fix -- monkeypatching retrieval.lookup_answer_cache
+# itself (the name _safe_lookup_answer_cache calls) to raise on every invocation, then
+# confirming the pipeline still produces a normal, non-abstained, LLM-generated answer.
+
+
+def test_answer_question_survives_cache_lookup_failure(conn, redis_conn, spy_llm, monkeypatch):
+    seed_official_doc(conn, score=0.6)
+
+    def _boom(*args, **kwargs):
+        raise RuntimeError("simulated Redis/Postgres failure")
+
+    monkeypatch.setattr(retrieval, "lookup_answer_cache", _boom)
+
+    result = retrieval.answer_question(
+        conn, "What are the telehealth standards?", superseded_filter=False, provider="local",
+    )
+
+    assert result["abstained"] is False
+    assert "cache_hit" not in result
+    spy_llm.generate_answer.assert_called_once()
+    spy_llm.embed.assert_called_once()
+
+    # The store side is unaffected by a *read* failure -- confirms the pipeline ran
+    # all the way through rather than aborting partway.
+    stored = lookup_answer_cache(conn, "What are the telehealth standards?", None, False, None)
+    assert stored is not None
+
+
+def test_stream_survives_cache_lookup_failure(conn, redis_conn, spy_llm, monkeypatch):
+    seed_official_doc(conn, score=0.6)
+
+    def _boom(*args, **kwargs):
+        raise RuntimeError("simulated Redis/Postgres failure")
+
+    monkeypatch.setattr(retrieval, "lookup_answer_cache", _boom)
+
+    events, result = _run_stream(
+        retrieval.answer_question_stream(
+            conn, "What are the telehealth standards?", superseded_filter=False, provider="local",
+        )
+    )
+
+    assert result["abstained"] is False
+    assert "cache_hit" not in result
+    spy_llm.generate_answer.assert_called_once()
+    spy_llm.embed.assert_called_once()
+
+    stored = lookup_answer_cache(conn, "What are the telehealth standards?", None, False, None)
+    assert stored is not None
