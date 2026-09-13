@@ -14,8 +14,13 @@ services:
       retries: 10
 
   # L1 exact-key answer cache. Named volume + AOF so local restarts keep keys.
-  # Prod on Render free: do NOT run Redis on the sleeping web dyno — set REDIS_URL
-  # to Upstash (or omit it and rely on Postgres answer_cache alone).
+  # Prod on Render free: this local `redis` service is dev-only -- never run Redis on
+  # the sleeping web dyno itself. Prod REDIS_URL points at a separate managed instance
+  # (Upstash) instead, since the only real traffic here is the interviewer-run demo:
+  # a free-tier managed Redis is worth running for the latency win, not something to
+  # skip. Postgres (`answer_cache`/`diff_cache`) is still the durable source of truth
+  # either way -- every boot reloads Redis from it in full (app/main.py's startup
+  # hook), so Redis itself can be wiped or unreachable with nothing lost.
   redis:
     image: redis:7-alpine
     ports: ["6379:6379"]
