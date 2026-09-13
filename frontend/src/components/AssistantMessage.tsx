@@ -94,6 +94,7 @@ export default function AssistantMessage({ message, streamingText, steps, isStre
             >
               {response.answer}
             </ReactMarkdown>
+            {response.cache_hit && <div className="mt-2 text-[11px]" style={{ color: "var(--ink-faint)" }}>Served from cache</div>}
             <SourceCard chunks={chunks} onOpen={setOpenIndex} />
             <FollowUpQuestions questions={followUps} onAsk={onAskFollowUp} disabled={askPending} />
             {response.run_id && <ReportAnswer runId={response.run_id} variant="answered" />}

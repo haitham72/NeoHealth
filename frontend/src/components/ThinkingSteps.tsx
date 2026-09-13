@@ -10,6 +10,9 @@ const STEP_LABELS: Record<string, (s: TraceStep) => string> = {
   provider_fallback: (s) => s.detail ?? "Switching provider",
   waiting_for_backend: (s) => `Starting the server — ${s.detail ?? "0"}s`,
   backend_unavailable: () => "The server did not start. Try again later.",
+  checking_cache: () => "Checking answer cache",
+  cache_hit: (s) => `Cache hit (${s.detail ?? "cached"})`,
+  cache_miss: () => "Cache miss — retrieving",
 };
 
 function labelFor(step: TraceStep): string {

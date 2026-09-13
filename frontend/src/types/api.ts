@@ -71,6 +71,10 @@ export interface Answered {
   sibling_versions?: SiblingVersion[];
   retrieved_chunks?: RetrievedChunk[];
   run_id?: string | null;
+  cache_hit?: boolean;
+  cache_layer?: "redis" | "postgres" | null;
+  cache_similarity?: number | null;
+  cache_match_mode?: "exact_key_plus_filters" | "query_plus_filters" | null;
 }
 
 export type AskResponse = Abstained | Answered;
