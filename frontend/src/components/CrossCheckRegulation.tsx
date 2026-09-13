@@ -1,4 +1,5 @@
 import { useCrossCheckRegulation } from "../api/client";
+import type { Provider } from "../types/api";
 import { getOfficialAuthorityStyle } from "./AuthorityBadge";
 
 interface Props {
@@ -7,6 +8,8 @@ interface Props {
   citedText: string;
   citedPage: number;
   question: string;
+  provider: Provider;
+  model?: string;
 }
 
 /* On-demand only, research-tier citations only: a research paper is persuasive but
@@ -20,6 +23,8 @@ export default function CrossCheckRegulation({
   citedText,
   citedPage,
   question,
+  provider,
+  model,
 }: Props) {
   const mutation = useCrossCheckRegulation();
 
@@ -35,6 +40,8 @@ export default function CrossCheckRegulation({
               cited_text: citedText,
               cited_page: citedPage,
               question,
+              provider,
+              model,
             })
           }
           className="inline-flex items-center gap-2 rounded-md px-4 py-2.5 text-[12px] font-semibold tracking-[0.04em] uppercase transition-colors"
@@ -122,6 +129,7 @@ export default function CrossCheckRegulation({
             Cross-checked against {mutation.data.documents.length} official standard
             {mutation.data.documents.length !== 1 ? "s" : ""}
           </p>
+          {mutation.data.cache_hit && <div className="mt-1 text-[11px]" style={{ color: "var(--ink-faint)" }}>Served from cache</div>}
         </div>
       )}
     </div>

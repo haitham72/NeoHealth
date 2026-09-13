@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 import ReactMarkdown from "react-markdown";
-import type { Message, RetrievedChunk, TraceStep } from "../types/api";
+import type { Message, Provider, RetrievedChunk, TraceStep } from "../types/api";
 import ThinkingSteps from "./ThinkingSteps";
 import SourceCard from "./SourceCard";
 import CitationPopover from "./CitationPopover";
@@ -18,6 +18,8 @@ interface Props {
   question: string;
   onAskFollowUp: (question: string) => void;
   errorText?: string;
+  provider: Provider;
+  model?: string;
   /** True while any /ask is in flight (there's only ever one at a time) -- disables
    * follow-up buttons on already-completed messages so repeated clicks can't queue up
    * multiple concurrent requests. */
@@ -28,7 +30,7 @@ function textToNodes(text: string, chunks: RetrievedChunk[], onOpen: (i: number)
   return renderWithCitations(text, chunks, onOpen);
 }
 
-export default function AssistantMessage({ message, streamingText, steps, isStreaming, question, onAskFollowUp, askPending, errorText }: Props) {
+export default function AssistantMessage({ message, streamingText, steps, isStreaming, question, onAskFollowUp, askPending, errorText, provider, model }: Props) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const response = message?.response;
   const chunks: RetrievedChunk[] = response && !response.abstained ? (response.retrieved_chunks ?? []).filter((c) => c.used_for_answer) : [];
@@ -61,7 +63,16 @@ export default function AssistantMessage({ message, streamingText, steps, isStre
 
         {message && response && response.abstained && (
           <>
-            <p style={{ color: "var(--ink-dim)" }}>I don't have current guidance on that. ({response.reason})</p>
+            {response.off_topic ? (
+              <>
+                <p style={{ color: "var(--ink-dim)" }}>{response.reason}</p>
+                {response.suggested_questions?.length ? (
+                  <FollowUpQuestions questions={response.suggested_questions} onAsk={onAskFollowUp} disabled={askPending} />
+                ) : null}
+              </>
+            ) : (
+              <p style={{ color: "var(--ink-dim)" }}>I don't have current guidance on that. ({response.reason})</p>
+            )}
             {response.run_id && <ReportAnswer runId={response.run_id} variant="abstained" />}
           </>
         )}
@@ -103,7 +114,7 @@ export default function AssistantMessage({ message, streamingText, steps, isStre
       </div>
 
       {openIndex !== null && chunks[openIndex] && (
-        <CitationPopover chunk={chunks[openIndex]} index={openIndex} sources={chunks} question={question} onClose={() => setOpenIndex(null)} />
+        <CitationPopover chunk={chunks[openIndex]} index={openIndex} sources={chunks} question={question} provider={provider} model={model} onClose={() => setOpenIndex(null)} />
       )}
     </div>
   );

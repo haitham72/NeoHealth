@@ -9,7 +9,7 @@ from app.core.config import DAILY_OPENAI_CALL_CAP
 from app.core.db import get_connection, increment_daily_usage, release_connection
 from app.core.diff_cache import lookup_diff_cache, store_diff_cache
 from app.core.limiter import limiter
-from app.core.retrieval import chat_completion
+from app.core.retrieval import chat_completion, local_client, resolve_model
 from app.services.versioning import find_previous_version, load_full_document_text
 
 logger = logging.getLogger(__name__)
@@ -71,7 +71,13 @@ def diff_followup(request: Request, req: DiffFollowupRequest):
         # what gets cached below either.
         hit = _safe_lookup_diff_cache(conn, req.current_document_id, prev["id"], req.question)
         if hit:
-            return hit["result"]
+            # Same convention as /ask's cached answers: mark the hit so the UI can
+            # show its tiny "Served from cache" note. Copied (not mutated in place)
+            # and only set here on the hit path, so the stored payload stays clean
+            # and fresh generations never carry the marker into store_diff_cache.
+            result = dict(hit["result"])
+            result["cache_hit"] = True
+            return result
 
         count = increment_daily_usage(conn)
         if count > DAILY_OPENAI_CALL_CAP:
@@ -86,7 +92,11 @@ def diff_followup(request: Request, req: DiffFollowupRequest):
         if not current_full or not previous_full:
             return {"available": False, "reason": "no indexed page text found for one of the versions"}
 
-        resp, _ = chat_completion([
+        # model is only meaningful for the local provider (same convention as
+        # /ask in routers/ask.py) -- a caller-supplied OpenAI model id must never
+        # pass straight through to a paid completion call unchecked.
+        model = req.model if req.provider == "local" else None
+        messages = [
             {
                 "role": "system",
                 "content": (
@@ -111,7 +121,17 @@ def diff_followup(request: Request, req: DiffFollowupRequest):
                     f"=== PREVIOUS VERSION (v{prev['version']}, effective {prev['effective_date']}) ===\n{previous_full}"
                 ),
             },
-        ], client_ip=get_remote_address(request))
+        ]
+        if req.provider != "openai":
+            # Local/LM Studio path -- mirrors generate_answer()'s provider branch in
+            # retrieval.py, so "local" mode works here exactly like the main /ask
+            # pipeline instead of falling into chat_completion (OpenAI->NaraRouter
+            # only) and erroring about missing keys.
+            resp = local_client.chat.completions.create(
+                model=resolve_model(req.provider, model), messages=messages, temperature=0
+            )
+        else:
+            resp, _ = chat_completion(messages, client_ip=get_remote_address(request))
         explanation = (resp.choices[0].message.content or "").strip()
 
         result = {

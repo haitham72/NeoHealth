@@ -217,10 +217,13 @@ def test_diff_followup_route_skips_llm_on_cache_hit(diff_route_env, conn):
 
     first = diff_router.diff_followup(fake_request(), req)
     assert first["available"] is True
+    assert "cache_hit" not in first  # fresh generation carries no marker
     diff_route_env.assert_called_once()
 
     second = diff_router.diff_followup(fake_request(), req)
-    assert second == first
+    assert second["available"] is True
+    assert second["explanation"] == first["explanation"]
+    assert second["cache_hit"] is True  # hit path marks itself for the UI's cache note
     diff_route_env.assert_called_once()  # still just once -- second call was a cache hit
 
 
@@ -358,3 +361,69 @@ def test_get_redis_cooldown_resets_after_window_elapses(monkeypatch):
     client = diff_cache._get_redis()
     assert client is fake_client
     fake_client.ping.assert_called_once()
+
+
+# --- provider="local" must route to LM Studio, not chat_completion -----------------
+#
+# Regression test for the reported bug: with the frontend's provider selector on
+# "local", "See what changed" called chat_completion() directly (OpenAI->NaraRouter
+# only) and failed with "can't find OpenAI or NaraRouter key". It must use
+# local_client instead -- the same branch generate_answer() already has.
+
+
+def _mock_local_client(monkeypatch, router_module, content: str = "Local explanation."):
+    """Patches router_module.local_client with a MagicMock shaped like the OpenAI SDK
+    chain (local_client.chat.completions.create(...)) and returns the create mock."""
+    mock_response = MagicMock()
+    mock_response.choices = [MagicMock(message=MagicMock(content=content))]
+    fake_local = MagicMock()
+    fake_local.chat.completions.create.return_value = mock_response
+    monkeypatch.setattr(router_module, "local_client", fake_local)
+    return fake_local.chat.completions.create
+
+
+def test_diff_followup_local_provider_uses_local_client(diff_route_env, conn, monkeypatch):
+    """provider="local" must call local_client with the requested model and never
+    touch chat_completion (the OpenAI->NaraRouter path)."""
+    create_mock = _mock_local_client(monkeypatch, diff_router)
+    current_id, _ = _seed_pair_with_text(conn)
+    req = DiffFollowupRequest(
+        doc_code="DHA/HRS/HPSD/ST-14", current_document_id=current_id,
+        cited_text="some cited text", cited_page=1, question="What changed locally?",
+        provider="local", model="test-local-model",
+    )
+
+    result = diff_router.diff_followup(fake_request(), req)
+
+    assert result["available"] is True
+    assert result["explanation"] == "Local explanation."
+    create_mock.assert_called_once()
+    assert create_mock.call_args.kwargs["model"] == "test-local-model"
+    diff_route_env.assert_not_called()
+
+    # A repeat local call is a cache hit: marked, and no second LLM call.
+    repeat = diff_router.diff_followup(fake_request(), req)
+    assert repeat["cache_hit"] is True
+    assert repeat["explanation"] == "Local explanation."
+    create_mock.assert_called_once()
+
+
+def test_diff_followup_openai_provider_still_uses_chat_completion(diff_route_env, conn, monkeypatch):
+    """Default provider="openai" keeps the existing chat_completion path -- the local
+    branch must not hijack it. local_client raising here proves it was never touched."""
+    monkeypatch.setattr(
+        diff_router, "local_client",
+        MagicMock(chat=MagicMock(completions=MagicMock(
+            create=MagicMock(side_effect=AssertionError("local_client must not be called"))))),
+    )
+    current_id, _ = _seed_pair_with_text(conn)
+    req = DiffFollowupRequest(
+        doc_code="DHA/HRS/HPSD/ST-14", current_document_id=current_id,
+        cited_text="some cited text", cited_page=1, question="What changed openly?",
+    )
+
+    result = diff_router.diff_followup(fake_request(), req)
+
+    assert result["available"] is True
+    assert result["explanation"] == "Fresh explanation from the LLM."
+    diff_route_env.assert_called_once()

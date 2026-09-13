@@ -30,6 +30,12 @@ export interface Abstained {
   reason: string;
   top_score?: number;
   run_id?: string | null;
+  /** Present and true only on guardrail off-topic abstentions: reason is already a
+   * complete polite sentence, rendered directly instead of the legacy frame. */
+  off_topic?: boolean;
+  /** Present only on guardrail off-topic abstentions: clickable in-scope
+   * alternatives, rendered through the normal FollowUpQuestions component. */
+  suggested_questions?: string[];
 }
 
 export interface BBox {
@@ -96,6 +102,8 @@ export interface DiffFollowupRequest {
   cited_text: string;
   cited_page: number;
   question: string;
+  provider?: Provider;
+  model?: string;
 }
 
 export interface DiffFollowupResult {
@@ -103,6 +111,7 @@ export interface DiffFollowupResult {
   previous_version: string;
   previous_effective_date: string;
   explanation: string;
+  cache_hit?: boolean;
 }
 
 export interface DiffFollowupUnavailable {
@@ -118,6 +127,8 @@ export interface CrossCheckRegulationRequest {
   cited_text: string;
   cited_page: number;
   question: string;
+  provider?: Provider;
+  model?: string;
 }
 
 export interface RelatedOfficialDocument {
@@ -131,6 +142,7 @@ export interface CrossCheckRegulationResult {
   available: true;
   explanation: string;
   documents: RelatedOfficialDocument[];
+  cache_hit?: boolean;
 }
 
 export interface CrossCheckRegulationUnavailable {

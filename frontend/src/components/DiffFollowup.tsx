@@ -1,4 +1,5 @@
 import { useDiffFollowup } from "../api/client";
+import type { Provider } from "../types/api";
 
 interface Props {
   docCode: string;
@@ -6,12 +7,14 @@ interface Props {
   citedText: string;
   citedPage: number;
   question: string;
+  provider: Provider;
+  model?: string;
 }
 
 /* On-demand follow-up, never fetched automatically: "See what changed" only fires when
    the user asks for it, matching the same abstain-unless-asked principle as the rest of
    the answer pipeline -- no extra latency or cost on every query. */
-export default function DiffFollowup({ docCode, currentDocumentId, citedText, citedPage, question }: Props) {
+export default function DiffFollowup({ docCode, currentDocumentId, citedText, citedPage, question, provider, model }: Props) {
   const mutation = useDiffFollowup();
 
   if (!mutation.data && !mutation.isPending && !mutation.isError) {
@@ -26,6 +29,8 @@ export default function DiffFollowup({ docCode, currentDocumentId, citedText, ci
               cited_text: citedText,
               cited_page: citedPage,
               question,
+              provider,
+              model,
             })
           }
           className="inline-flex items-center gap-2 rounded-md px-4 py-2.5 text-[12px] font-semibold tracking-[0.04em] uppercase transition-colors"
@@ -84,6 +89,7 @@ export default function DiffFollowup({ docCode, currentDocumentId, citedText, ci
           <p className="mt-2 text-[11px]" style={{ color: "var(--ink-faint)" }}>
             Compared full text against v{mutation.data.previous_version} &middot; {mutation.data.previous_effective_date}
           </p>
+          {mutation.data.cache_hit && <div className="mt-1 text-[11px]" style={{ color: "var(--ink-faint)" }}>Served from cache</div>}
         </div>
       )}
     </div>

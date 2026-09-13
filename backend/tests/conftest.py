@@ -164,12 +164,28 @@ def redis_conn(monkeypatch):
     automatically, and no state can leak between tests."""
     import fakeredis
 
-    from app.core import answer_cache, diff_cache
+    from app.core import answer_cache, cross_check_cache, diff_cache
 
     fake = fakeredis.FakeStrictRedis(decode_responses=True)
     monkeypatch.setattr(answer_cache, "_get_redis", lambda: fake)
     monkeypatch.setattr(diff_cache, "_get_redis", lambda: fake)
+    monkeypatch.setattr(cross_check_cache, "_get_redis", lambda: fake)
     return fake
+
+
+@pytest.fixture(autouse=True)
+def _reset_rate_limiter():
+    """Route tests call rate-limited handlers directly with fake_request(), whose
+    client IP is always the same ("testclient") -- without a reset, slowapi's
+    in-memory limiter accumulates hits across the whole pytest process and trips
+    "10/minute" once the suite grows past 10 direct route calls, failing tests for
+    reasons unrelated to what they exercise. Reset before every test so each one
+    starts with a fresh budget."""
+    from app.core.limiter import limiter
+
+    limiter._storage.reset()
+    yield
+    limiter._storage.reset()
 
 
 @pytest.fixture
