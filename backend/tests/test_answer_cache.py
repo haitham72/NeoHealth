@@ -8,8 +8,11 @@ OpenAI call -- semantic similarity between "questions" is controlled purely by w
 fixed vector each test passes as query_vec, exactly like the rest of this test suite
 controls retrieval relevance (see stub_llm's docstring).
 """
+from unittest.mock import MagicMock
+
 import pytest
 
+from app.core import retrieval
 from app.core.answer_cache import (
     MATCH_EXACT,
     MATCH_SEMANTIC,
@@ -19,7 +22,7 @@ from app.core.answer_cache import (
     store_answer_cache,
 )
 from app.core.config import CACHE_HIT_THRESHOLD
-from tests.conftest import QUERY_VEC, orthogonal_vec
+from tests.conftest import QUERY_VEC, orthogonal_vec, seed_official_doc
 
 
 @pytest.fixture(autouse=True)
@@ -28,12 +31,25 @@ def _clean_answer_cache(conn):
     entry must survive regardless of what the caller's own read-transaction later does),
     which means the `conn` fixture's usual rollback-on-teardown can't undo them. Without
     this, one test's cached row would leak into the next test's row-count assertions in
-    the same real test_regulense database. Truncate before each test in this file rather
-    than changing the shared `conn` fixture (other test files never hit this table)."""
-    with conn.cursor() as cur:
-        cur.execute("TRUNCATE answer_cache RESTART IDENTITY")
-    conn.commit()
+    the same real test_regulense database.
+
+    Task 4's tests additionally seed real documents/chunks and then exercise the actual
+    answer_question()/answer_question_stream() pipeline on the SAME connection, and that
+    pipeline's cache-store call also commits -- which permanently commits whatever else
+    was inserted earlier in that same transaction (the seeded documents/chunks), not
+    just the answer_cache row. Truncating `documents` (ON DELETE CASCADE takes `chunks`
+    and `diff_cache` with it) alongside `answer_cache`, both before AND after each test
+    in this file, keeps that leakage from reaching other test files' row-count
+    assertions (e.g. test_api_tier.py's corpus-stats test) regardless of run order."""
+    def _reset():
+        with conn.cursor() as cur:
+            cur.execute("TRUNCATE answer_cache RESTART IDENTITY")
+            cur.execute("TRUNCATE documents RESTART IDENTITY CASCADE")
+        conn.commit()
+
+    _reset()
     yield
+    _reset()
 
 # A real-shaped answered result, mirroring retrieval.answer_question()'s non-abstained
 # return dict (app/core/retrieval.py) closely enough to exercise storage/stripping
@@ -227,3 +243,232 @@ def test_decorate_cached_result_merges_cache_metadata():
     assert decorated["run_id"] == "run-live-999"
     # decorate_cached_result must not mutate the stored result in place
     assert "cache_hit" not in hit["result"]
+
+
+# ---------------------------------------------------------------------------
+# Task 4: wiring the cache into retrieval.answer_question / answer_question_stream
+# so a hit genuinely short-circuits the pipeline before any OpenAI call.
+#
+# spy_llm below deliberately mirrors conftest.py's stub_llm (embed() always returns
+# QUERY_VEC) but as call-counting MagicMocks -- the whole point of these tests is
+# proving generate_answer/embed were, or were NOT, invoked, which a plain lambda
+# stub can't tell you.
+# ---------------------------------------------------------------------------
+
+
+class _Spies:
+    def __init__(self, embed, generate_answer):
+        self.embed = embed
+        self.generate_answer = generate_answer
+
+
+@pytest.fixture
+def spy_llm(monkeypatch):
+    embed_spy = MagicMock(side_effect=lambda text: QUERY_VEC)
+    generate_spy = MagicMock(return_value=("Stub answer text.", retrieval.CHAT_MODEL))
+    monkeypatch.setattr(retrieval, "embed", embed_spy)
+    monkeypatch.setattr(retrieval, "generate_answer", generate_spy)
+    return _Spies(embed_spy, generate_spy)
+
+
+def _run_stream(gen) -> tuple[list[dict], dict]:
+    """Drains an answer_question_stream() generator and returns (all_events, the
+    "done" step's result dict)."""
+    events = list(gen)
+    for event in events:
+        if event.get("step") == "done":
+            return events, event["result"]
+    raise AssertionError(f"stream never yielded a 'done' step; got: {events}")
+
+
+RATIO_QUESTION = "What is the nurse-to-patient ratio?"
+RATIO_PARAPHRASE = "What's the required nurse to patient ratio?"
+
+
+# --- answer_question (non-streaming) ---------------------------------------------
+
+
+def test_answer_question_redis_hit_skips_llm(conn, redis_conn, spy_llm):
+    store_answer_cache(conn, RATIO_QUESTION, QUERY_VEC, False, None, SAMPLE_RESULT)
+
+    result = retrieval.answer_question(conn, RATIO_QUESTION, superseded_filter=False, authority_filter=None)
+
+    assert result["cache_hit"] is True
+    assert result["cache_layer"] == "redis"
+    assert result["answer"] == SAMPLE_RESULT["answer"]
+    spy_llm.embed.assert_not_called()
+    spy_llm.generate_answer.assert_not_called()
+
+
+def test_answer_question_postgres_hit_skips_llm_and_backfills_redis(conn, redis_conn, spy_llm):
+    store_answer_cache(conn, RATIO_QUESTION, QUERY_VEC, False, None, SAMPLE_RESULT)
+
+    result = retrieval.answer_question(conn, RATIO_PARAPHRASE, superseded_filter=False, authority_filter=None)
+
+    assert result["cache_hit"] is True
+    assert result["cache_layer"] == "postgres"
+    assert result["cache_similarity"] >= CACHE_HIT_THRESHOLD
+    assert result["answer"] == SAMPLE_RESULT["answer"]
+    spy_llm.generate_answer.assert_not_called()
+    # Redis-only probe missed on the paraphrase's own key -- embed() was needed once
+    # to run the full (Redis-then-Postgres) lookup.
+    spy_llm.embed.assert_called_once()
+
+    # The Postgres hit must have backfilled Redis under the paraphrase's own key.
+    backfilled = lookup_answer_cache(conn, RATIO_PARAPHRASE, None, False, None)
+    assert backfilled is not None
+    assert backfilled["cache_layer"] == "redis"
+
+
+def test_answer_question_full_miss_calls_llm_and_stores(conn, redis_conn, spy_llm):
+    seed_official_doc(conn, score=0.6)
+
+    result = retrieval.answer_question(
+        conn, "What are the telehealth standards?", superseded_filter=False, provider="local",
+    )
+
+    assert result["abstained"] is False
+    assert "cache_hit" not in result
+    spy_llm.generate_answer.assert_called_once()
+    spy_llm.embed.assert_called_once()
+
+    # A successful non-abstained answer must have been stored -- a fresh Redis-only
+    # probe for the same question/filters now hits without touching the LLM again.
+    stored = lookup_answer_cache(conn, "What are the telehealth standards?", None, False, None)
+    assert stored is not None
+    assert stored["cache_layer"] == "redis"
+
+
+def test_answer_question_filter_mismatch_calls_llm(conn, redis_conn, spy_llm):
+    """A cache entry under one filter combo must not leak into a different one --
+    the mismatch must fall through to a real (LLM) answer, not an empty/None result."""
+    question = "What are the telehealth standards?"
+    seed_official_doc(conn, score=0.6)
+    store_answer_cache(conn, question, QUERY_VEC, False, None, SAMPLE_RESULT)
+
+    result = retrieval.answer_question(conn, question, superseded_filter=True, provider="local")
+
+    assert result["abstained"] is False
+    assert "cache_hit" not in result
+    spy_llm.generate_answer.assert_called_once()
+
+
+def test_answer_question_history_present_skips_cache_entirely(conn, redis_conn, spy_llm):
+    question = "What are the telehealth standards?"
+    seed_official_doc(conn, score=0.6)
+    store_answer_cache(conn, question, QUERY_VEC, False, None, SAMPLE_RESULT)
+
+    result = retrieval.answer_question(
+        conn, question, superseded_filter=False, provider="local",
+        history=[{"role": "user", "content": "earlier turn"}],
+    )
+
+    assert result["abstained"] is False
+    assert "cache_hit" not in result
+    spy_llm.generate_answer.assert_called_once()
+    spy_llm.embed.assert_called_once()
+
+    # The history-bearing turn must not have overwritten the existing cache entry --
+    # a fresh probe for the same question/filters still returns the ORIGINAL stored
+    # answer, not the freshly-generated stub text.
+    still_cached = lookup_answer_cache(conn, question, None, False, None)
+    assert still_cached is not None
+    assert still_cached["result"]["answer"] == SAMPLE_RESULT["answer"]
+
+
+# --- answer_question_stream --------------------------------------------------------
+
+
+def test_stream_redis_hit_skips_llm(conn, redis_conn, spy_llm):
+    store_answer_cache(conn, RATIO_QUESTION, QUERY_VEC, False, None, SAMPLE_RESULT)
+
+    events, result = _run_stream(
+        retrieval.answer_question_stream(conn, RATIO_QUESTION, superseded_filter=False, authority_filter=None)
+    )
+
+    assert result["cache_hit"] is True
+    assert result["cache_layer"] == "redis"
+    steps = [e["step"] for e in events]
+    assert "cache_hit" in steps
+    assert "embedding_query" not in steps
+    assert "searching_sources" not in steps
+    spy_llm.embed.assert_not_called()
+    spy_llm.generate_answer.assert_not_called()
+
+
+def test_stream_postgres_hit_skips_llm_and_backfills_redis(conn, redis_conn, spy_llm):
+    store_answer_cache(conn, RATIO_QUESTION, QUERY_VEC, False, None, SAMPLE_RESULT)
+
+    events, result = _run_stream(
+        retrieval.answer_question_stream(conn, RATIO_PARAPHRASE, superseded_filter=False, authority_filter=None)
+    )
+
+    assert result["cache_hit"] is True
+    assert result["cache_layer"] == "postgres"
+    steps = [e["step"] for e in events]
+    assert "searching_sources" not in steps
+    spy_llm.generate_answer.assert_not_called()
+    spy_llm.embed.assert_called_once()
+
+    backfilled = lookup_answer_cache(conn, RATIO_PARAPHRASE, None, False, None)
+    assert backfilled is not None
+    assert backfilled["cache_layer"] == "redis"
+
+
+def test_stream_full_miss_calls_llm_and_stores(conn, redis_conn, spy_llm):
+    seed_official_doc(conn, score=0.6)
+
+    events, result = _run_stream(
+        retrieval.answer_question_stream(
+            conn, "What are the telehealth standards?", superseded_filter=False, provider="local",
+        )
+    )
+
+    assert result["abstained"] is False
+    assert "cache_hit" not in result
+    steps = [e["step"] for e in events]
+    assert "cache_miss" in steps
+    spy_llm.generate_answer.assert_called_once()
+    spy_llm.embed.assert_called_once()
+
+    stored = lookup_answer_cache(conn, "What are the telehealth standards?", None, False, None)
+    assert stored is not None
+    assert stored["cache_layer"] == "redis"
+
+
+def test_stream_filter_mismatch_calls_llm(conn, redis_conn, spy_llm):
+    question = "What are the telehealth standards?"
+    seed_official_doc(conn, score=0.6)
+    store_answer_cache(conn, question, QUERY_VEC, False, None, SAMPLE_RESULT)
+
+    events, result = _run_stream(
+        retrieval.answer_question_stream(conn, question, superseded_filter=True, provider="local")
+    )
+
+    assert result["abstained"] is False
+    assert "cache_hit" not in result
+    spy_llm.generate_answer.assert_called_once()
+
+
+def test_stream_history_present_skips_cache_entirely(conn, redis_conn, spy_llm):
+    question = "What are the telehealth standards?"
+    seed_official_doc(conn, score=0.6)
+    store_answer_cache(conn, question, QUERY_VEC, False, None, SAMPLE_RESULT)
+
+    events, result = _run_stream(
+        retrieval.answer_question_stream(
+            conn, question, superseded_filter=False, provider="local",
+            history=[{"role": "user", "content": "earlier turn"}],
+        )
+    )
+
+    assert result["abstained"] is False
+    assert "cache_hit" not in result
+    steps = [e["step"] for e in events]
+    assert "checking_cache" not in steps
+    assert "cache_hit" not in steps
+    spy_llm.generate_answer.assert_called_once()
+
+    still_cached = lookup_answer_cache(conn, question, None, False, None)
+    assert still_cached is not None
+    assert still_cached["result"]["answer"] == SAMPLE_RESULT["answer"]

@@ -178,6 +178,38 @@ def _flag_low_confidence(top_score: float) -> None:
         run.add_metadata({"top_score": top_score})
 
 
+def _flag_cache_event(
+    *,
+    hit: bool,
+    layer: str | None = None,
+    match_mode: str | None = None,
+    similarity: float | None = None,
+    superseded_filter: bool,
+    authority_filter: str | None,
+    matched_question: str | None = None,
+    skipped_reason: str | None = None,
+) -> None:
+    """Tags the current trace with cache hit/miss/skip info, mirroring
+    _flag_low_confidence's idiom -- lets the LangSmith dashboard filter on
+    "cache-hit"/"cache-miss" and inspect layer/mode/similarity/filters in metadata.
+    `skipped_reason` covers cache-ineligible asks (currently just history-bearing
+    follow-ups) that never even attempt a lookup."""
+    run = get_current_run_tree()
+    if not run:
+        return
+    run.add_tags(["cache-hit" if hit else "cache-miss"])
+    run.add_metadata({
+        "cache_hit": hit,
+        "cache_layer": layer,
+        "cache_match_mode": match_mode,  # answer_cache.MATCH_EXACT | MATCH_SEMANTIC | None
+        "cache_similarity": similarity,
+        "cache_superseded_filter": superseded_filter,
+        "cache_authority_filter": authority_filter,
+        "cache_matched_question": matched_question,
+        "cache_skipped_reason": skipped_reason,
+    })
+
+
 def _current_run_id() -> str | None:
     """The LangSmith run id for the current answer_question()/answer_question_stream()
     trace, so the frontend can later attach user feedback to this exact run via
@@ -494,10 +526,54 @@ def answer_question_stream(
     the exact same order, but yielding a step event between each stage so a caller can
     show live progress. Ends with {"step": "done", "result": <same dict answer_question()
     would return>}. answer_question() itself is untouched — this is purely additive
-    instrumentation for the streaming UI, not a second implementation of the pipeline."""
+    instrumentation for the streaming UI, not a second implementation of the pipeline.
+
+    Cache gate (Task 4): a history-bearing ask is cache-ineligible per the locked
+    decision (a follow-up's "right" answer depends on prior turns, which the cache
+    key doesn't capture) and skips straight to the pipeline below unchanged. Otherwise
+    a cheap Redis-only probe (no embedding call) runs first -- the fastest possible
+    path, zero OpenAI calls -- and only on a miss there does embed() run so a second,
+    full lookup (Redis again, then Postgres semantic) can use the vector; that same
+    query_vec is then reused for the real search below rather than re-embedding."""
     _name_run_by_model(provider, model)
+
+    cache_eligible = not history
+    if cache_eligible:
+        yield {"step": "checking_cache"}
+        hit = lookup_answer_cache(conn, question, None, superseded_filter, authority_filter)
+        if hit:
+            _flag_cache_event(
+                hit=True, layer=hit["cache_layer"], match_mode=hit["match_mode"],
+                similarity=hit["similarity"], superseded_filter=superseded_filter,
+                authority_filter=authority_filter, matched_question=hit["matched_question"],
+            )
+            result = decorate_cached_result(hit, _current_run_id())
+            yield {"step": "cache_hit", "detail": "exact"}
+            yield {"step": "done", "result": result}
+            return
+    else:
+        _flag_cache_event(
+            hit=False, superseded_filter=superseded_filter, authority_filter=authority_filter,
+            skipped_reason="history",
+        )
+
     yield {"step": "embedding_query"}
     query_vec = embed(question)
+
+    if cache_eligible:
+        hit = lookup_answer_cache(conn, question, query_vec, superseded_filter, authority_filter)
+        if hit:
+            _flag_cache_event(
+                hit=True, layer=hit["cache_layer"], match_mode=hit["match_mode"],
+                similarity=hit["similarity"], superseded_filter=superseded_filter,
+                authority_filter=authority_filter, matched_question=hit["matched_question"],
+            )
+            result = decorate_cached_result(hit, _current_run_id())
+            yield {"step": "cache_hit", "detail": f"{hit['similarity']:.3f}"}
+            yield {"step": "done", "result": result}
+            return
+        _flag_cache_event(hit=False, superseded_filter=superseded_filter, authority_filter=authority_filter)
+        yield {"step": "cache_miss"}
 
     yield {"step": "searching_sources"}
     semantic_results = semantic_search(conn, query_vec, superseded_filter, CANDIDATES_PER_METHOD, authority_filter)
@@ -589,24 +665,28 @@ def answer_question_stream(
     else:
         answer_text, active_model = generate_answer(question, filtered_chunks, provider, model, tier, history)
 
-    yield {
-        "step": "done",
-        "result": {
-            "abstained": False,
-            "answer": answer_text,
-            "model_used": active_model,
-            "top_score": top_score,
-            "confidence_tier": tier,
-            "document": document,
-            "page": top_chunk["page"],
-            "page_end": top_chunk["page_end"],
-            "heading_path": top_chunk["heading_path"],
-            "bboxes": top_chunk["bboxes"],
-            "superseded_excluded": superseded_excluded,
-            "retrieved_chunks": fused,
-            "run_id": _current_run_id(),
-        },
+    result = {
+        "abstained": False,
+        "answer": answer_text,
+        "model_used": active_model,
+        "top_score": top_score,
+        "confidence_tier": tier,
+        "document": document,
+        "page": top_chunk["page"],
+        "page_end": top_chunk["page_end"],
+        "heading_path": top_chunk["heading_path"],
+        "bboxes": top_chunk["bboxes"],
+        "superseded_excluded": superseded_excluded,
+        "retrieved_chunks": fused,
+        "run_id": _current_run_id(),
     }
+    if cache_eligible:
+        try:
+            store_answer_cache(conn, question, query_vec, superseded_filter, authority_filter, result)
+        except Exception:
+            pass  # best-effort cache write; never let it break a successfully-generated answer
+
+    yield {"step": "done", "result": result}
 
 
 @traceable(run_type="chain", name="answer_question", process_inputs=_without_conn)
@@ -614,9 +694,44 @@ def answer_question(
     conn, question: str, superseded_filter: bool, provider: str = "openai", model: str | None = None,
     authority_filter: str | None = None, history: list[dict] | None = None, client_ip: str | None = None,
 ) -> dict:
-    """Returns a dict describing either an abstention or a full answer with citation."""
+    """Returns a dict describing either an abstention or a full answer with citation.
+
+    Cache gate (Task 4): mirrors answer_question_stream()'s gate structure (see its
+    docstring) minus the progress yields -- a cheap Redis-only probe first, embed()
+    only on a miss, then a full (Redis + Postgres) lookup with that vector before
+    falling through to the real pipeline. History-bearing asks skip the cache
+    entirely per the locked decision."""
     _name_run_by_model(provider, model)
+
+    cache_eligible = not history
+    if cache_eligible:
+        hit = lookup_answer_cache(conn, question, None, superseded_filter, authority_filter)
+        if hit:
+            _flag_cache_event(
+                hit=True, layer=hit["cache_layer"], match_mode=hit["match_mode"],
+                similarity=hit["similarity"], superseded_filter=superseded_filter,
+                authority_filter=authority_filter, matched_question=hit["matched_question"],
+            )
+            return decorate_cached_result(hit, _current_run_id())
+    else:
+        _flag_cache_event(
+            hit=False, superseded_filter=superseded_filter, authority_filter=authority_filter,
+            skipped_reason="history",
+        )
+
     query_vec = embed(question)
+
+    if cache_eligible:
+        hit = lookup_answer_cache(conn, question, query_vec, superseded_filter, authority_filter)
+        if hit:
+            _flag_cache_event(
+                hit=True, layer=hit["cache_layer"], match_mode=hit["match_mode"],
+                similarity=hit["similarity"], superseded_filter=superseded_filter,
+                authority_filter=authority_filter, matched_question=hit["matched_question"],
+            )
+            return decorate_cached_result(hit, _current_run_id())
+        _flag_cache_event(hit=False, superseded_filter=superseded_filter, authority_filter=authority_filter)
+
     semantic_results = semantic_search(conn, query_vec, superseded_filter, CANDIDATES_PER_METHOD, authority_filter)
     lexical_results = lexical_search(conn, question, superseded_filter, CANDIDATES_PER_METHOD, authority_filter)
     fused = rrf_fuse(semantic_results, lexical_results, TOP_N_FOR_ANSWER)
@@ -646,7 +761,7 @@ def answer_question(
 
     answer_text, active_model = generate_answer(question, filtered_chunks, provider, model, tier, history, client_ip)
 
-    return {
+    result = {
         "abstained": False,
         "answer": answer_text,
         "model_used": active_model,
@@ -661,3 +776,10 @@ def answer_question(
         "retrieved_chunks": fused,
         "run_id": _current_run_id(),
     }
+    if cache_eligible:
+        try:
+            store_answer_cache(conn, question, query_vec, superseded_filter, authority_filter, result)
+        except Exception:
+            pass  # best-effort cache write; never let it break a successfully-generated answer
+
+    return result
