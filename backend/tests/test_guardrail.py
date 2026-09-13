@@ -196,9 +196,11 @@ def test_off_topic_abstains_in_stream(conn, redis_conn, monkeypatch):
     gen.assert_not_called()
 
 
-def test_guardrail_uses_local_client_for_local_provider(conn, redis_conn, monkeypatch):
-    """Same provider routing as generation: provider='local' must reach LM Studio,
-    never chat_completion (the OpenAI->NaraRouter chain)."""
+def test_guardrail_always_uses_gpt_even_for_local_provider(conn, redis_conn, monkeypatch):
+    """Judge quality beats provider parity: a locally-generated answer is still
+    gated by the OpenAI->NaraRouter chain, never the local model -- measured live,
+    local qwen 4B misjudged specific operational questions that gpt-4o-mini accepted
+    with identical retrieved evidence."""
     seed_official_doc(conn, score=0.7)
     monkeypatch.setattr(retrieval, "embed", lambda text: QUERY_VEC)
     gen = MagicMock(return_value=("Stub answer text.", "test-local-model"))
@@ -206,14 +208,12 @@ def test_guardrail_uses_local_client_for_local_provider(conn, redis_conn, monkey
 
     mock_response = MagicMock()
     mock_response.choices = [MagicMock(message=MagicMock(content=RELEVANT_VERDICT))]
-    fake_local = MagicMock()
-    fake_local.chat.completions.create.return_value = mock_response
-    # guardrail imports local_client deferred from retrieval at call time (to avoid
-    # a circular import), so patching retrieval's attribute is what takes effect --
-    # guardrail holds no top-level binding of its own.
-    monkeypatch.setattr(retrieval, "local_client", fake_local)
-    chat_spy = MagicMock(side_effect=AssertionError("chat_completion must not be called"))
+    chat_spy = MagicMock(return_value=(mock_response, "gpt-4o-mini"))
     monkeypatch.setattr(retrieval, "chat_completion", chat_spy)
+    fake_local = MagicMock()
+    fake_local.chat.completions.create.side_effect = AssertionError(
+        "the local model must never judge; generation is its only role here")
+    monkeypatch.setattr(retrieval, "local_client", fake_local)
 
     result = retrieval.answer_question(
         conn, "What are the telehealth standards?", superseded_filter=False,
@@ -221,8 +221,6 @@ def test_guardrail_uses_local_client_for_local_provider(conn, redis_conn, monkey
     )
 
     assert result["abstained"] is False
-    create = fake_local.chat.completions.create
-    create.assert_called_once()
-    assert create.call_args.kwargs["model"] == "test-local-model"
-    chat_spy.assert_not_called()
+    chat_spy.assert_called_once()  # the guardrail verdict
+    fake_local.chat.completions.create.assert_not_called()
     gen.assert_called_once()

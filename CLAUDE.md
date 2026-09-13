@@ -86,17 +86,21 @@ the top-fused chunk's semantic score (`CONFIDENCE_HIGH`/`MEDIUM`/`LOW` constants
 the top of `app/core/retrieval.py`, recalibrated against real query sampling — read the
 comment above them before changing the numbers) → abstain below the floor (free, no LLM
 spend); otherwise an LLM relevance guardrail (`app/core/guardrail.py` — question + top-3
-chunk texts, capped 400-token verdict, same selected provider/model) runs before the
+chunk texts, capped 400-token verdict, ALWAYS gpt-4o-mini via the OpenAI→NaraRouter
+chain, never the answer's provider: measured live, local qwen 4B misjudged specific
+operational questions gpt-4o-mini accepted with identical evidence; exact mined
+questions skip the judge entirely via `is_mined_question`) runs before the
 expensive generation call, because embedding proximity genuinely misfires on playful
 off-topic questions (measured: "What shoe size is Messi?" scores ~0.23). OFF_TOPIC
 abstains with a backend-composed fixed sentence + optional clickable alternatives
 (`off_topic: true`, `suggested_followups`), no sources, no generation. Those
 alternatives are the *mined* questions (same semantic match as the answered-path
-suggestions) with a `SUGGESTION_MIN_SIMILARITY` cosine floor (0.62, calibrated:
-in-scope matches score 0.64-0.79, the hard "DHA staff shortages during a pandemic"
-off-topic case tops out at 0.58) -- the guardrail's own invented list stays in the
-payload as `suggested_questions` for API compatibility but is no longer rendered: it
-isn't scope-checked and once recommended a question the same guard then rejected.
+suggestions), returned as the closest 3 regardless of score -- `SUGGESTION_MIN_SIMILARITY`
+defaults to 0 (raise it, e.g. 0.62, to filter weak matches) -- and every question
+already asked earlier in the conversation is excluded, so clicking through suggestions
+doesn't loop the same questions. The guardrail's own invented list stays in the payload
+as `suggested_questions` for API compatibility but is no longer rendered: it isn't
+scope-checked and once recommended a question the same guard then rejected.
 Fail-open at every level (exception/unparseable verdict/off-allowlist redirect → old numeric path),
 and deliberately *after* the answer-cache gate so cached answers still cost zero calls.
 Otherwise drop chunks that didn't individually clear the floor (`filter_weak_chunks`, with an

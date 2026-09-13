@@ -72,13 +72,23 @@ def _build_messages(question: str, chunks: list[dict]) -> list[dict]:
         {
             "role": "system",
             "content": (
-                "You are a relevance judge for a Q&A system that answers ONLY about "
-                "UAE health regulation (Dubai Health Authority, Department of Health "
-                "Abu Dhabi, MOHAP -- licensing, facilities, telehealth, patient "
-                "safety, clinical standards, health data). The excerpts below are the "
-                "nearest retrieved passages; they may be weak or unrelated -- judge "
-                "the QUESTION's domain, not how well the excerpts match. Reply with "
-                "EXACTLY these four labeled lines and nothing else:\n"
+                "You are a domain gate for a Q&A system that answers questions about "
+                "UAE healthcare regulation and practice (Dubai Health Authority, "
+                "Department of Health Abu Dhabi, MOHAP). Anything a licensed UAE "
+                "healthcare facility or professional must know or do is IN SCOPE: "
+                "licensing and renewal, scopes of practice, staffing and qualification "
+                "requirements, facility design, capacity and equipment, clinical "
+                "standards and care protocols, documentation, fees, timelines, "
+                "inspections, patient safety, health data -- and such questions are IN "
+                "SCOPE even when very specific, operational, or administrative. The "
+                "excerpts below are the nearest retrieved passages; they may be weak "
+                "or unrelated. If the question is about UAE healthcare, verdict "
+                "RELEVANT. If any excerpt is from a UAE health authority document and "
+                "addresses the question's subject even partially, verdict MUST be "
+                "RELEVANT. Only OFF_TOPIC when the question's subject is clearly "
+                "outside healthcare (sports, celebrities, politics, weather, travel, "
+                "unrelated law, etc.). Reply with EXACTLY these four labeled lines and "
+                "nothing else:\n"
                 "VERDICT: RELEVANT or OFF_TOPIC\n"
                 "SUBJECT: what the question is about, in a few words "
                 "(e.g. \"a footballer's shoe size\")\n"
@@ -145,38 +155,34 @@ def build_offtopic_message(subject: str, redirect: str) -> str:
 
 
 def check_relevance(
-    question: str, chunks: list[dict], provider: str = "openai",
-    model: str | None = None, client_ip: str | None = None,
+    question: str, chunks: list[dict], client_ip: str | None = None,
 ) -> dict:
     """Returns {"is_relevant", "message", "suggestions"}. Never raises to the
     pipeline: any failure (model down, timeout, fallback unconfigured) logs and
     returns relevant=True so the numeric tiering decides, as before.
 
-    Uses the caller's selected provider/model -- the same routing generate_answer()
-    uses (local_client for non-openai, chat_completion's OpenAI->NaraRouter chain
-    otherwise) -- so "local" mode keeps this gate on-machine too. Retrieval-side
-    imports are deferred to call time: this module is imported BY retrieval.py, so a
-    top-level import back would be circular."""
-    from app.core.retrieval import chat_completion, local_client, resolve_model
+    Judge model: ALWAYS chat_completion's OpenAI->NaraRouter chain (currently
+    gpt-4o-mini), never the caller's selected provider. Measured live: local qwen 4B
+    rejected specific operational questions ("How many students may one school nurse
+    cover...") that gpt-4o-mini accepts with identical retrieved evidence, and a bad
+    verdict silently suppresses a real answer -- the one place a weaker model is not
+    an acceptable trade. The verdict is 4 short lines, so the cost stays trivial.
+    Exact mined questions skip this gate altogether (see
+    retrieval._safe_check_relevance). Retrieval-side imports are deferred to call
+    time: this module is imported BY retrieval.py, so a top-level import back would
+    be circular."""
+    from app.core.retrieval import chat_completion
 
     try:
         messages = _build_messages(question, chunks)
-        if provider != "openai":
-            active_model = resolve_model(provider, model)
-            resp = local_client.chat.completions.create(
-                model=active_model, messages=messages, temperature=0,
-                max_tokens=GUARDRAIL_MAX_TOKENS,
-            )
-            content = resp.choices[0].message.content or ""
-        else:
-            resp, _ = chat_completion(
-                messages, client_ip=client_ip, max_tokens=GUARDRAIL_MAX_TOKENS,
-            )
-            # chat_completion is non-streaming here, but NaraRouter has emitted a
-            # trailing chunk with an empty choices list before -- guard the same way
-            # the streaming path does rather than indexing blindly.
-            choices = getattr(resp, "choices", None) or []
-            content = (choices[0].message.content if choices else None) or ""
+        resp, _ = chat_completion(
+            messages, client_ip=client_ip, max_tokens=GUARDRAIL_MAX_TOKENS,
+        )
+        # chat_completion is non-streaming here, but NaraRouter has emitted a
+        # trailing chunk with an empty choices list before -- guard the same way
+        # the streaming path does rather than indexing blindly.
+        choices = getattr(resp, "choices", None) or []
+        content = (choices[0].message.content if choices else None) or ""
         parsed = parse_verdict(content)
         if parsed["is_relevant"]:
             return {"is_relevant": True, "message": "", "suggestions": []}

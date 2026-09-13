@@ -22,7 +22,7 @@ from app.core.answer_cache import (
 )
 from app.core.cache_evict import sign_cache_token
 from app.core.config import CACHE_HIT_THRESHOLD
-from app.services.suggestions import find_suggested_followups
+from app.services.suggestions import find_suggested_followups, is_mined_question
 
 logger = logging.getLogger(__name__)
 
@@ -192,18 +192,27 @@ def _flag_low_confidence(top_score: float) -> None:
         run.add_metadata({"top_score": top_score})
 
 
-def _safe_check_relevance(question: str, fused: list[dict], provider: str, model: str | None,
-                           client_ip: str | None) -> dict:
+def _safe_check_relevance(question: str, fused: list[dict], client_ip: str | None,
+                           conn=None) -> dict:
     """Fail-open wrapper around guardrail.check_relevance -- mirrors the _safe_lookup
     wrappers' philosophy one level up: the guardrail is advisory, the numeric tiering
     is authoritative. Any exception (model down, timeout, fallback unconfigured)
     logs and returns relevant=True so the pipeline proceeds exactly as it did before
     the guardrail existed. (An unparseable verdict is already normalized to relevant
-    inside check_relevance itself.)"""
+    inside check_relevance itself.)
+
+    Mined-suggestion bypass: a question that is one of the pre-vetted
+    suggested_questions skips the judge entirely. Those are corpus-grounded by
+    construction, and a weak judge model otherwise rejects questions the product
+    itself recommended -- measured live: local qwen 4B called "How many students may
+    one full-time school nurse cover..." out of scope while gpt-4o-mini accepted it
+    with identical retrieved evidence."""
     from app.core.guardrail import check_relevance
 
+    if conn is not None and is_mined_question(conn, question):
+        return {"is_relevant": True, "message": "", "suggestions": []}
     try:
-        return check_relevance(question, fused, provider, model, client_ip)
+        return check_relevance(question, fused, client_ip)
     except Exception:
         logger.warning("relevance guardrail failed; falling back to numeric tiering", exc_info=True)
         return {"is_relevant": True, "message": "", "suggestions": []}
@@ -233,7 +242,7 @@ def _call_with_heartbeats(store: list, fn, *args, **kwargs):
 
 def _attach_suggested_followups(
     conn, question: str, result: dict, superseded_filter: bool,
-    authority_filter: str | None, query_vec=None,
+    authority_filter: str | None, query_vec=None, history: list[dict] | None = None,
 ) -> None:
     """Attaches mined, corpus-grounded follow-ups to a result AT SERVE TIME.
 
@@ -244,7 +253,11 @@ def _attach_suggested_followups(
     exact-key Redis probe), the stored embedding is fetched from Postgres -- a
     plain indexed read, still zero LLM calls. Best-effort: on any failure the
     stale key is dropped so the frontend falls back to its static bank instead
-    of showing frozen or wrong suggestions."""
+    of showing frozen or wrong suggestions.
+
+    Every question already asked in this conversation (history), not just the
+    current one, is excluded from the match -- otherwise clicking through
+    suggestions rotates the same three questions forever."""
     try:
         if query_vec is None:
             query_vec = fetch_cached_query_embedding(conn, question, superseded_filter, authority_filter)
@@ -252,7 +265,13 @@ def _attach_suggested_followups(
             result.pop("suggested_followups", None)
             return
         authority = (result.get("document") or {}).get("authority")
-        result["suggested_followups"] = find_suggested_followups(conn, query_vec, question, authority)
+        asked_before = [
+            turn.get("content") or ""
+            for turn in (history or [])
+            if isinstance(turn, dict) and turn.get("role") == "user"
+        ]
+        result["suggested_followups"] = find_suggested_followups(
+            conn, query_vec, question, authority, exclude_questions=asked_before)
     except Exception:
         logger.warning("suggested follow-ups failed; frontend static bank will cover", exc_info=True)
         result.pop("suggested_followups", None)
@@ -686,7 +705,7 @@ def answer_question_stream(
             )
             result = decorate_cached_result(hit, _current_run_id())
             _attach_cache_token(result, hit, question, superseded_filter, authority_filter)
-            _attach_suggested_followups(conn, question, result, superseded_filter, authority_filter)
+            _attach_suggested_followups(conn, question, result, superseded_filter, authority_filter, history=history)
             yield {"step": "cache_hit", "detail": "exact"}
             yield {"step": "done", "result": result}
             return
@@ -704,7 +723,7 @@ def answer_question_stream(
             )
             result = decorate_cached_result(hit, _current_run_id())
             _attach_cache_token(result, hit, question, superseded_filter, authority_filter)
-            _attach_suggested_followups(conn, question, result, superseded_filter, authority_filter, query_vec)
+            _attach_suggested_followups(conn, question, result, superseded_filter, authority_filter, query_vec, history=history)
             yield {"step": "cache_hit", "detail": f"{hit['similarity']:.3f}"}
             yield {"step": "done", "result": result}
             return
@@ -736,7 +755,7 @@ def answer_question_stream(
         }
         return
     yield {"step": "checking_relevance"}
-    guard = _safe_check_relevance(question, fused, provider, model, client_ip)
+    guard = _safe_check_relevance(question, fused, client_ip, conn)
     if not guard["is_relevant"]:
         result = {
             "abstained": True,
@@ -750,7 +769,7 @@ def answer_question_stream(
         # The guard's own invented suggestions remain in the payload for API
         # compatibility but are no longer what the UI renders -- they are not
         # scope-checked and once recommended a question the same guard then rejected.
-        _attach_suggested_followups(conn, question, result, superseded_filter, authority_filter, query_vec)
+        _attach_suggested_followups(conn, question, result, superseded_filter, authority_filter, query_vec, history=history)
         yield {"step": "done", "result": result}
         return
     if tier == "low":
@@ -849,7 +868,7 @@ def answer_question_stream(
         "retrieved_chunks": fused,
         "run_id": _current_run_id(),
     }
-    _attach_suggested_followups(conn, question, result, superseded_filter, authority_filter, query_vec)
+    _attach_suggested_followups(conn, question, result, superseded_filter, authority_filter, query_vec, history=history)
     if cache_eligible:
         try:
             store_answer_cache(conn, question, query_vec, superseded_filter, authority_filter, result)
@@ -885,7 +904,7 @@ def answer_question(
             )
             result = decorate_cached_result(hit, _current_run_id())
             _attach_cache_token(result, hit, question, superseded_filter, authority_filter)
-            _attach_suggested_followups(conn, question, result, superseded_filter, authority_filter)
+            _attach_suggested_followups(conn, question, result, superseded_filter, authority_filter, history=history)
             return result
 
     query_vec = embed(question)
@@ -900,7 +919,7 @@ def answer_question(
             )
             result = decorate_cached_result(hit, _current_run_id())
             _attach_cache_token(result, hit, question, superseded_filter, authority_filter)
-            _attach_suggested_followups(conn, question, result, superseded_filter, authority_filter, query_vec)
+            _attach_suggested_followups(conn, question, result, superseded_filter, authority_filter, query_vec, history=history)
             return result
         _flag_cache_event(hit=False, superseded_filter=superseded_filter, authority_filter=authority_filter)
 
@@ -920,7 +939,7 @@ def answer_question(
             "top_score": top_score,
             "run_id": _current_run_id(),
         }
-    guard = _safe_check_relevance(question, fused, provider, model, client_ip)
+    guard = _safe_check_relevance(question, fused, client_ip, conn)
     if not guard["is_relevant"]:
         result = {
             "abstained": True,
@@ -932,7 +951,7 @@ def answer_question(
         }
         # Same as the streaming path: mined, corpus-grounded alternatives with the
         # similarity floor, never the guard's unvalidated inventions.
-        _attach_suggested_followups(conn, question, result, superseded_filter, authority_filter, query_vec)
+        _attach_suggested_followups(conn, question, result, superseded_filter, authority_filter, query_vec, history=history)
         return result
     if tier == "low":
         _flag_low_confidence(top_score)
@@ -962,7 +981,7 @@ def answer_question(
         "retrieved_chunks": fused,
         "run_id": _current_run_id(),
     }
-    _attach_suggested_followups(conn, question, result, superseded_filter, authority_filter, query_vec)
+    _attach_suggested_followups(conn, question, result, superseded_filter, authority_filter, query_vec, history=history)
     if cache_eligible:
         try:
             store_answer_cache(conn, question, query_vec, superseded_filter, authority_filter, result)

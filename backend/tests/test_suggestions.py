@@ -169,16 +169,44 @@ def test_match_prefers_same_authority_excludes_asked_and_limits(conn):
     assert set(got[0]) == {"question", "doc_code", "document_id", "pages", "section"}
 
 
-def test_match_floor_excludes_unrelated(conn):
-    """Default floor (0.62, calibrated): the hard off-topic case scores ~0.58 and must
-    be dropped, while genuine in-scope matches (~0.64+) survive."""
+def test_match_returns_closest_by_default(conn):
+    """No floor by default: the closest suggestions are returned even when the match
+    is weak, so the conversation always has somewhere to go."""
+    dha = seed_document(conn, doc_code="DHA/A", authority="Dubai Health Authority")
+    _insert_suggestion(conn, "Strong match?", vec(0.75), dha)
+    _insert_suggestion(conn, "Weak-but-closest fallback?", vec(0.58), dha)
+
+    got = find_suggested_followups(conn, QUERY_VEC, "asked?", authority="Dubai Health Authority")
+
+    assert [g["question"] for g in got] == ["Strong match?", "Weak-but-closest fallback?"]
+
+
+def test_match_floor_filters_when_configured(conn):
+    """The calibrated floor stays available via config/env for deployments that
+    prefer silence over a weak match."""
     dha = seed_document(conn, doc_code="DHA/A", authority="Dubai Health Authority")
     _insert_suggestion(conn, "Strong match?", vec(0.75), dha)
     _insert_suggestion(conn, "Pandemic-style hard negative?", vec(0.58), dha)
 
-    got = find_suggested_followups(conn, QUERY_VEC, "asked?", authority="Dubai Health Authority")
+    got = find_suggested_followups(
+        conn, QUERY_VEC, "asked?", authority="Dubai Health Authority", min_similarity=0.62)
 
     assert [g["question"] for g in got] == ["Strong match?"]
+
+
+def test_match_excludes_questions_asked_earlier(conn):
+    """Clicking a suggestion must not rotate the same questions back in: every prior
+    user question in the conversation is excluded, not just the current one."""
+    dha = seed_document(conn, doc_code="DHA/A", authority="Dubai Health Authority")
+    _insert_suggestion(conn, "First suggestion?", vec(0.8), dha)
+    _insert_suggestion(conn, "Second suggestion?", vec(0.7), dha)
+    _insert_suggestion(conn, "Third suggestion?", vec(0.6), dha)
+
+    got = find_suggested_followups(
+        conn, QUERY_VEC, "current?", authority="Dubai Health Authority",
+        exclude_questions=["First suggestion?", "Second suggestion?"])
+
+    assert [g["question"] for g in got] == ["Third suggestion?"]
 
 
 def test_match_failure_returns_empty():
@@ -227,6 +255,35 @@ def test_off_topic_carries_mined_suggestions_not_guard_inventions(conn, redis_co
     assert result["suggested_questions"] == [
         "What are the licensing requirements?", "How long is a license valid?"]
     gen.assert_not_called()
+
+
+def test_off_topic_skips_questions_already_asked_in_history(conn, redis_conn, monkeypatch):
+    """History exclusion is wired end-to-end: a suggestion the user already asked
+    earlier in the conversation never comes back, even on off-topic answers."""
+    from tests.conftest import seed_official_doc
+
+    seed_official_doc(conn, score=0.7)
+    with conn.cursor() as cur:
+        cur.execute("SELECT id FROM documents LIMIT 1")
+        doc_id = cur.fetchone()[0]
+    _insert_suggestion(conn, "Already asked question?", vec(0.8), doc_id)
+    _insert_suggestion(conn, "Fresh question?", vec(0.7), doc_id)
+    monkeypatch.setattr(retrieval, "embed", lambda text: QUERY_VEC)
+    monkeypatch.setattr(
+        retrieval, "generate_answer",
+        MagicMock(side_effect=AssertionError("generation must not run")),
+    )
+    _mock_off_topic_guardrail(monkeypatch)
+
+    result = retrieval.answer_question(
+        conn, "What shoe size is Messi?", superseded_filter=True,
+        history=[
+            {"role": "user", "content": "Already asked question?"},
+            {"role": "assistant", "content": "Stub answer."},
+        ],
+    )
+
+    assert [s["question"] for s in result["suggested_followups"]] == ["Fresh question?"]
 
 
 def test_answer_includes_mined_followups(conn, redis_conn, monkeypatch):
@@ -367,3 +424,29 @@ def test_cache_hit_without_stored_embedding_drops_stale_suggestions(conn, redis_
     assert first["suggested_followups"]
     assert repeat.get("cache_hit") is True
     assert "suggested_followups" not in repeat
+
+
+def test_mined_question_skips_the_guardrail(conn, redis_conn, monkeypatch):
+    """A question the product itself recommended is corpus-grounded by construction and
+    must never be rejected by the judge -- measured live: local qwen 4B called a mined
+    DHA school-nurse question out of scope while gpt-4o-mini accepted it with the same
+    retrieved evidence. The guardrail must not even be called for it."""
+    from tests.conftest import seed_official_doc
+
+    seed_official_doc(conn, score=0.7)
+    with conn.cursor() as cur:
+        cur.execute("SELECT id FROM documents LIMIT 1")
+        doc_id = cur.fetchone()[0]
+    mined = "How long is the DHA license valid?"
+    _insert_suggestion(conn, mined, QUERY_VEC, doc_id)
+    monkeypatch.setattr(retrieval, "embed", lambda text: QUERY_VEC)
+    gen = MagicMock(return_value=("Stub answer text.", retrieval.CHAT_MODEL))
+    monkeypatch.setattr(retrieval, "generate_answer", gen)
+    guard_spy = MagicMock(side_effect=AssertionError("guardrail must be skipped for mined questions"))
+    monkeypatch.setattr(retrieval, "chat_completion", guard_spy)
+
+    result = retrieval.answer_question(conn, mined, superseded_filter=True)
+
+    assert result["abstained"] is False
+    gen.assert_called_once()
+    guard_spy.assert_not_called()
