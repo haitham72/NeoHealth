@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import * as pdfjsLib from "pdfjs-dist";
+import * as pdfjsLib from "pdfjs-dist/legacy/build/pdf.min.mjs";
 import type { PDFDocumentProxy } from "pdfjs-dist/types/src/display/api";
-import workerSrc from "pdfjs-dist/build/pdf.worker.min.mjs?url";
+import workerSrc from "pdfjs-dist/legacy/build/pdf.worker.min.mjs?url";
 import type { RetrievedChunk } from "../types/api";
 import { apiUrl } from "../api/url";
 
