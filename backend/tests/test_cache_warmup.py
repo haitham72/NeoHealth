@@ -9,10 +9,11 @@ monkeypatches answer_cache._get_redis directly to simulate a total outage, exact
 test_answer_cache.py's own tests do for the equivalent scenario.
 """
 import json
+from unittest.mock import MagicMock
 
 import pytest
 
-from app.core import answer_cache
+from app.core import answer_cache, retrieval
 from app.core.answer_cache import lookup_answer_cache
 from app.core.cache_warmup import warm_all_caches
 from app.core.diff_cache import lookup_diff_cache
@@ -212,3 +213,41 @@ def test_warm_all_caches_survives_postgres_read_failure():
     result = warm_all_caches(_BoomConnection())
 
     assert result == {"ask_rows_loaded": 0, "diff_rows_loaded": 0}
+
+
+# ---------------------------------------------------------------------------
+# End-to-end: this branch's actual headline claim, composed rather than tested in
+# isolated halves. test_warm_all_caches_loads_every_answer_cache_row (above) proves
+# warm-load populates Redis; test_answer_cache.py's test_answer_question_redis_hit_
+# skips_llm proves a Redis hit skips the LLM. Both halves happen to go through the
+# same write_redis_cache/redis_cache_key functions, so this composition is very
+# unlikely to be broken today -- but it's the single headline claim of the whole
+# branch (boot -> warm-load -> the first live request is already a cache hit with
+# zero LLM/embedding calls), so it's worth proving directly rather than by inference.
+# ---------------------------------------------------------------------------
+
+
+def test_warm_load_then_first_live_request_is_already_a_cache_hit(conn, redis_conn, monkeypatch):
+    """Insert an answer_cache row as if written by a previous process's lifetime (same
+    as _insert_answer_cache_row's other callers), run the boot warm-load, then make the
+    very first live call to retrieval.answer_question() for that exact question/filters
+    -- with embed()/generate_answer() spied so a real LLM call would fail the test
+    outright rather than just going unnoticed."""
+    question = "What is the nurse-to-patient ratio?"
+    _insert_answer_cache_row(conn, question_raw=question, answer_text="Answer one.")
+
+    warm_result = warm_all_caches(conn)
+    assert warm_result["ask_rows_loaded"] == 1
+
+    embed_spy = MagicMock(side_effect=AssertionError("embed() must not run on a warm-loaded cache hit"))
+    generate_spy = MagicMock(side_effect=AssertionError("generate_answer() must not run on a warm-loaded cache hit"))
+    monkeypatch.setattr(retrieval, "embed", embed_spy)
+    monkeypatch.setattr(retrieval, "generate_answer", generate_spy)
+
+    result = retrieval.answer_question(conn, question, superseded_filter=False, authority_filter=None)
+
+    assert result["cache_hit"] is True
+    assert result["cache_layer"] == "redis"
+    assert result["answer"] == "Answer one."
+    embed_spy.assert_not_called()
+    generate_spy.assert_not_called()

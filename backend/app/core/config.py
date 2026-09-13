@@ -33,9 +33,12 @@ ALLOWED_ORIGIN_REGEX = os.environ.get(
     r"https://frontend-[a-z0-9]+-system722-1077s-projects\.vercel\.app",
 )
 
-# Worst-case ceiling on API calls/day (every /ask or /ask-stream call, including
-# provider="local", costs at least one embeddings call -- see app.core.retrieval.embed()).
-# Not a precision budget, just a bound on the blast radius of a runaway client.
+# Worst-case ceiling on API calls/day. Originally exact -- every /ask or /ask-stream
+# call, including provider="local", cost at least one embeddings call (see
+# app.core.retrieval.embed()) -- but a cache hit (Redis L1 or Postgres L2) now makes
+# zero embedding/LLM calls, so this is a conservative over-count for cache-eligible
+# traffic rather than an exact ceiling. Not a precision budget either way, just a bound
+# on the blast radius of a runaway client.
 DAILY_OPENAI_CALL_CAP = int(os.environ.get("DAILY_OPENAI_CALL_CAP", "300"))
 
 # Optional L1 exact-key cache. When unset, ask still uses Postgres L2 semantic cache.

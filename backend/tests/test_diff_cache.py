@@ -11,9 +11,11 @@ _get_redis() to the same fake client.
 from unittest.mock import MagicMock
 
 import pytest
+import redis as redis_module
 
 from app.api.routers import diff as diff_router
 from app.api.schemas.diff import DiffFollowupRequest
+from app.core import diff_cache
 from app.core.diff_cache import lookup_diff_cache, store_diff_cache
 from tests.conftest import fake_request, seed_document
 
@@ -257,13 +259,15 @@ def test_diff_followup_route_no_previous_version_never_cached(diff_route_env, co
 # --- real Postgres-level failure must not leave the connection aborted -------------
 #
 # Same finding as test_answer_cache.py's equivalent test: _safe_lookup_diff_cache
-# (backend/app/api/routers/diff.py) must roll back on failure, not just catch-and-log,
-# because release_connection() (app/core/db.py) never rolls back before putconn() --
+# (backend/app/api/routers/diff.py) must roll back on failure, not just catch-and-log --
 # an aborted transaction left on `conn` would fail every later statement on this same
 # connection within the request (increment_daily_usage, the `SELECT version FROM
-# documents` right after, load_full_document_text() x2) and would then poison a later,
-# unrelated request via the pool. Triggers a REAL SQL error against the real test
-# Postgres connection (not a mock of lookup_diff_cache) to prove this.
+# documents` right after, load_full_document_text() x2), which is what would actually
+# surface as a 500 to the user. (The connection pool's own _putconn() already rolls
+# back a non-idle connection -- or closes it -- before it can reach a later, unrelated
+# request, so this is a within-request concern, not a cross-request poisoning risk.)
+# Triggers a REAL SQL error against the real test Postgres connection (not a mock of
+# lookup_diff_cache) to prove this.
 #
 # Exercised directly against _safe_lookup_diff_cache rather than through the full
 # /diff-followup route: find_previous_version() runs BEFORE the cache check in the
@@ -303,3 +307,54 @@ def test_safe_lookup_diff_cache_survives_real_postgres_failure_and_rolls_back(co
     with conn.cursor() as cur:
         cur.execute("SELECT 1")
         assert cur.fetchone() == (1,)
+
+
+# --- Redis connect-failure cooldown must lapse, not latch permanently --------------
+#
+# Mirrors test_answer_cache.py's equivalent test exactly -- diff_cache.py carries the
+# same _get_redis()/_redis_degraded_until cooldown fix as answer_cache.py (final-review
+# finding: a permanent `_redis_failed` latch never let a recovered Redis start working
+# again without a process restart).
+
+
+def test_get_redis_cooldown_resets_after_window_elapses(monkeypatch):
+    monkeypatch.setattr(diff_cache, "REDIS_URL", "redis://fake-host:6379/0")
+    monkeypatch.setattr(diff_cache, "_redis_client", None)
+    monkeypatch.setattr(diff_cache, "_redis_degraded_until", 0.0)
+
+    class _FakeTime:
+        now = 1_000_000.0
+
+        def time(self):
+            return self.now
+
+    fake_time = _FakeTime()
+    monkeypatch.setattr(diff_cache, "time", fake_time)
+
+    def _boom(*args, **kwargs):
+        raise ConnectionError("simulated connect failure")
+
+    monkeypatch.setattr(redis_module, "from_url", _boom)
+
+    # First call: the connect attempt fails and trips the cooldown.
+    assert diff_cache._get_redis() is None
+    assert diff_cache._redis_is_degraded() is True
+
+    # Still inside the cooldown window: _get_redis() must short-circuit on the
+    # timestamp check alone -- redis.from_url stays patched to _boom for the whole
+    # test, so a real reconnect attempt here would raise instead of cleanly
+    # returning None if the latch weren't actually being honored.
+    fake_time.now += diff_cache.REDIS_COOLDOWN_SECONDS - 1
+    assert diff_cache._get_redis() is None
+
+    # Past the cooldown window: the degraded state must have lifted on its own, and a
+    # now-healthy reconnect attempt succeeds -- proving recovery needs no process
+    # restart, unlike the old permanent `_redis_failed` latch.
+    fake_time.now += 2
+    fake_client = MagicMock()
+    monkeypatch.setattr(redis_module, "from_url", lambda *a, **kw: fake_client)
+
+    assert diff_cache._redis_is_degraded() is False
+    client = diff_cache._get_redis()
+    assert client is fake_client
+    fake_client.ping.assert_called_once()

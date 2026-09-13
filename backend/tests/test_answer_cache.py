@@ -11,8 +11,9 @@ controls retrieval relevance (see stub_llm's docstring).
 from unittest.mock import MagicMock
 
 import pytest
+import redis as redis_module
 
-from app.core import retrieval
+from app.core import answer_cache, retrieval
 from app.core.answer_cache import (
     MATCH_EXACT,
     MATCH_SEMANTIC,
@@ -555,10 +556,12 @@ def test_stream_survives_cache_lookup_failure(conn, redis_conn, spy_llm, monkeyp
 # leaves `conn` in Postgres's aborted-transaction state ("current transaction is
 # aborted, commands ignored until end of transaction block"). Catching that and
 # returning None is not enough on its own: the very next statement on that same
-# connection (semantic_search, called right after this "graceful" fallback) would
-# itself fail against the still-aborted transaction -- and since release_connection()
-# never rolls back before putconn() (app/core/db.py), the connection would also go
-# back to the pool still aborted, silently poisoning a later, unrelated request.
+# connection within this request (semantic_search, called right after this "graceful"
+# fallback) would itself fail against the still-aborted transaction -- which is what
+# would actually surface as a 500 to the user. (The connection pool's own _putconn()
+# already rolls back a non-idle connection -- or closes it -- before it can reach a
+# later, unrelated request, so this is a within-request concern, not a cross-request
+# poisoning risk.)
 #
 # This test triggers a REAL SQL error against the real test Postgres connection (not a
 # mock of the whole function) to leave `conn` genuinely aborted, then confirms both
@@ -602,3 +605,59 @@ def test_answer_question_survives_real_postgres_failure_and_rolls_back(conn, spy
     with conn.cursor() as cur:
         cur.execute("SELECT 1")
         assert cur.fetchone() == (1,)
+
+
+# --- Redis connect-failure cooldown must lapse, not latch permanently --------------
+#
+# Final-review finding: _get_redis() used to set a permanent `_redis_failed = True`
+# latch on any connect failure -- once tripped, Redis stayed disabled for the rest of
+# the process's lifetime even if it recovered seconds later (e.g. a cold-start TLS
+# hiccup against Upstash during the boot warm-load, the very first thing that touches
+# Redis). Replaced with a timestamped cooldown (_redis_degraded_until), mirroring
+# retrieval.py's OPENAI_COOLDOWN_SECONDS/_openai_degraded_until idiom exactly. This
+# test proves the cooldown actually lapses (time.time() is monkeypatched -- via the
+# module's own `time` binding -- rather than sleeping for real) and that a genuinely
+# recovered Redis starts working again afterward without a process restart.
+
+
+def test_get_redis_cooldown_resets_after_window_elapses(monkeypatch):
+    monkeypatch.setattr(answer_cache, "REDIS_URL", "redis://fake-host:6379/0")
+    monkeypatch.setattr(answer_cache, "_redis_client", None)
+    monkeypatch.setattr(answer_cache, "_redis_degraded_until", 0.0)
+
+    class _FakeTime:
+        now = 1_000_000.0
+
+        def time(self):
+            return self.now
+
+    fake_time = _FakeTime()
+    monkeypatch.setattr(answer_cache, "time", fake_time)
+
+    def _boom(*args, **kwargs):
+        raise ConnectionError("simulated connect failure")
+
+    monkeypatch.setattr(redis_module, "from_url", _boom)
+
+    # First call: the connect attempt fails and trips the cooldown.
+    assert answer_cache._get_redis() is None
+    assert answer_cache._redis_is_degraded() is True
+
+    # Still inside the cooldown window: _get_redis() must short-circuit on the
+    # timestamp check alone -- redis.from_url stays patched to _boom for the whole
+    # test, so a real reconnect attempt here would raise instead of cleanly
+    # returning None if the latch weren't actually being honored.
+    fake_time.now += answer_cache.REDIS_COOLDOWN_SECONDS - 1
+    assert answer_cache._get_redis() is None
+
+    # Past the cooldown window: the degraded state must have lifted on its own, and a
+    # now-healthy reconnect attempt succeeds -- proving recovery needs no process
+    # restart, unlike the old permanent `_redis_failed` latch.
+    fake_time.now += 2
+    fake_client = MagicMock()
+    monkeypatch.setattr(redis_module, "from_url", lambda *a, **kw: fake_client)
+
+    assert answer_cache._redis_is_degraded() is False
+    client = answer_cache._get_redis()
+    assert client is fake_client
+    fake_client.ping.assert_called_once()

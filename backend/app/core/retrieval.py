@@ -37,10 +37,6 @@ CONFIDENCE_HIGH = 0.55    # comfortably inside the observed on-topic range
 CONFIDENCE_MEDIUM = 0.35  # captures weaker-but-real matches down to the observed floor
 CONFIDENCE_LOW = 0.15     # abstain below this -- sits above the observed 0.123 off-topic ceiling
 
-# Re-exported alias so tests/callers can read the cache floor next to confidence tiers.
-# Actual default lives in config.py (env-overridable).
-CACHE_HIT_THRESHOLD = CACHE_HIT_THRESHOLD
-
 # Generation-only local model support: retrieval/embeddings always stay on OpenAI
 # (the corpus is already embedded at 1536-dim; a local embedding model would need a
 # different dimension and a full re-embed -- a separate, bigger task). Only the final
@@ -228,14 +224,15 @@ def _safe_lookup_answer_cache(
     A real Postgres-level failure mid-lookup (e.g. a lock timeout during the SELECT,
     or during the hit_count UPDATE/commit in _postgres_lookup) leaves `conn`'s
     transaction in Postgres's aborted state -- every subsequent statement on that same
-    connection would then fail too (semantic_search right after this "graceful"
-    fallback, in the real pipeline), and the connection would go back to the pool via
-    release_connection() still aborted, silently poisoning a later, unrelated request
-    that checks it out next (release_connection() itself never rolls back -- see
-    app/core/db.py). So on any failure here, roll back before returning None, not just
-    log-and-swallow. The rollback itself is wrapped too: a sufficiently broken
-    connection can raise on rollback as well, and that must not become a new uncaught
-    exception in what's supposed to be the safe fallback path."""
+    connection within this request would then fail too (semantic_search right after
+    this "graceful" fallback, in the real pipeline), which is what would actually
+    surface as a 500 to the user. (The connection pool's own _putconn() already rolls
+    back a non-idle connection -- or closes it -- before it can reach a later, unrelated
+    request, so this is a within-request concern, not a cross-request poisoning risk.)
+    So on any failure here, roll back before returning None, not just log-and-swallow.
+    The rollback itself is wrapped too: a sufficiently broken connection can raise on
+    rollback as well, and that must not become a new uncaught exception in what's
+    supposed to be the safe fallback path."""
     try:
         return lookup_answer_cache(conn, question, query_vec, superseded_filter, authority_filter)
     except Exception:

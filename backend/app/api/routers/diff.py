@@ -25,11 +25,12 @@ def _safe_lookup_diff_cache(conn, current_document_id: int, previous_document_id
     cache miss so the route falls straight through to the real pipeline.
 
     A real Postgres-level failure mid-lookup leaves `conn`'s transaction aborted --
-    every later statement on this same connection (the `SELECT version FROM documents`
-    right after this call, load_full_document_text() x2, etc.) would then fail too, and
-    the connection would go back to the pool via release_connection() still aborted
-    (release_connection() itself never rolls back -- see app/core/db.py), silently
-    poisoning a later, unrelated request that checks it out next. So any failure here
+    every later statement on this same connection within this request (the `SELECT
+    version FROM documents` right after this call, load_full_document_text() x2, etc.)
+    would then fail too, which is what would actually surface as a 500 to the user.
+    (The connection pool's own _putconn() already rolls back a non-idle connection --
+    or closes it -- before it can reach a later, unrelated request, so this is a
+    within-request concern, not a cross-request poisoning risk.) So any failure here
     rolls back before returning None, not just logs-and-swallows. The rollback itself
     is wrapped too, since a sufficiently broken connection can raise on rollback as
     well, and that must not become a new uncaught exception in the fallback path."""

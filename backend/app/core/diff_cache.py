@@ -16,6 +16,7 @@ from __future__ import annotations
 import hashlib
 import json
 import logging
+import time
 
 from app.core.answer_cache import normalize_question
 from app.core.config import CACHE_REDIS_TTL_SECONDS, REDIS_URL
@@ -25,7 +26,24 @@ logger = logging.getLogger(__name__)
 CACHE_KEY_PREFIX = "regulense:diff_cache:v1:"
 
 _redis_client = None
-_redis_failed = False
+# A connect failure is very often transient (a flaky Upstash TLS hiccup at boot, not a
+# permanently-dead Redis), so this is a timestamped cooldown rather than a permanent
+# latch -- mirrors app.core.retrieval's OPENAI_COOLDOWN_SECONDS/_openai_degraded_until
+# idiom exactly (and answer_cache.py's identical copy of the same idiom). Without this,
+# a single bad connect attempt (e.g. during the boot warm-load, the very first thing
+# that touches Redis) would disable the whole Redis layer for the rest of the
+# process's lifetime even if Redis recovers seconds later.
+REDIS_COOLDOWN_SECONDS = 60
+_redis_degraded_until = 0.0
+
+
+def _redis_is_degraded() -> bool:
+    return time.time() < _redis_degraded_until
+
+
+def _mark_redis_degraded() -> None:
+    global _redis_degraded_until
+    _redis_degraded_until = time.time() + REDIS_COOLDOWN_SECONDS
 
 
 def redis_cache_key(current_document_id: int, previous_document_id: int, question: str) -> str:
@@ -35,26 +53,32 @@ def redis_cache_key(current_document_id: int, previous_document_id: int, questio
 
 
 def _get_redis():
-    """Lazy Redis client. Returns None when REDIS_URL is unset or Redis is unreachable
-    so L2 Postgres still works alone (Render free without Upstash, tests without Redis).
-    Deliberately a separate module-scoped client/flag pair from answer_cache.py's --
-    each cache module owns its own connect-failure state, same one-file-per-cache
-    convention as the rest of this codebase."""
-    global _redis_client, _redis_failed
-    if not REDIS_URL or _redis_failed:
+    """Lazy Redis client. Returns None when REDIS_URL is unset, Redis is unreachable, or
+    a prior failure's cooldown hasn't lapsed yet -- so L2 Postgres still works alone
+    (Render free without Upstash, tests without Redis). socket_timeout bounds every
+    subsequent blocking call (get/setex) too, not just the initial connect -- without
+    it a stalled mid-operation connection could hang the calling request forever, a
+    failure mode the surrounding try/except in _redis_get/_redis_set can't catch since
+    it never raises. Deliberately a separate module-scoped client/cooldown pair from
+    answer_cache.py's -- each cache module owns its own connect-failure state, same
+    one-file-per-cache convention as the rest of this codebase."""
+    global _redis_client
+    if not REDIS_URL or _redis_is_degraded():
         return None
     if _redis_client is not None:
         return _redis_client
     try:
         import redis
 
-        client = redis.from_url(REDIS_URL, decode_responses=True, socket_connect_timeout=1.0)
+        client = redis.from_url(
+            REDIS_URL, decode_responses=True, socket_connect_timeout=1.0, socket_timeout=2.0,
+        )
         client.ping()
         _redis_client = client
         return _redis_client
     except Exception as exc:
         logger.warning("Redis unavailable (%s); continuing with Postgres diff cache only", exc)
-        _redis_failed = True
+        _mark_redis_degraded()
         return None
 
 

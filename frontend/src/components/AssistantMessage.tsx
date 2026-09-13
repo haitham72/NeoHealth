@@ -68,7 +68,7 @@ export default function AssistantMessage({ message, streamingText, steps, isStre
 
         {message && response && !response.abstained && (
           <>
-            {response.model_used === OPENAI_FALLBACK_MODEL && (
+            {response.model_used === OPENAI_FALLBACK_MODEL && !response.cache_hit && (
               <div
                 className="mb-2 inline-flex items-center gap-1.5 rounded-sm px-2.5 py-1 text-[11px] font-semibold tracking-[0.02em]"
                 style={{ color: "var(--ink-dim)", background: "var(--paper)", border: "1px dashed var(--rule)" }}
