@@ -1,13 +1,12 @@
 """Tests for app.core.cache_warmup's unconditional boot warm-load of every Postgres
-answer_cache row into Redis, so the first request of a new interview session is already
-a Redis hit for every previously-answered question rather than only the second ask.
+answer_cache and diff_cache row into Redis, so the first request of a new interview
+session is already a Redis hit for every previously-answered question / diff-followup
+rather than only the second ask.
 
-Redis is faked via the `redis_conn` fixture (tests/conftest.py); the Redis-unavailable
-test instead monkeypatches answer_cache._get_redis to simulate a total outage, exactly
-like test_answer_cache.py's own tests do for the equivalent scenario.
-
-diff_cache is out of scope for this task (see cache_warmup.py's docstring) -- these
-tests only cover the answer_cache side, and assert diff_rows_loaded is stubbed at 0.
+Redis is faked via the `redis_conn` fixture (tests/conftest.py), which patches both
+answer_cache.py's and diff_cache.py's _get_redis(); the Redis-unavailable test instead
+monkeypatches answer_cache._get_redis directly to simulate a total outage, exactly like
+test_answer_cache.py's own tests do for the equivalent scenario.
 """
 import json
 
@@ -16,7 +15,8 @@ import pytest
 from app.core import answer_cache
 from app.core.answer_cache import lookup_answer_cache
 from app.core.cache_warmup import warm_all_caches
-from tests.conftest import vec
+from app.core.diff_cache import lookup_diff_cache
+from tests.conftest import seed_document, vec
 
 
 @pytest.fixture(autouse=True)
@@ -28,6 +28,24 @@ def _clean_answer_cache(conn):
         cur.execute("TRUNCATE answer_cache RESTART IDENTITY")
     conn.commit()
     yield
+
+
+@pytest.fixture(autouse=True)
+def _clean_diff_cache(conn):
+    """diff_cache rows require FK-valid document ids, so isolating them means clearing
+    `documents` too. TRUNCATE documents ... CASCADE already clears diff_cache along
+    with it (confirmed directly against the test DB; TRUNCATE's CASCADE truncates any
+    table with an FK into the named table, independent of that FK's own ON DELETE
+    behavior) -- no separate `TRUNCATE diff_cache` needed, same as test_diff_cache.py's
+    equivalent fixture."""
+    def _reset():
+        with conn.cursor() as cur:
+            cur.execute("TRUNCATE documents RESTART IDENTITY CASCADE")
+        conn.commit()
+
+    _reset()
+    yield
+    _reset()
 
 
 def _insert_answer_cache_row(
@@ -58,6 +76,43 @@ def _insert_answer_cache_row(
                 superseded_filter,
                 authority_filter,
                 vec(1.0),
+                json.dumps(result),
+            ),
+        )
+    conn.commit()
+
+
+def _insert_diff_cache_row(
+    conn,
+    *,
+    current_document_id: int,
+    previous_document_id: int,
+    question_raw: str,
+    explanation: str = "An explanation.",
+) -> None:
+    """Inserts directly via SQL rather than through store_diff_cache() -- same
+    rationale as _insert_answer_cache_row: this simulates a row written in a *previous*
+    process's lifetime, which is the whole point of a boot warm-load."""
+    result = {
+        "available": True,
+        "previous_version": "3",
+        "previous_effective_date": "2024-01-01",
+        "explanation": explanation,
+    }
+    with conn.cursor() as cur:
+        cur.execute(
+            """
+            INSERT INTO diff_cache (
+                current_document_id, previous_document_id, question_normalized,
+                question_raw, result_json
+            )
+            VALUES (%s, %s, %s, %s, %s::jsonb)
+            """,
+            (
+                current_document_id,
+                previous_document_id,
+                answer_cache.normalize_question(question_raw),
+                question_raw,
                 json.dumps(result),
             ),
         )
@@ -96,6 +151,31 @@ def test_warm_all_caches_loads_every_answer_cache_row(conn, redis_conn):
     hit3 = lookup_answer_cache(conn, "What is telehealth eligibility?", None, False, "DHA")
     assert hit3 is not None
     assert hit3["result"]["answer"] == "Answer three."
+
+
+def test_warm_all_caches_loads_diff_cache_rows(conn, redis_conn):
+    """A diff_cache row must survive warm-load the same way an answer_cache row does --
+    retrievable afterward via lookup_diff_cache (Redis-backed, since warm-load writes
+    straight to Redis)."""
+    current_id = seed_document(
+        conn, doc_code="DHA/HRS/HPSD/ST-14", version="4", superseded=False, sha256="sha-warm-current",
+    )
+    previous_id = seed_document(
+        conn, doc_code="DHA/HRS/HPSD/ST-14", version="3", superseded=True,
+        effective_date="2024-01-01", sha256="sha-warm-previous",
+    )
+    _insert_diff_cache_row(
+        conn, current_document_id=current_id, previous_document_id=previous_id,
+        question_raw="What changed about license renewal?", explanation="It changed.",
+    )
+
+    result = warm_all_caches(conn)
+
+    assert result == {"ask_rows_loaded": 0, "diff_rows_loaded": 1}
+
+    hit = lookup_diff_cache(conn, current_id, previous_id, "What changed about license renewal?")
+    assert hit is not None
+    assert hit["result"]["explanation"] == "It changed."
 
 
 def test_warm_all_caches_empty_table_returns_zero(conn, redis_conn):

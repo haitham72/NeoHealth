@@ -5,6 +5,7 @@ from slowapi.util import get_remote_address
 from app.api.schemas.diff import DiffFollowupRequest
 from app.core.config import DAILY_OPENAI_CALL_CAP
 from app.core.db import get_connection, increment_daily_usage, release_connection
+from app.core.diff_cache import lookup_diff_cache, store_diff_cache
 from app.core.limiter import limiter
 from app.core.retrieval import chat_completion
 from app.services.versioning import find_previous_version, load_full_document_text
@@ -27,13 +28,22 @@ def diff_followup(request: Request, req: DiffFollowupRequest):
     under context limits) -- not a general-purpose design for arbitrarily large corpora."""
     conn = get_connection()
     try:
-        count = increment_daily_usage(conn)
-        if count > DAILY_OPENAI_CALL_CAP:
-            raise HTTPException(429, "Daily usage cap reached -- try again tomorrow.")
-
         prev = find_previous_version(conn, req.doc_code, req.current_document_id)
         if not prev:
             return {"available": False, "reason": "no earlier version of this document exists"}
+
+        # Cache check comes before increment_daily_usage: that counter tracks real
+        # OpenAI calls, and a cache hit makes none, so it must not be charged against
+        # the daily cap. It also comes after resolving `prev` (needed for the cache
+        # key) but before any other paid work, so an "unavailable" response is never
+        # what gets cached below either.
+        hit = lookup_diff_cache(conn, req.current_document_id, prev["id"], req.question)
+        if hit:
+            return hit["result"]
+
+        count = increment_daily_usage(conn)
+        if count > DAILY_OPENAI_CALL_CAP:
+            raise HTTPException(429, "Daily usage cap reached -- try again tomorrow.")
 
         with conn.cursor() as cur:
             cur.execute("SELECT version FROM documents WHERE id = %s", (req.current_document_id,))
@@ -72,12 +82,14 @@ def diff_followup(request: Request, req: DiffFollowupRequest):
         ], client_ip=get_remote_address(request))
         explanation = (resp.choices[0].message.content or "").strip()
 
-        return {
+        result = {
             "available": True,
             "previous_version": prev["version"],
             "previous_effective_date": prev["effective_date"],
             "explanation": explanation,
         }
+        store_diff_cache(conn, req.current_document_id, prev["id"], req.question, result)
+        return result
     except HTTPException:
         raise
     except Exception as e:
