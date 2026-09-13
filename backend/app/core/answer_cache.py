@@ -115,10 +115,10 @@ def _redis_set(
     superseded_filter: bool,
     authority_filter: str | None,
     result: dict,
-) -> None:
+) -> bool:
     client = _get_redis()
     if client is None:
-        return
+        return False
     try:
         payload = json.dumps(
             {"question_raw": question, "result": _strip_for_storage(result)},
@@ -129,8 +129,26 @@ def _redis_set(
             CACHE_REDIS_TTL_SECONDS,
             payload,
         )
+        return True
     except Exception as exc:
         logger.warning("Redis set failed: %s", exc)
+        return False
+
+
+def write_redis_cache(
+    question: str,
+    superseded_filter: bool,
+    authority_filter: str | None,
+    result: dict,
+) -> bool:
+    """Public wrapper around the private Redis setter, for callers outside this module
+    that need to write a row into Redis under the exact same key/TTL/stripping logic as
+    a live store -- currently just cache_warmup.py's boot warm-load, which replays rows
+    already in Postgres so they're indistinguishable from a freshly-stored answer to a
+    later lookup. Returns True iff the write actually reached Redis, so a caller counting
+    "rows loaded" can report an honest 0 under a total Redis outage rather than counting
+    rows it merely attempted."""
+    return _redis_set(question, superseded_filter, authority_filter, result)
 
 
 def _postgres_lookup(

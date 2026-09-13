@@ -15,6 +15,7 @@ from slowapi import _rate_limit_exceeded_handler
 from slowapi.errors import RateLimitExceeded
 
 from app.api.routers import ask, chats, corpus, cross_check, diff, feedback, health, models, pdf
+from app.core.cache_warmup import warm_all_caches
 from app.core.config import ALLOWED_ORIGIN_REGEX, ALLOWED_ORIGINS, STATIC_DIR
 from app.core.db import ensure_schema, get_connection, release_connection
 from app.core.limiter import limiter
@@ -54,6 +55,17 @@ def _run_schema_migrations():
     conn = get_connection()
     try:
         ensure_schema(conn)
+        # Unconditional, total warm-load of every cached row into Redis on every boot.
+        # The interviewer's Redis instance is only live for a few minutes per interview
+        # and idle for days/weeks between them, so its state at any given boot can't be
+        # trusted -- this makes the very first request of a new session already a Redis
+        # hit for every previously-answered question. Never raises (see cache_warmup.py).
+        result = warm_all_caches(conn)
+        print(
+            f"Warmed cache: {result['ask_rows_loaded']} ask rows, "
+            f"{result['diff_rows_loaded']} diff rows",
+            flush=True,
+        )
     finally:
         release_connection(conn)
 
