@@ -16,3 +16,6 @@ Agreement/
 opencode.json
 opencode.jsonc
 .opencode/
+# Worker output from ingestion/mine_suggestions.py -- like parsed_documents.json,
+# a regenerable intermediate; the canonical store is the suggested_questions table.
+backend/suggestions.*.jsonl
