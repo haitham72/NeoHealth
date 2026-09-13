@@ -6,6 +6,7 @@ import SourceCard from "./SourceCard";
 import CitationPopover from "./CitationPopover";
 import ReportAnswer from "./ReportAnswer";
 import FollowUpQuestions from "./FollowUpQuestions";
+import CacheNotice from "./CacheNotice";
 import { renderWithCitations } from "../lib/citations";
 import { pickFollowUpQuestions } from "../lib/followUpQuestions";
 import { OPENAI_FALLBACK_MODEL, OPENAI_PROVIDER_MODEL_LABELS } from "../lib/modelLabels";
@@ -72,8 +73,12 @@ export default function AssistantMessage({ message, streamingText, steps, isStre
             {response.off_topic ? (
               <>
                 <p style={{ color: "var(--ink-dim)" }}>{response.reason}</p>
-                {response.suggested_questions?.length ? (
-                  <FollowUpQuestions questions={response.suggested_questions} onAsk={onAskFollowUp} disabled={askPending} />
+                {response.suggested_followups?.length ? (
+                  <FollowUpQuestions
+                    questions={response.suggested_followups.map((s) => s.question)}
+                    onAsk={onAskFollowUp}
+                    disabled={askPending}
+                  />
                 ) : null}
               </>
             ) : (
@@ -111,7 +116,7 @@ export default function AssistantMessage({ message, streamingText, steps, isStre
             >
               {response.answer}
             </ReactMarkdown>
-            {response.cache_hit && <div className="mt-2 text-[11px]" style={{ color: "var(--ink-faint)" }}>Served from cache</div>}
+            {response.cache_hit && <CacheNotice token={response.cache_token} className="mt-2 text-[11px]" />}
             <SourceCard chunks={chunks} onOpen={setOpenIndex} />
             <FollowUpQuestions questions={followUps} onAsk={onAskFollowUp} disabled={askPending} />
             {response.run_id && <ReportAnswer runId={response.run_id} variant="answered" />}

@@ -28,6 +28,8 @@
   --verified-brass-bg: #f4ecd8;
   --superseded-rust: #8c3b2e;
   --superseded-rust-bg: #f6e6e2;
+  /* Light red for destructive-but-reversible affordances (remove from cache). */
+  --danger-soft: #d9736a;
 
   --dha-steel: #2b4c6f;
   --dha-steel-bg: #e6edf3;

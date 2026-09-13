@@ -90,8 +90,14 @@ chunk texts, capped 400-token verdict, same selected provider/model) runs before
 expensive generation call, because embedding proximity genuinely misfires on playful
 off-topic questions (measured: "What shoe size is Messi?" scores ~0.23). OFF_TOPIC
 abstains with a backend-composed fixed sentence + optional clickable alternatives
-(`off_topic: true`, `suggested_questions`), no sources, no generation. Fail-open at
-every level (exception/unparseable verdict/off-allowlist redirect → old numeric path),
+(`off_topic: true`, `suggested_followups`), no sources, no generation. Those
+alternatives are the *mined* questions (same semantic match as the answered-path
+suggestions) with a `SUGGESTION_MIN_SIMILARITY` cosine floor (0.62, calibrated:
+in-scope matches score 0.64-0.79, the hard "DHA staff shortages during a pandemic"
+off-topic case tops out at 0.58) -- the guardrail's own invented list stays in the
+payload as `suggested_questions` for API compatibility but is no longer rendered: it
+isn't scope-checked and once recommended a question the same guard then rejected.
+Fail-open at every level (exception/unparseable verdict/off-allowlist redirect → old numeric path),
 and deliberately *after* the answer-cache gate so cached answers still cost zero calls.
 Otherwise drop chunks that didn't individually clear the floor (`filter_weak_chunks`, with an
 exemption for lexical-only-hit chunks that carry a `0.0` sentinel score) and generate a
@@ -173,9 +179,14 @@ demo.py`) remains genuinely stateless; only the web frontend persists.
   legacy bundle self-polyfills it (upstream's prescribed fix, verified in dist).
   The popover also hosts both on-demand follow-ups (`DiffFollowup`, `CrossCheckRegulation`),
   each carrying the current `provider`/`model` (threaded from `App.tsx`'s `lastFilters`)
-  so local mode reaches LM Studio; both show a tiny "Served from cache" note on
-  `cache_hit` (`diff_cache` exact-key, `cross_check_cache` on doc/page/question —
-  provider is never part of any cache key).
+  so local mode reaches LM Studio; all three cache-aware surfaces (the main answer too)
+  render the shared `CacheNotice` on `cache_hit` (`diff_cache` exact-key,
+  `cross_check_cache` on doc/page/question — provider is never part of any cache key).
+  Its light-red "Remove from cache" control POSTs the signed `cache_token` minted with
+  that hit to `/cache/evict` (`app/core/cache_evict.py` HMAC, ~1h TTL) and deletes ONLY
+  that entry — Redis key plus its Postgres row (including the matched `cache_id` on a
+  semantic answer-cache hit), never a whole-cache purge. `CACHE_EVICT_SECRET` should be
+  set on Render, or tokens die on restart/sleep (the control then just does nothing).
 - `OnboardingWelcome.tsx` — shown once per browser session (`sessionStorage`,
   `regulense-onboarding-v2`), reopenable any time via the ReguLense logo in
   `Sidebar.tsx`. A blocking modal wizard (dimmed backdrop, centered two-panel dialog,

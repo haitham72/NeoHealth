@@ -20,6 +20,7 @@ from app.core.answer_cache import (
     lookup_answer_cache,
     store_answer_cache,
 )
+from app.core.cache_evict import sign_cache_token
 from app.core.config import CACHE_HIT_THRESHOLD
 from app.services.suggestions import find_suggested_followups
 
@@ -255,6 +256,23 @@ def _attach_suggested_followups(
     except Exception:
         logger.warning("suggested follow-ups failed; frontend static bank will cover", exc_info=True)
         result.pop("suggested_followups", None)
+
+
+def _attach_cache_token(
+    result: dict, hit: dict, question: str, superseded_filter: bool,
+    authority_filter: str | None,
+) -> None:
+    """Mints the signed token behind the UI's "Remove from cache" control. Bound to
+    the exact entry served: an exact-key hit deletes by question+filters, a semantic
+    hit additionally carries the matched row id so eviction can't touch anything
+    else. Best-effort -- a signing failure just hides the control, never the answer."""
+    try:
+        result["cache_token"] = sign_cache_token(
+            "answer", q=question, s=superseded_filter, a=authority_filter or "",
+            id=hit.get("cache_id"),
+        )
+    except Exception:
+        logger.warning("cache token minting failed; remove-from-cache hidden", exc_info=True)
 
 
 def _flag_cache_event(
@@ -667,6 +685,7 @@ def answer_question_stream(
                 authority_filter=authority_filter, matched_question=hit["matched_question"],
             )
             result = decorate_cached_result(hit, _current_run_id())
+            _attach_cache_token(result, hit, question, superseded_filter, authority_filter)
             _attach_suggested_followups(conn, question, result, superseded_filter, authority_filter)
             yield {"step": "cache_hit", "detail": "exact"}
             yield {"step": "done", "result": result}
@@ -684,6 +703,7 @@ def answer_question_stream(
                 authority_filter=authority_filter, matched_question=hit["matched_question"],
             )
             result = decorate_cached_result(hit, _current_run_id())
+            _attach_cache_token(result, hit, question, superseded_filter, authority_filter)
             _attach_suggested_followups(conn, question, result, superseded_filter, authority_filter, query_vec)
             yield {"step": "cache_hit", "detail": f"{hit['similarity']:.3f}"}
             yield {"step": "done", "result": result}
@@ -718,17 +738,20 @@ def answer_question_stream(
     yield {"step": "checking_relevance"}
     guard = _safe_check_relevance(question, fused, provider, model, client_ip)
     if not guard["is_relevant"]:
-        yield {
-            "step": "done",
-            "result": {
-                "abstained": True,
-                "reason": guard["message"],
-                "off_topic": True,
-                "suggested_questions": guard["suggestions"],
-                "top_score": top_score,
-                "run_id": _current_run_id(),
-            },
+        result = {
+            "abstained": True,
+            "reason": guard["message"],
+            "off_topic": True,
+            "suggested_questions": guard["suggestions"],
+            "top_score": top_score,
+            "run_id": _current_run_id(),
         }
+        # Mined, corpus-grounded alternatives (semantic match + similarity floor).
+        # The guard's own invented suggestions remain in the payload for API
+        # compatibility but are no longer what the UI renders -- they are not
+        # scope-checked and once recommended a question the same guard then rejected.
+        _attach_suggested_followups(conn, question, result, superseded_filter, authority_filter, query_vec)
+        yield {"step": "done", "result": result}
         return
     if tier == "low":
         _flag_low_confidence(top_score)
@@ -861,6 +884,7 @@ def answer_question(
                 authority_filter=authority_filter, matched_question=hit["matched_question"],
             )
             result = decorate_cached_result(hit, _current_run_id())
+            _attach_cache_token(result, hit, question, superseded_filter, authority_filter)
             _attach_suggested_followups(conn, question, result, superseded_filter, authority_filter)
             return result
 
@@ -875,6 +899,7 @@ def answer_question(
                 authority_filter=authority_filter, matched_question=hit["matched_question"],
             )
             result = decorate_cached_result(hit, _current_run_id())
+            _attach_cache_token(result, hit, question, superseded_filter, authority_filter)
             _attach_suggested_followups(conn, question, result, superseded_filter, authority_filter, query_vec)
             return result
         _flag_cache_event(hit=False, superseded_filter=superseded_filter, authority_filter=authority_filter)
@@ -897,7 +922,7 @@ def answer_question(
         }
     guard = _safe_check_relevance(question, fused, provider, model, client_ip)
     if not guard["is_relevant"]:
-        return {
+        result = {
             "abstained": True,
             "reason": guard["message"],
             "off_topic": True,
@@ -905,6 +930,10 @@ def answer_question(
             "top_score": top_score,
             "run_id": _current_run_id(),
         }
+        # Same as the streaming path: mined, corpus-grounded alternatives with the
+        # similarity floor, never the guard's unvalidated inventions.
+        _attach_suggested_followups(conn, question, result, superseded_filter, authority_filter, query_vec)
+        return result
     if tier == "low":
         _flag_low_confidence(top_score)
 

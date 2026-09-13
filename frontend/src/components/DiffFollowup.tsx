@@ -1,5 +1,6 @@
 import { useDiffFollowup } from "../api/client";
 import type { Provider } from "../types/api";
+import CacheNotice from "./CacheNotice";
 
 interface Props {
   docCode: string;
@@ -89,7 +90,7 @@ export default function DiffFollowup({ docCode, currentDocumentId, citedText, ci
           <p className="mt-2 text-[11px]" style={{ color: "var(--ink-faint)" }}>
             Compared full text against v{mutation.data.previous_version} &middot; {mutation.data.previous_effective_date}
           </p>
-          {mutation.data.cache_hit && <div className="mt-1 text-[11px]" style={{ color: "var(--ink-faint)" }}>Served from cache</div>}
+          {mutation.data.cache_hit && <CacheNotice token={mutation.data.cache_token} />}
         </div>
       )}
     </div>

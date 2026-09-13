@@ -34,8 +34,13 @@ export interface Abstained {
    * complete polite sentence, rendered directly instead of the legacy frame. */
   off_topic?: boolean;
   /** Present only on guardrail off-topic abstentions: clickable in-scope
-   * alternatives, rendered through the normal FollowUpQuestions component. */
+   * alternatives, rendered through the normal FollowUpQuestions component.
+   * Legacy: superseded by suggested_followups, kept in the payload for API
+   * compatibility but no longer rendered. */
   suggested_questions?: string[];
+  /** Mined, dataset-grounded follow-ups matched to the query with a similarity
+   * floor. This is what the off-topic "Continue exploring" panel renders. */
+  suggested_followups?: SuggestedFollowup[];
 }
 
 export interface BBox {
@@ -92,6 +97,9 @@ export interface Answered {
   cache_layer?: "redis" | "postgres" | null;
   cache_similarity?: number | null;
   cache_match_mode?: "exact_key_plus_filters" | "query_plus_filters" | null;
+  /** Signed token for the per-result "Remove from cache" control (minted server-side
+   * with each cache hit; absent on fresh answers). */
+  cache_token?: string;
 }
 
 export type AskResponse = Abstained | Answered;
@@ -123,6 +131,7 @@ export interface DiffFollowupResult {
   previous_effective_date: string;
   explanation: string;
   cache_hit?: boolean;
+  cache_token?: string;
 }
 
 export interface DiffFollowupUnavailable {
@@ -154,6 +163,7 @@ export interface CrossCheckRegulationResult {
   explanation: string;
   documents: RelatedOfficialDocument[];
   cache_hit?: boolean;
+  cache_token?: string;
 }
 
 export interface CrossCheckRegulationUnavailable {

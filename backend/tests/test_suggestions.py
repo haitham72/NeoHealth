@@ -15,9 +15,15 @@ from app.core import retrieval
 from app.core.answer_cache import normalize_question
 from app.services.suggestions import find_suggested_followups
 from ingestion.load_suggestions import load_suggestions_file
-from tests.conftest import QUERY_VEC, orthogonal_vec, seed_chunk, seed_document
+from tests.conftest import QUERY_VEC, orthogonal_vec, seed_chunk, seed_document, vec
 
 RELEVANT_VERDICT = "VERDICT: RELEVANT\nSUBJECT: t\nREDIRECT: general\nSUGGESTIONS: none"
+
+OFF_TOPIC_VERDICT = (
+    "VERDICT: OFF_TOPIC\nSUBJECT: a footballer's shoe size\n"
+    "REDIRECT: patient safety and quality standards\n"
+    "SUGGESTIONS: What are the licensing requirements? | How long is a license valid?"
+)
 
 
 @pytest.fixture(autouse=True)
@@ -154,13 +160,25 @@ def test_match_prefers_same_authority_excludes_asked_and_limits(conn):
 
     got = find_suggested_followups(
         conn, QUERY_VEC, "What are the telehealth standards?",
-        authority="Dubai Health Authority", limit=2)
+        authority="Dubai Health Authority", limit=2, min_similarity=0.0)
 
     questions = [g["question"] for g in got]
     assert "What are the telehealth standards?" not in questions  # asked => excluded
     assert len(got) == 2  # limit honored
     assert got[0]["question"] == "Far match?"  # same-authority first despite worse vector
     assert set(got[0]) == {"question", "doc_code", "document_id", "pages", "section"}
+
+
+def test_match_floor_excludes_unrelated(conn):
+    """Default floor (0.62, calibrated): the hard off-topic case scores ~0.58 and must
+    be dropped, while genuine in-scope matches (~0.64+) survive."""
+    dha = seed_document(conn, doc_code="DHA/A", authority="Dubai Health Authority")
+    _insert_suggestion(conn, "Strong match?", vec(0.75), dha)
+    _insert_suggestion(conn, "Pandemic-style hard negative?", vec(0.58), dha)
+
+    got = find_suggested_followups(conn, QUERY_VEC, "asked?", authority="Dubai Health Authority")
+
+    assert [g["question"] for g in got] == ["Strong match?"]
 
 
 def test_match_failure_returns_empty():
@@ -175,6 +193,40 @@ def _mock_relevant_guardrail(monkeypatch):
     mock_response.choices = [MagicMock(message=MagicMock(content=RELEVANT_VERDICT))]
     monkeypatch.setattr(retrieval, "chat_completion",
                         MagicMock(return_value=(mock_response, "gpt-4o-mini")))
+
+
+def _mock_off_topic_guardrail(monkeypatch):
+    mock_response = MagicMock()
+    mock_response.choices = [MagicMock(message=MagicMock(content=OFF_TOPIC_VERDICT))]
+    monkeypatch.setattr(retrieval, "chat_completion",
+                        MagicMock(return_value=(mock_response, "gpt-4o-mini")))
+
+
+def test_off_topic_carries_mined_suggestions_not_guard_inventions(conn, redis_conn, monkeypatch):
+    """The off-topic panel must show mined, floor-checked questions -- not the
+    guardrail's own unvalidated inventions (which once recommended a question the
+    same guard then rejected)."""
+    from tests.conftest import seed_official_doc
+
+    seed_official_doc(conn, score=0.7)
+    with conn.cursor() as cur:
+        cur.execute("SELECT id FROM documents LIMIT 1")
+        doc_id = cur.fetchone()[0]
+    _insert_suggestion(conn, "How long is the DHA license valid?", QUERY_VEC, doc_id)
+    monkeypatch.setattr(retrieval, "embed", lambda text: QUERY_VEC)
+    gen = MagicMock(side_effect=AssertionError("generation must not run"))
+    monkeypatch.setattr(retrieval, "generate_answer", gen)
+    _mock_off_topic_guardrail(monkeypatch)
+
+    result = retrieval.answer_question(conn, "What shoe size is Messi?", superseded_filter=True)
+
+    assert result["abstained"] is True and result["off_topic"] is True
+    assert [s["question"] for s in result["suggested_followups"]] == [
+        "How long is the DHA license valid?"]
+    # Legacy field stays in the payload for API compatibility; the UI no longer renders it.
+    assert result["suggested_questions"] == [
+        "What are the licensing requirements?", "How long is a license valid?"]
+    gen.assert_not_called()
 
 
 def test_answer_includes_mined_followups(conn, redis_conn, monkeypatch):

@@ -25,6 +25,9 @@ npm run dev                        # Terminal 2
 
 Frontend: http://localhost:5173
 
+# to kill the backend
+lsof -ti:8000 | xargs kill      # kill whatever holds port 8000 (stable, PID-independent)
+pkill -f "python -m app.main"   # or kill by command
 Since `.env` points at the native ports (`5432`/`6379`), this always uses the native
 services regardless of whether any Docker containers happen to be running — there's no
 overlap to worry about (the old Docker Postgres container, if still around, sits on a

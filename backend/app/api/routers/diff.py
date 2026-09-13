@@ -5,6 +5,7 @@ from fastapi import APIRouter, HTTPException, Request
 from slowapi.util import get_remote_address
 
 from app.api.schemas.diff import DiffFollowupRequest
+from app.core.cache_evict import sign_cache_token
 from app.core.config import DAILY_OPENAI_CALL_CAP
 from app.core.db import get_connection, increment_daily_usage, release_connection
 from app.core.diff_cache import lookup_diff_cache, store_diff_cache
@@ -77,6 +78,11 @@ def diff_followup(request: Request, req: DiffFollowupRequest):
             # and fresh generations never carry the marker into store_diff_cache.
             result = dict(hit["result"])
             result["cache_hit"] = True
+            # Signed token behind the UI's "Remove from cache" control: bound to
+            # exactly this (current, previous, question) entry.
+            result["cache_token"] = sign_cache_token(
+                "diff", cur=req.current_document_id, prev=prev["id"], q=req.question,
+            )
             return result
 
         count = increment_daily_usage(conn)

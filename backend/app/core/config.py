@@ -49,5 +49,14 @@ REDIS_URL = os.environ.get("REDIS_URL", "").strip() or None
 # Cosine similarity floor for Postgres L2 paraphrase hits (1 - embedding <=> query).
 CACHE_HIT_THRESHOLD = float(os.environ.get("CACHE_HIT_THRESHOLD", "0.92"))
 
+# Cosine similarity floor for mined follow-up suggestions. Without it, the top-N
+# nearest mined questions are returned regardless of distance, so an off-topic ask
+# still gets apparently-authoritative "Continue exploring" suggestions. Measured with
+# text-embedding-3-small on this corpus: genuine in-scope matches score 0.64-0.79;
+# the hard off-topic case ("how does Dubai Health Authority handle staff shortages
+# during a pandemic", which superficially matches every DHA-prefixed mined question)
+# tops out at 0.58 -- 0.62 separates the two with margin.
+SUGGESTION_MIN_SIMILARITY = float(os.environ.get("SUGGESTION_MIN_SIMILARITY", "0.62"))
+
 # Redis key TTL in seconds (default 7 days). Postgres rows have no TTL.
 CACHE_REDIS_TTL_SECONDS = int(os.environ.get("CACHE_REDIS_TTL_SECONDS", str(7 * 24 * 3600)))

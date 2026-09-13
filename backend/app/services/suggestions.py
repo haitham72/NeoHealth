@@ -13,6 +13,7 @@ retrieval bypass -- answering purely from stored chunk IDs would serve supersede
 versions after the corpus moves on.
 """
 from app.core.answer_cache import normalize_question
+from app.core.config import SUGGESTION_MIN_SIMILARITY
 
 SUGGESTION_LIMIT = 3
 
@@ -20,10 +21,17 @@ SUGGESTION_LIMIT = 3
 def find_suggested_followups(
     conn, query_vec: list[float], exclude_question: str,
     authority: str | None = None, limit: int = SUGGESTION_LIMIT,
+    min_similarity: float | None = None,
 ) -> list[dict]:
     """Returns up to `limit` suggestions as {question, doc_code, document_id, pages,
     section}. Never raises to callers -- on any failure returns [] so a suggestions
-    outage degrades to the static frontend bank, never a broken answer."""
+    outage degrades to the static frontend bank, never a broken answer.
+
+    `min_similarity` (cosine, 1 - distance) drops unrelated questions instead of
+    always returning the N nearest regardless of distance -- the reason an off-topic
+    ask used to surface far-away "Continue exploring" matches. Defaults to
+    config.SUGGESTION_MIN_SIMILARITY."""
+    floor = SUGGESTION_MIN_SIMILARITY if min_similarity is None else min_similarity
     try:
         with conn.cursor() as cur:
             cur.execute(
@@ -32,11 +40,13 @@ def find_suggested_followups(
                        question_embedding <=> %s::vector AS distance
                 FROM suggested_questions
                 WHERE question_normalized != %s
+                  AND 1 - (question_embedding <=> %s::vector) >= %s
                 ORDER BY (authority = %s) DESC NULLS LAST,
                          distance ASC
                 LIMIT %s
                 """,
-                (query_vec, normalize_question(exclude_question), authority, limit),
+                (query_vec, normalize_question(exclude_question), query_vec, floor,
+                 authority, limit),
             )
             rows = cur.fetchall()
         return [

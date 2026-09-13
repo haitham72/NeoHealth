@@ -5,6 +5,7 @@ from fastapi import APIRouter, HTTPException, Request
 from slowapi.util import get_remote_address
 
 from app.api.schemas.cross_check import CrossCheckRegulationRequest
+from app.core.cache_evict import sign_cache_token
 from app.core.config import DAILY_OPENAI_CALL_CAP
 from app.core.cross_check_cache import lookup_cross_check_cache, store_cross_check_cache
 from app.core.db import get_connection, increment_daily_usage, release_connection
@@ -54,6 +55,11 @@ def cross_check_regulation(request: Request, req: CrossCheckRegulationRequest):
             # stays clean and fresh generations never carry the marker into store.
             result = dict(hit["result"])
             result["cache_hit"] = True
+            # Signed token behind the UI's "Remove from cache" control: bound to
+            # exactly this (document, cited page, question) entry.
+            result["cache_token"] = sign_cache_token(
+                "cross", cur=req.current_document_id, page=req.cited_page, q=req.question,
+            )
             return result
 
         count = increment_daily_usage(conn)

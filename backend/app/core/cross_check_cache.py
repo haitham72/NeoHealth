@@ -188,3 +188,34 @@ def store_cross_check_cache(conn, current_document_id: int, cited_page: int, que
         return
     _postgres_store(conn, current_document_id, cited_page, question, result)
     _redis_set(current_document_id, cited_page, question, result)
+
+
+def evict_cross_check_cache(conn, current_document_id: int, cited_page: int, question: str) -> bool:
+    """Removes the exact-key entry from both layers (this cache has no semantic
+    layer). Best-effort; a missing row still counts as successfully gone."""
+    removed = False
+    client = _get_redis()
+    if client is not None:
+        try:
+            removed = bool(client.delete(redis_cache_key(current_document_id, cited_page, question)))
+        except Exception as exc:
+            logger.warning("Redis cross_check_cache delete failed: %s", exc)
+    try:
+        with conn.cursor() as cur:
+            cur.execute(
+                """
+                DELETE FROM cross_check_cache
+                WHERE current_document_id = %s AND cited_page = %s
+                  AND question_normalized = %s
+                """,
+                (current_document_id, cited_page, normalize_question(question)),
+            )
+            removed = cur.rowcount > 0 or removed
+        conn.commit()
+    except Exception as exc:
+        logger.warning("Postgres cross_check_cache delete failed: %s", exc)
+        try:
+            conn.rollback()
+        except Exception:
+            pass
+    return removed

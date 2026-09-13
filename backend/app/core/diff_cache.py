@@ -214,3 +214,34 @@ def store_diff_cache(conn, current_document_id: int, previous_document_id: int, 
         return
     _postgres_store(conn, current_document_id, previous_document_id, question, result)
     _redis_set(current_document_id, previous_document_id, question, result)
+
+
+def evict_diff_cache(conn, current_document_id: int, previous_document_id: int, question: str) -> bool:
+    """Removes the exact-key entry from both layers (this cache has no semantic
+    layer). Best-effort; a missing row still counts as successfully gone."""
+    removed = False
+    client = _get_redis()
+    if client is not None:
+        try:
+            removed = bool(client.delete(redis_cache_key(current_document_id, previous_document_id, question)))
+        except Exception as exc:
+            logger.warning("Redis diff_cache delete failed: %s", exc)
+    try:
+        with conn.cursor() as cur:
+            cur.execute(
+                """
+                DELETE FROM diff_cache
+                WHERE current_document_id = %s AND previous_document_id = %s
+                  AND question_normalized = %s
+                """,
+                (current_document_id, previous_document_id, normalize_question(question)),
+            )
+            removed = cur.rowcount > 0 or removed
+        conn.commit()
+    except Exception as exc:
+        logger.warning("Postgres diff_cache delete failed: %s", exc)
+        try:
+            conn.rollback()
+        except Exception:
+            pass
+    return removed

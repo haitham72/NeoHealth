@@ -99,7 +99,7 @@ def _strip_for_storage(result: dict) -> dict:
     re-attached at serve time instead (see retrieval._attach_suggested_followups).
     """
     skip = {"run_id", "cache_hit", "cache_similarity", "cache_match_mode", "cache_layer",
-            "suggested_followups"}
+            "suggested_followups", "cache_token"}
     return {k: v for k, v in result.items() if k not in skip}
 
 
@@ -370,3 +370,47 @@ def decorate_cached_result(hit: dict, run_id: str | None) -> dict:
     out["cache_similarity"] = hit["similarity"]
     out["run_id"] = run_id
     return out
+
+
+def evict_answer_cache(
+    conn,
+    question: str,
+    superseded_filter: bool,
+    authority_filter: str | None,
+    cache_id: int | None = None,
+) -> bool:
+    """Removes one served entry from both layers: the exact-key Redis entry for the
+    asked question+filters, and its Postgres row -- by id when the hit was semantic
+    (there the matched row can hold a *different* question), plus any row matching
+    the asked normalized question+filters. Best-effort; returns True when any layer
+    was touched, so a missing row (already evicted, TTL lapsed) is not an error."""
+    removed = False
+    client = _get_redis()
+    if client is not None:
+        try:
+            removed = bool(client.delete(redis_cache_key(question, superseded_filter, authority_filter)))
+        except Exception as exc:
+            logger.warning("Redis answer_cache delete failed: %s", exc)
+    try:
+        with conn.cursor() as cur:
+            if cache_id is not None:
+                cur.execute("DELETE FROM answer_cache WHERE id = %s", (cache_id,))
+                removed = cur.rowcount > 0 or removed
+            cur.execute(
+                """
+                DELETE FROM answer_cache
+                WHERE question_normalized = %s
+                  AND superseded_filter = %s
+                  AND authority_filter IS NOT DISTINCT FROM %s
+                """,
+                (normalize_question(question), superseded_filter, authority_filter),
+            )
+            removed = cur.rowcount > 0 or removed
+        conn.commit()
+    except Exception as exc:
+        logger.warning("Postgres answer_cache delete failed: %s", exc)
+        try:
+            conn.rollback()
+        except Exception:
+            pass
+    return removed
