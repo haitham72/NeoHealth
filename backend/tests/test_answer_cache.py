@@ -564,12 +564,17 @@ def test_stream_survives_cache_lookup_failure(conn, redis_conn, spy_llm, monkeyp
 # swallowed.
 
 
-def test_answer_question_survives_real_postgres_failure_and_rolls_back(conn, spy_llm):
-    """No redis_conn fixture here on purpose -- REDIS_URL is unset in the test env, so
-    _get_redis() naturally returns None (see test_lookup_miss_below_threshold's
-    docstring for the same pattern elsewhere in this file) and the cache gate's second
-    probe (with a real query_vec) falls through to a genuine Postgres SELECT, which is
-    exactly the statement that needs to observe the aborted transaction."""
+def test_answer_question_survives_real_postgres_failure_and_rolls_back(conn, spy_llm, monkeypatch):
+    """No redis_conn fixture here on purpose -- Redis is forced OFF (patched to None)
+    so the cache gate's second probe (with a real query_vec) falls through to a
+    genuine Postgres SELECT, which is exactly the statement that needs to observe the
+    aborted transaction. Previously this relied on REDIS_URL being unset, which is
+    NOT true in this environment: conftest's load_dotenv() reads backend/.env, so a
+    real local Redis (with live cached answers) answered the probe first and the test
+    became environment-dependent -- it failed whenever a matching answer was cached."""
+    from app.core import answer_cache
+
+    monkeypatch.setattr(answer_cache, "_get_redis", lambda: None)
     seed_official_doc(conn, score=0.6)
     # Commit the seed before deliberately aborting the transaction below -- otherwise
     # the rollback that _safe_lookup_answer_cache performs to recover would also wipe

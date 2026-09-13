@@ -217,3 +217,101 @@ def test_stream_includes_mined_followups(conn, redis_conn, monkeypatch):
     assert done["step"] == "done"
     assert [s["question"] for s in done["result"]["suggested_followups"]] == [
         "How long is the DHA license valid?"]
+
+
+# --- suggestions are live, never frozen into the cache ---------------------
+#
+# Regression for "the frontend shows the same questions over and over": the
+# cached answer used to store suggested_followups at generation time, so repeats
+# served whatever existed (or didn't) back then, falling back to the static bank.
+
+
+def test_cache_stores_no_suggestions_and_repeat_recomputes_them(conn, redis_conn, monkeypatch):
+    from tests.conftest import seed_official_doc
+
+    seed_official_doc(conn, score=0.7)
+    with conn.cursor() as cur:
+        cur.execute("SELECT id FROM documents LIMIT 1")
+        doc_id = cur.fetchone()[0]
+    _insert_suggestion(conn, "Old suggestion?", QUERY_VEC, doc_id)
+    embed_spy = MagicMock(return_value=QUERY_VEC)
+    monkeypatch.setattr(retrieval, "embed", embed_spy)
+    monkeypatch.setattr(retrieval, "generate_answer", lambda *a, **kw: ("Stub answer.", "gpt-4o-mini"))
+    _mock_relevant_guardrail(monkeypatch)
+    question = "What are the telehealth standards?"
+
+    first = retrieval.answer_question(conn, question, superseded_filter=False)
+    assert first["abstained"] is False
+    assert [s["question"] for s in first["suggested_followups"]] == ["Old suggestion?"]
+    assert embed_spy.call_count == 1
+
+    # The stored payload must NOT carry suggestions (they are live annotations).
+    with conn.cursor() as cur:
+        cur.execute(
+            "SELECT result_json ? 'suggested_followups' FROM answer_cache ORDER BY id DESC LIMIT 1"
+        )
+        assert cur.fetchone()[0] is False
+
+    # Corpus changes between asks: the mined set is replaced.
+    with conn.cursor() as cur:
+        cur.execute("DELETE FROM suggested_questions")
+    _insert_suggestion(conn, "New suggestion!", QUERY_VEC, doc_id)
+
+    repeat = retrieval.answer_question(conn, question, superseded_filter=False)
+
+    assert repeat["cache_hit"] is True
+    assert embed_spy.call_count == 1  # exact-key hit: stored embedding reused
+    assert [s["question"] for s in repeat["suggested_followups"]] == ["New suggestion!"]
+
+
+def test_stream_cache_hit_refreshes_suggestions(conn, redis_conn, monkeypatch):
+    from tests.conftest import seed_official_doc
+
+    seed_official_doc(conn, score=0.7)
+    with conn.cursor() as cur:
+        cur.execute("SELECT id FROM documents LIMIT 1")
+        doc_id = cur.fetchone()[0]
+    _insert_suggestion(conn, "First take?", QUERY_VEC, doc_id)
+    monkeypatch.setattr(retrieval, "embed", lambda text: QUERY_VEC)
+    monkeypatch.setattr(retrieval, "generate_answer", lambda *a, **kw: ("Stub answer.", "gpt-4o-mini"))
+    _mock_relevant_guardrail(monkeypatch)
+    question = "What are the telehealth standards?"
+
+    list(retrieval.answer_question_stream(conn, question, superseded_filter=False))
+    with conn.cursor() as cur:
+        cur.execute("DELETE FROM suggested_questions")
+    _insert_suggestion(conn, "Second take!", QUERY_VEC, doc_id)
+
+    events = list(retrieval.answer_question_stream(conn, question, superseded_filter=False))
+    result = events[-1]["result"]
+
+    assert result["cache_hit"] is True
+    assert [s["question"] for s in result["suggested_followups"]] == ["Second take!"]
+
+
+def test_cache_hit_without_stored_embedding_drops_stale_suggestions(conn, redis_conn, monkeypatch):
+    """If the embedding can't be recovered, stale frozen suggestions must not leak
+    through -- the key is dropped so the frontend's static bank takes over."""
+    from tests.conftest import seed_official_doc
+
+    seed_official_doc(conn, score=0.7)
+    with conn.cursor() as cur:
+        cur.execute("SELECT id FROM documents LIMIT 1")
+        doc_id = cur.fetchone()[0]
+    _insert_suggestion(conn, "Fresh one?", QUERY_VEC, doc_id)
+    monkeypatch.setattr(retrieval, "embed", lambda text: QUERY_VEC)
+    monkeypatch.setattr(retrieval, "generate_answer", lambda *a, **kw: ("Stub answer.", "gpt-4o-mini"))
+    _mock_relevant_guardrail(monkeypatch)
+
+    def _boom(*a, **kw):
+        raise RuntimeError("db down")
+
+    monkeypatch.setattr(retrieval, "fetch_cached_query_embedding", _boom)
+    first = retrieval.answer_question(conn, "What are the telehealth standards?", superseded_filter=False)
+
+    # Fresh path had its own vector; the repeat needs the (now failing) fetch.
+    repeat = retrieval.answer_question(conn, "What are the telehealth standards?", superseded_filter=False)
+
+    assert first["suggested_followups"]
+    assert repeat.get("cache_hit") is True
+    assert "suggested_followups" not in repeat

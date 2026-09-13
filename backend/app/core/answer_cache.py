@@ -89,8 +89,17 @@ def _get_redis():
 
 
 def _strip_for_storage(result: dict) -> dict:
-    """Persist the answer payload without run-scoped / cache-meta fields."""
-    skip = {"run_id", "cache_hit", "cache_similarity", "cache_match_mode", "cache_layer"}
+    """Persist the answer payload without run-scoped / cache-meta fields.
+
+    suggested_followups is stripped deliberately: it is a LIVE annotation derived
+    from the current corpus (mined suggestions are re-loaded over time), not part
+    of the answer itself. Freezing it into the cache made repeated questions serve
+    suggestions mined/loaded before the crawl -- or none at all, falling back to
+    the static bank -- which read as "the same questions over and over". It is
+    re-attached at serve time instead (see retrieval._attach_suggested_followups).
+    """
+    skip = {"run_id", "cache_hit", "cache_similarity", "cache_match_mode", "cache_layer",
+            "suggested_followups"}
     return {k: v for k, v in result.items() if k not in skip}
 
 
@@ -310,6 +319,46 @@ def store_answer_cache(
         return
     _postgres_store(conn, question, query_vec, superseded_filter, authority_filter, result)
     _redis_set(question, superseded_filter, authority_filter, result)
+
+
+def fetch_cached_query_embedding(
+    conn,
+    question: str,
+    superseded_filter: bool,
+    authority_filter: str | None,
+) -> Any:
+    """Best-effort lookup of a cached row's stored query embedding.
+
+    Exists so the exact-key Redis hit path can still serve FRESH mined follow-ups
+    without paying an embedding call -- the one piece of live data (see
+    _strip_for_storage) that would otherwise need one. Zero OpenAI calls, one
+    indexed-by-normalized-question Postgres read. Never raises; None on any
+    failure so the caller just falls back to the static suggestion bank.
+    (The vector column comes back as a string like '[0.1,0.2,...]' -- psycopg2
+    with no pgvector adapter -- which is still directly usable as a %s::vector
+    parameter, so callers must not assume a Python list.)"""
+    try:
+        with conn.cursor() as cur:
+            cur.execute(
+                """
+                SELECT query_embedding FROM answer_cache
+                WHERE question_normalized = %s
+                  AND superseded_filter = %s
+                  AND authority_filter IS NOT DISTINCT FROM %s
+                ORDER BY id DESC
+                LIMIT 1
+                """,
+                (normalize_question(question), superseded_filter, authority_filter),
+            )
+            row = cur.fetchone()
+        return row[0] if row else None
+    except Exception as exc:
+        logger.warning("cached query-embedding fetch failed: %s", exc)
+        try:
+            conn.rollback()
+        except Exception:
+            pass
+        return None
 
 
 def decorate_cached_result(hit: dict, run_id: str | None) -> dict:

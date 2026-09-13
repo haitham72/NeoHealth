@@ -73,6 +73,13 @@ def ask_stream(request: Request, req: AskRequest):
                 history=[h.model_dump() for h in req.history] if req.history else None,
                 client_ip=client_ip,
             ):
+                if event["step"] == "heartbeat":
+                    # Keep-alive during blocking local/NaraRouter generations. Sent as
+                    # an SSE comment so clients' parsers ignore it -- the bytes still
+                    # reset the frontend's idle timer and pass proxies -- instead of
+                    # showing up as a phantom step in the reasoning trace.
+                    yield ": heartbeat\n\n"
+                    continue
                 if event["step"] == "done":
                     enrich_result(conn, event["result"])
                 yield f"data: {json.dumps(event, default=str)}\n\n"

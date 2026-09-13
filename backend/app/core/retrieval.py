@@ -8,11 +8,18 @@ import os
 import re
 import time
 
+import concurrent.futures
+
 from openai import OpenAI
 from langsmith import get_current_run_tree, traceable
 from langsmith.wrappers import wrap_openai
 
-from app.core.answer_cache import decorate_cached_result, lookup_answer_cache, store_answer_cache
+from app.core.answer_cache import (
+    decorate_cached_result,
+    fetch_cached_query_embedding,
+    lookup_answer_cache,
+    store_answer_cache,
+)
 from app.core.config import CACHE_HIT_THRESHOLD
 from app.services.suggestions import find_suggested_followups
 
@@ -23,6 +30,9 @@ CHAT_MODEL = "gpt-4o-mini"
 RRF_K = 60  # RRF k parameter
 CANDIDATES_PER_METHOD = 15  # 15 candidates per method (semantic + full-text)
 TOP_N_FOR_ANSWER = 7  # Top chunks for answer that is passed to the LLM
+# Cadence of SSE keep-alive frames while a blocking (non-streaming) LLM call runs.
+# Must stay well under the frontend's 60s STREAM_IDLE_TIMEOUT_MS.
+STREAM_HEARTBEAT_SECONDS = 10
 
 # Confidence tiers on fused[0]'s semantic_score (cosine similarity, 0-1 -- see
 # rrf_fuse()). Calibrated against 10 real queries run through embed()/semantic_search()
@@ -47,7 +57,7 @@ CONFIDENCE_LOW = 0.15     # abstain below this -- sits above the observed 0.123 
 # and find these chunks -- switching generation to local keeps the actual answer
 # synthesis on-machine, it does not make retrieval itself local.
 LOCAL_BASE_URL = "http://localhost:1234/v1"
-DEFAULT_LOCAL_MODEL = "qwen/qwen3.5-9b"
+DEFAULT_LOCAL_MODEL = "qwen/qwen3-4b-2507"
 
 # wrap_openai traces chat.completions.create() to LangSmith (project set via
 # LANGSMITH_PROJECT env var) -- no LangChain needed, just this wrapper around the same
@@ -196,6 +206,55 @@ def _safe_check_relevance(question: str, fused: list[dict], provider: str, model
     except Exception:
         logger.warning("relevance guardrail failed; falling back to numeric tiering", exc_info=True)
         return {"is_relevant": True, "message": "", "suggestions": []}
+
+
+def _call_with_heartbeats(store: list, fn, *args, **kwargs):
+    """Runs a BLOCKING call on a worker thread and yields {"step": "heartbeat"} every
+    STREAM_HEARTBEAT_SECONDS until it completes, stashing the return value in `store`.
+
+    Local (LM Studio) generation and the NaraRouter fallback are both non-streaming
+    calls that can legitimately run for minutes. Without frames during them, the SSE
+    response is silent for the whole call: the frontend's 60s idle timer fires (or a
+    proxy drops the connection), so a perfectly working local answer looks like an
+    eternal spinner. The stream router converts these events into SSE comment lines
+    (": heartbeat"), which keep the connection and the client's idle timer alive
+    without showing up in the reasoning trace. Exceptions propagate exactly as the
+    plain blocking call's would -- the heartbeat changes liveness, not error paths."""
+    with concurrent.futures.ThreadPoolExecutor(max_workers=1) as pool:
+        future = pool.submit(fn, *args, **kwargs)
+        while True:
+            try:
+                store.append(future.result(timeout=STREAM_HEARTBEAT_SECONDS))
+                return
+            except concurrent.futures.TimeoutError:
+                yield {"step": "heartbeat"}
+
+
+def _attach_suggested_followups(
+    conn, question: str, result: dict, superseded_filter: bool,
+    authority_filter: str | None, query_vec=None,
+) -> None:
+    """Attaches mined, corpus-grounded follow-ups to a result AT SERVE TIME.
+
+    Suggestions are deliberately not cached (answer_cache._strip_for_storage):
+    they depend on the current suggested_questions table, which grows as mining
+    workers run, so a cached answer must show today's suggestions, not the ones
+    frozen when it was generated. On a cache hit with no vector in scope (the
+    exact-key Redis probe), the stored embedding is fetched from Postgres -- a
+    plain indexed read, still zero LLM calls. Best-effort: on any failure the
+    stale key is dropped so the frontend falls back to its static bank instead
+    of showing frozen or wrong suggestions."""
+    try:
+        if query_vec is None:
+            query_vec = fetch_cached_query_embedding(conn, question, superseded_filter, authority_filter)
+        if query_vec is None:
+            result.pop("suggested_followups", None)
+            return
+        authority = (result.get("document") or {}).get("authority")
+        result["suggested_followups"] = find_suggested_followups(conn, query_vec, question, authority)
+    except Exception:
+        logger.warning("suggested follow-ups failed; frontend static bank will cover", exc_info=True)
+        result.pop("suggested_followups", None)
 
 
 def _flag_cache_event(
@@ -608,6 +667,7 @@ def answer_question_stream(
                 authority_filter=authority_filter, matched_question=hit["matched_question"],
             )
             result = decorate_cached_result(hit, _current_run_id())
+            _attach_suggested_followups(conn, question, result, superseded_filter, authority_filter)
             yield {"step": "cache_hit", "detail": "exact"}
             yield {"step": "done", "result": result}
             return
@@ -624,6 +684,7 @@ def answer_question_stream(
                 authority_filter=authority_filter, matched_question=hit["matched_question"],
             )
             result = decorate_cached_result(hit, _current_run_id())
+            _attach_suggested_followups(conn, question, result, superseded_filter, authority_filter, query_vec)
             yield {"step": "cache_hit", "detail": f"{hit['similarity']:.3f}"}
             yield {"step": "done", "result": result}
             return
@@ -727,13 +788,28 @@ def answer_question_stream(
             yield {"step": "provider_fallback", "detail": f"{reason} -- switching to NaraRouter"}
             # Non-streaming: delivered as one instant chunk instead of token-by-token,
             # trading the typing effect for not depending on NaraRouter's flaky stream.
-            resp = nararouter_client.chat.completions.create(model=NARAROUTER_MODEL, messages=messages, temperature=0, stream=False)
+            # Heartbeats keep the SSE alive while this blocking call runs (it can take
+            # a while, and the frontend would otherwise idle-timeout).
+            nara_out: list = []
+            for event in _call_with_heartbeats(
+                nara_out, nararouter_client.chat.completions.create,
+                model=NARAROUTER_MODEL, messages=messages, temperature=0, stream=False,
+            ):
+                yield event
+            resp = nara_out[0]
             active_model = NARAROUTER_MODEL
             answer_text = resp.choices[0].message.content or ""
             yield {"step": "answer_delta", "detail": answer_text}
         answer_text = _finish_answer_text(answer_text, provider, active_model)
     else:
-        answer_text, active_model = generate_answer(question, filtered_chunks, provider, model, tier, history)
+        # Local generation is a single blocking LM Studio call with no token stream;
+        # heartbeats keep the SSE connection alive for as long as it takes.
+        local_out: list = []
+        for event in _call_with_heartbeats(
+            local_out, generate_answer, question, filtered_chunks, provider, model, tier, history,
+        ):
+            yield event
+        answer_text, active_model = local_out[0]
 
     result = {
         "abstained": False,
@@ -750,13 +826,7 @@ def answer_question_stream(
         "retrieved_chunks": fused,
         "run_id": _current_run_id(),
     }
-    try:
-        # Mined follow-ups matched on the already-computed query_vec (free).
-        # Best-effort: the static frontend bank covers a miss or failure.
-        result["suggested_followups"] = find_suggested_followups(
-            conn, query_vec, question, document.get("authority"))
-    except Exception:
-        pass
+    _attach_suggested_followups(conn, question, result, superseded_filter, authority_filter, query_vec)
     if cache_eligible:
         try:
             store_answer_cache(conn, question, query_vec, superseded_filter, authority_filter, result)
@@ -790,7 +860,9 @@ def answer_question(
                 similarity=hit["similarity"], superseded_filter=superseded_filter,
                 authority_filter=authority_filter, matched_question=hit["matched_question"],
             )
-            return decorate_cached_result(hit, _current_run_id())
+            result = decorate_cached_result(hit, _current_run_id())
+            _attach_suggested_followups(conn, question, result, superseded_filter, authority_filter)
+            return result
 
     query_vec = embed(question)
 
@@ -802,7 +874,9 @@ def answer_question(
                 similarity=hit["similarity"], superseded_filter=superseded_filter,
                 authority_filter=authority_filter, matched_question=hit["matched_question"],
             )
-            return decorate_cached_result(hit, _current_run_id())
+            result = decorate_cached_result(hit, _current_run_id())
+            _attach_suggested_followups(conn, question, result, superseded_filter, authority_filter, query_vec)
+            return result
         _flag_cache_event(hit=False, superseded_filter=superseded_filter, authority_filter=authority_filter)
 
     semantic_results = semantic_search(conn, query_vec, superseded_filter, CANDIDATES_PER_METHOD, authority_filter)
@@ -859,13 +933,7 @@ def answer_question(
         "retrieved_chunks": fused,
         "run_id": _current_run_id(),
     }
-    try:
-        # Mined follow-ups matched on the already-computed query_vec (free).
-        # Best-effort: the static frontend bank covers a miss or failure.
-        result["suggested_followups"] = find_suggested_followups(
-            conn, query_vec, question, document.get("authority"))
-    except Exception:
-        pass
+    _attach_suggested_followups(conn, question, result, superseded_filter, authority_filter, query_vec)
     if cache_eligible:
         try:
             store_answer_cache(conn, question, query_vec, superseded_filter, authority_filter, result)
