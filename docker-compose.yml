@@ -13,6 +13,20 @@ services:
       timeout: 3s
       retries: 10
 
+  # L1 exact-key answer cache. Named volume + AOF so local restarts keep keys.
+  # Prod on Render free: do NOT run Redis on the sleeping web dyno — set REDIS_URL
+  # to Upstash (or omit it and rely on Postgres answer_cache alone).
+  redis:
+    image: redis:7-alpine
+    ports: ["6379:6379"]
+    command: ["redis-server", "--appendonly", "yes"]
+    volumes: [redisdata:/data]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
   backend:
     build: { context: ./backend, target: runtime }
     env_file: [./backend/.env]        # LANGSMITH_*
@@ -22,8 +36,11 @@ services:
       PGUSER: regulense
       PGPASSWORD: regulense_dev_password
       PGDATABASE: regulense
+      REDIS_URL: redis://redis:6379/0
       ALLOWED_ORIGINS: http://localhost:5173,http://localhost:8080
-    depends_on: { db: { condition: service_healthy } }
+    depends_on:
+      db: { condition: service_healthy }
+      redis: { condition: service_healthy }
     ports: ["8000:8000"]
 
   frontend:
@@ -36,3 +53,4 @@ services:
 
 volumes:
   pgdata:
+  redisdata:

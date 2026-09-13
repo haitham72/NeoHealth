@@ -96,6 +96,24 @@ CREATE TABLE IF NOT EXISTS chat_messages (
     created_at TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 CREATE INDEX IF NOT EXISTS chat_messages_chat_id_idx ON chat_messages(chat_id, created_at);
+
+-- Semantic answer cache (L2 durable store). Redis is L1 exact-key; this table holds
+-- query embeddings so paraphrases can hit without an LLM call. Filter columns must
+-- match the ask request's non-LLM filters exactly (superseded + authority).
+CREATE TABLE IF NOT EXISTS answer_cache (
+    id SERIAL PRIMARY KEY,
+    question_normalized TEXT NOT NULL,
+    question_raw TEXT NOT NULL,
+    superseded_filter BOOLEAN NOT NULL,
+    authority_filter TEXT,
+    query_embedding vector(1536) NOT NULL,
+    result_json JSONB NOT NULL,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+    hit_count INTEGER NOT NULL DEFAULT 0,
+    last_hit_at TIMESTAMPTZ
+);
+CREATE INDEX IF NOT EXISTS answer_cache_filters_idx
+    ON answer_cache (superseded_filter, authority_filter);
 """
 # corpus is a few hundred chunks; a plain sequential scan on the embedding column
 # is fast enough for a demo, so no ANN index (ivfflat/hnsw) is built.

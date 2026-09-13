@@ -11,6 +11,9 @@ from openai import OpenAI
 from langsmith import get_current_run_tree, traceable
 from langsmith.wrappers import wrap_openai
 
+from app.core.answer_cache import decorate_cached_result, lookup_answer_cache, store_answer_cache
+from app.core.config import CACHE_HIT_THRESHOLD
+
 EMBED_MODEL = "text-embedding-3-small"
 CHAT_MODEL = "gpt-4o-mini"
 RRF_K = 60  # RRF k parameter
@@ -30,6 +33,10 @@ TOP_N_FOR_ANSWER = 7  # Top chunks for answer that is passed to the LLM
 CONFIDENCE_HIGH = 0.55    # comfortably inside the observed on-topic range
 CONFIDENCE_MEDIUM = 0.35  # captures weaker-but-real matches down to the observed floor
 CONFIDENCE_LOW = 0.15     # abstain below this -- sits above the observed 0.123 off-topic ceiling
+
+# Re-exported alias so tests/callers can read the cache floor next to confidence tiers.
+# Actual default lives in config.py (env-overridable).
+CACHE_HIT_THRESHOLD = CACHE_HIT_THRESHOLD
 
 # Generation-only local model support: retrieval/embeddings always stay on OpenAI
 # (the corpus is already embedded at 1536-dim; a local embedding model would need a

@@ -37,3 +37,14 @@ ALLOWED_ORIGIN_REGEX = os.environ.get(
 # provider="local", costs at least one embeddings call -- see app.core.retrieval.embed()).
 # Not a precision budget, just a bound on the blast radius of a runaway client.
 DAILY_OPENAI_CALL_CAP = int(os.environ.get("DAILY_OPENAI_CALL_CAP", "300"))
+
+# Optional L1 exact-key cache. When unset, ask still uses Postgres L2 semantic cache.
+# Local: redis://localhost:6379/0 (see docker-compose redis). Prod demo: Upstash REDIS_URL
+# so data survives Render free web sleep (the web dyno sleeping does not wipe Upstash).
+REDIS_URL = os.environ.get("REDIS_URL", "").strip() or None
+
+# Cosine similarity floor for Postgres L2 paraphrase hits (1 - embedding <=> query).
+CACHE_HIT_THRESHOLD = float(os.environ.get("CACHE_HIT_THRESHOLD", "0.92"))
+
+# Redis key TTL in seconds (default 7 days). Postgres rows have no TTL.
+CACHE_REDIS_TTL_SECONDS = int(os.environ.get("CACHE_REDIS_TTL_SECONDS", str(7 * 24 * 3600)))
