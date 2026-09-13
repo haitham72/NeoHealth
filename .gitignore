@@ -12,3 +12,7 @@ static/
 supabase/.temp/
 HANDOFF.md
 Agreement/
+# Local tool config -- opencode.json holds a live API key; never commit it.
+opencode.json
+opencode.jsonc
+.opencode/
