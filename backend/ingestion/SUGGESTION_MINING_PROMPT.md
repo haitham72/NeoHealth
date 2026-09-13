@@ -1,8 +1,13 @@
 # Follow-up Question Mining Prompt — ReguLense corpus
 
 How to use this file: give the PROMPT section below to any light LLM worker along
-with ONE document's text. Each worker appends output lines to its own
-`suggestions.<worker>.jsonl`. Load them with
+with ONE document's chunk text from the database (`documents WHERE superseded =
+false`, `chunks ORDER BY id`) — the same text `load_suggestions.py` verifies
+anchors against, so a quote valid here is resolvable there.
+`ingestion/mine_suggestions.py` does this end-to-end: it renders each chunk under
+its real page marker, self-verifies every anchor and page before writing (dropping
+unverifiable entries, retrying once with the failing quotes as feedback), and
+writes `suggestions.<worker>.jsonl`. Load them with
 `python -m ingestion.load_suggestions [--mined-by NAME] suggestions.<worker>.jsonl`,
 which validates lines, resolves `anchor_quote` text to chunk IDs, embeds the
 questions, and upserts into the `suggested_questions` table (idempotent per
@@ -18,12 +23,14 @@ for the ReguLense Q&A system ("Continue exploring" suggestions).
 ### Input you receive
 - `DOC_CODE`, `TITLE`, `AUTHORITY` (e.g. Dubai Health Authority), `TIER`
   (`official` regulation or `research` paper), `VERSION`
-- The document's FULL TEXT with `[PAGE n]` markers and original section headings
-  preserved. Page markers are your only location source — never invent one.
+- The document's text as consecutive chunks, each preceded by a page marker:
+  `[PAGE n]`, or `[PAGE n-m]` for a chunk spanning pages. These markers are the
+  ONLY real page numbers in the document — never cite a page that has no marker.
 
 ### Task
-Write 3–5 questions a real user (clinician, licensing officer, facility admin,
+Write 1-2 questions a real user (clinician, licensing officer, facility admin,
 researcher) would plausibly ask next, **each answerable from THIS document alone**.
+Every question must earn its slot — do not pad.
 
 ### Rules
 1. **Grounded.** Every question must be answerable using only the input text. If
@@ -32,10 +39,12 @@ researcher) would plausibly ask next, **each answerable from THIS document alone
    valid before renewal?"). BANNED: "What is this document about?", "Summarize
    this document", "What are the key points?", anything answerable without
    reading this doc.
-3. **Located.** Every question carries: `pages` (list of page numbers where the
-   answer lives), `section` (nearest heading), and `anchor_quote` (≤200
-   characters copied EXACTLY from the input — character-for-character, no
-   paraphrase, no ellipsis trimming inside the quote).
+3. **Located.** Every question carries: `pages` (list of page numbers that appear
+   in `[PAGE ...]` markers, where the answer lives), `section` (nearest heading),
+   and `anchor_quote` (≤200 characters copied EXACTLY from the text between the
+   page markers — character-for-character, same wording and punctuation, no
+   paraphrase, no ellipsis). Quotes are checked automatically: a quote that is
+   not found verbatim is rejected.
 4. **Spread + varied.** Cover different sections of the doc, not one paragraph.
    Mix forms (what / how / when / how-long / list / requirements). At most ONE
    yes/no question per document.
@@ -68,8 +77,8 @@ Every line MUST have exactly these fields:
 ```
 
 - `form` is one of: what, how, when, how-long, list, requirements, yes-no.
-- `pages` must all appear as `[PAGE n]` markers in the input.
-- One line per question, 3–5 lines per document (or the single SKIP line).
+- `pages` must be page numbers that appear in `[PAGE ...]` markers in the input.
+- One line per question, 1-2 lines per document (or the single SKIP line).
 
 ### Self-check before emitting (do this silently, then output only the JSONL)
 - Could a reader answer each question using ONLY the quoted anchor + its page?
@@ -86,6 +95,16 @@ Every line MUST have exactly these fields:
   halves of one doc is unreliable).
 - **Append-only outputs.** Each worker writes ONLY its own
   `suggestions.<worker>.jsonl`. Never edit another worker's file.
+- **Resumable runs.** `mine_suggestions.py` records each document's terminal
+  status (`done`/`skip`/`failed`) in `backend/mining_state.json` (gitignored).
+  Later runs skip finished documents at their original scope positions — restart
+  at doc 34 of 35 and the log still numbers it `[34/35]` — and retry `failed`
+  ones. `--force` re-mines finished documents deliberately.
+- **Sensitive docs: skip immediately, never retry.** If a document trips the
+  provider's sensitive-content filter, record `status: skip` for it in
+  `mining_state.json` right away and never resend it to a cloud worker. Local
+  fallback only if explicitly requested; the current corpus policy is skip
+  outright (max 2 cloud attempts ever for a flagged document).
 - **One doc per call.** If a document exceeds the worker's context, split into
   front/back halves in SEPARATE calls and dedup overlapping questions manually
   before appending.
