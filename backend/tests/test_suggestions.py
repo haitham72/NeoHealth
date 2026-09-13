@@ -1,0 +1,219 @@
+"""Tests for mined follow-up suggestions: the JSONL loader
+(ingestion/load_suggestions.py), runtime matching (app/services/suggestions.py),
+and their wiring into answer_question / answer_question_stream.
+
+Convention notes: loader store paths commit, so an autouse TRUNCATE (not rollback)
+isolates tests; answer-path tests take redis_conn because the answer-cache probe
+would otherwise read the shared real Redis (same trap documented in
+test_guardrail.py).
+"""
+from unittest.mock import MagicMock
+
+import pytest
+
+from app.core import retrieval
+from app.core.answer_cache import normalize_question
+from app.services.suggestions import find_suggested_followups
+from ingestion.load_suggestions import load_suggestions_file
+from tests.conftest import QUERY_VEC, orthogonal_vec, seed_chunk, seed_document
+
+RELEVANT_VERDICT = "VERDICT: RELEVANT\nSUBJECT: t\nREDIRECT: general\nSUGGESTIONS: none"
+
+
+@pytest.fixture(autouse=True)
+def _clean_suggestion_state(conn):
+    def _reset():
+        with conn.cursor() as cur:
+            cur.execute("TRUNCATE answer_cache, suggested_questions, documents RESTART IDENTITY CASCADE")
+        conn.commit()
+
+    _reset()
+    yield
+    _reset()
+
+
+def _write(tmp_path, name, lines):
+    path = tmp_path / name
+    path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    return path
+
+
+def _good_line(doc_code="DHA/TEST/01", anchor="licenses are valid for two years"):
+    return (
+        '{"question": "How long is the license valid?", '
+        f'"doc_code": "{doc_code}", "authority": "Dubai Health Authority", '
+        '"tier": "official", "pages": [3], "section": "Validity", '
+        f'"anchor_quote": "{anchor}", "form": "how-long"}}'
+    )
+
+
+def _seed_doc_with_text(conn, doc_code="DHA/TEST/01", text="Professional licenses are valid for two years."):
+    doc_id = seed_document(conn, doc_code=doc_code)
+    seed_chunk(conn, doc_id, page=3, text=text)
+    return doc_id
+
+
+def _insert_suggestion(conn, question, embedding, doc_id, doc_code="DHA/TEST/01",
+                       authority="Dubai Health Authority"):
+    with conn.cursor() as cur:
+        cur.execute(
+            """
+            INSERT INTO suggested_questions (
+                question, question_normalized, question_embedding,
+                doc_code, document_id, chunk_ids, pages, section, authority, tier, mined_by
+            )
+            VALUES (%s, %s, %s::vector, %s, %s, %s, %s, %s, %s, %s, %s)
+            """,
+            (question, normalize_question(question), embedding, doc_code, doc_id,
+             [1], [3], "Validity", authority, "official", "test"),
+        )
+    conn.commit()
+
+
+# --- loader ---------------------------------------------------------------
+
+
+def test_loader_loads_valid_line(conn, tmp_path):
+    doc_id = _seed_doc_with_text(conn)
+    path = _write(tmp_path, "s.a.jsonl", [_good_line()])
+
+    stats = load_suggestions_file(conn, path, "worker-a", embed_fn=lambda t: QUERY_VEC)
+
+    assert stats == {"loaded": 1, "skipped_docs": 0, "rejected": 0}
+    with conn.cursor() as cur:
+        cur.execute("SELECT question, document_id, pages, chunk_ids FROM suggested_questions")
+        rows = cur.fetchall()
+    assert len(rows) == 1
+    assert rows[0][0] == "How long is the license valid?"
+    assert rows[0][1] == doc_id
+    assert rows[0][2] == [3]
+    assert rows[0][3] != []
+
+
+def test_loader_rejects_garbage(conn, tmp_path):
+    _seed_doc_with_text(conn)
+    path = _write(tmp_path, "s.b.jsonl", [
+        "{not json",
+        '{"question": "Missing fields"}',
+        _good_line().replace('"how-long"', '"essay"'),
+        _good_line("DHA/NOPE/99"),
+        _good_line().replace("licenses are valid for two years", "invented text here"),
+        "SKIP: cover pages only",
+        "",
+    ])
+
+    stats = load_suggestions_file(conn, path, "worker-b", embed_fn=lambda t: QUERY_VEC)
+
+    assert stats == {"loaded": 0, "skipped_docs": 1, "rejected": 5}
+    with conn.cursor() as cur:
+        cur.execute("SELECT count(*) FROM suggested_questions")
+        assert cur.fetchone()[0] == 0
+
+
+def test_loader_rerun_overwrites(conn, tmp_path):
+    _seed_doc_with_text(conn)
+    path = _write(tmp_path, "s.c.jsonl", [_good_line()])
+
+    first = load_suggestions_file(conn, path, "w1", embed_fn=lambda t: QUERY_VEC)
+    second = load_suggestions_file(conn, path, "w2", embed_fn=lambda t: QUERY_VEC)
+
+    assert first["loaded"] == 1 and second["loaded"] == 1
+    with conn.cursor() as cur:
+        cur.execute("SELECT count(*), max(mined_by) FROM suggested_questions")
+        count, mined_by = cur.fetchone()
+    assert count == 1
+    assert mined_by == "w2"
+
+
+def test_loader_anchor_spanning_chunks_falls_back_to_pages(conn, tmp_path):
+    """Anchor straddling a chunk boundary matches no single chunk -> chunks on the
+    listed pages are used instead of rejecting the line."""
+    doc_id = seed_document(conn, doc_code="DHA/TEST/02")
+    seed_chunk(conn, doc_id, page=3, text="Professional licenses are")
+    seed_chunk(conn, doc_id, page=3, text="valid for two years here.")
+    path = _write(tmp_path, "s.d.jsonl", [_good_line("DHA/TEST/02", "licenses are valid for two years")])
+
+    stats = load_suggestions_file(conn, path, "w", embed_fn=lambda t: QUERY_VEC)
+
+    assert stats["loaded"] == 1
+    with conn.cursor() as cur:
+        cur.execute("SELECT chunk_ids FROM suggested_questions")
+        assert len(cur.fetchone()[0]) == 2
+
+
+# --- runtime matching ------------------------------------------------------
+
+
+def test_match_prefers_same_authority_excludes_asked_and_limits(conn):
+    dha = seed_document(conn, doc_code="DHA/A", authority="Dubai Health Authority")
+    doh = seed_document(conn, doc_code="DOH/B", authority="Department of Health - Abu Dhabi")
+    _insert_suggestion(conn, "What are the telehealth standards?", QUERY_VEC, dha)
+    _insert_suggestion(conn, "DoH data rules?", QUERY_VEC, doh,
+                       doc_code="DOH/B", authority="Department of Health - Abu Dhabi")
+    _insert_suggestion(conn, "Far match?", orthogonal_vec(), dha)
+
+    got = find_suggested_followups(
+        conn, QUERY_VEC, "What are the telehealth standards?",
+        authority="Dubai Health Authority", limit=2)
+
+    questions = [g["question"] for g in got]
+    assert "What are the telehealth standards?" not in questions  # asked => excluded
+    assert len(got) == 2  # limit honored
+    assert got[0]["question"] == "Far match?"  # same-authority first despite worse vector
+    assert set(got[0]) == {"question", "doc_code", "document_id", "pages", "section"}
+
+
+def test_match_failure_returns_empty():
+    assert find_suggested_followups(None, QUERY_VEC, "q") == []
+
+
+# --- answer-path integration -----------------------------------------------
+
+
+def _mock_relevant_guardrail(monkeypatch):
+    mock_response = MagicMock()
+    mock_response.choices = [MagicMock(message=MagicMock(content=RELEVANT_VERDICT))]
+    monkeypatch.setattr(retrieval, "chat_completion",
+                        MagicMock(return_value=(mock_response, "gpt-4o-mini")))
+
+
+def test_answer_includes_mined_followups(conn, redis_conn, monkeypatch):
+    from tests.conftest import seed_official_doc
+
+    seed_official_doc(conn, score=0.7)
+    with conn.cursor() as cur:
+        cur.execute("SELECT id FROM documents LIMIT 1")
+        doc_id = cur.fetchone()[0]
+    _insert_suggestion(conn, "How long is the DHA license valid?", QUERY_VEC, doc_id)
+    monkeypatch.setattr(retrieval, "embed", lambda text: QUERY_VEC)
+    monkeypatch.setattr(retrieval, "generate_answer", lambda *a, **kw: ("Stub answer.", "gpt-4o-mini"))
+    _mock_relevant_guardrail(monkeypatch)
+
+    result = retrieval.answer_question(conn, "What are the telehealth standards?", superseded_filter=False)
+
+    assert result["abstained"] is False
+    assert result["suggested_followups"] == [{
+        "question": "How long is the DHA license valid?", "doc_code": "DHA/TEST/01",
+        "document_id": doc_id, "pages": [3], "section": "Validity",
+    }]
+
+
+def test_stream_includes_mined_followups(conn, redis_conn, monkeypatch):
+    from tests.conftest import seed_official_doc
+
+    seed_official_doc(conn, score=0.7)
+    with conn.cursor() as cur:
+        cur.execute("SELECT id FROM documents LIMIT 1")
+        doc_id = cur.fetchone()[0]
+    _insert_suggestion(conn, "How long is the DHA license valid?", QUERY_VEC, doc_id)
+    monkeypatch.setattr(retrieval, "embed", lambda text: QUERY_VEC)
+    monkeypatch.setattr(retrieval, "generate_answer", lambda *a, **kw: ("Stub answer.", "gpt-4o-mini"))
+    _mock_relevant_guardrail(monkeypatch)
+
+    events = list(retrieval.answer_question_stream(
+        conn, "What are the telehealth standards?", superseded_filter=False))
+    done = events[-1]
+
+    assert done["step"] == "done"
+    assert [s["question"] for s in done["result"]["suggested_followups"]] == [
+        "How long is the DHA license valid?"]

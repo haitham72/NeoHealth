@@ -480,6 +480,26 @@ standards). Both take the same `provider`/`model` fields as `/ask` and route to 
 Studio identically — this was a real bug once (they called the OpenAI-only chain and
 errored in local mode), fixed by mirroring `generate_answer()`'s branch.
 
+### Mined follow-up suggestions ("Continue exploring")
+
+The suggestions under an answer are not generated live and not a random static list:
+LLM workers crawl the corpus offline, one document at a time, each emitting 3-5
+grounded questions with page anchors + a verbatim quote
+(`backend/ingestion/SUGGESTION_MINING_PROMPT.md`). `ingestion/load_suggestions.py`
+loads those JSONL files, rejecting any line whose quote does not occur verbatim in
+the named document (fabrication guard) and resolving the quote to real `chunk_ids`
+via a pages fallback for quotes that straddle a chunk boundary; it embeds each
+question and upserts on `(question_normalized, document_id)` so re-mining is
+idempotent. At answer time the pipeline cosine-matches the *already-computed*
+`query_vec` against stored suggestion embeddings (`app/services/suggestions.py`),
+same-authority first, excluding the asked question, returning up to 3 with their
+`doc_code`/`pages`/`section` as provenance. Best-effort: a miss or failure returns
+nothing and the frontend falls back to its small static keyword bank
+(`lib/followUpQuestions.ts`), so suggestions can never break an answer. Clicking a
+suggestion re-enters the normal pipeline as a fresh question — the stored anchors
+are provenance metadata, deliberately **not** a retrieval bypass, since answering
+from stored chunk IDs would serve superseded versions after the corpus moves on.
+
 ### Observability (LangSmith)
 
 No LangChain or LangGraph anywhere in this project — `backend/app/core/retrieval.py` calls the OpenAI SDK

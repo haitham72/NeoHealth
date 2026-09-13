@@ -99,6 +99,16 @@ grounded answer from what's left. Medium/low-confidence answers get a `Certainty
 appended by the prompt; low-confidence queries additionally get tagged in LangSmith for
 review (`_flag_low_confidence`).
 
+"Continue exploring" suggestions are pre-mined offline (LLM workers crawl each doc per
+`backend/ingestion/SUGGESTION_MINING_PROMPT.md`; `ingestion/load_suggestions.py`
+validates, resolves anchors to `chunk_ids`, embeds, upserts into `suggested_questions`).
+At answer time `app/services/suggestions.py` cosine-matches the already-computed
+`query_vec` against those embeddings (same-authority first, asked question excluded) and
+the result rides along as `suggested_followups`; best-effort, so a miss just falls back
+to the frontend's static bank (`lib/followUpQuestions.ts`). Clicks re-enter the normal
+pipeline — anchors are provenance, never a retrieval bypass (that would serve superseded
+versions).
+
 Chat generation (not embeddings, which always stay on OpenAI) goes through
 `chat_completion()`: OpenAI first, falling back to NaraRouter (`laguna-s-2.1`,
 `router.bynara.id`) on any OpenAI failure — a failure trips a 60s cooldown so

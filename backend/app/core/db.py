@@ -151,6 +151,32 @@ CREATE TABLE IF NOT EXISTS cross_check_cache (
     last_hit_at TIMESTAMPTZ,
     UNIQUE (current_document_id, cited_page, question_normalized)
 );
+
+-- Mined follow-up questions ("Continue exploring" suggestions). Produced offline by
+-- LLM workers crawling documents file-by-file (see
+-- backend/ingestion/SUGGESTION_MINING_PROMPT.md), loaded by
+-- backend/ingestion/load_suggestions.py. Each row is grounded in a real document
+-- (anchor quote resolved to chunk_ids at load) and embedded so the live pipeline
+-- can cosine-match the user's question vector against them. Clicking a suggestion
+-- re-enters the normal pipeline (filters + freshness intact); the stored anchors
+-- travel as provenance metadata, never as a retrieval bypass.
+CREATE TABLE IF NOT EXISTS suggested_questions (
+    id SERIAL PRIMARY KEY,
+    question TEXT NOT NULL,
+    question_normalized TEXT NOT NULL,
+    question_embedding vector(1536) NOT NULL,
+    doc_code TEXT NOT NULL,
+    document_id INTEGER NOT NULL REFERENCES documents(id),
+    chunk_ids INTEGER[] NOT NULL DEFAULT '{}',
+    pages INTEGER[] NOT NULL DEFAULT '{}',
+    section TEXT,
+    authority TEXT,
+    tier TEXT NOT NULL DEFAULT 'official',
+    mined_by TEXT,
+    use_count INTEGER NOT NULL DEFAULT 0,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+    UNIQUE (question_normalized, document_id)
+);
 """
 # corpus is a few hundred chunks; a plain sequential scan on the embedding column
 # is fast enough for a demo, so no ANN index (ivfflat/hnsw) is built.

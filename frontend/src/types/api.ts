@@ -62,6 +62,14 @@ export interface RetrievedChunk {
 
 export type ConfidenceTier = "high" | "medium" | "low";
 
+export interface SuggestedFollowup {
+  question: string;
+  doc_code: string;
+  document_id: number;
+  pages: number[];
+  section?: string | null;
+}
+
 export interface Answered {
   abstained: false;
   answer: string;
@@ -76,6 +84,9 @@ export interface Answered {
   superseded_excluded: number;
   sibling_versions?: SiblingVersion[];
   retrieved_chunks?: RetrievedChunk[];
+  /** Mined, dataset-grounded follow-ups matched to this question server-side.
+   * When present and non-empty the UI prefers these over the static bank. */
+  suggested_followups?: SuggestedFollowup[];
   run_id?: string | null;
   cache_hit?: boolean;
   cache_layer?: "redis" | "postgres" | null;

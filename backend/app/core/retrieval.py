@@ -14,6 +14,7 @@ from langsmith.wrappers import wrap_openai
 
 from app.core.answer_cache import decorate_cached_result, lookup_answer_cache, store_answer_cache
 from app.core.config import CACHE_HIT_THRESHOLD
+from app.services.suggestions import find_suggested_followups
 
 logger = logging.getLogger(__name__)
 
@@ -749,6 +750,13 @@ def answer_question_stream(
         "retrieved_chunks": fused,
         "run_id": _current_run_id(),
     }
+    try:
+        # Mined follow-ups matched on the already-computed query_vec (free).
+        # Best-effort: the static frontend bank covers a miss or failure.
+        result["suggested_followups"] = find_suggested_followups(
+            conn, query_vec, question, document.get("authority"))
+    except Exception:
+        pass
     if cache_eligible:
         try:
             store_answer_cache(conn, question, query_vec, superseded_filter, authority_filter, result)
@@ -851,6 +859,13 @@ def answer_question(
         "retrieved_chunks": fused,
         "run_id": _current_run_id(),
     }
+    try:
+        # Mined follow-ups matched on the already-computed query_vec (free).
+        # Best-effort: the static frontend bank covers a miss or failure.
+        result["suggested_followups"] = find_suggested_followups(
+            conn, query_vec, question, document.get("authority"))
+    except Exception:
+        pass
     if cache_eligible:
         try:
             store_answer_cache(conn, question, query_vec, superseded_filter, authority_filter, result)

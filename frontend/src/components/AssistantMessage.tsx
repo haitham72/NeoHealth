@@ -41,6 +41,12 @@ export default function AssistantMessage({ message, streamingText, steps, isStre
   // messages stream).
   const followUps = useMemo(() => {
     if (!response || response.abstained) return [];
+    // Mined suggestions are grounded in real documents (matched server-side
+    // against this question), so they win over the static keyword bank, which
+    // stays as the fallback for answers with no mined match.
+    if (response.suggested_followups?.length) {
+      return response.suggested_followups.map((s) => s.question);
+    }
     return pickFollowUpQuestions({
       question,
       answer: response.answer,
