@@ -107,7 +107,12 @@ At answer time `app/services/suggestions.py` cosine-matches the already-computed
 the result rides along as `suggested_followups`; best-effort, so a miss just falls back
 to the frontend's static bank (`lib/followUpQuestions.ts`). Clicks re-enter the normal
 pipeline — anchors are provenance, never a retrieval bypass (that would serve superseded
-versions).
+versions). **Suggestions are never stored in the answer cache** (`_strip_for_storage`)
+and are re-attached at serve time — including cache hits, where `retrieval.
+_attach_suggested_followups` recovers the stored `query_embedding` from Postgres with
+zero LLM calls. Freezing them in the cache once made repeats serve pre-crawl/empty
+suggestions ("same questions over and over"); the mined table keeps growing, so anything
+derived from it must stay live.
 
 Chat generation (not embeddings, which always stay on OpenAI) goes through
 `chat_completion()`: OpenAI first, falling back to NaraRouter (`laguna-s-2.1`,
@@ -119,7 +124,12 @@ already-rate-limited OpenAI. Separately, a per-client soft cap (3 calls per roll
 `choices` list, and occasional mid-stream `APIError`s, both confirmed by testing
 directly against it — so it's always called non-streaming and delivered as one
 instant chunk instead of token-by-token; the frontend has a matching `answer_reset`
-event for the rarer case OpenAI itself drops mid-stream before falling back.
+event for the rarer case OpenAI itself drops mid-stream before falling back. Because
+those non-streaming calls (and local LM Studio generation) can block for minutes,
+`answer_question_stream` wraps them in `_call_with_heartbeats`: a `heartbeat` event
+every 10s that the router emits as an SSE comment (`: heartbeat`) — keeps the
+connection and the frontend's 60s idle timer alive without appearing in the trace.
+`DEFAULT_LOCAL_MODEL` is `qwen/qwen3-4b-2507` (the 9b was unloaded/slow in practice).
 
 `app/api/routers/` holds thin FastAPI route handlers — the dict `answer_question()`
 returns is passed straight through as JSON, never reinterpreted. `app/services/

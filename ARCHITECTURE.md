@@ -445,6 +445,15 @@ the browser and `backend/app/core/retrieval.py`, adding as little logic of their
    a simulated/timed spinner. It is not a second implementation of the pipeline; both
    routes share every retrieval/generation function unchanged.
 
+   One SSE-specific detail learned the hard way: local (LM Studio) generation and the
+   NaraRouter fallback are *blocking* calls with no token stream, so the response used to
+   be silent for their entire duration — anything slower than the frontend's 60s idle
+   timeout became a permanent spinner while LM Studio was still working (reproduced live:
+   a 95s local call ending in a 400 "Model unloaded"). `_call_with_heartbeats` now runs
+   those calls on a worker thread and yields a `heartbeat` event every 10s; the router
+   turns those into SSE comment lines (`: heartbeat`), which reset client idle timers and
+   pass proxies while staying invisible to parsers and the reasoning trace.
+
 Two smaller supporting routes: `GET /local-models` queries LM Studio for its currently
 loaded chat models (filtering out embedding models), returning an empty list rather than
 an error if LM Studio isn't running, so the frontend's provider switcher can show "no local
@@ -472,6 +481,17 @@ hits return the stored result plus `cache_hit: true`, which is the entire mechan
 behind the UI's tiny "Served from cache" note — and provider/model is deliberately
 never part of any cache key, so a cached explanation is shared regardless of which
 provider generated it.
+
+**What is never cached: annotations that depend on mutable state.** The learned lesson
+(bitten live): `suggested_followups` was originally attached before the store call, so
+every cached answer froze the suggestions that existed when it was generated — repeats
+kept serving pre-crawl suggestions (or none, falling back to the static bank) and read
+as "the same questions over and over". It is now stripped by `_strip_for_storage` and
+re-attached at serve time (`retrieval._attach_suggested_followups`) on every path,
+including cache hits — where the exact-key Redis path fetches the row's stored
+`query_embedding` from Postgres (one indexed read, still zero LLM calls) rather than
+re-embedding. Rule of thumb: cache the *answer*; recompute anything derived from tables
+that keep growing or changing.
 
 Two on-demand follow-up routes hang off citations, never running automatically with
 `/ask`: `POST /diff-followup` (full text of current vs previous version, 2-5 sentence
