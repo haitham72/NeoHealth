@@ -118,16 +118,19 @@ def _record_openai_call(client_ip: str) -> None:
     _openai_calls_by_ip.setdefault(client_ip, []).append(time.time())
 
 
-def chat_completion(messages: list[dict], client_ip: str | None = None, stream: bool = False):
+def chat_completion(messages: list[dict], client_ip: str | None = None, stream: bool = False,
+                    max_tokens: int | None = None):
     """OpenAI first, NaraRouter fallback on failure or per-IP overuse -- see the
-    comments above. Shared by generate_answer() and the on-demand /diff-followup and
-    /cross-check-regulation routers, which call this directly since they build their own
-    one-off prompts rather than going through _build_messages(). Returns
-    (response, active_model_actually_used)."""
+    comments above. Shared by generate_answer(), the guardrail, and the on-demand
+    /diff-followup and /cross-check-regulation routers, which call this directly
+    since they build their own one-off prompts rather than going through
+    _build_messages(). max_tokens is passed through only when set (None keeps the
+    existing calls byte-identical). Returns (response, active_model_actually_used)."""
     ip_limited = client_ip is not None and _openai_ip_limit_exceeded(client_ip)
+    extra = {} if max_tokens is None else {"max_tokens": max_tokens}
     if not _openai_is_degraded() and not ip_limited:
         try:
-            resp = client.chat.completions.create(model=CHAT_MODEL, messages=messages, temperature=0, stream=stream)
+            resp = client.chat.completions.create(model=CHAT_MODEL, messages=messages, temperature=0, stream=stream, **extra)
             if client_ip is not None:
                 _record_openai_call(client_ip)
             return resp, CHAT_MODEL
@@ -135,7 +138,7 @@ def chat_completion(messages: list[dict], client_ip: str | None = None, stream: 
             _mark_openai_degraded()
     if nararouter_client is None:
         raise RuntimeError("OpenAI is unavailable and NARAROUTER_API_KEY is not configured -- no fallback available")
-    resp = nararouter_client.chat.completions.create(model=NARAROUTER_MODEL, messages=messages, temperature=0, stream=stream)
+    resp = nararouter_client.chat.completions.create(model=NARAROUTER_MODEL, messages=messages, temperature=0, stream=stream, **extra)
     return resp, NARAROUTER_MODEL
 
 
@@ -175,6 +178,23 @@ def _flag_low_confidence(top_score: float) -> None:
     if run:
         run.add_tags(["low-confidence"])
         run.add_metadata({"top_score": top_score})
+
+
+def _safe_check_relevance(question: str, fused: list[dict], provider: str, model: str | None,
+                           client_ip: str | None) -> dict:
+    """Fail-open wrapper around guardrail.check_relevance -- mirrors the _safe_lookup
+    wrappers' philosophy one level up: the guardrail is advisory, the numeric tiering
+    is authoritative. Any exception (model down, timeout, fallback unconfigured)
+    logs and returns relevant=True so the pipeline proceeds exactly as it did before
+    the guardrail existed. (An unparseable verdict is already normalized to relevant
+    inside check_relevance itself.)"""
+    from app.core.guardrail import check_relevance
+
+    try:
+        return check_relevance(question, fused, provider, model, client_ip)
+    except Exception:
+        logger.warning("relevance guardrail failed; falling back to numeric tiering", exc_info=True)
+        return {"is_relevant": True, "message": "", "suggestions": []}
 
 
 def _flag_cache_event(
@@ -633,6 +653,21 @@ def answer_question_stream(
             },
         }
         return
+    yield {"step": "checking_relevance"}
+    guard = _safe_check_relevance(question, fused, provider, model, client_ip)
+    if not guard["is_relevant"]:
+        yield {
+            "step": "done",
+            "result": {
+                "abstained": True,
+                "reason": guard["message"],
+                "off_topic": True,
+                "suggested_questions": guard["suggestions"],
+                "top_score": top_score,
+                "run_id": _current_run_id(),
+            },
+        }
+        return
     if tier == "low":
         _flag_low_confidence(top_score)
 
@@ -775,6 +810,16 @@ def answer_question(
         return {
             "abstained": True,
             "reason": "below retrieval confidence threshold",
+            "top_score": top_score,
+            "run_id": _current_run_id(),
+        }
+    guard = _safe_check_relevance(question, fused, provider, model, client_ip)
+    if not guard["is_relevant"]:
+        return {
+            "abstained": True,
+            "reason": guard["message"],
+            "off_topic": True,
+            "suggested_questions": guard["suggestions"],
             "top_score": top_score,
             "run_id": _current_run_id(),
         }

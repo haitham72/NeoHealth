@@ -11,6 +11,7 @@ const STEP_LABELS: Record<string, (s: TraceStep) => string> = {
   waiting_for_backend: (s) => `Starting the server — ${s.detail ?? "0"}s`,
   backend_unavailable: () => "The server did not start. Try again later.",
   checking_cache: () => "Checking answer cache",
+  checking_relevance: () => "Checking relevance",
   cache_hit: (s) => `Cache hit (${s.detail ?? "cached"})`,
   cache_miss: () => "Cache miss — retrieving",
 };
