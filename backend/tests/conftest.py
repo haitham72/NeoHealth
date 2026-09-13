@@ -154,6 +154,23 @@ def seed_research_doc(conn, *, score: float = 0.7) -> dict:
 
 
 @pytest.fixture
+def redis_conn(monkeypatch):
+    """Fake Redis backing answer_cache.py's (and later diff_cache.py's) L1 layer, so
+    tests can exercise real Redis-shaped behavior (setex/get, exact-key hits/misses)
+    without a real Redis instance or depending on REDIS_URL being set in the test
+    environment. Patches `_get_redis()` itself rather than the module's `_redis_client`/
+    `_redis_failed` globals or `REDIS_URL`, so nothing needs restoring beyond what
+    monkeypatch already undoes automatically, and no state can leak between tests."""
+    import fakeredis
+
+    from app.core import answer_cache
+
+    fake = fakeredis.FakeStrictRedis(decode_responses=True)
+    monkeypatch.setattr(answer_cache, "_get_redis", lambda: fake)
+    return fake
+
+
+@pytest.fixture
 def stub_llm(monkeypatch):
     """Patches retrieval.py's two OpenAI-facing calls so tests exercise real SQL/RRF/
     tier-splitting logic against the test DB without a network call or API key.
