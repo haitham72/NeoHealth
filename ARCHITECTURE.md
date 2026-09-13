@@ -400,6 +400,29 @@ filtering was actually on) — it's the frontend/CLI's job to only *display* it 
 filtering was actually active, since showing "excluded" language on an unfiltered (naive)
 result would be a factually false claim (see §6.2).
 
+### 4.7 LLM relevance guardrail
+
+The numeric tier (§4.3) judges *embedding proximity*, which genuinely misfires on
+playful off-topic questions — measured live, "What shoe size is Messi?" scores ~0.23
+("size" embeds near "burn size estimation", plus cover-page template noise), clearing
+the 0.15 floor and producing a sourced low-confidence answer no threshold can prevent.
+So after the free floor and before the expensive generation call, a small LLM verdict
+runs on the question plus the top-3 chunk texts (`backend/app/core/guardrail.py`):
+`VERDICT: RELEVANT/OFF_TOPIC`, a `SUBJECT` line, a redirect picked from a hardcoded
+allowlist of real corpus areas, and up to 3 alternative questions. OFF_TOPIC abstains
+with a backend-composed fixed sentence ("This looks like it's about {subject}, which
+is out of scope… However, you can check {redirect}") — never LLM prose — plus the
+alternatives as clickable follow-ups, with no sources and no generation call spent.
+Fail-open at every level: a guardrail exception (LM Studio down, timeout), an
+unparseable verdict, or an off-allowlist redirect all fall through to the old numeric
+path or a generic redirect, so the gate can never block a real question. It uses the
+caller's selected provider/model (local LM Studio included), and abstentions carry
+`off_topic: true` so the frontend renders the full sentence instead of the legacy
+"I don't have guidance (reason)" frame. Deliberately not run before the cache gate —
+that would cost an LLM call per ask and defeat the zero-call cache path (§5); the
+accepted consequence is that a pre-guardrail cached answer keeps serving until it
+expires (observed once live with the Messi question; purged manually).
+
 ---
 
 ## 5. API layer (`backend/app/`)
@@ -438,6 +461,24 @@ The response is the `answer_question()` dict passed straight through, letting Fa
 default JSON encoder handle `datetime.date → ISO string` conversion automatically. No
 Pydantic response model was written deliberately — a response model would be a second copy
 of the contract that could drift from `backend/app/core/retrieval.py`'s actual return shape over time.
+
+Three exact-key caches sit in front of repeated LLM spend, one per endpoint family
+(`answer_cache`, `diff_cache`, `cross_check_cache` — each its own module, Redis L1 +
+Postgres L2, never-raising best-effort wrappers with rollback so a cache failure reads
+as a miss, never a 500). `answer_cache` is additionally semantic (paraphrases hit via
+stored embeddings); the follow-up caches are exact-key on (document ids, page,
+normalized question) because the question is already anchored to a citation. Cache
+hits return the stored result plus `cache_hit: true`, which is the entire mechanism
+behind the UI's tiny "Served from cache" note — and provider/model is deliberately
+never part of any cache key, so a cached explanation is shared regardless of which
+provider generated it.
+
+Two on-demand follow-up routes hang off citations, never running automatically with
+`/ask`: `POST /diff-followup` (full text of current vs previous version, 2-5 sentence
+comparison) and `POST /cross-check-regulation` (research excerpt vs related official
+standards). Both take the same `provider`/`model` fields as `/ask` and route to LM
+Studio identically — this was a real bug once (they called the OpenAI-only chain and
+errored in local mode), fixed by mirroring `generate_answer()`'s branch.
 
 ### Observability (LangSmith)
 
@@ -561,6 +602,16 @@ mid-sentence at both ends. Storing exact provenance at ingest time (once, cheapl
 of re-deriving an approximate location client-side (every time, expensively and
 unreliably) is the same shape of fix as supersession itself (§1) — trustworthy behavior
 comes from storing the true signal, not guessing it downstream.
+
+`PdfOverlay.tsx` imports the **legacy** pdf.js build (`pdfjs-dist/legacy/build/…`),
+not the package root. Version 6 uses `Map.prototype.getOrInsertComputed` (ES2025,
+cross-browser baseline only since early 2026) unconditionally — including on the
+`pdf.numPages` path — so any older browser throws on every document and the overlay
+shows only the error string. The legacy bundle self-polyfills it via core-js on both
+the main and worker threads (verified in the shipped bundle), which is Mozilla's own
+prescribed fix; a `src/pdfjs-legacy.d.ts` shim re-exports the root types because the
+legacy files ship without declarations and `npm run build` (`tsc -b`) would otherwise
+fail.
 
 ### 6.5 Source count and the confidence filter
 

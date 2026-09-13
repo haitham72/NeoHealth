@@ -84,8 +84,16 @@ Pipeline: embed query → hybrid search (pgvector cosine + Postgres full-text, b
 filtered by supersession/authority) → Reciprocal Rank Fusion → confidence tiering on
 the top-fused chunk's semantic score (`CONFIDENCE_HIGH`/`MEDIUM`/`LOW` constants near
 the top of `app/core/retrieval.py`, recalibrated against real query sampling — read the
-comment above them before changing the numbers) → abstain below the floor; otherwise
-drop chunks that didn't individually clear the floor (`filter_weak_chunks`, with an
+comment above them before changing the numbers) → abstain below the floor (free, no LLM
+spend); otherwise an LLM relevance guardrail (`app/core/guardrail.py` — question + top-3
+chunk texts, capped 400-token verdict, same selected provider/model) runs before the
+expensive generation call, because embedding proximity genuinely misfires on playful
+off-topic questions (measured: "What shoe size is Messi?" scores ~0.23). OFF_TOPIC
+abstains with a backend-composed fixed sentence + optional clickable alternatives
+(`off_topic: true`, `suggested_questions`), no sources, no generation. Fail-open at
+every level (exception/unparseable verdict/off-allowlist redirect → old numeric path),
+and deliberately *after* the answer-cache gate so cached answers still cost zero calls.
+Otherwise drop chunks that didn't individually clear the floor (`filter_weak_chunks`, with an
 exemption for lexical-only-hit chunks that carry a `0.0` sentinel score) and generate a
 grounded answer from what's left. Medium/low-confidence answers get a `Certainty:` line
 appended by the prompt; low-confidence queries additionally get tagged in LangSmith for
@@ -139,6 +147,15 @@ demo.py`) remains genuinely stateless; only the web frontend persists.
 - `CitationPopover.tsx` shows a text excerpt plus a "View in PDF" control that opens
   `PdfOverlay.tsx`, which renders precise highlight rectangles directly from
   `backend/ingestion/rechunk.py`'s stored bounding boxes — no client-side text matching.
+  It imports the **legacy** pdf.js build (`pdfjs-dist/legacy/build/…`, see
+  `src/pdfjs-legacy.d.ts`): v6 uses `Map.prototype.getOrInsertComputed` (ES2025)
+  unconditionally and breaks on older browsers with that exact error string — the
+  legacy bundle self-polyfills it (upstream's prescribed fix, verified in dist).
+  The popover also hosts both on-demand follow-ups (`DiffFollowup`, `CrossCheckRegulation`),
+  each carrying the current `provider`/`model` (threaded from `App.tsx`'s `lastFilters`)
+  so local mode reaches LM Studio; both show a tiny "Served from cache" note on
+  `cache_hit` (`diff_cache` exact-key, `cross_check_cache` on doc/page/question —
+  provider is never part of any cache key).
 - `OnboardingWelcome.tsx` — shown once per browser session (`sessionStorage`,
   `regulense-onboarding-v2`), reopenable any time via the ReguLense logo in
   `Sidebar.tsx`. A blocking modal wizard (dimmed backdrop, centered two-panel dialog,
