@@ -354,7 +354,10 @@ def test_answer_question_filter_mismatch_calls_llm(conn, redis_conn, spy_llm):
     spy_llm.generate_answer.assert_called_once()
 
 
-def test_answer_question_history_present_skips_cache_entirely(conn, redis_conn, spy_llm):
+def test_answer_question_history_present_still_uses_cache(conn, redis_conn, spy_llm):
+    # Reversed by explicit user request: history no longer disqualifies caching, since
+    # retrieval never reads history anyway (see retrieval.py's cache-gate docstrings) --
+    # a history-bearing follow-up should hit an existing cache entry just like a fresh ask.
     question = "What are the telehealth standards?"
     seed_official_doc(conn, score=0.6)
     store_answer_cache(conn, question, QUERY_VEC, False, None, SAMPLE_RESULT)
@@ -365,16 +368,9 @@ def test_answer_question_history_present_skips_cache_entirely(conn, redis_conn, 
     )
 
     assert result["abstained"] is False
-    assert "cache_hit" not in result
-    spy_llm.generate_answer.assert_called_once()
-    spy_llm.embed.assert_called_once()
-
-    # The history-bearing turn must not have overwritten the existing cache entry --
-    # a fresh probe for the same question/filters still returns the ORIGINAL stored
-    # answer, not the freshly-generated stub text.
-    still_cached = lookup_answer_cache(conn, question, None, False, None)
-    assert still_cached is not None
-    assert still_cached["result"]["answer"] == SAMPLE_RESULT["answer"]
+    assert result["cache_hit"] is True
+    spy_llm.generate_answer.assert_not_called()
+    spy_llm.embed.assert_not_called()
 
 
 # --- answer_question_stream --------------------------------------------------------
@@ -451,7 +447,8 @@ def test_stream_filter_mismatch_calls_llm(conn, redis_conn, spy_llm):
     spy_llm.generate_answer.assert_called_once()
 
 
-def test_stream_history_present_skips_cache_entirely(conn, redis_conn, spy_llm):
+def test_stream_history_present_still_uses_cache(conn, redis_conn, spy_llm):
+    # Reversed by explicit user request: see test_answer_question_history_present_still_uses_cache.
     question = "What are the telehealth standards?"
     seed_official_doc(conn, score=0.6)
     store_answer_cache(conn, question, QUERY_VEC, False, None, SAMPLE_RESULT)
@@ -464,15 +461,11 @@ def test_stream_history_present_skips_cache_entirely(conn, redis_conn, spy_llm):
     )
 
     assert result["abstained"] is False
-    assert "cache_hit" not in result
+    assert result["cache_hit"] is True
     steps = [e["step"] for e in events]
-    assert "checking_cache" not in steps
-    assert "cache_hit" not in steps
-    spy_llm.generate_answer.assert_called_once()
-
-    still_cached = lookup_answer_cache(conn, question, None, False, None)
-    assert still_cached is not None
-    assert still_cached["result"]["answer"] == SAMPLE_RESULT["answer"]
+    assert "checking_cache" in steps
+    assert "cache_hit" in steps
+    spy_llm.generate_answer.assert_not_called()
 
 
 # --- cache-read failure must degrade to a normal answer, never propagate -----------

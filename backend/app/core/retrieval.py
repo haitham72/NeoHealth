@@ -562,16 +562,21 @@ def answer_question_stream(
     would return>}. answer_question() itself is untouched — this is purely additive
     instrumentation for the streaming UI, not a second implementation of the pipeline.
 
-    Cache gate (Task 4): a history-bearing ask is cache-ineligible per the locked
-    decision (a follow-up's "right" answer depends on prior turns, which the cache
-    key doesn't capture) and skips straight to the pipeline below unchanged. Otherwise
-    a cheap Redis-only probe (no embedding call) runs first -- the fastest possible
-    path, zero OpenAI calls -- and only on a miss there does embed() run so a second,
-    full lookup (Redis again, then Postgres semantic) can use the vector; that same
-    query_vec is then reused for the real search below rather than re-embedding."""
+    Cache gate (Task 4, reversed by explicit user request): originally a history-bearing
+    ask was cache-ineligible, on the theory that a follow-up's "right" answer depends on
+    prior turns the cache key doesn't capture. That theory doesn't hold for this app:
+    retrieval never reads `history` at all (see _build_messages()'s docstring -- history
+    is loose LLM phrasing context only, never used to select or cite chunks), so the same
+    question+filters always retrieve and ground the same facts regardless of prior turns.
+    Caching is therefore always attempted, including for follow-ups, so a demo's
+    "Continue exploring" clicks can also hit cache. A cheap Redis-only probe (no
+    embedding call) runs first -- the fastest possible path, zero OpenAI calls -- and
+    only on a miss there does embed() run so a second, full lookup (Redis again, then
+    Postgres semantic) can use the vector; that same query_vec is then reused for the
+    real search below rather than re-embedding."""
     _name_run_by_model(provider, model)
 
-    cache_eligible = not history
+    cache_eligible = True
     if cache_eligible:
         yield {"step": "checking_cache"}
         hit = _safe_lookup_answer_cache(conn, question, None, superseded_filter, authority_filter)
@@ -585,11 +590,6 @@ def answer_question_stream(
             yield {"step": "cache_hit", "detail": "exact"}
             yield {"step": "done", "result": result}
             return
-    else:
-        _flag_cache_event(
-            hit=False, superseded_filter=superseded_filter, authority_filter=authority_filter,
-            skipped_reason="history",
-        )
 
     yield {"step": "embedding_query"}
     query_vec = embed(question)
@@ -730,14 +730,15 @@ def answer_question(
 ) -> dict:
     """Returns a dict describing either an abstention or a full answer with citation.
 
-    Cache gate (Task 4): mirrors answer_question_stream()'s gate structure (see its
-    docstring) minus the progress yields -- a cheap Redis-only probe first, embed()
-    only on a miss, then a full (Redis + Postgres) lookup with that vector before
-    falling through to the real pipeline. History-bearing asks skip the cache
-    entirely per the locked decision."""
+    Cache gate (Task 4, reversed by explicit user request): mirrors
+    answer_question_stream()'s gate structure (see its docstring for why
+    history-bearing asks are now cache-eligible too, not excluded) minus the progress
+    yields -- a cheap Redis-only probe first, embed() only on a miss, then a full
+    (Redis + Postgres) lookup with that vector before falling through to the real
+    pipeline."""
     _name_run_by_model(provider, model)
 
-    cache_eligible = not history
+    cache_eligible = True
     if cache_eligible:
         hit = _safe_lookup_answer_cache(conn, question, None, superseded_filter, authority_filter)
         if hit:
@@ -747,11 +748,6 @@ def answer_question(
                 authority_filter=authority_filter, matched_question=hit["matched_question"],
             )
             return decorate_cached_result(hit, _current_run_id())
-    else:
-        _flag_cache_event(
-            hit=False, superseded_filter=superseded_filter, authority_filter=authority_filter,
-            skipped_reason="history",
-        )
 
     query_vec = embed(question)
 
