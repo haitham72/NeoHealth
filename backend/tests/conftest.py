@@ -50,6 +50,12 @@ def test_conn():
     conn.close()
 
 
+@pytest.fixture
+def conn(test_conn):
+    """Alias for test_conn with shorter name -- cleaner test signatures."""
+    return test_conn
+
+
 def vec(cosine_to_query: float, dim: int = 1536) -> list[float]:
     """A unit vector whose cosine similarity to QUERY_VEC is exactly `cosine_to_query`
     -- lets a test pin a chunk's semantic_score to a precise value (e.g. just above or

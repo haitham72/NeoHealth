@@ -114,6 +114,22 @@ CREATE TABLE IF NOT EXISTS answer_cache (
 );
 CREATE INDEX IF NOT EXISTS answer_cache_filters_idx
     ON answer_cache (superseded_filter, authority_filter);
+
+-- Diff-followup cache (L2 durable store). Redis is L1 exact-key. Caches comparison
+-- results between current and previous versions of the same document. Exact-key only
+-- (no semantic search needed -- the question is already anchored to document pair).
+CREATE TABLE IF NOT EXISTS diff_cache (
+    id SERIAL PRIMARY KEY,
+    current_document_id INTEGER NOT NULL REFERENCES documents(id),
+    previous_document_id INTEGER NOT NULL REFERENCES documents(id),
+    question_normalized TEXT NOT NULL,
+    question_raw TEXT NOT NULL,
+    result_json JSONB NOT NULL,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+    hit_count INTEGER NOT NULL DEFAULT 0,
+    last_hit_at TIMESTAMPTZ,
+    UNIQUE (current_document_id, previous_document_id, question_normalized)
+);
 """
 # corpus is a few hundred chunks; a plain sequential scan on the embedding column
 # is fast enough for a demo, so no ANN index (ivfflat/hnsw) is built.
