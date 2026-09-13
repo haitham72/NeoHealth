@@ -57,13 +57,15 @@ flowchart TB
 - **Metadata parsed from source, not filenames** — one PDF in the corpus lives at a URL suggesting a 2023 document; the file itself is Issue 4, effective November 2025. ReguLense parses the document's own printed metadata, never the URL path.
 - **On-demand version comparison** — once an answer cites a document with an earlier version, a "See what changed" button sends the model the full text of both versions and explains the actual difference in plain language, scoped to the question that was asked.
 - **Precise PDF citation highlighting** — chunking is structure-aware (Docling: real headers/sections, not arbitrary page splits), and each chunk's exact bounding box is stored at ingest time, so "View in PDF" highlights the complete cited passage precisely — not a fuzzy, fixed-size window guessed from word overlap with the generated answer.
-- **Optional local-only generation** — answer generation can run fully on-machine via LM Studio's OpenAI-compatible server instead of OpenAI, for privacy-sensitive local development (retrieval/embeddings stay on OpenAI regardless; see `ARCHITECTURE.md`).
+- **"Continue exploring" — mined, not invented** — offline workers mine grounded follow-up questions from each document; the loader verifies every quote verbatim against the indexed chunk text before it's ever shown, and serve-time semantic matching excludes questions already asked in the conversation. Because these are pre-vetted, clicking one always answers — it even skips the relevance judge.
+- **Per-result cache eviction** — the "Served from cache" note carries a signed, short-lived token; "Remove from cache" deletes exactly that one entry (Redis key + its Postgres row), never a whole-cache purge.
+- **Optional local-only generation** — answer generation can run fully on-machine via LM Studio's OpenAI-compatible server instead of OpenAI, for privacy-sensitive local development (retrieval/embeddings stay on OpenAI regardless; the relevance judge always uses gpt-4o-mini, and see `ARCHITECTURE.md` for why).
 
 ## Tech stack
 
 | Layer | Choice |
 |---|---|
-| Corpus | 34 DHA/DoH/MOHAP regulatory PDFs + 3 research papers, ~800 structure-aware chunks |
+| Corpus | 40 PDFs — 36 in force (33 DHA/DoH/MOHAP regulatory + 3 research), 860 structure-aware chunks, 248 mined follow-up questions |
 | Chunking | Docling (`HybridChunker` + a merge/re-split pass — see `backend/ingestion/rechunk.py`) |
 | Storage | Postgres 16 + pgvector (Supabase) |
 | Embeddings | OpenAI `text-embedding-3-small` (1536-dim) |

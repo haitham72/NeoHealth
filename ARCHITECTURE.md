@@ -408,17 +408,28 @@ playful off-topic questions — measured live, "What shoe size is Messi?" scores
 the 0.15 floor and producing a sourced low-confidence answer no threshold can prevent.
 So after the free floor and before the expensive generation call, a small LLM verdict
 runs on the question plus the top-3 chunk texts (`backend/app/core/guardrail.py`):
-`VERDICT: RELEVANT/OFF_TOPIC`, a `SUBJECT` line, a redirect picked from a hardcoded
-allowlist of real corpus areas, and up to 3 alternative questions. OFF_TOPIC abstains
-with a backend-composed fixed sentence ("This looks like it's about {subject}, which
-is out of scope… However, you can check {redirect}") — never LLM prose — plus the
-alternatives as clickable follow-ups, with no sources and no generation call spent.
-Fail-open at every level: a guardrail exception (LM Studio down, timeout), an
-unparseable verdict, or an off-allowlist redirect all fall through to the old numeric
-path or a generic redirect, so the gate can never block a real question. It uses the
-caller's selected provider/model (local LM Studio included), and abstentions carry
-`off_topic: true` so the frontend renders the full sentence instead of the legacy
-"I don't have guidance (reason)" frame. Deliberately not run before the cache gate —
+`VERDICT: RELEVANT/OFF_TOPIC`, a `SUBJECT` line, and a redirect picked from a
+hardcoded allowlist of real corpus areas. OFF_TOPIC abstains with a
+backend-composed fixed sentence ("This looks like it's about {subject}, which is out
+of scope… However, you can check {redirect}") — never LLM prose — with no sources and
+no generation call spent. The clickable alternatives under it are the *mined*
+suggestions described below (semantic match + conversation-history exclusion), not
+the judge's own invented `SUGGESTIONS` list: that list stays in the payload as
+`suggested_questions` for API compatibility but is no longer rendered — it isn't
+scope-checked and once recommended a question the same guard then rejected.
+
+The judge model is ALWAYS gpt-4o-mini via the OpenAI→NaraRouter chain, never the
+answer's provider. Measured live: local qwen 4B rejected a real DHA question ("one
+school nurse per 750 students") that gpt-4o-mini accepted with identical retrieved
+evidence — a bad verdict silently suppresses a real answer, the one place a weaker
+model is not an acceptable trade. Exact mined questions (`is_mined_question`) skip the
+judge entirely: they are corpus-grounded by construction, so a question the product
+itself recommended can never come back off-topic. Fail-open at every level: a
+guardrail exception (network, timeout), an unparseable verdict, or an off-allowlist
+redirect all fall through to the old numeric path or a generic redirect, so the gate
+can never block a real question. Abstentions carry `off_topic: true` so the frontend
+renders the full sentence instead of the legacy "I don't have guidance (reason)"
+frame. Deliberately not run before the cache gate —
 that would cost an LLM call per ask and defeat the zero-call cache path (§5); the
 accepted consequence is that a pre-guardrail cached answer keeps serving until it
 expires (observed once live with the Messi question; purged manually).
@@ -482,6 +493,13 @@ behind the UI's tiny "Served from cache" note — and provider/model is delibera
 never part of any cache key, so a cached explanation is shared regardless of which
 provider generated it.
 
+Each hit also mints a signed `cache_token` (`app/core/cache_evict.py`: HMAC over a
+base64url JSON payload, ~1h TTL, secret from `CACHE_EVICT_SECRET` or a per-process
+random). The UI's light-red "Remove from cache" control posts it to
+`POST /cache/evict`, which deletes exactly the entry that was served — the Redis key
+plus its Postgres row, including the matched `cache_id` on a semantic answer-cache
+hit. No id enumeration, no whole-cache purge; already-gone rows are fine (idempotent).
+
 **What is never cached: annotations that depend on mutable state.** The learned lesson
 (bitten live): `suggested_followups` was originally attached before the store call, so
 every cached answer froze the suggestions that existed when it was generated — repeats
@@ -503,22 +521,43 @@ errored in local mode), fixed by mirroring `generate_answer()`'s branch.
 ### Mined follow-up suggestions ("Continue exploring")
 
 The suggestions under an answer are not generated live and not a random static list:
-LLM workers crawl the corpus offline, one document at a time, each emitting 3-5
-grounded questions with page anchors + a verbatim quote
-(`backend/ingestion/SUGGESTION_MINING_PROMPT.md`). `ingestion/load_suggestions.py`
-loads those JSONL files, rejecting any line whose quote does not occur verbatim in
-the named document (fabrication guard) and resolving the quote to real `chunk_ids`
-via a pages fallback for quotes that straddle a chunk boundary; it embeds each
-question and upserts on `(question_normalized, document_id)` so re-mining is
+LLM workers mine the corpus offline, one document per call, each emitting 1-2 grounded
+questions with page anchors + a verbatim quote
+(`backend/ingestion/SUGGESTION_MINING_PROMPT.md`; `ingestion/mine_suggestions.py`
+implements this end-to-end, with a `--verify` mode for externally produced files).
+Two lessons are baked in:
+
+- **Mine from the DB's chunk text, not the PDFs.** `load_suggestions.py` verifies
+  every `anchor_quote` against `chunks.text`; quotes mined from the pdfplumber text in
+  `parsed_documents.json` often don't exist in Docling's chunk text, which rejected 9
+  of the first 10 lines in testing. Mining from the exact rows the loader validates
+  against makes a kept anchor resolvable by construction.
+- **Self-verify, retry once, resume.** The miner whitespace-collapses each anchor and
+  checks it against the document's chunks, drops and re-asks once for the failing
+  quotes, and records terminal state in `mining_state.json` (finished docs are skipped
+  on later runs at their original positions; `--force` re-mines). Documents that trip
+  the provider's sensitive-content filter are recorded `skip` and never retried.
+  Final corpus state: 36/36 documents terminal, 33 mined, 3 skipped, **248 rows
+  loaded**.
+
+`load_suggestions.py` re-validates at load (verbatim anchor, resolves to real
+`chunk_ids`, pages fallback for quotes straddling a chunk boundary), embeds each
+question, and upserts on `(question_normalized, document_id)` so re-mining is
 idempotent. At answer time the pipeline cosine-matches the *already-computed*
 `query_vec` against stored suggestion embeddings (`app/services/suggestions.py`),
-same-authority first, excluding the asked question, returning up to 3 with their
-`doc_code`/`pages`/`section` as provenance. Best-effort: a miss or failure returns
-nothing and the frontend falls back to its small static keyword bank
-(`lib/followUpQuestions.ts`), so suggestions can never break an answer. Clicking a
-suggestion re-enters the normal pipeline as a fresh question — the stored anchors
-are provenance metadata, deliberately **not** a retrieval bypass, since answering
-from stored chunk IDs would serve superseded versions after the corpus moves on.
+same-authority first, excluding every question already asked in the conversation (not
+just the current one — otherwise clicking through suggestions rotates the same three
+forever), returning up to 3 with their `doc_code`/`pages`/`section` as provenance.
+`SUGGESTION_MIN_SIMILARITY` defaults to 0 (always the closest 3, however weak — a
+product decision to keep conversations going); raise it, e.g. 0.62, to filter far
+matches. The same service feeds the off-topic page's alternatives, and an exact match
+against the table bypasses the guardrail (`is_mined_question`, §4.7). Best-effort
+throughout: a miss or failure returns nothing and the frontend falls back to its small
+static keyword bank (`lib/followUpQuestions.ts`), so suggestions can never break an
+answer. Clicking a suggestion re-enters the normal pipeline as a fresh question — the
+stored anchors are provenance metadata, deliberately **not** a retrieval bypass, since
+answering from stored chunk IDs would serve superseded versions after the corpus moves
+on.
 
 ### Observability (LangSmith)
 
