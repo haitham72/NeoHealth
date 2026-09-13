@@ -252,3 +252,54 @@ def test_diff_followup_route_no_previous_version_never_cached(diff_route_env, co
     with conn.cursor() as cur:
         cur.execute("SELECT count(*) FROM diff_cache")
         assert cur.fetchone()[0] == 0
+
+
+# --- real Postgres-level failure must not leave the connection aborted -------------
+#
+# Same finding as test_answer_cache.py's equivalent test: _safe_lookup_diff_cache
+# (backend/app/api/routers/diff.py) must roll back on failure, not just catch-and-log,
+# because release_connection() (app/core/db.py) never rolls back before putconn() --
+# an aborted transaction left on `conn` would fail every later statement on this same
+# connection within the request (increment_daily_usage, the `SELECT version FROM
+# documents` right after, load_full_document_text() x2) and would then poison a later,
+# unrelated request via the pool. Triggers a REAL SQL error against the real test
+# Postgres connection (not a mock of lookup_diff_cache) to prove this.
+#
+# Exercised directly against _safe_lookup_diff_cache rather than through the full
+# /diff-followup route: find_previous_version() runs BEFORE the cache check in the
+# route and is itself unguarded (a separate, pre-existing, out-of-scope characteristic
+# -- not part of this fix), so pre-aborting `conn` and calling the whole route would
+# just surface the abort there first, proving nothing about _safe_lookup_diff_cache
+# specifically. Calling it directly isolates exactly the function this fix changed.
+
+
+def test_safe_lookup_diff_cache_survives_real_postgres_failure_and_rolls_back(conn):
+    """No redis_conn fixture here on purpose, same reasoning as
+    test_answer_cache.py's equivalent test -- REDIS_URL is unset in the test env, so
+    _get_redis() naturally returns None and the lookup falls straight through to a
+    genuine Postgres SELECT, which is exactly the statement that needs to observe the
+    aborted transaction."""
+    current_id, previous_id = _seed_pair(conn)
+    # Commit the seed before deliberately aborting the transaction below -- otherwise
+    # the rollback _safe_lookup_diff_cache performs to recover would also wipe out
+    # this test's own uncommitted seed data (a real Postgres ROLLBACK undoes
+    # everything in the current transaction, not just the statement that failed).
+    conn.commit()
+
+    # Simulate a real, already-aborted transaction -- a genuine SQL error against the
+    # real test Postgres, not a mock of lookup_diff_cache. This is exactly the state a
+    # real lock-timeout/etc. failure inside _postgres_lookup would leave `conn` in.
+    with pytest.raises(Exception):
+        with conn.cursor() as cur:
+            cur.execute("SELECT 1/0")
+
+    hit = diff_router._safe_lookup_diff_cache(conn, current_id, previous_id, "What changed?")
+
+    assert hit is None
+
+    # The real proof: a subsequent real query on the SAME conn object must succeed --
+    # if _safe_lookup_diff_cache had only caught-and-logged without rolling back, this
+    # would still raise InFailedSqlTransaction.
+    with conn.cursor() as cur:
+        cur.execute("SELECT 1")
+        assert cur.fetchone() == (1,)

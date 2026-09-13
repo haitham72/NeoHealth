@@ -1,4 +1,6 @@
 """POST /diff-followup."""
+import logging
+
 from fastapi import APIRouter, HTTPException, Request
 from slowapi.util import get_remote_address
 
@@ -10,7 +12,36 @@ from app.core.limiter import limiter
 from app.core.retrieval import chat_completion
 from app.services.versioning import find_previous_version, load_full_document_text
 
+logger = logging.getLogger(__name__)
+
 router = APIRouter()
+
+
+def _safe_lookup_diff_cache(conn, current_document_id: int, previous_document_id: int, question: str) -> dict | None:
+    """Best-effort wrapper around diff_cache.lookup_diff_cache -- mirrors
+    retrieval.py's _safe_lookup_answer_cache exactly (same bug class, same fix). A
+    transient Redis or Postgres failure during the cache gate must never break the
+    actual diff-followup response; any exception here is logged and treated as a plain
+    cache miss so the route falls straight through to the real pipeline.
+
+    A real Postgres-level failure mid-lookup leaves `conn`'s transaction aborted --
+    every later statement on this same connection (the `SELECT version FROM documents`
+    right after this call, load_full_document_text() x2, etc.) would then fail too, and
+    the connection would go back to the pool via release_connection() still aborted
+    (release_connection() itself never rolls back -- see app/core/db.py), silently
+    poisoning a later, unrelated request that checks it out next. So any failure here
+    rolls back before returning None, not just logs-and-swallows. The rollback itself
+    is wrapped too, since a sufficiently broken connection can raise on rollback as
+    well, and that must not become a new uncaught exception in the fallback path."""
+    try:
+        return lookup_diff_cache(conn, current_document_id, previous_document_id, question)
+    except Exception:
+        logger.warning("lookup_diff_cache failed; treating as a cache miss", exc_info=True)
+        try:
+            conn.rollback()
+        except Exception:
+            logger.warning("conn.rollback() after failed diff cache lookup also failed", exc_info=True)
+        return None
 
 
 @router.post("/diff-followup")
@@ -37,7 +68,7 @@ def diff_followup(request: Request, req: DiffFollowupRequest):
         # the daily cap. It also comes after resolving `prev` (needed for the cache
         # key) but before any other paid work, so an "unavailable" response is never
         # what gets cached below either.
-        hit = lookup_diff_cache(conn, req.current_document_id, prev["id"], req.question)
+        hit = _safe_lookup_diff_cache(conn, req.current_document_id, prev["id"], req.question)
         if hit:
             return hit["result"]
 

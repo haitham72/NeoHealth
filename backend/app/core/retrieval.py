@@ -223,11 +223,27 @@ def _safe_lookup_answer_cache(
     cache miss so callers fall straight through to the real pipeline, exactly as if
     nothing had ever been cached. Shared by both answer_question() and
     answer_question_stream()'s four call sites (two probes each) since the wrapping
-    logic is identical regardless of which of the two functions is calling it."""
+    logic is identical regardless of which of the two functions is calling it.
+
+    A real Postgres-level failure mid-lookup (e.g. a lock timeout during the SELECT,
+    or during the hit_count UPDATE/commit in _postgres_lookup) leaves `conn`'s
+    transaction in Postgres's aborted state -- every subsequent statement on that same
+    connection would then fail too (semantic_search right after this "graceful"
+    fallback, in the real pipeline), and the connection would go back to the pool via
+    release_connection() still aborted, silently poisoning a later, unrelated request
+    that checks it out next (release_connection() itself never rolls back -- see
+    app/core/db.py). So on any failure here, roll back before returning None, not just
+    log-and-swallow. The rollback itself is wrapped too: a sufficiently broken
+    connection can raise on rollback as well, and that must not become a new uncaught
+    exception in what's supposed to be the safe fallback path."""
     try:
         return lookup_answer_cache(conn, question, query_vec, superseded_filter, authority_filter)
     except Exception:
         logger.warning("lookup_answer_cache failed; treating as a cache miss", exc_info=True)
+        try:
+            conn.rollback()
+        except Exception:
+            logger.warning("conn.rollback() after failed cache lookup also failed", exc_info=True)
         return None
 
 

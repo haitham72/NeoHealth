@@ -491,6 +491,12 @@ def test_stream_history_present_skips_cache_entirely(conn, redis_conn, spy_llm):
 
 def test_answer_question_survives_cache_lookup_failure(conn, redis_conn, spy_llm, monkeypatch):
     seed_official_doc(conn, score=0.6)
+    # _safe_lookup_answer_cache now rolls back `conn` on ANY failure here (see the
+    # real-Postgres-failure test below for why) -- a real Postgres ROLLBACK undoes
+    # everything in the current transaction, not just the statement that failed, so
+    # this test's own uncommitted seed data must be committed first or the rollback
+    # below would silently wipe it out too.
+    conn.commit()
 
     def _boom(*args, **kwargs):
         raise RuntimeError("simulated Redis/Postgres failure")
@@ -514,6 +520,10 @@ def test_answer_question_survives_cache_lookup_failure(conn, redis_conn, spy_llm
 
 def test_stream_survives_cache_lookup_failure(conn, redis_conn, spy_llm, monkeypatch):
     seed_official_doc(conn, score=0.6)
+    # See test_answer_question_survives_cache_lookup_failure's comment -- the rollback
+    # _safe_lookup_answer_cache now performs would otherwise wipe out this uncommitted
+    # seed data too.
+    conn.commit()
 
     def _boom(*args, **kwargs):
         raise RuntimeError("simulated Redis/Postgres failure")
@@ -533,3 +543,62 @@ def test_stream_survives_cache_lookup_failure(conn, redis_conn, spy_llm, monkeyp
 
     stored = lookup_answer_cache(conn, "What are the telehealth standards?", None, False, None)
     assert stored is not None
+
+
+# --- real Postgres-level failure must not leave the connection aborted -------------
+#
+# Code review finding on the fix above: monkeypatching the whole lookup_answer_cache
+# function to raise (the two tests above) only proves graceful degradation for a pure
+# in-Python exception that never touches the connection's transaction state. It does
+# NOT prove the fix handles a genuine Postgres-level failure mid-lookup (e.g. a lock
+# timeout during _postgres_lookup's SELECT or its hit_count UPDATE/commit), which
+# leaves `conn` in Postgres's aborted-transaction state ("current transaction is
+# aborted, commands ignored until end of transaction block"). Catching that and
+# returning None is not enough on its own: the very next statement on that same
+# connection (semantic_search, called right after this "graceful" fallback) would
+# itself fail against the still-aborted transaction -- and since release_connection()
+# never rolls back before putconn() (app/core/db.py), the connection would also go
+# back to the pool still aborted, silently poisoning a later, unrelated request.
+#
+# This test triggers a REAL SQL error against the real test Postgres connection (not a
+# mock of the whole function) to leave `conn` genuinely aborted, then confirms both
+# that the pipeline still produces a normal answer AND that a subsequent real query on
+# the SAME conn object succeeds afterward -- proving _safe_lookup_answer_cache's
+# rollback actually cleared the aborted state, not just that the exception was
+# swallowed.
+
+
+def test_answer_question_survives_real_postgres_failure_and_rolls_back(conn, spy_llm):
+    """No redis_conn fixture here on purpose -- REDIS_URL is unset in the test env, so
+    _get_redis() naturally returns None (see test_lookup_miss_below_threshold's
+    docstring for the same pattern elsewhere in this file) and the cache gate's second
+    probe (with a real query_vec) falls through to a genuine Postgres SELECT, which is
+    exactly the statement that needs to observe the aborted transaction."""
+    seed_official_doc(conn, score=0.6)
+    # Commit the seed before deliberately aborting the transaction below -- otherwise
+    # the rollback that _safe_lookup_answer_cache performs to recover would also wipe
+    # out this test's own uncommitted seed data (a real Postgres ROLLBACK undoes
+    # everything in the current transaction, not just the statement that failed).
+    conn.commit()
+
+    # Simulate a real, already-aborted transaction -- a genuine SQL error against the
+    # real test Postgres, not a mock of lookup_answer_cache. This is exactly the state
+    # a real lock-timeout/etc. failure inside _postgres_lookup would leave `conn` in.
+    with pytest.raises(Exception):
+        with conn.cursor() as cur:
+            cur.execute("SELECT 1/0")
+
+    result = retrieval.answer_question(
+        conn, "What are the telehealth standards?", superseded_filter=False, provider="local",
+    )
+
+    assert result["abstained"] is False
+    assert "cache_hit" not in result
+    spy_llm.generate_answer.assert_called_once()
+
+    # The real proof: a subsequent real query on the SAME conn object must succeed --
+    # if _safe_lookup_answer_cache had only caught-and-logged without rolling back,
+    # this would still raise InFailedSqlTransaction.
+    with conn.cursor() as cur:
+        cur.execute("SELECT 1")
+        assert cur.fetchone() == (1,)
