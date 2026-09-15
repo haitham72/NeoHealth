@@ -511,6 +511,21 @@ including cache hits — where the exact-key Redis path fetches the row's stored
 re-embedding. Rule of thumb: cache the *answer*; recompute anything derived from tables
 that keep growing or changing.
 
+**Why Postgres does the semantic matching, not Redis — considered and deliberately
+deferred, not a gap.** Redis here is a plain exact-key store; the paraphrase-matching
+work in `answer_cache`'s L2 is entirely pgvector's cosine search. A Redis-native
+alternative exists (Redis Stack's vector/KNN search, or Upstash Vector as a separate
+product) and would shave the L2 path's one Postgres round-trip on a cache miss. It's
+not used because: pgvector is already mandatory infrastructure for the core retrieval
+pipeline (Phase 18-20's chunk search), so reusing it for the cache cost zero new
+infrastructure, versus running two synchronized vector indexes for one Redis-native;
+the L2 path only fires on a first-time phrasing, not per request, so the round-trip
+it's paying for is bounded and rare, not a per-question tax; and no production traffic
+has ever actually measured that round-trip as a real bottleneck — the case for moving
+it is reasoned from first principles, not from data. Revisit if paraphrase-repeat
+traffic ever becomes a large, measured share of volume; until then this is the
+correctly-sized architecture, not an unfinished one.
+
 Two on-demand follow-up routes hang off citations, never running automatically with
 `/ask`: `POST /diff-followup` (full text of current vs previous version, 2-5 sentence
 comparison) and `POST /cross-check-regulation` (research excerpt vs related official

@@ -62,6 +62,26 @@ living on the sleeping Render web dyno itself. Two env-overridable knobs:
 `CACHE_HIT_THRESHOLD` (cosine similarity floor for a Postgres L2 paraphrase hit, default
 `0.92`) and `CACHE_REDIS_TTL_SECONDS` (Redis key TTL, default 7 days).
 
+**Confirmed live 2026-09-15** (`Warmed cache: N ask rows, M diff rows` with N/M > 0 in
+the boot log — 0/0 with no error means Redis silently isn't connected, not that the
+cache is empty; check the two gotchas below before assuming a real outage). Two real
+mistakes hit wiring this up, worth knowing before you repeat them:
+- **`redis` missing from the root `requirements.txt`.** Render's `buildCommand`
+  installs from the repo-root `requirements.txt`, not `backend/requirements.txt` —
+  the package was added to the latter only, so Render's build silently never
+  installed it. No crash, no error: `_get_redis()`'s `try/except` degrades straight
+  to Postgres-only, indistinguishable from `REDIS_URL` simply being unset. Keep both
+  requirements files in sync; nothing currently enforces this automatically.
+- **Upstash gives you two different credentials for the same database — only one
+  works here.** The dashboard's "REST API" tab (`UPSTASH_REDIS_REST_URL` +
+  `UPSTASH_REDIS_REST_TOKEN`) is for Upstash's own HTTP SDK, not the standard `redis`
+  Python package this app uses. You need the **native protocol** connection string
+  instead — usually shown as a `redis-cli --tls -u redis://...` connect command on a
+  separate tab. Take just the `-u` value, and change its scheme from `redis://` to
+  `rediss://` (TLS) — the `--tls` flag doesn't survive being extracted from the
+  `redis-cli` command into a plain `REDIS_URL` env var; the scheme is what carries
+  that requirement for `redis.from_url()`.
+
 **Every message is cache-eligible, including "Continue exploring" follow-ups** —
 conversation history is passed to the LLM for phrasing context only, never used to
 select or cite chunks, so the same question+filters always ground the same facts
