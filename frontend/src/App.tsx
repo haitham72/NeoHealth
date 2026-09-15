@@ -284,6 +284,8 @@ function Chat() {
               question={precedingQuestion}
               onAskFollowUp={askFollowUp}
               askPending={mutation.isPending}
+              provider={lastFilters.provider}
+              model={lastFilters.model}
             />
           );
         })}
@@ -296,6 +298,8 @@ function Chat() {
             onAskFollowUp={askFollowUp}
             askPending={mutation.isPending}
             errorText={backendSlow ? "The backend is taking longer than expected. Your question will send automatically when it is ready." : undefined}
+            provider={lastFilters.provider}
+            model={lastFilters.model}
           />
         )}
       </MessageList>

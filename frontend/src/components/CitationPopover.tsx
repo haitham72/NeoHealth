@@ -3,7 +3,7 @@ import AuthorityBadge from "./AuthorityBadge";
 import DiffFollowup from "./DiffFollowup";
 import CrossCheckRegulation from "./CrossCheckRegulation";
 import PdfOverlay from "./PdfOverlay";
-import type { RetrievedChunk } from "../types/api";
+import type { Provider, RetrievedChunk } from "../types/api";
 
 interface Props {
   chunk: RetrievedChunk;
@@ -13,14 +13,16 @@ interface Props {
    * within this one citation. */
   sources: RetrievedChunk[];
   question: string;
+  provider: Provider;
+  model?: string;
   onClose: () => void;
 }
 
 /** Slide-up detail card for one numbered citation. Hosts both existing
- * follow-up actions unchanged: DiffFollowup (any document with a superseded
- * sibling) and CrossCheckRegulation (research-tier documents only) -- neither
- * component nor its backend endpoint changed, only where it's rendered. */
-export default function CitationPopover({ chunk, index, sources, question, onClose }: Props) {
+ * follow-up actions: DiffFollowup (any document with a superseded
+ * sibling) and CrossCheckRegulation (research-tier documents only) -- both
+ * inherit the current provider/model so local mode routes to LM Studio. */
+export default function CitationPopover({ chunk, index, sources, question, provider, model, onClose }: Props) {
   const doc = chunk.document;
   const [pdfOpen, setPdfOpen] = useState(false);
   return (
@@ -70,10 +72,10 @@ export default function CitationPopover({ chunk, index, sources, question, onClo
         )}
 
         {doc && (
-          <DiffFollowup docCode={doc.doc_code} currentDocumentId={doc.id} citedText={chunk.text} citedPage={chunk.page} question={question} />
+          <DiffFollowup docCode={doc.doc_code} currentDocumentId={doc.id} citedText={chunk.text} citedPage={chunk.page} question={question} provider={provider} model={model} />
         )}
         {doc?.tier === "research" && (
-          <CrossCheckRegulation docCode={doc.doc_code} currentDocumentId={doc.id} citedText={chunk.text} citedPage={chunk.page} question={question} />
+          <CrossCheckRegulation docCode={doc.doc_code} currentDocumentId={doc.id} citedText={chunk.text} citedPage={chunk.page} question={question} provider={provider} model={model} />
         )}
       </div>
 

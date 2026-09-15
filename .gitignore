@@ -8,7 +8,18 @@ __pycache__/
 static/
 .superpowers/
 .venv
+venv
 .DS_Store
 supabase/.temp/
 HANDOFF.md
 Agreement/
+# Local tool config -- opencode.json holds a live API key; never commit it.
+opencode.json
+opencode.jsonc
+.opencode/
+
+# Mining worker output/inputs (see backend/ingestion/mine_suggestions.py) -- raw
+# regulation text extracts and generated JSONL, regenerable; canonical store is the
+# suggested_questions table, not these files.
+backend/suggestions/
+backend/mining_inputs/

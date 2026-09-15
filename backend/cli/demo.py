@@ -39,7 +39,15 @@ def print_regulense(result: dict):
     print("[ REGULENSE ]  -- supersession-filtered, mandatory citation")
     print("-" * WIDTH)
     if result["abstained"]:
-        print("I don't have current guidance on that.")
+        # Same split as cli/ask.py: guardrail off-topic verdicts print their composed
+        # message + alternatives, numeric abstentions the fixed sentence.
+        if result.get("off_topic"):
+            print(result.get("reason") or "I don't have current guidance on that.")
+            print("You could ask about:")
+            for q in result["suggested_questions"]:
+                print(f"  → {q}")
+        else:
+            print("I don't have current guidance on that.")
         return
     doc = result["document"]
     print(result["answer"])

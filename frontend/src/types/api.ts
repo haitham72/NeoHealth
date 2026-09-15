@@ -30,6 +30,17 @@ export interface Abstained {
   reason: string;
   top_score?: number;
   run_id?: string | null;
+  /** Present and true only on guardrail off-topic abstentions: reason is already a
+   * complete polite sentence, rendered directly instead of the legacy frame. */
+  off_topic?: boolean;
+  /** Present only on guardrail off-topic abstentions: clickable in-scope
+   * alternatives, rendered through the normal FollowUpQuestions component.
+   * Legacy: superseded by suggested_followups, kept in the payload for API
+   * compatibility but no longer rendered. */
+  suggested_questions?: string[];
+  /** Mined, dataset-grounded follow-ups matched to the query with a similarity
+   * floor. This is what the off-topic "Continue exploring" panel renders. */
+  suggested_followups?: SuggestedFollowup[];
 }
 
 export interface BBox {
@@ -56,6 +67,14 @@ export interface RetrievedChunk {
 
 export type ConfidenceTier = "high" | "medium" | "low";
 
+export interface SuggestedFollowup {
+  question: string;
+  doc_code: string;
+  document_id: number;
+  pages: number[];
+  section?: string | null;
+}
+
 export interface Answered {
   abstained: false;
   answer: string;
@@ -70,7 +89,17 @@ export interface Answered {
   superseded_excluded: number;
   sibling_versions?: SiblingVersion[];
   retrieved_chunks?: RetrievedChunk[];
+  /** Mined, dataset-grounded follow-ups matched to this question server-side.
+   * When present and non-empty the UI prefers these over the static bank. */
+  suggested_followups?: SuggestedFollowup[];
   run_id?: string | null;
+  cache_hit?: boolean;
+  cache_layer?: "redis" | "postgres" | null;
+  cache_similarity?: number | null;
+  cache_match_mode?: "exact_key_plus_filters" | "query_plus_filters" | null;
+  /** Signed token for the per-result "Remove from cache" control (minted server-side
+   * with each cache hit; absent on fresh answers). */
+  cache_token?: string;
 }
 
 export type AskResponse = Abstained | Answered;
@@ -92,6 +121,8 @@ export interface DiffFollowupRequest {
   cited_text: string;
   cited_page: number;
   question: string;
+  provider?: Provider;
+  model?: string;
 }
 
 export interface DiffFollowupResult {
@@ -99,6 +130,8 @@ export interface DiffFollowupResult {
   previous_version: string;
   previous_effective_date: string;
   explanation: string;
+  cache_hit?: boolean;
+  cache_token?: string;
 }
 
 export interface DiffFollowupUnavailable {
@@ -114,6 +147,8 @@ export interface CrossCheckRegulationRequest {
   cited_text: string;
   cited_page: number;
   question: string;
+  provider?: Provider;
+  model?: string;
 }
 
 export interface RelatedOfficialDocument {
@@ -127,6 +162,8 @@ export interface CrossCheckRegulationResult {
   available: true;
   explanation: string;
   documents: RelatedOfficialDocument[];
+  cache_hit?: boolean;
+  cache_token?: string;
 }
 
 export interface CrossCheckRegulationUnavailable {

@@ -96,6 +96,87 @@ CREATE TABLE IF NOT EXISTS chat_messages (
     created_at TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 CREATE INDEX IF NOT EXISTS chat_messages_chat_id_idx ON chat_messages(chat_id, created_at);
+
+-- Semantic answer cache (L2 durable store). Redis is L1 exact-key; this table holds
+-- query embeddings so paraphrases can hit without an LLM call. Filter columns must
+-- match the ask request's non-LLM filters exactly (superseded + authority).
+CREATE TABLE IF NOT EXISTS answer_cache (
+    id SERIAL PRIMARY KEY,
+    question_normalized TEXT NOT NULL,
+    question_raw TEXT NOT NULL,
+    superseded_filter BOOLEAN NOT NULL,
+    authority_filter TEXT,
+    query_embedding vector(1536) NOT NULL,
+    result_json JSONB NOT NULL,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+    hit_count INTEGER NOT NULL DEFAULT 0,
+    last_hit_at TIMESTAMPTZ
+);
+CREATE INDEX IF NOT EXISTS answer_cache_filters_idx
+    ON answer_cache (superseded_filter, authority_filter);
+
+-- Diff-followup cache (L2 durable store). Redis is L1 exact-key. Caches comparison
+-- results between current and previous versions of the same document. Exact-key only
+-- (no semantic search needed -- the question is already anchored to document pair).
+CREATE TABLE IF NOT EXISTS diff_cache (
+    id SERIAL PRIMARY KEY,
+    current_document_id INTEGER NOT NULL REFERENCES documents(id),
+    previous_document_id INTEGER NOT NULL REFERENCES documents(id),
+    question_normalized TEXT NOT NULL,
+    question_raw TEXT NOT NULL,
+    result_json JSONB NOT NULL,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+    hit_count INTEGER NOT NULL DEFAULT 0,
+    last_hit_at TIMESTAMPTZ,
+    UNIQUE (current_document_id, previous_document_id, question_normalized)
+);
+
+-- Cross-check cache (L2 durable store). Redis is L1 exact-key. Caches the
+-- "research excerpt vs official standards" explanation for one citing document.
+-- Exact-key only (no semantic layer -- the question is already anchored to a
+-- specific citing document). Keyed on (current_document_id, cited_page,
+-- question_normalized): cited_text is derivable from doc+page, so two citations
+-- of the same page with slightly different excerpts share one entry. Like
+-- diff_cache, excerpts depend on corpus state, so a corpus change does not
+-- invalidate cached entries -- same accepted staleness posture as answer_cache.
+CREATE TABLE IF NOT EXISTS cross_check_cache (
+    id SERIAL PRIMARY KEY,
+    current_document_id INTEGER NOT NULL REFERENCES documents(id),
+    cited_page INTEGER NOT NULL,
+    question_normalized TEXT NOT NULL,
+    question_raw TEXT NOT NULL,
+    result_json JSONB NOT NULL,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+    hit_count INTEGER NOT NULL DEFAULT 0,
+    last_hit_at TIMESTAMPTZ,
+    UNIQUE (current_document_id, cited_page, question_normalized)
+);
+
+-- Mined follow-up questions ("Continue exploring" suggestions). Produced offline by
+-- LLM workers crawling documents file-by-file (see
+-- backend/ingestion/SUGGESTION_MINING_PROMPT.md), loaded by
+-- backend/ingestion/load_suggestions.py. Each row is grounded in a real document
+-- (anchor quote resolved to chunk_ids at load) and embedded so the live pipeline
+-- can cosine-match the user's question vector against them. Clicking a suggestion
+-- re-enters the normal pipeline (filters + freshness intact); the stored anchors
+-- travel as provenance metadata, never as a retrieval bypass.
+CREATE TABLE IF NOT EXISTS suggested_questions (
+    id SERIAL PRIMARY KEY,
+    question TEXT NOT NULL,
+    question_normalized TEXT NOT NULL,
+    question_embedding vector(1536) NOT NULL,
+    doc_code TEXT NOT NULL,
+    document_id INTEGER NOT NULL REFERENCES documents(id),
+    chunk_ids INTEGER[] NOT NULL DEFAULT '{}',
+    pages INTEGER[] NOT NULL DEFAULT '{}',
+    section TEXT,
+    authority TEXT,
+    tier TEXT NOT NULL DEFAULT 'official',
+    mined_by TEXT,
+    use_count INTEGER NOT NULL DEFAULT 0,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+    UNIQUE (question_normalized, document_id)
+);
 """
 # corpus is a few hundred chunks; a plain sequential scan on the embedding column
 # is fast enough for a demo, so no ANN index (ivfflat/hnsw) is built.

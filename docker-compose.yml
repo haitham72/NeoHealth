@@ -13,6 +13,25 @@ services:
       timeout: 3s
       retries: 10
 
+  # L1 exact-key answer cache. Named volume + AOF so local restarts keep keys.
+  # Prod on Render free: this local `redis` service is dev-only -- never run Redis on
+  # the sleeping web dyno itself. Prod REDIS_URL points at a separate managed instance
+  # (Upstash) instead, since the only real traffic here is the interviewer-run demo:
+  # a free-tier managed Redis is worth running for the latency win, not something to
+  # skip. Postgres (`answer_cache`/`diff_cache`) is still the durable source of truth
+  # either way -- every boot reloads Redis from it in full (app/main.py's startup
+  # hook), so Redis itself can be wiped or unreachable with nothing lost.
+  redis:
+    image: redis:7-alpine
+    ports: ["6379:6379"]
+    command: ["redis-server", "--appendonly", "yes"]
+    volumes: [redisdata:/data]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
   backend:
     build: { context: ./backend, target: runtime }
     env_file: [./backend/.env]        # LANGSMITH_*
@@ -22,8 +41,11 @@ services:
       PGUSER: regulense
       PGPASSWORD: regulense_dev_password
       PGDATABASE: regulense
+      REDIS_URL: redis://redis:6379/0
       ALLOWED_ORIGINS: http://localhost:5173,http://localhost:8080
-    depends_on: { db: { condition: service_healthy } }
+    depends_on:
+      db: { condition: service_healthy }
+      redis: { condition: service_healthy }
     ports: ["8000:8000"]
 
   frontend:
@@ -36,3 +58,4 @@ services:
 
 volumes:
   pgdata:
+  redisdata:

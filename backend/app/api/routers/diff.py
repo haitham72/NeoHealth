@@ -1,15 +1,49 @@
 """POST /diff-followup."""
+import logging
+
 from fastapi import APIRouter, HTTPException, Request
 from slowapi.util import get_remote_address
 
 from app.api.schemas.diff import DiffFollowupRequest
+from app.core.cache_evict import sign_cache_token
 from app.core.config import DAILY_OPENAI_CALL_CAP
 from app.core.db import get_connection, increment_daily_usage, release_connection
+from app.core.diff_cache import lookup_diff_cache, store_diff_cache
 from app.core.limiter import limiter
-from app.core.retrieval import chat_completion
+from app.core.retrieval import chat_completion, local_client, resolve_model
 from app.services.versioning import find_previous_version, load_full_document_text
 
+logger = logging.getLogger(__name__)
+
 router = APIRouter()
+
+
+def _safe_lookup_diff_cache(conn, current_document_id: int, previous_document_id: int, question: str) -> dict | None:
+    """Best-effort wrapper around diff_cache.lookup_diff_cache -- mirrors
+    retrieval.py's _safe_lookup_answer_cache exactly (same bug class, same fix). A
+    transient Redis or Postgres failure during the cache gate must never break the
+    actual diff-followup response; any exception here is logged and treated as a plain
+    cache miss so the route falls straight through to the real pipeline.
+
+    A real Postgres-level failure mid-lookup leaves `conn`'s transaction aborted --
+    every later statement on this same connection within this request (the `SELECT
+    version FROM documents` right after this call, load_full_document_text() x2, etc.)
+    would then fail too, which is what would actually surface as a 500 to the user.
+    (The connection pool's own _putconn() already rolls back a non-idle connection --
+    or closes it -- before it can reach a later, unrelated request, so this is a
+    within-request concern, not a cross-request poisoning risk.) So any failure here
+    rolls back before returning None, not just logs-and-swallows. The rollback itself
+    is wrapped too, since a sufficiently broken connection can raise on rollback as
+    well, and that must not become a new uncaught exception in the fallback path."""
+    try:
+        return lookup_diff_cache(conn, current_document_id, previous_document_id, question)
+    except Exception:
+        logger.warning("lookup_diff_cache failed; treating as a cache miss", exc_info=True)
+        try:
+            conn.rollback()
+        except Exception:
+            logger.warning("conn.rollback() after failed diff cache lookup also failed", exc_info=True)
+        return None
 
 
 @router.post("/diff-followup")
@@ -27,13 +61,33 @@ def diff_followup(request: Request, req: DiffFollowupRequest):
     under context limits) -- not a general-purpose design for arbitrarily large corpora."""
     conn = get_connection()
     try:
-        count = increment_daily_usage(conn)
-        if count > DAILY_OPENAI_CALL_CAP:
-            raise HTTPException(429, "Daily usage cap reached -- try again tomorrow.")
-
         prev = find_previous_version(conn, req.doc_code, req.current_document_id)
         if not prev:
             return {"available": False, "reason": "no earlier version of this document exists"}
+
+        # Cache check comes before increment_daily_usage: that counter tracks real
+        # OpenAI calls, and a cache hit makes none, so it must not be charged against
+        # the daily cap. It also comes after resolving `prev` (needed for the cache
+        # key) but before any other paid work, so an "unavailable" response is never
+        # what gets cached below either.
+        hit = _safe_lookup_diff_cache(conn, req.current_document_id, prev["id"], req.question)
+        if hit:
+            # Same convention as /ask's cached answers: mark the hit so the UI can
+            # show its tiny "Served from cache" note. Copied (not mutated in place)
+            # and only set here on the hit path, so the stored payload stays clean
+            # and fresh generations never carry the marker into store_diff_cache.
+            result = dict(hit["result"])
+            result["cache_hit"] = True
+            # Signed token behind the UI's "Remove from cache" control: bound to
+            # exactly this (current, previous, question) entry.
+            result["cache_token"] = sign_cache_token(
+                "diff", cur=req.current_document_id, prev=prev["id"], q=req.question,
+            )
+            return result
+
+        count = increment_daily_usage(conn)
+        if count > DAILY_OPENAI_CALL_CAP:
+            raise HTTPException(429, "Daily usage cap reached -- try again tomorrow.")
 
         with conn.cursor() as cur:
             cur.execute("SELECT version FROM documents WHERE id = %s", (req.current_document_id,))
@@ -44,7 +98,11 @@ def diff_followup(request: Request, req: DiffFollowupRequest):
         if not current_full or not previous_full:
             return {"available": False, "reason": "no indexed page text found for one of the versions"}
 
-        resp, _ = chat_completion([
+        # model is only meaningful for the local provider (same convention as
+        # /ask in routers/ask.py) -- a caller-supplied OpenAI model id must never
+        # pass straight through to a paid completion call unchecked.
+        model = req.model if req.provider == "local" else None
+        messages = [
             {
                 "role": "system",
                 "content": (
@@ -69,15 +127,27 @@ def diff_followup(request: Request, req: DiffFollowupRequest):
                     f"=== PREVIOUS VERSION (v{prev['version']}, effective {prev['effective_date']}) ===\n{previous_full}"
                 ),
             },
-        ], client_ip=get_remote_address(request))
+        ]
+        if req.provider != "openai":
+            # Local/LM Studio path -- mirrors generate_answer()'s provider branch in
+            # retrieval.py, so "local" mode works here exactly like the main /ask
+            # pipeline instead of falling into chat_completion (OpenAI->NaraRouter
+            # only) and erroring about missing keys.
+            resp = local_client.chat.completions.create(
+                model=resolve_model(req.provider, model), messages=messages, temperature=0
+            )
+        else:
+            resp, _ = chat_completion(messages, client_ip=get_remote_address(request))
         explanation = (resp.choices[0].message.content or "").strip()
 
-        return {
+        result = {
             "available": True,
             "previous_version": prev["version"],
             "previous_effective_date": prev["effective_date"],
             "explanation": explanation,
         }
+        store_diff_cache(conn, req.current_document_id, prev["id"], req.question, result)
+        return result
     except HTTPException:
         raise
     except Exception as e:

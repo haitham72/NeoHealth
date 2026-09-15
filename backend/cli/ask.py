@@ -11,9 +11,21 @@ from app.core.retrieval import answer_question
 
 def print_result(result: dict):
     if result["abstained"]:
-        print("I don't have current guidance on that.")
-        if "top_score" in result:
-            print(f"(best match confidence {result['top_score']:.2f}, below threshold)")
+        # Guardrail off-topic abstentions carry a full polite message plus optional
+        # alternatives; numeric abstentions keep the old fixed sentence + score note.
+        if result.get("off_topic"):
+            print(result.get("reason") or "I don't have current guidance on that.")
+            if result.get("suggested_questions"):
+                print()
+                print("You could ask about:")
+                for q in result["suggested_questions"]:
+                    print(f"  → {q}")
+        else:
+            print("I don't have current guidance on that.")
+            if result.get("reason"):
+                print(f"({result['reason']})")
+            if "top_score" in result:
+                print(f"(best match confidence {result['top_score']:.2f}, below threshold)")
         return
 
     doc = result["document"]

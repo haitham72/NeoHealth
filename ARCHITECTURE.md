@@ -400,6 +400,40 @@ filtering was actually on) — it's the frontend/CLI's job to only *display* it 
 filtering was actually active, since showing "excluded" language on an unfiltered (naive)
 result would be a factually false claim (see §6.2).
 
+### 4.7 LLM relevance guardrail
+
+The numeric tier (§4.3) judges *embedding proximity*, which genuinely misfires on
+playful off-topic questions — measured live, "What shoe size is Messi?" scores ~0.23
+("size" embeds near "burn size estimation", plus cover-page template noise), clearing
+the 0.15 floor and producing a sourced low-confidence answer no threshold can prevent.
+So after the free floor and before the expensive generation call, a small LLM verdict
+runs on the question plus the top-3 chunk texts (`backend/app/core/guardrail.py`):
+`VERDICT: RELEVANT/OFF_TOPIC`, a `SUBJECT` line, and a redirect picked from a
+hardcoded allowlist of real corpus areas. OFF_TOPIC abstains with a
+backend-composed fixed sentence ("This looks like it's about {subject}, which is out
+of scope… However, you can check {redirect}") — never LLM prose — with no sources and
+no generation call spent. The clickable alternatives under it are the *mined*
+suggestions described below (semantic match + conversation-history exclusion), not
+the judge's own invented `SUGGESTIONS` list: that list stays in the payload as
+`suggested_questions` for API compatibility but is no longer rendered — it isn't
+scope-checked and once recommended a question the same guard then rejected.
+
+The judge model is ALWAYS gpt-4o-mini via the OpenAI→NaraRouter chain, never the
+answer's provider. Measured live: local qwen 4B rejected a real DHA question ("one
+school nurse per 750 students") that gpt-4o-mini accepted with identical retrieved
+evidence — a bad verdict silently suppresses a real answer, the one place a weaker
+model is not an acceptable trade. Exact mined questions (`is_mined_question`) skip the
+judge entirely: they are corpus-grounded by construction, so a question the product
+itself recommended can never come back off-topic. Fail-open at every level: a
+guardrail exception (network, timeout), an unparseable verdict, or an off-allowlist
+redirect all fall through to the old numeric path or a generic redirect, so the gate
+can never block a real question. Abstentions carry `off_topic: true` so the frontend
+renders the full sentence instead of the legacy "I don't have guidance (reason)"
+frame. Deliberately not run before the cache gate —
+that would cost an LLM call per ask and defeat the zero-call cache path (§5); the
+accepted consequence is that a pre-guardrail cached answer keeps serving until it
+expires (observed once live with the Messi question; purged manually).
+
 ---
 
 ## 5. API layer (`backend/app/`)
@@ -422,6 +456,15 @@ the browser and `backend/app/core/retrieval.py`, adding as little logic of their
    a simulated/timed spinner. It is not a second implementation of the pipeline; both
    routes share every retrieval/generation function unchanged.
 
+   One SSE-specific detail learned the hard way: local (LM Studio) generation and the
+   NaraRouter fallback are *blocking* calls with no token stream, so the response used to
+   be silent for their entire duration — anything slower than the frontend's 60s idle
+   timeout became a permanent spinner while LM Studio was still working (reproduced live:
+   a 95s local call ending in a 400 "Model unloaded"). `_call_with_heartbeats` now runs
+   those calls on a worker thread and yields a `heartbeat` event every 10s; the router
+   turns those into SSE comment lines (`: heartbeat`), which reset client idle timers and
+   pass proxies while staying invisible to parsers and the reasoning trace.
+
 Two smaller supporting routes: `GET /local-models` queries LM Studio for its currently
 loaded chat models (filtering out embedding models), returning an empty list rather than
 an error if LM Studio isn't running, so the frontend's provider switcher can show "no local
@@ -438,6 +481,83 @@ The response is the `answer_question()` dict passed straight through, letting Fa
 default JSON encoder handle `datetime.date → ISO string` conversion automatically. No
 Pydantic response model was written deliberately — a response model would be a second copy
 of the contract that could drift from `backend/app/core/retrieval.py`'s actual return shape over time.
+
+Three exact-key caches sit in front of repeated LLM spend, one per endpoint family
+(`answer_cache`, `diff_cache`, `cross_check_cache` — each its own module, Redis L1 +
+Postgres L2, never-raising best-effort wrappers with rollback so a cache failure reads
+as a miss, never a 500). `answer_cache` is additionally semantic (paraphrases hit via
+stored embeddings); the follow-up caches are exact-key on (document ids, page,
+normalized question) because the question is already anchored to a citation. Cache
+hits return the stored result plus `cache_hit: true`, which is the entire mechanism
+behind the UI's tiny "Served from cache" note — and provider/model is deliberately
+never part of any cache key, so a cached explanation is shared regardless of which
+provider generated it.
+
+Each hit also mints a signed `cache_token` (`app/core/cache_evict.py`: HMAC over a
+base64url JSON payload, ~1h TTL, secret from `CACHE_EVICT_SECRET` or a per-process
+random). The UI's light-red "Remove from cache" control posts it to
+`POST /cache/evict`, which deletes exactly the entry that was served — the Redis key
+plus its Postgres row, including the matched `cache_id` on a semantic answer-cache
+hit. No id enumeration, no whole-cache purge; already-gone rows are fine (idempotent).
+
+**What is never cached: annotations that depend on mutable state.** The learned lesson
+(bitten live): `suggested_followups` was originally attached before the store call, so
+every cached answer froze the suggestions that existed when it was generated — repeats
+kept serving pre-crawl suggestions (or none, falling back to the static bank) and read
+as "the same questions over and over". It is now stripped by `_strip_for_storage` and
+re-attached at serve time (`retrieval._attach_suggested_followups`) on every path,
+including cache hits — where the exact-key Redis path fetches the row's stored
+`query_embedding` from Postgres (one indexed read, still zero LLM calls) rather than
+re-embedding. Rule of thumb: cache the *answer*; recompute anything derived from tables
+that keep growing or changing.
+
+Two on-demand follow-up routes hang off citations, never running automatically with
+`/ask`: `POST /diff-followup` (full text of current vs previous version, 2-5 sentence
+comparison) and `POST /cross-check-regulation` (research excerpt vs related official
+standards). Both take the same `provider`/`model` fields as `/ask` and route to LM
+Studio identically — this was a real bug once (they called the OpenAI-only chain and
+errored in local mode), fixed by mirroring `generate_answer()`'s branch.
+
+### Mined follow-up suggestions ("Continue exploring")
+
+The suggestions under an answer are not generated live and not a random static list:
+LLM workers mine the corpus offline, one document per call, each emitting 1-2 grounded
+questions with page anchors + a verbatim quote
+(`backend/ingestion/SUGGESTION_MINING_PROMPT.md`; `ingestion/mine_suggestions.py`
+implements this end-to-end, with a `--verify` mode for externally produced files).
+Two lessons are baked in:
+
+- **Mine from the DB's chunk text, not the PDFs.** `load_suggestions.py` verifies
+  every `anchor_quote` against `chunks.text`; quotes mined from the pdfplumber text in
+  `parsed_documents.json` often don't exist in Docling's chunk text, which rejected 9
+  of the first 10 lines in testing. Mining from the exact rows the loader validates
+  against makes a kept anchor resolvable by construction.
+- **Self-verify, retry once, resume.** The miner whitespace-collapses each anchor and
+  checks it against the document's chunks, drops and re-asks once for the failing
+  quotes, and records terminal state in `mining_state.json` (finished docs are skipped
+  on later runs at their original positions; `--force` re-mines). Documents that trip
+  the provider's sensitive-content filter are recorded `skip` and never retried.
+  Final corpus state: 36/36 documents terminal, 33 mined, 3 skipped, **248 rows
+  loaded**.
+
+`load_suggestions.py` re-validates at load (verbatim anchor, resolves to real
+`chunk_ids`, pages fallback for quotes straddling a chunk boundary), embeds each
+question, and upserts on `(question_normalized, document_id)` so re-mining is
+idempotent. At answer time the pipeline cosine-matches the *already-computed*
+`query_vec` against stored suggestion embeddings (`app/services/suggestions.py`),
+same-authority first, excluding every question already asked in the conversation (not
+just the current one — otherwise clicking through suggestions rotates the same three
+forever), returning up to 3 with their `doc_code`/`pages`/`section` as provenance.
+`SUGGESTION_MIN_SIMILARITY` defaults to 0 (always the closest 3, however weak — a
+product decision to keep conversations going); raise it, e.g. 0.62, to filter far
+matches. The same service feeds the off-topic page's alternatives, and an exact match
+against the table bypasses the guardrail (`is_mined_question`, §4.7). Best-effort
+throughout: a miss or failure returns nothing and the frontend falls back to its small
+static keyword bank (`lib/followUpQuestions.ts`), so suggestions can never break an
+answer. Clicking a suggestion re-enters the normal pipeline as a fresh question — the
+stored anchors are provenance metadata, deliberately **not** a retrieval bypass, since
+answering from stored chunk IDs would serve superseded versions after the corpus moves
+on.
 
 ### Observability (LangSmith)
 
@@ -561,6 +681,16 @@ mid-sentence at both ends. Storing exact provenance at ingest time (once, cheapl
 of re-deriving an approximate location client-side (every time, expensively and
 unreliably) is the same shape of fix as supersession itself (§1) — trustworthy behavior
 comes from storing the true signal, not guessing it downstream.
+
+`PdfOverlay.tsx` imports the **legacy** pdf.js build (`pdfjs-dist/legacy/build/…`),
+not the package root. Version 6 uses `Map.prototype.getOrInsertComputed` (ES2025,
+cross-browser baseline only since early 2026) unconditionally — including on the
+`pdf.numPages` path — so any older browser throws on every document and the overlay
+shows only the error string. The legacy bundle self-polyfills it via core-js on both
+the main and worker threads (verified in the shipped bundle), which is Mozilla's own
+prescribed fix; a `src/pdfjs-legacy.d.ts` shim re-exports the root types because the
+legacy files ship without declarations and `npm run build` (`tsc -b`) would otherwise
+fail.
 
 ### 6.5 Source count and the confidence filter
 

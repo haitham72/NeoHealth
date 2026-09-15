@@ -50,6 +50,12 @@ def test_conn():
     conn.close()
 
 
+@pytest.fixture
+def conn(test_conn):
+    """Alias for test_conn with shorter name -- cleaner test signatures."""
+    return test_conn
+
+
 def vec(cosine_to_query: float, dim: int = 1536) -> list[float]:
     """A unit vector whose cosine similarity to QUERY_VEC is exactly `cosine_to_query`
     -- lets a test pin a chunk's semantic_score to a precise value (e.g. just above or
@@ -145,6 +151,41 @@ def seed_research_doc(conn, *, score: float = 0.7) -> dict:
         seed_chunk(conn, doc_id, page=6, text="Telepsychiatry adoption during COVID-19.", score=score),
     ]
     return {"document_id": doc_id, "chunk_ids": chunk_ids}
+
+
+@pytest.fixture
+def redis_conn(monkeypatch):
+    """Fake Redis backing answer_cache.py's and diff_cache.py's L1 layer, so tests can
+    exercise real Redis-shaped behavior (setex/get, exact-key hits/misses) without a
+    real Redis instance or depending on REDIS_URL being set in the test environment.
+    Both modules' private `_get_redis()` are patched to the same fake client (a real
+    Redis instance would be shared between them too; their key prefixes keep entries
+    from colliding), so nothing needs restoring beyond what monkeypatch already undoes
+    automatically, and no state can leak between tests."""
+    import fakeredis
+
+    from app.core import answer_cache, cross_check_cache, diff_cache
+
+    fake = fakeredis.FakeStrictRedis(decode_responses=True)
+    monkeypatch.setattr(answer_cache, "_get_redis", lambda: fake)
+    monkeypatch.setattr(diff_cache, "_get_redis", lambda: fake)
+    monkeypatch.setattr(cross_check_cache, "_get_redis", lambda: fake)
+    return fake
+
+
+@pytest.fixture(autouse=True)
+def _reset_rate_limiter():
+    """Route tests call rate-limited handlers directly with fake_request(), whose
+    client IP is always the same ("testclient") -- without a reset, slowapi's
+    in-memory limiter accumulates hits across the whole pytest process and trips
+    "10/minute" once the suite grows past 10 direct route calls, failing tests for
+    reasons unrelated to what they exercise. Reset before every test so each one
+    starts with a fresh budget."""
+    from app.core.limiter import limiter
+
+    limiter._storage.reset()
+    yield
+    limiter._storage.reset()
 
 
 @pytest.fixture

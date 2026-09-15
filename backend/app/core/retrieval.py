@@ -3,19 +3,37 @@ Hybrid retrieval (pgvector cosine + Postgres full-text) with RRF fusion, superse
 filtering, and mandatory-citation-or-abstain answering. Shared by ask.py (CLI) and
 demo.py (naive-vs-ReguLense side-by-side).
 """
+import logging
 import os
 import re
 import time
 
+import concurrent.futures
+
 from openai import OpenAI
 from langsmith import get_current_run_tree, traceable
 from langsmith.wrappers import wrap_openai
+
+from app.core.answer_cache import (
+    decorate_cached_result,
+    fetch_cached_query_embedding,
+    lookup_answer_cache,
+    store_answer_cache,
+)
+from app.core.cache_evict import sign_cache_token
+from app.core.config import CACHE_HIT_THRESHOLD
+from app.services.suggestions import find_suggested_followups, is_mined_question
+
+logger = logging.getLogger(__name__)
 
 EMBED_MODEL = "text-embedding-3-small"
 CHAT_MODEL = "gpt-4o-mini"
 RRF_K = 60  # RRF k parameter
 CANDIDATES_PER_METHOD = 15  # 15 candidates per method (semantic + full-text)
 TOP_N_FOR_ANSWER = 7  # Top chunks for answer that is passed to the LLM
+# Cadence of SSE keep-alive frames while a blocking (non-streaming) LLM call runs.
+# Must stay well under the frontend's 60s STREAM_IDLE_TIMEOUT_MS.
+STREAM_HEARTBEAT_SECONDS = 10
 
 # Confidence tiers on fused[0]'s semantic_score (cosine similarity, 0-1 -- see
 # rrf_fuse()). Calibrated against 10 real queries run through embed()/semantic_search()
@@ -40,7 +58,7 @@ CONFIDENCE_LOW = 0.15     # abstain below this -- sits above the observed 0.123 
 # and find these chunks -- switching generation to local keeps the actual answer
 # synthesis on-machine, it does not make retrieval itself local.
 LOCAL_BASE_URL = "http://localhost:1234/v1"
-DEFAULT_LOCAL_MODEL = "qwen/qwen3.5-9b"
+DEFAULT_LOCAL_MODEL = "qwen/qwen3-4b-2507"
 
 # wrap_openai traces chat.completions.create() to LangSmith (project set via
 # LANGSMITH_PROJECT env var) -- no LangChain needed, just this wrapper around the same
@@ -112,16 +130,19 @@ def _record_openai_call(client_ip: str) -> None:
     _openai_calls_by_ip.setdefault(client_ip, []).append(time.time())
 
 
-def chat_completion(messages: list[dict], client_ip: str | None = None, stream: bool = False):
+def chat_completion(messages: list[dict], client_ip: str | None = None, stream: bool = False,
+                    max_tokens: int | None = None):
     """OpenAI first, NaraRouter fallback on failure or per-IP overuse -- see the
-    comments above. Shared by generate_answer() and the on-demand /diff-followup and
-    /cross-check-regulation routers, which call this directly since they build their own
-    one-off prompts rather than going through _build_messages(). Returns
-    (response, active_model_actually_used)."""
+    comments above. Shared by generate_answer(), the guardrail, and the on-demand
+    /diff-followup and /cross-check-regulation routers, which call this directly
+    since they build their own one-off prompts rather than going through
+    _build_messages(). max_tokens is passed through only when set (None keeps the
+    existing calls byte-identical). Returns (response, active_model_actually_used)."""
     ip_limited = client_ip is not None and _openai_ip_limit_exceeded(client_ip)
+    extra = {} if max_tokens is None else {"max_tokens": max_tokens}
     if not _openai_is_degraded() and not ip_limited:
         try:
-            resp = client.chat.completions.create(model=CHAT_MODEL, messages=messages, temperature=0, stream=stream)
+            resp = client.chat.completions.create(model=CHAT_MODEL, messages=messages, temperature=0, stream=stream, **extra)
             if client_ip is not None:
                 _record_openai_call(client_ip)
             return resp, CHAT_MODEL
@@ -129,7 +150,7 @@ def chat_completion(messages: list[dict], client_ip: str | None = None, stream: 
             _mark_openai_degraded()
     if nararouter_client is None:
         raise RuntimeError("OpenAI is unavailable and NARAROUTER_API_KEY is not configured -- no fallback available")
-    resp = nararouter_client.chat.completions.create(model=NARAROUTER_MODEL, messages=messages, temperature=0, stream=stream)
+    resp = nararouter_client.chat.completions.create(model=NARAROUTER_MODEL, messages=messages, temperature=0, stream=stream, **extra)
     return resp, NARAROUTER_MODEL
 
 
@@ -169,6 +190,175 @@ def _flag_low_confidence(top_score: float) -> None:
     if run:
         run.add_tags(["low-confidence"])
         run.add_metadata({"top_score": top_score})
+
+
+def _safe_check_relevance(question: str, fused: list[dict], client_ip: str | None,
+                           conn=None) -> dict:
+    """Fail-open wrapper around guardrail.check_relevance -- mirrors the _safe_lookup
+    wrappers' philosophy one level up: the guardrail is advisory, the numeric tiering
+    is authoritative. Any exception (model down, timeout, fallback unconfigured)
+    logs and returns relevant=True so the pipeline proceeds exactly as it did before
+    the guardrail existed. (An unparseable verdict is already normalized to relevant
+    inside check_relevance itself.)
+
+    Mined-suggestion bypass: a question that is one of the pre-vetted
+    suggested_questions skips the judge entirely. Those are corpus-grounded by
+    construction, and a weak judge model otherwise rejects questions the product
+    itself recommended -- measured live: local qwen 4B called "How many students may
+    one full-time school nurse cover..." out of scope while gpt-4o-mini accepted it
+    with identical retrieved evidence."""
+    from app.core.guardrail import check_relevance
+
+    if conn is not None and is_mined_question(conn, question):
+        return {"is_relevant": True, "message": "", "suggestions": []}
+    try:
+        return check_relevance(question, fused, client_ip)
+    except Exception:
+        logger.warning("relevance guardrail failed; falling back to numeric tiering", exc_info=True)
+        return {"is_relevant": True, "message": "", "suggestions": []}
+
+
+def _call_with_heartbeats(store: list, fn, *args, **kwargs):
+    """Runs a BLOCKING call on a worker thread and yields {"step": "heartbeat"} every
+    STREAM_HEARTBEAT_SECONDS until it completes, stashing the return value in `store`.
+
+    Local (LM Studio) generation and the NaraRouter fallback are both non-streaming
+    calls that can legitimately run for minutes. Without frames during them, the SSE
+    response is silent for the whole call: the frontend's 60s idle timer fires (or a
+    proxy drops the connection), so a perfectly working local answer looks like an
+    eternal spinner. The stream router converts these events into SSE comment lines
+    (": heartbeat"), which keep the connection and the client's idle timer alive
+    without showing up in the reasoning trace. Exceptions propagate exactly as the
+    plain blocking call's would -- the heartbeat changes liveness, not error paths."""
+    with concurrent.futures.ThreadPoolExecutor(max_workers=1) as pool:
+        future = pool.submit(fn, *args, **kwargs)
+        while True:
+            try:
+                store.append(future.result(timeout=STREAM_HEARTBEAT_SECONDS))
+                return
+            except concurrent.futures.TimeoutError:
+                yield {"step": "heartbeat"}
+
+
+def _attach_suggested_followups(
+    conn, question: str, result: dict, superseded_filter: bool,
+    authority_filter: str | None, query_vec=None, history: list[dict] | None = None,
+) -> None:
+    """Attaches mined, corpus-grounded follow-ups to a result AT SERVE TIME.
+
+    Suggestions are deliberately not cached (answer_cache._strip_for_storage):
+    they depend on the current suggested_questions table, which grows as mining
+    workers run, so a cached answer must show today's suggestions, not the ones
+    frozen when it was generated. On a cache hit with no vector in scope (the
+    exact-key Redis probe), the stored embedding is fetched from Postgres -- a
+    plain indexed read, still zero LLM calls. Best-effort: on any failure the
+    stale key is dropped so the frontend falls back to its static bank instead
+    of showing frozen or wrong suggestions.
+
+    Every question already asked in this conversation (history), not just the
+    current one, is excluded from the match -- otherwise clicking through
+    suggestions rotates the same three questions forever."""
+    try:
+        if query_vec is None:
+            query_vec = fetch_cached_query_embedding(conn, question, superseded_filter, authority_filter)
+        if query_vec is None:
+            result.pop("suggested_followups", None)
+            return
+        authority = (result.get("document") or {}).get("authority")
+        asked_before = [
+            turn.get("content") or ""
+            for turn in (history or [])
+            if isinstance(turn, dict) and turn.get("role") == "user"
+        ]
+        result["suggested_followups"] = find_suggested_followups(
+            conn, query_vec, question, authority, exclude_questions=asked_before)
+    except Exception:
+        logger.warning("suggested follow-ups failed; frontend static bank will cover", exc_info=True)
+        result.pop("suggested_followups", None)
+
+
+def _attach_cache_token(
+    result: dict, hit: dict, question: str, superseded_filter: bool,
+    authority_filter: str | None,
+) -> None:
+    """Mints the signed token behind the UI's "Remove from cache" control. Bound to
+    the exact entry served: an exact-key hit deletes by question+filters, a semantic
+    hit additionally carries the matched row id so eviction can't touch anything
+    else. Best-effort -- a signing failure just hides the control, never the answer."""
+    try:
+        result["cache_token"] = sign_cache_token(
+            "answer", q=question, s=superseded_filter, a=authority_filter or "",
+            id=hit.get("cache_id"),
+        )
+    except Exception:
+        logger.warning("cache token minting failed; remove-from-cache hidden", exc_info=True)
+
+
+def _flag_cache_event(
+    *,
+    hit: bool,
+    layer: str | None = None,
+    match_mode: str | None = None,
+    similarity: float | None = None,
+    superseded_filter: bool,
+    authority_filter: str | None,
+    matched_question: str | None = None,
+    skipped_reason: str | None = None,
+) -> None:
+    """Tags the current trace with cache hit/miss/skip info, mirroring
+    _flag_low_confidence's idiom -- lets the LangSmith dashboard filter on
+    "cache-hit"/"cache-miss" and inspect layer/mode/similarity/filters in metadata.
+    `skipped_reason` covers cache-ineligible asks (currently just history-bearing
+    follow-ups) that never even attempt a lookup."""
+    run = get_current_run_tree()
+    if not run:
+        return
+    run.add_tags(["cache-hit" if hit else "cache-miss"])
+    run.add_metadata({
+        "cache_hit": hit,
+        "cache_layer": layer,
+        "cache_match_mode": match_mode,  # answer_cache.MATCH_EXACT | MATCH_SEMANTIC | None
+        "cache_similarity": similarity,
+        "cache_superseded_filter": superseded_filter,
+        "cache_authority_filter": authority_filter,
+        "cache_matched_question": matched_question,
+        "cache_skipped_reason": skipped_reason,
+    })
+
+
+def _safe_lookup_answer_cache(
+    conn, question: str, query_vec: list[float] | None, superseded_filter: bool, authority_filter: str | None,
+) -> dict | None:
+    """Best-effort wrapper around answer_cache.lookup_answer_cache -- a transient
+    Redis or Postgres failure during the cache gate must never break the actual
+    answer (same "cache reads/writes are best-effort" contract store_answer_cache
+    already honors internally). Any exception here is logged and treated as a plain
+    cache miss so callers fall straight through to the real pipeline, exactly as if
+    nothing had ever been cached. Shared by both answer_question() and
+    answer_question_stream()'s four call sites (two probes each) since the wrapping
+    logic is identical regardless of which of the two functions is calling it.
+
+    A real Postgres-level failure mid-lookup (e.g. a lock timeout during the SELECT,
+    or during the hit_count UPDATE/commit in _postgres_lookup) leaves `conn`'s
+    transaction in Postgres's aborted state -- every subsequent statement on that same
+    connection within this request would then fail too (semantic_search right after
+    this "graceful" fallback, in the real pipeline), which is what would actually
+    surface as a 500 to the user. (The connection pool's own _putconn() already rolls
+    back a non-idle connection -- or closes it -- before it can reach a later, unrelated
+    request, so this is a within-request concern, not a cross-request poisoning risk.)
+    So on any failure here, roll back before returning None, not just log-and-swallow.
+    The rollback itself is wrapped too: a sufficiently broken connection can raise on
+    rollback as well, and that must not become a new uncaught exception in what's
+    supposed to be the safe fallback path."""
+    try:
+        return lookup_answer_cache(conn, question, query_vec, superseded_filter, authority_filter)
+    except Exception:
+        logger.warning("lookup_answer_cache failed; treating as a cache miss", exc_info=True)
+        try:
+            conn.rollback()
+        except Exception:
+            logger.warning("conn.rollback() after failed cache lookup also failed", exc_info=True)
+        return None
 
 
 def _current_run_id() -> str | None:
@@ -487,10 +677,58 @@ def answer_question_stream(
     the exact same order, but yielding a step event between each stage so a caller can
     show live progress. Ends with {"step": "done", "result": <same dict answer_question()
     would return>}. answer_question() itself is untouched — this is purely additive
-    instrumentation for the streaming UI, not a second implementation of the pipeline."""
+    instrumentation for the streaming UI, not a second implementation of the pipeline.
+
+    Cache gate (Task 4, reversed by explicit user request): originally a history-bearing
+    ask was cache-ineligible, on the theory that a follow-up's "right" answer depends on
+    prior turns the cache key doesn't capture. That theory doesn't hold for this app:
+    retrieval never reads `history` at all (see _build_messages()'s docstring -- history
+    is loose LLM phrasing context only, never used to select or cite chunks), so the same
+    question+filters always retrieve and ground the same facts regardless of prior turns.
+    Caching is therefore always attempted, including for follow-ups, so a demo's
+    "Continue exploring" clicks can also hit cache. A cheap Redis-only probe (no
+    embedding call) runs first -- the fastest possible path, zero OpenAI calls -- and
+    only on a miss there does embed() run so a second, full lookup (Redis again, then
+    Postgres semantic) can use the vector; that same query_vec is then reused for the
+    real search below rather than re-embedding."""
     _name_run_by_model(provider, model)
+
+    cache_eligible = True
+    if cache_eligible:
+        yield {"step": "checking_cache"}
+        hit = _safe_lookup_answer_cache(conn, question, None, superseded_filter, authority_filter)
+        if hit:
+            _flag_cache_event(
+                hit=True, layer=hit["cache_layer"], match_mode=hit["match_mode"],
+                similarity=hit["similarity"], superseded_filter=superseded_filter,
+                authority_filter=authority_filter, matched_question=hit["matched_question"],
+            )
+            result = decorate_cached_result(hit, _current_run_id())
+            _attach_cache_token(result, hit, question, superseded_filter, authority_filter)
+            _attach_suggested_followups(conn, question, result, superseded_filter, authority_filter, history=history)
+            yield {"step": "cache_hit", "detail": "exact"}
+            yield {"step": "done", "result": result}
+            return
+
     yield {"step": "embedding_query"}
     query_vec = embed(question)
+
+    if cache_eligible:
+        hit = _safe_lookup_answer_cache(conn, question, query_vec, superseded_filter, authority_filter)
+        if hit:
+            _flag_cache_event(
+                hit=True, layer=hit["cache_layer"], match_mode=hit["match_mode"],
+                similarity=hit["similarity"], superseded_filter=superseded_filter,
+                authority_filter=authority_filter, matched_question=hit["matched_question"],
+            )
+            result = decorate_cached_result(hit, _current_run_id())
+            _attach_cache_token(result, hit, question, superseded_filter, authority_filter)
+            _attach_suggested_followups(conn, question, result, superseded_filter, authority_filter, query_vec, history=history)
+            yield {"step": "cache_hit", "detail": f"{hit['similarity']:.3f}"}
+            yield {"step": "done", "result": result}
+            return
+        _flag_cache_event(hit=False, superseded_filter=superseded_filter, authority_filter=authority_filter)
+        yield {"step": "cache_miss"}
 
     yield {"step": "searching_sources"}
     semantic_results = semantic_search(conn, query_vec, superseded_filter, CANDIDATES_PER_METHOD, authority_filter)
@@ -515,6 +753,24 @@ def answer_question_stream(
                 "run_id": _current_run_id(),
             },
         }
+        return
+    yield {"step": "checking_relevance"}
+    guard = _safe_check_relevance(question, fused, client_ip, conn)
+    if not guard["is_relevant"]:
+        result = {
+            "abstained": True,
+            "reason": guard["message"],
+            "off_topic": True,
+            "suggested_questions": guard["suggestions"],
+            "top_score": top_score,
+            "run_id": _current_run_id(),
+        }
+        # Mined, corpus-grounded alternatives (semantic match + similarity floor).
+        # The guard's own invented suggestions remain in the payload for API
+        # compatibility but are no longer what the UI renders -- they are not
+        # scope-checked and once recommended a question the same guard then rejected.
+        _attach_suggested_followups(conn, question, result, superseded_filter, authority_filter, query_vec, history=history)
+        yield {"step": "done", "result": result}
         return
     if tier == "low":
         _flag_low_confidence(top_score)
@@ -574,32 +830,52 @@ def answer_question_stream(
             yield {"step": "provider_fallback", "detail": f"{reason} -- switching to NaraRouter"}
             # Non-streaming: delivered as one instant chunk instead of token-by-token,
             # trading the typing effect for not depending on NaraRouter's flaky stream.
-            resp = nararouter_client.chat.completions.create(model=NARAROUTER_MODEL, messages=messages, temperature=0, stream=False)
+            # Heartbeats keep the SSE alive while this blocking call runs (it can take
+            # a while, and the frontend would otherwise idle-timeout).
+            nara_out: list = []
+            for event in _call_with_heartbeats(
+                nara_out, nararouter_client.chat.completions.create,
+                model=NARAROUTER_MODEL, messages=messages, temperature=0, stream=False,
+            ):
+                yield event
+            resp = nara_out[0]
             active_model = NARAROUTER_MODEL
             answer_text = resp.choices[0].message.content or ""
             yield {"step": "answer_delta", "detail": answer_text}
         answer_text = _finish_answer_text(answer_text, provider, active_model)
     else:
-        answer_text, active_model = generate_answer(question, filtered_chunks, provider, model, tier, history)
+        # Local generation is a single blocking LM Studio call with no token stream;
+        # heartbeats keep the SSE connection alive for as long as it takes.
+        local_out: list = []
+        for event in _call_with_heartbeats(
+            local_out, generate_answer, question, filtered_chunks, provider, model, tier, history,
+        ):
+            yield event
+        answer_text, active_model = local_out[0]
 
-    yield {
-        "step": "done",
-        "result": {
-            "abstained": False,
-            "answer": answer_text,
-            "model_used": active_model,
-            "top_score": top_score,
-            "confidence_tier": tier,
-            "document": document,
-            "page": top_chunk["page"],
-            "page_end": top_chunk["page_end"],
-            "heading_path": top_chunk["heading_path"],
-            "bboxes": top_chunk["bboxes"],
-            "superseded_excluded": superseded_excluded,
-            "retrieved_chunks": fused,
-            "run_id": _current_run_id(),
-        },
+    result = {
+        "abstained": False,
+        "answer": answer_text,
+        "model_used": active_model,
+        "top_score": top_score,
+        "confidence_tier": tier,
+        "document": document,
+        "page": top_chunk["page"],
+        "page_end": top_chunk["page_end"],
+        "heading_path": top_chunk["heading_path"],
+        "bboxes": top_chunk["bboxes"],
+        "superseded_excluded": superseded_excluded,
+        "retrieved_chunks": fused,
+        "run_id": _current_run_id(),
     }
+    _attach_suggested_followups(conn, question, result, superseded_filter, authority_filter, query_vec, history=history)
+    if cache_eligible:
+        try:
+            store_answer_cache(conn, question, query_vec, superseded_filter, authority_filter, result)
+        except Exception:
+            pass  # best-effort cache write; never let it break a successfully-generated answer
+
+    yield {"step": "done", "result": result}
 
 
 @traceable(run_type="chain", name="answer_question", process_inputs=_without_conn)
@@ -607,9 +883,46 @@ def answer_question(
     conn, question: str, superseded_filter: bool, provider: str = "openai", model: str | None = None,
     authority_filter: str | None = None, history: list[dict] | None = None, client_ip: str | None = None,
 ) -> dict:
-    """Returns a dict describing either an abstention or a full answer with citation."""
+    """Returns a dict describing either an abstention or a full answer with citation.
+
+    Cache gate (Task 4, reversed by explicit user request): mirrors
+    answer_question_stream()'s gate structure (see its docstring for why
+    history-bearing asks are now cache-eligible too, not excluded) minus the progress
+    yields -- a cheap Redis-only probe first, embed() only on a miss, then a full
+    (Redis + Postgres) lookup with that vector before falling through to the real
+    pipeline."""
     _name_run_by_model(provider, model)
+
+    cache_eligible = True
+    if cache_eligible:
+        hit = _safe_lookup_answer_cache(conn, question, None, superseded_filter, authority_filter)
+        if hit:
+            _flag_cache_event(
+                hit=True, layer=hit["cache_layer"], match_mode=hit["match_mode"],
+                similarity=hit["similarity"], superseded_filter=superseded_filter,
+                authority_filter=authority_filter, matched_question=hit["matched_question"],
+            )
+            result = decorate_cached_result(hit, _current_run_id())
+            _attach_cache_token(result, hit, question, superseded_filter, authority_filter)
+            _attach_suggested_followups(conn, question, result, superseded_filter, authority_filter, history=history)
+            return result
+
     query_vec = embed(question)
+
+    if cache_eligible:
+        hit = _safe_lookup_answer_cache(conn, question, query_vec, superseded_filter, authority_filter)
+        if hit:
+            _flag_cache_event(
+                hit=True, layer=hit["cache_layer"], match_mode=hit["match_mode"],
+                similarity=hit["similarity"], superseded_filter=superseded_filter,
+                authority_filter=authority_filter, matched_question=hit["matched_question"],
+            )
+            result = decorate_cached_result(hit, _current_run_id())
+            _attach_cache_token(result, hit, question, superseded_filter, authority_filter)
+            _attach_suggested_followups(conn, question, result, superseded_filter, authority_filter, query_vec, history=history)
+            return result
+        _flag_cache_event(hit=False, superseded_filter=superseded_filter, authority_filter=authority_filter)
+
     semantic_results = semantic_search(conn, query_vec, superseded_filter, CANDIDATES_PER_METHOD, authority_filter)
     lexical_results = lexical_search(conn, question, superseded_filter, CANDIDATES_PER_METHOD, authority_filter)
     fused = rrf_fuse(semantic_results, lexical_results, TOP_N_FOR_ANSWER)
@@ -626,6 +939,20 @@ def answer_question(
             "top_score": top_score,
             "run_id": _current_run_id(),
         }
+    guard = _safe_check_relevance(question, fused, client_ip, conn)
+    if not guard["is_relevant"]:
+        result = {
+            "abstained": True,
+            "reason": guard["message"],
+            "off_topic": True,
+            "suggested_questions": guard["suggestions"],
+            "top_score": top_score,
+            "run_id": _current_run_id(),
+        }
+        # Same as the streaming path: mined, corpus-grounded alternatives with the
+        # similarity floor, never the guard's unvalidated inventions.
+        _attach_suggested_followups(conn, question, result, superseded_filter, authority_filter, query_vec, history=history)
+        return result
     if tier == "low":
         _flag_low_confidence(top_score)
 
@@ -639,7 +966,7 @@ def answer_question(
 
     answer_text, active_model = generate_answer(question, filtered_chunks, provider, model, tier, history, client_ip)
 
-    return {
+    result = {
         "abstained": False,
         "answer": answer_text,
         "model_used": active_model,
@@ -654,3 +981,11 @@ def answer_question(
         "retrieved_chunks": fused,
         "run_id": _current_run_id(),
     }
+    _attach_suggested_followups(conn, question, result, superseded_filter, authority_filter, query_vec, history=history)
+    if cache_eligible:
+        try:
+            store_answer_cache(conn, question, query_vec, superseded_filter, authority_filter, result)
+        except Exception:
+            pass  # best-effort cache write; never let it break a successfully-generated answer
+
+    return result

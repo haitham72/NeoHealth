@@ -110,6 +110,16 @@ export function useReportAnswer() {
   });
 }
 
+/** Removes ONE served cache entry -- the signed token is minted with the cached
+ * response (answer / diff-followup / cross-check) and bound to exactly that entry.
+ * Idempotent: evicting an already-expired entry still resolves success. */
+export function useEvictCache() {
+  return useMutation({
+    mutationFn: (token: string) =>
+      postJson<{ evicted: boolean; kind: string }>("/cache/evict", { token }),
+  });
+}
+
 /** Live list of chat models currently loaded in LM Studio, for the provider switcher's
  * model dropdown. Polled lazily by react-query — empty array (not an error) means LM
  * Studio isn't running, which the switcher treats as "local unavailable." */

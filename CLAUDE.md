@@ -84,12 +84,45 @@ Pipeline: embed query → hybrid search (pgvector cosine + Postgres full-text, b
 filtered by supersession/authority) → Reciprocal Rank Fusion → confidence tiering on
 the top-fused chunk's semantic score (`CONFIDENCE_HIGH`/`MEDIUM`/`LOW` constants near
 the top of `app/core/retrieval.py`, recalibrated against real query sampling — read the
-comment above them before changing the numbers) → abstain below the floor; otherwise
-drop chunks that didn't individually clear the floor (`filter_weak_chunks`, with an
+comment above them before changing the numbers) → abstain below the floor (free, no LLM
+spend); otherwise an LLM relevance guardrail (`app/core/guardrail.py` — question + top-3
+chunk texts, capped 400-token verdict, ALWAYS gpt-4o-mini via the OpenAI→NaraRouter
+chain, never the answer's provider: measured live, local qwen 4B misjudged specific
+operational questions gpt-4o-mini accepted with identical evidence; exact mined
+questions skip the judge entirely via `is_mined_question`) runs before the
+expensive generation call, because embedding proximity genuinely misfires on playful
+off-topic questions (measured: "What shoe size is Messi?" scores ~0.23). OFF_TOPIC
+abstains with a backend-composed fixed sentence + optional clickable alternatives
+(`off_topic: true`, `suggested_followups`), no sources, no generation. Those
+alternatives are the *mined* questions (same semantic match as the answered-path
+suggestions), returned as the closest 3 regardless of score -- `SUGGESTION_MIN_SIMILARITY`
+defaults to 0 (raise it, e.g. 0.62, to filter weak matches) -- and every question
+already asked earlier in the conversation is excluded, so clicking through suggestions
+doesn't loop the same questions. The guardrail's own invented list stays in the payload
+as `suggested_questions` for API compatibility but is no longer rendered: it isn't
+scope-checked and once recommended a question the same guard then rejected.
+Fail-open at every level (exception/unparseable verdict/off-allowlist redirect → old numeric path),
+and deliberately *after* the answer-cache gate so cached answers still cost zero calls.
+Otherwise drop chunks that didn't individually clear the floor (`filter_weak_chunks`, with an
 exemption for lexical-only-hit chunks that carry a `0.0` sentinel score) and generate a
 grounded answer from what's left. Medium/low-confidence answers get a `Certainty:` line
 appended by the prompt; low-confidence queries additionally get tagged in LangSmith for
 review (`_flag_low_confidence`).
+
+"Continue exploring" suggestions are pre-mined offline (LLM workers crawl each doc per
+`backend/ingestion/SUGGESTION_MINING_PROMPT.md`; `ingestion/load_suggestions.py`
+validates, resolves anchors to `chunk_ids`, embeds, upserts into `suggested_questions`).
+At answer time `app/services/suggestions.py` cosine-matches the already-computed
+`query_vec` against those embeddings (same-authority first, asked question excluded) and
+the result rides along as `suggested_followups`; best-effort, so a miss just falls back
+to the frontend's static bank (`lib/followUpQuestions.ts`). Clicks re-enter the normal
+pipeline — anchors are provenance, never a retrieval bypass (that would serve superseded
+versions). **Suggestions are never stored in the answer cache** (`_strip_for_storage`)
+and are re-attached at serve time — including cache hits, where `retrieval.
+_attach_suggested_followups` recovers the stored `query_embedding` from Postgres with
+zero LLM calls. Freezing them in the cache once made repeats serve pre-crawl/empty
+suggestions ("same questions over and over"); the mined table keeps growing, so anything
+derived from it must stay live.
 
 Chat generation (not embeddings, which always stay on OpenAI) goes through
 `chat_completion()`: OpenAI first, falling back to NaraRouter (`laguna-s-2.1`,
@@ -101,7 +134,12 @@ already-rate-limited OpenAI. Separately, a per-client soft cap (3 calls per roll
 `choices` list, and occasional mid-stream `APIError`s, both confirmed by testing
 directly against it — so it's always called non-streaming and delivered as one
 instant chunk instead of token-by-token; the frontend has a matching `answer_reset`
-event for the rarer case OpenAI itself drops mid-stream before falling back.
+event for the rarer case OpenAI itself drops mid-stream before falling back. Because
+those non-streaming calls (and local LM Studio generation) can block for minutes,
+`answer_question_stream` wraps them in `_call_with_heartbeats`: a `heartbeat` event
+every 10s that the router emits as an SSE comment (`: heartbeat`) — keeps the
+connection and the frontend's 60s idle timer alive without appearing in the trace.
+`DEFAULT_LOCAL_MODEL` is `qwen/qwen3-4b-2507` (the 9b was unloaded/slow in practice).
 
 `app/api/routers/` holds thin FastAPI route handlers — the dict `answer_question()`
 returns is passed straight through as JSON, never reinterpreted. `app/services/
@@ -139,6 +177,20 @@ demo.py`) remains genuinely stateless; only the web frontend persists.
 - `CitationPopover.tsx` shows a text excerpt plus a "View in PDF" control that opens
   `PdfOverlay.tsx`, which renders precise highlight rectangles directly from
   `backend/ingestion/rechunk.py`'s stored bounding boxes — no client-side text matching.
+  It imports the **legacy** pdf.js build (`pdfjs-dist/legacy/build/…`, see
+  `src/pdfjs-legacy.d.ts`): v6 uses `Map.prototype.getOrInsertComputed` (ES2025)
+  unconditionally and breaks on older browsers with that exact error string — the
+  legacy bundle self-polyfills it (upstream's prescribed fix, verified in dist).
+  The popover also hosts both on-demand follow-ups (`DiffFollowup`, `CrossCheckRegulation`),
+  each carrying the current `provider`/`model` (threaded from `App.tsx`'s `lastFilters`)
+  so local mode reaches LM Studio; all three cache-aware surfaces (the main answer too)
+  render the shared `CacheNotice` on `cache_hit` (`diff_cache` exact-key,
+  `cross_check_cache` on doc/page/question — provider is never part of any cache key).
+  Its light-red "Remove from cache" control POSTs the signed `cache_token` minted with
+  that hit to `/cache/evict` (`app/core/cache_evict.py` HMAC, ~1h TTL) and deletes ONLY
+  that entry — Redis key plus its Postgres row (including the matched `cache_id` on a
+  semantic answer-cache hit), never a whole-cache purge. `CACHE_EVICT_SECRET` should be
+  set on Render, or tokens die on restart/sleep (the control then just does nothing).
 - `OnboardingWelcome.tsx` — shown once per browser session (`sessionStorage`,
   `regulense-onboarding-v2`), reopenable any time via the ReguLense logo in
   `Sidebar.tsx`. A blocking modal wizard (dimmed backdrop, centered two-panel dialog,
