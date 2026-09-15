@@ -8,6 +8,7 @@ __pycache__/
 static/
 .superpowers/
 .venv
+venv
 .DS_Store
 supabase/.temp/
 HANDOFF.md
@@ -16,8 +17,9 @@ Agreement/
 opencode.json
 opencode.jsonc
 .opencode/
-# Worker output from ingestion/mine_suggestions.py -- like parsed_documents.json,
-# a regenerable intermediate; the canonical store is the suggested_questions table.
-backend/suggestions.*.jsonl
+
+# Mining worker output/inputs (see backend/ingestion/mine_suggestions.py) -- raw
+# regulation text extracts and generated JSONL, regenerable; canonical store is the
+# suggested_questions table, not these files.
+backend/suggestions/
 backend/mining_inputs/
-backend/mining_state.json
