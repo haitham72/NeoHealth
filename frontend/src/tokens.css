@@ -11,6 +11,16 @@
 @import "@fontsource/source-serif-4/600.css";
 @import "@fontsource/source-serif-4/700.css";
 
+/* Native <button> defaults to cursor: default in most browsers, not pointer —
+   only a handful of components (Sidebar's logo, ChatInput) set cursor-pointer
+   explicitly, so every other button in the app showed no hand cursor. */
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]) {
+    cursor: pointer;
+  }
+}
+
 /* "Ledger, not terminal, not brochure": a cool-neutral paper surface with navy ink,
    and exactly two warm accents used semantically (brass = verified, rust = superseded) —
    never decoratively. No gradient, no glass, no dark near-black default. */
