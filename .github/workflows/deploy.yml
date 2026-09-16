@@ -1,0 +1,69 @@
+name: Deploy
+
+# Test gate only. Production is a single Render web service that auto-deploys on push
+# independently of this workflow (see CLAUDE.md's "Containers & deploy") -- this job's
+# purpose is to fail loud on a broken push, not to perform the deploy itself.
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    # Real Postgres+pgvector, not mocked -- tests/conftest.py's own docstring: "a mocked
+    # connection would test nothing real" (it exercises retrieval.py's actual SQL: tier
+    # filters, RRF, cosine distance). Only the two OpenAI-facing calls are ever mocked
+    # (see conftest.py's stub_llm), so no OPENAI_API_KEY is needed here at all.
+    services:
+      postgres:
+        image: pgvector/pgvector:pg16
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: test_regulense
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+
+      - name: Install backend dependencies
+        run: pip install -r backend/requirements.txt -r backend/requirements-dev.txt
+
+      - name: Backend tests
+        working-directory: backend
+        env:
+          TEST_DATABASE_URL: postgresql://postgres:postgres@localhost:5432/test_regulense
+        run: pytest
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install frontend dependencies
+        working-directory: frontend
+        run: npm ci
+
+      - name: Frontend type-check
+        working-directory: frontend
+        run: npx tsc --noEmit
+
+      - name: Frontend lint
+        working-directory: frontend
+        run: npm run lint
+
+      - name: Frontend tests
+        working-directory: frontend
+        run: npm run test

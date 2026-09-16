@@ -1,0 +1,212 @@
+DOC_CODE: DoH/ST/DDGO/AR/V1/2026
+TITLE: ANALYTICS & REPORTING STANDARD
+AUTHORITY: Department of Health - Abu Dhabi
+TIER: official
+VERSION: 1
+
+=== DOCUMENT TEXT ===
+
+[PAGE 3]
+The purpose of the Analytics and Reporting Standard is to establish a baseline and guidelines for collecting, analyzing, interpreting, and presenting healthcare data within Department of Health (DoH) and all ecosystem entities that are using data for analytics and reporting. By enabling effective use of data and establishing business intelligence (BI) use cases, stakeholders can interpret and compare data accurately, leading to better decision-making and improved healthcare system outcomes.
+
+The Analytics and Reporting Standard also address the secondary use of data, ensuring that any data repurposed beyond its original intent is handled in a manner that complies with privacy regulations, maintains data integrity, and supports research, quality improvement, and policy development initiatives within the healthcare ecosystem.
+
+The DoH and all ecosystem entities rely on analytics and reporting to make informed decisions and improve the healthcare system, hence the need for reliable data and standardized reporting.
+
+This Standard is implemented in conjunction with following Protocols
+
+Annex A- BI & Analytics Use Case Validation Protocol
+
+Annex B- BI Ethical Use Risk Mitigation Protocol
+
+Annex C- Identify and Collect Data for Reporting Protocol
+
+[PAGE 5]
+Adhering to the DoH's values of accountability, excellence, integrity and trust, the following guiding principles are established to lead data & digital analytics and reporting activities:
+
+Confidentiality & Privacy: Maintain the confidentiality of health information and protect patient privacy from unauthorized access or disclosure through measures such as access controls, encryption, and privacy compliance. Implement strict data de-identification and anonymization techniques in analytics, reporting, and secondary use of data. Limit access to sensitive data to authorized personnel only and ensure compliance with local ADHICS Standard and other applicable UAE federal laws, Abu Dhabi and DoH regulations, and relevant legal frameworks.
+
+Data Quality: Ensure the accuracy, completeness, uniqueness, timeliness and reliability of data used in healthcare analytics to support patient safety and care quality. Implement rigorous data validation processes, regular audits, and standardized data entry protocols to maintain high data quality standards.
+
+Patient consent and autonomy: Respect patient autonomy by ensuring informed consent for the use of their data in analytics, reporting and secondary use of data. Data usage must align with patient preferences and privacy rights and opt-out options must be clearly communicated and easily accessible.
+
+Patient-centric: Ensure that analytics and reporting efforts are focused on improving patient outcomes, safety, and care quality. Prioritize data projects that provide actionable insights for patient care, reduce errors, and enhance clinical decision-making.
+
+Data-driven decision-making: Utilize data analysis and interpretation to generate actionable insights and recommendations, ensuring objectivity and accuracy. Adopt a cycle of continuous learning and improvement by collecting data, analyzing outcomes, and adjusting strategies based on the insights gained from data-driven analysis.
+
+Ethical Use of Data: Avoid using data in ways that could lead to discriminatory practices or negatively impact patient trust. Ensure data usage aligns with the core values of patient care and safety.
+
+[PAGE 5]
+Outlined below are the fundamental statements governing the analytics and reporting of data.
+
+[PAGE 5-6]
+The DoH and Healthcare ecosystem entities that have established an analytics function shall:
+
+Design Analytics and Reporting Strategy which align with overall strategic goals and priorities supporting patient outcomes, public health interventions and initiatives, enhancing operational efficiency and ensuring regulatory compliance.
+
+Ensure that an Analytics and Reporting roadmap is developed in alignment with data and digital governance standards and protocols and shall have oversight on the prioritization of analytics use ensuring consistency with overall data and digital strategy of the organization.
+
+Identify and prioritize a list of analytics use cases based on their potential to drive improvements in patient care, operational efficiency, and organizational performance.
+
+Align use cases for analytics and reporting with the strategic goals and priorities of the entity supporting initiatives such as population health management, value-based care, and quality improvement.
+
+Regularly review and update the use case portfolio. This ensures that the portfolio remains current and aligned with evolving organizational needs. The review shall include
+
+the following activities, among others:
+
+Reviewing and adjusting the status of use cases within the portfolio.
+
+Evaluating the planned use cases in the portfolio to assess their relevance.
+
+Identifying new use cases through ideation workshops.
+
+Reassessing the prioritization of existing use cases and prioritizing new ones.
+
+Ensure that all analytics use cases are accurately recorded in the entity's repository and adhere to a uniform documentation. Ethical considerations and governance shall be integrated into the review and approval process for analytics use cases, ensuring compliance with relevant standards and regulations.
+
+Ensure that Business Intelligence, Data Science and AI team embeds ethical data use and system development at every stage of AI System Lifecycle.
+
+[PAGE 6]
+The DoH and Healthcare ecosystem entities that have established an Analytics function shall:
+
+Prioritize the use of approved and recommended analytics tools which are compatible with the existing data infrastructure to facilitate seamless integration and data exchange.
+
+Establish criteria for selecting analytics tools and platforms based on factors such as functionality, scalability, interoperability, security, and compliance with regulatory requirements.
+
+Ensure that analytics tools and platforms adhere to strict data security standards and protocols to protect healthcare information from unauthorized access, breaches, or misuse.
+
+Ensure that adequate training and support services are provided to users of analytics tools and platforms to ensure that they are proficient in using the tools effectively and maximizing their capabilities for data analysis and reporting.
+
+Ensure that analytics tools and platforms support data visualization capabilities, including interactive dashboards, charts, graphs, and reports, to enable users to explore and communicate insights effectively.
+
+Use uniform data analysis tools and methodologies to ensure consistent and reliable reporting.
+
+[PAGE 6]
+The DoH and Healthcare ecosystem entities that have established an Analytics function shall:
+
+Ensure that Data Governance specialist or equivalent establishes and enforces data quality rules and conducts regular quality audits
+
+Identify and document all data sources used for analytics and reporting, including internal systems, external databases, third-party sources, and IoT (Internet of Things) devices. Controls must be set to ensure that data at source is not manipulated.
+
+Develop a data sourcing plan defining clear objectives and milestones to guide the implementation of use cases initiatives.
+
+Define clear data requirements for each use case, specifying the types of data needed, data sources, data quality standards, and data governance considerations to ensure that the necessary data is available and accessible for analysis.
+
+Ensure the quality of data before it is used for analytics or reporting purposes.
+
+Comply with applicable laws, regulations, and industry standards, including but not limited to privacy laws and data security requirements.
+
+Ensure that standardized procedures and protocols are followed for data collection cleaning, preprocessing, transformation, and normalization to prepare data for analysis and reporting.
+
+[PAGE 7]
+DoH and Healthcare ecosystem entities that have established an Analytics function shall:
+
+Ensure that healthcare data reports are accurate, reliable, and timely, reflecting the most current information available and meeting designated deadlines for reporting.
+
+Adhere to relevant healthcare regulations, privacy, and security laws, ensuring the protection of patient confidentiality and data privacy.
+
+Ensure that reports are tailored to the specific needs of stakeholders, presented in a clear, standardized and actionable format, and visualized effectively for better comprehension.
+
+Ensure transparency, accountability, and traceability throughout the data reporting processes, including methodologies and outcomes.
+
+Ensure that all aspects of data analysis and interpretation processes, including assumptions, methodologies, limitations, and conclusions, are documented effectively to promote transparency, accountability, and reproducibility.
+
+Ensure that analytics and reporting activities of internal and external data are protected, follows data access, data sharing and data privacy policies, ensuring confidentiality and data masking where applicable.
+
+[PAGE 7]
+A standardized calculation method shall be established for calculating and reporting across the organization to enhance user confidence in the entity's reports. This approach will ensure data comparability, facilitate meaningful analysis of trends and performance across the entity's programs and departments, a nd promote transparency and accountability in corporate, clinical and public health reporting.
+
+Documentation shall specify the exact calculation formula, data sources, and any relevant data transformations required.
+
+Deviations from the standardized calculation method shall only be permitted under exceptional circumstances and with prior written approval as per a governed delegation of authority within the entity.
+
+Any approved deviations shall be clearly documented and reported alongside the reported data.
+
+Documentations shall be reviewed and updated periodically, but not less than once a year, to reflect changes in data sources, calculation methods, or reporting requirement.
+
+[PAGE 7]
+The secondary use of reported data shall be authorized and managed in accordance with the ADHICS, Data Classification Standards, and other DoH regulations. The use of open data for secondary purposes is permitted without restrictions, whereas confidential, sensitive and secret data, including Personally Identifiable Information (PII) and Protected Health Information (PHI), shall require appropriate approvals in line with the Data Classification Standard.
+
+[PAGE 7-8]
+All patient data used for secondary purposes must be anonymized or de-identified to protect patient privacy and confidentiality, unless explicitly permitted by the patient or required by law.
+
+Secondary use of patient data shall be permitted for research and educational purposes, such as case studies, simulations, or training healthcare professionals, if patient identities are protected.
+
+Secondary use of patient data shall be permitted for public health purposes, such as tracking disease outbreaks, evaluating healthcare interventions, or conducting preventive and curative procedures related to public health or patient health and safety, if patient identities are protected.
+
+Secondary use of health data, genetic information, or any personal data with the purpose of denying or limiting access to insurance coverage, employment opportunities, financial services, housing, education, or other essential services and benefits, shall be prohibited.
+
+Secondary use of PII data for commercial gain shall be prohibited without explicit consent from the data subjects.
+
+Attempting to re-identify individuals from anonymized or de-identified data sets shall be prohibited, as it breaches privacy and ethical standards.
+
+The secondary use of patient data shall be permitted without patient consent if requested by a competent judicial authority.
+
+[PAGE 8]
+DoH and all healthcare ecosystem entities shall implement robust security measures, including encryption, access controls, and regular audits, to protect patient data used for secondary purposes against unauthorized access, breaches, and misuse.
+
+The minimum necessary amount of data required to achieve the specific secondary purpose shall be accessed or used, ensuring that excess data exposure is avoided.
+
+Healthcare ecosystem entities must obtain explicit informed consent from patients before using their data for secondary purposes. Patients must be informed about the specific secondary use, the potential risks, benefits, and the option to opt-out without any impact on their care.
+
+Patients have the right to withdraw their consent for the secondary use of their data at any time, and such requests shall be honored promptly without any impact on the quality of care provided.
+
+[PAGE 8]
+Any sharing of patient data with third parties for secondary use shall be governed by a formal data sharing agreement that specifies the data to be shared, the purpose of use, security measures, and accountability for data protection and compliance.
+
+Sharing data with third parties who do not comply with data protection regulations or who use the data for unauthorized purposes shall be prohibited.
+
+Data used for secondary purposes shall be retained only for as long as necessary to fulfill the stated purpose. Once the purpose is achieved, data shall be securely disposed of or returned to its original format if re-identification is required for primary use.
+
+[PAGE 8-9]
+The DoH and Healthcare ecosystem entities that have established an Analytics function shall:
+
+Ensure that data is used equitably, without perpetuating or reinforcing biases, discrimination, or disparities in healthcare services. Special consideration must be given to vulnerable populations to avoid unintentional negative impacts.
+
+Maintain full transparency regarding the legal and ethical requirements related to secondary use of data, ensuring that stakeholders, including patients and external partners, are informed of how their data is being used, the purpose of use, the potential risks, and expected benefits.
+
+Be held accountable for the ethical use and protection of data in secondary use cases. Data misuse, improper handling, or any violations of established standards shall be subject to strict legal sanction.
+
+Implement bias detection and mitigation techniques to ensure that outcomes are fair, impartial, and beneficial to all groups.
+
+Establish mechanism for publicly disclosing the secondary use of data in major projects or research initiatives, providing stakeholders with information on how data is used to drive public health improvements, system optimization, and service delivery advancements.
+
+Designate responsible parties, such as analytics use case owners, who will be accountable for the appropriate and ethical handling of data in secondary use cases. These roles ensure that all ethical, regulatory, and operational standards are upheld throughout the data lifecycle.
+
+Implement risk management frameworks to evaluate the potential ethical risks associated with the secondary use of data. This includes assessing how data use may impact patient privacy, public trust, and societal equity, and implementing mitigations as necessary.
+
+[PAGE 9]
+The DoH and Healthcare ecosystem entities that have established an Analytics function shall:
+
+Identify and manage risks related to the privacy of patient information, certain disease data, financial data among others, the risks including unauthorized access, disclosure, or misuse of sensitive healthcare data during analytics, and reporting processes.
+
+Identify and manage risks related to data security, including vulnerabilities in systems, networks, and applications used for analytics and reporting, as well as potential threats such as cyberattacks, malware, and insider threats.
+
+Establish incident response plans and contingency measures to address potential risk incidents, including data breaches, security breaches, compliance violations, and other adverse events, with procedures for reporting, investigation, and remediation.
+
+Oversee anonymization and de-identification techniques, ensure data minimization (only use the necessary data), and regularly audit data practices to detect any potential breaches of privacy.
+
+Implement clear and transparent consent processes that inform individuals about potential secondary uses of their data. Dynamic consent models that allow individuals to update their preferences over time shall be utilized.
+
+Ensure that Data quality checks and validation processes are implemented and adhered to by relevant departments before data is used for secondary purposes.
+
+[PAGE 9]
+The DoH and Healthcare ecosystem entities that have established an Analytics function shall:
+
+Implement a change management plan to support the adoption of data and digital standards. This plan shall be addressed at minimum, but not limited to:
+
+Communication : clear strategy to inform stakeholders of goals and updates of the plan.
+
+Training : interactive sessions on standards, protocols, and tools for all users.
+
+Awareness : ongoing campaigns to reinforce the value of data & digital standards.
+
+Monitoring : regular evaluation of the plan's effectiveness and adjustments as needed .
+
+Enforce standards for compliance monitoring to support reliable data for decision-making and digital transformation.
+
+[PAGE 11]
+5.1 The entity shall establish a robust monitoring system to track and evaluate compliance with the standard. This includes using reliable metrics and measurements to assess the effectiveness of the implemented controls. The entity will periodically report its compliance status, any deviations, and associated risks to the DoH. Risks related to non-compliance must be recorded and managed appropriately. Regular internal audits and assessments must be conducted to validate and verify compliance with the standard's requirements. Based on the outcomes of these monitoring and evaluation activities, the entity must establish a continuous improvement process to adapt to emerging threats, technological changes, and evolving compliance requirements. Additionally, the DoH will conduct periodic audits and technical assessments of all regulated entities, as relevant and applicable, to ensure compliance with the standard.
+
+[PAGE 11]
+6.1 DoH may impose sanctions in relation to any breach of requirements under the Data Storage & Retention Standard in accordance with the Disciplinary Regulations of the Abu Dhabi Healthcare Sector governed by the UAE federal laws.

@@ -1,0 +1,140 @@
+DOC_CODE: DoH/ST/DGS/DDGO/V1/2025
+TITLE: DATA GOVERNANCE DATA GOVERNANCE STANDARD STANDARD
+AUTHORITY: Department of Health - Abu Dhabi
+TIER: official
+VERSION: 1
+
+=== DOCUMENT TEXT ===
+
+[PAGE 1]
+STANDARD
+
+[PAGE 3]
+The purpose of the Data Governance Standard is to set minimum requirements for the effective governance, of data within all business sectors at the Department of Health (DoH) and across the healthcare ecosystem in Abu Dhabi.
+
+This standard provides authority, clarifies roles and responsibilities, and guides actions and decisions related to data governance implementation within the DoH (which includes sectors, divisions, centers, and offices) and across the healthcare ecosystem of Abu Dhabi (which includes healthcare facilities, providers, insurance companies, research institutions, pharmaceutical companies, service providers and health information exchange platforms).
+
+The successful implementation of this standard is expected to lead to the creation of a well-structured, transparent governance framework that enhances compliance with data protection regulations and establishes mechanisms for data monitoring and auditing.
+
+This standard is implemented in conjunction with the following protocols
+
+Assign ecosystem data owner/data steward protocol
+
+Ecosystem issue management and resolution protocol
+
+Measuring and monitoring compliance protocol
+
+[PAGE 6]
+Outlined below are the fundamental standard statements governing the collection, usage, and protection of data within the DoH internal organization and across the Abu Dhabi healthcare ecosystem.
+
+[PAGE 6]
+The governing authority for data, and digital products within the DoH and the Abu Dhabi healthcare ecosystem shall be the DoH Data and Digital Governance Office (DoH's DDGO), led by the Data and Digital Governance Section Head. DoH'S DDGO operates under the oversight of the Digital Health Committee (DHC). It is responsible for establishing a data and digital governance framework that guides data and digital practices across the DoH and the broader Abu Dhabi healthcare ecosystem.
+
+The Data and Digital Governance Framework shall include detailed descriptions of data governance roles, such as Data Owners, Data Stewards, and Data Custodians, outlining their responsibilities, reporting structure, escalation hierarchy, and operational metrics.
+
+DoH 's DDGO , as the data and digital governing authority within the Abu Dhabi healthcare ecosystem, ensures that all necessary data-related policies, standards, guidelines, protocols, and processes are defined and adopted for all data management domains throughout the ecosystem, in compliance with relevant data standards and regulations.
+
+DoH's DDGO shall ensure that in establishing all data-related policies, standards, guidelines, protocols, and processes, it adheres to the policies, standards, and frameworks established by the UAE and Abu Dhabi data-related authorities, including, but not limited to, the Ministry of Health and Prevention (MOHAP), Department of Government Enablement (DGE) and Statistics Centre - Abu Dhabi (SCAD).
+
+All entities within the Abu Dhabi healthcare ecosystem are required to follow the regulations set forth by the DoH 's DDGO , ensuring compliance with the established data and digital governance policies, standards, processes, protocols and frameworks.
+
+All entities across the ecosystem and all DoH internal stakeholders are required to adopt and align their data and digital governance frameworks with the DoH's guidelines.
+
+DoH's DDGO shall foster stakeholder engagement and collaboration across the healthcare ecosystem to ensure the data and digital governance framework addresses the diverse needs and leverages the insights of all healthcare entities.
+
+DoH's DDGO shall regularly review and update the data and digital governance framework, engaging with entities for feedback to ensure that the governance approach remains effective and responsive to new challenges, technological advancements, and regulatory changes.
+
+DoH's DDGO shall collaborate with ecosystem entities to promote a culture of continuous learning and adaptation, ensuring that data governance practices evolve alongside emerging technologies and regulatory requirements. This collaborative effort will strengthen alignment across the healthcare ecosystem, enabling entities to adapt to governance changes efficiently.
+
+DoH's DDGO shall manage data and digital governance practices within DoH while ensuring adherence to regulatory requirements.
+
+All entities within the healthcare ecosystem shall have a comprehensive understanding of the data they possess.
+
+The data lifecycle across data collection, storage, processing, consumption, and   disposal activities shall be appropriately governed by entities.
+
+DoH's DDGO shall take responsibility for planning, delivering, and conducting initiatives aimed at improving data governance literacy across the Abu Dhabi healthcare ecosystem. This includes ensuring all stakeholders understand their roles, responsibilities, and the importance of adherence to the data and digital governance framework.
+
+[PAGE 7]
+To foster responsible data stewardship and effective governance practices, ensuring the integrity, security, and ethical use of data assets, DoH shall establish a robust data and digital governance model overseen by dedicated bodies. These include the establishment of the Digital Health Committee (DHC), relevant taskforces and working groups.
+
+The DHC shall provide comprehensive oversight and strategic direction to align data and digital governance initiatives with the Department of Health and the Abu Dhabi healthcare ecosystem.
+
+[PAGE 7-8]
+All data within DoH and the Abu Dhabi healthcare ecosystem shall have an assigned Data Owner, accountable for overseeing and managing the Data Management practices within their respective data domains. Responsibility of ensuring assigning Data Owner lies with the senior management of the entity for the ecosystem, and with the DHC for DoH.
+
+Data Owners should be senior representatives of business functions and are tasked with upholding the responsibilities defined by the data and digital governance framework, ensuring accountability for data governance requirements within their respective domains. This does not mean they exclusively 'own' the data, but they are responsible for making decisions about specific datasets directly related to their business function.
+
+The role of Data Owner may be assigned as an additional responsibility to an individual's current role or as a separate, dedicated position, depending on the entity's size, data complexity, and operational needs.
+
+Senior management of entity shall ensure that Data Owners are provided with sufficient time and resources to fulfill their responsibilities effectively. The time commitment may vary significantly based on the entity's size, the data domain's complexity, and the volume of data governance activities.
+
+Where applicable, Data Owners are required to appoint Data Stewards to assist in data management activities, including resolving data issues and highlighting risks within their respective data domains.
+
+Data Stewards are responsible for ensuring the accurate and secure management of data within their respective domains. They ensure data governance policies and standards are upheld, and that data is effectively utilized to drive business value.
+
+Entities shall appoint or designate Data Custodians responsible for the management of datasets. Data Custodians are responsible for executing data-related initiatives and managing data systems from a technical standpoint. They serve as technical experts, ensuring that data systems, security controls, and technology solutions align with data governance policies and the needs of the DoH and the Abu Dhabi healthcare ecosystem.
+
+The role of Data Custodian may be assigned as an additional responsibility to an individual's current role, provided they have the required technical skills and capabilities, or as a separate, dedicated position, depending on the entity's size, data complexity, and operational needs. In cases where data systems are fully managed by outsourced vendors, the data custodian role shall be assigned to the relevant vendor resources to fulfill the required responsibilities.
+
+The entity shall maintain a registry of data owners, data stewards and data custodians, subjecting it to periodic reviews and compliance checks from DoH's DDGO to ensure adherence to governance standards.
+
+DoH's DDGO shall initiate requests for compliance reports from entities on their data governance activities periodically, including but not limited to the management of data assets, adherence to data quality standards, data access standards, data catalog and metadata standards, and records of any data-related incidents. This process ensures transparency and accountability in data governance practices.
+
+The entity and DoH's DDGO shall discuss and address cross-sectoral data governance challenges, promoting collaboration and consistency in data management practices among various governmental entities within the healthcare sector.
+
+The entity and DoH's DDGO shall establish a Data Ownership Working Group, comprising Data Owners or their representatives from each entity within the healthcare ecosystem. This group shall address compliance challenges and ensure that health data is managed and exchanged in alignment with the DoH's standards and regulatory requirements.
+
+[PAGE 8]
+DoH's DDGO shall design an escalation hierarchy for raising data-related risks and issues through the centralized mechanism, ensuring effective management and resolution of such concerns within the healthcare ecosystem.
+
+DoH shall act as the mediator and final decision authority to resolve any disputes related to data governance within the healthcare ecosystem. Issues should be reported to DoH's DDGO and escalated to DHC, as per the Annexure
+
+DoH's DDGO shall document and track all data -related actions, decisions, issues, and resolutions of the data governance-related bodies in a data governance register to ensure transparency and accountability. The register's format and accessibility shall be defined to facilitate efficient data management and oversight.
+
+DoH's DDGO shall implement a tiered issue classification system within its data governance framework to prioritize issues based on severity. Issues shall be designated as high, medium, or low priority, with corresponding response protocols to ensure that resources are efficiently and effectively allocated.
+
+In the event of a high-priority issue, the impacted entity shall initiate immediate and decisive action to mitigate risks. Risks must be registered and prioritized. The resolution process for high-priority issues shall be expedited to prevent significant impact on data governance and healthcare services.
+
+For medium-priority issues, the impacted entity shall engage in a systematic and timely resolution process, ensuring that these concerns are addressed promptly while managing the effective distribution of attention and resources internally or within the entity.
+
+Low-priority issues shall be managed in a way that ensures they are addressed within a reasonable timeframe, without diverting critical resources from higher-priority concerns, but with sufficient attention to prevent escalation.
+
+[PAGE 8]
+Healthcare entities shall implement a change management plan to support the adoption of data standards. This plan shall cover at minimum, but not limited to:
+
+Communication: clear strategy to inform stakeholders of goals and updates of the plan
+
+Training: interactive sessions on standards, protocols, and tools for all users
+
+Awareness: ongoing campaigns to reinforce the value of data & digital standards
+
+Monitoring: regular evaluation of the plan's effectiveness and adjustments as needed
+
+The DOH DDGO shall enforce standards for compliance monitoring to support reliable data for decision-making and digital transformation.
+
+[PAGE 11]
+Executing data-related initiatives and decisions related to data management domains from a technical perspective, ensuring effective implementation of data governance strategies.
+
+Serving as experts in information management, specializing in specific data systems and applications. They provide technical expertise to ensure systems meet data governance standards and business needs.
+
+Designing and developing technology solutions to support data management, reporting, and analytics environments that align with the entity's operational needs and data governance policies.
+
+Implementing data management procedures and standards within systems and applications, ensuring they comply with policies defined by the DoH's DDGO.
+
+Enforcing access and security controls defined by Data Owners and Information Security team and aligned with data classification and protection requirements, ensuring proper data security.
+
+Collaborating with Data Stewards to address data quality issues, ensuring that systems and technologies support high-quality, accurate, and reliable data across domains.
+
+Analyzing the impact of data decisions on systems and applications and communicating these impacts to the broader technology team to ensure transparency and alignment with business objectives.
+
+Ensuring alignment of technology activities with business requirements and data governance policies, ensuring that information systems support the organization's strategic goals.
+
+Participating in the planning and development of data-related initiatives from a data system perspective, contributing to technical planning and system design.
+
+Providing insights to the DDGO, or its equivalent, and Data Stewards on the technical impacts of data-related decisions, ensuring that all technology solutions are sustainable and meet governance standards.
+
+[PAGE 12]
+The entity shall establish a robust monitoring system to track and evaluate compliance with the standard. This includes using reliable metrics and measurements to assess the effectiveness of the implemented controls. The entity will annually report its compliance status, any deviations, and associated risks to the DoH. Risks related to non-compliance shall be recorded and managed appropriately. Regular internal audits and assessments shall be conducted to validate and verify compliance with the standard's r equirements. Based on the outcomes of these monitoring and evaluation activities, the entity shall establish a continuous improvement process to adapt to emerging threats, technological changes, and evolving compliance requirements. Additionally, DoH will conduct periodic audits and technical assessments of all regulated entities, as relevant and applicable, to ensure compliance with the standard.
+
+[PAGE 12]
+DOH may impose sanctions in relation to any breach of requirements under this Standard in accordance with the Disciplinary Regulations of the Abu Dhabi Healthcare Sector governed by the UAE federal law

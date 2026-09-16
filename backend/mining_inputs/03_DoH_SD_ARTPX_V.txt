@@ -1,0 +1,390 @@
+DOC_CODE: DoH/SD/ARTPX/V
+TITLE: STANDARD FOR PATIENT EXPERIENCE IN FACILITIES PROVIDING IVF SERVICES TEMPLATE 5: Standard
+AUTHORITY: Department of Health - Abu Dhabi
+TIER: official
+VERSION: 1
+
+=== DOCUMENT TEXT ===
+
+[PAGE 2-5]
+1
+
+The provision of fertility care is a deeply sensitive subject and requires comprehensive care for the patients/couples. It  mandates that healthcare professionals deliver respectful, Patient-Centered Care  (PCC),  prioritizing  the  individual's  values,  preferences,  and  active  participation  in  clinical decision-making. This PCC approach signifies a fundamental shift from traditional disease-focused models towards a holistic understanding of the patient's journey.
+
+This standard applies to DoH licensed IVF facilities and professionals
+
+This standard establishes the minimum requirements for the implementation and assessment of PCC  within  fertility  care,  defining  its  requirements  across  seven  core  dimensions:  accessibility, comprehensive  information,  effective  communication,  active  patient  involvement,  respect  for patient values and preferences, continuity of care and transitions, and professional competence (References 1, 2, 3). This shall be achieved by establishing clear requirements for holistic patient experience, competent workforce required for high-quality fertility care, and essential infrastructure.
+
+This standard should be read in alignment with the existing standards on assisted reproductive techniques (References 1,9,13).
+
+2
+
+3
+
+Each patient shall be assigned to a dedicated IVF care coordinator to serve as a single point of contact from the beginning of and throughout the treatment.
+
+[PAGE 5]
+The coordinator may be a medical assistant or nurse, responsible for managing appointments, ensuring timely follow-ups, facilitating communication between the patient and clinical team, and providing personalized education and emotional support.
+
+Language & Cultural Competency: Arabic-speaking coordinators must be available, and all coordinators shall receive extensive training in privacy, empathy, cultural sensitivity, and hospitality to offer a concierge-level experience. Patient preferences for the care coordinator's language and nationality must be applied.
+
+Prompt Communication: The care coordinator should provide a prompt initial response to all queries. If input from other team members is required, this response will serve as an acknowledgment of receipt and include a timeline for the detailed reply.
+
+[PAGE 5]
+Internal protocols should be developed to maintain a consistent care team for each patient, ensuring familiarity and continuity of care.
+
+Team Consistency Target: The same physician, nurse, and coordinator must attend the patient's visits and procedures whenever possible, aiming for at least 85% team consistency.
+
+Coverage Planning: Coverage for holidays or provider leave must be planned strategically to minimize handoffs, and patients should be informed in advance of any temporary changes in their care team.
+
+Seamless Patient Experience: The care team shall maintain continuity of care, ensuring patients experience an integrated journey without disruption or fragmentation. Patients must be kept informed at all stages to reinforce confidence and familiarity with their care (e.g., no change of clinical teams or care coordination team at critical phases).
+
+4
+
+[PAGE 6]
+A structured onboarding process should be created for IVF patients, offering an initial orientation, delivered by the care coordinator, personalized to each patient's needs and challenges, to provide a comprehensive introduction
+
+Orientation Scope: This orientation should cover the overall treatment roadmap, clinic services and IVF facilities, key staff contacts, and patient responsibilities. Patients must receive an introductory information packet or digital guide detailing what to expect (timelines, required preparations, do's and don'ts), transparent likelihood of pregnancy based on unique patient case, eligibility criteria to change clinic or doctor, and available support resources (e.g., psychology or lifestyle counseling services). Patients shall be offered an optional tour of the IVF facilities.
+
+Informed Decision-making & Questions: Patients should be ensured ample opportunity to ask questions and obtain all relevant information at this initial stage.
+
+[PAGE 6]
+The care coordinator must initiate a pre-consultation touchpoint by call or message to gather essential details and patient preferences, building a comprehensive case summary prior to the first consultation.
+
+Information Gathering: Preferences may include, but are not limited to, consultation mode (in-person or virtual), preferred language, preferred clinician gender (if relevant), and preferred clinic branch location. The coordinator shall also collect key information such as preliminary medical history and any details required for completing pre-consultation forms.
+
+Team Assignment & Logistics: Using this information, the care coordinator should prepare a case summary and present it to the treating physician, who will determine and assign the appropriate multidisciplinary team based on the case insights. The care coordinator must then confirm the appointment and support the patient's attendance at the first consultation, including arranging logistics and sending timely reminders.
+
+[PAGE 6-7]
+The first consultation is a critical step designed to be comprehensive, personalized, and efficient.
+
+Appointment Availability: 85% of first appointments should be scheduled within 1 week of the patient's request, applicable to both in-person and virtual consultations
+
+Consultations should be conducted in-person or virtually according to patient preference. In-person consultations must be held in a consultation suite with integrated equipment (e.g., for triage, scanning).
+
+Adequate time should be offered to cover all patient queries.
+
+All available patient information (from Malaffi, past medical records, referral letters, pre-consultation forms) should be reviewed by the care team before the session
+
+Mandatory attendees should include the treating physician, the nurse, and the dedicated care coordinator assigned to the patient (s).
+
+Additional attendees such as an embryologist, counselor, or other specialists shall be included as needed based on the case summary.
+
+An orientation led by the care coordinator should cover the IVF process, a facility tour (if in-person), and review of key procedures and policies (consent, privacy, communication channels).
+
+The physician and nurse should present the summarized case using information from Malaffi, past records, and pre-consultation questionnaires.
+
+Discussion shall include possible causes, required diagnostics, and offer clarity on the end-to-end IVF journey.
+
+A personalized IVF treatment plan should be co-developed with the patient, including tailored wellness and wellbeing programs
+
+Dedicated time must be provided for patient questions and clarifications.
+
+Required investigations should be scheduled for the female and/or male partner.
+
+Follow-up appointments should be arranged to review investigation results.
+
+Counseling sessions should be organized if indicated (psychological, nutritional, genetic).
+
+Care plan should be updated in the EMR and integrated with Malaffi.
+
+[PAGE 7-8]
+Robust handover protocols should be established for any transition of care, ensuring seamless continuity.
+
+Scope of Handover: This includes transitions between shifts, departments within the clinic, and when referring the patient to another facility posttreatment.
+
+Handover Communication: Handover shall be conducted under a one-team approach, following defined protocols. The care team shall ensure patients are informed of the handover, and are assured that they will receive adequate and appropriate care in the following steps.
+
+Standardized Communication: Standardized communication tools (e.g., SBAR/ISBAR) must be utilized to convey all relevant patient information, ensuring the receiving team fully understands the care plan.
+
+Documentation: All handovers and referrals must be clearly documented in the patient record and reflected on Malaffi.
+
+[PAGE 8]
+To support patients across all key phases of their IVF journey, the center shall develop comprehensive patient guides and educational resources. Content must be tailored to individual needs, accounting for different starting points, stages of the journey, and prior experiences (e.g., first-time patients, patients with previous failed cycles).
+
+Content Scope: These resources must provide clarity on the end-to-end IVF journey, covering stages such as the first consultation, preparation prior to starting treatment, pre-embryo transfer, and post-embryo transfer care. Content should include clear, easy-to-understand information about medications (including safe and correct administration of fertility medications), procedures (explained in advance), expectations, timelines, required preparations, and available support resources.
+
+Format & Delivery: Clinics are free to choose the medium and format (e.g., brochure, video, digital guide, written instructions, visual aids, demonstrations) to develop and deliver this information.
+
+Understanding Verification: The care team should consistently verify patient understanding at each step, using lay-friendly language.
+
+[PAGE 8-10]
+Sensitive and clear communication must be paramount when informing patients about their IVF cycle outcomes.
+
+The care team shall provide personalized communication throughout the patient's IVF journey, ensuring information is tailored to individual journey stages, needs and circumstances.
+
+Proactive nudges and reminders must be used to guide patients at key stages and reinforce adherence to treatment plans.
+
+When an IVF cycle is successful, the care team should promptly inform the patient in a supportive manner.
+
+Guidance on next steps should be provided, including early pregnancy care instructions and scheduling the first obstetric ultrasound or prenatal visit.
+
+Success should be celebrated with the patient professionally and warmly, ensuring comprehensive support during the transition from fertility treatment to pregnancy care.
+
+For cycles that do not result in pregnancy, a sensitive communication protocol must be implemented.
+
+The care team must promptly inform the patient/couple with compassion, explain the outcome and possible reasons in clear, nontechnical language, and offer a dedicated counseling session.
+
+The treating physician must provide at least one session with the patient / family to review clinical findings, answer questions, and outline options for next steps.
+
+Emotional support resources (e.g., grief counseling, support groups) should be provided, and a follow-up consultation scheduled to discuss next steps or adjustments for future cycles.
+
+Multiple channels to be established for patients to provide feedback, fostering a culture of continuous improvement.
+
+Accessibility & Anonymity: Feedback channels must include digital options and in-clinic methods, ensuring the process is easy, anonymous if desired, and available in multiple languages.
+
+Analysis & Reporting: A formal mechanism should be implemented for analyzing and reporting patient feedback data, regularly reviewing feedback and generating reports to highlight key trends and areas for improvement.
+
+Communication of Improvements: The center must communicate back to patients any improvements made as a direct result of their feedback, building trust and demonstrating responsiveness.
+
+A clear, transparent, and fair procedure for addressing and resolving patient complaints should be in place.
+
+Timeliness & Thoroughness: The process should include acknowledging receipt quickly, conducting thorough investigations, and providing timely responses to patient concerns.
+
+Corrective Actions & Transparency: Feedback from complaints should be used to implement necessary corrective actions, and patients must be informed of changes or improvements made. The resolution process must respect the patient's rights at all stages.
+
+Structured outcomes surveillance should be implemented for all ART pregnancies through EMR-driven Malaffi updates at defined checkpoints:
+
+Pregnancy confirmation
+
+Mid-pregnancy (20 - 24 weeks)
+
+Delivery summary (mode of delivery, gestational age, birthweight, complications, NICU admission)
+
+Infant health status at 12 months
+
+IVF facilities shall ensure that each outcome update is linked to the corresponding ART cycle, gamete, and embryo transfer identifier to support analytics and continuous quality improvement.
+
+IVF facilities should register, track and document progress of all patients, including international patients and patients from other Emirates.
+
+9
+
+[PAGE 11-14]
+Each patient must be assigned a dedicated care coordinator to ensure personalized support throughout their treatment.
+
+IVF  facilities  should  ensure  adequate  administrative  support, such  as  reception  and  scheduling,  to  accommodate  patient volume and uphold service quality standards.
+
+IVF facilities should provide care through a consistent multidisciplinary team for each patient's IVF journey.
+
+Each care team should include: a treating physician, a dedicated nurse,  a  dedicated  care  coordinator,  in  addition  to  providing access  to  embryologists,  psychologists,  and  counselors.  This team approach ensures coordinated and holistic care for each patient.
+
+Clinical teams and frontline staff should maintain patient loads at levels that ensure safe, high-quality care and allow sufficient time for individualized attention to each IVF patient.
+
+Each care coordinator should be limited to managing no more than 25 active patients to maintain high-quality, attentive care.
+
+Staff  coverage  should  be  scheduled  to  meet  patient  needs during all operating hours without overburdening individuals.
+
+Sufficient  clinical  staff  should  be  present  during  peak  times, such as early morning monitoring and weekend procedures.
+
+On-call system should be implemented for after-hours emergencies.
+
+Systems to track and document each staff member's Continuing Professional Development (CPD) should be implemented in alignment with the DoH workforce regulations - Reference 16)
+
+IVF facilities should maintain records of completed training, certifications, & education credits for all clinicians & support staff.
+
+IVF facilities should conduct regular reviews to verify that staff meet required CPD hours and competencies.
+
+All staff must be required to complete mandatory DoH   training modules, including infection control, data privacy, and emergency procedures.
+
+Staff successful completion of all associated assessments must be ensured.
+
+Regularly audit training records and ensure competency evaluations are up to date for each role.
+
+Continuous clinical training tailored to each staff category should be facilitated, including doctors, nurses, embryologists, and care coordinators.
+
+Advanced certifications, workshops, and regular skill refreshers should be offered to keep staff updated on the latest IVF techniques and patient care practices.
+
+Regular training should be provided for all staff in patient experience and communication skills.
+
+Workshops on empathy, cultural sensitivity, privacy, and compassionate communication should be conducted to enhance patient interactions.
+
+IVF facilities are encouraged to participate in international talent exchange or fellowship programs to expose staff to global best practices and to establish partnerships through DoH or global networks for training at leading IVF centers abroad and hosting visiting experts.
+
+IVF centers should establish research programs in collaboration with relevant authorities or academic institutions and integrate research findings into clinical practice to advance staff development, IVF techniques and improve patient outcomes.
+
+Credentialing and Qualifications (as per the published PQR document - Reference 15)
+
+All personnel must meet recognized qualifications for their roles.
+
+Reproductive endocrinologists must be board-certified in their specialty.
+
+Embryologists should have accredited training in clinical embryology.
+
+Nurses should be licensed with reproductive medicine experience.
+
+Only staff who fulfill baseline credentialing requirements, as per international and local standards, can deliver IVF services.
+
+Duty-hour schedules should be developed accordance with the best international practices to prevent employee burnout.
+
+Staff must receive adequate rest between shifts.
+
+Rotations and staffing plans must comply with labor regulations regarding maximum hours per shift.
+
+Appropriate off-days must be provided in line with regulations to maintain staff well-being and ensure patient safety.
+
+Employee Assistance Program should be implemented to provide confidential support services, including counseling and stress management.
+
+IVF facilities shall provide access to resources for mental health, burnout prevention, and work-life balance, including counseling hotlines and wellness workshops.
+
+IVF facilities shall ensure that employees have access to adequate support mechanisms to effectively manage workrelated stress.
+
+IVF facilities shall continuously monitor and implement measures to mitigate staff fatigue in order to ensure safety.
+
+IVF facilities should adhere to global work-hour limits, approximately 48 hours per week, to prevent staff fatigue and maintain a healthy work environment.
+
+IVF facilities shall implement measures such as mandatory rest periods and regular check-ins to identify signs of burnout
+
+IVF facilities shall incorporate a formal fatigue risk management protocol, including limits on consecutive earlymorning procedures and overnight duties.
+
+IVF facilities shall empower staff to report when they are fatigued and make necessary schedule adjustments to ensure.
+
+IVF  facilities  shall  abide  by  the  physical  infrastructure  requirements  as  per  the  DOH  Health Facility Guidelines 2019 (Part B - Health Facility Briefing & Design 210 IVF (Fertilisation Centres) and Health Facility Briefing & Design Unit (Fertilization Centres) with emphasis on:
+
+[PAGE 14]
+Holistic Privacy Approach: IVF facilities shall provide a supportive environment that recognizes the personal and cultural sensitivities associated with fertility, ensuring utmost privacy and confidentiality for couples through comprehensive spatial planning, security protocols, and operational procedures dedicated to fostering a comfortable, private, and therapeutic patient environment
+
+Noise Reduction & Sound Insulation: Design and operational protocols shall maintain a quiet, calming, and patient-friendly atmosphere to minimize psychological stress. This includes implementing acoustic insulation to significantly reduce sound transmission between all areas, particularly patient-facing ones.
+
+Spatial Planning for Quieter Zones: Waiting areas and dedicated lounges shall be fully enclosed and strategically set back from public corridors to limit noise intrusion. Seating arrangements shall include physical separation to minimize auditory disturbances.
+
+Controlled Flow Management: IVF facilities shall implement scheduling and patient flow controls to prevent overcrowding, which inherently contributes to noise reduction and a more serene environment.
+
+Calming Illumination: Beyond standard lighting, the facility shall incorporate soft, calming lighting solutions. The overall lighting design should enhance comfort, reduce stress, and support a discreet patient experience throughout the facility.
+
+[PAGE 14-15]
+Functional Integration: The IVF unit shall be designed and operated to ensure seamless and efficient functional relationships with all interconnected areas, both internal and external, critical to patient care delivery. This includes, but is not limited to, established protocols for collaboration with external departments such as laboratories, pharmacy, and imaging services (Appendix 1b)
+
+Optimized Patient Flow: Internally, facility design and operational procedures shall optimize patient and staff flow from reception through consultation, treatment, and recovery areas. Special emphasis shall be placed on the secure co-location or immediate adjacency of specialized laboratories (e.g., embryology, andrology) to procedure rooms to facilitate the safe, secure, and time-sensitive transfer of critical biological materials.
+
+Transparent Patient Observations: Transparent, see-through panels that allow patients to observe certain lab and procedural activities without compromising sterility or privacy shall be considered - including displays that allow couples to see key moments such as embryo-returns for implantation.
+
+Lab and Operation rooms: IVF laboratories and operating rooms must be designed with state-of-the-art infrastructure that supports safety, quality, and patient comfort and trust in compliance with existing standards.
+
+Clinical Suite Design: Each treating physician shall be allocated a consultation-plus-examination suite designed as a single, contiguous unit to deliver all required services in a self-contained environment. This suite shall incorporate a fixed ultrasound system, a triage area, a blood draw station, a private restroom, and a recovery area, ergonomically optimized for efficiency and patient comfort
+
+Parking Provisions: Each facility should provide on-site or valet parking sufficient to accommodate peak clinic capacity, considering patient, visitor, and staff needs, and ensuring convenient access to the facility entrance. Parking provisions must comply with applicable accessibility standards, including the required number of accessible spaces.
+
+[PAGE 15]
+Dedicated Private Spaces: Provision of designated private interview rooms for sensitive and confidential conversations between healthcare staff and patients.
+
+Privacy Measures: Design and operational protocols must ensure patient privacy by preventing direct visual access into consultation areas, treatment spaces, and patient rooms from external vantage points (e.g., windows and doors). In addition, IVF facilities must provide and utilize privacy curtains or equivalent physical barriers in all settings where patient modesty and confidentiality require protection, such as multioccupancy rooms or open-plan treatment areas.
+
+Controlled Circulation: An interconnected layout (Appendix 1) shall ensure that patients do not move through public corridors at any point during their clinical visit, with all essential functions located within the same cluster. This design enhances privacy and minimizes patient movement.
+
+Private Changing Rooms: Separate, gender-specific patient changing rooms shall be provided near procedure areas. Each changing room must contain private cubicles, secure lockers for personal belongings, seating, mirrors, and a call bell system for safety.
+
+[PAGE 16]
+Private & Discretized Waiting area: Waiting areas shall be fully enclosed to serve patients and accompanying family members, ensuring privacy, noise reduction, and a comfortable environment (Appendix 1a). The design should include options for segregated or semi-private zones, such as partitioned seating pods or family nooks, to accommodate family groups and provide a more discreet environment for patients awaiting care
+
+Seating requirements: Seating shall be positioned away from public corridors, with physical separation and spatial planning measures implemented to minimize noise and visual intrusion.
+
+Adequate Space: Waiting areas shall provide sufficient space per patient to maintain comfort and privacy, incorporating designated wheelchair spaces and accommodated seating, designed to avoid overcrowding and support a welcoming environment.
+
+[PAGE 16]
+Gender-Segregated Facilities: IVF facilities shall provide gendersegregated restrooms ensuring equal quality, comfort, and accessibility in each. Design and finishes shall be consistent across all gender-specific IVF facilities, with equivalent amenities and accessibility features.
+
+Integrated & Accessible Restrooms: Restrooms shall comply with interconnected room requirements and, when in common areas, shall be gender-specific. Their design must ensure ease of access, privacy, and integration with adjacent spaces. An attached restroom directly accessible from the clinical area is also required to enhance patient comfort and privacy.
+
+[PAGE 16-17]
+Integrated Digital Queuing: IVF facilities shall implement a tokenized or electronic queuing system seamlessly integrated with the Electronic Medical Record (EMR) system. This system is crucial for discreet patient identity management, utilizing anonymized codes on public display boards.
+
+Anonymized Systems: Public display boards and all signage shall use anonymized codes or numbers in place of patient names to maintain strict confidentiality.
+
+Secure Communications: Queue notifications shall be provided discreetly through in-clinic screens, SMS, or a mobile application, enabling patients to wait comfortably away from crowded common areas.
+
+Clear & Accessible Signage: IVF facilities shall provide clear, bilingual signage (Arabic and English) throughout the clinic to support effective
+
+patient navigation. Signage, including digital displays, shall use highcontrast fonts and sizes that ensure universal comprehension, especially for individuals with visual impairments. Crucially, no signage shall display patient names or any sensitive personal information to protect privacy.
+
+[PAGE 17]
+Patient Call Bells: A reliable call bell system shall be provided within all patient changing rooms to ensure patient safety and immediate assistance when required (3.1.2.24).
+
+Emergency Call in Accessible Toilets: All accessible toilets must be fitted with a fully functional emergency call system. These systems shall be always maintained in good working order to ensure safety, accessibility, and compliance with applicable regulations.
+
+IVF facilities must deploy and maintain a secure patient-facing mobile/web application (or DoH-approved equivalent) to enhance patient experience and two-way communications. The application shall support digital onboarding, enable personalization of content and reminders, and ensure integration of the couple and family throughout the IVF journey.
+
+[PAGE 17]
+The patient(s) application should integrate a feature allowing the electronic processing of patient s' consents, per the requirements of existing and future amendment of DOH ART standards, DOH Patient Consent Standard, and any other relevant DOH and MOHAP regulations, and UAE Federal laws and regulations on medical assistance for reproduction and patient consents.
+
+Access rights of patient's information shall only be granted with the explicit consent of the patient. This consent shall include the type of information and to whom the rights shall be granted (e.g., spouse, family members).
+
+This digital consent feature shall be considered as an alternative to multiple manual consent interactions, allowing each spouse/ concerned persons to review, approve, or opt out according to their role in the treatment plan.
+
+[PAGE 18-23]
+The patient sapplication shall enable real-time tracking of all IVF milestones for both male and female patients.
+
+Key touchpoints include initial private consultation, diagnostic assessments, lifestyle optimization interventions, medical therapy, and procedural steps such as egg retrieval, sperm collection, fertilization, embryo development, embryo transfer, and post-transfer follow-up.
+
+The system shall display laboratory results, appointment schedules, and procedural updates, while sending automated alerts for required actions and educational prompts.
+
+The patients application shall enable remote check-in prior to arrival, confirming patient identity through secure authentication (unique credentials with multi-factor authentication).
+
+Patients can review and confirm appointment details and required information in advance, ensuring confidentiality.
+
+Upon successful checkin, the application shall update the clinic's operational systems and EMR with the patient's arrival status, trigger the tokenized queuing workflow, and generate time-stamped audit entries.
+
+IVF Facilities shall develop and implement a telemedicine module fully integrated with the existing DOH infrastructure, including interoperability with the Electronic Medical Record, Malaffi, and Sahatna.
+
+The module shall enable secure, real-time audio and video consultations, asynchronous messaging, electronic prescribing, digital consent capture, and secure exchange of medical documents and diagnostic results.
+
+Compliance with DOH and federal telehealth regulations, data privacy, and cybersecurity standards is mandatory.
+
+IVF facilities shall implement a system to track all personnel and their activities across laboratory and clinical areas.
+
+The system shall record staff identification, roles, shift schedules, location, and tasks performed, with time-stamped activity logs.
+
+A system shall be established to track patient follow-up from treatment completion through pregnancy and childbirth outcomes.
+
+The system shall record key milestones, ensuring data accuracy, timestamping, and secure storage.
+
+A secure sample tracking and witnessing system shall be implemented for all reproductive materials, ensuring end-to-end traceability.
+
+Witnessing technology shall be integrated into laboratory workflows to ensure double verification of all handling, labeling, and procedural steps.
+
+A secure, tamper-proof audit trail system shall be established to record, store, and retrieve all tracking data related to personnel, patient followup, and sample tracking.
+
+The audit trail shall be time-stamped, user-authenticated, and protected against modification or deletion, integrating with the facility's EMR and laboratory information systems.
+
+IVF f acilities' digital systems, including the patient application, shall be fully integrated with Malaffi for secure, bidirectional exchange of clinical data.
+
+Integration shall maintain real-time updates, ensuring accuracy, completeness, and confidentiality.
+
+IVF facilities digital systems shall be integrated with Sahatna to enable secure, bidirectional exchange of patient data with the Health Information Exchange (HIE).
+
+Integration should support core patient-facing functions and comply with DoH standards, respecting patient consent and privacy requirements.
+
+IVF facilities shall integrate and regularly update features as per the DoH patient experience requirements.
+
+IVF facilities shall ensure that data complies with established quality standards, and medical coding standards published on DOH Shafafiya portal (eg. ICD, CPT, SNOMED etc)
+
+Fertilization Centers should ensure that they meet the minimum requirements as listed in this standard and comply to the audit requirements as set forth by the DoH.
+
+This standard aims at enhancing the patient's experience throughout the fertility journey. The providers must comply with DoH data submission requirements, including patient-experience surveys and other relevant tools.
+
+The evaluation and monitoring will include, but not limited to, the following:
+
+Patient Experience score (Mystery shopping, DoH, Internal and Third-party surveys)
+
+DoH audits
+
+Applicable JAWDA KPIs
+
+Patient experience will be continuously monitored at key touchpoints, including but not limited to:
+
+First consultation
+
+Before egg / sperm preservation
+
+Before embryo transfer
+
+Post-IVF treatment
+
+DOH may impose sanctions in relation to any breach of requirements under this standard in accordance with the disciplinary regulation of the Healthcare sector.
+
+7.
+
+Adopted from NHS Health Building note
+
+Adopted from the International Health Facility Guidelines (2025), Part B: Health Facility Briefing & Design IVF Unit 2025
+
+t

@@ -1,0 +1,2085 @@
+DOC_CODE: DHA/HRS/HPSD/ST-22
+TITLE: Standards for Clinics in Educational and Academic Settings
+AUTHORITY: Dubai Health Authority
+TIER: official
+VERSION: 4
+
+=== DOCUMENT TEXT ===
+
+[PAGE 1-3]
+Issue date: 02/08/2024
+
+Effective date: 02/10/2024
+
+Health Policies and Standards Department Health Regulation Sector (2024)
+
+The Health Policy and Standards Department (HPSD) developed this Standard in collaboration with Subject Matter Experts and would like to acknowledge and thank these health professionals for their dedication toward improving quality and safety of healthcare services in the Emirate of Dubai.
+
+Health Regulation Sector Dubai Health Authority
+
+All rights ©  reserved by the Dubai Health Authority @ 2024. The contents of this document shall not be copied or reproduced in any form without prior written permission from the Authority.
+
+Issue Nu:
+
+4
+
+02/08/2024   Effective Date:
+
+02/10/2024
+
+[PAGE 4]
+The Health Regulation Sector (HRS) plays a key role in regulating the health sector. HRS is mandated by the Dubai Health Authority (DHA) Law No. (6) of the year (2018) with its amendments pertaining to DHA, to undertake several functions including but not limited to: Developing regulation, policy, standards, guidelines to improve quality and patient safety and promote the growth and development of the health sector; Licensure and inspection of health facilities as well as healthcare professionals and ensuring compliance to best practice; Managing patient complaints and assuring patient and physician rights are upheld; Governing the use of narcotics, controlled and semi-controlled medications; Strengthening health tourism and assuring ongoing growth; and Assuring management of health informatics, e-health and promoting innovation. The Standards for Clinics in Educational and Academic Settings aims to fulfill the following overarching Dubai Health Sector Strategy 2026: Pioneering Human-centered health system to promote trust, safety, quality and care for patients and their families. Make Dubai a lighthouse for healthcare governance, integration and regulation. Leading global efforts to combat epidemics and infectious diseases and prepare for disasters. Pioneering prevention efforts against non-communicable diseases.
+
+Issue Nu:
+
+4
+
+02/08/2024   Effective Date:
+
+02/10/2024
+
+[PAGE 5-7]
+The Standards for Clinics in Education and Academic Settings has been revised to align with the
+
+DHA, Dubai Health Strategy 2026 and other relevant documents and updates in terminologies,
+
+acronyms and reporting systems at DHA. This document focuses on the requirements for a
+
+Clinic in Educational and Academic settings, with an emphasis on the quality of care and safety
+
+of students. It elaborates the licensing process of the Clinic in Educational and Academic
+
+settings in detail, the physical design requirements that are aligned with the DHA, Health
+
+Facility Guidelines (HFG) 2019, the requirements of Healthcare Professionals and the
+
+associated student/patient care.
+
+This document emphasised on accessibility for People of Determination, which should comply
+
+with  the  Dubai  Universal  Design  Code  and  the  Inclusion  Policy  of  Knowledge  and  Human
+
+Development Department (KHDA).
+
+DHA launched HASANA in the second quarter of 2018. Immunization details of all students are
+
+to be maintained by the Clinic in Educational and Academic setting and shared with DHA via
+
+HASANA system.
+
+The following sections have been updated:
+
+1.
+
+Isolation requirements
+
+Healthcare professional requirements
+
+Appendix 4 Student medical examination schedule
+
+Issue Nu:
+
+4
+
+02/08/2024   Effective Date:
+
+02/10/2024
+
+DEFINITIONS
+
+Anaphylaxis
+
+: Refers to a potentially fatal, acute systemic allergic reaction to a substance (such
+
+as  stinging  insects,  foods,  and  medications)  that  is  induced  by  exposure  to  the  substance.
+
+Manifestations of anaphylaxis may be cutaneous
+
+(such as hives, itchiness, swelling),
+
+cardiorespiratory  (swelling  of  the  tongue,  throat,  wheezing,  difficulty  breathing,  low  blood
+
+pressure), central nervous system (lethargy, coma), and others.
+
+Body Mass Index (BMI) Screening:
+
+A measure for indicating nutritional status. It is defined as a
+
+person's weight in kilograms divided by the square of the person's height in meters (kg/m2).
+
+During childhood and adolescence, the ratio between weight and height varies with sex and age,
+
+so the cut-off values that determine the nutritional status of those aged 0
+
+and age-specific.
+
+Confidential healthcare information
+
+-
+
+19 years are gender-
+
+:  This is all information relating to a patient's healthcare
+
+history, diagnosis, condition, treatment, or evaluation obtained from a healthcare provider who
+
+has treated the patient.
+
+Educational and Academic Clinic:
+
+A clinic based in an Educational and Academic institution that
+
+provides a combination of primary care, mental health care, counseling, case management, dental
+
+health,  ocular  health,  nutrition  education,  health  education,  and  health  promotion,  with  an
+
+emphasis on prevention and early intervention.
+
+Emergency:
+
+A medical or psychological condition where the absence of immediate intervention
+
+could  reasonably  be  expected  to  result  in  placing  the  student's  health  (or  another  student's
+
+tandards for Clinics in Educational and Academic Settings
+
+Issue Nu:
+
+4
+
+Issue Date:
+
+02/08/2024   Effective
+
+S
+
+Date:
+
+02/10/2024
+
+6
+
+of
+
+66
+
+health) in serious jeopardy; serious impairment of bodily or psychological functions; or serious
+
+dysfunction of any bodily organ or part.
+
+Full-time physician:
+
+Medical professional who are licensed to work full-time under DHA. They
+
+typically work during regular business hours. They provide comprehensive care to patients within
+
+the DHA healthcare system. They play a crucial role in diagnosing and treating illnesses, managing
+
+chronic conditions, and promoting health and well-being.
+
+Guardian:
+
+A person who has the legal right and responsibility of taking care of someone who
+
+cannot take care of himself or herself, such as a child whose parents have died.
+
+HASANA system:
+
+An  integrated  electronic  public  health  system  for  disease  surveillance  and
+
+management. The system provides a unified platform for reporting diseases, handling infectious
+
+disease outbreaks, and managing vaccinations. It also records the immunizations of each student
+
+[PAGE 7-8]
+in the Emirate of Dubai.
+
+Health Education:
+
+Any  combination  of  learning  experiences  designed  to  help  individuals  and
+
+communities improve their health by increasing knowledge, influencing motivation, and improving
+
+health literacy.
+
+Health Record:
+
+A single record of all data on an individual's health status.
+
+Health:
+
+A state of complete physical, mental, and social well-being and not merely the absence of
+
+disease or infirmity.
+
+Incident report:
+
+A formal recording of the facts related to an incident. The report usually relates
+
+to  an  accident  or  injury  that  has  occurred  on  the  school  campus.  Incident  reports  should  be
+
+tandards for Clinics in Educational and Academic Settings
+
+Issue Nu:
+
+4
+
+Issue Date:
+
+02/08/2024   Effective
+
+S
+
+Date:
+
+02/10/2024
+
+Revision Date:
+
+completed as soon as possible following the incident or injury. If the incident is severe enough, it
+
+shall be notified to relevant authorities.
+
+Individualized  Health  Care  Plan  (IHCP):
+
+A  comprehensive  plan  for  caring  for  children  with
+
+special health care needs is developed by the certified school physician in collaboration with the
+
+student,  parents/guardians,  school  staff,  community,  and  healthcare  provider(s)  in  UAE,  as
+
+appropriate. It should be updated each academic year or whenever required.
+
+Isolation room:
+
+An area in the educational or academic setting where a student suspected of any
+
+infectious or communicable disease can be separated from contact with others to reduce the risk
+
+of transmission of infection until the student is picked up by parents or guardians.
+
+Knowledge and Human Development Authority (KHDA):
+
+The Dubai Government's educational
+
+quality  assurance  and  regulatory  authority.  It  evaluates  and  accredits  higher  education
+
+institutions in Dubai. KHDA promotes happiness, Education, and well-being through collaboration
+
+with schools, universities, parents, students, educators, investors, and government partners to
+
+create a global education system.
+
+Medication:
+
+A  prescribed  substance  that  contains  one  or  more  active  or  inactive  ingredients
+
+designed to prevent, diagnose, treat, or relieve symptoms and restore health.
+
+Policy and Procedure:
+
+The policies of an organization are the clear, concise statements of the
+
+[PAGE 8-10]
+parameters by which an organization conducts its business. In essence, the policies are the rules
+
+that staff abide by as they carry out their various responsibilities. The procedures are instructions
+
+or steps that describe how to complete a task or do a job.
+
+tandards for Clinics in Educational and Academic Settings
+
+Issue Nu:
+
+4
+
+Issue Date:
+
+02/08/2024   Effective
+
+S
+
+Date:
+
+02/10/2024
+
+Revision Date:
+
+02/08/2029         Page
+
+8
+
+of
+
+66
+
+Record:
+
+Any information recorded in any way, including, but not limited to, handwriting, print,
+
+tape, electronic storage, computer diskette, film, microfilm, and microfiche.
+
+School  Health  Program
+
+:  The  school  procedures  that  contribute  to  the  maintenance  and
+
+improvement of the health of pupils and school personnel, including health services, healthy living,
+
+and health education.
+
+School Nurse:
+
+A DHA-licensed Registered Nurse (RN) practicing in a school or college who is
+
+responsible for the health of enrolled children, adolescents, or adults.
+
+School Physician:
+
+A DHA-licensed physician practicing in a school or college who is responsible
+
+for the health of enrolled children, adolescents, or adults and provides medical care to students
+
+in accordance with medical science and experience.
+
+School:
+
+An institution designed to provide compulsory education for students at both primary
+
+(elementary) and secondary (junior and senior high school) levels.
+
+Standing Order:
+
+A written instruction issued by a medical practitioner to authorize a specific
+
+person (e.g., Registered Nurse) who does not have the prescribing rights to administer specified
+
+medicines.
+
+Student:
+
+Any individual who is or has been enrolled in an educational agency or institution and
+
+regarding whom the agency or institution maintains educational records.
+
+Temporary Nurse:
+
+A nurse hired at a school/nursery for a specific period set by Dubai Health
+
+Authority for any absence reason from the full-time nurse at that school/nursery. The temporary
+
+nurse is provided by another healthcare facility (provider facility), making sure it has enough
+
+number of nurse professionals as per the facility regulations.
+
+tandards for Clinics in Educational and Academic Settings
+
+Issue Nu:
+
+4
+
+Issue Date:
+
+02/08/2024   Effective
+
+S
+
+Date:
+
+02/10/2024
+
+02/08/2029         Page
+
+9
+
+of
+
+66
+
+Vaccine:
+
+A  suspension  of  weakened,  killed,  or  fragmented  microorganisms  or  toxins  or  other
+
+biological  preparations,  such  as  those  consisting  of  antibodies,  lymphocytes,  or  mRNA,
+
+administered primarily to prevent disease.
+
+Vaccination:
+
+A term used to refer to the physical act of administering any vaccine.
+
+Vision screening
+
+: A limited series of tests to identify individuals who may have a vision or eye
+
+health problem.
+
+Issue Nu:
+
+4
+
+Issue Date:
+
+02/08/2024   Effective Date:
+
+02/10/2024
+
+Revision Date:
+
+[PAGE 11]
+BMI :
+
+CD :
+
+CFCs :
+
+CME :
+
+CSC :
+
+DHA :
+
+DM :
+
+EHCP :
+
+HCCA :
+
+HRS :
+
+IHCP :
+
+KHDA :
+
+PHPD :
+
+PMS :
+
+PPE :
+
+RN :
+
+SCD :
+
+SHS :
+
+UAE :
+
+Body Mass Index
+
+Controlled Drugs
+
+Chlorofluorocarbons
+
+Continuing Medical Education
+
+Central Services Complex
+
+Dubai Health Authority
+
+Dubai Municipality
+
+Emergency Health Care Plan
+
+Hasana Command Center Application
+
+Health Regulation Sector
+
+Individualized Health Care Plan
+
+Knowledge and Human Development Authority
+
+Public Health Protection Department
+
+Preventive Medicine Section
+
+Personal Protective Equipment
+
+Registered Nurse
+
+Semi-Controlled Drug
+
+School Health Section
+
+United Arab Emirates
+
+Issue Nu:
+
+4
+
+Issue Date:
+
+02/08/2024   Effective Date:
+
+02/10/2024
+
+[PAGE 12-13]
+Clinics in educational and academic settings are a unique environment that cater to a large proportion of children and youth. These clinics play a critical role in promoting health and safety of students within this population. They are intended to provide the relevant young population the basic medical care as mentioned below, but not limited to:
+
+Promote general health by encouraging healthy nutrition practices and physical activity.
+
+Promote oral hygiene and screen for caries and other conditions related  to  the  oral cavity.
+
+Promote ophthalmic screening and early detection of ocular problems.
+
+Promote Obesity screening Body Mass Index (BMI).
+
+Promote prevention of bullying.
+
+Promote prevention of communicable and non-communicable diseases.
+
+Early detection and correction of communicable and non-communicable diseases.
+
+Early detection and management of disabilities.
+
+Immunization  programs  and  immunization  records  maintained  as  mandated  by  the Dubai Health Authority (DHA).
+
+Health education to promote knowledge, attitude and skills for making healthy decisions, to achieve health literacy, to adopt health-enhancing behaviour and help promote the health of others.
+
+Counselling and psychological services to support students' mental, emotional and social health.
+
+Issue Date:
+
+02/08/2024   Effective Date:
+
+02/10/2024
+
+2.
+
+SCOPE
+
+2.1.
+
+To establish and enforce minimum requirements in DHA licensed Clinics in Educational
+
+and Academic settings, so as to ensure the provision of the highest level of safety and
+
+quality of student healthcare at all times.
+
+[PAGE 13-15]
+3.1.
+
+To  ensure  safe  and  effective  student  care  provision  in  DHA  licensed  Clinics  in
+
+Educational and Academic Institutions.
+
+APPLICABILITY
+
+4.1.
+
+DHA licensed Clinics in Educational and Academic Institutions.
+
+DHA licensed healthcare professionals rendering healthcare services in these clinics.
+
+STANDARD ONE:
+
+5.1.
+
+REGISTRATION AND LICENSURE PROCEDURES
+
+All Clinics in Educational and Academic institutions shall:
+
+Adhere to federal and local laws and regulations.
+
+Comply with the  DHA licensure  and  administrative  procedures  to  get  New Facility License, available on the DHA website.
+
+Apply to the Health Regulation Sector (HRS) to obtain permission to provide the required service(s) and to be a vaccine qualified clinic.
+
+Have in place internal policies and procedures as per School Health Section (SHS) for the following, but not limited to:
+
+a.
+
+b.
+
+Bullying prevention
+
+Business continuity
+
+Issue Date:
+
+02/08/2024   Effective
+
+4.
+
+5.
+
+Date:
+
+02/10/2024
+
+Hazardous waste management as per Dubai Municipality (DM) requirements
+
+Medical waste storage and disposal
+
+Incident reporting
+
+Infection control measures
+
+Laundry services
+
+Managing HASANA system
+
+Managing student health records
+
+Medication management
+
+Monitoring  and  maintenance  of  medical, electrical  and  mechanical equipment
+
+Patient Notification
+
+Readiness plan/Emergency response
+
+Referral criteria and patient transfer
+
+Reprocessing of reusable equipment
+
+Safe use of chemicals used for infection control
+
+Service description and scope of services
+
+Staffing plan, staff management and clinical privileging
+
+Stay at home if unwell
+
+Student assessment criteria
+
+Student confidentiality and privacy
+
+Student health education, communication and informed consent.
+
+Vaccination.
+
+Ensure adequate lighting and utilities, including temperature controls, water taps, medical gases, sinks and drains, electrical outlets and communications.
+
+Display Patients' Rights and Responsibilities Charter in Arabic and English.
+
+[PAGE 15-18]
+The clinic in the educational and academic setting shall abide with the following:
+
+The new facility design shall be as per DHA Health Facility Guideline 2019, Part B-Health Facility Briefing & Design, 110 - Education Unit.
+
+Be  located  on  the  ground  floor  for  easy  accessibility  and  evacuation  when necessary.
+
+Adequate lighting and ventilation.
+
+Flooring  should  be  easy  to  maintain,  readily  cleanable,  anti-microbial,  slipresistant, anti-glare and appropriately wear resistant for the location.
+
+Walls should be smooth, washable and moisture resistant. Walls should not create ledges or crevices that could harbor dust and/or dirt.
+
+Have  designated  spaces  for  a  waiting  area,  consultation,  treatment  areas, isolation room and ventilated medical waste collection room.
+
+Provision of hand hygiene facility in consultation and treatment areas, with wall mounted non-refillable soap, wall mounted non-refillable hand sanitizer,
+
+Issue Nu:
+
+4
+
+02/08/2024   Effective Date:
+
+02/10/2024
+
+wall  mounted  paper  towel  near  each  hand-washing  sink,  and  hand  hygiene educational poster (WHO poster).
+
+Be provided with screens to ensure gender privacy. (If there is no separate observation room and treatment room).
+
+No  cameras  are  installed  in  the  consultation  or  treatment  area  to  ensure patient privacy.
+
+Have a waiting area to be able to accommodate at least five (5) patients at a time.
+
+Healthy students should not accompany the patients into the clinic.
+
+Have doors with a width of 110 centimeters and corridors with a width of 150 centimeters to accommodate wheelchairs.
+
+All announcements should be posted outside the clinic on a specified board or they should be laminated.
+
+The new applications for Clinics in educational and academic settings shall abide by the following table that specifies the total area requirements with special considerations for any future expansion plans.
+
+>5000
+
+Two Separate School health clinics with an area of 30 and 40 sq. meters
+
+If there are more than one clinic, both clinics should be functionally equipped.
+
+Any physical changes in the clinic design must be communicated with HRS and should align with DHA Health Facility Guidelines, relevant local and federal laws.
+
+The clinic shall adhere to environmental pollution control standards, which may include, but not limited to the following:
+
+Hazardous waste materials storage handling and disposal
+
+Medical waste storage and disposal
+
+Asbestos use in building materials
+
+Elimination the use of mercury and chlorofluorocarbons (CFCs) in healthcare, etc.
+
+Accessibility  for  People  of  Determination  should  comply  with  the  Dubai  Universal Design  Code  and  the  Knowledge  and  Human  Development  Department  Authority (KHDA)  Inclusion  Policy.  The  following  requirements  for  People  of  Determination should be considered but not limited to:
+
+Parking  within  or  near  the  premises  of  the  educational  and  academic institution
+
+Wheelchair ramps where required for easy accessibility
+
+Accessible physical examination room
+
+Accessible  toilet  for  people  of  determination  within  the  building  of  the educational and academic institution.
+
+Issue Nu:
+
+4
+
+Issue Date:
+
+02/08/2024   Effective Date:
+
+02/10/2024
+
+The Clinic in an Educational and Academic setting shall comply with the DM regulations regarding protection of the health and safety of employees.
+
+The clinic in the educational and academic institution should ensure the following:
+
+Have all the medical instruments and equipment set out in Appendix 3.
+
+Have  appropriate  fire-fighting  equipment,  signage,  emergency  power  capabilities, lighting and an evacuation plan.
+
+Have  appropriate  emergency  equipment  and  supplies  readily  accessible.  Immediate access  to  emergency  medications  (e.g.,  auto-injectable  epinephrine,  albuterol,  rectal diazepam, and glucagon) is a high priority and crucial to the effectiveness of these lifesaving interventions.
+
+Regularly  inspect  and  maintain  all  equipment  used  in  patient  care,  testing,  or emergency situations according to manufacturers' specifications.
+
+Eliminate hazards that might lead to slipping, falling, electrical shock, burns, poisoning, or other trauma.
+
+[PAGE 18-19]
+The isolation room, is to be preferably located close to the clinic and with following requirements:
+
+At least 1 isolation rooms should be assigned next to the school clinic.
+
+A minimum area of 7.5 sq. mts.
+
+Issue Nu:
+
+4
+
+Issue Date:
+
+02/08/2024   Effective Date:
+
+02/10/2024
+
+The design and ventilation system of the room in a school setting should be prepared  to  allow  conversion  to  an  isolation  room  with  high-efficiency particulate air (HEPA) filtration system.
+
+Preferably  a  hand  washing  sink  inside  the  room  with  a  non-refillable  hand detergent.
+
+Access to non-refillable hand sanitizers.
+
+An  attached  toilet  or  a  nearby  designated  toilet  as  required  for  people  of determination.
+
+A viewing window to monitor the student from the clinic or a camera only with live feed (recording is not permitted).
+
+A single bed with railing
+
+Preferably two doors, one with access to the clinic and one external to minimise spread of any infection.
+
+Access to Personal Protective Equipment (PPE) trolley or shelves outside the isolation room.
+
+7.1.11.
+
+Issue In  case  there  is  more  than  one  student  in  the  isolation  room,  use  a  screen between the two students and maintain proper social distancing.
+
+Note: for further details of an Isolation area refer to
+
+Nu:
+
+4
+
+Date:
+
+02/10/2024
+
+Appendix 1.
+
+[PAGE 20-22]
+8.1.
+
+All school shall have a DHA licensed Registered Nurse (RN) as a School Nurse with one
+
+(1)  year  experience  of  working  with  children  in  a  school  or  pediatric  setting  and
+
+experience with child health immunizations.
+
+The health facility shall have the required nurse at all times that there are students in the educational or academic setting.
+
+All healthcare professionals should be trained in Basic Life Support (BLS) and first aid and maintain a valid certification/training in advanced resuscitation techniques, such as  Advanced  Cardiac  Life  Support  (ACLS)  and  Paediatric  Advanced  Life  Support Course (PALS).
+
+There should be ongoing training provided to all healthcare professionals either within the  school  or  obtained  externally  through  participation  in  Continuing  Medical Education (CME) that includes topics related to the school health program.
+
+8.5.
+
+8.6.
+
+The School or academic management may select from one of the following options:
+
+8.5.1.
+
+8.5.2.
+
+A  registered  clinic  with  a  full  time  DHA  licensed  healthcare  professionals
+
+(physician, nurse)
+
+OR,
+
+An  agreement  or  contract  between  the  school/academic  institute  and  the
+
+hospital or clinic to provide medical services to all students of all ages.
+
+In the case of an agreement or contract between the school/academic institute and the
+
+hospital or clinic, it shall ensure the following:
+
+tandards for Clinics in Educational and Academic Settings
+
+Issue Nu:
+
+4
+
+02/08/2024   Effective
+
+S
+
+Date:
+
+02/10/2024
+
+The healthcare facility shall be DHA licensed and the healthcare professionals have the necessary training and skills to deliver the services provided.
+
+The contract must include a flowchart outlining the communication process with hospital staff. The school nurse should have a clear communication plan with the hospital or clinic staff in charge, including specific times for reporting medical issues and emergencies.
+
+The  contract  should  specify  what  qualifications  are  required  of  physicians providing medical services. This includes pediatricians, family medicine practitioners, and general practitioners with at least two years of experience.
+
+A  contract  should  specify  the  number  of  physicians  required  based  on  the school population and students' healthcare needs.
+
+The distance from the clinic should not exceed 5 km or the average response time should not exceed 7.5 minutes.
+
+A comprehensive medical examination of students should be conducted by the healthcare facility's physicians, with proper documentation maintained in the student health files.
+
+The school nurse should record all student health information accurately in the student health file after examinations.
+
+In the case of a registered clinic with a full-time DHA-licensed healthcare professional (physician, nurse), it shall ensure the following:
+
+Issue Nu:
+
+4
+
+Date:
+
+02/10/2024
+
+All  healthcare  professionals  shall  be  DHA  licensed  and  have  the  necessary training and skills to deliver the services provided.
+
+Healthcare  professionals  are  responsible  for  staying  up-to-date  with  all  circulars, guidelines, and standards that are uploaded on Sheryan.
+
+The school management shall assure that all procedures are carried out by or under the direction of qualified, skilled and experienced licensed healthcare professionals.
+
+Additionally,  the  school  physician/nurse  in  charge  shall  be  responsible  for communicating with the DHA.
+
+There should be ongoing training for all healthcare professionals provided within the school or obtained externally through participation in Continuing Medical Education (CME) that includes topics related to the school health program.
+
+School physicians require forty (40) CME hours annually to renew their license.
+
+School nurses require twenty (20) CME hours annually to renew their license.
+
+All Healthcare professionals should maintain a valid training/certification in in Basic Life Support (BLS).
+
+At least one (1) healthcare professional with advanced resuscitative techniques, e.g., Advanced  Cardiac  Life  Support  (ACLS),  Pediatric  Advanced  Life  Support  Course (PALS) shall be immediately available until all students leave the school.
+
+All healthcare professionals should have the following training but not limited to:
+
+Qualified First Aid course from an approved site .
+
+Issue Nu:
+
+4
+
+02/08/2024   Effective Date:
+
+02/10/2024
+
+[PAGE 23]
+Experience  and  training  in  managing  emergencies  (anaphylactic  shock/ adverse reaction to medication or immunization).
+
+Experience in managing communicable diseases.
+
+Experience in immunization/catch-up immunization after school age.
+
+Experience in infection control measures.
+
+Experience in medical records documentations.
+
+Experience in communication & reporting.
+
+The school management shall appoint health professionals as per the requirements described herein:
+
+For school settings a DHA licensed Physician:
+
+Pediatrician,
+
+OR
+
+Family Medicine,
+
+OR
+
+General  Practitioner  (with  minimum  two  (2)  years  of  experience  in pediatric care)
+
+For University settings a DHA Licensed Physician :
+
+Family Medicine
+
+OR
+
+General Practitioner
+
+Nu:
+
+4
+
+Issue Date:
+
+02/08/2024   Effective
+
+Issue Date:
+
+02/10/2024
+
+[PAGE 24]
+DHA licensed Registered Nurse (RN) shall be appointed as the School Nurse with the following requirements:
+
+Experience with child health immunizations, AND
+
+Minimum one (1) year experience of working with children in a school OR pediatric setting.
+
+[PAGE 24-28]
+Schools  that  have  appointed  a  full  time  DHA  licensed  physician(s)  shall  be  in accordance with the existing on site school student population, stated in Table 1 below.
+
+02/08/2024   Effective Date:
+
+A part-time Physician shall be available for a minimum of three (3) times a week for school  hours  and  shall  be  available  during  vaccinations  and  in-call  to  address emergencies.
+
+A full-time physician shall be available five (5) times a week for school hours and shall be available during vaccinations and in-call to address emergencies
+
+The full-time school physician or RN should oversee the clinic and be actively involved in ensuring the implementation of all mandated policies and protocols in collaboration with the administrative authority and school personnel.
+
+The Physician shall:
+
+Not prescribe medication to students for use after school hours.
+
+Not prescribe Controlled Drugs (CD) and Semi Controlled Drugs (SCD) for students.
+
+Advise parents to keep the student at home during the infectious period of any disease, and physicians should notify DHA of the student's condition.
+
+Develop, assess, plan and implement Individualized Health Care Plan (IHCP) and Emergency Health Care Plan (EHCP) for children with chronic illnesses and children with determination, including allergies.
+
+Maintain  effective  relationship  with  parents,  families  and  local  community minimum annually and whenever is required.
+
+Issue Nu:
+
+4
+
+02/08/2024   Effective Date:
+
+02/10/2024
+
+As appropriate, refer any student with health issues, children assessed and found to have psychological or emotional disorders like anorexia, self-harm, addiction, abuse etc.
+
+Participate in planning and conducting health education activities in the school.
+
+Act as a counsellor in guiding the school administrators, teachers and parents to discuss any health problem of a student, as required.
+
+Submit reports to HRS and SHS, PHPD in a timely manner.
+
+Update knowledge, skills and practice related to school health.
+
+Draft the School Health Service Plan and review it annually, which may include the following:
+
+The  delivery  and  evaluation  of  health  services  in  school  environment, including comprehensive medical examinations, screenings and vaccination programs.
+
+Comprehensive  medical  examination  of  students  at  KG/Foundation Stage, Grade one (1)/Year two (2), Grade four (4)/Year five (5), Grade seven (7)/Year eight (8), Grade ten (10)/Year eleven (11) and for new admission at any grade/year in schools and at entry level in colleges and universities. The findings have to be documented in the student health record maintained at the clinic of the educational or academic setting. (see appendix 4)
+
+Medication management shall be the responsibility of the Physician.
+
+Nu:
+
+4
+
+02/08/2024   Effective Date:
+
+02/10/2024
+
+Issue Issue d.
+
+Management  of  emergency  reaction  including  anaphylaxis  that  might
+
+occur due to vaccination shall be the responsibility of the Physician.
+
+Physician shall report all suspected or confirmed cases of communicable diseases to SHS and Preventive Medicine Section (PMS), PHPD, DHA; as per the list of Notifiable communicable diseases noted in Appendix 5 .
+
+Schools  are  required  to  report  any  communicable  diseases  and  the number of individuals affected (UAE Medical Liability Law 10/2008).
+
+g.
+
+The  notification  of  the  communicable  disease  should  be  done  through
+
+notification/refer service in HASANA HCCA system
+
+Diseases under Category A1 in Appendix 4 should be notified immediately via  telephone  (by  calling  the  24/7  PMS  hotline),  within  0-  8  hrs  of identification along with electronic notification.
+
+i.
+
+j.
+
+Diseases  under  Category  A2  in  Appendix  4  should  be  electronically
+
+notified within 24 hrs of identification.
+
+Diseases under Category B in Appendix 4 should be notified electronically
+
+within 5 working days from identification.
+
+Vaccine-preventable diseases should be reported immediately and appropriate  action  should  be  taken  to  ensure  the  protection  of  other children and adults in the school.
+
+Nu:
+
+4
+
+02/08/2024   Effective Date:
+
+02/10/2024
+
+School Nurse
+
+There shall be one (1) full-time school nurse for every seven hundred and fifty (750) students in the on-site school population.
+
+For  example,  if  the  population  is  760  students,  then  two  (2)  nurses  are required, with variations depending on the community and student population.
+
+Schools  with  a  high  percentage  of  students  with  special  health  needs  will require more intensive nurse-to-student ratios:
+
+a.
+
+One (1) nurse per 225 students when daily professional nursing services
+
+OR when interventions are needed,
+
+AND
+
+b.
+
+One (1) nurse per 125 students when students have complex health needs.
+
+The school Nurse shall:
+
+[PAGE 28-31]
+Hold a DHA license as Registered Nurse (RN) and should have at least one (1) year experience of working with children in a school or pediatric setting with child health immunization experience.
+
+Liaise  with  and  support  the  school  staff  in  implementing  the  school health activities.
+
+Ensure that all medical supplies and equipment needed for first aid and emergency care are available and in working condition.
+
+Assess needs of students (examine/observe/measure vital signs) who require first aid care and administer appropriate care.
+
+tandards for Clinics in Educational and Academic Settings
+
+Issue Nu:
+
+4
+
+Issue Date:
+
+02/08/2024   Effective
+
+S
+
+8.20.
+
+Date:
+
+02/10/2024
+
+Revision Date:
+
+02/08/2029         Page
+
+28
+
+of
+
+66
+
+Issue Nu:
+
+Refer to the Physician for advice when needed.
+
+Inform  parents,  through  the  school  authorities,  about  the  student's condition.
+
+Transfer  the  student  to  the  Emergency  department  of  the  nearest hospital as per the standard procedure in cases required.
+
+g.
+
+Provide privacy to the student during medical examination.
+
+Monitor students who are frequently absent from school due to healthrelated problems. Keep a daily list of students who are absent for healthrelated reasons, and follow up with parents when the child is absent.
+
+i.
+
+j.
+
+4
+
+Coordinate with classroom teachers to:
+
+i.
+
+Observe and report student with unhealthy practices.
+
+ii.
+
+Refer promptly student who are showing signs of visual, hearing
+
+and   learning difficulties.
+
+Refer student with fever, rashes or unusual behaviour.
+
+iv.
+
+Report presence of potential hazards in the classroom.
+
+v.
+
+vi.
+
+Motivate student to enhance healthy practices.
+
+Report  sanitary  and  safe  environment  deficits  to  the  school
+
+administration.
+
+Measure height and weight of students and calculate BMI on an annual
+
+basis for all students.
+
+02/08/2024   Effective Date:
+
+02/10/2024
+
+Issue Nu:
+
+Refer  to  the  school  health  physician,  students  whose  growth  and development measurement show deviations from normal.
+
+Plan and conduct health education sessions for parents of students with chronic illness  to  assist  them  to  understand  their  child's  disease  and needs.
+
+Conduct health education sessions to meet students' learning needs, covering topics but not limited to: vaccination, mental health, bullying prevention,  nutrition,  physical  activity,  a  healthy  lifestyle,  infectious disease, personal and environmental hygiene, and other topics as per DHA instructions.
+
+Plan  the  vaccination  schedule  of  every  student  as  per  the  DHA Immunization Guidelines, conduct vaccinations under the supervision of the school health physician, and ensure vaccine coverage for all eligible students, including catch-up/defaulters.
+
+the  vaccination  schedule  of  every  student  as  per  DHA  Immunization Guidelines and conduct vaccinations under the supervision of the school health physician.
+
+Update  knowledge,  skills and  practices related to school health requirements.
+
+4
+
+02/08/2024   Effective Date:
+
+02/10/2024
+
+A Temporary Nurse shall be arranged by the management of the educational or academic setting from an agency approved by HRS, DHA, in case the employed RN is on leave
+
+Approval is based on the following criteria:
+
+No-objection letter from the provider facility.
+
+Valid Malpractice insurance for the temporary nurse.
+
+Verified Dataflow report for the temporary Nurse.
+
+iv.
+
+Signing and submitting the Temporary Nurse Request Form.
+
+[PAGE 31-32]
+Health and Safety Officer or a Crisis Response Team should handle any emergencies, follow up, monitor the implementation of health and safety procedures, conduct all necessary trainings for students and staff, and participate actively in the investigation and contact tracing of infections and communicable diseases.
+
+The Health and Safety Officer or crisis response team shall be appointed based on the following requirements:
+
+Carries a Bachelor/Diploma degree in public health, administration, environmental health,  quality  and  safety  management,  risk  management  or occupational health.
+
+Does not require DHA license.
+
+Requires competencies and training in safety, quality, problem solving skills, infection control measures and communication skills.
+
+Issue Nu:
+
+4
+
+02/08/2024   Effective Date:
+
+02/10/2024
+
+The Health and safety officer/Crisis response team shall:
+
+Monitors and inspects the implementation of health and safety procedures.
+
+Oversees the placement and set up of safety measures.
+
+Ensures the implementation of policies and procedures.
+
+Conducts risk assessments and trainings on health and safety for students and staff.
+
+Keeps periodic records of activities.
+
+The school management may appoint an infection control coordinator.
+
+Occupational Therapist, Psychologist, Health Educators, Dieticians, School Counsellor and or Behavioural therapist could also be appointed.
+
+[PAGE 32-35]
+Educational and Academic Clinics shall observe and abide by the DHA Immunization Guidelines.
+
+The Education and Academic Clinics shall maintain the demographics of students and immunization details (including immunization history) in the Students' Health File and submit the immunization data of all students via the HASANA system, which serves as a public health surveillance and management system in the Emirate of Dubai.
+
+Vaccination sessions should be planned with the SHS, PHPD.
+
+Vaccinations  shall  be  administered  in  accordance  with  the  DHA  Best  Practice Immunization Guideline  by a DHA-licensed physician or a competent Registered Nurse (RN).
+
+Issue Nu:
+
+4
+
+Issue Date:
+
+02/08/2024   Effective Date:
+
+02/10/2024
+
+Revision Date:
+
+This shall occur after the vaccination consent form and the pre-vaccination checklist have been completed and signed by the parents or guardians of the identified eligible students.
+
+The consent is valid for one (1) month from the date of signing.
+
+It  is  prohibited  to  keep  vaccines  in  the  school  when  the  session  of  vaccination  is finished.
+
+All unused vaccines should be submitted at the end of the working day to the DHA pharmacy, Central Services Complex (CSC).
+
+All  used  vaccines  containers  should  be  disposed  appropriately  in  sharps container.
+
+Only minimum amount of medicines should be stored if the clinic.
+
+Administering medication shall only be done with the approval of the parents/guardians.
+
+A student's medical and general consent forms should be filled out precisely and annually by a parent/guardian to ensure the student's health and wellbeing.
+
+Administration  of  medication  shall  apply  the  principles  of  Ten  Rights  of  Drug Administration.
+
+The clinic in-charge is responsible for storage of medication and the various aspects of medication storage such as temperature control, suitable disposal/return of expired medication and other pharmaceutical related matters.
+
+Issue Nu:
+
+4
+
+02/08/2024   Effective Date:
+
+02/10/2024
+
+All medication shall be stored securely in an appropriately temperature controlled area during holidays.
+
+In the absence of the School Physician a signed and documented Standing Order of drugs/treatments  shall  be  maintained  to  authorise  a  competent  School  Nurse  to administer medication to the student.
+
+All medication prescribed by an external physician to be administered in school must be:
+
+Accompanied by written instructions from a licensed physician on an individual basis, as determined by the student's health status.
+
+A  medical  report  and  management  plan  from  the  treating  doctor  must  be maintained in the student's individual medication record.
+
+Self-administration of medication should be done under the supervision of the school medical team after approval is obtained from the student's treating physician.
+
+All medication should be transported to the school by parent/guardian and handed to school medical team.
+
+All medication must be brought to school in the original labelled container prepared by the pharmacy, licensed physician or pharmaceutical company.
+
+The Parental/Guardian Consent to Administer Prescribed Medication form must be used whenever a student needs to take prescribed medication (as prescribed by an external  treating  physician)  during  school  hours  after  the  parent  or  guardian  has submitted the original prescription.
+
+Issue Date:
+
+02/08/2024   Effective Date:
+
+02/10/2024
+
+The  school  healthcare  professionals  (physicians/nurses)  shall  complete  the form with the required information based on the original prescription provided by the parent/guardian and attach a copy of the prescription to the form.
+
+If the student is taking more than one medication, a separate form must be filled out for each medication.
+
+The parents or guardians must sign the completed and filled form.
+
+The school's healthcare professionals (physicians or nurses) must complete page  2  of  the  form  each  time  a  dose  of  the  prescribed  medication  is administered at school.
+
+[PAGE 35]
+The  school  management  is  responsible  for  notifying  parents  and/or  guardians  of normal or any suspected deviation from normal health, found as a result of a screening test  (e.g.,  vision  screening,  dental  screening),  health  examination  and/or  school personnel observation.
+
+Each  school  shall  develop/adopt  procedures  or  protocols  for  documenting  and implementing a follow-up and referral plan for students identified as needing additional services.
+
+The management of the educational and academic institution shall ensure, but not limited to the following:
+
+Comply with Federal and local laws and regulations.
+
+Issue Nu:
+
+4
+
+02/08/2024   Effective Date:
+
+02/10/2024
+
+[PAGE 36-39]
+Manage the clinic to ensure high-quality healthcare services while recognizing basic student rights.
+
+Maintain a clean and safe physical environment in the school clinic.
+
+Develop and implement administrative policies to provide high quality care and a safe environment, a list of which is mentioned earlier.
+
+Cooperate with HRS inspectors, School Health Section Supervisors and/or any duly authorized representative(s).
+
+Refrain  students  from  attending  school  if  they  are  unwell  with  certain diseases/conditions Refer to the Appendix 2 for the Exclusion from School, list .
+
+Issue  referrals,  as  appropriate,  for  children  assessed  and  found  to  have psychological or emotional disorders like anorexia, self-harm, addiction, abuse etc.
+
+Develop  and  implement  procedures  or  protocols  for  documenting  and implementing a follow-up and referral plan for students identified to require additional healthcare services.
+
+Establish policies and procedures to communicate with parents/guardians for the transfer of students to the nearest health facility in cases of emergency.
+
+Make  necessary  arrangements  to  cover  for  leave  of  absence  of  the  clinic Physician and/or Registered Nurse (RN) to ensure business continuity.
+
+Issue Nu:
+
+4
+
+02/08/2024   Effective Date:
+
+02/10/2024
+
+Submit  relevant/required  statistical  data  to  School  Health  Section  (SHS), Public  Health  Protection  Department (PHPD), Prevention Medicine Section and/or other relevant departments in DHA.
+
+Reporting should be structured in a manner to encourage a free flow of information  between  the  Educational  and  Academic  Clinic HRS,  SHS  of PHPD and other relevant authorities.
+
+Educational  and  Academic  Clinic  shall  submit  data  consistent  with standards set by the DHA.
+
+Obtain  approval  from  the  SHS,  PHPD  for  any  health  awareness  or  medical campaigns conducted by external providers.
+
+Ensure healthcare professionals are trained annually to meet their Continuing Medical  Education  (CME)  training  of  healthcare  professionals  of  the  clinic, 50% of which is related to the school health program.
+
+Ensure all students are treated with respect, consideration and dignity.
+
+Ensure that all students have the right to privacy and confidentiality.
+
+Notify parents and/or guardians of any suspected deviation from normal or even  normal  health  found  during  a  health  examination,  screening  test,  or school staff observation.
+
+Ensure that the Physician and RN are responsible for the complete, cumulative health record for each student. The health records should:
+
+02/08/2024   Effective Date:
+
+02/10/2024
+
+Issue a.
+
+Nu:
+
+4
+
+Be maintained in a legible, comprehensive and accurate manner for each
+
+student that includes the following, but not limited to:
+
+i.
+
+ii.
+
+iii.
+
+iv.
+
+v.
+
+vi.
+
+vii.
+
+viii.
+
+ix.
+
+x.
+
+xi.
+
+xii.
+
+Health history
+
+Physical examination
+
+Progress notes
+
+Laboratory reports
+
+Imaging reports
+
+Treatment plan
+
+Follow-up
+
+Immunization status
+
+Documentation of any traumatic injuries and episodes of sudden
+
+illness
+
+Documentation  of Individualized  Health  Care  Management  in
+
+School for all chronic disease students.
+
+Document  any  consultations  with  school  personnel,  students,
+
+parents,  or  health  care  providers  related  to  the  student's  health
+
+problem(s), recommendations  made,  and  results,
+
+student and family health education notes.
+
+Documentation  of  the  health  care  provider's  orders,  if  any,  and
+
+parental permission to administer medication or medical treatment
+
+to be given in school by the school nurse.
+
+Issue Date:
+
+02/08/2024   Effective Date:
+
+02/10/2024
+
+along with
+
+S
+
+xiii.
+
+xiv.
+
+b.
+
+Communication  with  other  student/patient  and  his/her  patents
+
+the  necessity,  appropriateness  and  alternatives  of  a  treatment
+
+along with the informed consent.
+
+Allergies and untoward drug reactions and the physician's order to
+
+administer the
+
+authorization.
+
+Be  organized  to  facilitate  ease  of  access  and  continuity  of  care  in  a
+
+secured setting with restricted access. Appropriate steps shall be taken
+
+for the protection of all student health records, including the provisions
+
+for the following:
+
+i.
+
+Secure health records at all times,
+
+safeguards for electronic health records.
+
+Ensure that each student is allocated a specific unique identifier,
+
+and  where  multiple  records  for  the  same  student  exist  they  are
+
+cross-referenced.
+
+Establish, document and enforce protocols and procedures
+
+consistent with the confidentiality requirements aligned with the
+
+DHA Managing Health Record Guidelines.
+
+Be  transferre
+
+d  (original  complete  and  cumulative  student's  health
+
+record) to the health facility of the new school to which the student is
+
+transferring or hand
+
+tandards for Clinics in Educational and Academic Settings
+
+[PAGE 39-41]
+02/08/2024   Effective Date:
+
+it to the
+
+02/10/2024
+
+parent(s), as appropriate, while
+
+epinephrine auto-injector and the parental
+
+c.
+
+ii.
+
+iii.
+
+including confidentiality maintaining a copy of the Health Record, in case the student is transfers to another educational or academic institution.
+
+Be maintained (the original/copy of the health record) for a minimum of five (5) years after the student turns eighteen (18) years of age, or five  (5)  years  after  the  student  leaves  the  educational  or  academic institution.
+
+Comply with DHA policy and Guidelines for Managing Health Records on  the  DHA  Website  that  specifies  retention  of  health  records, retirement  of  inactive  records,  timely  entry  of  date  and  release  of information contained in records.
+
+For the management of confidentiality of health records, the educational and academic institution shall ensure, but not limited to the following:
+
+Any school personnel, including healthcare professionals, who maintain Health Records at  school  containing  confidential  healthcare  information,  shall  be  responsible  for ensuring confidentiality of this information.
+
+Authorised school personnel, including healthcare providers, who release confidential healthcare information from school health records, shall document each such release in the applicable cumulative school health records by indicating the following:
+
+Date of release.
+
+Description of the information released.
+
+Name(s) of the person(s) to whom the information was released.
+
+02/08/2024   Effective Date:
+
+Reason for the release of information.
+
+Provide confidentiality and data protection training to school personnel who handle school health records.
+
+School personnel who handle school health records should only access information related to their own students.
+
+Any  identified  breeches  related  to  Health  Records  outside  the  school  must  be immediately reported to SHS, PHPD.
+
+Any  person  suspected  of  violating  the  confidentiality  will  have  to  follow  penalties pertaining to the same as per Decree No (32) of 2012, which can be accessed on the DHA website.
+
+Do not use the DHA logo in any of the documentation or in any other form, unless permitted by DHA.
+
+Issue Nu:
+
+4
+
+Issue Date:
+
+02/08/2024   Effective Date:
+
+02/10/2024
+
+Revision Date:
+
+[PAGE 42-44]
+Allensworth D (2018). School & Health-Our Nation's Investment, National Academy
+
+Press, 1, 1-513. Available on: https://www.ncbi.nlm.nih.gov/books/NBK232691/pdf/Bookshelf_NBK232691.pdf (accessed 19/01/24).
+
+Allensworth, D., Lawson, E., Nicholson, L. and Wyche, J. (1997) School health services. https://www.ncbi.nlm.nih.gov/books/NBK232689/.
+
+Bernard J V (2014). National School Nursing Professional Practice Standards. Association of School Nurses of Connecticut, 2, 1-5. Available on: https://portal.ct.gov/- /media/SDE/School-Nursing/School-Nurse-AdvisoryCouncil/2014_SNAC_Recommendations.pdf  (accessed 25/02/24).
+
+Department of Health (2006). Rules and Regulations Pertaining to the Reporting Of Communicable, Environmental and Occupational Diseases. State Of Rhode Island and Providence Plantations, 15, 1-18. Available on: http://sos.ri.gov/documents/archives/regdocs/released/pdf/DOH/DOH_3844.pdf (accessed 27/03/24).
+
+Dubai Health Authority. (2022). Circular No. CIR-2022-00000218. External Circular - Communicable Disease Notification Policy - 2.1, 1-7. Available at: https://www.dha.gov.ae/en/circulars/details/CIR-2022-00000218 (Accessed 15/07/24).
+
+02/08/2024   Effective Date:
+
+Dubai Health Authority. (2023). Circular No. CIR-2023-00000081. External Circular - Updated Clinical Guidelines for Best Practice in Immunization - 2, 1-174. Available at: https://www.dha.gov.ae/en/circulars/details/CIR-2023-00000081 (Accessed 15/07/24).
+
+Dubai Universal Design Code (2017). Government of Dubai, 1, 1-330. Available on: https://www.dha.gov.ae/en/HealthRegulation/Pages/Dubai%20Universal%20Design% 20Code.aspx (accessed 04/07/24).
+
+DHA Health Facility Guidelines (2019).  360- Outpatients Unit, General. Part B: Health Facility Briefing & Design. Available on: https://eservices.dha.gov.ae/CapacityPlan/HealthFacilityGuidelines/Guidelines/FileCo ntent/Preview/DHAHFG/DHA_part_b_outpatients (accessed 05/07/2024).
+
+Glossary | WHO - Prequalification of medical products (IVDs, medicines, vaccines and immunization devices, vector control) (no date). https://extranet.who.int/prequal/content/glossary. (accessed 12/07/24)
+
+Health Screening and Appraisals (2006). Wisconsin School Nursing Handbook, 15, 1-33. Available on: https://dpi.wi.gov/sites/default/files/imce/sspw/pdf/snhandbookch6.pdf (accessed 11/04/24).
+
+Health Education Curriculum Analysis Tool: Glossary (2021) 2021 HECAT. Glossary, p. GL1 to GL-2. https://www.cdc.gov/healthyyouth/hecat/pdf/2021/hecat_glossary.pdf. (accessed 11/07/24).
+
+Issue Nu:
+
+4
+
+02/08/2024   Effective Date:
+
+02/10/2024
+
+Knowledge and Human Development Authority  (2020). Protocols for  the  Reopening  of Private schools in Dubai. Available on: https://www.khda.gov.ae/CMS/WebParts/TextEditor/Documents/Schools-ReopeningProtocol-En.pdf (accessed 08/07/24.
+
+Knowledge and Human Development Authority (2017). Executive Council Resolution No. (2) of 2017  Regulating Private Schools in the Emirate of Dubai. Available on: https://www.khda.gov.ae/CMS/WebParts/TextEditor/Documents/ExecutiveCouncilReso lutionNo.(2)of2017RegulatingPrivateSchoolsIntheEmirateOfDubai.pdf (accessed 09/01/2024).
+
+National Association of School Nurses (NASN) (2015). School Nurse Workload: Staffing for Safe Care. Available on: https://www.nasn.org/advocacy/professional-practicedocuments/position-statements/ps-workload (accessed 30/07/2024).
+
+Roles and Responsibilities of School Health Nurse (2018). Health Authority Abu Dhabi, 1. 1-33. Available on: https://schoolsforhealth.haad.ae/template/haad/pdf/SCHOOL_NURSE_REFRESHER_C OURSE5.pdf   (accessed on: 03/03/20).
+
+Sloop K (2018). The Reality of School Nurse to Student Ratios in Independent Schools. Available on: https://web.magnushealth.com/insights/school-nurse-to-student-ratios-inindependent-schools (accessed 08/04/20).
+
+02/08/2024   Effective Date:
+
+02/10/2024
+
+[PAGE 45-46]
+Standards of School Nursing Practice (2013). National Association of School Nurses, 1, 12. Available on: http://portal.nasn.org/text/6905_W3_2_001-002.pdf (accessed
+
+11/01/24).
+
+Ward M (2012). National School Nursing Professional Practice Standards. Australian
+
+Nursing Federation, 2, 1-44. Available on: https://anmf.org.au/documents/reports/School_Nr_National_Standards.pdf  (accessed
+
+11/05/14).
+
+Williams C (2017). RCN Toolkit for School Nurses. Royal College of Nursing. 1, 1-59. Available on: https://www.rcn.org.uk/professional-development/publications/pub006316   (accessed 11/11/23).
+
+World Health Organization and United Nations Educational, Scientific and Cultural Organization (2021) Making every school a health-promoting school: global standards and indicators. World Health Organization and the United Nations Educational, Scientific and Cultural Organization.
+
+https://iris.who.int/bitstream/handle/10665/341907/9789240025059eng.pdf?sequence=1. (accessed 11/07/24)
+
+02/08/2024   Effective Date:
+
+02/10/2024
+
+Staff or students that present with symptoms of communicable disease while at school should be evaluated by the school physician and nurse, who should be familiar with:
+
+Case Definition of Infectious Diseases
+
+Mode of transmission of a Disease.
+
+Precautions to be taken for prevention of Disease Spread
+
+Infection Control Measures
+
+Criteria for Notification of Communicable diseases
+
+Criteria of Exclusion from School
+
+[PAGE 46-49]
+As a measure to limit exposure,  the  coordinator  should  designate  holding/isolation  room within the facility to hold known and suspected staff/student cases separately.
+
+If symptomatic, staff/student should be placed in a controlled, single-person room with two doors preferably, one with access to the clinic and one with an outside access for retrieval of staff/students without contaminating additional school areas.
+
+The isolation room should have access to a dedicated toilet.
+
+Anyone entering the isolation room must use appropriate Personal Protective Equipment (PPE).
+
+Parents/Guardians of a symptomatic student should be notified immediately of their child's status  and  should  be  asked  to  take  the  student  from  the  premises  of  the  educational  or academic setting.
+
+Strict infection control practices must be followed between staff/students (e.g., hand hygiene, cleaning and disinfecting shared equipment).
+
+Affected staff/students should wear a facemask to contain secretions while in isolation.
+
+Once staff/student has vacated the room, the room should be thoroughly disinfected with approved disinfectant solutions.
+
+APPENDIX 2: MINIMUM PERIOD OF EXCLUSION FROM SCHOOL FOR INFECTIOUS DISEASES CASES AND CONTACTS GUIDANCE
+
+Date:
+
+[PAGE 57-58]
+Standard Fixtures And Furniture
+
+Computer with internet facility in each clinic
+
+Cupboard with lock for supplies and instruments
+
+Digital Thermometers for refrigerator and vaccine carrier
+
+Hygrothermometer where medication is stored
+
+Disposable paper hand towel dispenser or electric hand dryer
+
+Filling cabinet/rack for files under lock
+
+Foldable Stretcher
+
+Foot operated covered waste disposable bin
+
+Hand wash basin
+
+Height  adjustable  examination  couch  with  washable  mattress  and  provision  for  towel paper to cover it
+
+IV stand
+
+Medium size notice board
+
+Non refillable liquid soap dispenser with undiluted liquid soap
+
+Observation bed (height adjustable)
+
+Office desk and chairs
+
+Portable screen (if there are no separate treatment rooms)
+
+Refrigerator
+
+Stainless steel dressing trolley (2 layer with castor wheels)
+
+Telephone with external facilities
+
+Issue Nu:
+
+4
+
+02/08/2024   Effective Date:
+
+02/10/2024
+
+Vaccine carrier/box and ice pack
+
+Wheel chair
+
+[PAGE 58-62]
+Adult combined height/weight scale (not bathroom scale)
+
+Autoclave (if required)
+
+Automated External Defibrillator (AED)
+
+Bandage Scissors
+
+Basin
+
+Disposable Dressing Packs
+
+Electronic Blood Pressure (BP) apparatus
+
+ENT Diagnostic Set
+
+Eye Chart
+
+First Aid Kit
+
+Galipot
+
+Glucometer
+
+Injection tray with lid
+
+Kidney tray/dish (big size)
+
+Nebulizer
+
+Oxygen cylinder with regulator and flow meter
+
+Percussion Reflex Hammer
+
+Pickup forceps (2 nos.)
+
+Issue Nu:
+
+4
+
+02/08/2024   Effective Date:
+
+02/10/2024
+
+Portable Pulse Oximeter
+
+Sharp Safe box
+
+Stethoscope
+
+Tape measure
+
+Thermometers (digital)
+
+Torch with batteries
+
+Tuning fork
+
+Adhesive plasters of different sizes
+
+Alcohol preps
+
+Band aids
+
+Disposable ear speculum
+
+Disposable gloves
+
+Disposable hand towels
+
+Disposable medicine cups
+
+Disposable nebulizer mask (adult and pediatric)
+
+Disposable oxygen facial masks (adult and pediatric)
+
+Disposable Personal Protective Equipment (PPE)
+
+Disposable surgical roll
+
+Disposable thermometer sleeves/covers
+
+Disposable wooden spatulas
+
+Issue Nu:
+
+4
+
+02/08/2024   Effective Date:
+
+02/10/2024
+
+Elastic bandages of different sizes
+
+Gauze bandages of different sizes
+
+Hypodermic needles - g.21, g.23 and g. 25
+
+Impermeable plastic sheet for covering bed
+
+IV cannulas /butterflies
+
+IV Infusion set
+
+Splints of different sizes
+
+Sterile cotton buds
+
+Sterile ear buds
+
+Sterile gauze pieces
+
+Syringes
+
+Adrenaline -2 ampoules
+
+Antiseptic solutions
+
+EpiPen
+
+Glucagon
+
+Hydrocortisone -2 vials
+
+IV Solutions:
+
+Dextrose saline
+
+Normal saline
+
+Distille water for Oxygen humidifier.
+
+Normal saline for injection
+
+Normal saline solution for irrigation
+
+Spirit 70%
+
+Issue Nu:
+
+4
+
+02/08/2024   Effective Date:
+
+02/10/2024
+
+Date:
+
+[PAGE 63-66]
+Group A1
+
+: Report immediately by telephone and electronic notification
+
+within 0- 8 hrs of identification
+
+Group A2: Report immediately by electronic notification within 24 hrs of identification
+
+Group B: Report by electronic notification within 5 working days of identification
+
+Issue Nu:
+
+4
+
+Date:
+
+02/10/2024
+
+Food borne Illness Specify: 
+
+Food poisoning
+
+Escherichia coli
+
+Influenza, Avian (human) 
+
+Measles 
+
+Meningococcal disease
+
+(Neisseria Meningitidis) 
+
+Neonatal Tetanus 
+
+Nipah Virus 
+
+Plague 
+
+Rabies 
+
+Rubella (German measles) 
+
+Severe Acute Respiratory
+
+Syndrome (SARS) 
+
+Smallpox 
+
+Human    Immunodeficiency  Virus
+
+(HIV)/AIDS  1
+
+Influenza A H1N1  1
+
+Legionellosis  1
+
+Leprosy (Hansen's Disease)  1
+
+Malaria  1
+
+Meningitis Specify Etiology:  1
+
+Bacterial or Viral
+
+Pertussis (Whooping Cough)  1
+
+Pulmonary tuberculosis
+
+bacteriology  and  histologically  not
+
+confirmed  1
+
+Tetanus  1
+
+Tuberculosis  (Extra-pulmonary) 
+
+1
+
+Tuberculosis  (Extra-pulmonary) 
+
+1
+
+Encephalitis  7
+
+Bacterial
+
+Viral
+
+Food borne Illness Specify:  7
+
+Amoebic dysentery
+
+Bacillary dysentery
+
+Gonococcal infection  7
+
+Hepatitis B  7
+
+Hepatitis C  7
+
+Hepatitis D (Delta)  7
+
+Herpes zoster  7
+
+Infectious mononucleosis  7
+
+Influenza  7
+
+Streptococcal disease,
+
+Invasive, group A or B  7
+
+Intestinal worms  7
+
+Viral  Hemorrhagic  Fevers  (e.g.,
+
+Crimean-Congo, Ebola, Lassa,
+
+and Marburg viruses) 
+
+Yellow Fever 
+
+Novel  Corona  Covid-19  (SARS
+
+COV-2) 
+
+Middle East Respiratory
+
+Syndrome (MERS) 
+
+Tuberculous Meningitis  1
+
+Tuberculosis (Pulmonary)  1
+
+Invasive Pneumococcal
+
+Disease (IPD)  7
+
+Listeriosis  7
+
+Mumps  7
+
+Conjunctivitis  7
+
+Pneumonia  7
+
+Relapsing Fever  7
+
+Scabies  7
+
+Scarlet fever  7
+
+Schistosomiasis  7
+
+Sexually Transmitted Infection
+
+(STIs)  7:
+
+Chlamydia
+
+Gonorrhea
+
+Syphilis (early & late)
+
+Chancroid
+
+Genital warts
+
+Herpes simplex
+
+- Trichomoniasis
+
+Trachoma  7
+
+Typhus Fever  7
+
+Other  communicable  diseases
+
+not specifies in this list  7
+
+Other protozoal
+
+diseases  7
+
+Other zoonotic
+
+diseases not
+
+classified  7
+
+Others and intestinal bacterial elsewhere unspecified
+
+Infectious diseases  7
+
+Date:

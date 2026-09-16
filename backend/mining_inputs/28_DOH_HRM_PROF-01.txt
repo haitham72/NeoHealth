@@ -1,0 +1,966 @@
+DOC_CODE: DOH/HRM/PROF-01
+TITLE: Healthcare Professionals Manual
+AUTHORITY: Department of Health - Abu Dhabi
+TIER: official
+VERSION: 2017
+
+=== DOCUMENT TEXT ===
+
+[PAGE 2]
+The Department of Health (DOH), previously known as the Health Authority - Abu Dhabi (HAAD), is the regulator of the Abu Dhabi health system. The Health Regulations comprising of Policies, Standards and Circulars, collectively translate federal UAE and Abu Dhabi Laws into a simple, practical set of tools to help drive compliance and improve access, quality and affordability of care.
+
+This  document  is  an  update  of  the  'Policy  Manuals'  that  were  published  in  2012.  The  Manuals  were  drafted  in collaboration with Abu Dhabi and international healthcare experts including the Joint Commission International ('JCI'), other health regulators, local and international legal advisors (Al Tamimi and Wragge and Co.), and delegates from Abu Dhabi and international Providers, Professionals and Insurers. The 2012 Manuals followed a structured consultation process comprising the formation of a permanent HAAD Policy Advisory and Consultative Panel and formal sector-wide consultation (8-12 weeks). The current document has been updated in light of the new relevant regulations published since 2012.
+
+[PAGE 3]
+The Department of Health (DOH), previously known as the Health Authority - Abu Dhabi (HAAD), was established by Law No. 1 of (2007) concerning the establishment of the Health Authority - Abu Dhabi. DOH's purposes, defined in Article 1 (clauses 1 and 2) of Law No. 1 (2007), are to achieve the highest standards in health, curative, preventive and medicinal  services  and  health  insurance;  to  advance  these  in  the  health  sector;  and  to  follow-up  and  monitor  the operations  of  the  health  sector  to  achieve  an  exemplary  standard  in  provision  of  health,  curative,  preventive  and medicinal services and health insurance.
+
+In order to achieve its purpose, the establishing Law No. 1 of (2007) empowers DOH, in particular:
+
+To apply the laws, rules, regulations and policies that are related to its purposes and responsibilities, in addition to those issued by respective international and regional organisations in line with the development of the health sector (Article 5 clause 2),
+
+To approve rules and procedures that are required for operating health and curative establishments, to approve procedures and methods of treatment, and to lay down policies and programs for satisfying the needs of the health sector in the Emirate (Article 5 clause 4),
+
+To develop and apply integrated systems for the control of government and private health sectors in the Emirate (Article 8 clause 12).
+
+With this mandate, and by virtue of Article 8 clause 12, DOH has created an integrated Health Regulations system, comprised of Policies, Standards and Circulars for the Emirate to regulate, control and monitor the implementation of federal  and  local  health  laws  and  best  practices  in  health,  curative,  preventive  and  medicinal  services  and  health insurance in the health sector.
+
+All health entities operating, or to be established in the future, in the health field, be it governmental or private, must carry  out  their  responsibilities  in  accordance  with  the  rules,  regulations  and  decisions  issued  by  DOH  (Article  6). Governmental health sector entities include the Abu Dhabi Health Services Company (SEHA) incorporated by virtue of Emiri Decree no. (10) of 2007 and the National Insurance Company (DAMAN) incorporated by virtue of Emiri Decree no. (39) of 2005, are responsible for executing their objectives as incorporated companies in accordance with the rules, regulations and decisions issued by DOH.
+
+[PAGE 4-12]
+Policies refer to decisions, plans, and actions undertaken to achieve  DOH's health care goals for Abu Dhabi. DOH policies define a vision for the future that helps to establish targets and points of reference for the short- and mediumterm.  DOH  policies  outline  priorities  and  the  expected  roles  of  different  groups,  and  build  consensus  and  inform Professionals, Providers, Insurers and the public.
+
+DOH will consistently monitor the effectiveness of its Policies to improve access, quality and accessibility of care and will revise Policies, as needed. However, DOH intends that Policies will remain stable over time.
+
+Standards  add  further  definition  around  practice,  establishing  both  acceptable  minimum  and  aspirational  levels. Standards set the minimum requirements for specific structures, processes, and services and define the related roles, responsibilities, and interactions of Providers, Professionals and Insurers. Whereas Policies are intended to provide regulatory consistency, Standards are intended to adapt as medical practice and the Abu Dhabi health system continue to evolve.
+
+Standards define reciprocal binding responsibilities in support of the Patients' Charter, which sets out the rights and the responsibilities of those using the Abu Dhabi health system.
+
+This section sets out the principles that underpin all DOH regulations.
+
+DOH regulatory controls will be evidence based as far as possible.
+
+DOH regulatory framework will be seamless, transparent and coherent across the healthcare continuum.
+
+DOH regulatory framework seeks to optimise resources and reduce administrative burdens (cutting red tape where possible).
+
+Regulatory requirements will be applied consistently and equitably across the health sector.
+
+DOH is accountable to its stakeholders, through its consultative policy process.
+
+DOH's regulatory framework is proportional, appropriate, necessary and reasonable in order to achieve the intended objective .
+
+A Healthier Abu Dhabi.
+
+DOH aims to regulate and develop the healthcare sector and to protect the health of individuals by ensuring better access to services, continually improving quality of care, and sustainability of resources.
+
+ Commitment to society: Commitment to our society's needs and expectations.
+
+ Creativity and innovation: Encourage creative thinking and continuous improvement of our services.
+
+ Accountability: All are responsible for his/her actions and their consequences.
+
+ Integrity: Honesty, commitment to the policies of DOH, and avoiding acts contrary to the code of conduct.
+
+ Excellence: Spreading and promoting the culture of excellence and continuously improving corporate performance.
+
+DOH periodically develops healthcare strategies that are in line with the wider Abu Dhabi Government Plans. At the time of publication, DOH pursues seven priorities for Health Sector improvement:
+
+ 'Cradle-to-grave' coverage, the individual's care throughout life,
+
+ Access to care (all types of care: ER, primary, secondary, tertiary, quaternary, home, pre-hospital, rehabilitation, preventive measures/vaccination, etc.), this will reduce need for IPC,
+
+ Capacity planning - including rural areas in the Western and Eastern Regions,
+
+ Address healthcare issues specific to the Emiratis.
+
+ Track outcomes and processes from Healthcare Providers to drive quality improvement,
+
+ Publish outcomes and processes once data are validated.
+
+ Particularly Emiratis,
+
+ Encourage Research, Innovation, Education/Training.
+
+ The Emirate of Abu Dhabi at all times must be prepared for potential major disasters or disease outbreaks.
+
+ Community initiatives to enhance wellness and awareness.
+
+ Reduce waste,
+
+ Encourage Private Sector ('level playing field'),
+
+ Eliminate loss transfer for non-mandated healthcare provision,
+
+ Foster effective management of funded mandates,
+
+ Ensure appropriate reimbursement framework.
+
+ Including Telemedicine,
+
+ Tool to drive 1, 2, 3, 4, 5, 6 above.
+
+This Chapter describes the basic principles of regulation on which this Professional Manual is based.
+
+[PAGE 12]
+The purpose of the regulation of Healthcare Professionals by DOH is to ensure, as far as possible, the provision of safe, effective, ethical and high quality healthcare in the Emirate of Abu Dhabi.
+
+In particular, it is a matter of first principle that Healthcare Professionals must at all times act in the best interests of their Patients.
+
+Regulation is required to ensure that the best interest of Patients is obtained in accordance with this principle. However, regulation should also be clear, proportionate, and targeted only at intended cases.
+
+DOH will apply licensing and other regulatory tools flexibly to ensure that the level of intervention is appropriate to each Healthcare Profession.
+
+DOH will in particular:
+
+require all Healthcare Professionals to comply with certain requirements of best practice and to act in accordance with the highest ethical standards,
+
+require Healthcare Professionals to obtain licences 1 to practice, on the basis of clear eligibility criteria, and to have those licences renewed 2 at regular intervals,
+
+require compliance with further relevant protections when necessary,
+
+provide under this Manual for the development of specific policies, standards and rules that will set out the detailed duties 3 of Healthcare Professionals in relation to particular aspects of professional practice.
+
+[PAGE 12-13]
+DOH  will  establish  a  framework  for  the  regulation  of  healthcare  in  the  Emirate  of  Abu  Dhabi  in  which responsibilities are shared between DOH and Healthcare Providers.
+
+Within this framework, appropriately trained and accountable Healthcare Professionals will have a central role in promoting safe, effective, ethical and high quality healthcare in the Emirate.
+
+DOH may establish a suitable number of Professional Boards and may work in co-operation with those Boards to :
+
+1 DOH Health Professionals Licensing Process as per PQR.
+
+2 DOH Licensing Renewal Process as per PQR.
+
+3 DOH Standard for Clinical Privileging Framework .
+
+set appropriate standards of credentialing requirements and competence and privileging frameworks, the  practice  and  conduct,  continuing  education  and  professional  development  to  be  applied  to Healthcare Professionals,
+
+develop and revise DOH policies and procedures for the licensing, education and training of Healthcare Professionals,
+
+develop standards and procedures to adjudicate cases brought by or against Healthcare Professionals in matters related to the regulation of Healthcare Professionals.
+
+DOH will support the work of Healthcare Professionals by providing guidance on the related roles and respective responsibilities of DOH 4 , Healthcare Providers and Professionals themselves.
+
+DOH will:
+
+Develop  policies  and  guidelines  and  set  standards  for  quality,  safety,  clinical  governance  and supervision, and medical error,
+
+support  Healthcare  professionals  to  adopt  (where  possible)  evidence-based  clinical  standards  and guidelines 5 , seek to promote and sustain an environment of best practice and continuing improvement in  which  Healthcare  Professionals  are  best  able  to  achieve,  for  themselves  and  their  Patients,  the highest levels of clinical performance.
+
+[PAGE 13]
+Regulation,  compliance,  enforcement  and  oversight  of  the  activities  of  Healthcare  Professionals  will  be maintained by DOH.
+
+However,  the  management  and  responsibility  of  Healthcare  Professionals  will  be  achieved  by  the  mutuallysupportive roles of:
+
+DOH, and
+
+Healthcare Providers licensed 6 and regulated by DOH.
+
+Individual  Healthcare  Professionals  remain  ultimately  accountable  for  achieving  quality 7 and  safety  in  the treatments provided or supervised by them.
+
+4 DOH Healthcare Regulator Manual.
+
+5 Examples include, but are not limited to, DOH Standard for diagnosis, management and data reporting of interventions for weight management and obesity, DOH Standard for Weqaya Screening for CVD Risk Factors.
+
+6 DOH Healthcare Providers Manual.
+
+7 DOH Policy for Quality and Patient Safety.
+
+[PAGE 14]
+DOH has the responsibility for licensing, and settings standards and requirements for Healthcare Professional competence, continuing professional development and medical education and codes of professional practice and conduct.
+
+The functions of DOH will be, in particular:
+
+to determine the Healthcare Professionals who require a licence 8 to practice in Abu Dhabi,
+
+to establish the criteria for granting and renewing licences 9 , and determine the length of licences and any restrictions or conditions attaching to them, with the recommendation of the Professional Boards, if exists,
+
+to license Healthcare Professionals who meet the criteria for obtaining a licence,
+
+to maintain and publish up-to-date list of Healthcare Professionals licensed to practise in Abu Dhabi, or precluded from doing so,
+
+to  consider,  approve  and  issue  Scopes  of  Practice,  a  Competence  Framework  and  Professional Qualification Requirements for Healthcare Professionals recommended by the Professional Boards,
+
+to set standards for the practice within the Law,
+
+to  establish  a  framework  for  disciplinary  action  including  setting  responsibilities  of  Healthcare Providers to deal with failures by Healthcare Professionals to adhere to their standards of practice and conduct,
+
+to establish and oversee the Professional Boards,
+
+to audit Healthcare Providers, Healthcare Professionals, and any other agency engaged by  DOH in support of the regulation of healthcare,
+
+to take regulatory action 10 in relation to Healthcare Providers 11 and Healthcare Professionals who are in breach of any regulatory requirement.
+
+8 DOH Health Professionals Licensing Process as per PQR.
+
+9 DOH Licensing Renewals Process as per PQR.
+
+10 DOH Healthcare Regulator Manual.
+
+11 DOH Health Professionals Licensing Process as per PQR .
+
+[PAGE 15]
+Healthcare Providers that employ licensed Healthcare Professionals will be responsible for ensuring that they are competent to perform the professional Privileges granted to them, and that they act in the best interests of Patients.
+
+Healthcare Providers will, in particular:
+
+ensure that Healthcare Professionals employed by them hold a licence issued by DOH, and that their activities do not exceed their Scope of Practice and Privileges 3 ,
+
+develop job descriptions for all staff employed at Healthcare Facilities operated by them,
+
+provide  medical  liability  insurance  and  professional  hazard  insurance  for  Healthcare  Professionals employed by them,
+
+co-operate  with  any  audit 10 carried  out  by  DOH  and  comply  with  DOH  regulatory  requirements  in relation to maintaining procedures for ensuring that disciplinary action may be taken where appropriate against Healthcare Professionals,
+
+report  to  DOH  any  sanctions  affecting  Privileges  which  are  imposed  on  a  Healthcare  Professional following disciplinary action,
+
+have regard to DOH relevant guidance when employing staff who are not required to hold a licence issued by DOH.
+
+[PAGE 16]
+This Chapter provides for the definition of Healthcare Professions for the purposes of the regulation of Healthcare Professionals within the Emirate of Abu Dhabi .
+
+In order to ensure the effective regulation of Healthcare Professionals in Abu Dhabi, it is necessary to define the different categories of Healthcare Profession recognised by DOH as operating in the Emirate.
+
+Each Healthcare Profession is regulated in a manner that is proportionate to the issues of safety, efficacy, quality and professional ethics that are likely to arise in the practice of that profession.
+
+It is also necessary for DOH to specify those Healthcare Professionals who require license issued by DOH to practice in Abu Dhabi.
+
+[PAGE 16]
+DOH may issue one or more documents that shall each be known as a Scope of Practice or Privileges 12 .
+
+DOH will set Scope of Practice for each named Healthcare Profession and will set out the activities constituting the professional services that fall within the scope of that Healthcare Profession.
+
+Each Scope of Practice or Privileges has the function of:
+
+defining the relevant Healthcare Profession by reference to the professional services and treatments that are commonly provided by members of that profession, and
+
+specifying the maximum parameters of the range of services and treatments that may be provided by members of that profession.
+
+The Privileging Framework specifies the requirements and process that must be applied at all times to granting, managing and monitoring of Privileges to professionals practicing in a Healthcare Profession. The Privileges are set within the Scope of practice and are selected by Health Care Professional, Healthcare Facility as well as the owner of the business.
+
+12 DOH Standard for Clinical Privileging Framework.
+
+[PAGE 17]
+DOH may issue one or more documents that shall together be known as the Competence Framework.
+
+The Competence Framework will specify the minimum level of professional competence that must be maintained at all times by individuals practicing in a Healthcare Profession named within it.
+
+For  this  purpose,  the  Competence  Framework  may  define  a  level  of  professional  competence  by reference to any matters relating to the skills or activities of a Healthcare Professional, that may include in particular:
+
+his relevant and current technical knowledge and practical skills,
+
+his relevant and recent experience,
+
+the level and quality of supervision available to him,
+
+a process to add or delete privileges,
+
+the level of support and additional professional resource available to him, and
+
+the extent to which his quality of performance is subject to regular audit.
+
+The Competence Framework may specify different levels of professional competence to be maintained by different Healthcare Professions.
+
+[PAGE 17-19]
+DOH has issued the Professional Qualification Requirements (PQR) 13 in conjunction with MOH and DHA.
+
+The PQR specifies the Healthcare Professions that may practice within Abu Dhabi only by individuals holding a licence issued by DOH.
+
+The PQR also sets out the standards of education, qualification, training and experience that are required by individuals within each of those Healthcare Professions in order:
+
+to obtain a licence from DOH, and
+
+to practice in certain specialties within the relevant profession.
+
+13 DOH Professional Qualifications Requirements.
+
+This Chapter provides for the licensing of Healthcare Professionals in the Emirate of Abu Dhabi.
+
+The regulation of Healthcare Professionals by means of licences issued by  DOH is one of the most important ways in which DOH ensures the provision of safe, effective, ethical and high quality healthcare in Abu Dhabi.
+
+DOH establishing law requires all Healthcare Professionals to be licensed by DOH to practice in Abu Dhabi.
+
+This Part A sets out the circumstances in which a Healthcare Professional must be licensed to practice in Abu Dhabi and the criteria for assessing whether the Healthcare Professional is eligible for a licence 14 .
+
+If the Professional Qualification Requirements (PQR) specify a Healthcare Profession as one that may be practised only by individuals licensed by DOH, no person may practise that profession in Abu Dhabi unless the Healthcare Professional holds a licence to do so which has been issued in accordance with this Manual.
+
+16.1. In order to obtain a licence to practice a Healthcare Profession in Abu Dhabi, an individual must meet: 16.1.1. the PQR requirement,
+
+14 DOH Standard for Healthcare Facility Licensure: https://www.DOH.ae/DOH/LinkClick.aspx?fileticket=nW2sktqXoVs%3d&tabid=819
+
+the language requirement,
+
+(where applicable) the current national or equivalent foreign licence requirement,
+
+(where applicable) the personal medical requirement,
+
+the primary source verification requirement, and
+
+(where applicable) the examination requirement.
+
+The PQR requirement establishes that a Healthcare Professional meets the standards of education, qualification, training and experience that are set out in the PQR as being the minimum standards for the relevant Healthcare Profession.
+
+The language requirement establishes that a Healthcare Professional is able to demonstrate a level of competence in the Arabic and English language that is sufficient for the purposes of practice in the relevant Healthcare Profession.
+
+[PAGE 19]
+The current national or equivalent foreign licence requirement applies to a Healthcare Professional who has previously:
+
+been  granted  a  licence  to  practise  the  relevant  Healthcare  Profession  by  other  health authorities within the UAE, or
+
+been granted an authorisation to practise the relevant Healthcare Profession in a country other than the UAE (a 'foreign licence').
+
+Where it applies, the current national or equivalent foreign licence requirement establishes that:
+
+the Healthcare Professional continues to hold the national licence to practise in the UAE or the foreign licence to practise in his home country or most recent country of practice, and
+
+that licence is not subject to any condition or restriction imposed following disciplinary action.
+
+[PAGE 19-20]
+The personal medical requirement applies:
+
+to all Healthcare Professionals.
+
+to any other Healthcare Professional in whose case DOH deems it appropriate.
+
+Where it applies, the personal medical requirement is that a Healthcare Professional must undergo and pass a medical examination 15 designed to assess his physical fitness to practise the relevant Healthcare Profession.
+
+The required medical examination must:
+
+be carried out by a physician appointed or approved by DOH,
+
+consist of a number of tests which are specified or approved by DOH, and
+
+measure physical fitness to practise against criteria specified or approved by DOH.
+
+DOH may issue a Standard or Guideline which makes detailed provision in relation to the personal medical requirement.
+
+[PAGE 20]
+'Primary source verification' means confirmation that is obtained by DOH from the relevant institutions -  either  directly  from  the  institutions  or  indirectly  from  a  third  party  commissioned  by  DOH  -  of
+
+information relating to the education, qualification, training or experience of a Healthcare Professional.
+
+The primary source verification requirement is that a Healthcare Professional has provided DOH with the consent it needs to obtain primary source verification and that DOH is able to obtain that verification.
+
+[PAGE 20-21]
+The  examination  requirement  applies  to  all  Healthcare  Professionals  other  than  those  who  are determined by DOH to be exempt from it 16 .
+
+Where  it  applies,  the  examination  requirement  is  that  a  Healthcare  Professional  has  passed  an examination which:
+
+is designed to assess his competence to practise the relevant Healthcare Profession, and
+
+has been approved by DOH (whether or not the examination is offered by DOH or by another competent body specified by DOH).
+
+DOH may issue the necessary regulation 17 which makes detailed provision in relation to the examination requirement, including by:
+
+defining any categories of Healthcare Professional exempt 18 from the requirement,
+
+setting out rules for the process of taking an examination,
+
+15 DOH Standard for Licensing Examination.
+
+16 DOH Standard for Licensing Examination.
+
+17 DOH Standard for Licensing Examination.
+
+18 DOH Standard for Exemption from DOH Examination for Licensure for Specified categories of Healthcare Professions.
+
+making provision for different elements of an examination 19 - for instance written, oral and practical elements - and specifying their respective weight or significance,
+
+defining the circumstances in which an examination (or an element of it) is deemed to have been passed or failed,
+
+determining the consequences of failing an examination (or an element of it),
+
+making provision for the circumstances in which an examination (or an element of it) may or may not be retaken, or may be retaken only after a period of time, and/or
+
+requiring the payment of fees.
+
+[PAGE 21]
+This  Part  B  makes  provision  for  Healthcare  Professionals  to  apply  for  licenses  issued  by  DOH,  and renewed by DOH at regular intervals.
+
+[PAGE 21]
+DOH may issue one or more application forms to be used by Healthcare Professionals (or by Healthcare Providers acting on their behalf) to apply for a licence.
+
+An application form shall set out the information and supporting evidence that a Healthcare Professional is required to provide to enable DOH to assess his application.
+
+In order to be valid, an application for a licence must:
+
+be submitted on the appropriate application form,
+
+provide all of the information and evidence requested on the form,
+
+provide  any  consent  that  is  requested  on  the  form  for  the  purposes  of  primary  source verification,
+
+disclose any other information or evidence - whether or not it is requested on the form - that is known to the Healthcare Professional and is likely to be relevant to the assessment of his fitness to practice,
+
+be completed in total honesty and good faith,
+
+be accompanied by the payment of any fee specified on the form.
+
+DOH may reject an application for a licence without further consideration if it fails to satisfy any of these requirements.
+
+19 DOH Standard for Licensing Examination
+
+[PAGE 22]
+DOH will issue a licence to any Healthcare Professional who has met the requirements of this Chapter III as to eligibility, the making of an application, the examination (where applicable) and primary source verification.
+
+DOH may reject an application for a licence by any Healthcare Professional who has not met all the requirements of this Chapter III. When it does so, DOH will notify the applicant of the decision to reject an application.
+
+An applicant whose licence application has been rejected may appeal this decision in accordance with Chapter XI of the DOH Healthcare Regulator Manual.
+
+A licence shall specify on its face:
+
+the name of the Healthcare Professional to whom it is issued,
+
+the Healthcare Profession, and any speciality or sub-speciality within that profession, which the relevant Healthcare Professional is entitled to practise in Abu Dhabi, and
+
+any  level  of  seniority  within  the  relevant  Healthcare  Profession  at  which  the  relevant Healthcare Professional is entitled to practise in Abu Dhabi,
+
+the Renewal Date, and
+
+any other condition or restriction that DOH considers appropriate in the case of the relevant Healthcare Professional.
+
+[PAGE 22]
+Each licence must be renewed no later than the expiry date stated in the licence:
+
+There is no limit to the number of occasions on which a licence may be renewed.
+
+If it has not been renewed by the Renewal Date, a licence shall automatically be suspended.
+
+A licence that is invalid due to lack of renewal on the Renewal Date will be reinstated by DOH upon an application to do so and may be subject to fulfilling renewal requirements and payment of the delay fines in this respect.
+
+[PAGE 22-23]
+A licence may be renewed by DOH on the application of the Healthcare Professional to whom it was issued (or of a Healthcare Provider acting on his behalf).
+
+An application for the renewal of a licence:
+
+must be made by a Licensed Healthcare Professional at least 90 days prior to the Renewal Date, and
+
+may be made by a Licensed Healthcare Professional up to 6 months in advance.
+
+An application form shall set out the information and supporting evidence that a Licensed Healthcare Professional is required to provide in order to enable DOH to assess his application.
+
+In order to be valid, an application for the renewal of a licence must:
+
+be submitted on the appropriate application form,
+
+provide all of the information and evidence requested on the form,
+
+be completed in total honesty and good faith, and
+
+be accompanied by the payment of any fee specified on the form.
+
+DOH may reject an application for the renewal of a licence without further consideration if it fails to satisfy any of these requirements.
+
+On the renewal of a licence, the Healthcare Professional who holds the licence shall be issued with a new licence document that:
+
+specifies on its face a new Renewal Date, and
+
+reflects any amendment to the licence, or new restrictions or conditions, made on the renewal of the licence. (such restrictions to not be used in lieu of provider-led privileging).
+
+DOH may issue a Standard that makes detailed provision in relation to the process for the renewal 20 of licences.
+
+[PAGE 23]
+Licensed Healthcare Professional may request that DOH amend that licence with regard to:
+
+any speciality within the relevant Healthcare Profession which the Healthcare Professional is entitled to practise in Abu Dhabi,
+
+any level of job seniority within the relevant Healthcare Profession at which the Healthcare Professional is entitled to practise in Abu Dhabi, or
+
+any condition or restriction to which the licence is subject.
+
+When a Licensed Healthcare Professional requests DOH to amend a licence, all of the information and evidence to support of the request, together with any additional information and evidence that DOH may require, must be provided to DOH.
+
+20 DOH Standard for Health Professionals Licensing Process.
+
+[PAGE 24-27]
+This Part C makes provision for licences to be limited as a consequence of disciplinary action, to be revoked, and to be surrendered.
+
+DOH may suspend the licence of a Licensed Healthcare Professional where it is entitled to do so in accordance with the provisions of the Healthcare Regulator Manual as to discipline and sanctions 21 .
+
+DOH will update the Health Professional status on the list of licences, sharing it with relevant parties.
+
+During any period of suspension of a licence, a Licensed Healthcare Professional shall be considered to have no licence and must not practise the relevant profession in Abu Dhabi.
+
+DOH may revoke the licence of a Licensed Healthcare Professional where it is entitled to do so in accordance with the provisions of the Law as outlined in the DOH Healthcare Regulator Manual as to discipline and sanctions.
+
+Following the revocation of a licence, a Healthcare Professional:
+
+must return his licence document to DOH without delay.
+
+must not practise the relevant profession in Abu Dhabi.
+
+A Licensed Healthcare Professional may voluntarily surrender his licence at any time or Health care facility may cancel licence of health professional by submitting the application to DOH of intention to do so.
+
+Following the Cancellation of licence, a Healthcare Professional must not practise the relevant profession in Abu Dhabi unless and until DOH issues a new licence.
+
+21 DOH Healthcare Regulator Manual.
+
+A Licensed Healthcare Professional who loses his licence must, immediately on identifying the loss:
+
+notify his employing facility, and
+
+notify DOH by submitting a notice in writing.
+
+A licence shall be cancelled on notification of loss to DOH, and a replacement licence shall be issued by DOH.
+
+This Chapter sets out the professional duties that apply to Healthcare Professionals in the Emirate of Abu Dhabi .
+
+In order to ensure the best possible clinical outcomes for Patients, it is important that each Healthcare Professional practicing in Abu Dhabi is personally responsible for carrying out his professional activities in accordance with appropriate professional policies, standards and evidence-based guidelines.
+
+All  Healthcare  Professionals  in  Abu  Dhabi  are  therefore  expected  and  required  to  comply  with fundamental principles of best practice and in accordance with the highest ethical standards, and to put the patient interest first at all times.
+
+36.1. The requirements of this Part A apply to all Healthcare Professionals.
+
+DOH may issue Policies and Standards in relation to any aspect of the professional conduct or activities of Healthcare Professionals.
+
+The  Policies  and  Standards  may  make  different  provision  for  different  Healthcare  Professions  or different categories of Healthcare Professionals within a profession.
+
+All Healthcare Professionals must comply with any requirements of a Policy and Standard that apply to them.
+
+Where DOH has determined a  Scope  of  Practice  or  certain  Privileges 22 in  relation  to  a  Healthcare Profession,  each  Healthcare  Professional  within  that  Profession  must  at  all  times  engage  only  in professional activities that are:
+
+within the Scope of Practice and provider assigned Privileges,
+
+within  any  part  of  the  Scope  of  Practice  applying  to  the  speciality  of  that  Healthcare Professional within the profession, and
+
+within any part of the Scope of Practice applying to the level of job seniority of that Healthcare Professional within the profession.
+
+Where DOH has issued a Competence Framework, which specifies a minimum level of competence to be maintained by individuals practicing in a named Healthcare Profession, each Healthcare Professional within that Profession must at all times maintain that level of competence.
+
+All Healthcare Professionals must, subject to their primary duty to comply with the requirements of this Manual comply with any requirements of the Federal law of the United Arab Emirates that apply to them in their professional capacity.
+
+[PAGE 27-28]
+Each Healthcare Professional must respect the integrity and individuality of every Patient 23 24 treated or contacted by the Healthcare Professional.
+
+Each  Healthcare  Professional  must  have  due  regard  for  every  Patient  treated  or  contacted  by  the Healthcare  Professional,  and  not  unfairly  discriminate  against  them  on  the  basis  of  gender,  race, religion, customs, physical and mental ability, economic status and values.
+
+No Healthcare Professional may engage in any act which is intended to or has the effect of exploiting a relationship with a Patient for his own personal gain (other than by obtaining reasonable payment for his services).
+
+22 Scopes of Practice and Privileges to be determined by DOH having regard to recommendations by the Professional Boards in accordance with Chapter I of this Manual.
+
+23 Policy on Patient Rights and Responsibilities.
+
+24 DOH Patient Rights and Responsibilities Charter.
+
+Each Healthcare Professional must maintain the highest ethical standards and must behave at all times with courtesy, respect, dignity and discretion in his relationships with Patients.
+
+[PAGE 28]
+Each Healthcare Professional must not engage in the treatment of a Patient unless:
+
+informed consent 25 has been obtained from or on behalf of that Patient to the treatment which is to be provided, or
+
+informed consent 26 has been deemed in accordance with Regulations not to be required in the case of the relevant treatment for that Patient.
+
+Each Healthcare Professional must communicate fully with all patients and keep them informed about the nature and purpose of all tests and treatment and communicate promptly and fully all results and the clinical implications of such results.
+
+[PAGE 28]
+Each Healthcare Professional must comply at all times with all DOH regulatory requirements relating to the:
+
+right of a Patient to have access to their personal data, 27 28
+
+right of a Patient to require that their personal data are transferred 29 30 to another Professional,
+
+restrictions  on  the  collection,  use,  retention,  storage  and  destruction  of  data  relating  to healthcare in Abu Dhabi 31 ,
+
+duty to maintain and operate effective systems for the management of data.
+
+Each Healthcare Professional must treat as confidential 32 all information in relation to Patients that is received by him in a professional capacity, and must not disclose or use that information other than for the purposes of treatment, except to the extent that is permitted by Regulations or required by the provisions of this Manual.
+
+25 DOH Guidelines for Patient Consent.
+
+26 DOH Guidelines for Patient Consent.
+
+27 Policy on Patient Rights and Responsibilities.
+
+28 DOH Patient Rights and Responsibilities Charter.
+
+29 Policy on Patient Rights and Responsibilities.
+
+30 DOH Patient Rights and Responsibilities Charter.
+
+31 DOH Standard for Medical Record Health Information Retention and Disposal and Chapter VI Data Management in the DOH Healthcare Regulator Manual.
+
+32 DOH Standard for Medical Record Health Information Retention and Disposal and Chapter VI Data Management in the DOH Healthcare Regulator Manual.
+
+[PAGE 29]
+must at all times act in the best interests of Patients
+
+must not engage in the treatment of any Patient beyond the level of his personal capacity, training,  experience,  competence,  scope  of  practice  and  clinical  privileges  granted  at  the Healthcare Facility where the Patient is being treated, and
+
+must  refer  a  Patient  to  another  Healthcare  Professional  if  that  other  professional  would provide the best treatment for the Patient.
+
+must be principally responsible for a Patient and may delegate treatment only to another Healthcare  Professional  who  has  the  capacity,  training,  experience  and  competence necessary to provide an appropriate level of care to the Patient, and
+
+may refer a Patient to another Healthcare Professional only if reasonably satisfied that the other  Healthcare  Professional  has  the  capacity,  training,  experience  and  competence necessary to provide an appropriate level of care to the Patient.
+
+must use the best currently available evidence, together with his professional expertise and knowledge of the Patient's values and preferences, to make the most appropriate decisions about the treatment of that Patient.
+
+must follow any Clinical Care Standards that apply to treatment provided by him to a Patient, or be able to justify as correct any decision not to do so.
+
+must act within the scope, and in accordance with the requirements of, any Service Standard that applies to the employing Healthcare Provider.
+
+[PAGE 29-30]
+A Healthcare Professional may only publish promotional materials if all the information contained in those materials is factually accurate and verifiable through evidence that can be made available to DOH upon request.
+
+No promotional materials published by a Healthcare Professional may:
+
+claim that the services offered by the Healthcare Professional are superior to those of any other individual within the same Healthcare Profession,
+
+express or imply criticism of any other Healthcare Professionals,
+
+express or imply a guarantee that treatment offered by the Healthcare Professional will be successful,
+
+claim that the Healthcare Professional possesses skills, qualifications or experience that are not possessed,
+
+claim that the Healthcare Professional is able to provide professional services that are outside the licensed Scope of Practice and/or Privilege for the Healthcare Profession, or
+
+be misleading as to any fees charged by the Healthcare Professional for professional services.
+
+For these purposes, 'promotional materials' includes any form of advertising which is carried out by any media, and 'publish' includes the broadcasting of advertisements by any means.
+
+Each Healthcare Professional shall be personally responsible for all promotional materials published on the Healthcare Professional's behalf, as if the Healthcare Professional published those materials.
+
+[PAGE 30-31]
+No  Healthcare  Professional  may  engage  in  any  activity  that  is  intended  to,  or  does  in  fact,  take advantage of his status or of the vulnerability or lack of medical knowledge of any person by placing unfair pressure on that person to receive any treatment.
+
+The requirements of this Part B:
+
+apply only to Licensed Healthcare Professionals, and
+
+in respect of those Professionals, apply in addition to the requirements of Part A.
+
+A Licensed Healthcare Professional must at all times engage only in professional activities in relation those authorised under the terms of a licence issued by DOH.
+
+A Licensed Healthcare Professional must comply with the Scope of Practice specified under the terms of a licence issued by DOH .
+
+Licensed Healthcare Professionals who are authorised, under the terms of employment by a Healthcare Provider, to treat Patients without immediate qualified supervision must:
+
+apply for Privileges 33 to be assigned to them by the Healthcare Provider, and
+
+after Privileges have been assigned, carry out their professional activities within the scope of those Privileges.
+
+All other Licensed Healthcare Professionals who are employed by a Healthcare Provider must restrict their professional activities to those set out in their job description.
+
+[PAGE 31]
+A Licensed Healthcare Professional must inform DOH without delay if, in any country, the Healthcare Professional has:
+
+been charged with or found guilty of a criminal offence,
+
+received a formal caution from the police or any judicial authority,
+
+as a result of a disciplinary procedure followed by a professional body or regulatory authority:
+
+been subject to an adverse finding or sanction, or
+
+had any restriction or condition placed on an authorisation to practise.
+
+A Licensed Healthcare Professional who has been suspended or dismissed from employment with any Healthcare Provider for a reason related to his professional conduct, must inform without delay:
+
+DOH,
+
+any other Healthcare Provider where the Healthcare Professional is employed, and
+
+any Patient treated outside of employment by a Healthcare Provider.
+
+[PAGE 31-32]
+Each Licensed Healthcare Professional must take appropriate steps (including in particular those set out in this section) to protect Patients from any significant risk of harm arising due to:
+
+the conduct of any other Healthcare Professional, or
+
+inadequacy in the premises, equipment, systems, policies, or resources of any Healthcare Provider where the healthcare Professional is employed.
+
+A Licensed Healthcare Professional who reasonably believes that a significant risk of harm has arisen must:
+
+keep a record of the reasons for that belief, and
+
+report  that  belief  to  the  relevant  Healthcare  Provider  in  accordance  with  its  policies  and procedures.
+
+33 DOH Standard for Clinical Privileging Framework.
+
+A Licensed Healthcare Professional who reasonably believes that another Healthcare Professional is not fit to practise must report that belief, together with the reasons for it:
+
+to a Healthcare Provider which employs the other Healthcare Professional, or
+
+if the other Healthcare Professional is not employed by a Healthcare Provider, to DOH.
+
+[PAGE 32]
+Where a patient has suffered harm or distress in the course of treatment being provided, or as a result of a failure to provide appropriate treatment, all Licensed Healthcare Professionals who are aware of the event must report that event and must cooperate in taking appropriate actions in accordance with the policies and procedures of the Healthcare Provider where the Healthcare Professional is employed.
+
+[PAGE 32]
+Upon receiving any complaint 34 about the quality of service or treatment provided at any Healthcare Facility, a Licensed Healthcare Professional must ensure that the Healthcare Provider that operates that Healthcare Facility is notified.
+
+A Licensed Healthcare Professional must take all reasonable steps to assist an employing Healthcare Provider to:
+
+give  timely  consideration  to  any  complaint  about  the  quality  of  service  or  treatment  at  a Healthcare Facility operated by it,
+
+assess whether that complaint is justified (either entirely or in part),
+
+provide the person making the complaint with a clear response in a reasonable time,
+
+where any part of the complaint is justified, take appropriate steps to remedy it.
+
+[PAGE 32-33]
+54.1. Each Licensed Healthcare Professional must co-operate fully with any investigation carried out by a Healthcare Provider or by DOH into the treatment given to a patient, and must disclose any information that is likely to be relevant to that investigation.
+
+34 DOH Standard for Complaints Management in Healthcare Facilities.
+
+A Licensed Healthcare Professional must provide assistance on request to any competent authority of the Emirate of Abu Dhabi in any inquiry, carried out by that authority, into an injury to or the death of a patient.
+
+A Licensed Healthcare Professional who is authorised, under the terms of employment by a Healthcare Provider, to treat patients without immediate qualified supervision, must apply for the revalidation of his Privileges 35 at such intervals as the Healthcare Provider requires.
+
+A  Licensed  Healthcare  Professional  who  has  applied  for  revalidation  must  provide  the  Healthcare Provider with all relevant information requested of him.
+
+Each Licensed Healthcare Professional must carry out his professional activities within the scope of the Privileges assigned to him following revalidation.
+
+[PAGE 33-34]
+Each Licensed Healthcare Professional must be open and honest with Patients about any charges which they will be required to pay for the provision of his professional services.
+
+In particular, a Licensed Healthcare Professional must:
+
+inform patients of any charges that they will be required to pay before seeking their Informed Consent 36 to treatment,
+
+provide patients, on request, with an estimate of his likely charges in relation to any treatment or course of treatment, and
+
+not  engage  in  any  activity  that  is  intended  to,  or  does  in  fact,  take  advantage  of  the vulnerability or lack of medical knowledge of any patient in relation to charges that are made of them for the provision of professional services.
+
+35 DOH Standard for Clinical Privileging Framework.
+
+36 DOH Patient Rights and Responsibilities Charter.
+
+A  Licensed  Healthcare  Professional  must  not  provide  to  patients  any  treatment,  if  the  Healthcare Professional knows (or should be aware) that it is clinically unnecessary, except in the case of any treatment that a patient elects to receive after being made aware of the absence of clinical need.
+
+[PAGE 34]
+Each Licensed Healthcare Professional must ensure that any claim for payment that is submitted on his behalf to a Health Insurer in respect of treatment provided by him 37 38 39 relates only to treatment actually provided by him, is strictly accurate in all other respects.
+
+Each  Healthcare  Professional  must  ensure  that  he  complies  at  all  times  with  all  DOH  regulatory requirements relating to health insurance fraud and abuse 40 .
+
+[PAGE 34]
+A Licensed Healthcare Professional must not accept payment of commission, gifts, hospitality, or other inducement  offered  by  any  person  that  are  -  or  would  be  regarded  by  a  reasonable  and  informed observer as - likely to influence, decisions made by him as to:
+
+treatments given or recommended to Patients,
+
+pharmaceuticals or other products prescribed or recommended to Patients, or
+
+any  other  Healthcare  Professional  or  Healthcare  Provider  to  whom  a  Patient  should  be referred.
+
+A Licensed Healthcare Professional must disclose to a Patient, and to the Health Insurer of that Patient, any financial or commercial interest that the Professional has:
+
+in any Healthcare Provider to which the Patient is being referred by him,
+
+in  any  pharmaceutical  or  biomedical  company  whose  medicines  or  products  are  being prescribed by him for the Patient, or
+
+in any other body that is likely to benefit from a treatment carried out or recommended in relation to the Patient.
+
+37 DOH Healthcare Insurance Manual.
+
+38 DOH Standard Provider Contract.
+
+39  DOH Coding Manual.
+
+40 Chapter VI Healthcare Insurance Manual.
+
+[PAGE 35-36]
+A Licensed Healthcare Professional must not offer any payment of commission, gift, hospitality or any other inducement to any other Healthcare Professional that is in the nature of an inducement prohibited to the Licensed Healthcare Professional.
+
+A Licensed Healthcare Professional must not:
+
+encourage Patients or their families to give, lend or bequeath money or gifts that will be of direct or indirect benefit to him,
+
+place any pressure on patients or their families to make donations to third parties, or
+
+take unfair advantage of his relationship with Patients or their families for any other personal benefit (whether or not financial in nature).
+
+This Chapter provides for aspects of the training and education of Licensed Healthcare Professionals in the Emirate of Abu Dhabi .
+
+[PAGE 36]
+In order to ensure the provision of safe, effective, ethical and high quality healthcare in Abu Dhabi, it is important that training programmes for Licensed Healthcare Professionals are provided to the highest standard.
+
+In the course of participating in those programmes, it is important that students, graduates and Licensed Healthcare Professionals are able to observe, and in some cases carry out, the provision of treatment to Patients. In order to achieve the best possible clinical outcomes for Patients and ensure Patient safety, participation in training must therefore be subject to appropriate levels of supervision.
+
+For these purposes, DOH requires to approve, and regulate the terms of participation in and supervision of, certain health training programmes.
+
+On  the  completion  of  their  training,  Licensed  Healthcare  Professionals  should  continue  to  receive ongoing professional education to ensure that they remain up-to-date with clinical knowledge and best practice in their Professions or specialities.
+
+For these purposes, DOH will require Licensed Healthcare Professionals to ensure that they obtain a certain amount of continuing professional education credit hours each year.
+
+[PAGE 36-37]
+This  Part  A  applies  to  students,  graduates  and  Licensed  Healthcare  Professionals  who  wish  to participate in certain specified training programmes.
+
+A  person  may  only  act  as  the  provider  of,  or  a  participant  in,  certain  specified  health  training programmes if those programmes have been approved 41 42 43 44 by DOH.
+
+The programmes that require to be approved by DOH (the Programmes) are:
+
+Clinical Clerkship,
+
+Internship,
+
+Residency and Fellowship, and
+
+Postgraduate Clinical Training,
+
+Observership.
+
+A Clinical Attachment is a time-limited supervised training programme, or a work placement, carried out in a hospital or general practice settings. It is designed:
+
+for  students  engaged  in  a  course  of  study  directed  towards  qualifying  to  practice  in  a Healthcare Profession,
+
+to provide those students with the clinical knowledge, skills and approach necessary to enable them to qualify as Healthcare Professionals,
+
+to do so by providing an opportunity for them to take increasing responsibility for the care of Patients in a supervised environment.
+
+[PAGE 37-38]
+An  Internship  is  as  a  period  of  supervised  training  required  for  graduates  following  graduation  to enhance and improve their competency. It is designed:
+
+for students who are graduates from a course of study directed towards qualifying to practise in a Healthcare Profession according to PQR requirements,
+
+41 DOH Accreditation Criteria: https://www.DOH.ae/cme/Accreditation/AccreditationCriteria.aspx
+
+42 DOH Accreditation Guidelines: https://www.DOH.ae/cme/Accreditation/AccreditationGuidelines.aspx
+
+43  DOH Standards for Commercial Support of CME/CPD Activities: https://www.DOH.ae/cme/CommercialPolicies.aspx
+
+44  Accreditation of CE: http://portal.DOH.ae/HR/HPL/Policies%20%20Regulation/CME/CE%20Accreditation%20%20policy%20%20(5).pdf
+
+to provide those graduates with the clinical knowledge, skills and approach necessary for them to become competent Healthcare Professionals,
+
+to do so by providing those graduates with all of the supervised clinical training that is required to complete the clinical training requirements for the purpose of their Healthcare Professional qualification.
+
+[PAGE 38]
+A Residency or Fellowship is a stage of graduate medical training that allows the resident in the hospital or clinic to work under the direct or indirect supervision of an attending physician. Fellowship or 'subspecialty' training may follow residency training. This training programme is designed:
+
+for qualified Healthcare Professionals to upscale or change their licence title according to PQR.
+
+to provide those Professionals with an integrated training programme to equip them with the knowledge, skills and approach to practice without supervision in one or more professional specialities.
+
+The Academic Training Programme is aimed at Health Professionals who are considering an academic career in medicine 'allied health or clinical support'.
+
+Postgraduate Clinical Training is training programme designed:
+
+to attract and retain Healthcare Professionals to the practice of healthcare in Abu Dhabi,
+
+to  orient  them  toward  practice  within  specific  field  by  providing  an  opportunity  for  those Professionals  to  develop  their  skills  and  knowledge  through  further  education  and  the performance of new professional duties under supervision.
+
+A medical observership is an experience where individuals with or without prior medical education can observe Healthcare Professionals as they care for patients and families for a specific period of time in a Healthcare Facility.
+
+The Observership is a training programme designed:
+
+for  Healthcare  Professionals  or  for  students  or  graduates  of  a  course  of  study  directed towards qualifying to practise in a Healthcare Profession,
+
+to  provide  those  Professionals,  students  or  graduates  with  the  opportunity  to  learn  by observing the practice of a particular Healthcare Profession or professional specialities.
+
+[PAGE 39]
+DOH may issue, and from time to time revise, a Standard defining the criteria that a person must satisfy in order to be eligible to participate in one or more of the Programmes (the Rules for Eligibility).
+
+The Rules for Eligibility may define the criteria for participating in a Programme by reference to any matters that DOH considers appropriate, which may include in particular:
+
+the  existing  qualifications,  experience, and academic or  professional  achievements of the person wishing to participate in that Programme,
+
+the Health Profession of which that person is (or wishes to be) a member,
+
+the professional specialities in which that person practises (or wishes to practise),
+
+the country of origin of that person (or of his professional qualification).
+
+The Rules for Eligibility may also:
+
+set out the procedure by which a person wishing to participate in a Programme must apply for acceptance on that Programme,
+
+require that a person wishing to participate in a Programme requires the approval of DOH before doing so.
+
+DOH may establish different Rules for Eligibility in respect to different Programmes.
+
+A person who wishes to participate in a Programme must comply with the Rules for Eligibility relevant to that Programme.
+
+[PAGE 39]
+DOH may issue, and from time to time revise, a Standard setting out the manner in which a Programme must operate (the Programme Rules).
+
+The Programme Rules may in particular:
+
+set out the required academic or professional content of the Programme,
+
+set out the procedure for evaluating participants in that Programme,
+
+specify what may (and may not) be done by those participants,
+
+describe the circumstances in which those participants require to be supervised,
+
+define the nature and level of the supervision required,
+
+specify requirements relating to the conduct of the participants,
+
+specify requirements relating to the conduct of their supervisors,
+
+specify  requirements  relating  to  the  resolution  of  complaints  or  grievances,  whether  in respect of the Programme, its participants, or any supervisor.
+
+The Programme Rules may also define academic or professional credits (or other benefits) that are to accrue to a participant on his successful completion of a Programme.
+
+DOH may establish different Programme Rules in respect of different Programmes.
+
+[PAGE 40]
+any person who participates in the relevant Programme,
+
+any Healthcare Professional who supervises that participant in the Programme.
+
+This Part B applies only to Licensed Healthcare Professionals, and makes provision for their continuing professional education.
+
+Each  Licensed  Healthcare  Professional  must  maintain  and  continue  to  develop  his  professional knowledge and  skills  so  that  they,  at  all  times,  remain  up-to-date  and  adequate  to  the  purpose  of providing safe, effective and high quality treatment to Patients.
+
+[PAGE 40]
+Each Licensed Healthcare Professional must obtain, in each year of professional practice in Abu Dhabi, the required quota of continuing professional education 45 46 .
+
+For these purposes, the required quota of continuing professional education 47 48 means training that is obtained in the relevant year:
+
+for a minimum number of hours specified by DOH,
+
+in any subjects specified by DOH,
+
+delivered by a training provider accredited or recognised 49 50 by DOH.
+
+DOH may specify different requirements, or accredit or recognise different providers, for the purposes of different categories of Licensed Healthcare Professionals.
+
+DOH may exempt any individual Licensed Healthcare Professional or category of Licensed Healthcare Professional from the duty to obtain continuing professional education, in which case the obligations in this section shall not apply to them.
+
+45 DOH Accreditation Criteria: https://www.DOH.ae/cme/Accreditation/AccreditationCriteria.aspx
+
+46 DOH Accreditation Guidelines: https://www.DOH.ae/cme/Accreditation/AccreditationGuidelines.aspx
+
+47 PQR CME Standard.
+
+48  DOH Standards for Commercial Support of CME/CPD Activities: https://www.DOH.ae/cme/CommercialPolicies.aspx
+
+49  DOH Standards for Commercial Support of CME/CPD Activities: https://www.DOH.ae/cme/CommercialPolicies.aspx
+
+50  Accreditation of CE: http://portal.DOH.ae/HR/HPL/Policies%20%20Regulation/CME/CE%20Accreditation%20%20policy%20%20(5).pdf
+
+[PAGE 41]
+It  is  the  sole responsibility of the Health Care Professional to maintain and submit CME hours upon renewal.
+
+The Health Care Providers should ensure that Health Care Professional working under them must obtain CME and must keep written records.
+
+[PAGE 42]
+In this Manual, the following rules of interpretation shall apply.
+
+Unless the context requires otherwise:
+
+words in the masculine gender are to be read as including the  feminine gender (and vice versa),
+
+words in the singular are to be read as including the plural (and vice versa), and
+
+references to a numbered Chapter, Part, section or paragraph are to the provision bearing that number within this Manual.
+
+The words 'including' and 'in particular' indicate a list of examples and should not be read as limiting the scope of the words that occur before them.
+
+Any  reference  to  another  Policy,  Standard,  Law,  Rule  or  other  legal  instrument  is  to  be  read  as  a reference to that legal instrument as it may be revised or reissued from time to time.
+
+Where this Manual requires any duty to be complied with by a specified time, and where the duty has not been complied with by that time, that duty shall continue to be binding until it has been satisfied and the continuing failure to comply with it shall be treated as an ongoing and repeated breach of this Policy.
+
+The  words  'employ'  or  'employed'  when  used  in  relation  to  a  Healthcare  Professional  refer  to  any arrangement  (whether  or  not  of  full-time  employment)  by  which  that  professional  is  engaged  by  a Healthcare Provider to provide treatment to Patients on behalf of the Provider.
+
+The words 'treat' or 'treatment' when used in respect of a Patient refer to any intervention - including advice, clinical investigation, diagnosis, monitoring, clinical and/or surgical intervention, the prescription of medicines and the supervision of care - that falls within the professional activities of the relevant Healthcare Professional providing healthcare to the Patient.
+
+The  words  'DOH  regulatory  requirements',  in  relation  to  a  Healthcare  Professional,  refer  to  the obligations on that Professional as set out in one or more documents issued by DOH with which the Healthcare Professional is required to comply by virtue of the other provisions of this Manual.
+
+The word 'year' means a year according to the Gregorian calendar.
+
+[PAGE 43]
+77.1. In this Manual, the following words shall have the meanings given to them below:

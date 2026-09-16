@@ -1,0 +1,291 @@
+DOC_CODE: RESEARCH/ELHAYEK-03
+TITLE: Telepsychiatry in the Arab World: A Viewpoint Before and During COVID-19
+AUTHORITY: Neuropsychiatric Disease and Treatment
+TIER: research
+VERSION: 1
+
+=== DOCUMENT TEXT ===
+
+[PAGE 1]
+R E V I E W
+
+Open Access Full T ext Article
+
+[PAGE 1]
+This article was published in the following Dove Press journal: Neuropsychiatric Disease and Treatment
+
+Purpose: Telepsychiatry, a subset of telemedicine, has been increasingly studied to meet the  growing  demands  for  psychiatric  care.  The  utility  of  telepsychiatry  is  relevant  now more  than  ever  as  the  world  endures  the  COVID-19  global  pandemic.  This  paper describes  the  prior  state  and  the  changes  that  the  COVID-19  outbreak  brought  to telepsychiatry  in  a  selected  group  of  Arab  countries  of  the  Middle  East  and  North Africa  (MENA) region.
+
+Patients and Methods: We invited twelve early-career psychiatrists from different Arab nations to share information related to telepsychiatry in their respective countries before and during  the  COVID-19  pandemic.  The  information  was  collected  using  a  semi-structured guide. This was complemented by a search for relevant articles in five search engines using terms such as 'COVID-19,' 'telepsychiatry,' and 'Arab world'.
+
+Results: Before the pandemic, digital mental health services were provided in several Arab countries,  mainly  through  hotlines  and  messaging  services.  The  COVID-19  pandemic  has marked a major shift in digital psychiatric services in the Arab MENA world, through the transformation of many clinics and some hospitals into digital mental health systems. Many non-governmental organizations also started remote initiatives for psychological support and psychiatric counseling. Three main barriers of patient-related, healthcare-related, and systemrelated hurdles of using telepsychiatry emanated from the analysis.
+
+Conclusion: The  use  of  digital  mental  health  services  varies  between  different  Arab countries. Even though some nations have laws that regulate the provision of such services, most struggle with multifactorial barriers. As affordable and attainable solutions cannot only rely  on  training  and  recruiting  more  psychiatrists,  telepsychiatry  would  help  meet  the exceeding demands in the Arab world, particularly after the COVID-19 outbreak.
+
+Keywords: telepsychiatry, mental health, Arab, COVID-19
+
+[PAGE 1-2]
+Telepsychiatry, a subset of telemedicine, has been increasingly studied to meet the growing demands for psychiatric care. 1 It  provides  a  range  of  services,  including psychiatric  evaluation,  medication  management,  therapy,  and  patient  counseling. The most predominantly used communication platforms in telepsychiatry are syn­ chronous  technologies,  mainly  via  videoconferencing. 1 Asynchronous  technology through  messaging  services  has  also  been  used. 2 Telepsychiatry  has  introduced several  benefits,  such  as  decreased  cost,  reduced  stigma,  and  better  continuity  of care. Moreover, it has helped remove multiple barriers to accessing psychiatric care, particularly  the  scarcity  of  resources,  shortage  in  mental  health  professionals, inaccessible geographic locations, and fragmented care. 1,3-5
+
+Neuropsychiatric Disease and Treatment 2020:16 2805-2815
+
+1 Department of Psychiatry, American University of Beirut, Beirut, Lebanon; 2 Helwan Mental Health Hospital, Cairo, Egypt; 3 The Sudan Medical Specialization Board, Khartoum, Sudan; 4 Department of Psychiatry, Damascus University, Damascus, Syria; 5 Department of Psychiatry, Prince Sultan Military Medical City, Riyadh, Kingdom of Saudi Arabia; 6 Oman Medical Specialty Board, Psychiatry Program, Muscat, Sultanet of Oman; 7 Psychiatric Department, Al Ain Hospital, Abu Dhabi, United Arab Emirates; 8 Department a, University of Algiers, Drid Hocine Hospital Specialized in Psychiatry, Algiers, Algeria; 9 Department of Emergency Medicine, American University of Beirut, Beirut, Lebanon; 10 Alrazi Hospital for Mental Health, T ripoli, Libya; 11 Psychiatry Department D, Razi Hospital, Faculty of Medicine of T unis, T unis El Manar University, Tunis, T unisia; 12 Mental Health Service, Hamad Medical Corporation, Doha, Qatar; 13 National Center for Mental Health, Ministry of Health, Amman, Jordan; 14 Department of Biochemistry and Molecular Genetics, Faculty of Medicine, American University of Beirut, Beirut, Lebanon
+
+Correspondence: Samer El Hayek Department of Psychiatry, American University of Beirut, Bliss Street, PO Box: 11-0236, Riad El Solh, Beirut 1107 2020, Lebanon Tel +961 70941362
+
+Email samer.elhayek@gmail.com
+
+submit your manuscript
+
+| www.dovepress.com El Hayek et al The utility of telepsychiatry is relevant now more than ever as the world endures the COVID-19 global pandemic. 6-8 This  outbreak  has  presented  the  medical community with a sweeping number of challenges. Many mental healthcare systems did not have the infrastructural resources  required  to  adequately  cope  with  the  exponen­ tially  evolving  impact  of  COVID-19. 9 The pandemic has negatively  impacted  mental  health  around  the  globe  by elevating rates of depression, anxiety, post-traumatic stress disorder, and negative societal behaviors. 10-12 Additionally,  the  adverse  effects  of  COVID-19  on  the mental  health  of  affected  communities,  including  health­ care  workers,  quickly  started  to  compromise  the  general medical response. 13-15 With physical distancing, increased patients'  reluctance  to  present  to  healthcare  settings,  and decreased  staffing  levels  due  to  necessary  self-isolation, telepsychiatry arose to meet the demand for mental health services. 3,16,17
+
+Governments,  organizations,  and  scientists  urged  for the advancement of psychiatric care during the outbreak. 18,19 However,  in  many  affected  countries,  the availability  of  mental  health  professionals  does  not  meet the  continuous  growth  in  demand. 20 For  instance,  in  the Arab world, mental health expenditure as a percentage of total health expenditure is not available for most countries. Six out of 20 countries do not have mental health legisla­ tion,  whereas  two  do  not  have  a  mental  health  policy. Alternatively, seven countries (Iraq, Libya, Morocco, Somalia,  Sudan,  Syria,  and  Yemen)  have  less  than  0.5 psychiatrists  per  100,000  population. 21 Keeping  this  in mind,  and  in  the  context  of  growing  healthcare  demands and a need to maintain physical distance, an assessment of the  status  of  telepsychiatry  in  this  part  of  the  world becomes  necessary.  Hence,  in  this  study,  we  review  the state  of  telepsychiatry  in  a  selected  group  of  Arab  coun­ tries of the Middle East and North Africa (MENA) region. We  discuss  the  evolution  of  digital  mental  health  before and  during  the  COVID-19  pandemic  and  highlight  the hurdles encountered during the process.
+
+[PAGE 2]
+We invited twelve early-career psychiatrists from different Arab countries of the MENA region to share information related to telepsychiatry in their respective nations before and during the COVID-19 pandemic. We elected for earlycareer rather than mid-career or late-career psychiatrists as the former tend to be the most informed and updated about modern  technology  and  remote  medical  care. 22 Besides, early-career psychiatrists, as torchbearers of the future of the field, 23 would provide a fresh perspective about the use of telepsychiatry in this part of the world.
+
+Each  author  provided  data  about  telepsychiatry  ser­ vices  available  in  their  countries,  with  emphasis  on  the evolution of these services, if applicable, during the pan­ demic. For the sake of this study, telepsychiatry services of interest encompassed synchronous and asynchronous tech­ nologies, including video-based services, phone call options,  and  electronic  messaging  services.  The  informa­ tion was collected using a semi-structured guide (Supplementary  Appendix).  All  team  members  carried out their search using the governmental ministry of health websites  of  their  respective  nations,  along  with  local, regional,  and  international  electronic  newspapers,  maga­ zines,  and  social  media  outlets  discussing  the  topic  of telepsychiatry.
+
+To complement this search, the authors checked differ­ ent  search  engines  (PubMed,  Medline,  Scopus,  Embase, and  PsycInfo),  from  inception  until  June  16,  2020,  for references  about  telepsychiatry  and  telemental  health  in the Arab countries of the MENA region. Particular focus was  directed  towards  articles  addressing  the  use  and impact  of  digital  mental  health  during  the  COVID-19 pandemic.  Terms  used  in  the  search  included  'COVID19', 'coronavirus', 'SARS-COV-2', 'telepsychiatry', 'telemental',  'digital  mental  health',  'Arab  world',  and 'Middle  East  and  North  Africa  region'.  We  reviewed relevant  references  for  the  articles  of  interest  and  only included those published in English.
+
+Discussion  between  the  authors  of  the  manuscript occurred via email. Ethical permission was not sought as there  was  no  direct  involvement  of  human  participants, and data used were already available in the public domain.
+
+[PAGE 2-3]
+Telepsychiatry  services  have  been  present  prior  to  the COVID-19  pandemic  in  most  Arab  countries  of  interest (Table  1). 24-40 The  services,  available  via  governmental, non-governmental,  or  private  institutions,  mainly  involve phoneline  call  centers  and  messaging  services.  Less  fre­ quently,  hotlines  designed  for  mental  health  and  video conferences have been established. Shezlong, an Egyptianbased  platform,  started  to  offer  online  therapy  in  the MENA  region  via  video  visits  since  2014. 41 Only  two Dovepress countries, the United Arab  Emirates (UAE)  and  the Kingdom  of  Saudi  Arabia  (KSA),  have  telepsychiatry legislation. In the UAE, the Health Authority Abu Dhabi implemented a general telemedicine regime in Abu Dhabi as early as 2013. 42 Alternatively, KSA is the only country where online training courses in digital mental health are provided for healthcare workers.
+
+Despite being available and used, the field of telepsy­ chiatry  in  the  Arab  countries  of  the  MENA  region  has been struggling with many challenges. Three mains themes  of  patient-related,  healthcare-related,  and  systemrelated  barriers  emanated  from  our  analysis.  First  of  all, patients commonly find consultations without seeing a  doctor  as  a  challenging  concept.  Some  countries  suffer from a high level of illiteracy, such as in Sudan where it reached 60.7% in 2018, 43 limiting the ability to implement telepsychiatry.  Those  who  are  educated  and  comfortable with  digital  care  might  still  suffer  from  technological illiteracy, with limited knowledge about the use of differ­ ent  platforms  or  unfamiliarity  with  payment  processes. Many  also  would  be  concerned  about  their  privacy  and confidentiality while using online resources, limiting their acceptance  of  this  method  of  healthcare.  In  terms  of healthcare-related  barriers,  one  common  pitfall  is  digital illiteracy and the lack of appropriate training for the use of digital  mental  health.  Another  barrier  is  the  general  lack and limited access to mental health services. 21,44,45 Lastly, system-related  limitations  include  bureaucratic  and  orga­ nizational difficulties. For instance, in countries that have fallen within political and socioeconomic turmoil, such as Lebanon, Libya, Sudan, and Syria, telepsychiatry has been hindered  by  poor  infrastructure,  including  the  lack  of stable  electricity  and  the  absence  of  accessible  internet. These limitations are more commonly observed in remote and rural areas. This comes on top of a lack of adequate sustainable funding and adequate financial resources in the Arab healthcare system to implement, operate, and main­ tain telemedicine in general.
+
+[PAGE 3]
+Since the COVID-19 outbreak, the concept of telepsychia­ try  has  become more familiar and accessible in the Arab world (Table 2). 33,46-51 For instance, in KSA, most clinics switched to virtual visits, either via phone consultations or video  conferencing.  Similarly,  in  Jordan,  digital  mental health has evolved so rapidly that it became the preferred method of  consultation  to  confirm  with  social  distancing rules.  As  one  private  clinic  shifted  all  their  services  into online ones, the largest private psychiatric hospital in the country launched a promotional campaign encouraging the transition to digital platforms. 52 In addition, the Jordanian Psychiatrists  Association  initiated  a  phone-based  hotline for psychological support during the quarantine that served more  than  270 cases within  one  month. 53 Likewise, a psychiatry department at a tertiary care center in Lebanon  became  a  leading  model  for  telepsychiatry  in the country. 54 The 'Syndicat National Algerien Des Psychologues',  alternatively,  announced  the  release  of a  new  hotline  for  psychological  support  during  the  pan­ demic, and many services, including psychiatry, switched to  online  platforms. 55,56 In  Egypt,  telepsychiatry  services expanded to include the private sector, non-governmental organizations  such  as  the  Egyptian  Red  Crescent,  and governmental organizations, through the General Secretariat  of  Mental  Health  and  Addiction  Treatment. The latter has been offering digital mental health services via  social  media  booths,  online  training,  and  a  dedicated 24-hour hotline. 57 In  addition,  the  Shezlong  platform  has raised new investments to expand its services. 58
+
+Alternatively,  besides  the  UAE  and  KSA,  only  Egypt started to offer telepsychiatry training for healthcare workers.  Despite  that,  a  wide  majority  of  interventions has  been  offered,  mostly  to  psychiatric  patients.  Fewer targeted the general population, COVID-19 patients, healthcare workers, and vulnerable subgroups. These ser­ vices  were  easily  accepted  among  patients  and  mostly received  positive  feedback,  despite  the  re-emergence  of the  previously  described  pitfalls.
+
+[PAGE 3-4]
+The role of telepsychiatry is now more important than it ever was. 7,8 The evidence to support the effectiveness of telepsy­ chiatry is fairly diverse, especially for depression, anxiety, and trauma-related disorders. 59-61 Different forms of digital men­ tal health platforms were found to be effective for the delivery of services, including videoconferencing, smartphone applica­ tions, text messaging, electronic mails, and online forums. 62-66 After the COVID-19 pandemic, a drastic shift from outpatient activities and liaison psychiatry to telepsychiatry has occurred, and a call for the implementation of digital mental health has been widely encouraged. 9,20,67 China led this movement as the nation started to  actively provide  telepsychiatry services for the  general  population  and  those  at  risk  of  exposure  to COVID-19. 68 Along the same lines, the Australian El Hayek et al Government has responded to the pandemic by increasing the funding for telepsychiatry services, including telehealth con­ sultations with general practitioners and specialists. 69
+
+Table  1 Table  Summarizing  the  Characteristics  of  the  T elepsychiatry  Services  Before  the  COVID-19  Pandemic  in  Each  of  the Represented Arab Countries of the Middle East and North Africa
+
+The same has been applied, to a much-limited extent, in  the  Arab  world,  with  many  pitfalls  that  have  been dragging  for  a  while,  even  prior  to  the  pandemic.  For
+
+[PAGE 4-7]
+DovePress Dovepress instance,  psychiatric  services,  previously  confined  to  few large mental health hospitals, have been gradually replaced by inpatient and outpatient facilities in general hospitals. 21 Training programs in mental health at the primary health­ care level have also started in many of the Arab countries. 70 Despite this movement towards the integration of  mental  health  in  the  general  care  delivery  system,  the implementation  remains  limited  and  the  mental  health infrastructure and services grossly insufficient. 21
+
+When it comes to telepsychiatry in the Arab world, the field seems to be in its early phases of development. 71 Even though some Arab countries have a more advanced teleme­ dicine  profile,  others  still  fail  to  meet  basic  healthcare requirements.  In  the  first  pitch  of  nations,  KSA  has  been employing  health  telematics  as  early  as  of  1993,  with a remarkable success that persuaded the Ministry of Health to create a national electronic healthcare system which links more than 25 hospitals in major cities and vital rural areas. 72 Telehealth has also been successfully implemented in KSA during the COVID-19 outbreak. 73 In the opposite pitch, the healthcare  system  in  Iraq  has  been  struggling  with  an increased  burden  on  resources,  which  frequently  impedes patients' access to healthcare. Electronic information sharing among  hospitals  remains,  as  such,  very  limited. 74 Even though Oman has some telemedicine services and a  prototype  for  remote  healthcare  monitoring was recently suggested, these services remain limited to a few hospitals and specialties and do not adequately tackle telepsychiatry. 75 In Syria, poor technological infrastructure remains the main problem in the application of telemedicine in general, and telepsychiatry more specifically. Indeed, Syria has the poor­ est network infrastructure among the Eastern Mediterranean countries, along with a high cost of internet access and poor internet security. 74 Despite these limitations, telepsychiatry has been proposed as a potential modality to help bridge the mental health needs gap in Syria. 76 The use of telepsychiatry as  a  temporary  and  cost-effective  service  for  the  growing mental healthcare needs of Syrians was proposed amidst the rising challenges 29 and different platforms have been offered and  provided,  along  with  clinical  training  to  healthcare providers  in the Syrian  humanitarian  conflict  setting. 77 Lastly, a recent systematic review on the feasibility of elec­ tronic mental health applications among Syrian refugees and other vulnerable Arab populations noted a positive impact of these  applications  on  the  access  to  services  and  treatment outcomes. It also revealed a paucity of literature about the topic in the Arab region. 78
+
+Our results also pinpoint many limits for telepsychiatry that seem multifactorial in nature. Jefee-Bahloul discusses four similar barriers to implement telemental health in the Middle East: cultural (both patientand healthcarerelated), and technical, financial, and regulatory (systemrelated). 79 On  patient-  and  healthcare-related  barriers, a  recent  systematic  review  of  134  studies  about  telepsy­ chiatry identified that patients and providers are generally satisfied with digital mental health services. The evidence also suggests that telepsychiatry is at least comparable to face-to-face  services  in  terms  of  reliability  of  clinical assessments and treatment outcomes. 4 A remote interdis­ ciplinary  approach  that  involves  psychiatrists,  psycholo­ gists, and social workers, is the most effective in preventing undesirable outcomes. 80 An important element to  keep  in  mind  is  the  cultural  facet  of  the  Arab  world, where religion and gender considerations may play a  substantial  role  in  the  delivery  of  digital  services. 79 However, the limited data in this part of the world seems to be worthwhile. In a sample of Syrian refugees suffering from post-traumatic stress disorder, about half were open to receive telepsychiatry care. 81 In another study, attitudes toward  telemental  health  were  assessed  in  a  group  of Syrian  healthcare  providers.  Even  though  the  majority had no experience with telepsychiatry, half believed that mental healthcare can be provided through digital platforms. 82 Overcoming  sociocultural  barriers  requires a comprehensive  strategy that targets both receiving ends, with appropriate training for providers and suitable exposure for patients. For mental health professionals with limited  technological  literacy,  the  American  Psychiatric Association provides a telepsychiatry toolkit for guidance. 83
+
+On  the  other  hand,  system-related  barriers,  as  JefeeBahloul described, encompass a combination of technical, legal,  and  financial  challenges. 79 Tackling  these  compo­ nents  requires  the  combined  efforts  of  multiple  stake­ holders, including local governments and investors, while keeping in mind that telepsychiatry is more cost-effective than face-to-face delivery of mental  health services. 4 Inpatient and outpatient clinics should explore repurposing existing  workstations  to  become  more  friendly  for  the usage of digital platforms. 84 Alternatively, healthcare sys­ tems and policymakers have to set up programs based on the existing and effective remote collaborative care models. 85 Finally,  one  significant  challenge  that  arose  in the  rapid  need  for  tele-deployment  during  the  pandemic has been  prescribing  practices.  In  Lebanon,  with  the El Hayek et al Dovepress absence of a centralized electronic healthcare system, both the Lebanese Orders of Physicians and Pharmacists issued a temporary circular urging providers and covering parties to  use  and  accept  electronic  modalities  for  prescriptions during  the  outbreak,  although  concerns  about  potential lack of regulation have been plenty. 86
+
+[PAGE 6-8]
+Table 2 Table Summarizing the Characteristics of the T elepsychiatry Services Generated During the COVID-19 Pandemic in Each of the Represented Arab Countries of the Middle East and North Africa
+
+Table 2 (Continued).
+
+Taking these challenges into consideration, Table 3 pro­ vides  a  list  of  recommendations  to  improve  telepsychiatry El Hayek et al services in the Arab world. These recommendations, derived from the identified barriers, try to tackle the different patient, healthcare,  and  system-related  deficiencies.  As  early-career psychiatrists, our role is of relevance. 22,87 With our adequate exposure to technology and our level of comfort with digital platforms, we have a duty to vouch for telepsychiatry services and always offer them, whenever applicable, as a treatment option. 22
+
+[PAGE 8]
+Table 3 List of Recommendations to Improve Telepsychiatry Services in the Arab World
+
+Our  study  has  several  limitations.  First,  data  about telepsychiatry  services  in  the  different  Arab  countries was collected qualitatively via a semi-structured interview. Some  nations  were  also  not  represented  in  the  analysis. However,  the  heterogeneity  between  the  countries  from which  the  Arab  early-career  psychiatrists  came  strength­ ened  the  value  of  the  collected  information  and  would allow  its  applicability  to  the  MENA  region  in  general. Alternatively, cultural barriers of telepsychiatry that might include gender sensitivity, religion, and other socie­ tal  norms  of  the  Arab  society  were  not  fully  assessed. Further studies would benefit from structured crosssectional surveys that explore the perceptions and attitudes of patients and mental health professionals towards imple­ menting  telepsychiatry  while  taking  into  consideration socio-cultural challenges, among others.
+
+[PAGE 8]
+services might risk creating a public mental health crisis. As  efficient,  affordable,  and  attainable  solutions  cannot only  rely  on  training  and  recruiting  more  psychiatrists, telepsychiatry  would  help  meet  the  exceeding  demands. This would,  nevertheless, require the joint efforts of a  range  of  stakeholders,  including  policymakers  as,  to our  knowledge,  no  specific  telemental  health  guidelines have been previously developed in the Arab world. Advocacy for digital mental health should also extend to mental health professionals and the general body of med­ icine.  As  the  world  moves  through  this  crisis,  the  Arab nations should do their best to implement the much-needed telepsychiatry  interventions  and  maintain  these  services into  the  future.  More  studies  are  also  required  to  under­ stand the socio-cultural barriers limiting the use of digital mental health in this part of the world.
+
+[PAGE 8]
+The authors report no conflicts of interest in this work.
+
+[PAGE 8-9]
+Adaji  A,  Fortney  J.  Telepsychiatry  in  integrated  care  settings. Focus (Am Psychiatr Publ) . 2017;15(3):257-263. doi:10.1176/appi. focus.20170007
+
+Chan S, Li L, Torous J, Gratzer D, Yellowlees PM. Review of use of asynchronous  technologies  incorporated  in  mental  health  care. Curr Psychiatry Rep . 2018;20(10):85. doi:10.1007/s11920-018-0954-3
+
+Critical  shortfalls  in  mental  health  services  in  the  Arab countries  of  the  MENA  region  present  a  challenge  for mental  healthcare  during  the  COVID-19  pandemic.  The increasing  demands  on  already  overburdened  psychiatric
+
+Jordan A, Dixon LB. Considerations for telepsychiatry service imple­ mentation in the era of covid-19. Psychiatr Serv . 2020;71(6):643-644. doi:10.1176/appi.ps.71605
+
+Hubley S, Lynch SB, Schneck C, Thomas M, Shore J. Review of key telepsychiatry outcomes. World J Psychiatry . 2016;6(2):269-282. doi:10.5498/wjp.v6.i2.269
+
+DovePress Dovepress
+
+[PAGE 9]
+Hilty DM, Sunderji N, Suo S, Chan S, McCarron RM. Telepsychiatry and other technologies for integrated care: evidence base, best prac­ tice models and competencies. Int Rev Psychiatry . 2018;30 (6):292-309. doi:10.1080/09540261.2019.1571483
+
+Prisco  V,  Prisco  L,  Donnarumma  B.  [Telepsychiatry  in  adults  and adolescents:  a  useful  tool  against  covid-19]. Recenti  Prog  Med . 2020;111(7):411-414. doi:10.1701/3407.33923
+
+Smith K, Ostinelli E, Macdonald O, Cipriani A. Covid-19 and tele­ psychiatry:  development  of  evidence-based  guidance  for  clinicians. JMIR Ment Health . 2020;7(8):e21108. doi:10.2196/21108
+
+O'Brien M, McNicholas F. The use of telepsychiatry during covid-19 and beyond. Ir J Psychol Med . 2020;1-6.
+
+Ramalho  R,  Adiukwu  F,  Gashi  Bytyci  D,  et  al.  Telepsychiatry  and healthcare  access  inequities  during  the  covid-19  pandemic. Asian J Psychiatr . 2020;53:102234. Italian. doi:10.1016/j.ajp.2020.102234
+
+Shigemura J, Ursano RJ, Morganstein JC, Kurosawa M, Benedek DM. Public  responses  to  the  novel  2019  coronavirus  (2019-ncov)  in  japan: mental  health  consequences  and  target  populations. Psychiatry  Clin Neurosci . 2020;74(4):281-282. doi:10.1111/pcn.12988
+
+Vindegaard  N,  Benros  ME.  Covid-19  pandemic  and  mental  health consequences:  systematic  review  of  the  current  evidence. Brain Behav Immun . 2020;89:531-542. doi:10.1016/j.bbi.2020.05.048
+
+Talevi  D,  Socci  V,  Carai  M,  et  al.  Mental  health  outcomes  of  the covid-19 pandemic. Riv Psichiatr . 2020;55(3):137-144. doi:10.1708/ 3382.33569
+
+Fagan M  Concern over dramatic fall in emergency hospital admissions;  2020.  Available  from:  https://www.irishexaminer.com/ breakingnews/ireland/concern-over-dramatic-fall-in-emergencyhospital-admissions-993450.html. Accessed July 7, 2020.
+
+Lai  J,  Ma  S,  Wang  Y,  et  al.  Factors  associated  with  mental  health outcomes among health care workers exposed to coronavirus disease 2019. JAMA Netw Open . 2020;3(3):e203976. doi:10.1001/ jamanetworkopen.2020.3976
+
+Pappa  S,  Ntella  V,  Giannakas  T,  Giannakoulis  VG,  Papoutsi  E, Katsaounou  P.  Prevalence  of  depression,  anxiety,  and  insomnia among healthcare workers during the covid-19 pandemic: a systematic review and meta-analysis. Brain Behav  Immun . 2020;88:901-907. doi:10.1016/j.bbi.2020.05.026
+
+Corruble  E.  A  viewpoint  from  paris  on  the  covid-19  pandemic: a  necessary  turn  to  telepsychiatry. J  Clin  Psychiatry .  2020;81(3). doi:10.4088/JCP.20com13361
+
+O'Brien M, McNicholas F. The use of telepsychiatry during covid-19 and beyond. Ir J Psychol Med . 2020;1-17. doi:10.1017/ipm.2020.54
+
+Xiang  Y-T,  Yang  Y,  Li  W,  et  al.  Timely  mental  health  care  for  the 2019 novel coronavirus outbreak is urgently needed. Lancet Psychiatry . 2020;7(3):228-229. doi:10.1016/S2215-0366(20)30046-8
+
+Torales  J,  O'Higgins  M,  Castaldelli-Maia  JM,  Ventriglio  A.  The outbreak  of  covid-19  coronavirus  and  its  impact  on  global  mental health. Int J Soc Psychiatry . 2020;66(4):317-320. doi:10.1177/ 0020764020915212
+
+Cosic K, Popovic S, Sarlija M, Kesedzic I. Impact of human disasters and covid-19  pandemic  on  mental  health:  potential  of  digital  psychiatry. Psychiatr Danub . 2020;32(1):25-31. doi:10.24869/psyd.2020.25
+
+Okasha A, Karam E, Okasha T. Mental health services in the arab world. World Psychiatry . 2012;11(1):52-54. doi:10.1016/j.wpsyc.2012.01.008
+
+Ternes  K,  Iyengar  V,  Lavretsky  H,  et  al.  Brain  health  innovation diplomacy:  a  model  binding  diverse  disciplines  to  manage  the  pro­ mise  and  perils of technological innovation. Int  Psychogeriatr . 2020;32(8):955-979. doi:10.1017/S1041610219002266
+
+[PAGE 9]
+Gnanavel S. Relevance of early career psychiatrist associations. Indian J Psychol Med . 2015;37(1):109. doi:10.4103/0253-7176.150861
+
+The world bank. 2020. Available from: https://www.worldbank.org/. Accessed July 11, 2020.
+
+Vaidya  S  Oman  sets  up  first  telemedicine  centre;  2007.  Available from:  https://gulfnews.com/world/gulf/oman/oman-sets-up-firsttelemedicine-centre-1.194488. Accessed July 11, 2020.
+
+The  clinic  of'Hamasat  Al  Sukoon'  launches  the  initiative  'We  are with  you'  2016.  Available  from:  https://www.shabiba.com/article/ 162315. Accessed July 11, 2020.
+
+Aburawi M Telemedicine in libya: a solution in the cloud for a health crisis  on  the  ground;  2016.  Available  from:  https://www.linkedin. com/pulse/telemedicine-libya-solution-cloud-health-crisis-aburawimd/. Accessed July 12, 2020.
+
+El Taguri A, Elkhammas E, Bakoush O, Ashammakhi N, Baccoush M, Betilmal I. Libyan national health services the need to move to management-by-objectives. Libyan J Med . 2008;3 (2):113-121. doi:10.4176/080301
+
+Nassan  M,  Frye  MA,  Adi  A,  Alarcon  RD.  Telepsychiatry  for post-traumatic stress disorder: a call for action in the syrian conflict. Lancet Psychiatry . 2015;2(10):866. doi:10.1016/S22150366(15)00380-6
+
+Tabazah  S  Police  launches  suicide  hotline  as  numbers  rise;  2017. Available  from:  https://www.jordantimes.com/news/local/policelaunches-suicide-hotline-numbers-rise. Accessed July 12, 2020.
+
+WHO. Who-Aims  Report  on  Mental Health System in  Sudan . Khartoum: Sudan WHO and Ministry of Health; 2009.
+
+Melhem Zuhair Al-Haraki: The first online psychological clinic in Arabic for adults, children, and adolescents; 2018. Available from: http://molham heraki.com/ar/. Accessed July 12, 2020.
+
+Samh. Available from: http://www.syriasamh.com/enIndex.htm. Accessed July 12, 2020.
+
+NCMH. Call center to promote mental health. Available from: http:// ncmh.org.sa/index.php/pages/view/105/14/14. Accessed November 5, 2020. Accessed July 12, 2020.
+
+NCMH.  Application  'Qariboun  -  We  are  close'.  Available  from: http://ncmh.org.sa/index.php/pages/view/90/14/14. Accessed November 5, 2020. Accessed July 12, 2020.
+
+Trichili H, Dhibi M, Solaiman B Telemedicine in developing coun­ tries;  case  of  tunisia.  Paper  presented  at:  2008  3rd  International Conference  on  information  and  communication  technologies:  from theory to applications; Damascus, Syria. April 2008; 2008:7-11.
+
+Embrace.  Suicide  hotline.  Available  from:  https://embracelebanon. org/about-embrace/. Accessed July 12, 2020.
+
+Mind clinics. Available from: http://www.mindclinics.org/homepage. Accessed July 12, 2020.
+
+Idraac. Available from: http://www.idraac.org/idraac/homepage. Accessed July 12, 2020.
+
+Wahba HMF, Emara T, Elbokl A. Chapter 12 - the egyptian-african telemedicine network: the treat and teach comprehensive model. In: Jude  D,  Balas  H,  editors. Telemedicine  Technologies .  Academic Press; 2019:183-192.
+
+Shezlong. Available from: https://www.crunchbase.com/organization/ shezlong#section-overview. Accessed July 14, 2020.
+
+Standards  for  telehealth  services. Government  of  Dubai .  Vol.  80. Dubai, United Arab Emirates: Dubai Health Authority; 2019.
+
+Sudan - adult (15+) literacy rate; 2018. Available from: https://knoema. com/atlas/Sudan/topics/Education/Literacy/Adult-literacy-rate#:~:text= In%202018%2C%20adult%20literacy%20rate,2000%20to%2060.7% 20%25%20in%202018. Accessed July 12, 2020.
+
+Aadil M, Cosme RM, Forcen FE, Khan AR. A call for emergency action: telepsychiatry for trauma treatment among syrian refugees. Cureus . 2017;9(8):e1578-e1578. doi:10.7759/cureus. 1578
+
+Alaboudi A, Atkins A, Sharp B, Balkhair A, Alzahrani M, Sunbul T. Barriers and challenges in adopting saudi telemedicine network: the perceptions of decision makers of healthcare facilities in saudi arabia. J  Infect  Public  Health .  2016;9(6):725-733.  doi:10.1016/j.jiph.2016. 09.001
+
+[PAGE 9-10]
+A  hotline  and  a  team  of  specialists  in  Qatar  to  provide  psychological support during the Corona pandemic;2020. Available from: https://www. youtube.com/watch?v=d3AXPtsbawM&feature=youtu.be.  Accessed  July 11, 2020.
+
+El Hayek et al
+
+[PAGE 10]
+Isgar S Covid-19 boosts the uptake of tele health/medicine in uae - what are the legal implications? 2020. Available from: https://bsabh. com/covid-19-boosts-the-uptake-of-tele-health-medicine-in-uae-what -are-the-legal-implications/. Accessed July 11, 2020.
+
+Duraid  Hussein  Hospital  launches  a  remote  psychological  support  and listening  cell.  Available  from:  https://www.sabqpress.net/national/%D9% 83%D9%88%D8%B1%D9%88%D9%86%D8%A7-%D9%85%D8% B3%D8%AA%D8%B4%D9%81%D9%89-%D8%AF%D8%B1%D9% 8A%D8%AF-%D8%AD%D8%B3%D9%8A%D9%86-%D9%8A% D8%B7%D9%84%D9%82-%D8%AE%D9%84%D9%8A%D8%A9-% D9%84%D9%84%D8%A7%D8%B3/. Accessed July 12, 2020.
+
+Aburawi M Fighting covid using telehealth in libya; 2020. Available from: https://www.aspenglobalinnovators.org/health-for-all-content/2020/5/13/ fighting-covid-using-telehealth-in-libya. Accessed July 12, 2020.
+
+This  'virtual  clinic'  platform  is  offering  two  free  e-check  ups  to patients in egypt & middle east; 2020. Available from: https://cairos cene.com/Buzz/Ember-Medical-Offers-Free-Check-Ups-onTelemedicine-Platform. Accessed July 12, 2020.
+
+El  Hennawy  N  Covid-19:  telehealth  businesses  set  to  grow  during pandemic;  2020.  Available  from:  https://www.zawya.com/mena/en/ business/story/COVID19_Telehealth_businesses_set_to_grow_dur ing_pandemic-ZAWYA20200609041249/. Accessed July 12, 2020.
+
+Al rashid hospital center psychiatry and addiction; 2020. Available from: https://www.facebook.com/AlRashidHospitalC/. Accessed July 7, 2020.
+
+Abu Tayr M. You are not alone, we are with you: Campaign to support mental  health  in  Jordan;  2020.  Available  from:  https://www.albayan.ae/ one-world/arabs/2020-05-07-1.3851914. Accessed July 7, 2020.
+
+AUBMC. Your  Guide  to  Telehealth  at  Aubmc .  Beirut,  Lebanon: American University of Beirut Medical Center; 2020.
+
+Mostefa  khiati,  président  de  la  forem:  «la  téléconsultation  suscite l'engouement  des  citoyens»;  2020.  Available  from:  http://www. elmoudjahid.com/fr/actualites/152189. Accessed July 12, 2020.
+
+Lancement  d'un  réseau  national  d'écoute  et  de  soutien  psychologi­ que; 2020. Available from: https://www.liberte-algerie.com/actualite/ lancement-dun-reseau-national-decoute-et-de-soutien-psychologique -337411. Accessed July 12, 2020.
+
+Hosny H Egypt offers psychological help amid social isolation; 2020. Available from: https://www.al-monitor.com/pulse/originals/2020/04/ egypt-health-psychological-support-coronavirus-lockdown.html. Accessed July 12, 2020.
+
+Alaa  El-Din  M  Shezlong  increases  investments  to  expand  mental health  operations;  2020.  Available  from:  https://wwww.dailynewsse gypt.com/2020/06/08/shezlong-increases-investments-to-expandmental-health-operations/. Accessed July 14, 2020.
+
+Garcia-Lizana  F,  Munoz-Mayorga  I.  Telemedicine  for  depression: a  systematic  review. Perspect  Psychiatr  Care .  2010;46(2):119-126. doi:10.1111/j.1744-6163.2010.00247.x
+
+Rees CS, Maclaine E. A systematic review of videoconference-deliv­ ered  psychological  treatment  for  anxiety  disorders. Aust  Psychol . 2015;50(4):259-264. doi:10.1111/ap.12122
+
+Turgoose  D,  Ashwick  R,  Murphy  D.  Systematic  review  of  lessons learned from delivering tele-therapy to veterans with post-traumatic stress disorder. J Telemed Telecare . 2018;24(9):575-585. doi:10.1177/1357633x17730443
+
+Berryhill  MB,  Culmer  N,  Williams  N,  et  al.  Videoconferencing psychotherapy and depression: a systematic review. Telemed J E Health . 2019;25(6):435-446. doi:10.1089/tmj.2018.0058
+
+[PAGE 10]
+Backhaus A, Agha Z, Maglione ML, et al. Videoconferencing psy­ chotherapy:  a  systematic  review. Psychol  Serv .  2012;9(2):111-131. doi:10.1037/a0027924
+
+Torniainen-Holm M, Pankakoski M, Lehto T, et al. The effectiveness of  email-based  exercises  in  promoting  psychological  wellbeing  and healthy lifestyle: a two-year follow-up study. BMC Psychol .  2016;4 (1):21. doi:10.1186/s40359-016-0125-4
+
+Kerst A, Zielasek J, Gaebel W. Smartphone applications for depres­ sion:  a  systematic  literature  review  and  a  survey  of  health  care professionals'  attitudes  towards  their  use  in  clinical  practice. Eur Arch  Psychiatry  Clin  Neurosci .  2020;270(2):139-152.  doi:10.1007/ s00406-018-0974-3
+
+Khanna R, Forbes M. Telepsychiatry as a public health imperative: slowing covid-19. Aust N Z J Psychiatry . 2020;54(7):758. doi:10.1177/0004867420924480
+
+Mental health service platform provides around-the-clock psycholo­ gical support during covid-19 outbreak; 2020. Available from: http:// en.moe.gov.cn/news/press_releases/202003/t20200309_429190.html. Accessed July 7, 2020.
+
+Zhou X, Snoswell CL, Harding LE, et al.  The role of  telehealth in reducing the mental health burden from covid-19. Telemed J E Health . 2020;26(4):377-379. doi:10.1089/tmj.2020.0068
+
+World  Health  Organization  ROftEM.  Mental  health  in  the  eastern mediterranean region: reaching the unreached. 2006.
+
+Househ  M,  Alam  T,  Al-Thani  D,  et  al.  Developing  a  digital mental  health  platform  for  the  arab  world:  from  research  to action. Stud Health Technol Inform . 2019;262:392-395. doi:10.3233/shti190101
+
+ESCWA. National Profile of the Information Society in the Kingdom of Saudi Arabia . United Nations. 25. 2007.
+
+Alghamdi S, Alqahtani J, Aldhahir A. Current status of telehealth in saudi  arabia  during  covid-19. J  Family  Community  Med .  2020;27 (3):208-211. doi:10.4103/jfcm.JFCM_295_20
+
+Jaber  MM,  Ghani  MKA,  Herman  NS.  A  review  of  adoption  of telemedicine in middle east countries: toward building iraqi teleme­ dicine framework. Sci Int . 2014;26(5):1795-1800.
+
+Altaei  MH,  Abdul-Mehdi  ZT.  Telemedicine  requirements  for  treat­ ment  network  in  oman. J  Adv  Comp  Netw .  2013;1(3):246-249. doi:10.7763/JACN.2013.V1.49
+
+Moustafa  M. Telepsychiatry  and  Mental  Health  Care  for  Syrian Refugees in Turkey .  Yale  University:  Department  of  Medicine,  Yale Medicine Thesis Digital Library; 2015.
+
+Jefee-Bahloul H, Barkil-Oteo A, Shukair N, Alraas W, Mahasneh W. Using a store-and-forward system to provide global telemental health supervision and training: a case from syria. Acad Psychiatr . 2016;40 (4):707-709. doi:10.1007/s40596-015-0423-9
+
+Ashfaq  A,  Esmaili  S,  Najjar  M,  et  al.  Utilization  of  mobile  mental health  services  among  syrian  refugees  and  other  vulnerable  arab populations-a  systematic  review. Int  J  Environ  Res  Public  Health . 2020;17(4):1295. doi:10.3390/ijerph17041295
+
+Jefee-Bahloul  H.  Telemental  health  in  the  middle  east:  overcoming the barriers. Front Public Health . 2014;2:86. doi:10.3389/ fpubh.2014.00086
+
+Varker  T,  Brand  RM,  Ward  J,  Terhaag  S,  Phelps  A.  Efficacy  of synchronous  telepsychology  interventions  for  people  with  anxiety, depression,  posttraumatic  stress  disorder,  and  adjustment  disorder: a  rapid  evidence  assessment. Psychol  Serv .  2019;16(4):621-635. doi:10.1037/ser0000239
+
+Jefee-Bahloul H, Moustafa MK, Shebl FM, Barkil-Oteo A. Pilot assess­ ment and survey of syrian refugees' psychological stress and openness to referral for telepsychiatry (passport study). Telemed J E Health . 2014;20 (10):977-979. doi:10.1089/tmj.2013.0373
+
+Kauer  SD,  Mangan  C,  Sanci  L.  Do  online  mental  health  services improve help-seeking for young people? A systematic review. J Med Internet Res . 2014;16(3):e66. doi:10.2196/jmir.3103
+
+[PAGE 10-11]
+Jefee-Bahloul H, Duchen D, Barkil-Oteo A. Attitudes towards imple­ mentation  of  store-and-forward  telemental  health  in  humanitarian settings: survey of syrian healthcare providers. Telemed J E Health . 2016;22(1):31-35. doi:10.1089/tmj.2015.0021
+
+DovePress Dovepress
+
+APA. Telepsychiatry toolkit; 2020. Available from: https://www.psychiatry. org/psychiatrists/practice/telepsychiatry/toolkit. Accessed July 8, 2020.
+
+Kannarkat JT, Smith NN, McLeod-Bryant SA. Mobilization of tele­ psychiatry  in  response  to  covid-19-moving  toward  21(st)  century access to care. Adm  Policy  Ment  Health . 2020;47(4):489-491. doi:10.1007/s10488-020-01044-z
+
+Appleman ER, O'Connor MK, Rockefeller W, Morin P, Moo LR. Using video telehealth to deliver patient-centered collaborative care: the g-impact pilot. Clin Gerontol . 2020;1-10. doi:10.1080/07317115.2020.1738000
+
+Circular for doctors to approve using phones and applications for inspection and provision of prescriptions; 2020. Available from: https://www.almarka zia.com/ar/news/show/203660/%D8%AA%D8%B9%D9%85%D9%8A %D9%85-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8% A7%D8%B7%D8%A8%D8%A7%D8%A1-%D9%84%D8%A7%D8% B9%D8%AA%D9%85%D8%A7%D8%AF-%D8%A7%D9%84%D9% 87%D8%A7%D8%AA%D9%81-%D9%88%D8%A7%D9%84%D8% AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA-% D9%83%D8%A7%D9%81%D8%A9-%D9%84. Accessed July 12, 2020.
+
+[PAGE 11]
+Neuropsychiatric  Disease  and  Treatment  is  an  international,  peerreviewed journal of clinical therapeutics and pharmacology focusing on  concise  rapid  reporting  of  clinical  or  pre-clinical  studies  on  a range of neuropsychiatric and neurological disorders. This journal is indexed on PubMed Central, the 'PsycINFO' database and CAS, and
+
+Ramalho R, Adiukwu F, Gashi Bytyçi D, et al. Telepsychiatry during the  covid-19  pandemic:  development  of  a  protocol  for  telemental health  care. Front  Psychiatry .  2020;11:999.  doi:10.3389/fpsyt.2020. 552450
+
+is the official journal of The International Neuropsychiatric Association (INA). The manuscript management system is comple­ tely  online  and  includes  a  very  quick  and  fair  peer-review  system, which  is  all  easy  to  use.  Visit  http://www.dovepress.com/testimo­ nials.php to read real quotes from published authors.
+
+Submit your manuscript here: https://www.dovepress.com/neuropsychiatric-disease-and-treatment-journal

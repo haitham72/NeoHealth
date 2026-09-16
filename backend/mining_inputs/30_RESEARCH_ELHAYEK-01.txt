@@ -1,0 +1,136 @@
+DOC_CODE: RESEARCH/ELHAYEK-01
+TITLE: Telepsychiatry and Healthcare Access Inequities During the COVID-19 Pandemic
+AUTHORITY: Asian Journal of Psychiatry
+TIER: research
+VERSION: 1
+
+=== DOCUMENT TEXT ===
+
+[PAGE 1]
+Since January 2020 Elsevier has created a COVID-19 resource centre with
+
+free information in English and Mandarin on the novel coronavirus COVID19. The COVID-19 resource centre is hosted on Elsevier Connect, the company's public news and information website.
+
+Elsevier hereby grants permission to make all its COVID-19-related research that is available on the COVID-19 resource centre - including this research content - immediately available in PubMed Central and other publicly funded repositories, such as the WHO COVID database with rights for unrestricted research re-use and analyses in any form or by any means with acknowledgement of the original source. These permissions are granted for free by Elsevier for as long as the COVID-19 resource centre remains active.
+
+[PAGE 2]
+We are a team of psychiatrists from countries representing all six World Health Organization regions. During the COVID-19 pandemic, mental health departments in our countries have been forced to close most outpatient services and even some inpatient units, with psychia­ trists often being deployed to medical units to cope with the pandemic. These measures have strained these departments' ability to support the population,  due  to  the  higher  demand  for  their  services  and  the  in­ creasing difficulties in providing care onsite. Still, the role of mental health care has remained crucial during these times of crisis (Tandon, 2020).  We  have  already  witnessed  how  telepsychiatry  has  proven  a vital resource for the delivery of mental health care, and we have put forth a call for its use in all phases of the pandemic (Ransing et al., 2020). However, it is still uncertain whether the way in which various healthcare services have adapted to COVID-19, an adaptation that has often included adopting telemental health care, will be able to with­ stand the pandemic (Kavoor et al., 2020).
+
+Unfortunately, most of our countries were not entirely prepared to adopt this resource (Pereira-Sanchez et al., 2020). Telepsychiatry had played a very marginal role before the pandemic, except in Colombia, Egypt,  Kosovo,  New  Zealand,  Singapore,  and  the  United  States  of America.  These  countries,  with  the  exception  of  Egypt,  Kosovo,  and Singapore,  also  had  local  guidelines  for  telepsychiatry.  However,  in most countries, it was mainly limited to private practice, and there was no adequate training for practitioners. So, while only a few countries had  a  somewhat  well-established  telepsychiatry  practice,  even  fewer had sufficient training and local guidelines to support practitioners.
+
+There are additional challenges hindering the further use of tele­ psychiatry. These include legal barriers, particularly in Brazil and Italy - although  circumvented  during  the  pandemic,  and  the  population's limited digital literacy or lack of access to the necessary tools, such as internet  connection.  In  Colombia,  for  example,  service  users  are  re­ quired  to  have  simultaneous  face-to-face  support  by  general  practi­ tioners  (GPs),  hindering  the  use  of  telepsychiatry  for  remote  regions with no access to GPs. The difficulty in most countries to provide eprescriptions adds an extra hurdle; for instance, in Iran, service users can only access subsidized medication with a hard copy prescription.
+
+Despite  these  barriers,  the  use  of  telepsychiatry  has  grown  ex­ ponentially (De Sousa et al., 2020; Zhou et al., 2020). Psychiatrists in all our countries are offering telecare to the general population and addi­ tional support to colleagues and non-specialists practitioners. Particular attention has been paid to healthcare workers at the front lines, whose care needs are often driven by the additional stress associated with their
+
+Available online 16 June 2020
+
+1876-2018/ © 2020 Elsevier B.V. All rights reserved.
+
+circumstances. Its utilization varies across different clinical and cultural contexts, but with an overall positive reception. The population seems open to this resource, and mental health professionals are keen to use it too - albeit somewhat unsupported in most countries. However, all the barriers mentioned above are preventing its broader use, especially to support remote or low socioeconomic populations within each country. In other words, precisely those who are likely to be in greater need of this resource are those less likely to have access to it.
+
+Telepsychiatry is playing a crucial role during the pandemic, and it seems that it is here to stay. It is clear that telepsychiatry has proven a useful tool in the delivery of mental health care and it should be added to  the  repertoire  of  all  mental  health  care  services.  Furthermore,  it should  be  considered  a  valuable  resource  for  the  task  of  providing support and care to those coping with the aftermath of the pandemic (Das, 2020). For most of our countries, the COVID-19 pandemic has offered a small window into the possibility of using telepsychiatry to provide this support. However, while it would be ideal for everybody to have access to all means necessary to liaise with mental health provi­ ders online, this is not always the case, and the COVID-19 pandemic has brought this situation to the foreground. It is imperative to address emental health care access inequities, and this is not a task for the future but for the present; moreover, it is a long pending debt with the po­ pulation.
+
+[PAGE 2]
+None to declare.
+
+The authors would like to acknowledge the Early Career Psychiatrists Section of the World Psychiatric Association, a supportive network that enabled us to liaise and collaborate on this letter.
+
+Das, N., 2020. Psychiatrist in post-COVID-19 era-are we prepared? Asian J. Psychiatry 51, 102082. https://doi.org/10.1016/j.ajp.2020.102082.
+
+De Sousa, A., Mohandas, E., Javed, A., 2020. Psychological interventions during COVID19: challenges for low and middle income countries. Asian J. Psychiatry 51, 102128. https://doi.org/10.1016/j.ajp.2020.102128.
+
+Kavoor, A.R., Chakravarthy, K., John, T., 2020. Remote consultations in the era of COVID19 pandemic: preliminary experience in a regional Australian public acute mental
+
+Asian Journal of Psychiatry 53 (2020) 102234
+
+Contents lists available at ScienceDirect
+
+[PAGE 2-3]
+journal homepage: www.elsevier.com/locate/ajp health care setting. Asian J. Psychiatry 51, 102074. https://doi.org/10.1016/j.ajp. 2020.102074.
+
+Pereira-Sanchez, V., Adiukwu, F., El Hayek, S., Gashi Bytyçi, D., Gonzalez-Diaz, J.M., Kudva Kundadak, G., Larnaout, A., Nofal, M., Orsolini, L., Ramalho, R., Ransing, R., Shalbafan, M., Soler-Vidal, J., Syarif, Z., Schuh Teixeira, A.L., Pinto da Costa, M., 2020. COVID-19 effect on mental health: patients and workforce. Lancet Psychiatry 7 (6), E29-E30. https://doi.org/10.1016/j.ajp.2020.102085.
+
+Ransing, R., Adiukwu, F., Pereira-Sanchez, V., Ramalho, R., Orsolini, L., Teixeira, A.L.S., Gonzalez-Diaz, J.M., Pinto da Costa, M., Soler-Vidal, J., Gashi Bytyçi, D., El Hayek, S., Larnaout, A., Shalbafan, M., Syarif, Z., Nofal, M., Kudva Kundadak, G.K., 2020. Mental health interventions during the COVID-19 pandemic: a conceptual framework by early career psychiatrists. Asian J. Psychiatry 51, 102085. https://doi.org/10. 1016/j.ajp.2020.102085.
+
+Tandon, R., 2020. The COVID-19 pandemic personal reflections on editorial responsi­
+
+bility. Asian J. Psychiatry 50, 102100. https://doi.org/10.1016/j.ajp.2020.102100. Zhou, X., Snoswell, C.L., Harding, L.E., Bambling, M., Edirippulige, S., Bai, X., Smith, A.C., 2020. The role of telehealth in reducing the mental health burden from COVID19. Telemed. J. E Health 377-379. https://doi.org/10.1089/tmj.2020.0068.
+
+Rodrigo Ramalho*
+
+Department of Social and Community Health, School of Population Health,
+
+University of Auckland, Auckland, New Zealand E-mail address: r.ramalho@auckland.ac.nz.
+
+Frances Adiukwu
+
+Department of Neuropsychiatry, University of Port Harcourt Teaching Hospital, Port Harcourt, Nigeria
+
+Drita Gashi Bytyçi
+
+Hospital and University Clinical Service of Kosovo, Community Based Mental Health Center and House for Integration, Prizren, Kosovo
+
+Samer El Hayek
+
+Department of Psychiatry, American University of Beirut, Beirut, Lebanon
+
+Jairo M. Gonzalez-Diaz
+
+CERSAME School of Medicine and Health Sciences, Universidad del Rosario - Clínica Nuestra Señora de la Paz, Bogota, Colombia
+
+Amine Larnaout
+
+Razi Hospital, Faculty of Medicine of Tunis, Tunis El Manar University, Tunis, Tunisia
+
+Paolo Grandinetti
+
+Addictions Service, Department of Territorial Services, Italian National Health System, ASL Teramo, Italy
+
+2
+
+Asian Journal of Psychiatry 53 (2020) 102234
+
+Ganesh Kudva Kundadak
+
+Early Psychosis Intervention Programme, Institute of Mental Health, Singapore
+
+Marwa Nofal
+
+Helwan Mental Health Hospital, Cairo, Egypt
+
+Victor Pereira-Sanchez
+
+Department of Child and Adolescent Psychiatry, NYU Grossman School of Medicine, New York, NY, USA
+
+Mariana Pinto da Costa a,b,c
+
+a Unit for Social and Community Psychiatry, WHO Collaborating Centre for Mental Health Services Development, Queen Mary University of London, London, UK
+
+b Institute of Biomedical Sciences Abel Salazar, University of Porto, Porto, Portugal
+
+c Hospital de Magalh ã es Lemos, Porto, Portugal
+
+Ramdas Ransing
+
+Department of Psychiatry, BKL Walalwalkar Rural Medical College, Maharashtra, India
+
+Andre Luiz Schuh Teixeira
+
+Department of Childhood and Adolescent Psychiatry, Universidade Federal do Rio Grande do Sul, Porto Alegre, Brazil
+
+Mohammadreza Shalbafan
+
+Mental Health Research Center, Iran University of Medical Sciences, Tehran, Iran
+
+Joan Soler-Vidal a,b,c
+
+a Fidmag Research Foundation, Hermanas Hospitalarias, Barcelona, Spain b Hospital Benito Menni CASM, Hermanas Hospitalarias, Sant Boi de
+
+Llobregat, Spain
+
+c University of Barcelona, Barcelona, Spain
+
+[PAGE 3]
+Department of Psychiatry, Tarakan General Hospital, Jakarta, Indonesia
+
+Department of Clinical Neurosciences/DIMSC, School of Medicine, Unit of Clinical Psychiatry, Polytechnic University of Marche, Ancona, Italy

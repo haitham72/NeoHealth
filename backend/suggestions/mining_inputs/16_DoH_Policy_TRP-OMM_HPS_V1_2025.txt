@@ -1,0 +1,272 @@
+DOC_CODE: DoH/Policy/TRP-OMM/HPS/V1/2025
+TITLE: Thiqa reimbursement policy for obesity medications
+AUTHORITY: Department of Health - Abu Dhabi
+TIER: official
+VERSION: 1
+
+=== DOCUMENT TEXT ===
+
+[PAGE 2]
+Document Title:
+
+Document Ref. Number:
+
+New / Revised:
+
+Publication Date:
+
+Effective Date:
+
+Document Control:
+
+Applies To:
+
+Owner:
+
+Revision Date:
+
+Revision Period:
+
+Contact:
+
+Thiqa reimbursement policy for obesity medications
+
+DoH/Policy/TRP-OMM/HPS/V1/2025
+
+New
+
+June 11 , 2025
+
+June 11 , 2025
+
+DoH Strategy Sector
+
+- DoH licensed Healthcare Providers of Weight Management Services
+
+- Thiqa 's TPA.
+
+Healthcare Payers Sector
+
+September 2025
+
+Every 3 months after approved date for deployment for the 12 months, then annually
+
+Healthcare Payers Sector: HealthSystemFinancing@doh.gov.ae
+
+Version:
+
+V 1
+
+[PAGE 3]
+The  primary  objective  of  this  policy  is  to  regulate  the  coverage  for  pharmacological  therapies medically prescribed and used in obesity management within the Thiqa. This policy delineates the instances and conditions under which patients who benefit from obesity treatments are eligible for coverage of their medications. Furthermore, the policy outlines a system to promote and ensure healthier  lifestyles  for  patients,  while  mitigating  risks  such  as  medication  waste,  misuse,  and suboptimal health outcomes due to non-compliance. This document is not a guideline on a clinical management system, and it in no way replaces the clinical judgement of the clinician.
+
+For  clinical  management,  this  document  refers to  ' Standard  for  non-surgical  management  of obesity '
+
+[PAGE 3-5]
+The intended result of this policy is to provide coverage for effective weight management amongst patients  with  obesity,  and  particularly  patients  with  multiple  obesity-related  complications, enhanced overall health outcomes resulting from that, improved adherence to obesity management medications (incl. GLP-1 agonist treatment regimens), and an equitable prioritization of healthcare resources.
+
+Additionally, the policy aims to ensure that the coverage is regulated efficiently and effectively, ensuring patient safety and deterring non-compliance from the coverage. Regular monitoring and evaluation  will  be  conducted  to  assess  the  effectiveness  of  the  policy  and  make  necessary adjustments to optimize its impact.
+
+Improved adherence : Encourage patient adherence and compliance with the prescribed drug treatment regimen and activity requirements.
+
+Patient Safety: To ensure the prescribed drugs treatment are monitored by trained health care professional for tolerance and side effects.
+
+Optimized health outcomes : Promotes improved lifestyle, regular exercise and better management of obesity-related complications.
+
+Cost efficiency : Only patients who remain compliant are entitled to avail the coverage for obesity medication.
+
+Accessibility : Anchored in primary care model, ensuring broad access through obesity certified primary care physician.
+
+Thiqa patients will be covered for OMM where it is determined they have satisfied the requirements stated in the Standard for non-surgical management of obesity , and the criteria stated in this policy.
+
+This policy only applies to the adult population (aged 18 and above).
+
+The eligibility criteria apply for all OMM available, including, but not limited to, GLP-1 agonists and phentermine-topiramate combination therapies.
+
+[PAGE 5-6]
+Patients diagnosed and treated in line with requirements set in Standard for non-surgical management of obesity.
+
+BMI : Equal to or greater than 30, with specified requirements for obesity-related complications based on BMI level:
+
+BMI 30.0-34.9 must have one of the following complications:
+
+Cardiovascular & ischemic heart disease
+
+Asthma, severe (confirmed by pulmonologist)
+
+Arthropathy, disabling
+
+Dyslipidemia (severe, as demonstrated by high lipid levels)
+
+Hypertension
+
+Non-alcoholic fatty liver disease and steatohepatitis
+
+Obesity syndrome hypoventilation (Pickwickian syndrome)
+
+Obstructive sleep apnea, severe (as demonstrated by AHI > 30)
+
+PCOS with infertility (confirmed by gynecologist)
+
+Urinary incontinence, severe (confirmed by urologist)
+
+BMI 35.0-39.9 must have one of the following complications:
+
+Cardiovascular & ischemic heart disease
+
+Asthma (confirmed by pulmonologist)
+
+Arthropathy, disabling
+
+Dyslipidemia
+
+Hypertension
+
+Non-alcoholic fatty liver disease and steatohepatitis
+
+Obesity syndrome hypoventilation (Pickwickian syndrome)
+
+Obstructive sleep apnea
+
+PCOS with infertility (confirmed by gynecologists)
+
+Urinary incontinence, severe (confirmed by urologist)
+
+Vascular disease
+
+Severely reduced quality of life (determined by obesity multidisciplinary team)
+
+BMI 40.0 or above - no complications required
+
+Age: 18yrs & above
+
+Prescriber : To ensure compliance with eligibility criteria and coverage requirements, the prescription must be issued by one of the following physicians
+
+Primary care physician (family medicine physician) & Internal medicine with obesity management certification approved by DoH.
+
+Specialist physician with training and certification in obesity management (e.g., endocrinology, diabetology or similar)
+
+Cross check for effective treatment
+
+To assess the effective treatment and coverage, that patient should fulfil the following:
+
+Maintained weight loss: >5% weight loss compared to baseline (pre-treatment) weight.
+
+Sustained physical activity in line with best practice: Patient is mandated to meet any of the criteria below, unless there is a medical reason to lower or adjust the criteria temporarily.
+
+o 75 min vigorous exercise per week on average, defined as 70-85% of the individual's maximum heart rate
+
+o 150 min moderate exercise per week on average, defined as 50-70% of the individual's maximum heart rate
+
+o 10,000 steps per day on average
+
+o Individualized training or activity programs as mandated by physician or multidisciplinary team, in collaboration with other relevant healthcare professionals (only in cases where the patient's medical condition does not allow to meet the bar set of the above criteria)
+
+Exceptions: The prescribing physician may apply exceptions to weight loss >5% criteria for each period, (e.g., conditions which drive weight gain independently from caloric intake such as increase oedema), and activity criteria exception may apply if a medical reason hinders the patient from being active (e.g., hospitalization, bone fracture, severe arthrosis etc.).
+
+Compliance: Physicians must encourage patients to download the SEHANTA app (or any other compatible fitness application that synchronizes with SEHANTA) and utilize wearable devices to automatically report physical activity. The synchronized tracking report within the Malaffi portal is mandatory, ensuring documented evidence of effective treatment and securing continued program enrolment.
+
+If a patient is exempt or if the physical activity criteria are adjusted, these modifications must be reported either manually or automatically. Proper documentation and supporting evidence are required to maintain compliance.
+
+Additionally, further investigation criteria will be implemented to ensure adherence to compliance requirements, supporting continuous monitoring and policy enforcement.
+
+[PAGE 6-7]
+Registration: Once a patient has fulfilled the criteria under section 3.2 and indicates willingness to enroll in the obesity program, the prescriber will register the patient in the program and provide a one-month trial treatment
+
+Baseline : Prior to initiating OMM therapy, patient's baseline (pre -medication) body weight is measured and applied for later audit of treatment effect and adherence. If the patient has already been using OMM, the baseline will be the pre-medication weight recorded in electronic health records.
+
+Treatment : Patients are encouraged to counsel with licensed healthcare professionals (e.g., physiotherapist, doctor, nutritionist), within their regular health service providers as they see fit, to facilitate lifestyle change. Refer to Standard for non-surgical management of obesity.
+
+1-month initial trial : Upon initiating OMM therapy for eligible patients (see 3.2), patients are to be prescribed the selected medication for one month of supply (for coverage
+
+reimbursement refer to section 3.4)
+
+The purpose of this trial period is to ensure that the patient can tolerate the medication, with regards to the common side and adverse effects (e.g., nausea) which frequently cause patients to drop-off.
+
+Enrolment: following the completion of the trial, the patient may be prescribed up to a 3month supply by the prescriber, provided both the patient and prescriber agree to continue the treatment if it proves effective. (for coverage reimbursement, refer to section 3.4)
+
+[PAGE 7]
+At the end of the first 4-months of the program enrolment period, the prescriber will evaluate the effectiveness of the treatment. If it is effective, the patient will be covered and reimbursed for the dispensed OMM cost under the obesity program and subsequent treatment will be covered on direct billing. The effectiveness will be assessed based on the criteria (refer to 3.2.4).
+
+If the patient loses more than 5% of their initial body weight but has not complied with lifestyle changes condition:
+
+No reimbursement for the OMM for the initial 4 months dispensed.
+
+OMM will still be prescribed and covered for another 3 months on direct billing and the patients should comply with criteria (refer to 3.2.4)
+
+[PAGE 7]
+If the patient still doesn't meet all conditions (refer to 3.2.4):
+
+The patient will not be covered for OMM for subsequent months.
+
+The patient will be considered as having opted out due to ineffective treatment.
+
+Submission : All eligible patients who meet the coverage requirements of the Obesity program are required to apply to the Thiqa app, to receive their reimbursement of OMM cost as mentioned 3.4 . This ensures continuous support and adherence to the program's requirements for effective obesity management.
+
+Non-eligibility for coverage : If the criteria outlined in 3.4 are not met (not including exceptions outlined in the policy) the patient will not receive coverage as per the period mentioned above.
+
+[PAGE 7-8]
+Continuation : Once the patient is enrolled in the program, their coverage for OMM will continue as it was at the time of initiation, if the patient maintains the weight loss & BMI improvements and compliance with lifestyle changes i.e. effective treatments.
+
+Patients are eligible to continue receiving coverage of OMM cost for the maintenance dose, even if their BMI reaches 24.9 or below.
+
+Continuation of treatment to be determined at the discretion of the prescriber every 3 months and as per effectiveness criteria.
+
+Stopping criteria : To be determined at the discretion of the prescriber if the treatment is not effective.
+
+Drop-off : coverage of OMM costs necessitates a long-term commitment to ensure effective treatment. If a patient withdraws from the Obesity program without a valid medical reason or guidance from healthcare professionals, they will be opted out of the
+
+obesity program. However, patients may re-enroll in the program at any time, but they will have to start again from the beginning of the obesity program.
+
+[PAGE 8]
+Clear communication : Ensure that patients are fully informed about the treatment effectiveness criteria, coverage and reimbursement, lifestyle requirements, and consequences of non-compliance. This responsibility lies with all clinical parties involved.
+
+[PAGE 8]
+Activity criteria are recommended to be measured through a wearable device that monitors steps and heart rate (e.g., smartwatch, fitness tracker). It is expected that the patient, as advised by the prescriber, will connect the wearable device or health app to SEHATNA. This ensures tracking compliance with activity and lifestyle changes and enables monitoring of health metrics progression to ensure treatment effectiveness and enablement of coverage.
+
+For patients who do not have access to required technologies, and are particularly medically constrained, exceptional circumstances may be granted. These include manual monitoring of weight and food intake registration, and enrolment to weight management program which should have a monitoring scheme.
+
+The prescriber must provide clear justification based on patient assessment.
+
+Data collection : A robust data collection method to track patient adherence and outcomes are crucial for the success of the program.
+
+Data privacy and security : Ensure data collected through Sahatna app and other monitoring tools is securely stored and complies with data privacy regulations. Patients should be informed about how their data will be used and protected.
+
+[PAGE 8-9]
+If pharmacogenomics genotype report is available at the point of prescription, make sure to check the updated literature regarding pharmacogenomics.
+
+Ensure the Patient has signed and understood the content of the patient's consent, as per the newly developed standard. Please refer to the DoH relevant documents.
+
+This Policy applies to Thiqa and all DoH licensed Weight Management providers within the Emirate of Abu Dhabi.
+
+[PAGE 9]
+Non-Medical Use: The policy does not apply to the use of OMMs for non-medical purposes, such as cosmetic weight loss or enhancement. These medications are strictly regulated for medical use in managing obesity and related complications.
+
+Unapproved Indications: The policy excludes the use of OMMs for indications not approved by relevant health authorities. Off-label use is not covered under this policy unless supported by robust clinical evidence and sanctioned by regulatory bodies.
+
+Pediatric Patients: The policy does not apply to pediatric patients unless specific guidelines and approvals are established for this age group. The current focus is on adult patients with obesity.
+
+Pregnant or Nursing Women: The use of OMMs in pregnant or nursing women is excluded due to potential risks to the mother and child. Alternative weight management strategies should be considered for these populations.
+
+Patients with Specific Contraindications: Patients with known contraindications to specific medications, such as a personal or family history of medullary thyroid carcinoma or multiple endocrine neoplasia syndrome type 2, or a personal history of pancreatitis are excluded from this policy.
+
+History of intolerance to OMMs: Previous experience of adverse effects on a previous OMM of the same class
+
+[PAGE 9-10]
+Emergency Situations: The policy does not apply in emergency medical situations where immediate weight loss intervention is not the primary concern.
+
+Non-Healthcare Settings: The policy is not applicable in non-healthcare settings such as fitness centers, wellness spas, or other non-medical establishments.
+
+DoH-licensed providers who have eligible prescriber and Thiqa 's TPA must comply with the terms and requirements of Thiqa 's rules & regulations & the provisions of this Policy .
+
+DoH may impose sanctions in relation to any breach of requirements under this Policy in accordance with the
+
+DoH has put in place clear monitoring mechanisms to assess the policy.
+
+Performance will be evaluated based on mechanisms such as:
+
+Enrolment of patients (within scope of coverage)
+
+Rate of adherence to prescribed treatments
+
+Clinical outcomes, such as weight loss and reduction in obesity-related complications

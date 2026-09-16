@@ -1,0 +1,137 @@
+DOC_CODE: DoH/Policy/HCWS/HWG/V1/2024
+TITLE: Healthcare Workforce Governance Policy Template
+AUTHORITY: Department of Health - Abu Dhabi
+TIER: official
+VERSION: 1
+
+=== DOCUMENT TEXT ===
+
+[PAGE 3]
+1.1 Regulating the healthcare workforce is vital  to  the  success of Abu  Dhabi's healthcare ecosystem. Therefore,  this  document  seeks  to  establish  a  comprehensive  framework  of  principles,  priorities, objectives, processes, and outcomes to improve the quality of workforce regulations and enhance the safety of healthcare services provided by a skilled and agile workforce. The Department of Health has developed this policy to standardize the healthcare workforce regulations, processes and approaches in alignment with international, federal and local regulations, while actively involving relevant stakeholders.
+
+[PAGE 4]
+The DoH Policy for Health Workforce Governance follows the below principles:
+
+Evidence-Based : Regulations  shall  be  based  on  established  evidence,  including  data, research and international best practices (Appendix 1).
+
+Coherence and Transparency: Regulations shall aim to ensure seamless alignment and communication across the  healthcare  sector,  with  a  priority  on  transparency  (publicly accessible  information,  efficient  communication  and  collaboration  pathways  between internal and external stakeholders).
+
+Efficient and Effective Interventions: Regulations shall aim to optimize all aspects of the healthcare  professional 's life  cycle,  improving  work-life  balance,  reducing  processing times and strengthening monitoring and evaluation processes, all while achieving highquality care and patient experience.
+
+Consistent and Equitable: As a result, regulations shall be designed and implemented to promote standardized approaches across all aspects of healthcare.
+
+Accountability: The regulation process shall promote stakeholder and shared accountability.
+
+Proportionality: Regulations  are  based  on  risk  proportionality;  allowing  room  for innovation while maintaining necessary levels of patient safety (Appendix 2).
+
+Ethics: Regulations  shall  promote  a  culture  of  ethical  responsibility,  ensuring  ethical considerations  as  they  are  integral  to  decision-making,  patient  care,  and  the  overall conduct of healthcare professionals and providers, thus maintaining public trust.
+
+[PAGE 4]
+The Healthcare Workforce Governance Framework (HWGF) intends to sustain a highly skilled and agile workforce by promoting attraction and retention, supporting Emiratization, aligning clinical training and education programs with workforce and population needs, strengthening professional development programs, streamlining credentialing and licensing processes, increasing workforce upskilling opportunities, promoting clinical research, optimizing ethical practices, and enhancing the mental and physical well-being of the healthcare workforce in Abu Dhabi.
+
+The HWGF consists of 6 pillars, with Healthcare Workforce planning at its core (see Figure 1):
+
+[PAGE 4-5]
+Education
+
+Attraction
+
+3.2.2.1.1
+
+Competency
+
+Performance
+
+Retention
+
+[PAGE 5-6]
+Healthcare Workforce Planning
+
+Figure 1. Healthcare Workforce Governance Framework
+
+Plan healthcare workforce priorities and resource allocation (to address capability/capacity  gaps  and  meet  expected  needs)  through  a  continuous  process  of supply/demand  analysis,  talent  attraction,  and  ongoing  monitoring  of  the  market dynamics.
+
+Coordinate with stakeholders to ensure licensing, education, performance management, professional development, attraction, retention, and Emiratizations efforts are aligned with the overarching workforce plans and strategies.
+
+Enhancing Abu Dhabi's medical/healthcare education , as well as clinical training programs and opportunities.
+
+Align and coordinate with academic education and medical training regulatory bodies, such as the Ministry of Education, NHIS, NQC and CAA, to develop and accredit programs
+
+that address healthcare workforce gaps in the Emirate of Abu Dhabi.
+
+Develop  initiatives  and  collaborate  with  academic  education,  providers  and  medical training providers, as well as regulatory bodies, to encourage competition and ensure excellence.
+
+Create training opportunities for students and trainees.
+
+Set  minimum  quality  requirements  for  training  programs  and  promote  graduate onboarding.
+
+Launch initiatives tailored to the market needs to attract talents and contribute to the broader goal of stimulating the economy.
+
+Implement targeted marketing campaigns to raise awareness and promote interest in healthcare-related careers and in-demand professions among youth and students in Abu Dhabi, while also facilitating scholarship opportunities.
+
+Monitor the  absorption  rate  of  Abu  Dhabi-based  academic  institutes  and  clinical training programs.
+
+Continuously and steadily increases the Emiratization rate.
+
+Release  healthcare  workforce  market  analysis  forecast  to  encourage  investors contribution to the ecosystem.
+
+Create  an  environment  that  encourages  the  retention  of  talented  healthcare professionals.
+
+Optimize the efficiency of the licensing process.
+
+Participate in the continuous revision and development of the National Professional Qualification Requirement (PQR ).
+
+Collaborate with other health authorities to improve the effectiveness of healthcare professionals ' data exchange.
+
+Introduce fast-track licensure pathways  for eligible candidates to support healthcare workforce availability and placement.
+
+Create a licensure mechanism for the academicians involved in medical/healthcare academic programs to enable their contribution to the clinical training component and its outcomes.
+
+Continuously  update  the  healthcare  professionals ' licensing  examinations  and
+
+[PAGE 7-17]
+competency assessments to ensure the selection of targeted talents.
+
+Enhance the professional development and skills of healthcare professionals.
+
+Oversee health workforce performance and professional conduct.
+
+Ensure  a  high  level  of  ethical  accountability  for  the  safe  delivery  of  healthcare services.
+
+Review and update the Scope of Practice for healthcare professionals.
+
+Recommend healthcare workforce upskilling priorities, focusing on emerging skills and technologies such as data skills, Artificial Intelligence (AI) and Machine Learning, Genomics, Generative AI (GenAI), and others.
+
+Collaborate  with  relevant  stakeholders  to  design  customized  upskilling  programs that are informed by community needs.
+
+Apply  key  performance  indicators  and  measures  to  support  the  monitoring  of workforce performance.
+
+Promote professional and ethical responsibility and accountability.
+
+Develop  a  process  to  ensure  successful  reinstatement  of  disciplined  healthcare professionals.
+
+Promote the mental/physical health and well-being of healthcare professionals.
+
+Establish minimum standards to promote Healthcare workforce well-being.
+
+The DoH shall work with internal and external stakeholders to establish effective collaboration frameworks and clarify each party's roles and responsibilities in implementing and maintaining the initiatives, interventions, objectives, and policy priorities outlined in this policy.
+
+ The  DoH  will  provide  the  necessary  stewardship  and,  where  necessary,  ensure  that  the requirements set out in this Policy are met through its regulatory powers.
+
+ Abu  Dhabi  based  Healthcare  Ecosystem  Stakeholders:  Shall  collaborate  with  the  DoH  to streamline  the  efforts  aimed  at  optimizing  healthcare  workforce  governance  initiatives  and supporting the achievement of its objectives (see Table 1).
+
+Table 1. Roles and responsibilities of Stakeholders.
+
+5.1  This  policy  applies  to  all  stakeholders  within  the  Abu  Dhabi  healthcare  ecosystem,  including healthcare  providers,  healthcare  professionals  (physicians,  nurses,  pharmacists,  dentists,  allied healthcare  professionals),  government  entities,  academic  institutions  (universities  and  training facilities), and any other relevant entities.
+
+6.1 There are no exemptions to this policy.
+
+7.1 DoH may impose sanctions in relation to any breach of requirements under this Policy in accordance with the Disciplinary regulation of the Healthcare Sector.
+
+8.1 A monitoring and evaluation plan will be implemented alongside this policy instrument to ensure compliance and evaluate the effectiveness of its component. The DoH will serve as the primary regulator for these activities, setting key strategic KPIs aligned with strategic initiatives.  Relevant internal and external  stakeholders  are  expected  to  report  data  and  progress  against  the  policy  objectives  when applicable.
+
+Evidence-based Regulatory Approach Model
+
+Appendix 2
+
+Needs Assessment Pathway

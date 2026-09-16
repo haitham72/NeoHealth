@@ -1,0 +1,1162 @@
+DOC_CODE: DHA/HRS/HLD/MA-2
+TITLE: Manual for Licensing Healthcare Professionals
+AUTHORITY: Dubai Health Authority
+TIER: official
+VERSION: 1.3
+
+=== DOCUMENT TEXT ===
+
+[PAGE 1-2]
+Version (1.3)
+
+Issue date:
+
+18/07/2025
+
+Effective date:
+
+18/07/2025
+
+The Health Licensing Department (HLD) developed this Manual in collaboration with Subject Matter Experts and would like to acknowledge and thank these health professionals for their dedication toward improving quality and safety of healthcare services in the Emirate of Dubai.
+
+Health Regulation Sector
+
+Dubai Health Authority
+
+All rights ©  reserved by the Dubai Health Authority @ 2025. The contents of this document shall not be copied or reproduced in any form without prior written permission from the Authority.
+
+[PAGE 5]
+Health Regulation Sector (HRS) forms an integral part of Dubai Health Authority (DHA) and is mandated by DHA Law No. (14) of the year (2021) amending some clauses of law No. (6) of  2018  pertaining  to  the  Dubai  Health  Authority  (DHA),  to  undertake  several  functions including but not limited to:
+
+Developing regulations, policy, standards and guidelines to improve quality and patient safety  and promote the growth and development of the health sector.
+
+Licensure  and  inspection  of  health  facilities  as  well  as  healthcare professionals and ensuring compliance to best practice.
+
+Managing patient complaints and assuring patient and physician rights are upheld.
+
+Governing the use of narcotics, controlled and semi-controlled medications.
+
+Strengthening health tourism and assuring ongoing growth.
+
+Assuring management of health informatics, e-health and promoting innovation.
+
+The Manual for Licensing Healthcare Professionals aims to fulfil the overarching Dubai Health Sector Strategy 2026:
+
+Pioneering Human-centered health system to promote trust, safety, quality and care for patients and their families.
+
+Make Dubai a lighthouse for healthcare governance, integration and regulation.
+
+Become a global digital health hub.
+
+[PAGE 6-7]
+This document is a manual of the 'Licensing Healthcare Professionals'. The Manual was developed in collaboration with key stakeholders and health regulator experts. The current document has been updated considering the new relevant regulations published regarding the following:
+
+Federal Law no. (5) Of 2019 concerning the practice of the human medicine profession and its amendments
+
+Federal Law No. (5) Of 1984 regarding the practice of some medical professions by pharmacists and non-physicians
+
+Cabinet Decision no. (40) of 2019 concerning UAE Federal Law concerning Medical Liability
+
+Ministerial Decision no. (101) of 2022 concerning the amendment of the Unified healthcare Professional Qualification Requirements (PQR)
+
+Ministerial Degree No. (70) of 2024 concerning the amending of some articles in the Unified Healthcare Professional Qualification Requirements.
+
+Local Law no. (6) of 2018 concerning Dubai Health Authority and its amendment.
+
+Federal Law no. (6) of 2023 concerning the practice of Non-physicians and Pharmacists for Some Medical Professions.
+
+The aim of the manual is to provide a consolidated resource to assist HP and applicants in understanding and demonstrating compliance to the requirements and documentation to be submitted to Health Regulation Sector (HRS) while applying for a DHA HP license.
+
+DEFINITIONS
+
+Authorities:
+
+The  Regulatory  Authorities  within  the  United  Arab  Emirates  according  to  the
+
+geographical jurisdiction, Ministry of Health and Prevention (MOHAP), Department of Health -
+
+Abu Dhabi (DOH) and Dubai Health Authority (DHA).
+
+Continuing  Professional  Development:
+
+A  range  of  learning  activities  through  which  HPs
+
+maintain and develop their knowledge and skills throughout their career to ensure that they
+
+retain  their  capacity  to  practice  safely,  effectively,  and  legally  within  their  evolving  scope  of
+
+practice. CPD is also referred to as Continuing Medical Education (CME).
+
+Credentials:
+
+Are  the  documented  evidence  of  education/  qualifications,  registration/  license,
+
+training/ experience, and other documents that are required to check the eligibility of the HP to obtain
+
+a license.
+
+Discontinuity in practice:
+
+Dubai  Medical  Registry:
+
+An interruption of clinical practice exceeding two (2) years as per PQR
+
+[PAGE 7-9]
+.
+
+Dubai  medical  registry  is  a  public  database  maintained  by  DHA,  which
+
+includes details of both licensed HPs as well as registered HPs.
+
+Experience:
+
+Hands on clinical experience gained by a licensed healthcare professional during a salaried
+
+employment/contractual period and it excludes volunteer jobs, observership, or clinical attachment.
+
+Good  Standing  Certificate:
+
+A  certificate  showing  evidence  that  the  healthcare  professional  is
+
+competent to practice the profession, has not been found guilty of unprofessional conduct, and that
+
+Issue Nu:
+
+version 1.3
+
+18/07/2025
+
+Effective Date:
+
+18/07/2025
+
+Page 7 of 54
+
+there are no pending or previous disciplinary orders or criminal proceedings against the healthcare
+
+professional. The same licensing authority of the healthcare professional registration / license must
+
+issue the certificate.
+
+Healthcare Professional:
+
+A person who by education, training, certification and licensure is qualified
+
+to provide healthcare services.
+
+License:
+
+A permission granted by an authority to practice a healthcare profession.
+
+Logbook:
+
+A typed comprehensive record from physicians and dentists with surgical specialties for the
+
+last two (2) years demonstrating clinical competence through mixed major cases, signed, and stamped
+
+by the medical director of the facility or the head of department, mentioning the name, date, and total
+
+number of procedures performed within the mentioned period.
+
+Medical  Fitness  Certificate
+
+:  A  report  issued  by  medical  fitness  centres  within  the  last  three  (3)
+
+months confirming that the applicant/ HP is medically fit to practice.
+
+Discrepancy Result:
+
+Position:
+
+A verification result indicating negative feedback of the submitted credentials.
+
+The term describing the applicant/ HP designation which consist of Category, Title, and
+
+Specialty.
+
+Positive  Result:
+
+A  verification  result  indicating  that  all  submitted  credentials  have  been  verified
+
+successfully from the primary issuing source.
+
+Issue Nu:
+
+version 1.3
+
+Page 8 of 54
+
+Primary  Source  Verification
+
+:  A  process  of  validating  documents  required  for  licensure  from  the
+
+issuing organization. PSV can be referred to as Document Verification.
+
+Qualification
+
+: Educational evidence granted by universities, colleges, academic institutes or schools
+
+that are nationally accredited or formally recognized.
+
+Registration
+
+: First step into obtaining the license, DHA registration confirms the HP eligibility for the
+
+applied position. HP registration must be activated into a license by a hiring facility in order to start
+
+practicing a health profession.
+
+Sheryan
+
+: is the DHA digital platform/ e-licensing system for registering and licensing HP and facilities
+
+in Dubai.
+
+Unable to Verify Result:
+
+A verification result indicating an incomplete verification process related to
+
+[PAGE 9-11]
+failure in providing all necessary credentials, and/or applicant is not responding to verification agency,
+
+and/or certain issues related to the issuing body.
+
+Professional  Qualification  Requirements  (PQR):
+
+a  unified  document  developed  and  issued  in
+
+collaboration with the regulatory authorities in UAE on the 10 th  of October 2014, which sets the
+
+professional qualification requirements necessary to license HP in the UAE and transfer of license
+
+requirements across the Emirates.
+
+Issue Nu:
+
+version 1.3
+
+Page 9 of 54
+
+CME:
+
+Continuing Medical Education
+
+CPD :
+
+Continuing Professional Development
+
+DHA:
+
+Dubai Health Authority
+
+DOH:
+
+Department of Health - Abu Dhabi
+
+GSC:
+
+Good Standing Certificate
+
+HF:
+
+Health Facility
+
+HP:
+
+Healthcare Professional
+
+MOHAP:
+
+Ministry of Health and Prevention
+
+MOU:
+
+Memorandum of Understanding
+
+MPC:
+
+Medical Practice Committee
+
+PQR:
+
+Professional Qualification Requirements
+
+PSV:
+
+Primary Source Verification
+
+TCAM:
+
+Traditional Complementary and Alternative Medicine
+
+UTV:
+
+Unable to Verify
+
+SHA:
+
+Sharjah Health Authority
+
+DHA is responsible for ensuring the provision of safe, effective, ethical and high-quality healthcare in the Emirate of Dubai. All HPs licensed by DHA, require to follow licensing procedures which ensures  possession  of  minimum  degree  of  competency  and  verifying  that  HP  meets  certain standards and predetermined criteria such as education, examination and experience.
+
+Licensure processes needed for obtaining a HP license in DHA and its related professional services
+
+To ensure that the documents submitted for licensure to the Health Licensing Department are adequate and fulfil the requirements stipulated in the Unified healthcare Professional Qualification Requirements (PQR) and are in accordance with the applicable federal and local laws.
+
+To ensure that highly skilled and competent HPs are licensed to practice and provide safe and high-quality health services to the population of Dubai.
+
+Applicant requesting to obtain HP licensure.
+
+DHA licensed HP and HF applying for professional services.
+
+Issue Nu:
+
+version 1.3
+
+[PAGE 12]
+This  manual  shall  be  read  in  conjunction  with  the  Unified  Healthcare  Professional Qualification Requirements (PQR), its updates, and other regulation listed in the executive summary.
+
+All HPs must be licensed in order to provide healthcare services in the emirate of Dubai.
+
+All healthcare professionals should meet qualifications, experience, licensing from their home country, good standing status, assessment, and primary source verification requirements as stipulated in the PQR.
+
+The applicant shall be responsible for declaring any disciplinary action, proven or in process, when submitting his/her application for DHA review
+
+Health Licensing Department at the Health Regulation Sector shall review the eligibility of the applicant for the applied titles.
+
+HP Licensing shall be issued following the below steps: ( Figure 1 )
+
+[PAGE 12-14]
+Create a Sheryan account and do self-assessment
+
+Fulfil  the  PQR  requirements  (Such  as  Qualification,  clinical  experience,  license  from home country and good standing status from the country of practise)
+
+Obtain a Positive Primary Source Verification (PSV) result.
+
+Pass the assessment requirements as per PQR and relevant manuals therein (CBT or Oral). Oral assessment step is carried after registration application
+
+Issue of Professional Registration Certificate.
+
+HP shall comply with limitation indicated in the issued registration or license card, scope of service, licensure requirement related to professional and to code of conduct.
+
+Activate HP license by an employer who should hold a valid DHA license as a health facility , which must be valid and uploaded in the 'Sheryan' system. In case of any change in  demographic details (name, Place of birth, nationality, etc), supporting documents must be provided in the application (e.g. marriage certificate, etc.).
+
+All  required documents must be submitted as original copies, along with a certified  legal translation if the original is not in English or Arabic.
+
+For certain qualifications, DHA may require a certificate of equivalency from the Ministry of Education - UAE.
+
+Medical  malpractice  insurance  (Professional  Liability  Insurance)  must  be  maintained throughout the HP's practice and must indicate the name of HP, specialty, employing facility and insurance coverage. Failure to provide official proof of medical malpractice insurance
+
+that should cover the validity period of the professional license, may result in disciplinary action against the HF and/or HP
+
+An official and signed malpractice insurance and employment contract should be available at all times for audit purposes.
+
+The HP is not entitled to practice under any of the following conditions:
+
+Facility license is inactive.
+
+Active professional registration without activating the professional license
+
+[PAGE 14-17]
+Facility or related specialty is temporarily or permanently closed.
+
+Facility or related specialty license has expired.
+
+Facility or related specialty license is suspended or revoked.
+
+Professional license is expired.
+
+Professional Part time license status changed to inactive due to cancelation of full-time license.
+
+Failure  to  practice  the  profession  for  a  period  of  six  consecutive  months  during  the validity period of DHA license without an excuse accepted by DHA. In this case, a new license to practice the profession must be obtained.
+
+Assistant allied HP cannot work independently and shall work under a licensed allied HP of the main speciality.
+
+Assistant  nurses  cannot  work  independently  and  shall  work  under  a  licensed  Registered Nurses. Only in Dental Clinics, the Assistant Nurse can assist the dentist without presence of registered Nurse.
+
+HF must ensure the full-time supervision requirements are met as set out in ( Appendix 1 ).
+
+A physician or dentist with surgical specialties working full-time at an outpatient facility for 2 years or more, may not be able to join a hospital or a Day Surgical Center (DSC) as fulltime or part-time without being involved in surgical practice (by providing a surgical logbook) for the last 2 years.
+
+License types are classified as full time or part time, where first DHA license is always a fulltime license.
+
+All HPs requesting a part-time license shall obtain approval by the full-time licensing facility medical director through Sheryan system.
+
+The number of part-time licensures allowed for HPs are listed in ( Appendix 2 ). This approval does  not  exempt  the  part  time  professional  from  obtaining  the  approvals  from  relevant authorities as deem required
+
+The part - time license(s) will be set as inactive when the full-time license is cancelled until expiry unless one of the following actions are undertaken:
+
+A new full-time license is activated, and the medical director approves the part-time license (part-time license validity remains the same).
+
+The part-time facility applies to convert the license to full-time within three (3) months from cancelation. (New license will have the same validity of the previous part-time license).
+
+The HP can practice at group branches of the full-time licensing facility, provided that branches have been added and approved as one group in Sheryan. A part time HF shall not allow the part time HP to work under their group branches without obtaining an additional part time license(s).
+
+A part time HF may activate a part time license for a specialty title that is not activated under the professional's full -time license.
+
+Physicians and dentists in surgical specialties should provide a surgical logbook documenting sufficient  procedures  and  cases  that  cover  the  common  aspects  of  their  specialty  as  a prerequisite for licensing.
+
+Applicants  for  the  Interventional  Radiology  title  must  meet  PQR  requirements,  including submitting a logbook documenting at least 300 cases completed as first or only operator.
+
+Applicants for the Interventional Cardiology title must meet PQR requirements, including submitting a logbook documenting at least 200 angioplasty cases completed as first or only operator.
+
+In certain circumstances, DHA reserves the right to request further additional requirements as deemed necessary.
+
+5.24.
+
+DHA may take the necessary action on the application/registration/license in the following
+
+conditions (including but not limited to):
+
+·
+
+·
+
+·
+
+[PAGE 17-20]
+Have  been  subject  to  any  disciplinary  action  or  restriction  to  practice  or  pending
+
+investigation or any history of revoked/suspended/blacklisted professional license.
+
+Have  been  denied  an  application  for  a  medical  license,  whether  full,  limited,  or
+
+temporary.
+
+Have lost or denied required recertification by any specialty board or any jurisdiction.
+
+Have  been  charged  with  criminal  offence  or  been  prosecuted  and/or  convicted  by court/tribunal.
+
+Have been diagnosed with or treated for a medical condition that in any way currently limits or impairs his/her ability to practice.
+
+Have been charged with malpractice related to ethical or professional conduct in the practice of the profession.
+
+Failure to declare information about pending or confirmed malpractice issued by other regulatory bodies.
+
+·
+
+Evidence of discrepancy/ Negative PSV report.
+
+Applicants  are  liable  for  any  false,  untrue,  misleading,  misrepresented  information  or
+
+documents.
+
+5.25.
+
+Failure to declare the number of failure assessment attempts conducted through the all UAE authorities and failure to announce that the number of failure attempts exceeded the (3) three attempts cross all UAE authorities, including DHA assessments.
+
+The HP name will be added in DHA blacklist system in the following conditions:
+
+Negative PSV report.
+
+License suspended/revoked by DHA.
+
+License suspended/revoked by other Authorities.
+
+Blacklisted by other Authorities.
+
+Submitted incorrect information or falsified documents to DHA
+
+A valid medical fitness report shall be required for the following:
+
+Applicants who have any physical, mental or emotional condition, which may impair their ability to provide healthcare services.
+
+License activation and license renewal applications where the HP is 65 years or above.
+
+Medical fitness certificate is accepted for 2 years, provided that:
+
+the HP does not have a positive result of any infectious disease or medical conditional that impacts his ability to provide clinical services safely.
+
+The certificate does not indicate a specific period for follow-up or reassessment.
+
+All healthcare professionals at a minimum must maintain valid training/certification in basic Cardiopulmonary Resuscitation (CPR) or Basic Life Support (BLS) or Advanced Cardiac Life Support (ACLS) as deem fits.
+
+In addition to the PQR requirements, Anaesthetists are required to submit ACLS certificate on  new  application,  renew  professional  license,  renew  professional  registration  or  upon applying  for  Add/  Upgrade  professional  registration  service.  is  required  for  Anaesthesia doctors.
+
+HPs who have completed the residency program in Dubai Health facilities, may be exempted from DHA GP assessment provided that they meet the following criteria:
+
+To submit a certificate of completion of residency program successfully.
+
+The residency should be completed in the government sector in Dubai (Dubai Health/MBRU).
+
+The residency should be in one of the accepted specialties for GP title according to the PQR (such as Cardiology, Critical Care Medicine, Emergency Medicine, Family Medicine, General Surgery, Internal Medicine, Obstetrics and Gynaecology, or Paediatrics).
+
+The residency program should be completed within the last 2 years with NO gab in practice.
+
+To submit DHA GSC.
+
+UK medical graduates who have completed the Foundation 1 and 2, are required to complete a third year of experience postgraduation to apply for GP title.
+
+HPs  currently  licensed  with  other  authorities  in  UAE  and  requesting  a  higher  title,  are required  to  complete  the  upgrade  process  with  relevant  authorities,  however  DHA  may review the request provide the following are met:
+
+Fulfilling all PQR requirements.
+
+Submit proof of license cancellation with other authorities
+
+DHA  has  the  right  to  request  documents  as  deemed  necessary  but  not  limited  to: Membership, internship, residency, Training Certificate.
+
+DHA has the right to cancel the professional license if it is discovered that the professional has submitted any misleading documents or evidence.
+
+DHA reserves the right to hold or reject any professional licensing application if the HP has any outstanding payments on either their professional account or the facility account, they own.
+
+The healthcare professional should notify and declare DHA all disciplinary actions against his/her practice, both within and outside the UAE, at the initial licensing stage, during the licensing renewal stage and upon receiving the decision from relevant authority.
+
+All  applications  must  be  submitted  through  the  Sheryan  licensing  system.  Manual applications or those received by email are not acceptable.
+
+Issue Nu:
+
+version 1.3
+
+Page 20 of 54
+
+[PAGE 21-22]
+PSV  is  currently  delegated  by  DHA  to  a  third-party  professional  verification  agency  to validate  the  required  documents.  The  outcome  of  the  verification  could  be  one  of  the following
+
+Positive Result.
+
+Unable to Verify (UTV) Result.
+
+Discrepancy Result.
+
+In  case  of  UTV  result,  the  applicant  may  apply  for  re-verification  (appeal)of  the  same document twice. For discrepancy result, the applicant may apply for re-verification (appeal)of the same document once.
+
+DHA accepts transferred PSV reports from other regulatory authorities in UAE (DOH, SHA & MOHAP) and DHA reserves the right to request further verification as deem necessary.
+
+The  professional  intended  to  obtain  registration  must  ensure  verifying  all  the  required documents. If documents received directly and officially from the source of insurance then this document will not require verification.
+
+The following documents in general required for verification:
+
+Qualification documents
+
+Experience/Employment documents
+
+License/registration documents
+
+Logbook (for Physician with surgical specialities)
+
+Good standing certificate (s)
+
+Exam exemption proof, if applicable as per the PQR.
+
+[PAGE 22-24]
+This article should be read in conjunction with manual for professional assessment
+
+Depending on the applied position, assessment could be either a Computer Based Testing (CBT)  or  an  Oral  Assessment.  Note  that  there  is  always  update  on  assessment  being converting oral exams to CBT. CBT guideline is being updated periodically
+
+All applicants shall be given three (3) attempts to successfully pass the assessment modality. Failure to pass upon the third attempt shall result in blocking the applicant from reapplying for DHA license for two years. Fourth attempt could be allowed with permission in any UAE Health authorities (This rule cannot be applied for upgrading to Consultant title from tier 3 qualifications). The applicant must declare the number of examination attempts he/she has undertaken across the Authorities.
+
+Fourth assessment attempt can be conducted with DHA by submitting the request online and uploading a signed confirmation letter from the applicant of total number of assessment attempts made and failed with other health authorities in UAE. The request is subject for DHA review.
+
+As per the published unified PQR, the applicant is allowed to reapply and sit for a total of three  (3)  new  attempts  if  additional  recognized  certificate/qualification  is  obtained  or  a minimum  of  two  (2)  years  clinical  licensed  experience  have  been  acquired  post  the  last attempt of the exam.
+
+Applicant who has met the practice gap requirements and passed DHA assessment over 2 years ago. Applicant will be required to attend new assessment.
+
+Applicant who has met the practice gap requirements and passed DHA assessment within than 2 years. Assessment record to be considered and no need to go for new assessment.
+
+Assessments exemptions apply as per the PQR criteria in addition to the following:
+
+Applicants who passed DHA assessment for the same title within five (5) years from the date of obtaining the registration, provided no gap in practice.
+
+Professionals that are maintaining an active registration.
+
+Professionals applying within Five (5) years from DHA professional license cancellation date will be granted the same position, provided no gap in practice.
+
+Professionals applying within Five (5) years from MOHAP/DOH professional license cancellation date will be granted the same position, provided no gap in practice and fulfilling PQR requirements.
+
+Professionals with trainee license title, however applicant has to pass DHA assessment upon applying for upgrade license title.
+
+Applicants  may  apply  for  a  re-assessment  with  no  restriction  on  duration  between  the attempts and according to assessment availability process.
+
+The  results  report  will  indicate  a  'pass'  or  'fail'  without  details  of  the  result  of  the assessment.
+
+The cancellation or failure to attend CBT or oral assessment will not be considered a failed attempt in the assessment.
+
+Applicant with approved get registered application requiring oral exam, the applicant shall apply for this service 'oral assessment' in order to complete the registration.
+
+For  scheduling  oral  assessment,  the  applicant  shall  select  the  available  date  for  oral assessment or select a specified desirable date range, submit the application, and pay the required fees for DHA review.
+
+For  scheduling  oral  assessment,  the  applicant  shall  select  the  available  date  for  oral assessment, submit the application, and pay the required fees for DHA review. If dates are not available, there will be an option to select a specific desired date range which subject for DHA review and confirmation.
+
+DHA will confirm the assessment date based on availability and might be subject to change.
+
+Applicant is required to attend the assessment and complete the session.
+
+Only applicant with pass assessment result will obtain DHA registration certificate.
+
+Applicant with fail result may apply for Two (2) additional attempts through new schedule oral assessment applications where new assessment fees shall apply.
+
+Applicant may request to reschedule the assessment for one time only in case the request is submitted more than 5 working days prior to the confirmed exam date, at no additional cost. If  reschedule  request  is  submitted  within  5  working  days  of  confirmed  exam  date,  the applicant is required to pay new assessment fees.
+
+[PAGE 25]
+The following licensing services are available through online licensing system (Sheryan):
+
+Self-Assessment Tool and Review Eligibility.
+
+Get Registered (New Professional registration).
+
+Schedule Oral Assessment.
+
+Renew Professional Registration.
+
+Activate Professional License.
+
+Add/ Upgrade Professional Registration.
+
+Add/ Upgrade Professional License.
+
+Renew Professional License.
+
+Update CPD points.
+
+Request Good Standing Certificate/License Details Verification.
+
+Update Professional License Card Information.
+
+Cancel Professional License.
+
+Raise license cancelation issues.
+
+Issue Sick leave 'Please refer to Sick Leave Certificate & Escort leave policy"
+
+Payment of fine
+
+Temporary permit to practice
+
+[PAGE 26]
+Applicants shall complete the self-assessment tool and fulfil the PQR requirements for the selected professional title/Specialty.
+
+Self-assessment tool is a free preliminary evaluation result, and the application is required to be submitted for DHA review to confirm the eligibility.
+
+The applicant shall fill the tool with accurate and valid information.
+
+No need to upload any document during the self-assessment process.
+
+Applicant with eligible result is required to apply for get registered service.
+
+Applicant with not eligible result will follow below process:
+
+Apply for review eligibility service.
+
+Fill the online form, attach required documents.
+
+Submit the application and pay the required fees for DHA review.
+
+Applicant with approved review eligibility application shall apply for get registered (New Professional License) service.
+
+[PAGE 26-28]
+Applicant will be able to access this service with eligible result in the self-assessment tool or an approved review eligibility application.
+
+The applicant must complete the prerequisites, PSV & CBT Exam. (CBT if required)
+
+Applicant shall submit the documents for Primary Source Verification (PSV) which include but not limited to the following:
+
+Educational qualification(s).
+
+Experience/employment certificate(s).
+
+License(s)/Registrations(s).
+
+Good standing certificate not older than 6 months from application submission date.
+
+Exam exemption proof, if applicable as per the PQR.
+
+Logbook (for Physician with surgical specialities).
+
+Any other relevant document(s) requested by DHA.
+
+Applicant shall pass DHA computer-based test (CBT), if required.
+
+Both PSV and CBT steps can be done simultaneously.
+
+Get Registered application cannot be processed unless the completion of PSV report and passing CBT assessment (If required).
+
+Applicant will be required to fill the online form, link the verified PSV document and pay the required fee for DHA review. (please refer to Get Registered Process above)
+
+The applicant requires to upload the following;
+
+Recent passport size Photograph.
+
+Valid passport copy.
+
+Application  review  will  reveal  in  approval  or  rejection  or  will  be  return  for  the  following actions:
+
+Request for additional documents/information, assessment, or PSV.
+
+Change the requested title.
+
+Set a trainee restriction, based on lack of required experience or discontinuity of practice as per PQR criteria.
+
+Add limitations to the applicant's license to practice based on applicant credentials.
+
+Based on the professional specialty, the applicant with approved get registered application may require an oral assessment.
+
+In  case  oral  assessment  is  not  required,  the  applicant  with  approved  get  registered application will receive registration certificate and the professional name will be listed on Dubai Medical Registry.
+
+The validity of the registration is one year from the date of issuance.
+
+The professional with below conditions are not entitled to apply for registration:
+
+Blacklisted professional, or Pending and negative PSV result, Professional failed three times across the UAE authorities.
+
+Only the following licensed healthcare professionals (HPs) are eligible to apply for the Beauty Therapy/Aesthetician title after meeting the relevant licensing requirements:
+
+Registered Nurse
+
+Assistant Nurse
+
+·
+
+Laser Hair Reduction Therapist
+
+10.14.1
+
+If any other category of licensed HP
+
+wishes to obtain the Beauty
+
+Therapy/Aesthetician title, they must first cancel their existing specialty license.
+
+Holding and activating both licenses simultaneously is not permitted.
+
+Issue Nu:
+
+version 1.3
+
+[PAGE 29]
+Activation of the license is applied though the facility Sheryan account.
+
+[PAGE 29]
+Healthcare Facility license should be Active and should have the healthcare professional related speciality
+
+Healthcare  Professional  are  required  to  be  registered  and  should  grant  the  facility consent on being licensed
+
+Valid medical fitness report for professionals who are 65 years or older
+
+Valid labour card (for non-UAE nationals)
+
+HP is required to accept the facility request to activate the professional license.
+
+Activation for Professional License can be for one, two and three years. During the period, the professional shall comply with CPD and malpractice requirements.
+
+The HP can approve license activation invites from several facilities, and the full-time license will be activated on the facility that completes the payment first.
+
+The HP reserves the right to withdraw their approval as long as the facility has not completed payment for the activate professional license service.
+
+The HP must have Medical malpractice insurance where license being activated.
+
+Logbook is required only for Surgeons licensed in outpatient healthcare facility for more than 2 years and applying for a part-time license in a Day Surgical Center or Hospital
+
+[PAGE 30]
+Maintaining an active registration secures the approval position without the need for reassessment (providing there is no discontinuity on practice), in addition to being listed in Dubai Medical registry.
+
+If  the  registration  was  not  activated  to  a  license  within  the  validity  period,  the  HP  is responsible to renew the registration, otherwise the registration shall be cancelled and a new registration application shall be started by the applicant if required.
+
+The HPs can apply to renew their registration within 90 days before the expiry date of the registration of the professional's license.
+
+Experience, valid license and good standing certificate documents are required to be verified and submitted in the following conditions:
+
+Previous verified experience is older than 2 Years.
+
+DHA license cancelled more than a year.
+
+The applicant will require to upload valid passport copy (if not previously updated on the system).
+
+Professional with revocation or backlist will not be entitled to apply for this service.
+
+[PAGE 30-33]
+This service allows HPs to update their registration into a higher title, add a new registration position, remove limitation or remove trainee restriction.
+
+Adding or upgrading the registration will require the applicant to ensure fulfillment to new registration. Self-assessment can be utilized to assess eligibility.
+
+HP  applying  for  the  service  must  have  active  registration.  Revoked,  Suspended  and backlisted HPs will not be eligible for this service.
+
+The HP shall apply online and, submit the required documents as per the PQR, and provide GSC issued by DHA with No disciplinary history of revocation or suspension for the last 10 years.
+
+Professional with 'notice letter' or 'warning Letter' can apply after 2 years letter issuance (Except HP with Tier 3 qualification applying for Consultant title).
+
+Physicians and dentists seeking to upgrade their license to a consultant title with a 'Tier 3' qualification may apply if they have no history for 'notice letter' or 'warning Letter' within the past five years and have met other PQR requirements.
+
+To  check  the  eligibility  of  HPs  with  disciplinary  history,  please  refer  to APPENDIX-5 Eligibility  of  HPs  with  disciplinary  history  to  apply  for  Add/  Upgrade  Professional Registration Service
+
+The  applicant  may  require  passing  an  examination  in  order  to  get  the  added/upgraded registration.
+
+For Implantology privilege or Laser Dentistry, the dentist shall hold valid DHA license and fulfil the licensing requirements, please refer to APPENDIX-4 DENTAL IMPLANTOLOGY AND LASER DENTISTRY REQUIREMENTS
+
+DHA  Licensed  Plastic  Surgeons,  can  upgrade  their  license  to  add  hair  transplant privilege after fulfilling the requirements below:
+
+Acquire an accredited physician certificate in hair transplant/ restoration surgery from one (1) of the following certifying bodies:
+
+American Board of Hair Restoration Surgery (ABHRS)
+
+Fellow International Society of Hair Restoration Surgery (FISHRS).
+
+The certificate must be no older than three (3) years. If it exceeds this timeframe, the HP should provide documented experience and a logbook showing continuous practice in hair transplant procedures.
+
+Plastic Surgeons applying to upgrade their license to add hair transplant, not required to set for exam or providing log book.
+
+DHA licensed Dermatologists,  General  Surgeons  and  General  practitioners  can  upgrade their license to add hair transplant privilege after fulfilling the requirements below:
+
+Acquire an accredited physician certificate in hair transplant/ restoration surgery from one (1) of the following certifying bodies:
+
+I. American Board of Hair Restoration Surgery (ABHRS)
+
+ii. Fellow International Society of Hair Restoration Surgery (FISHRS)
+
+Have  at  least  two  (2)  years  of  recent  experience  in  hair  transplant  along  with  a logbook of the number of cases for procedures performed and the outcomes. (With the exception  of  General  practitioners,  whom  shall  require  a  total  of  five  (5)  years'
+
+experience  in  their  field  of  practice,  in  addition  to  the  2  years'  experience  in  hair transplant).
+
+Complete DHA assessment
+
+All healthcare professionals performing hair laser procedures will require having a separate DHA license for hair laser procedures.
+
+The healthcare professionals listed below can provide hair laser and IPL supervision after obtaining separate DHA license for Laser Hair Reduction privilege:
+
+Consultant/ Specialist Family Medicine.
+
+Consultant/ Specialist Internal Medicine;
+
+General  Practitioner  with  not  less  than  five  (5)  years'  experience  in  non -surgical cosmetic procedures
+
+The above listed HPs shall meet the criteria below:
+
+Submit an accredited laser training course for hair reduction - not older than 2 years.
+
+Proof of completing Ten (10) hands on training cases during the same course.
+
+·
+
+Pass DHA assessment
+
+[PAGE 33-34]
+This  service  allows  Healthcare  Facilities  to  update  the  licenses  of  their  Healthcare Professionals who upgraded their titles or added new positions on their registrations. Any updates made to the Healthcare professionals' registration can be applied to their license without effecting the expiry date.
+
+13.14.
+
+The HP's license can be updated by the full or part time licensing HF providing the specialty is available within the facility's license.
+
+Updating the HP license does not impact the validity of the license.
+
+To upgrade a Trainee license, the license must be cancelled first then re-activated once the professional completes the registration upgrade process
+
+Valid passport copy must be uploaded (in case not updated).
+
+[PAGE 34-35]
+This service allows healthcare facilities to renew their full-time or part-time professionals' licenses. The validity of the license is extended from expiry date to the chosen validity period.
+
+Professional license can be renewed for one year, two years and three years.
+
+HP must achieve CPD (Physicians & Dentists 40 point, Nurses 20 point, Allied Healthcare & TCAM 10 point, Pharmacists 20 point) annually . For license renewed for two or three years, CPD hours will be calculated accumulatively (Example: For a physician who has renewed his professional license for 3 years, he will be required to submit (120 points) before the license expiry date.
+
+The HF shall apply for renewal of a HP license within three (3) months of its expiry.
+
+HP with unachieved required CPD hours will not be able to apply for license renewal.
+
+Expired DHA license can be renewed within six (6) months from the expiry date once applied online, fulfilled the requirements and late renewal penalty paid. The clinical practice of the professional is not permitted during license expiry period.
+
+The professional license shall be cancelled in case the HP does not practice his profession for a period of (6) six consecutive months during the validity period without an acceptable excuse from DHA. In this case, a new license to practice must be obtained after fulfilling the licensing requirements.
+
+If  part-time  /  trainee  license  is  not  renewed,  the  license  will  be  set  to  cancelled  with  no penalties and without the options for renewal.
+
+Trainee license cannot be renewed beyond the trainee restriction period.
+
+Logbook to uploaded by surgeons every 2 years during upon the license renewal process. Log book document should be officially presented with Facility logo, the name of surgeries/procedure, the date, stamped by medical director or verified electronically.
+
+If the surgeon is not able to provide a logbook, DHA have the right to restrict the surgeon's practice or direct him/her to train as they deem necessary appropriate.
+
+[PAGE 35-36]
+HP not meeting PQR experience criteria can be issued trainee title that should be activated into a licensed facility with approved clinical training service and under supervision of clinical supervisor, until the required experience is completed.
+
+For Resident/ Intern title, the applicant shall upload proof of acceptance into the residency or internship program either from DHA or Dubai Health.
+
+For Trainee title, the applicant shall submit an acceptance letter from one of the approved practice settings. The list is published on DHA website
+
+https://www.dha.gov.ae/uploads/032024/List%20of%20Approved%20Clinical%20Trai ning%202024328574.pdf
+
+A HP with a full-time license can have an active trainee license for a different position.
+
+After completion the training, residency or internship programs, the professional license shall be cancelled then the HP can apply for new application with the desired title after fulfilling the PQR requirements.
+
+The training facility is responsible to assign a new clinical supervisor upon cancelling the fulltime license of current clinical supervisor within one (1) month. Otherwise, the following shall apply:
+
+Trainee license shall remain active for one (1) month.
+
+Past the one (1) month period, the trainee license shall be set to inactive status for one (1) month.
+
+After that, the trainee license shall be cancelled.
+
+[PAGE 36-39]
+A Temporary Permit to Practice is a time-limited authorization granted by DHA to Health Facility for a healthcare professional who have met certain preliminary requirements with Justification but have not yet obtained their full professional licensure, nor indicate eligibility of  the  professional  to  obtain  DHA  professional  license  to  practice.  This  permit  allows healthcare professionals to practice their profession under supervision with limitations for a specified period of time in the licensed Health Facility.
+
+The purpose of this permit is to issue professional license for visiting or highly qualified professional to practice the profession as in demand. The reasons could vary and subject for DHA Approval.
+
+The facility Medical Director from the Healthcare Facility's account will be able to apply for a Temporary Permit to Practice for any unregistered professional under DHA.
+
+The Medical Director shall apply online with supported documents as below:
+
+valid copy of the passport is required for the related professional.
+
+A valid Emirates ID if it is available (Optional).
+
+Personal Photo.
+
+Specialty  degree  certifications  are  required  for  the  related  profession  and  shall  be recognized as per the PQR.
+
+License from the original country. For Residents and Interns positions, applicants are not required to submit a license copy.
+
+CV copy.
+
+Justification letter for permit (subject to DHA review and approval).
+
+Additional Documents (if requested).
+
+The Temporary permit is Non-renewable nor transferable.
+
+The temporary permit to practice does not require passing the assessment or obtaining positive PSV
+
+Professional  obtained  temporary  permit  to  practice  shall  work  under  the  supervision  of licensed professional
+
+Healthcare professional can be granted a Temporary Permit to Practice once only.
+
+The Permit duration is selected by the Healthcare facility with maximum permit period of 6 months.
+
+Medical director can submit one application at a time.
+
+The facility is responsible to ensure the availability of valid Malpractice insurance to cover the professional obtaining temporary permit.
+
+Availability  of  existing  professional  from  the  same  specialty  is  prerequisite  to  apply  for temporary permit to practice for professional
+
+The facility/Medical Director is liable for all clinical/administrative services provided by the professional obtaining the permit.
+
+The  Dubai  Health  Authority  reserves  the  right  to  immediately  suspend  or  cancel  the Temporary  Permit  to  Practice  without  notice  in  cases  where  fraudulent  information  is provided.
+
+Application is subjected to DHA review and if rejected refund is not applicable.
+
+HP  with  any  of  below  conditions,  will  not  be  eligible  to  obtain  a  Temporary  permit  to practice:
+
+The Temporary permit is Non-renewable nor transferable.
+
+Medical director can submit one application at a time.
+
+Professional with temporary permit to practice shall not be involved in dealing with controlled,  semi-controlled  and  narcotic  medications,  issuing  sick  leave,  applying  for GSC or raising E-claim request (insurance)
+
+The facility/Medical Director is liable for all clinical/administrative services provided by the professional obtaining the permit.
+
+This  permission  does  not  indicate  eligibility  of  the  applicant  to  obtain  professional license later.
+
+[PAGE 39-40]
+HPs with active license(s) are obligated to complete the target CPD requirements as per the PQR. (Physicians & Dentists 40 point, Nurses 20 point, Allied Healthcare & TCAM 10 point, Pharmacists 20 point) annually.
+
+CPD points to be calculated according to professional's category with the highest required number, whether this category is activated as full time or part time.
+
+The  CPD  completion  is prerequisite for professional license renewal. Therefore, a professional  licence  cannot  be  renewed  if  the  required  annual  CPD  point  has  not  been achieved.
+
+Target CPD points requirements should not be less than 70% in the area of the professional specialty and 30% can be in the area of general professional development.
+
+100% of the total targeted CPD points can be gained through online programs.
+
+CPD points calculation is based on license validity.
+
+Issue Nu:
+
+version 1.3
+
+Page 39 of 54
+
+CPD points achieved through online programs can be accepted as long as they are related to the specialty field.
+
+If the HP overachieves their target CPD points, they are not eligible to carry forward up or transferred from previous year.
+
+If the license validity is Two years, then the target of CPD shall be doubled accordingly. Upon renewal of professional license, the CPD points must be secured and uploaded in Sheryan.
+
+If  the  License validity is for three years, then the target of CPD shall be tripled and upon renewal upon renewal of professional license, the CPD points must be secured and uploaded in Sheryan.
+
+Participation in DHA assessment panel for licensing HP process will be considered a part of CPD requirement for the calendar year.
+
+The following are not considered activities for target CPD:
+
+Regular morning meetings, endorsements, ward rounds and case revisions.
+
+Departmental or medical society internal meetings.
+
+Community and patient awareness sessions.
+
+Public directed activities.
+
+Software skills training.
+
+Induction and orientation programs.
+
+Basic product training and product-specific knowledge.
+
+Claiming fraudulent CPD will result in disciplinary actions decided by the MPC.
+
+[PAGE 41]
+VERIFICATION
+
+GSC is an electronic certificate generated by the licensing system 'Sheryan' into the HP account.
+
+GSC can be verified via DHA website through 'Verify Document' service in Sheryan portal.
+
+The  issued  certificate  shall  include  all  disciplinary  action  or  violation  imposed  by  the concerned  committee  against  the  professional  during  their  licensing  history  at  DHA including,  but  not  limited  to,  letter  of  notice,  warning  letter,  and  license  suspension  or revocation.
+
+Disciplinary actions stated on the Good Standing Certificate or the Current Status Certificate issued to a healthcare professional are irreversible and will remain permanently recorded. The acceptance of such certificates, considering the DHA license status, is subject to the sole discretion of the relevant regulatory bodies where the professionals submit the certificate. Healthcare professionals must, at all times, proactively disclose any and all prior disciplinary actions to all applicable regulating authorities where they intend to practice. Status of Good Standing and Current status will be issued as per the ( Appendix 3 ).
+
+The issued certificate may include information about ongoing investigations or cases against a healthcare professional for which a final decision has not yet been issued
+
+GSC information is limited to the HP medical practice and does not indicate non-medical criminal/legal cases. MPC have the right to reflect the administrative violation on HP.
+
+[PAGE 42]
+Copy of Verification Form.
+
+Copy of Valid Passport.
+
+Copy of last DHA license
+
+DHA will communicate and send the verification form to the designated email address in the application.
+
+No manual verification document will be obtained from DHA. All verification shall be either via Sheryan system or provided authority links/website or requested electronically.
+
+Health  Authorities  (only)  who  wish  to  inquire  and  request  for  License  Details Verification can send a link or official mail to GSC@DHA.GOV.AE
+
+[PAGE 42-44]
+The facility is responsible for cancelling the professional license or If the HP resigned.
+
+The cancellation of license will not proceed in the following scenarios:
+
+The HP is the medical director, where the medical director has to be changed prior to the cancellation.
+
+The HP has an active appeal, where the appeal must be cancelled, and all fines must be paid prior to the cancellation of the license.
+
+The HP is under investigation, where the investigation outcome must be issued prior to the cancellation.
+
+Following license cancellation:
+
+The  registration  status  will  be  active  for  One  year,  where  the  registration  can  be renewed or activated into a new license.
+
+If the registration was not renewed or activated during mentioned period, the HP has to apply for a new registration.
+
+A healthcare professional who has completed the full term of a suspended or revoked period may submit a new professional application for consideration of registration/license reinstatement. The decision to reinstate a professional's registration is subject to the sole discretion and approval of the DHA Review.
+
+Healthcare Facility Initiated Cancellation During Pending Violation Appeal below shall be considered:
+
+It is mandatory for all applicants seeking reinstatement to fully meet and demonstrate compliance with all applicable PQR requirements at the time of submitting their new application.  Applications  that  do  not  meet  the  prevailing  PQR  requirement  will  not proceed for the concerned committee review for reinstatement.
+
+A  Healthcare  Facility  desiring  to  cancel  the  professional  license  of  a  Healthcare Professional (HP) whose case is currently under violation appeal may submit a formal request to DHA with submission of an undertaking letter signed by the HF's Medical Director confirming that the HF is fully accountable for all findings, decisions, penalties, or any other outcomes against the HF and may result from the aforementioned violation appeal. The request subject to DHA will review  and approval
+
+Healthcare  Professional  (HP)  who  is  the  subject  of  a  pending  violation  appeal concerning their professional practice or license must, without undue delay, inform any new Healthcare Facility or employer they join of the existence and nature of such an appeal
+
+In case the HF refuses to cancel the HP license, the HP can escalate the issue to DHA through the 'Raise license cancelation issues' service and submit the required evidence.
+
+For waiving the professional license, the professional shall apply for new registration and must fulfill the requirements mentioned in the 'Get registered' & 'general rules'
+
+[PAGE 44-45]
+This service allows HP to request license cancellation in case the facility refuses to cancel their license. Cancelling the Full-time license will result in changing the status of the Parttime license from "Active" to "Inactive".
+
+The HP shall provide Proof of Resignation Letter / written notification submission to the facility and one of the following documents:
+
+Employment Visa cancellation. Or Labor Card cancellation from previous HF.
+
+Labor Card under the new HF. Or New employment visa under the new HF.
+
+Temporary permission to work in the new HF from Ministry of Human Resources and Emiratization (MOHRE) along with filing an official labor dispute.
+
+In case of no official legal binding (e.g. contract, labour card or employment visa) between the HF and concerned professional, the request will be granted.
+
+DHA will do review for the raised issue request and communicate with licensing facility. The facility shall respond to the DHA within 3 days. Failure to respond will result in proceeding of the request.
+
+[PAGE 45]
+This service allows HP with an active license to request an update of their professional license in case the personal information is updated.
+
+The HP is required to fill the form with copy of updated documents whether it's recent photo or new passport copy, submit the application and pay the required fees for DHA review.
+
+DHA - through its responsible party such as MPC, Appeal Committee or DG - may take the following decision/action on the HP license resulting in medical malpractice, PSV result or disciplinary action taken by another health regulator/board:
+
+Precautionary suspension, until the final decision is finalized and applied, including but not limited to the following scenarios:
+
+The HP practice may put patient safety at risk.
+
+Discrepancy PSV reports.
+
+Suspension or Revocation by other authorities.
+
+[PAGE 46]
+The health Professional can apply to reissue (new) registration if the applicant  fulfill the requirements mentioned in the ' PQR requirement, Get registered & general rules.
+
+The health Professional can apply to reissue (new) registration in below criteria:
+
+If the license has been revoked by Medical Practice Committee decision, the applicant can submit to reissue of License after completion of two years from decision date and fulfilment of all requirements for licensure.
+
+If  the  license  has  been  revoked  or  suspended  by  Medical  Practice  Committee decision/appeal  committee,  the  HP  shall  submit  a  new  application  for  DHA  review, declare the previous disciplinary actions details and fulfil licensing requirements as per the PQR.
+
+Revoked HP may only submit the request of reissue the License after completion of two years from decision date and fulfilment of all requirements for licensure.
+
+The new submitted application shall be reviewed by MPC and subjected for approval or rejection.
+
+The reissued license must be the same as the previous title, not for a new or higher title. The HP with suspension /revocation history is not eligible to Add/Upgrade process.
+
+At any day after License cancelation occurred requested by professional or the facility.
+
+At any day once the applicant is fulfilling the Licensing requirements and conditions.
+
+Issue Nu:
+
+version 1.3
+
+Effective Date:
+
+18/07/2025
+
+Page 46 of 54
+
+[PAGE 47-48]
+MPC / Appeal committee can impose a disciplinary action by adding a restriction on the HP licenses to work under supervision for certain period as stipulated by the committee.
+
+These disciplinary actions are as per on article (19) of the Decree of the Executive Council No. (49) of 2024 Concerning The Regulation of Practicing Health Professions in the Emirate of Dubai must complete the full duration of the supervision as mandated in the disciplinary decision, with no violations or adverse reports. before removing this restriction.
+
+Health facility & the concerned professional must appoint a qualified supervisor.
+
+Licensed by DHA in the same specialty as the professional under supervision.
+
+Minimum of 5 years of clinical experience post-licensure.
+
+No history of disciplinary action or license suspension.
+
+Currently practicing in a DHA-licensed facility.
+
+Willing to commit to the full supervision period and reporting requirements.
+
+The facility shall have a defined supervision plan which include specific clinical tasks, frequency of evaluation and documentation requirements.
+
+After completing the required supervised experience period, the Health Professional (HP) must submit the 'Upgrade Professional Registration' Service through the Sheryan and to upload the supervisor's final report signed by the medical director that cover t he details under  25.3  point  to  remove  the  restriction  remark  on  their  professional  license.  This
+
+submission  is  necessary  to  allow  DHA  to  evaluate  the  supervised  training  program  and confirm the HP's eligibility to practice without restrictions.
+
+[PAGE 48]
+The  HP  required  to  undergo  re-assessment  process  and  must  complete  both  the computer-based testing (CBT) and oral assessments.
+
+HPs must pass the CBT before proceeding to the oral assessment.
+
+HPs who fail the CBT three times will not be permitted to take the oral assessment, their result will be marked as a "fail," and their account will be blocked, preventing them from practicing accordingly.
+
+The total number of attempts for both assessments (CBT and oral) shall not exceed three attempts.
+
+Required  attempts  (CBT  and  Oral  assessment)  must  be  completed  within  three months from the date the decision is issued.
+
+During the reassessment process, HPs are not allowed to practice until they pass the assessments and receive a final decision from the relevant DHA committee.
+
+[PAGE 49]
+UAE Government, 2019. Cabinet Decision no. (40) of 2019 concerning UAE Federal Law concerning Medical Liability.
+
+UAE Government,2017. Cabinet Decision no. (20) of (2017) concerning unified healthcare Professional Qualification Requirements (PQR) for licensing health professionals in the country.
+
+UAE Government, 2019. Federal Law no. (5) of (2019); concerning the practice of the human medicine profession and its amendments.
+
+UAE Government,1984. Federal Law No. (5) Of (1984) Concerning practice of Nonphysicians and Pharmacists health professions.
+
+Decree of the Executive Council No. (49) of 2024 Concerning the Regulation of Practicing Health Professions in the Emirates of Dubai
+
+UAE Government,1975. Federal Law no. (7) Of (1975) Concerning the Practice of Human Medicine.
+
+[PAGE 52]
+Note: All Current Status Certificates will include details of any disciplinary action taken against the HP.

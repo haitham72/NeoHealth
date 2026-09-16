@@ -1,0 +1,401 @@
+DOC_CODE: DOH/ST/HCFS/SSMHS/V1/2024
+TITLE: e2 Standard for Specialized Mental Healthcare Services TEMPLATE 5: Standard
+AUTHORITY: Department of Health - Abu Dhabi
+TIER: official
+VERSION: 1
+
+=== DOCUMENT TEXT ===
+
+[PAGE 1]
+e2
+
+[PAGE 3]
+The purpose of this standard is to set the minimum requirements for the provision of specialized mental healthcare services, including inpatient and in the Emirate of Abu Dhabi. This standard is intended to ensure the provision of patient-centric, rights-based, and high-quality service delivery, in line with the DoH 's Mental Health Model of Care, while unifying quality of care across mental healthcare facilities.
+
+The DoH's Mental Health Model of Care's core objectives are to objectives:
+
+Ensure patients are empowered and informed to drive their health choices and be committed to healthy lifestyles and practices in the appropriate setting.
+
+Ensure patients get the appropriate care, at the appropriate time, by the appropriate team.
+
+Ensure patients return/ re-integrate into the community, ensure their acceptance by the community, and pre-empt their relapse.
+
+[PAGE 3]
+All Healthcare facilities licensed by DoH to provide specialized care for patients with mental disorders or psychiatric disabilities. Specialized mental healthcare facilities include both integrated mental health units and stand-alone mental health facilities.
+
+[PAGE 5]
+Wherever applicable, all specialist mental healthcare facilities must comply with DoH Health Facility Briefing and Design guidelines (i.e., Functional Planning Unit guidelines), including:
+
+Mental Health Unit - Adult
+
+Mental Health Unit - Child & Adolescent
+
+Mental Health Unit - Older Persons
+
+Emergency Department based Psychiatric Assessment Area, as per DoH Standard for Emergency Department and Urgent Care Center
+
+ Ensure accessibility and meet the needs of the patient's population to be served.
+
+1. Utilize telehealth/telemedicine, and on-line treatment services. (optional)
+
+2. Patients seeking an appointment for routine needs must be provided within ten (10) business days of the requested date for service.
+
+3.1.1.3. The facility has Health Information Technology (certified EMR, e-
+
+prescribing, medication reconciliation).
+
+[PAGE 5-8]
+☒
+
+☒
+
+☒
+
+☐
+
+☒
+
+☒
+
+All
+
+except
+
+3.1.1.4
+
+☒
+
+☒
+
+o Adults' unit - 1:3 patients or fewer, and 1:1 for suicidal patients
+
+o Adolescents' unit - 1:2 patients or fewer, and 1:1 for suicidal patients
+
+o Children unit - 1:1 patient, and 1:1 for suicidal patients
+
+All mental healthcare professionals operating within specialized mental healthcare facility should annually acquire the specific CME/CPD credits as per DoH PQR consistent with their practice specialty. The CME/CPD credits must be updated and reflected accurately in their licensing portals.
+
+☒
+
+☒
+
+☒
+
+[PAGE 8-9]
+Every mental health patient must be informed of all their rights and responsibilities, including his or her right to protect the confidentiality of his or her information immediately after entering the mental health facility. In the event the psychiatric patient is unable to understand such explanation, his or her representative must be informed of his or her rights as mandated by Federal Law No. (10) of 2023 concerning the mental health.
+
+Patient Rights and Responsibilities Charter must be:
+
+Displayed in visible places in each mental health facility.
+
+Handed to the psychiatric patient or their representative.
+
+Documented in each patient's medical records.
+
+In compliance with 'Accreditation Standards for Healthcare Facilities (Hospitals)'
+
+Establish a 'Patient Rights Care Committee', chaired by a psychiatrist, in every specialized mental health facility with departments for the residence of psychiatric patients. In addition to the chairperson the committee should comprise the following members, but not limited to:
+
+Psychologist
+
+Social worker
+
+Psychiatric nurse
+
+the director of the health facility may add any specialist to the membership of this committee
+
+Establish and follow protocols for the safeguarding of vulnerable children, adults, and elderly, including the escalation of concerns identified to the appropriate authorities, where necessary.
+
+Where waitlists exist, have waitlist policies and procedures in place whereby an established mechanism is applied to assess case urgency, risk, and need for timely intervention, as well as
+
+regular maintenance and review of waitlists.
+
+Establish policies and procedures for the use of force and restrictive interventions in line with Federal Law No. (10)of 2023 concerning the mental health, when necessary (i.e. physical restraint, chemical restraint, seclusion and/or long-term segregation), following the principle of least restriction, respecting the rights and dignity of patients, and promoting skilled, trauma-informed, and patient-centered care.
+
+Make advanced proactive plans about the use of restrictive interventions for those patients who have exhibited self-harm or harm to others to identify triggers and early warning signs to reduce the use of restrictive interventions in the future.
+
+Record any use of force, with justification and authorization, and collect audit data on the use of restrictive interventions to ensure transparency and accountability, and actively work to reduce use of force through use of audit and/or quality improvement methodology.
+
+All facility staff must be sensitive to patients and their caregivers using mental health services and be respectful toward those individuals. They must also take into consideration factors such as the patient's :
+
+Age
+
+ Disability and cognitive capacity
+
+Ethnicity, culture, religion, and other personal characteristics
+
+Socioeconomic status
+
+The patient's level of knowledge and understanding of mental disorders and their treatment by using languages developmentally appropriate and offering to provide further information as needed.
+
+[PAGE 9]
+Health facilities shall respect the patient's privacy, protect the information and data in his or her health file, social status, confidentiality of correspondence, communications, and provide amenities without inconvenience and defamation, as required by the applicable legislation.
+
+Personal health information and data are owned by the patient and protected within the scope of the preservation of the medical confidentiality that may only be disclosed to third parties under the patient's permission or in cases required by law.
+
+The physician must provide the patient of information and data related to his/her health and not maintain medical confidentiality, except in accordance with the conditions and in the cases stipulated in the applicable legislation.
+
+The patient should be treated in a respectful manner that supports his or her dignity and maintain patient confidentiality.
+
+[PAGE 9-10]
+Deliver health information in a way that is understandable, meaningful, and socially and culturally appropriate to service users, and engage with appropriate services to support this where necessary.
+
+Develop a quality assurance and improvement procedure for the assessment of mental healthcare, which ensures appropriate management has been delivered according to evidencebased best practice.
+
+Establish a culture of data-driven performance improvement on clinical quality, efficiency, and patient experience, and engage the staff, patients, and caregivers in quality improvement activities.
+
+Develop ongoing quality improvement projects to create a culture of safety and promote value-based programs.
+
+Comply with DoH data and reporting requirements for quality assessments of mental health facility using the relevant JAWDA key performance indicators (KPIs), where applicable.
+
+Ensure patientreported outcome measures are utilized and documented in patient's file.
+
+Participate in the DoH patient experience survey program and establish policies and procedures to address and manage complaints.
+
+3.2.21.The facility coordinates regularly with DoH and participates regularly in community outreach programs including prevention and other awareness initiatives.
+
+3.2.22.Collaboratively participate in anti-stigma and anti-discrimination initiatives with primary healthcare and relevant community service facility. .
+
+[PAGE 10-11]
+Provision of the following services, if not available directly through the facility, are provided or referred through formal agreements with other facilities in the Emirate of Abu Dhabi:
+
+Acute mental health conditions
+
+Severe and enduring mental disorders
+
+Substance use disorders
+
+Eating disorders
+
+Developmental and intellectual disorders (e.g. autism, attention deficit hyperactivity disorder)
+
+General adult mental health
+
+Child and adolescent mental health
+
+Counseling and psychological therapies
+
+Educational needs assessment and intervention
+
+Forensic mental health
+
+Geriatric mental health
+
+Hospice and palliative
+
+Learning disability
+
+Marriage and family counselling and conciliation
+
+Neuropsychology assessment and intervention
+
+Occupational therapy
+
+Consultation liaison psychiatry
+
+Psychiatric rehabilitation services
+
+Sleep medicine
+
+Community mental health services
+
+Psychotherapeutic services (individual, group and/or family)
+
+Crisis intervention
+
+Dietetic services
+
+Pathology and laboratory services
+
+Pharmaceutical services
+
+Radiology services
+
+Activity services to meet physical, social, recreational, and health maintenance needs.
+
+Educational services for patients with special education needs, learning difficulties
+
+For referred patients, document and enforce a referral prioritization system that accounts for risk, urgency, distress, and dysfunction, ensuring timely support and/or response to referred cases at the time of assessment.
+
+In emergency cases, referrals must be made immediately to the emergency department, and a mental health assessment must be completed within twenty-four (24) hours of the referral.
+
+.1.1 All interfacility patient transfers must comply with 'Abu Dhabi Ambulance and EMS Standards'
+
+In urgent cases, referrals must be reviewed and responded to within two (2) to three (3) working days.
+
+For all other routine cases, referrals must be reviewed and responded to within ten (10) working days.
+
+Referrals must be considered if the treatment facility undergoes closure and/or the patient changes their place of residence further away from the treatment facility.
+
+Regularly communicate updates on the outcome of the referral and/or treatment plan to the referring service (e.g., primary care facilities ) through the electronic medical record (EMR).
+
+Establish systematic processes to develop and monitor individualized follow-up plans made within and outside the mental health system, including within primary healthcare.
+
+[PAGE 11]
+Conduct assessments, diagnoses, and treatments that reflect evidence-based best practices and entail the use of internationally recognized methods, tools, and disease classification systems (i.e. the latest version of Diagnostic and Statistical Manual of Mental Disorders and the International Classification of Diseases: Classification and Mental and Behavioral Disorders).
+
+Ensure that appropriate assessments are conducted during initial consultations with a mental healthcare professional. Details of psychometric assessment, testing, and the resultant diagnosis should be documented and include, at minimum, the following:
+
+Presenting concerns
+
+Medical history
+
+Psychiatric history
+
+Medication history
+
+Clinical interview
+
+Physical examination
+
+Laboratory and other diagnostic test result(s) when indicated.
+
+Appropriate evidence-based screening and diagnostic tool(s) used.
+
+Psychiatric risk assessment including suicide, homicide, neglect, and abuse risk.
+
+[PAGE 12]
+Deliver patient-centered and interdisciplinary care and/or recovery plans that outline mutually established goals and/or expected outcomes within a set timeframe. At a minimum, the plan should include:
+
+Details of the patient's physical and mental condition, including all diagnoses
+
+Specific and measurable goals of treatment and outcome measures
+
+Strategies for self-management, personalized healthy lifestyle interventions such as advice on healthy eating, physical activity, and smoking cessation
+
+Treatment methods to be utilized, the frequency for conducting each treatment method, and the person(s) or discipline(s) responsible for each treatment method
+
+Treatment plan review dates and a discharge framework
+
+Signature(s) of staff who develop the plan and clinician(s) responsible for its implementation
+
+Use evidence-based clinical guidelines and treatment protocols in the delivery of the following services provided, but not limited to:
+
+Common behavioral disorders
+
+Developmental & intellectual disorders
+
+Substance use disorders
+
+Psychotic disorders
+
+Dementia, physiological, and physical behavioral disorders (e.g. eating, sleep disorders)
+
+Electroconvulsive therapy
+
+The treating organic diseases suffered by a psychiatric patient
+
+[PAGE 12-13]
+When medications are prescribed for treatment, a medication management plan should be documented including, but not limited to, the following:
+
+Setting specific treatment goals with the patient and outcome measures
+
+Reviewing risks and benefits of the prescribed medication
+
+Considering history of previous treatment
+
+Conducting pharmacovigilance
+
+Setting a timeframe for therapeutic response
+
+Recording patient consent, and his right to withdrawal
+
+Discuss the medication management plan with the patient, providing information about:
+
+Reasons for offering pharmaceutical treatment
+
+Suitable choice and dose of medication (preference should be given to the use of generic medications)
+
+Expectations upon initiating therapy
+
+Expected onset of therapeutic effects
+
+Setting timelines and expectations for medication review
+
+Expected or potential adverse or withdrawal effects
+
+When medications are prescribed, ensure that medication management regimens are regularly reviewed by a psychiatrist or primary care facilities , assessing, and managing therapeutic response, safety, adverse effects and adherence.
+
+Ensure that in-office prescription and administration of narcotics and psychotropic medications (i.e., controlled drugs) and semi-controlled drugs within treatment planning is done in accordance with the DoH Standard for the Management of Narcotics, Psychotropic and Semicontrolled Medicinal Products.
+
+[PAGE 13-14]
+Admission to a mental health facility can be voluntary, involuntary (compulsory) or emergency as outlined in Federal Law No. 10 and its Executive Regulation
+
+Patients presenting to emergency displaying symptoms of psychiatric disorder that pose a threat to themselves or others must be evaluated by a psychiatrist within a period not exceeding 24 hours.
+
+When involuntary admission is required, establish protocols to ensure that this occurs in the safest and most respectful manner possible.
+
+Coordinate with outpatient facilities , psychiatric homecare, or day care services (if indicated), and community resources to facilitate a smooth transition back to home and appropriate treatment at a less restrictive level of care, or to a more intensive level of treatment, depending on the patient's needs.
+
+Establish and follow a protocol to manage patients who discharge themselves against medical advice, including:
+
+.1. Record of the patient's cognitive capacity to understand the risks of self-discharge.
+
+Crisis and contingency arrangements
+
+Conduct appropriate physical health assessments for patients who are prescribed medication at the start of treatment, at three months and then annually; and document results in the EMR.
+
+Establish policies and procedures to adequately flag and address any abnormalities identified during physical health assessments.
+
+Initiate a discharge plan for all patients at their time of admission involving the patient, their caregivers, and other facilities involved in follow-up care. The discharge plan must include, at minimum, details of:
+
+Care in the community and other aftercare arrangements
+
+Crisis and contingency arrangements including details of who to contact.
+
+Medication including monitoring arrangements.
+
+Details of when, where, and who will follow up with the patient.
+
+Ensure that, upon discharge, patients and their caregivers are provided with understandable information on the range of relevant services and support available in the community as posttreatment and re-integration support.
+
+Ensure that case managers document the referral of the patient to the appropriate outpatient facility , psychiatric homecare, or day care service, and/or community resources in-line with the discharge plan.
+
+Carry out a risk assessment for the patient to assess self-harm and harm to others at the time of discharge.
+
+Establish and document procedures for appropriate follow-up of patients within seven (7) working days after discharge and have a follow-up procedure for patients who do not attend the
+
+planned follow-up arrangements.
+
+[PAGE 14-16]
+Meet the requirements defined in this standard.
+
+Integrate their EMR with the DoH Health Information Exchange (HIE) system.
+
+Comply with data and reporting requirements for Muashir ranking of mental health facilities using the relevant JAWDA key performance indicators (KPIs), where applicable.
+
+Participate in the DoH patient experience survey program, and establish policies and procedures to address and manage complaints
+
+Billing and reimbursement shall be in accordance with Standard facilities Contract, DoH Mandatory Tariff and associated Claims and Adjudication Rules, and the Claims and Adjudication Standard. All documents are available from the DoH website: https://www.DoH.gov.ae/shafafiya/
+
+Inpatient and day care facilities should report the following data parameters through the JAWDA portal https://www.DoH.gov.ae/-/media/Feature/Muashir/Jawda/Jawda-Quarterly-Submission-Guidelines/Mental-Health-KPIs2022.ashx:
+
+Hospital unplanned readmissions for mental health disorders
+
+Mortality rate within 30 days after discharge
+
+Follow-up appointment after hospitalization for mental health disorders
+
+Follow-up visits after hospitalization for mental health disorders
+
+Inpatient fall rate per 1000 mental health disorders inpatients days
+
+Percentage of patients with completed basic investigation before initiating lithium therapy
+
+Percentage of patients with completed basic investigation before initiating clozapine therapy
+
+Rate of seclusion
+
+Hours of physical restraint use
+
+Average length of acute inpatient stay
+
+Healthcare professionals and healthcare facilities must comply with the terms and requirements of this standard and all relevant regulations issued by DoH. DoH may impose sanctions in relation to any breach of requirements under this Standard in accordance with the Complaints, Investigations, Regulatory Action, and Sanctions in the Health Regulator Manual
+
+Treatment of Serious Mental
+
+Illness and Substance Use
+
+Disorders.
+
+Health Hospital Facilities.

@@ -1,0 +1,476 @@
+DOC_CODE: DHA/HRS/HPSD/CG-35
+TITLE: Clinical Guidelines for Virtual Management of Insomnia
+AUTHORITY: Dubai Health Authority
+TIER: official
+VERSION: 2
+
+=== DOCUMENT TEXT ===
+
+[PAGE 1]
+Electronic  copy  is  controlled  under  document  control  procedure.  Hard copy is uncontrolled & under responsibility of beholder.
+
+It  is  allowed ONLY to access and keep this document with who issued, who is responsible and to whom it is applicable.
+
+·
+
+Information security code:
+
+ Open
+
+النسخة الإلكترونية هي النسخة المضبوطة وفق إجراء ضبط الوثائق۔ النسخ الورقية غير مضبوطة وتقع عل ى مسؤولية حاملها۔
+
+يسمح بالوصول وبالاحتفاظ بهذه الوثيقة مع مصدرها أو مع المسؤول عن تطبيقها أو مع المطبق عليهم۔
+
+ Shared -Confidential
+
+ Shared-Sensitive
+
+ Shared-Secret
+
+ مشارك -خاص
+
+ مشارك -سري
+
+تصنيف امن المعلومات:  بيانات مفتوحة
+
+ مشارك -حساس
+
+[PAGE 1]
+INSOMNIA - 24
+
+Version 2
+
+Issue date: 21/02/2024
+
+Effective date: 21/04/2024
+
+Health Policies and Standards Department
+
+Health Regulation Sector (2024)
+
+[PAGE 2-3]
+Health Regulation Sector (HRS) forms an integral part of Dubai Health Authority (DHA) and is mandated by DHA Law No. (14) of the year (2021) amending some clauses of law No. (6) of 2018 pertaining to the Dubai Health Authority (DHA), to undertake several functions including but not limited to:
+
+Developing regulation, policy, standards, guidelines to improve quality and patient safety and promote the growth and development of the health sector;
+
+Licensure and inspection of health facilities as well as healthcare professionals and ensuring compliance to best practice;
+
+Managing patient complaints and assuring patient and physician rights are upheld;
+
+Governing the use of narcotics, controlled and semi-controlled medications;
+
+Strengthening health tourism and assuring ongoing growth; and
+
+Assuring management of health informatics, e-health and promoting innovation.
+
+The DHA Telehealth Clinical Guidelines aim to fulfil the following overarching DHA Strategic Priorities (2026):
+
+Pioneering Human-centered health system to promote trust, safety, quality and care for patients and their families.
+
+Make Dubai a lighthouse for healthcare governance, integration and regulation.
+
+Leading global efforts to combat epidemics and infectious diseases and prepare for disasters.
+
+Pioneering prevention efforts against non-communicable diseases.
+
+Become a global digital health hub.
+
+Foster healthcare education, research and innovation .
+
+[PAGE 3]
+The Health Policy and Standards Department (HPSD) developed this Guideline in collaboration with Subject Matter Experts and would like to acknowledge and thank these health professionals for their dedication toward improving quality and safety of healthcare services in the Emirate of Dubai.
+
+Health Regulation Sector Dubai Health Authority
+
+[PAGE 4-5]
+Clinical Guidelines for Virtual Management of Insomnia EXECUTIVE SUMMARY
+
+Telehealth is based on Evidence Based Practice (EBP) which is the conscientious, explicit and
+
+judicious use of current best evidence in making decisions about the care of the individual patient.
+
+It means integrating individual clinical expertise with the best available external clinical evidence
+
+and guidelines from systematic research.
+
+EBP is important because it aims to provide the most effective care virtually, with the aim of
+
+improving patient outcomes.  As health professionals, part of providing a professional service is
+
+ensuring that practice is informed by the best available evidence.
+
+Insomnia is the one of the most common medical complaints. It frequently coexists with medical,
+
+psychiatric,  sleep,  or  neurological  disorders.  It  may  also  be  associated  with  acute  stress,
+
+medication or substance, poor sleep habits, or changes in the sleep environment. The diagnosis
+
+of  insomnia  requires  three  main  components:  persistent  sleep  difficulty,  adequate  sleep
+
+opportunity, and associated daytime dysfunction.
+
+This  clinical  guideline  for  the  virtual  management  of  Insomnia  is  presented  in  the  format
+
+comprising of clinical history/symptoms, differential diagnosis, investigations and management.
+
+Identification of 'Red Flags' or serious conditions associated with the disease is an essential part
+
+of this telehealth guideline as it aids the physician to manage patients safely and appropriately
+
+by  referrals,  if  indicated  during  virtual  telehealth  assessment,  to  ER,  family  physicians  or
+
+specialists for a face to face management.
+
+[PAGE 6]
+Virtual Clinical Assessment :  Is  the  evaluation  of  the  patient's  medical  condition  virtually  via telephone or video call consultations, which may include one or more of the following: patient medical history, physical examination and diagnostic investigations.
+
+Patient : The person who receives the healthcare services or the medical investigation or treatment provided by a DHA licensed healthcare professional.
+
+DHA :
+
+EBP :
+
+ER :
+
+DHA :
+
+EBP :
+
+ER :
+
+HRS :
+
+Advanced Sleep-Wake Phase Disorder
+
+Cognitive Behavioral Therapy
+
+Dubai Health Authority
+
+Delayed Sleep-Wake Phase Disorder
+
+Evidence Based Practice
+
+Emergency Room
+
+Health Regulation Sector
+
+[PAGE 7]
+Insomnia is described as short-term or chronic, depending on its duration.
+
+Short-term  insomnia - Short-term  insomnia,  also  referred  to  as  adjustment insomnia or acute insomnia, usually lasts a few days or weeks and occurs in response to an identifiable stressor. By definition, symptoms are present for less than three months.
+
+Stressors can be physical, psychological, social, or interpersonal (e.g., job loss, death of a loved one, divorce, argument). Symptoms usually resolve when the stressor is eliminated or resolved or when the individual adapts to the stressor. Occasionally, sleep  problems  persist  and  lead  to  chronic  insomnia.  This  may  occur  due  to  the development of poor sleep habits during the acute insomnia period.
+
+Chronic insomnia - Insomnia symptoms that occur at least three times per week and persist for at least three months are considered chronic insomnia. In practice, however, most individuals with chronic insomnia report symptoms for many years. Some individuals recall an initial stressful event that triggered insomnia, but others report  nearly  lifelong  symptoms  without  an  identifiable  trigger.  Night-to-night variability and a waxing and waning course related to psychosocial stressors and psychiatric or medical comorbidities are common.
+
+[PAGE 8]
+Telehealth services in DHA licensed Health Facilities.
+
+To support the implementation of Telehealth services for patients with complaints of Insomnia in Dubai Health Authority (DHA) licensed Health Facilities
+
+DHA licensed physicians and health facilities providing Telehealth services.
+
+Exclusion for Telehealth services are as follows
+
+Emergency cases where immediate intervention or referral is required.
+
+Prescribe Narcotics, Controlled or Semi-Controlled medications.
+
+[PAGE 8-10]
+Patients with insomnia typically complain about difficulty falling asleep and/or staying asleep. Impaired daytime function must also be reported for a diagnosis of an insomnia disorder. In many cases, comorbid psychiatric or medical disorders,  medications  or  substances,  or  other  sleep  disorders  are  also  present. However, the presence of comorbid disorders does not exclude the diagnosis and treatment of insomnia.
+
+Difficulty initiating or maintaining sleep - Patients with insomnia complain of poor sleep  quality  or  insufficient  quantity  due  to  difficulty  initiating  sleep,  difficulty maintaining sleep, or waking up too early.
+
+Patients may describe variable sleep, with one or several nights of poor sleep  followed  by  a  night  of  better  sleep.  Occasionally,  patients  may report having minimal sleep for several consecutive nights.
+
+Most well-rested  adults  fall  asleep  within  about  10  to  20  minutes  of attempting to sleep and spend less than 30 minutes awake during the night. By contrast, adult patients with insomnia usually report taking 30 minutes or more to fall asleep (for those with sleep initiation difficulties) or spending 30 minutes or more awake during the night (for those with sleep maintenance difficulties). Early morning awakening is defined as termination of sleep at least 30 minutes prior to the desired wake-up time.
+
+Compromised daytime function - The diagnosis of insomnia disorder requires that sleep difficulties be accompanied by compromised daytime function related to one or more of the following:
+
+Fatigue or malaise
+
+Poor attention or concentration
+
+Issue Nu:
+
+2
+
+Issue Date:
+
+Social or vocational/educational dysfunction
+
+Mood disturbance or irritability
+
+Daytime sleepiness
+
+Reduced motivation or energy
+
+Increased errors or accidents
+
+Behavioral problems such as hyperactivity, impulsivity or aggression
+
+Ongoing worry about sleep
+
+Patients with chronic insomnia are often worried that their lack of adequate sleep will result in significant compromise of their ability to function during the day in both social and professional settings. This concern can create a cycle that worsens the insomnia. Specifically, when patients are unable to fall asleep rapidly, they worry about loss of sleep affecting their performance, and this concern increases with time awake and simultaneously decreases the likelihood of falling asleep, while further increasing stress.
+
+Although severe fatigue is commonly reported by patients with chronic insomnia, actually falling asleep at unwanted or unintended times during the day (i.e., excessive daytime sleepiness) is uncommon and may be a sign of an alternative or comorbid sleep disorder.
+
+Issue Date:
+
+[PAGE 11]
+Sleep attacks - may occur while driving
+
+Gasping/choking and apnoea during sleep, reported by patient's partner
+
+Unstable cardiac or pulmonary condition
+
+Recent cardiovascular accident
+
+Injury to self or others during sleep
+
+Frequent sleepwalking
+
+Excessive daytime sleepiness
+
+Substance misuse
+
+Depression and anxiety
+
+[PAGE 11-16]
+Insomnia is a clinical diagnosis established by history and patient report. The goals of the evaluation are to characterize the nature and severity of the sleep problem and  identify  contributing  factors  and  comorbidities  that  may  be  relevant  to successful treatment.
+
+It  is  important  to  consider  the  patient's  age,  because  average  sleep  requirement changes with age. Most healthy adults sleep for 7 to 9 hours a night, but this varies. Total sleep time and number of awakenings increase with age.
+
+A sleep diary is also important in the evaluation of insomnia -
+
+A sleep diary is a questionnaire completed by the patient each morning to describe the previous night's sleep.
+
+Refer to APPENDIX 1 for Examples of Patient Complaints and Questions that may suggest Alternative Diagnosis or Contributing Comorbidity.
+
+INVESTIGATION
+
+No routine laboratory studies are necessary in the evaluation of chronic insomnia. Selected tests may be indicated based on clinical suspicion of comorbidity, such as echocardiography, thyroid  function  tests,  blood  glucose  and  hemoglobin  A1C  measurements,  blood  urea nitrogen and  creatinine levels, or iron studies may  be  performed  if  heart  failure, hyperthyroidism, diabetes mellitus,  renal  disease,  or  restless  legs  syndrome  is  suspected, respectively.
+
+CAUSES
+
+9.1.
+
+Substances and Medications causes:
+
+9.1.1.
+
+Non-prescription drugs:
+
+a.
+
+Caffeine
+
+b.
+
+'Diet pills'
+
+(e.g.,
+
+phenylpropanolamine)
+
+c.
+
+Nicotine
+
+Prescription drugs:
+
+8.
+
+9.
+
+those including pseudoephedrine,
+
+Methylphenidate (Ritalin)
+
+Theophylline
+
+Albuterol (Ventolin)
+
+Quinidine (Cardioquin)
+
+Dextroamphetamine (Dexedrine)
+
+Pemoline (Cylert)
+
+Selective serotonin reuptake inhibitors
+
+Medical Conditions:
+
+Primary sleep disorders (sleep apnea, periodic limb movement disorder, nocturnal myoclonus, restless legs syndrome)
+
+Pain from any source or cause
+
+Drug or alcohol intoxication or withdrawal
+
+Thyrotoxicosis
+
+Dyspnea from any cause
+
+Psychologic causes:
+
+Depression
+
+Anxiety
+
+Life stressors
+
+Bedtime worrying
+
+Conditioning (associating the bed with wakefulness)
+
+Mania or hypomania
+
+Environmental causes:
+
+Bedroom too hot or too cold
+
+Noise
+
+Eating, exercise, caffeine or alcohol use before bedtime
+
+Shift work
+
+Daytime napping
+
+MANAGEMENT AND TREATMENT
+
+Refer to APPENDIX 2 for the Virtual Management of Insomnia Algorithm
+
+Acute Insomnia
+
+Short-term insomnia (lasting less than one month) is the most common form  of  insomnia  and  usually  results  from  psychologic  or  physiologic stress.
+
+The clinical approach to acute insomnia is twofold:
+
+Discuss the role that the stressor is playing in disturbing sleep. This can provide some control or at least acceptance of the sleeplessness.
+
+Code:
+
+When the insomnia is severe or associated with substantial distress, consider referral for face to face consultation for short-term use of a sedative medication.
+
+These medications are generally effective and well tolerated with shortterm use, without excessive risk of next-day or carryover.
+
+Follow-up  in  two  to  four  weeks  is  encouraged  to  reassess  additional causes of insomnia, current sleep-related symptoms, anxiety about sleep, and  to  reinforce  good  sleep  habits.  If  insomnia  is  persistent,  consider managing the patient for chronic insomnia.
+
+Chronic Insomnia
+
+Sleep Hygiene Education, cognitive behavioral therapy (CBT) and pharmacotherapy are  the  main  treatment  options  for  chronic  insomnia  that  persists  despite appropriate identification and management of precipitating factors.
+
+10.3.1.
+
+DHA/HRS/HPSD/CG-35
+
+Sleep Hygiene
+
+Sleep  hygiene  education  consists  of  a  set  of  instructions  regarding environment and lifestyle factors that affect sleep. The Sleep hygiene is not effective as the sole intervention for insomnia but is recommended as an adjunct to other forms of therapy. Instructions for Improvement of Sleep Hygiene:
+
+Issue Nu:
+
+2
+
+Issue Date:
+
+21/02/2024
+
+Effective Date:
+
+21/04/2024
+
+Revision Date:
+
+Decrease or eliminate the use of caffeine, especially after noon.
+
+Do not use tobacco or alcohol near bedtime.
+
+Avoid  heavy  meals  close  to  bedtime.  However,  a  light  snack  at bedtime may promote sleep.
+
+Avoid vigorous exercise within 3 to 4 hours of bedtime.
+
+Establish a regular schedule for going to bed and getting up.
+
+Avoid daytime naps.
+
+Keep the bedroom at a comfortable temperature and minimize light and noise.
+
+Go to bed only when sleepy.
+
+If you do not fall asleep in about 15 to 20 minutes, leave the bedroom. Return to bed when you are sleepy.
+
+Get up at the same time each day regardless of how much you slept.
+
+Pharmacologic Treatment of Insomnia
+
+[PAGE 16-17]
+Medications  or  classes  of  medications  that  are  approved  to  treat insomnia include benzodiazepines, nonbenzodiazepine hypnotics, melatonin agonists. However, these will require a referral for a face to face consultation.
+
+Cognitive Behavioral Therapy (CBT)
+
+Clinical Guidelines for Virtual Management of Insomnia The patient will need to be referred for face to face consultation
+
+[PAGE 17-18]
+Insomnia should be distinguished clinically from several other common sleep complaints and conditions.
+
+Short  sleep  duration - The  amount  of  sleep  required  to  support  adequate alertness, performance, and health varies by age and among individuals. While most adults  require  approximately  7  to  8  hours  of  sleep  per  night  on  average,  some otherwise healthy people regularly sleep less than 7 hours per night without the need for  catch-up  sleep  to  feel  refreshed.  Such  individuals  often  report  a  nearly lifelong and/or familial tendency for short sleep duration. Short sleep duration is distinguished from insomnia by the absence of daytime impairment.
+
+Chronic sleep insufficiency - Chronic sleep insufficiency or sleep restriction is due to volitional sleep restriction or insufficient opportunity to sleep, whereas insomnia exists  despite  adequate  opportunity  and  conditions  for  sleep.  People  with  sleep restriction accumulate sleep debt over time and will rapidly fall asleep if given the opportunity. This distinguishes them from most patients with insomnia, who may feel fatigued during the day, but are typically unable to fall asleep if given a chance to take a nap.
+
+Delayed sleep-wake phase disorder - Delayed sleep-wake phase disorder (DSWPD) is one of the most common revised diagnoses given to patients referred to  sleep  specialists  for  chronic  insomnia,  especially  those  with  difficulties  falling asleep. DSWPD is a circadian sleep-wake rhythm disorder that can be thought of as a pronounced  "night owl" circadian preference. The  peak prevalence is in adolescence.
+
+Advanced sleep-wake phase disorder - Patients with difficulty maintaining sleep or early morning awakening associated with insomnia should be differentiated from patients with advanced sleep-wake phase disorder (ASWPD). Patients with ASWPD have  a  circadian phase  that  is advanced  or  shifted  earlier relative to the environmental light-dark cycle, such that they tend to fall asleep in the early evening (e.g., by 7:00 PM) and wake up in the early morning hours (e.g., 3:00 to 4:00 AM), even if they have forced themselves to stay awake until the late evening. ASWPD primarily affects older adults.
+
+[PAGE 18-19]
+Consider  referral  to  a  Family  physician  or  sleep  medicine  physician  for  a  face  to  face
+
+consultation:
+
+12.1.
+
+Suspicion of a comorbidity as the cause of insomnia.
+
+Insomnia that requires medical treatment
+
+Issue Nu:
+
+2
+
+Issue Date:
+
+Patients with insomnia report profound daytime sleepiness or symptoms of:
+
+Sleep apnea
+
+Periodic limb movements
+
+Narcolepsy
+
+Sleep attacks - may occur while driving
+
+Gasping/choking and apnoea during sleep, reported by patient's partner
+
+Unstable cardiac or pulmonary condition
+
+Recent cardiovascular accident
+
+Injury to self or others during sleep
+
+Frequent sleepwalking
+
+Excessive daytime sleepiness
+
+Substance misuse
+
+Depression and anxiety
+
+Clinical Guidelines for Virtual Management of Insomnia
+
+[PAGE 20-21]
+Bonnet, M., and Arand, D., [Internet]. Evaluation and diagnosis of insomnia in adults. UpToDate. [updated 2022; cited 2022 May 4]. Available from: https://www.uptodate.com/contents/evaluation-and-diagnosis-of-insomnia-inadults#:~:text=The%20diagnosis%20of%20insomnia%20requires,of%20insomnia%20are%20rev iewed%20here.
+
+Eddy, M.F. and Walbroehl, G.S. (2013). Insomnia. American Family Physician, [online] 59(7), p.1911. Available at: https://www.aafp.org/afp/1999/0401/p1911.html  [Accessed 7 Apr. 2023].
+
+APPENDIX  1 - CHRONIC  INSOMNIA:  EXAMPLES  OF  PATIENT  COMPLAINTS  AND QUESTIONS THAT MAY SUGGEST ALTERNATIVE DIAGNOSIS OR CONTRIBUTING COMORBIDITY.

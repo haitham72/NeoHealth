@@ -1,0 +1,522 @@
+DOC_CODE: DHA/HRS/HPSD/CG-46
+TITLE: Clinical Guidelines for the Virtual Management of Burn
+AUTHORITY: Dubai Health Authority
+TIER: official
+VERSION: 2
+
+=== DOCUMENT TEXT ===
+
+[PAGE 1]
+Electronic  copy  is  controlled  under  document  control  procedure.  Hard copy is uncontrolled & under responsibility of beholder.
+
+It  is  allowed ONLY to access and keep this document with who issued, who is responsible and to whom it is applicable.
+
+·
+
+Information security code:
+
+ Open
+
+النسخة الإلكترونية هي النسخة المضبوطة وفق إجراء ضبط الوثائق۔ النسخ الورقية غير مضبوطة وتقع عل ى مسؤولية حاملها۔
+
+يسمح بالوصول وبالاحتفاظ بهذه الوثيقة مع مصدرها أو مع المسؤول عن تطبيقها أو مع المطبق عليهم۔
+
+ Shared -Confidential
+
+ Shared-Sensitive
+
+ Shared-Secret
+
+ مشارك -خاص
+
+ مشارك -سري
+
+تصنيف امن المعلومات:  بيانات مفتوحة
+
+ مشارك -حساس
+
+[PAGE 1]
+Issue date: 21/02/2024
+
+Effective date: 21/04/2024
+
+Health Policies and Standards Department Health Regulation Sector (2024)
+
+[PAGE 2-3]
+Health Regulation Sector (HRS) forms an integral part of Dubai Health Authority (DHA) and is mandated by DHA Law No. (14) of the year (2021) amending some clauses of law No. (6) of 2018 pertaining to the Dubai Health Authority (DHA), to undertake several functions including but not limited to:
+
+Developing regulation, policy, standards, guidelines to improve quality and patient safety and promote the growth and development of the health sector;
+
+Licensure and inspection of health facilities as well as healthcare professionals and ensuring compliance to best practice;
+
+Managing patient complaints and assuring patient and physician rights are upheld;
+
+Governing the use of narcotics, controlled and semi-controlled medications;
+
+Strengthening health tourism and assuring ongoing growth; and
+
+Assuring management of health informatics, e-health and promoting innovation.
+
+The DHA Telehealth Clinical Guidelines aim to fulfil the following overarching DHA Strategic Priorities (2026):
+
+Pioneering Human-centered health system to promote trust, safety, quality and care for patients and their families.
+
+Make Dubai a lighthouse for healthcare governance, integration and regulation.
+
+Leading global efforts to combat epidemics and infectious diseases and prepare for disasters.
+
+Pioneering prevention efforts against non-communicable diseases.
+
+Become a global digital health hub.
+
+Foster healthcare education, research and innovation .
+
+[PAGE 3-4]
+The Health Policy and Standards Department (HPSD) developed this Guideline in collaboration with Subject Matter Experts and would like to acknowledge and thank these health professionals for their dedication toward improving quality and safety of healthcare services in the Emirate of Dubai.
+
+Health Regulation Sector Dubai Health Authority
+
+Clinical Guidelines for the Virtual Management of Burn
+
+[PAGE 5]
+Telehealth is based on Evidence Based Practice (EBP) which is the conscientious, explicit and
+
+judicious use of current best evidence in making decisions about the care of the individual patient.
+
+It means integrating individual clinical expertise with the best available external clinical evidence
+
+and guidelines from systematic research.
+
+EBP is important because it aims to provide the most effective care virtually, with the aim of
+
+improving patient outcomes.  As health professionals, part of providing a professional service is
+
+ensuring that practice is informed by the best available evidence.
+
+This guideline is presented in the format comprising of clinical history/symptoms, differential diagnosis,  investigations  and  management.  Identification  of  'Red  Flags'  or  serious  conditions associated with the disease is an essential part of this telehealth guideline as it aids the physician to manage patients safely and appropriately by referrals to ER, family physicians or specialists for a face to face management.
+
+[PAGE 6-7]
+Virtual Clinical Assessment :  Is  the  evaluation  of  the  patient's  medical  condition  virtually  via telephone or video call consultations, which may include one or more of the following: patient medical history, physical examination and diagnostic investigations.
+
+Patient : The person who receives the healthcare services or the medical investigation or treatment provided by a DHA licensed healthcare professional.
+
+BPM :
+
+DHA :
+
+EBP :
+
+ER :
+
+HR :
+
+HRS :
+
+NSAIDs :
+
+TBSA :
+
+IV :
+
+Beats Per Minute
+
+Dubai Health Authority
+
+Evidence Based Practice
+
+Emergency Room
+
+Health Rate
+
+Health Regulation Sector
+
+Nonsteroidal Anti-Inflammatory Drugs
+
+Total Percentage of Body Surface Area
+
+Intravenous
+
+1.1.
+
+Introduction
+
+Burns are commonly thought of as injury to the skin caused by excessive heat. More broadly, burns result from traumatic injuries to the skin or other  tissues  primarily  caused  by  thermal  or  other  acute  exposures. Burns occur when some or all the cells in the skin or other tissues are destroyed by heat, electrical discharge, friction, chemicals, or radiation. Burns are acute wounds caused by an isolated, non-recurring insult, and healing ideally progresses rapidly through an orderly series of steps.
+
+Telehealth services in DHA licensed Health Facilities.
+
+To support the implementation of Telehealth services for patients with complaints of Burn in Dubai Health Authority (DHA) licensed Health Facilities
+
+DHA licensed physicians and health facilities providing Telehealth services.
+
+Exclusion for Telehealth services are as follows
+
+Emergency cases where immediate intervention or referral is required
+
+Prescribe Narcotics, Controlled or Semi-Controlled medications`
+
+[PAGE 8]
+Heat
+
+The  depth  of  the  thermal  injury  is  related  to  contact  temperature, duration of contact of the external heat source, and the thickness of the skin. Because the thermal conductivity of skin is low, most thermal burns involve the epidermis and part of the dermis. The most common thermal burns are associated with flames, hot liquids, hot solid objects, and steam.
+
+5.2.
+
+5.3.
+
+Electrical discharge
+
+Electrical energy is transformed into heat as the current passes through poorly conducting body tissues. Electroporation (injury to cell membranes) disrupts membrane potential and function. The magnitude of the injury depends on the pathway of the current, the resistance to the current flow through the tissues, and the strength and duration of the current flow.
+
+Friction
+
+Injury  from  friction  can  occur  due  to  a  combination  of  mechanical disruption of tissues as well as heat generated by friction.
+
+Chemicals
+
+Injury is caused by a wide range of caustic reactions, including alteration of  pH,  disruption  of  cellular  membranes,  and  direct  toxic  effects  on
+
+[PAGE 9]
+Radio frequency energy or ionizing radiation can cause damage to skin and tissues. The most common type of radiation burn is the sunburn. Radiation  burns  are  most  commonly  seen  today  following  therapeutic radiation  therapy  and  are  also  seen  in  patients  who  receive  excessive radiation from diagnostic procedures
+
+[PAGE 9-12]
+Burn depth and size are important factors in determining whether a burn can be classified as minor and are crucial in dictating the initial steps of burn assessment and management. Superficial  burns  can  often  be  managed  via  teleconsultation  by  video  call  and/  or  highresolution photograph sent by the patient. Full-thickness burns must be evaluated by a specialist for possible excision and grafting. Determination of burn depth can be complicated by the conversion of burns to a higher burn
+
+category within the first several days. Conversion occurs when the damaged skin continues
+
+Clinical Guidelines for the Virtual Management of Burn
+
+Code:
+
+DHA/HRS/HPSD/CG-46
+
+Issue Nu:
+
+2
+
+Issue Date:
+
+21/02/2024
+
+Effective Date:
+
+21/04/2024
+
+metabolic processes. In addition to the duration of exposure, the nature of  the  agent  will  determine  injury  severity.  Contact  with  acid  causes coagulation necrosis of the tissue, while alkaline burns generate liquefaction  necrosis.  Systemic  absorption  of  some  chemicals  is  lifethreatening, and local damage can include the full thickness of skin and underlying tissues.
+
+Revision Date:
+
+to spread and burn depth increases because of thermal injury that did not fully present on initial  assessment;  therefore,  frequent  evaluation  and  reassessment  are  necessary  for  all categories of burns
+
+Superficial (first-degree) burns - managed via teleconsultation
+
+First-degree  burns  involve  only  the  epidermis; like  a  sunburn,  they  are  erythematous,  painful, and dry. They are most often the result of severe ultraviolet  exposure  or  minor  thermal  injury. First-degree burns usually heal in five to 10 days
+
+Superficial  partial-thickness  (superficial  second-degree)  burns  -  managed  via teleconsultation but may require referral
+
+Second-degree burns involve all the epidermis and  part  of  the  underlying  dermis.  Superficial partial-thickness burns damage the upper layers of the papillary dermis; they are identified
+
+by clear blisters and weeping, wet, erythematous skin, and they blanch painfully when touched. These burns heal within 2 weeks and generally do  not  cause  scarring;  however,  scarring  and  pigment  changes  are possible
+
+Deep partial-thickness (deep second-degree) burns - needs referral
+
+Issue Nu:
+
+2
+
+Issue Date:
+
+21/02/2024
+
+Effective Date:
+
+21/04/2024
+
+Revision Date:
+
+Deep second-degree burns involve the deeper layers  of  the  dermis  (i.e., reticular  dermis). They appear white and do not blanch. These burns  do  not  heal  in  less  than  3  weeks  and often result in scarring and contractures.
+
+Full-thickness (third-degree) burns - needs referral
+
+Third-degree  burns  destroy  all  skin  layers, including  underlying  subcutaneous  fat.  They are dark brown or tan and have a leathery feel with  no  sensitivity  to  touch.  These  wounds often  require  skin  grafts  and  can  result  in contractures.
+
+Fourth-degree burns - needs referral
+
+Fourth-degree  burns  destroy  all  skin  layers  and  extend  into  muscle, tendon, or bone.
+
+Refer to APPENDIX 1 for the Classification of Burns by Depth of Injury
+
+ASSESSMENT OF BURNS
+
+All burns are considered trauma and therefore, the initial evaluation should include a primary evaluation via video call or high-resolution photograph
+
+Primary assessment
+
+Clinical Guidelines for the Virtual Management of Burn
+
+Code:
+
+DHA/HRS/HPSD/CG-46
+
+Issue Nu:
+
+2
+
+Issue Date:
+
+21/02/2024
+
+Effective Date:
+
+21/04/2024
+
+Revision Date:
+
+21/02/2029                 Page 11 of 28
+
+Primary assessment of patients with acute burns starts with airway patency, vital signs and 7.1.1. Airway Airway assessment includes history of breathing difficulty and visualizing the upper airway for signs of obstruction 7.1.2. Vital signs If possible, monitoring vital signs and the color of unburned skin can help you assess the patient's circulatory and cardiac status. Heart rate (HR) in  most  adult  burn  patients  will  be  elevated  to  100  to  120  beats  per minute  (bpm)  because  of  increased  circulating  catecholamines  and hypermetabolism; HR higher than that may indicate hypovolemia from trauma, inadequate oxygenation, or uncontrolled pain and anxiety. Blood pressure and other vital signs in early stages of burn resuscitation should
+
+be the same as the patient's baseline.
+
+Neurologic assessment
+
+I n most cases, neurologic status won't be altered in the early stages of burn injury. Determine if the patient is alert, responsive to verbal and pain  stimuli,  or  unconscious.  If  the  patient  isn't  alert  and  oriented, consider  an  associated  injury,  carbon  monoxide  poisoning,  substance abuse, hypoxia, or pre-existing medical conditions and refer immediately.
+
+Issue Date:
+
+[PAGE 13]
+History
+
+If  you  can't  gather  a  history  from  the  patient,  interview  family members, friends, or those who were at the scene.
+
+Ask abo ut the patient's medical history
+
+Record detailed information about the circumstances and mechanism of the injury.
+
+Additional questioning will be necessary if the patient was found in an enclosed space, has potential orthopedic injuries associated with the burns, or had clothing on fire.
+
+Ask about the affected body
+
+part
+
+[PAGE 13-14]
+Thorough and accurate estimation  of  burn  size  is essential  to  guide  therapy and  to  determine  when  to refer a patient.
+
+Using  one  of  the  methods described below, the extent
+
+of burns is estimated and expressed as the total percentage of body surface area (TBSA).
+
+Superficial (first-degree) burns are not included in percentage TBSA burn assessment.
+
+The locations of partial-thickness and full-thickness burned areas are recorded on a burn diagram. Burns with an appearance compatible with either deep partial-thickness or full-thickness are presumed to be full-thickness until accurate differentiation is possible.
+
+Methods  of  estimation - The  two  commonly  used  methods  of assessing percentage TBSA in adults are the Lund-Browder chart and "Rule  of  Nines."  The  Lund-Browder  chart  is  the  recommended method in children because it considers the relative percentage of body surface area affected by growth. If the burn is irregular and/or patchy, the palm method may be more useful.
+
+Lund-Browder - The  Lund-Browder  chart  is  the  most  accurate method for estimating TBSA for both adults and children. Children have proportionally larger heads and smaller lower extremities, so the percentage  TBSA  is  more  accurately  estimated  using  the  LundBrowder chart. Refer to APPENDIX 2 for the Modified Lund-Browder
+
+Issue Date:
+
+21/04/2024
+
+[PAGE 15-16]
+Refer to Family Physician/Specialist for face to face consultation
+
+Burns in patients who will require special social, emotional, or rehabilitative intervention
+
+Burns  in patients with pre-existing medical disorders that could complicate management, prolong recovery, or affect mortality
+
+Possible infected burn wound
+
+Referral to ER:
+
+Any patient with burns and concomitant trauma (e.g., fractures)
+
+Burns that  involve  the  face,  hands,  feet,  genitalia,  perineum,  or  major joints
+
+Chemical burns
+
+Issue Date:
+
+Chart  for  assessing  total  body  surface  area  burn  in  children  and adults.
+
+Rule of Nines - For adult assessment, the most expeditious method to estimate TBSA in adults is the "Rule of Nines":
+
+The head represents 9% TBSA
+
+Each arm represents 9% TBSA
+
+Each leg represents 18% TBSA
+
+The anterior and posterior trunk each represent 18% TBSA
+
+Electrical burns, including lightning injury
+
+Inhalation injury
+
+Superficial Partial-thickness burns on more than 10% of the TBSA
+
+Deep second-degree
+
+Third-degree (full-thickness) burns
+
+Fourth degree burns
+
+[PAGE 16-19]
+Refer to APPENDIX 3 for the Virtual Management of Burn Algorithm
+
+Most superficial  (first-degree)  burns  can  be  successfully  managed  via  telehealth consultation. Close monitoring and follow-up are important aspects of management because of the dynamic and fragile progression of burn injuries.
+
+Goals of burn management include rapid healing, pain control, return of full function to the injured area, and good aesthetic results.
+
+Due to the risk of airway edema and possible inhalation injury, burns to the face or neck should always be referred for face to face consultation for prompt evaluation of the patient's airway, regardless of the burn size.
+
+A tetanus shot should be given to all patients with more than a first-degree burn.
+
+The immediate management shall include:
+
+Issue Date:
+
+Immediate treatment of minor thermal burns with cool running water is recommended though it is controversial. The running water should not be applied for longer than approximately five minutes.
+
+Although cool water is an acceptable home treatment for minor burns, ice  water  immersion  is  not  because  it  can  lead  to  further  injury  and hypothermia.
+
+Any materials that could cause further injury should be removed.
+
+Pain management
+
+Immediate attention should be given to pain control, because burns can take weeks to heal, judicious use of analgesics is recommended.
+
+Applying gauze soaked in cool water to a wound for up to 30 minutes is a suitable technique for reducing pain soon after the burn is sustained.
+
+Acetaminophen and NSAIDs are often sufficient for analgesia
+
+Elevation of lower and upper extremity burns above the level of the heart can reduce pain and swelling for several days following the injury.
+
+Pain management needs usually decline markedly once wound epithelization has occurred. However, analgesia requirements can actually  increase  if  rescue  medications  are  inadequate.  Patients  with larger or recently sustained burns can present with significant pain and may require referral for intravenous (IV) opioids for initial analgesia.
+
+Clinical Guidelines for the Virtual Management of Burn
+
+Code:
+
+DHA/HRS/HPSD/CG-46
+
+Issue Nu:
+
+2
+
+Issue Date:
+
+21/02/2024
+
+Effective Date:
+
+21/04/2024
+
+Revision Date:
+
+Topical treatment:
+
+Superficial burns can be treated successfully with topical application of lotion, honey, aloe vera, or antibiotic ointment.
+
+The  lipid  component  of  these  treatments  accelerates  the  repair  of damaged  skin  and  reduces  drying.  Although  there  are  no  medication requirements for patients with superficial burns, evidence has shown that topical nonsteroidal anti-inflammatory drugs and aloe vera reduce pain.
+
+Topical corticosteroids have not been shown to reduce the inflammatory reaction, therefore they should NOT be used to treat superficial thermal burns or sunburns.
+
+Partial-thickness  burns  should  be  treated  with  a  topical  antimicrobial agent  or  an  absorptive  occlusive  dressing  to  reduce  pain,  promote healing, and prevent wound desiccation.
+
+Topical  silver  sulfadiazine  (Flamazine)  is  the  standard  antimicrobial treatment for partial-thickness burns however, it is relatively contraindicated  in  patients  with  sulfa  allergy,  pregnant  and  lactating women, and new-borns
+
+The selection and application of burn wound dressings and topical agents depends on the nature and extent of the burn wound, a wound quality or state (e.g., contamination, infection), and the patient's allergy history.
+
+Issue Nu:
+
+2
+
+Issue Date:
+
+Local burn wound care aims to protect the wound surface, maintain a moist environment, promote burn wound healing, and limit burn wound progression while minimizing discomfort for the patient. It is important to note that topical antimicrobials are used  in conjunction with appropriate basic wound care.
+
+Burn wound surfaces are prone to rapid bacterial colonization with the potential for invasive infection by pathogens (e.g., methicillinresistant Staphylococcus aureus) that can cause burn wound infection.
+
+Antibiotic  treatment  depends  on  local  drug  resistance  and  should  be tailored  toward  broad  coverage  of  gram-negative  and  gram-positive bacteria.
+
+Pruritus  and  neuropathic  pain  are  common  postburn  complications. Histamine H1 receptor antagonists such as cetirizine (Zyrtec) are the safest pharmacologic treatment for postburn pruritus.
+
+A tetanus shot should be given to all patients with more than a firstdegree burn
+
+[PAGE 19-22]
+A  variety  of  antimicrobial  agents  can  be  applied  to  the  burn  wound surface, which is then covered with one of several dressing materials (e.g., gauze, nonadherent films).
+
+Gauze alone should be avoided unless there are no other options (i.e., topical  antimicrobials  are  not  available).  Dry  gauze  promotes  scab formation, which will generally separate spontaneously as reepithelialization occurs.
+
+Non-adherent  films  or  fine  mesh  gauze  (in  combination  with  topical antimicrobials) are common dressings used to cover the burn wound, but films,  foams,  alginates,  hydrocolloids,  and  hydrogels  can  also  be  used depending on the specific qualities of the dressing (e.g., silver containing) and the specific needs of the burn wound.
+
+Dressing changes should be frequent enough to control exudate but not so  frequent  that  they  interfere  with  wound  reepithelialization.  The frequency ranges from twice daily to weekly depending upon the amount of  exudate  and  choice  of  dressing  material.  More  frequent  dressing changes are performed if there is a large amount of exudate, weeping, or infection.
+
+Topical antimicrobials should be gently removed with dressing changes. Excessive scrubbing and sharp debridement are not necessary and may hinder healing.
+
+In general, superficial burns do not require antimicrobial therapy, but for extensive superficial burns, topical antimicrobials may be used to prevent
+
+DHA/HRS/HPSD/CG-46
+
+Issue Nu:
+
+2
+
+Issue Date:
+
+21/04/2024
+
+colonization  while  maintaining  a  moist  wound  healing  environment. Furthermore, because superficial partial-thickness burns may not always be easily distinguished from deeper injuries, topical antimicrobial agents are often used. Start with a combination antimicrobial ointment or creme (e.g., Mupirocin) covered with a non-adherent dressing (e.g., Xeroform, Adaptic,  Mepitel).  When  in  close  proximity  to  the  eyes,  we  use  an ophthalmic ointment without steroids.
+
+Refer to APPENDIX 4 for Topical Antimicrobial Agents used for Burns
+
+Summary of Management
+
+Prevention  efforts  can  significantly lower  the  incidence  of burns, especially in children.
+
+Superficial burns can be treated with topical application of lotions, honey, aloe vera, or antibiotic ointment.
+
+Partial-thickness  burns  should  be  treated  with  a  topical  antimicrobial agent or an absorptive occlusive dressing to help reduce pain, promote healing, and prevent wound desiccation.
+
+Topical  silver  sulfadiazine  is  the  standard  treatment;  however,  newer occlusive dressings can provide faster healing and are often more costeffective. Physicians must re-evaluate patients frequently after a burn injury and be aware of the indications for referral to a burn specialist.
+
+Issue Nu:
+
+2
+
+Issue Date:
+
+21/04/2024
+
+Although  cellulitis  is  not  common  in  burns,  it  can  cause  the  skin  to become severely erythematous, exudative, painful, and swollen. This is a difficult process to assess because wounds generally are erythematous, painful, and swollen as they heal. Infections can progress rapidly; some of the most common pathogens found in burn wounds include Staphylococcus aureus, Streptococcus pyogenes, Pseudomonas aeruginosa, and Acinetobacter and Klebsiella species.
+
+Antibiotic  treatment  depends  on  local  drug  resistance  and  should  be tailored  toward  broad  coverage  of  gram-negative  and  gram-positive bacteria.
+
+Pruritus  and  neuropathic  pain  are  common  postburn  complications. Histamine H1 receptor antagonists such as cetirizine (Zyrtec) are the safest pharmacologic treatment for postburn pruritus.
+
+A tetanus shot should be given to all patients with more than a firstdegree burn
+
+Clinical Guidelines for the Virtual Management of Burn
+
+Code:
+
+DHA/HRS/HPSD/CG-46
+
+Issue Nu:
+
+2
+
+Issue Date:
+
+21/02/2024
+
+Effective Date:
+
+21/04/2024
+
+Revision Date:
+
+[PAGE 23]
+Rice, P., and Orgill, D., [Internet]. Assessment and classification of burn injury. UpToDate. [updated 2021; cited 2022 Jun 2]. Available from: https://www.uptodate.com/contents/assessment-andclassification-of-burn-injury
+
+Tenenhaus, M., and Rennekampff, H., [Internet]. Topical agents and dressings for local wound care. UpToDate. [updated 2022; cited 2022 Jun 2]. Available from: https://www.uptodate.com/contents/topical-agents-and-dressings-for-local-burn-woundcare/print

@@ -1,0 +1,3225 @@
+DOC_CODE: DHA/HRS/HPSD/ST-14
+TITLE: Standards for Telehealth Services
+AUTHORITY: Dubai Health Authority
+TIER: official
+VERSION: 4
+
+=== DOCUMENT TEXT ===
+
+[PAGE 1-2]
+Version (4)
+
+Issue date: 26/09/2025
+
+Effective date: 26/11/2025
+
+Health Policies and Standards Department
+
+Health Regulation Sector (2025)
+
+The Health Policy and Standards Department (HPSD) developed this Standard in collaboration with Subject Matter Experts and would like to acknowledge and thank these health professionals for their dedication toward improving quality and safety of healthcare services in the Emirate of Dubai.
+
+Health Regulation Sector
+
+Dubai Health Authority
+
+All rights ©  reserved by the Dubai Health Authority @ 2025. The contents of this document shall not be copied or reproduced in any form without prior written permission from the Authority.
+
+Issue Nu:
+
+4
+
+[PAGE 5-6]
+The Health Regulation Sector (HRS) plays a key role in regulating the health sector. HRS is mandated by the Dubai Health Authority (DHA) Law No. (6) of the year (2018) with its amendments pertaining to DHA, to undertake several functions including but not limited to:
+
+Developing regulation, policy, standards, guidelines to improve quality and patient safety and promote the growth and development of the health sector;
+
+Licensure and inspection of health facilities as well as healthcare professionals and ensuring compliance to best practice;
+
+Managing patient complaints and assuring patient and physician rights are upheld;
+
+Governing the use of narcotics, controlled and semi-controlled medications;
+
+Strengthening health tourism and assuring ongoing growth; and
+
+Assuring management of health informatics, e-health and promoting innovation.
+
+The Standards for Telehealth Services aims to fulfill the following overarching Dubai Health Sector Strategy 2026:
+
+Pioneering Human-centered health system to promote trust, safety, quality and care for patients and their families.
+
+Make Dubai a lighthouse for healthcare governance, integration and regulation.
+
+Leading global efforts to combat epidemics and infectious diseases and prepare for disasters.
+
+Pioneering prevention efforts against non-communicable diseases.
+
+Become a global digital health hub.
+
+Issue Nu:
+
+4
+
+Foster healthcare education, research and innovation .
+
+Strengthening the economic contribution of the health sector, including health tourism to support Dubai economy .
+
+Issue Nu:
+
+4
+
+[PAGE 7]
+The advancements in medical and communications technology has had a profound impact on the healthcare  services  globally.  Telehealth  offers  the  opportunity  to  improve  the  delivery  and accessibility of healthcare services at low cost. It also provides the means for leveraging scarce resources and improving care and access for patients in remote areas. The appropriate application of  telehealth  technologies  can  enhance  the  provision  of  healthcare  services  by  facilitating communication between physicians/nurses/allied health professionals and patients. Telehealth services include but are not limited to scheduling appointments, assessment, providing medical advice, treatment, therapy, laboratory testing, diagnostics, surgery, monitoring chronic conditions, counselling and prescribing and dispensing of medications. The DHA Standard was developed  to  improve  the  scope,  effectiveness,  efficiency,  quality,  and  safety  of  Telehealth services in the Emirate of Dubai. Telehealth is divided into five key areas:
+
+·
+
+Teleconsultation
+
+Telemonitoring (remote patient monitoring)
+
+Telerobotics and robot-assisted services
+
+Telepharmacy
+
+Telediagnostics (including tele-laboratory and teleradiology)
+
+Tele-ICU
+
+Issue Nu:
+
+4
+
+26/11/2025
+
+[PAGE 8]
+Updated definitions
+
+Health Insurance Coverage and Eligibility Verification
+
+Telehealth services shall be incorporated as a hybrid model in management of chronic diseases.
+
+[PAGE 8-11]
+Requirements for travelling UAE citizens and residents
+
+Requirements for telehealth in medical tourism
+
+Scope of medical tourism (appendix 3)
+
+Updated accreditation requirements
+
+Consent for the use of Ambient AI tools
+
+Facilities providing telehealth services shall adhere to the detailed requirements provided in the DHA Guidelines for Electronic Medical Record in Health Facilities.
+
+Facilities may include asynchronous 'chat based consultation' option
+
+Virtual second-opinion models.
+
+Emergency management protocols in telemonitoring
+
+Telediagnostics requirements
+
+DEFINITIONS
+
+Ambient AI (in healthcare)
+
+refers to the use of unobtrusive, context-aware artificial intelligence
+
+that  operates  in  the  background  during  virtual  care  interactions  to  enhance  clinical  quality,
+
+streamline documentation, and improve patient and provider experience. Ambient AI tools can be
+
+used for analysing and responding to data in real time to enhance user experiences without direct
+
+interaction.
+
+Asynchronous (Store-and-Forward):
+
+is  a  form  of  telehealth  where  patient  information  (e.g.,
+
+images, messages, reports) is collected and sent to a provider for review at a later time, enabling
+
+flexible, non-real-time communication.
+
+Clinical  Assessment
+
+:  Is  the  assessment  of  the  patient's  physical  and  mental  condition  for  a
+
+diagnosis, treatment or prognosis.
+
+Consent:
+
+Consent is a declaration of a person's willingness and choice to undergo a consultation,
+
+procedure, treatment, investigation, or other intervention such as remote monitoring. It is an
+
+ethical and legal instrument that affirms the patient's right to contro l their health care and the
+
+physician's duty to involve the patient in care decisions. Consent must be given voluntarily by a
+
+competent  patient  after  the  physician  has  disclosed  all  necessary  information  for  informed
+
+decision-making. For incompetent or underage patients, consent must be obtained from a legal
+
+guardian up to the fourth degree, as per UAE Law. Consent may be obtained through
+
+consent
+
+, which involves the use of secure electronic systems and processes
+
+digital platforms,
+
+recognition interactive voice recognition, or biometric
+
+-to document and validate the patient's consent.
+
+Standards for Telehealth Services
+
+Issue Nu:
+
+-
+
+electronic
+
+such as text, audio,
+
+methods like fingerprint
+
+4
+
+Electronic  Communication
+
+:
+
+Any  transfer  of  signs,  signals,  writing,  images,  sounds,  data,  or
+
+information transmitted in whole or in part by a wire, wireless, radio, electromagnetic, photo
+
+electronic or photo optical system with others, either individually or in groups.
+
+Electronic Health Record
+
+:  Any electronic file, document, data or health information related to
+
+the  patient,  containing  retrospective,  concurrent  and  scheduled  information  which  is  digitally
+
+captured and stored for provision of effective, safe and high-quality healthcare services.
+
+E-referral is  the  electronic  process  of  directing  a  patient  to  an  appropriate  healthcare
+
+professional  or  facility  for  expert  advice  or  treatment.  This  process  typically  requires  prior
+
+agreements  and  approved  referral  procedures  between  the  referring  and  receiving  facilities,
+
+outlining obligations such as the exchange of patient information and referral criteria for clinical
+
+assessment and treatment.
+
+Health  Information:
+
+Health  data  processed  and  made  apparent  and  evident  whether  visible,
+
+audible or readable, and which are of a health nature whether related to health facilities, health
+
+or insurance facilities or beneficiaries of health services.
+
+Information and Communication Technology:
+
+Is an extensional term for information technology
+
+(IT) that stresses the role of unified communications and the integration of telecommunications
+
+(telephone lines and wireless signals) and computers, as well as necessary enterprise software,
+
+middleware, storage, and audio-visual systems, that enable users to access, store, transmit, and
+
+manipulate information.
+
+Medical Director:
+
+A DHA licensed physician or dentist who manages and runs and has clinical
+
+oversight of a DHA licensed health facility and its clinical staff.
+
+Standards for Telehealth Services
+
+Issue Nu:
+
+4
+
+26/11/2025
+
+Nurses and Allied Health Professionals:
+
+Are healthcare professionals licensed by DHA as per
+
+the Unified Healthcare Professional Qualification Requirements for the UAE.
+
+Patient:
+
+A person who receives the healthcare services or the medical investigation or treatment
+
+provided by a DHA licensed healthcare professional within a DHA licensed health facility.
+
+[PAGE 11-12]
+People of Determination
+
+: Are people with special needs or disabilities and includes any person
+
+that suffers from physical, intellectual or sensory disability that hinders their ability to actively
+
+participate in the community in the same manner as healthy people.
+
+Physical Examination:
+
+Is an evaluation of the bodily functions with medical tools during a face-
+
+to-face in person consultation between the physician
+
+Practicing Care Site and the patient.
+
+: Is the location where telehealth services are being provided.
+
+Prescription  Only  Medicine:
+
+A  Ministry  of  Health  and  Prevention  (MOHAP)  registered
+
+medication that requires an official prescription to be dispensed to patients.
+
+Privileges:
+
+Is the process of issuing a DHA licensed physician/dentist permission to carry out
+
+specific duties as per DHA Policy.
+
+Receiving Care Site
+
+Service  Provider:
+
+: Is the location where telehealth services are received.
+
+Refers  to  healthcare  professionals  and/or  healthcare  facilities  such  as
+
+hospitals, nurse practitioners, chiropractors, physical therapists, and others offering specialized
+
+health care services.
+
+Standalone Telehealth Centre is  a  DHA  licensed  centre  that  operates  independently  and  is
+
+specifically designed to deliver healthcare services remotely using telecommunication technology.
+
+Standalone telehealth services are dedicated entirely to virtual care.
+
+Standards for Telehealth Services
+
+Issue Nu:
+
+4
+
+Synchronous:
+
+Refers to provision and transfer of patient's data and information simultaneously
+
+using real time, interactive audio and/or video connections that transmit bidirectional images and
+
+information between the physician and the patient during service delivery.
+
+System:
+
+A set of electronic data and health information exchange operations, involving a set of
+
+electronic parts or components that link together and work together to achieve a specific goal.
+
+Teleconsultation is  the  use  of  information  and  communication  technologies
+
+and/or  video
+
+[PAGE 12-14]
+-
+
+-
+
+such  as  audio
+
+to  provide  medical  advice,  diagnosis,  and  treatment  when  the  physician  and
+
+patient (or other healthcare providers) are in different locations. It may occur between a physician
+
+and  a  patient,  between  two  physicians,  or  in  a  joint  setting  involving  multiple  parties.
+
+Teleconsultation enhances accessibility to healthcare, supports continuity of care, and enables
+
+timely medical decision-making across distances.
+
+Teleconsultation may include but not be limited to:
+
+·
+
+Telediagnosis:
+
+Is  the  use  of  information  and  telehealth  technology  at  a  remote  site  to
+
+determine the nature of disease and facilitate faster and accurate diagnosis (or prognosis)
+
+of the patient and includes but is not limited to radiology, dermatology and pathology.
+
+Telemonitoring (Remote Patient Monitoring):
+
+collect and track a patient's clinical data- The use of telehealth technologies to remotely such as vital signs or symptoms
+
+-
+
+to manage chronic
+
+or  acute  health  conditions.  It  allows  for  continuous  patient  oversight  and  timely  intervention
+
+without requiring in-person visits.
+
+Telehealth:
+
+is defined by the World Health Organization (WHO) as 'The delivery of health care
+
+services, where distance is a critical factor, by all health care professionals using information and
+
+Standards for Telehealth Services
+
+Issue Nu:
+
+4
+
+communication technologies for the exchange of valid information for diagnosis, treatment and
+
+prevention of disease and injuries, research and evaluation, and for the continuing education of
+
+health  care  providers,  all  in  the  interests  of  advancing  the  health  of  individuals  and  their
+
+communities'
+
+Telehealth services is divided into six key areas:
+
+·
+
+·
+
+·
+
+·
+
+·
+
+Teleconsultation;
+
+Telemonitoring (remote patient monitoring);
+
+Telerobotics and robot-assisted services; and
+
+Telepharmacy
+
+Telediagnostics
+
+·
+
+Tele-ICU
+
+Telediagnostics refers  to  the  use  of  digital  technologies  and  telecommunication  systems  to
+
+remotely conduct, coordinate, or interpret diagnostic procedures and tests. It enables healthcare
+
+professionals to evaluate medical data and make informed clinical decisions without the need for
+
+the patient or provider to be physically present at the same location. Telediagnostics enhances
+
+access to timely, expert diagnostics
+
+-
+
+particularly in remote or underserved areas
+
+continuity of care through efficient digital workflows.
+
+Telediagnostics may include but not limited to:
+
+·
+
+Teleradiology:
+
+The electronic transmission of radiological images (e.g., X-rays, CT scans,
+
+MRIs) from one location to another for interpretation by qualified radiologists. It supports
+
+Issue Nu:
+
+4
+
+-
+
+and supports remote diagnostic reporting and facilitates timely medical decisions by extending access to specialized radiological expertise.
+
+Telelaboratory: The remote coordination, processing, and analysis of laboratory tests and diagnostic samples (e.g., blood, urine) through digital systems. It allows healthcare providers to request tests, receive results, and manage patient care without requiring in-person lab visits  improving  access  and  efficiency  in  patient  care - especially  in  rural  or  underserved areas.
+
+Telepathology: Is the  use  of  telecommunication  technology  for  transfer  of  high-quality pathological data or test and imaging produced in a diagnostic centre or laboratory for the purposes of diagnosis, education and research.
+
+Telehealth Assistance:
+
+Includes the services, devices and software that individuals (or their
+
+legal guardian) may use to manage and promote the patients' health and well
+
+Tele-ICU
+
+-being.
+
+(Tele-Intensive  Care  Unit):  refers  to  the  use  of  telecommunication  and  information
+
+technologies to provide remote critical care support and monitoring for patients in intensive care
+
+units  (ICUs).  Through  audio-visual  links,  real-time  data  integration,  and  specialized  software,
+
+intensivists and critical care teams located off-site can continuously monitor patient vitals, review
+
+medical records, and collaborate with on-site staff to manage critically ill patients.
+
+Telehealth Platform:
+
+Refers to a digital platform for the provision of remote telehealth services
+
+as per DHA Standards.  A telehealth platform may include a smart device, mobile application, a
+
+computer software, or web interface system.
+
+Issue Nu:
+
+4
+
+[PAGE 15]
+Telepharmacy refers  to  the  practice  of  prescribing  and  dispensing  prescribed medications, in
+
+addition to providing pharmaceutical care, and sharing information with patients from a distance
+
+using telecommunications, electronic imaging technologies, and information systems.
+
+Telepharmacy  does  not  include  vending  machines,  delivering  services,  online  pharmacy,  and
+
+dispensing of nonprescription medication.
+
+Telepharmacy may include but not be limited to:
+
+·
+
+·
+
+·
+
+Teleprescribing:
+
+The  practice  by  which  a  DHA-licensed  physician  remotely  prescribes
+
+treatment following a teleconsultation or based on a previous in-person clinical assessment,
+
+provided  the  prescription  is  issued  within  the  appropriate  timeframe  for  the  specified
+
+condition or disease. It ensures continuity of care while maintaining prescribing safety and
+
+compliance.
+
+Teledispensing is the dispensing of prescribed medications through digital technologies. It
+
+involves licensed pharmacists who verify electronic prescriptions, provide necessary patient
+
+counseling via telecommunication tools (e.g., video call, phone, or secure messaging), and
+
+authorize the release of medications from a licensed pharmacy or automated dispensing unit.
+
+Medication  Therapy  Management  (MTM):
+
+Are services that focus on identifying,
+
+preventing,  and  solving  drug  related  problems  to  optimize  therapeutic  outcomes  for
+
+individual patients to optimize medication use while employing the best practice guidelines.
+
+Telerobotics  and  Robot-Assisted  Services:
+
+Is  the  use  of  non-autonomous,  remote  assisted
+
+robotic medical devices for consultation, diagnosis or surgery where the physician is at a remote
+
+site for patient consultation, diagnosis and/or to perform a surgical task by a robotic system
+
+Standards for Telehealth Services
+
+Issue Nu:
+
+4
+
+Page 15 of 94
+
+[PAGE 16]
+controlled by the physician at the remote site. The remote site may include a nearby location, adjacent room or facility (short distance system) or within in another geographic location (long distance  system).  Telerobotics  for  medical  purposes  is  a  combination  of  two  major  subfields, teleoperation and telepresence and chiefly uses wired, wireless network or tethered connection.
+
+Issue Nu:
+
+4
+
+[PAGE 17-18]
+AED :
+
+AI :
+
+BLS :
+
+CSP :
+
+CPD :
+
+DED :
+
+DESC :
+
+DHA :
+
+DHIC :
+
+HRS :
+
+ICT :
+
+KPI :
+
+MD :
+
+MOHAP :
+
+MOU :
+
+MTM :
+
+NESA :
+
+NOC :
+
+NSAID :
+
+OTC :
+
+Automated External Defibrillator
+
+Artificial Intelligence
+
+Basic Life Support
+
+Cloud Service Provider
+
+Continuing Professional Development
+
+Department of Economic Development
+
+Dubai Electronic Security Center
+
+Dubai Health Authority
+
+Dubai Health Insurance Corporation
+
+Health Regulation Sector
+
+Information and Communication Technology
+
+Key Performance Indicator
+
+Medical Director
+
+Ministry of Health and Prevention
+
+Memorandum of Understanding
+
+Medication Therapy Management
+
+National Electronic Security Authority
+
+No Objection Certificate
+
+Non-Steroidal Anti-Inflammatory Drugs
+
+Over the Counter
+
+PDA :
+
+POM :
+
+PRM :
+
+RTTE :
+
+RN :
+
+SOP :
+
+TRA :
+
+UAE :
+
+Personal Digital Assistant
+
+Prescription Only Medicines
+
+Patient Remote Monitoring
+
+Radio and Telecommunications Terminal Equipment
+
+Registered Nurse
+
+Standard Operating Procedure
+
+Telecommunication Regulatory Authority
+
+United Arab Emirates
+
+26/09/2025
+
+[PAGE 19-20]
+Global health systems face growing challenges, including increasing disease burdens, rising costs, and the need to balance quality,  access,  and  patient  expectations.  Rapid  advances  in  medical science and technology have driven innovations like telehealth, initially developed to serve remote areas with limited healthcare access. Over the past decade, telehealth has evolved into a widely accepted, cost-effective solution for improving healthcare access in both rural and urban settings. In  2019,  His  Highness  Sheikh  Mohammed bin  Rashid  Al  Maktoum  outlined  in  the  Fifty-Year Charter (Article No. 5: A Doctor to Every Citizen) a vision to provide 24/7 medical consultations via smart government applications, connecting citizens with global medical experts to improve health awareness and services. That same year, an addendum to Cabinet Decree No. (40) of 2019 established regulations for telehealth in the UAE, supporting Dubai's strategic vision. Telehealth is embedded in several key initiatives and regulatory frameworks, including:
+
+Dubai Health Strategy 2016 - 2021
+
+Care Model Innovation: Telehealth, remote care, innovative technologies
+
+Primary Care: Improved entry points and service models
+
+Dubai Clinical Services Capacity Plan (2015 - 2020)
+
+Dubai Health Investment Guide (2019)
+
+DHA Interoperability Standards
+
+DHA Code of Ethics
+
+Dubai Universal Design Code
+
+Federal Law No. (2) of 2019 - ICT use in health
+
+Ministerial Decision No. (51) of 2021 - Cross-border health data
+
+Federal Decree-Law No. (5) of 2012 - Cybercrime
+
+Dubai Executive Council Resolution No. (32) of 2012 - Health profession regulation
+
+Federal Decree-Law No. (4) of 2016 - Medical liability
+
+Addendum to Cabinet Decree No. (40) of 2019 - Telehealth regulations
+
+Dubai's Telehealth Standards mark a significant step toward accessible, affordable, and secure
+
+digital healthcare. They define minimum professional requirements while ensuring patient data
+
+protection in compliance with federal and local laws.
+
+2.
+
+3.
+
+SCOPE
+
+2.1.
+
+Telehealth services in DHA licensed health facilities
+
+PURPOSE
+
+3.1.
+
+To set out the minimum Standards for provision of Telehealth services within DHA
+
+licensed Health Facilities.
+
+To establish minimum requirements for DHA licensed physicians to provide efficient, secure, safe and high-quality Telehealth services.
+
+3.3.
+
+3.4.
+
+To support Healthcare Innovation and Health Technology development in the field of
+
+medicine.
+
+To set out the exclusions for the provision of Telehealth services.
+
+To  set  out  the  minimum  requirements  for  monitoring  and  evaluation  of  Telehealth services provided by DHA licensed health facilities.
+
+Issue Nu:
+
+4
+
+.
+
+[PAGE 21-24]
+4.1.
+
+DHA licensed healthcare professionals and health facilities providing telehealth services.
+
+4.2.
+
+Exclusion for telehealth services:
+
+4.2.1.
+
+Emergency cases for immediate life threating intervention or referral.
+
+Prescribing of narcotic, controlled or semi-controlled medication.
+
+4.2.3.
+
+Platforms used for face-to-face in person consultation.
+
+STANDARD ONE:
+
+REGISTRATION AND LICENSURE PROCEDURES
+
+5.1.
+
+All DHA licensed health facilities are required to have in place telehealth service(s) for
+
+usual care or as part of their business continuity plans.
+
+5.1.1.
+
+5.1.2.
+
+All DHA licensed health facilities must comply with UAE Federal and local Laws
+
+and Regulations and be licensed by DHA.
+
+Telehealth providers that are providing continuity of care to patients outside
+
+the  Emirate  of  Dubai  shall  comply  with  the  regulatory  requirements  of  the
+
+respective jurisdiction (Appendix 2).
+
+Telehealth service providers shall seek international recognized telehealth accreditation
+
+to assure compliance with Federal Law No. (2) Of 2019, concerning the use of ICT in
+
+health fields and in alignment with the DHA Accreditation policy.
+
+5.2.1.
+
+Accreditation is required for all telehealth services, both facilities and platforms.
+
+All  DHA  licensed  health  facilities  providing  telehealth  services  shall  obtain telehealth accreditation within a grace period of 24 months from the date of initial licensure or from the date of license renewal for existing facilities.
+
+Issue Nu:
+
+4
+
+5.
+
+5.2.
+
+Accrediting bodies that are specific to providing telehealth services include but are not limited to:
+
+Quality and Accreditation Institute (QAI)
+
+Emirates International Accreditation Center (EIAC)
+
+Joint Commission International (JCI)
+
+Utilization Review Accreditation Commission (URAC)
+
+National Committee for Quality Assurance (NCQA)
+
+Telehealth providers utilizing Artificial Intelligence (AI) technologies, including but not limited to Ambient AI, shall be subject to specific regulatory requirements to ensure patient safety, data privacy, clinical accuracy, and ethical use in alignment  with DHA Artificial Intelligence policy and applicable laws.
+
+All DHA licensed Health Facility shall:
+
+Comply with DHA requirements for licensure, timeframes for submission and resubmission of documentation and adhere to any corrective measures issued by HRS.
+
+Employ  the  minimum  required  number  of  physicians  for  the  provision  of telehealth services as per DHA Policy for Licensing Health Facilities.
+
+All  DHA  licensed  health  facilities  shall  ensure  medical  liability/malpractice insurance is in place throughout the duration of telehealth service provision.
+
+26/09/2025
+
+Install equipment, devices and technologies approved by Ministry of Health and Prevention (MOHAP) that are required for telehealth service delivery, including peripheral devices and associated software.
+
+Have in place the following policies and procedures:
+
+Telehealth service description with scope of services available to members of the public.
+
+The service description shall fulfil patients' healthcare needs and assure continuity of care.
+
+c.
+
+d.
+
+Patient identification, selection and risk assessment.
+
+Patient consent.
+
+Use of Information Technology Systems including machine learning and artificial intelligence technologies.
+
+Clinical care pathways and prescribing protocols.
+
+Clinical care pathways and prescribing protocols must include red flags  for  referral  and  emergency  referral  and  be  reviewed  on  a periodic basis.
+
+ii.
+
+Amendments  to  clinical  care  pathways  and  prescribing  protocols
+
+must be documented.
+
+Health record documentation management.
+
+Patient privacy and confidentiality.
+
+Patient referral, follow up and continuity of care.
+
+Issue Nu:
+
+4
+
+26/09/2025
+
+6.
+
+Incident recording and reporting.
+
+Quality and safety improvement.
+
+Business continuity.
+
+Emergency protocol for emergency patient cases.
+
+Equipment testing, maintenance and failure management.
+
+Network  and  data  confidentiality,  transmission,  storage  and  access
+
+security.
+
+STANDARD TWO:
+
+6.1.
+
+TELEHEALTH ACROSS BORDERS
+
+This  chapter  outlines  the  regulatory  framework  and  operational  requirements  for
+
+physicians  providing  teleconsultations  to  patients  within  the  UAE,  including  those
+
+residing abroad or visiting the country and inflight.
+
+DHA licensed Physicians residing  outside  the  UAE  may  provide  teleconsultations  to patients in the UAE provided they are DHA licensed and affiliated to a DHA licensed facility.
+
+6.3.
+
+The provision of Telehealth services that entails two or more entities shall ensure a
+
+written Contract or Memorandum of Understanding (MOU) is in place and kept up to
+
+date.
+
+6.3.1.
+
+6.3.2.
+
+j.
+
+k.
+
+l.
+
+m.
+
+n.
+
+o.
+
+The MOU shall detail out the roles and responsibilities of each party and align
+
+with UAE Federal and local Laws and Regulations.
+
+The  DHA  licensed  health  facility  shall  maintain  a  record  or  all  physicians
+
+engaged in telehealth services.
+
+Issue Nu:
+
+4
+
+[PAGE 25]
+The DHA licensed health facility shall be responsible to ensure the partnering health facility is made aware of the applicable UAE Federal and Local Laws and Regulations for telehealth services and assure compliance across both regulatory jurisdictions.
+
+Airline industries are permitted to use telehealth services as an add-on service to a DHA licensed airport clinic or through external contracts with written MOUs.
+
+In-flight teleconsultations are permitted and shall be conducted by the crew members rather than the passengers.
+
+6.4.2.
+
+Ensure clear informed consent protocols are in place.
+
+For Travelling UAE Citizens and Residents Holding Emirates ID (EID):
+
+[PAGE 25-26]
+Telehealth services may be provided remotely to UAE citizens and residents traveling abroad.
+
+Physicians  must  use  DHA-approved  encrypted  platforms  to  ensure  data security and patient confidentiality during virtual consultations.
+
+Prior to any consultation, explicit informed consent must be obtained from the patient,  detailing  the  scope,  limitations,  and  confidentiality  of  the  telehealth service.
+
+Physicians  licensed  by  DHA  may  offer  advisory  medical  guidance  and  nonemergency medical advice relevant to the patient's condition while abroad .
+
+Issue Nu:
+
+4
+
+6.5.
+
+The  telehealth  service  is  limited  to  advisory  and  follow-up  care;  urgent  or emergency interventions requiring physical examination or procedures should be directed to appropriate local healthcare providers abroad.
+
+All consultations must be thoroughly documented in the patient's health record in accordance with DHA regulations.
+
+For GCC or International Patients visiting Dubai:
+
+DHA-licensed  physicians  may  provide  telehealth  consultations  to  GCC  or international patients visiting Dubai (non-residents).
+
+Consultations must be conducted using DHA-compliant encrypted telehealth platforms to safeguard patient information.
+
+Explicit  patient  consent  must  be  secured  before  commencing  telehealth services, clarifying the nature and scope of the virtual consultation.
+
+Physicians  are  permitted  to  offer  medical  advice,  diagnosis,  and  treatment within the limits of telehealth and DHA licensing scope.
+
+Prescriptions or referrals provided must comply with DHA regulations and local laws governing medication and treatment.
+
+All telehealth encounters must be documented accurately and made accessible to the patient and authorized healthcare providers as needed.
+
+Refer to appendix 3 for Scope of telehealth in medical tourism.
+
+[PAGE 27]
+7.1.
+
+7.2.
+
+The  provision  of  telehealth  services  shall  only  be  offered  through  a  DHA  licensed
+
+telehealth facility.
+
+Only DHA licensed health facilities are eligible for telehealth services.
+
+7.2.1.
+
+Telehealth service license categories include:
+
+a.
+
+b.
+
+c.
+
+d.
+
+Standalone Telehealth Centre.
+
+Added telehealth service to an existing DHA licensed health facility
+
+category (including school clinics and booths)
+
+Added Booth
+
+Telehealth Platforms
+
+Any  advertisements  for  telehealth  services  or  within  the  telehealth  platform  must comply with MOHAP Medical advertisement requirements and the DHA Standards for Medical Advertisement content on social media.
+
+7.4.
+
+7.5.
+
+School-based telehealth services
+
+7.4.1.
+
+Schools opting to add on telehealth services shall ensure the that:
+
+a.
+
+Only schools with in-house clinics can apply for telehealth services.
+
+[PAGE 27-30]
+b.
+
+A nurse must be available in the school premises
+
+c.
+
+Refer to the DHA Standards for Clinics in Education and Academic Settings.
+
+Telehealth Booth
+
+This service is an add-on option part of the existing facility license.
+
+Issue Nu:
+
+4
+
+26/09/2025
+
+Both temporary and permanent booths must be affiliated with a DHA licensed health facility.
+
+Written permission must be obtained from the respective property owner(s) for the site(s) of the booth.
+
+Minimum timeframe for booth location will be subject to DHA licensing rules. (applicable for temporary booths only)
+
+In addition to requirements mentioned above, a DHA licensed telehealth booth must ensure:
+
+DHA is informed at least two (2) weeks prior to the allocation or relocation of  the  telehealth  booth  and  be  granted  the  necessary  approvals  before commencing services.
+
+MOHAP approval must be granted for the importation and use of medical devices within the booth.
+
+The booth shall allow for patient privacy during the provision of telehealth services.
+
+The booth shall adhere to infection control and fire safety protocols.
+
+The  booth  shall  maintain  a  portable  Automated  External  Defibrillator (AED).
+
+At least one (1) Registered Nurse (RN) with up-to-date Basic Life Support (BLS)  training  must  be  present  at  the  booth  during  operating  hours. (optional)
+
+Issue Nu:
+
+4
+
+Telehealth booth providers must ensure that there is a minimum of one (1) accountable DHA licensed physician responsible for the service.
+
+Telehealth services via booth shall only be provided to stable patients.
+
+All sessions shall be documented in the patient's health record as per DHA requirements.
+
+7.6.
+
+Telehealth Platforms
+
+All existing telehealth platforms intended for internal or commercial use shall:
+
+Be assessed and approved by DHA through health facility licensing section prior to in-house implementation or go-to-market implementation.
+
+Have  legal  representation  in  Dubai  with  relevant  commercial/trade  license issued by the concerned authority.
+
+Have an assigned Business Technical Director.
+
+Provide access to technical support with defined escalation matrix (response and resolution) for platform users (physicians and patients)
+
+Comply  with  the  requirements  and  ensure  all  communication  channels  are approved by the TDRA in the UAE.
+
+Ensure all data stored complies with the Federal Law No. (2) for the year 2019 on the Use of Information and Communications Technology (ICT) in healthcare.
+
+All data centres shall be at least Tier 3 Certified.
+
+All data shall be stored in a server located at a Cloud Service Provider (CSP) certified by Dubai Electronic Security Centre (DESC) in the UAE.
+
+Issue Nu:
+
+4
+
+All platforms must have HIPAA compliance certification.
+
+All platforms must have ISO 27001 compliance certification.
+
+e.
+
+For certain conditions, applicants may be required to meet a higher
+
+standard of compliance, such as providing HITRUST or SOC 2 certification
+
+with HIPAA alignment.
+
+Note:  It  is  not  permitted  to  store,  develop,  or  transfer  data  and  health
+
+information outside the country that is related to health services provided
+
+within  the  country,  except  in  cases  mentioned  in  Article  no.  (2)  of  the
+
+Ministerial Decision no. (51) of 2021.
+
+Any changes to the telehealth platform's core functions, data management practices, or ownership must be reported and approved by DHA.
+
+7.7.1.
+
+The platform must cooperate fully with DHA investigations or audits, providing
+
+any requested information or data in a timely manner.
+
+The role of the 'telehealth platform' is limited to provide a DHA -approved technological tool that connects licensed health facilities to patients. Telehealth platforms are strictly prohibited from engaging in the following activities:
+
+Telehealth  platforms  are  not  authorized  to  deliver  direct  clinical  services  to patients.
+
+The telehealth platform license does not grant the authority to operate as a healthcare provider.
+
+Issue Nu:
+
+4
+
+[PAGE 31-33]
+The  telehealth  platform  is  not  permitted  to  recruit  or  contact  healthcare professionals  for  the  purpose  of  delivering  clinical  services  through  the platform.
+
+Technology, Equipment, and Infrastructure Requirements
+
+Health facilities providing telehealth services shall ensure all of the following requirements are met:
+
+Equipment and devices for distant site use are compatible in accordance with requirements for technology and technical safety and security for the UAE.
+
+Equipment and devices approved for medical use are in good functioning condition.
+
+Equipment maintained in accordance with the manufacturer's specifications to support all applicable telehealth services.
+
+Availability of integrated IT infrastructure with uninterrupted connectivity and adequate bandwidth.
+
+The IT infrastructure must have the capability to integrate with healthcare provider electronic health records (EHR) system. The health records system shall integrate with Nabidh to ensure full integration of HER in Dubai.
+
+Provision of necessary systems and software to comply with the relevant telehealth requirements.
+
+Provision of uninterrupted/backup power supply.
+
+Issue Nu:
+
+4
+
+8.
+
+Provision of secure servers located in the UAE with relevant data backup.
+
+Provision for technical systems to record and document patient information
+
+and telehealth services.
+
+Protection of information stored in the electronic health records.
+
+Secure,  private  and  soundproof  workspaces  to  safeguard  patient  privacy
+
+and  confidentiality  and  limit  access  to  authorised  and  responsible  staff.
+
+Patient privacy must include:
+
+i.
+
+Privacy of personal information.
+
+ii.
+
+iii.
+
+Privacy of personal communications.
+
+Privacy of consulting space.
+
+Ensure alternative ways of communication between the healthcare service
+
+provider and patient are in place.
+
+STANDARD FOUR:
+
+HEALTH FACILITY MANAGEMENT RESPONSIBILITIES
+
+8.1.
+
+The management team of the DHA licensed health facility providing telehealth services
+
+shall ensure:
+
+8.1.1.
+
+Compliance with applicable UAE federal and local laws regulations including:
+
+NESA IAS Standards and any specific IAS standards related to telehealth services.
+
+TDRA registration and approval of Radio and Telecommunications Terminal Equipment (RTTE) and devices.
+
+i.
+
+Compliance with Data Centre and hosting services
+
+26/09/2025
+
+h.
+
+i.
+
+j.
+
+k.
+
+l.
+
+c.
+
+Communication  channels  related
+
+conferencing.
+
+MOHAP registration and approval of medical devices and pharmaceuticals.
+
+DHA interoperability Standards.
+
+DHA requirements for electronic platforms including machine learning and artificial intelligence technologies.
+
+Governance and clinical oversight of telehealth services:
+
+8.2.1.
+
+8.2.2.
+
+Provision  of  adequate  supply  and  qualified  human  resources  to  provide
+
+telehealth services.
+
+a.
+
+Telehealth service management must not compromise staffing
+
+requirements essential to provide ongoing healthcare face-to-face in person
+
+service(s).
+
+Employ or outsource professionals with suitable credentials, experience, skills
+
+and qualifications to train, assess and evaluate physicians and administration
+
+staff  on  an  ongoing  basis  on  the  core  competencies  required  for  telehealth
+
+services. Training must always be documented and shall include:
+
+a.
+
+b.
+
+c.
+
+d.
+
+[PAGE 33-36]
+Benefits and limitations to telehealth.
+
+Legal, ethical and clinical aspects of telehealth.
+
+Medical liability and the complaints management process.
+
+Code of conduct of health professionals as per DHA requirements.
+
+Use of IT and telehealth communication systems and processes.
+
+26/09/2025
+
+ii.
+
+to voice over IP
+
+and video
+
+8.2.3.
+
+8.2.4.
+
+f.
+
+Electronic health record keeping.
+
+Management shall ensure physicians receive ongoing Continuing Professional
+
+Development  (CPD)  in  order  to  ensure  physicians  maintain  the  necessary
+
+knowledge  and  competencies  continuous  effective,  safe  and  high-quality
+
+telehealth services within the remit of their specialisation.
+
+Management shall identify,  develop  and  ensure  compliance  with  operational
+
+policies and procedures essential for effective telehealth service delivery and
+
+ensure their periodic review.
+
+Telehealth providers shall comply with patient privacy, consent, confidentiality, protection and security of data and maintain systems and processes for data collection, storage and backup of patient health information in accordance to UAE Federal and local laws and regulations. Management shall ensure:
+
+a.
+
+b.
+
+c.
+
+d.
+
+Issue Nu:
+
+4
+
+Validity  and  credibility  of  health  data  and  information  by  maintaining
+
+safety  protocols  for  vandalism,  damage,  modification,  alteration  or
+
+unauthorized deletion.
+
+The availability of health data and information to authorized staff, when
+
+needed.
+
+The information systems used and their interoperability are compatible
+
+with the exchange and compilation of health data and information.
+
+The  storage,  development,  or  transfer  health  data  and  health-related
+
+information outside the UAE is prohibited unless approved by DHA.
+
+26/09/2025
+
+The written consent of patient data is obtained for transfer of data or for its use for non-health related purposes.
+
+Management  shall  have  in  place  an  electronic  health  record  system  that guarantees patient identification, authentication, collection of safe, secure and comprehensive patient information during the provision of telehealth services, including voice recording for quality control and quality improvement.
+
+The telehealth provider shall ensure all patient data and information is made available in the required format upon HRS request.
+
+Develop  and  implement  Standard  Operating  Procedures  (SOPs)  governing telehealth services.
+
+Ensure policies are in place for billing, scheduling, cancellation and refunds.
+
+Facilities providing telehealth services shall develop and implement a systematic quality improvement  and performance management  process that encompasses  quality assurance and quality control. Management shall:
+
+Provide an appropriate environment and culture to encourage physicians and administrative staff to report and document incidents.
+
+Develop and implement a process to effectively identify and manage incidents and rectify any issues in an integrated manner, including serious incidents.
+
+Report all sentinel events and major incidences to the DHA Medical Complaints Section.
+
+Issue Nu:
+
+4
+
+26/09/2025
+
+8.3.4.
+
+8.3.5.
+
+8.4.
+
+[PAGE 36-39]
+Have in place formal complaint and grievance process to resolve any potential
+
+ethical concerns or issues related to provision of telehealth services.
+
+The facility shall ensure access to Telehealth services does not exclude People
+
+of Determination.
+
+Telehealth providers shall ensure public transparency and accessibility. Management
+
+shall:
+
+8.4.1.
+
+Ensure  the  following  information  for  the  bespoke  telehealth  service(s)  are
+
+available online for the public:
+
+a.
+
+b.
+
+c.
+
+d.
+
+e.
+
+f.
+
+g.
+
+h.
+
+Issue Nu:
+
+Health  facility name,  location, contact  details,
+
+provided, days and hours of operation etc.
+
+Appropriate uses
+
+emergency cases.
+
+Information on and limitations physicians of privileged telehealth to catalogue  of services services, especially provide telehealth services,
+
+including  licensure  title,  the  licensing  authority,  qualifications,  training,
+
+experience, specialisation and contact details.
+
+Medical conditions that could be treated using the telehealth services
+
+Timeframe for responding to enquiries received in writing or by other means
+
+of electronic communication.
+
+Circumstances in which patient health information may be disclosed.
+
+Rights of patients with respect to patient health information.
+
+Feedback regarding the site and the quality of information and services.
+
+4
+
+26/09/2025
+
+26/11/2025
+
+9.
+
+Mechanism to register complaints, including information regarding filing a
+
+complaint.
+
+All service fees, payment options and refund Policy.
+
+Terms and conditions for the service
+
+Disclosure for any product or service information provided through third
+
+party agreements.
+
+STANDARD FIVE:
+
+9.1.
+
+HEALTHCARE PROFESSIONALS REQUIREMENTS
+
+Physicians, nurses and allied health professionals shall only provide telehealth services
+
+through one of the available telehealth licensing categories set out in standard 3.
+
+Telehealth services shall be physician led.
+
+DHA licensed Physicians, nurses and allied health professionals must be privileged to
+
+provide Telehealth services as per DHA policy for Clinical Privileging.
+
+9.3.1.
+
+9.3.2.
+
+9.3.3.
+
+The service must be Physician-led and must comply with UAE federal and local
+
+laws and regulations and work within the scope of their license, specialty and
+
+granted privileges.
+
+Physicians  providing  telehealth  services  shall  comply  with  the  professional
+
+licensure requirements set out in Appendix 2.
+
+Nurses and allied health professionals may provide telehealth services under
+
+the direction and clinical supervision of the treating physician.
+
+Training on the use of telehealth services shall be documented and will include core
+
+competencies to ensure quality and patient safety.
+
+26/09/2025
+
+9.2.
+
+9.3.
+
+9.4.
+
+i.
+
+j.
+
+k.
+
+l.
+
+The minimum number of CPD hours for telehealth shall match the provision of face-toface in person services per speciality.
+
+Physicians, nurses and allied health professionals are obligated to:
+
+Inform  and  educate  the  patient  (or  their  legal  guardian)  of  all  relevant information before starting telehealth services, such as:
+
+Scope of services
+
+Structure and timing of services
+
+Health record keeping
+
+Privacy and confidentiality
+
+Potential risks
+
+Future communication and follow-up
+
+Inform the patient (or their legal guardian) about the conditions under which telehealth services may be terminated and when patient referral is required for face-to-face in person consultation.
+
+Provide the patient (or their legal guardian) information in a language that can be easily understood.
+
+Respect the patient (or their legal guardian) requests for face-to-face referral.
+
+Engage the patient (or their legal guardian) to participate in their care plan.
+
+Recognise and abide by DHA requirements for patient rights and responsibilities.
+
+26/09/2025
+
+Maintain the highest degree of professionalism as per DHA professional code of conduct and place the welfare of the patient first.
+
+Take appropriate steps to establish a professional patient relationship.
+
+Ensure all appropriate evaluations and history of the patient are performed and documented in accordance with the requirements for provision of telehealth services.
+
+The healthcare provider may opt to record video on an adhoc or time limited basis e.g., medical education, quality improvement or Tele-ICU. There must be documentation for this including but not limited to:
+
+Compliance with UAE Law.
+
+Purpose and justification.
+
+The responsible person.
+
+Protocol for capturing, anonymising, pseudonymising, storing, using video files.
+
+Security measures (including encryption), backup plan to protect and safeguard video files.
+
+Obtaining written consent.
+
+Duration for storage and measures for its deletion.
+
+Risk assessment plan for potential breaches and response measures.
+
+Physicians must comply with the scope and rules for prescribing for telehealth services in accordance to UAE federal and local laws and regulations.
+
+26/09/2025
+
+[PAGE 40]
+Physicians  must  be  diligent  when  prescribing  medications  and  consider frequent  prescribing  of  medications  that  are  addictive,  unsafe  or  deemed unusual in their request or dosage or are contraindicated.
+
+Limitations  to  prescribing  without  confirmatory  laboratory  testing  shall  be explained to the patient.
+
+The  patient  must  be  made  aware  of  medication  groups  that  cannot  be prescribed through telehealth.
+
+The  patient  must  be  made  aware  of  the  risks  associated  with  prescribed medications.
+
+All  patient  engagement  through  telehealth  services  shall  be  documented  for  audit, quality improvement and inspection.
+
+[PAGE 40-42]
+The health professional shall obtain and document evidence of consent from the patient or legal guardian, for the use of telehealth services, which shall be embedded within the service workflow and maintained in the patients' health records.
+
+Electronic  consent  is  an  acceptable  method  of  obtaining  patient  consent  to access teleconsultation services and to seek treatment with the provision of the following:
+
+The requirements for manual consent are met;
+
+The requirements for patient identification are met; and
+
+The obtained consent can be audited.
+
+Patient  consent  should  be  tailored  to  the  type  of  telehealth  service(s)  provided (Appendix 4) and include but not be limited to the following:
+
+Identification  of  the  patient,  which  should  include  at  least  three  identifiers: Patients Full Name, Date of Birth, Emirates ID Number, Health Record Number or Personal Contact Number.
+
+The treating physician(s) must sign the consent form where a procedure or monitoring is being performed through telehealth technology (telesurgery, teleICU or home monitoring)
+
+Security  measures  taken  for  the  use  telehealth  technologies  such  as  data encryption, password protection, user identification and authentication protocols.
+
+Potential benefits, constraints and risks.
+
+Consent for audio recording, monitoring of health status, data storage or data transfer to another healthcare provider for further assessment as required.
+
+Patients shall be informed on the measure taken and contingency plan in case of technology or equipment failure.
+
+Inform the patient his/her right while receiving telehealth service, including the right to stop or refuse treatment.
+
+Explain to the patient their responsibility when receiving telehealth services.
+
+10.2.8.
+
+Physicians shall ensure the recommended treatment or therapy is understood
+
+by the patient (or their legal guardian) at the receiving site, and should be read
+
+back to ensure accuracy to the physician.
+
+If  the  patient  is  present  with  their  physician  (receiving  site)  and  is  in communication with another physician (host site), then the physician at the receiving site shall confirm and document they have understood the advice being provided by the physician from the host site.
+
+Consent  does  not  absolve  the  physician  from  liability  associated  with  medical malpractice.
+
+[PAGE 42-44]
+10.4.
+
+10.5.
+
+Consent to access telehealth services may be signed electronically or in person prior to
+
+the initiation of telehealth services.
+
+Consent may include paper or electronic format.
+
+10.4.2.
+
+Consent for treatment must be documented at each encounter.
+
+10.4.3.
+
+Information  collected  by  the  service  and  any  active  or  passive  tracking
+
+mechanisms utilized requires consent.
+
+Consent is not required for:
+
+Health insurance or any provider of health services in respect of  the health services received by the patient for purposes of auditing, approving or verifying the  financial  benefits  related  to  those  services  and  for  patient  transfer  or treatment.
+
+Issue Nu:
+
+4
+
+10.5.2.
+
+10.5.3.
+
+10.5.4.
+
+10.5.5.
+
+Scientific and clinical research, provided the patient's identity is not disclosed
+
+and ethical approval and rules for scientific research are met and followed by
+
+DHA.
+
+a.
+
+All research must be approved by DHA ethics committee.
+
+Preventive and curative measures related to public health, or to maintain the
+
+health and safety of the patients or any other persons in contact with them.
+
+The request of the competent judicial authorities.
+
+The  request  of  the  DHA  for  the  purposes  of  inspection,  supervision  and
+
+protection of public health.
+
+Patient  consent  is  required  if  ambient  AI  tools  are  used  to  support  encounter documentation where clinician reviews and e-signs, with the inclusion of general consent as per the below:
+
+The treating DHA licensed physician shall consent to the use of ambient AI and always  review  any  AI  generated  content  before  it  becomes  part  of  the permanent medical record.
+
+AI-enabled apps and tools used in telehealth must follow documented clinical validation, ethical disclosure, and patient consent.
+
+The facility shall acknowledge that the clinical information and recordings from this consultation may be securely stored and later processed manually or by advanced technologies such as artificial intelligence, for purposes that
+
+Issue Nu:
+
+4
+
+10.6.4.
+
+11.
+
+support patient  care,  quality  improvement,  education,  research,  analytics,  or
+
+approved product development within the DHA licensed facility.
+
+All  data  will  remain  under  strict  confidentiality  safeguards,  reside  on  secure
+
+UAE based infrastructure unless permitted by applicable law, and be shared
+
+only  with  parties  who  are  contractually  bound  to  equal  or  stronger  privacy
+
+standards.
+
+STANDARD SEVEN
+
+11.1.
+
+: HEALTH RECORD MANAGEMENT
+
+Health facility management and physicians providing telehealth services must ensure
+
+complete documentation of information and communication in accordance with federal
+
+and local laws and regulations.
+
+11.1.1.
+
+Refer to the UAE Federal Data Protection Law (Federal Decree-Law No. 45 of
+
+2021) or the Dubai Health Data Law.
+
+Health facility management and healthcare professionals providing telehealth services shall  ensure  complete,  accurate,  and  timely  documentation  of  all  information  and communications in accordance with applicable federal and local laws, regulations, and DHA standards.
+
+11.3.
+
+Facilities  providing  telehealth  services  shall  adhere  to  the  detailed  requirements
+
+provided in the DHA Guidelines for Electronic Medical Record in Health Facilities.
+
+All  telehealth  encounters  shall  be  transcribed  into  written  documentation  in  the patients' medical records.
+
+Issue Nu:
+
+4
+
+[PAGE 45-48]
+All  telephonic  consultations  must  be  reduced  to  writing  into  the  patients  electronic record.
+
+The physician shall document each telehealth encounter in the patient's medical records, including but not limited to:
+
+The type of telehealth service provided, and technologies or platforms used.
+
+The name, professional license number, and role of all healthcare professionals involved in the encounter.
+
+The date, time, and geographic locations of the originating care site and, where applicable, the receiving care site (e.g., if a second physician is involved).
+
+Confirmation  that  patient  consent  was  obtained  and  that  confidentiality, privacy, and data security requirements were met according to DHA and legal standards.
+
+Relevant patient information to ensure continuity of care, shared appropriately with other healthcare professionals during handover, transfer, or discharge.
+
+Comprehensive patient details, including presenting complaints, signs, symptoms, and any observations made by the healthcare professional(s).
+
+Diagnosis,  clinical  decisions,  recommended  treatment  plans,  and  therapies provided.
+
+Health  records  must  include,  when  applicable,  copies  of  all  patient-related electronic communications, such as:
+
+Issue Nu:
+
+4
+
+Physician-patient  communications,  prescriptions,  laboratory  and  diagnostic test results, evaluations, consultations, historical care records, and instructions linked to telehealth services or alternative communication means.
+
+Health facilities shall maintain policies and procedures to ensure effective telehealth communication, guaranteeing that documentation of care, advice, or recommendations is  complete,  accurate,  and  consistently  entered  into  electronic  health  records  by  all involved professionals.
+
+All  confidential  electronic  communications  and  health  information  must  be  securely stored and protected from unauthorized access in compliance with DHA privacy and security requirements.
+
+Accessibility and retention of health records must comply fully with applicable federal and local laws, regulations, and DHA mandates.
+
+Telehealth-related information, communication, and technology data shall be retained securely for a minimum period of twenty-five (25) years from the date of the last health encounter or as otherwise specified by DHA regulations.
+
+12.
+
+STANDARD EIGHT
+
+: PATIENT ASSESSMENT AND CARE MANAGEMENT
+
+DHA licensed health facilities shall provide telehealth services in accordance with this standard to ensure accessible, efficient, and high-quality patient care.
+
+Telehealth services shall be incorporated as a hybrid model in management of chronic diseases. (Appendix 1)
+
+Issue Nu:
+
+4
+
+Clinical assessment of the patient shall only be undertaken by a DHA licensed physician to ensure current and ongoing needs of the patient are identified, documented and met.
+
+Physicians  shall  determine  and  document  the  suitability  for  the  use  of telehealth services including but not limited to:
+
+Appointment scheduling.
+
+Consultation.
+
+Assessment.
+
+Care planning review.
+
+Investigation request.
+
+Patient Education.
+
+Counselling.
+
+Disease management.
+
+Prescription and issuance of refills.
+
+Medication management.
+
+Follow up.
+
+Patient referral.
+
+Sick leave.
+
+Remote patient monitoring.
+
+Pre and Post operative Assessments.
+
+26/09/2025
+
+Patients should be able to seek follow up care or information from their physician or their physician designee or be offered continuity of care through an alternative service provider.
+
+If an alternative service provider is recommended, the physician must ensure all necessary patient information and data is transferred through patient consent.
+
+Telehealth  providers  must  ensure  policy  and  procedures  are  in  place  for  emergency requests. The policy and procedures shall include:
+
+A written protocol appropriate to the telehealth services being provided.
+
+The protocol should be tested on a regular basis.
+
+The outcome of the testing and improvement plan should be documented.
+
+Service contact number for emergency care and management.
+
+Contact number for local emergency services.
+
+[PAGE 48-50]
+Insurance Companies shall establish and disclose clear policy provisions regarding the eligibility of claims for telehealth services delivered outside the UAE.
+
+Such  provisions  must  specify  coverage  conditions  and  applicable  limits,  and documentation requirements.
+
+Insurance Companies shall clearly define and disclose, within their policy documents and provider agreements, the scope of telehealth services requiring prior authorization.
+
+Issue Nu:
+
+4
+
+All such requirements shall be transparent, must not impede patient access to medically necessary care, and must comply with the Dubai Health Insurance Corporation (DHIC) guidelines and the Unified Health Insurance Policy.
+
+All licensed health insurance payers operating in Dubai must recognize and reimburse Telehealth services in accordance with the standards set by DHIC provided the services meet the standard terms and clinical necessity requirements.
+
+Healthcare Providers  shall  verify  a  patient's  health  insurance  eligibility  prior  to delivering any Telehealth service.
+
+Additionally,  providers  are  required  to  inform  patients  in  advance  of  any expected  out-of-pocket  expenses  based  on  the  terms  of  their  insurance coverage, ensuring full cost transparency.
+
+Health  facilities  providing  Telehealth  services  shall  document  and  retain  all  claimsrelated data in accordance with DHIC requirements.
+
+Facilities  must  ensure  that  clinical  documentation,  billing  codes,  and  service records  are  aligned  with  billing  protocols  and  are  mapped  accurately  to  the Electronic Health Record (EHR) systems.
+
+Healthcare Providers shall ensure that all Telehealth services are coded using DHICapproved  ICD  and  CPT  codes,  consistent  with  the  applicable  billing  and  clinical documentation  guidelines.  Claims  data  must  be  submitted  in  eClaimLink  to  enable adjudication, audit, and reimbursement.
+
+Issue Nu:
+
+4
+
+13.7.
+
+Patient referrals made electronically (E-referral) shall cover patient admission, transfer,
+
+and  follow-
+
+up  after  treatment,  and  must  always  be  carried  out  with  the  patient's
+
+consent.
+
+13.7.1.
+
+However, referrals made through the e-claims system are an exception, as the
+
+platform provides a standardized framework that may eliminate the need for
+
+separate referral agreements.
+
+Healthcare  Providers  delivering  Telediagnosis  services  shall  ensure  that  all  services rendered  are  coded  and  documented  in  accordance  with  DHIC-approved  billing guidelines.
+
+Where such services are covered under the insured patient's health plan, claims must be submitted through eClaimLink, and Insurance Companies shall process them in alignment with applicable benefit policies and Telehealth reimbursement standards.
+
+[PAGE 50-52]
+14.
+
+STANDARD TEN
+
+14.1.
+
+: TELECONSULTATION (SYNCHRONOUS AND ASYNCHRONOUS)
+
+Teleconsultation services shall:
+
+Ensure efficient access to the treating physician through a web-based system.
+
+Ensure patient identification, authentication, verification and consent.
+
+Facilities may include asynchronous 'chat based consultation' option.
+
+Be provided by a DHA licensed physician with appropriate skills, competencies training and knowledge in relevant technologies and tools to provide consultation services.
+
+Issue Nu:
+
+4
+
+26/09/2025
+
+14.1.5.
+
+14.1.6.
+
+a.
+
+b.
+
+c.
+
+The treating physician is responsible for patient assessment, treatment and
+
+follow-up.
+
+i.
+
+Physicians providing teleconsultation should not exceed their scope
+
+of practice, privileges or agree protocols for managing patient acuity;
+
+and
+
+Complex or Emergency patients
+
+consultation or emergency services.
+
+Where necessary  the  patient  shall  be  advised  or  referred  on  for  further
+
+assessment and treatment.
+
+Advice to seek emergency services or referral for emergency treatment shall
+
+not be delayed irrespective of the patient's insurance plan.
+
+Be accessible to patients seeking telehealth services and provide appropriate
+
+healthcare on the basis of clinical need.
+
+a.
+
+Provisions shall be put in place for People of Determination.
+
+Telehealth  consultation  should  be  offered  in  at  least  Arabic  and  English
+
+languages.
+
+a.
+
+The healthcare provider is encouraged to inform patients of all available
+
+languages offered for telehealth services.
+
+The  healthcare  provider  is  encouraged  to  make  use  of  interpretation services to assure patient groups that can benefit from telehealth services are not excluded.
+
+Issue Nu:
+
+4
+
+ii.
+
+shall be referred for face
+
+Safeguard  and  preserve  patient  rights  and  treat  patients  with  respect  and dignity.
+
+Assure professionalism and confidentiality during the provision of healthcare services to the patient.
+
+Offer  open,  honest  and  courteous  communication  with  patients,  physicians, healthcare professionals and administrative staff.
+
+Include a satisfaction assessment at the end of the teleconsultation.
+
+Virtual second opinions provide advisory consultations for complex or specialist medical cases through telehealth. These services enable DHA-licensed specialists or consultants to  offer  expert  guidance  remotely  without  issuing  prescriptions  or  medical  orders. (Appendix 2)
+
+Models of Virtual Second Opinion include:
+
+Treating  physician  to  DHA-Licensed  specialist:  The  local  treating  physician requests a second opinion from a DHA-licensed specialist.
+
+Treating  physician  and  Patient  with  DHA-Licensed  specialist:  The  treating physician and patient jointly consult the DHA-licensed specialist for advisory input.
+
+Direct  Patient  Request:  The  patient  directly  seeks  a  second  opinion  from  a DHA-licensed specialist.
+
+Issue Nu:
+
+4
+
+[PAGE 53-55]
+Patient records and relevant clinical information must be uploaded securely via DHA-approved  encrypted  platforms  to  protect confidentiality and  data integrity.
+
+The  DHA-licensed  physician  providing  the  second  opinion  issues  a  detailed advisory report based solely on the information reviewed.
+
+The current treating physician retains full clinical responsibility for patient care and treatment decisions.
+
+Both  patient  consent  and  the  issued  report  must  explicitly  state  that  the consultation  is  advisory  only,  and  that  the  local  treating  physician  and jurisdiction remain accountable for all clinical management and legal responsibility.
+
+The provision of Telediagnosis services shall adhere to the following:
+
+Ensure  equipment  and  tools,  software  and  hardware  are  appropriate  for Telediagnosis in the related field and scope which may include but not limited to:
+
+High definition medical camera.
+
+Digital Stethoscope (General Medical).
+
+Digital Derma scope (Dermatology).
+
+Digital Otoscope (ENT).
+
+Digital Iriscope (Eye).
+
+Issue Nu:
+
+4
+
+Ultrasound (Gynaecology, Sonology).
+
+ECG (Cardiology).
+
+X-Ray Scanner (Radiology).
+
+Digital Notepad (Prescription Writing).
+
+Diagnostic equipment must be checked and calibrated with documentation on a regular basis.
+
+Ensure  professional  training  and  competencies  are  assured  prior  to  the provision of telediagnostic services.
+
+Ensure high quality audio-visual equipment and software is used for continuous two-way communication.
+
+Processing of information and data should not be interrupted or be subject to delay affecting clinical assessment and diagnosis during live consultation.
+
+Ensure patient identity is verified and consent is granted prior to diagnosis.
+
+Ensure  data  is  captured  through  routine  workflow  and  the  data  collection system is automated and integrated into the telehealth system. As a minimum, the system should capture:
+
+Diagnostic images (high definition).
+
+Vital signs.
+
+Clinical prescriptions.
+
+Laboratory reports.
+
+Physician assessment report and recommendations with date and time.
+
+Issue Nu:
+
+4
+
+Telediagnosis  may  include  consultation  with  multidisciplinary  professionals where  the  lead  physician  seeks  expert  opinion  from  other  professionals  to determine the underlying causes or illness or disease.
+
+Patients should be referred onto more specialized diagnostic testing where an anomaly is suspected or further diagnostic testing is required.
+
+The healthcare provider must ensure secure and safe transmission and storage of relevant patient information in accordance with UAE federal and local Laws and regulations.
+
+[PAGE 55-57]
+Only DHA licensed facilities with telehealth services can provide telemonitoring services and shall adhere to the requirements in this standard.
+
+Telemonitoring/Patient Remote Monitoring (PRM) services include remote monitoring of patients through DHA approved telehealth platforms and MOHAP approved medical devices.
+
+All PRM devices shall be tested with the patient prior to their use.
+
+All PRM devices shall be used for their intended purpose and maintained as per the manufacturer's instructions and specifications.
+
+Faulty PRM devices shall be reported to MOHAP.
+
+The DHA licensed Physician is the responsible lead for the provision of PRM services.
+
+PRM  services  should  be  accessible  to  eligible  patients  determined  by  the treating physician, after a face-to-face in person assessment in the healthcare facility, or through teleconsultation.
+
+The treating physician must consider clinical risks related to PRM.
+
+PRM providers are responsible to procure and provide Information and Communication Technology  (ICT)  technologies  that  comply  with  TRA  requirements,  UAE  ICT  Law (2019) and DHA interoperability Standards.
+
+Criteria  for  procurement  of  telemonitoring  devices  shall  include  but  not  be limited to:
+
+Safety (including alert features during abnormal/unexpected behaviour of the device)
+
+Quality (monitoring and diagnostic).
+
+Infection control.
+
+User compatibility and acceptability.
+
+Installation and portability.
+
+Means of communication and speed of monitoring.
+
+Accuracy and reliability.
+
+Durability.
+
+Conformity to Internationals Standards.
+
+Robustness.
+
+Issue Nu:
+
+4
+
+15.5.
+
+15.6.
+
+k.
+
+l.
+
+m.
+
+n.
+
+Data security, data protection, patient and user authentication including but
+
+not limited to:
+
+i.
+
+The ability to identify and restrict/prevent hack attempts
+
+ii.
+
+iii.
+
+iv.
+
+v.
+
+During transmission and storage of data
+
+Authentication and authorization of access and privileges
+
+Ability  to  fix  weakness  (vulnerabilities)  within  device  through
+
+controlled mechanism
+
+Ability of the device to prevent new threat
+
+connected/integrated environment).
+
+Reporting capability (for errors, investigation and analysis).
+
+Maintenance and support
+
+(testing features, network to the requirements,
+
+hardware and software maintenance, calibration and training).
+
+Interoperability and Compliance with UAE Laws.
+
+Technology  and  medical  equipment  should  be  incorporated  into  healthcare provider  clinical  processes  to  optimise  service  integration,  clinical  decision making and clinical governance.
+
+PRM provider shall ensure Contracts and Service Level Agreements are in place where
+
+support services are being used.
+
+The application/order to provide PRM must be supported with evidence and signed and
+
+dated by the treating physician and the patient.
+
+Patients may be monitored on an adhoc or ongoing basis by a RN.
+
+Issue Nu:
+
+4
+
+26/09/2025
+
+26/11/2025
+
+[PAGE 58-59]
+Frequency of monitoring shall be determined by the treating physician.
+
+The  RN  may  be  nominated  as  the  responsible  person  to  provide  an  update  on  the patients' health status to the treating physician and document medical errors.
+
+Telemonitoring should not be solely used to assess and determine the patient plan of care.
+
+Physicians offering PRM shall:
+
+Uphold standards of care to ensure patient safety.
+
+Determine the clinical suitability of the patient for PRM services.
+
+Follow up to date evidence-based practice.
+
+Ensure they receive sufficient training on the use of PRM devices in addition to action to be taken in case of service or data disruption.
+
+Adopt a systematic approach for measuring clinical quality outcomes.
+
+Ensure  patients  are  made  aware  and  consent  for  monitoring  devices  that collect  information  related  to  patient  location  or  other  non-health  patient data.
+
+Communicate, educate and orient the PRM patient (or their legal guardian) to enable them to optimize the benefits of PRM and how to manage emergency scenarios.
+
+Communication and education must include:
+
+A patient feedback loop on the approach and level of communication.
+
+Issue Nu:
+
+4
+
+Self-identification of a problem or error with the monitoring device.
+
+Contact and support information and emergency contact details.
+
+Patient's reserve the right to stop or refuse PRM services.
+
+A discharge form must be documented at the end of the PRM period.
+
+A Left Against Medical Advice (LAMA) form must be issued and signed by the patient (or their legal guardian) where discontinuity of PRM service is requested placing the patient at serious risk of deterioration or emergency service admission.
+
+PRM  devices  should  be  frequently  checked  and  assessed  to  ensure  data frequency, accuracy and reliability is not compromised.
+
+Sensors and equipment used should not cause skin irritation, lead to infections, pose a risk when swallowing or cause harm.
+
+Providers offering telemonitoring services must establish and maintain clear protocols and policies to manage emergencies effectively. These protocols should include:
+
+Procedures for timely identification and escalation of urgent or critical patient conditions detected via remote monitoring.
+
+Clear communication pathways to notify patients, caregivers, and emergency services when necessary.
+
+Defined  roles  and  responsibilities  for  healthcare  professionals  involved  in telemonitoring and emergency response.
+
+Issue Nu:
+
+4
+
+26/09/2025
+
+[PAGE 60-61]
+Documentation and regular review of emergency incidents to ensure continuous quality improvement.
+
+Compliance with all relevant DHA regulations and standards.
+
+PRM services shall ensure the following:
+
+There is a written policy for data collection, use and storage.
+
+The policy must set out the protocol and frequency for data collection.
+
+The policy must clarify the security and confidentiality measures that must be maintained when monitoring patients.
+
+The  policy  must  set  out  the  response  measures  and  time  for  data interruptions.
+
+Maintenance  and  servicing  of  PRM  equipment  and  devices  should  be undertaken and documented on a regular basis.
+
+There is an authentication and synchronisation system for data collection that includes the date and time when data is either sent or received.
+
+PRM data collection must be reliable, valid, accurate and timely.
+
+PRM data should form part of the electronic health record.
+
+The authentication and synchronisation system must entail an alert feature for:
+
+Service interruptions.
+
+Data interruptions.
+
+Data disconnectivity or loss.
+
+Issue Nu:
+
+4
+
+15.12.4.
+
+15.12.5.
+
+iv.
+
+v.
+
+vi.
+
+vii.
+
+Breaches in expected
+
+management.
+
+Provider initiated alerts.
+
+Device initiated alerts.
+
+Patient initiated alerts.
+
+PRM services shall be available throughout the day and night (24/7).
+
+Service continuity measures must be in place to avoid service interruptions.
+
+[PAGE 61-63]
+Telediagnostics  encompasses  remote  diagnostic  services  such  as  teleradiology  and telelaboratory  testing,  which  play  a  critical  role  in  enhancing  healthcare  access  and efficiency.
+
+All telediagnostic services must be provided by licensed healthcare professionals in DHA licensed health facilities.
+
+Service providers must be affiliated with DHA-licensed health facilities that oversee and ensure compliance with all applicable UAE federal and local laws and regulations.
+
+A formal written agreement or Memorandum of Understanding (MOU) should exist between  all  entities  involved,  clearly  defining  roles,  responsibilities,  data  sharing protocols, and quality assurance measures.
+
+Patient confidentiality and data security must be maintained at all times, with the use of DHA-approved encrypted platforms for transmission and storage of diagnostic data.
+
+Issue Nu:
+
+4
+
+thresholds for patient monitoring and
+
+All telediagnostic reports and records must be accurately documented, securely stored, and  made  accessible  only  to  authorized  healthcare  providers  and  the  patient  as appropriate.
+
+16.7.
+
+16.8.
+
+Teleradiology Requirements
+
+Radiologists providing remote interpretations must hold a valid DHA license.
+
+The  imaging  facility  must  ensure  that  the  imaging  equipment  is  regularly calibrated and maintained according to manufacturer and DHA guidelines.
+
+Turnaround times for reporting must be established in accordance with clinical urgency and facility policies.
+
+Quality assurance programs must be implemented to regularly audit diagnostic accuracy, report turnaround times, and compliance with the DHA Standards for Diagnostic Imaging Services.
+
+Telelaboratory Requirements:
+
+Laboratory professionals conducting remote consultations or interpretations must  be  DHA  licensed  as  per  the  DHA  Standards  for  Clinical  Laboratory Services.
+
+Licensed Clinical Laboratories may  accept walk-in patients for specific laboratory  tests  that  do  not  require  a  physician's  order.  Refer  to  the  list  of services  permitted  elaborated  in  the  DHA  Standards  for  Clinical  Laboratory Services.
+
+Critical laboratory results shall be reported clearly to the patient.
+
+Issue Nu:
+
+4
+
+The laboratory should direct the patient to seek further medical advice.
+
+16.8.5.
+
+The laboratory shall keep record of the communication with the patient.
+
+Laboratory  test  orders  and  results  must  be  communicated  using  secure, encrypted platforms compliant with DHA data protection policies.
+
+[PAGE 63-66]
+Telepharmacy services refers to the dispensing of prescribed medications only and does not  include  vending  machines,  delivery  services,  online  pharmacy,  and  dispensing  of nonprescription medication.
+
+Telepharmacy platforms may operate between a pharmacy and a healthcare facility/facilities, or between a pharmacy and a patient.
+
+DHA licensed health facilities seeking to provide telepharmacy services must meet the licensure, privileging, medical equipment, patient assessment, data protection, security and confidentiality requirements as per UAE federal and local laws and regulations.
+
+The health facility shall authenticate, validate and encrypt patient information to avoid any intended or accidental leakage to any unauthorized access.
+
+a.
+
+Issue Nu:
+
+The telepharmacy provider shall assure users of data protection, security
+
+and website integrity and encryption through online security certificate.
+
+i.
+
+Protocols must be in place for online sales and transactions.
+
+Patients  must  be  made  aware  in  advance  of  all  transaction  (and delivery) costs.
+
+4
+
+17.4.
+
+Telepharmacy services provided through direct service provision or through
+
+a third party entity shall have in place a mutual written agreement.
+
+i.
+
+ii.
+
+Obligations  of  both  parties  and  the  pharmacist(s)  who  operate
+
+telepharmacy services must be agreed upon and documented.
+
+Patients must be made aware where a third party is involved in the
+
+provision of telepharmacy services.
+
+The  pharmacist  must  verify  and  validate  the  drug  order,  its  origin
+
+(prescribing physician) and the patient.
+
+All prescriptions should be documented in the patient health record.
+
+Controlled, Semi-Controlled and Narcotic medication cannot be prescribed
+
+or dispensed through telehealth services.
+
+Telepharmacy service providers must include an electronic pharmacy system to manage
+
+transaction information and track movement of medications.
+
+17.4.1.
+
+The The  system  should  be  able  to  track  and  segregate  recalled  medicines  and products.
+
+pharmacist in-charge shall maintain
+
+a
+
+separate
+
+medications and products dispensed to the patient.
+
+17.5.1.
+
+Monthly inspection of records should be reviewed by the pharmacist in-charge.
+
+The telepharmacy provider must ensure service continuity systems are in place to avoid service disruption and maintain data security.
+
+Issue Nu:
+
+4
+
+26/09/2025
+
+17.5.
+
+b.
+
+c.
+
+d.
+
+e.
+
+record for telepharmacy
+
+The telepharmacy provider shall adhere to consumer rights and shall not restrict or limit patient choice to receive medications and products from a DHA licensed pharmacy.
+
+Health Advertisements and Online Information
+
+Information and services related to the telepharmacy and online services shall be displayed to the community in a friendly manner and shall comply with all federal and local laws and regulations related to health advertisement and social media.
+
+Online information for telepharmacy services shall include but not be limited to:
+
+The name of pharmacy as per the DHA license.
+
+The name of the pharmacy manager or pharmacist-in-charge.
+
+The name of the licensed pharmacists providing the services.
+
+The physical location of the pharmacy(s) and telephone number(s).
+
+Contact details in the event of an enquiry, technical difficulty or emergency.
+
+Disclaimer notice prohibiting prescriptions issued outside the Emirates.
+
+Telepharmacy Service Management
+
+Telepharmacy prescribing, ordering, transcribing and medication management shall be guided by UAE federal and local laws and local regulations.
+
+The Pharmacist shall be cautious and careful when dispensing medications in particular:
+
+Frequent dispensing of medications that accumulate in the body.
+
+Drugs that are habit-forming.
+
+Issue Nu:
+
+4
+
+26/09/2025
+
+17.10.
+
+c.
+
+d.
+
+e.
+
+Unusual dosages.
+
+Contraindications.
+
+Medications  prohibited  for  telehealth  (Controlled,  Semi-Controlled  and
+
+Narcotic medication).
+
+The  pharmacist  shall  communicate  with  the  prescribing  physician  in
+
+circumstances where frequency or type of drug is inaccurate or prohibited.
+
+The pharmacist may discuss prescriptions with patients over the phone while sharing data on computer screens, as well as off-site order review by remotely located pharmacists.
+
+Electronic Pharmacy Services
+
+Pharmacists providing Electronic Pharmacy Services are permitted to:
+
+Maintain prescription documentation and dispense prescriptions as per the UAE federal laws and DHA local regulations.
+
+Store  medications  and  products  in  accordance  with  the  manufacturer's specifications and requirements.
+
+Review and interpret doctor's prescriptions and flag up any anomalies or contraindications to the prescribing physician.
+
+Assess patients and their medication-related needs.
+
+Perform medication reconciliation and detect medications incompatibilities.
+
+Educate patient and/or carer in real-time regarding all relevant information related to the medications.
+
+Issue Nu:
+
+4
+
+[PAGE 67]
+Recommend medications where appropriate and ensure they are within the professional scope of practice and duties.
+
+Refer the patient to an existing pharmacy or health facility, if dispensing the medicine requires the patient to be physically present, or if their symptoms require special medical advice.
+
+Communicate with the doctor, who wrote the prescription, to clarify details or in order to alter the prescription.
+
+Authorize  the  removal  of  the  medication  from  the  system  only  after reviewing the patient profile for potential contraindications.
+
+Prepare and dispense the medication as per the physician orders, label the medicine container or box and provide instructions for its use.
+
+The physician and pharmacist name shall be listed on the medicine.
+
+Communicate with insurer companies for any required approvals.
+
+Telepharmacy Services May Include but Not Be Limited to:
+
+17.11.1.
+
+Teleprescribing (physician only)
+
+[PAGE 67-68]
+Teledispensing
+
+Telephonic Patient Counselling and Medication Therapy Management (MTM)
+
+Teleprescribing (Physician Only)
+
+A DHA licensed physician employed in a DHA licensed health facility shall only offer Teleprescribing.
+
+Issue Nu:
+
+4
+
+The  treating  physician  who  prescribes  the  medications  should  examine  the patient  electronically  by  using  the  appropriate  telehealth  equipment  and devices that support the diagnostic needs for the case.
+
+The  treating  physician  is  responsible  to  assess  the  patient  and  ensure  no contraindication between the prescribed medication and the diagnosis of the case or between the prescribed medication and another medication that the patient is using.
+
+The patient shall be made aware of both the benefits and side effects/complications of the prescribed medication.
+
+The physician should discuss the treatment plan with the patient (or their legal guardian) and obtain consent.
+
+Prescribing medications shall be in accordance with UAE MOHAP drug list to protect the patients from any counterfeit or substandard medications.
+
+The  physician  shall  not  prescribe  Narcotic,  Controlled  or  Semi-controlled medication through telehealth services.
+
+Common  drug  classes  and  indications  for  Teleprescribing  are  provided  in Appendix 5.
+
+Issuance of sick leave is limited to a maximum of three (3) days per week as consecutive sick leave based on patient severity or as single sick leave(s) and as per DHA sick leave policy.
+
+Issue Nu:
+
+4
+
+26/11/2025
+
+[PAGE 69-70]
+a.
+
+Must be a DHA licensed pharmacy and apply for addition of Teledispensing.
+
+b.
+
+The pharmacy must have in place policies and procedures that ensure the
+
+integrity, legitimacy, and authenticity of the online prescription.
+
+Teledispensing and associated telecommunication technology must:
+
+Obtain and maintain patient information necessary to facilitate review of  drug  utilization  and  counselling  of  patients  pursuant  to  any applicable statutes.
+
+ii.
+
+Assure record keeping related to the patients served by the pharmacy.
+
+Ensure proper purchasing, sale and dispensing of authorised medications and medical products by MOHAP.
+
+Have the capability for the dispensing pharmacist to keep hold of the original copy of the prescription.
+
+Ensure patient confidentiality and protect patient-specific information when their information is transmitted using telehealth technology.
+
+vi.
+
+Compliance and maintenance of its technology system and controls to
+
+prevent  unauthorized  or  unlawful  access  to  confidential
+
+information and data.
+
+The  pharmacist  must  conduct  a  prospective  drug  use  review  prior  to medication dispensing.
+
+Issue Nu:
+
+4
+
+26/11/2025
+
+patient d.
+
+e.
+
+f.
+
+g.
+
+Issue Nu:
+
+Prescriptions must be issued through an online prescription system that
+
+entails  electronic  transfer  of  the  prescription  to  the  pharmacist  by  the
+
+treating  physician  or  the  prescription  being  uploaded  online.  The  online
+
+system must be able to:
+
+i.
+
+Verify the DHA licensed physician and the prescription.
+
+ii.
+
+iii.
+
+Verify the patient.
+
+Verify the pharmacist handling the prescription.
+
+The prescription must be filled in accurately and comply with applicable UAE
+
+federal and local laws and regulations.
+
+i.
+
+[PAGE 70-73]
+Price of medicines or
+
+MOHAP/DHA Price list.
+
+Have  in  place  strict  protocols  that  prevent  drug  orders  from  being
+
+submitted and filled by multiple pharmacies within the same health facility
+
+name.
+
+i.
+
+The  pharmacist  must  not  fill  in  any  prescription  which  has  been
+
+previously filled in by another pharmacist.
+
+The pharmacy shall communicate to the patient or prescribing physician any
+
+delay that might jeopardize or alter the drug therapy of the patient.
+
+i.
+
+The dispensing pharmacy will take responsibility to inform patients and
+
+the prescribing physician of any medication or medical device recalls.
+
+26/09/2025
+
+medical
+
+4
+
+products must confirm to the
+
+The  pharmacy  shall  develop  and  enforce  policies  and  procedures  that require pharmacists to offer consultative services to patients.
+
+The  pharmacy  shall  develop  a  system  for  reporting  of  adverse  drug reactions and errors.
+
+Patient Counselling and Medication Therapy Management (MTM)
+
+MTM services should be documented in a consistent manner that is sufficient and  appropriate  for  evaluating  the  patient's  progress,  billing  purposes,  and informing other healthcare providers about the care provided to the patient.
+
+The  pharmacist should  monitor  the  patient's  medication  therapy  on  an ongoing  basis  and  discuss  any  anomalies  with  the  patient's  prescribing physician.
+
+The prescribing physician may take responsibility to manage the patient's medication therapy.
+
+Patients with hearing, linguistic or cognitive problems seeking Counselling and MTM should be offered a face-to-face in-person appointment or referred on for a physician face-to-face in-person assessment.
+
+Patient Counselling and MTM services include:
+
+A review of all medications prescribed by all prescribing physicians providing care  to  the  patient,  and  any  over-the-counter  and  herbal  products  the patient may be taking to identify and address medication problems.
+
+Issue Nu:
+
+4
+
+b.
+
+c.
+
+In-depth, medication-related education, consultation, and advice provided
+
+to patients their  legal  guardian)  to  help  assure  proper
+
+medications.
+
+Collaboration with the patient, physician, and other healthcare providers to
+
+develop and achieve optimal goals of medication therapy.
+
+18.
+
+STANDARD FOURTEEN
+
+18.1.
+
+: TELEROBOTICS AND ROBOT ASSISTED SERVICES
+
+Telesurgery (non-autonomous)
+
+Telesurgery services shall be consultant-led and meet the licensure privileging, patient assessment, medical equipment, data protection, security and confidentiality requirements as per UAE federal and local laws and regulations.
+
+Certified compliance for use of medical devices for telesurgery is required with FDA and Quality System Regulation or CE Marking and ISO 9001 and ISO 9002 Standards is required.
+
+Telesurgery devices should entail a bilateral master-salve system (expert site and remote manipulator site) with direct control by the user.
+
+a.
+
+b.
+
+Master  control  unit  (robot  command  station)  shall  be  operated  by  the
+
+physician using hand and foot control while watching surgery on a high-
+
+quality 3D monitor.
+
+The master control unit may be located away from the operating room.
+
+A slave unit containing robotic arms should be present to operate on the patient.
+
+(or use  of
+
+18.1.3.
+
+d.
+
+Support staff must be present at the patient site.
+
+High-speed connectivity or Local Area Network and information management
+
+system  must  be  in  place  with  high-definition  visual  and  audio  capability  to
+
+enable time-bound and accurate intervention and exchange of information.
+
+a.
+
+b.
+
+The network must support:
+
+i.
+
+Real-time control data.
+
+ii.
+
+iii.
+
+Medical video stream.
+
+High-level management data.
+
+Physicians must be trained on telesurgery to include competencies for force
+
+(haptic) feedback, time delay and depth perception management systems.
+
+Auxiliary control functions should be in place such as motion scaling, biomotion compensation and hand-tremor filtering.
+
+ii.
+
+Internal  and  external  joint  position  and  forces  sensors  with  a
+
+feedback loop must be in place for the physician (manipulator).
+
+[PAGE 73-75]
+Medical  equipment  and  devices  for  the  type  of  Telesurgery  (general, thoracic, cardiac, gastrointestinal and colorectal, gynaecology/echography and ultrasonography, urological, neurosurgery, spinal, ophthalmology, and ear neck and throat) shall be used to include robot assisted arm (and arm cart).
+
+i.
+
+The mechanical design classification of robots and robotic systems
+
+must be suitable for the type of telesurgery being undertaken.
+
+26/09/2025
+
+Effective Date:
+
+Issue Nu:
+
+4
+
+Ancillary  equipment  including  but  not  limited  to  monitors,  keyboards, joysticks, and other input/output devices, 3D display screen and routers and data storage server should be checked prior to use.
+
+The  environment  set  up  should  be  tested  and  outcome  of  testing documented prior to provision of telesurgery.
+
+There  must  be  a  risk  management  plan  in  place  for  all  short  and  longdistance  surgeries  to  include  delay  in  synchronisation  of  commands  and data packets exchanged between the two sites and operating systems.
+
+Telepresence and Video Conferencing (Robot Assisted Services)
+
+Telepresence and video conferencing shall be physician-led and meet all the licensure requirements, privileging requirements, patient assessment requirements and data protection, security and confidentiality requirements as per UAE federal and local laws and regulations.
+
+Requirements for telepresence and video conferencing include:
+
+a.
+
+Secure high-speed internet connectivity.
+
+b.
+
+c.
+
+Visual Display Panel.
+
+Desktop head and neck robots or drivable robots.
+
+Pan, tilt and zoom cameras.
+
+Off-site  medical  professionals  to  move,  look  around,  communicate,  and participate from remote locations.
+
+Feedback loop sensory system to the operator.
+
+Issue Nu:
+
+4
+
+26/09/2025
+
+Mobile robot avatar for remote patient consultation.
+
+Maintenance and software upgrade schedule.
+
+Integrated document management system.
+
+STANDARD FIFTEEN: KEY PERFORMANCE INDICATORS (KPIs)
+
+Key Performance Indicators shall be captured by Telehealth providers and reported to HRS each quarter. Submission will reflect the following domains:
+
+Access.
+
+Quality
+
+For further information on reporting requirements, refer to the DHA Guidelines for Reporting Telehealth KPIs, available on the DHA website.
+
+Issue Nu:
+
+4
+
+[PAGE 76-78]
+A Brolin et al (2018). Design of automated medicine vending machine using mechatronics techniques. IOP Conf. Ser.: Mater. Sci. Eng. 402 01204.
+
+American College of Clinical Pharmacy (2019). Leadership for Medication Management
+
+[Online]. Available on:
+
+https://www.accp.com/docs/govt/advocacy/Leadership%20for%20Medication%20Mana gement%20-%20MTM%20101.pdf [Accessed 19 January, 2025].
+
+American Pharmacists Association (2016). Telehealth and Pharmacy [Online]. Available on: https://www.pharmacist.com/ [Accessed 19 January, 2025].
+
+Avgousti et al (2016). Medical telerobotic systems: current status and future trends. BioMedical Engineering , 21016; 15: 96.
+
+Barton Amy (2014). The regulation of mobile health applications. Published online 2012 May 8. BMC Med. 2012; 10: 46. doi: 10.1186/1741-7015-10-46.
+
+British National Formulary (2019). Drugs [Online]. Available on: https://www.medicinescomplete.com/#/browse/bnf/_145873037._675647175._8690451 47._178233510 [Accessed 19 January, 2025].
+
+Cabinet resolution No. (40) of 2019,  Concerning the Executive Regulation of Federal Decree-Law No. (4) of 2016 on Medical Liability and Addenum Regulations and Conditions for Providing Telehealth Services.
+
+Center for Connected Health Policy (2019). National Policy [Online]. Available on: https://www.cchpca.org/telehealth-policy/national-policy [Accessed 19 January, 2025].
+
+Issue Nu:
+
+4
+
+Cortez Nathan, Cohen Glenn Cohen, and Kesselheim Aaron (2014). FDA Regulation of Mobile Health Technologies. Health Law, Ethics, and Human Rights. The New England journal of medicine.July 24, 2014; 2014; 371:372-379. DOI: 10.1056/NEJMhle14033844.
+
+Digital Guardian (2019). What is HIPAA Compliance? HIPAA Requirements [Online]. Available on: https://digitalguardian.com/blog/what-hipaa-compliance [Accessed 20 January, 2025].
+
+Dubai Health Authority (2011). Health Information Interoperability Standards [Online]. Available on:
+
+https://www.dha.gov.ae/Documents/opendata/Health%20Information%20Interoperabilit y%20Standards_Version1.0.pdf [Accessed 20 January, 2025].
+
+Dubai Health Authority (2017). Dubai Universal Design Code[Online]. Available on: https://www.dha.gov.ae/Documents/HRD/RegulationsandStandards/Polocies/Dubai%20 Universal%20Design%20Code%20Final%20Feb%202017.pdf [Accessed 20 January, 2025].
+
+Dubai Health Authority (2018). DHA Law No. 6 of 2018.
+
+Federal Law No. (7) Of 1975, Concerning Practice of Human Medicine Profession.
+
+Federal Law No. (3) Of 1987, The Penal Code.
+
+Federal Law No. (1) Of 2006 and its corresponding Dubai Law No. (2) Of 2002 relating to Electronic Transactions and Commerce.
+
+Federal Decree-Law No. (5) Of 2012, regarding Combating Cybercrimes.
+
+Federal Law No. (6) Of 2018, Concerning the Establishment of Dubai Health Authority.
+
+Issue Nu:
+
+4
+
+Federal Law No. (2) Of 2019, Concerning the use of ICT in health fields.
+
+Furstenau D (2016). Open Digital Platforms in Health Care: Implementation and Scaling Strategies. Thirty-Seventh International Conference on Information Systems, 1, 1-12. Available on:
+
+https://www.researchgate.net/publication/309203519_Open_Digital_Platforms_in_Healt h_Care_Implementation_and_Scaling_Strategies [Accessed 22 January, 2025].
+
+Galden Louise (2018). Telephone Consultations. BMJ 2018; 360 doi: https://doi.org/10.1136/bmj.k1047 (Published 29 March 2018).
+
+Health Sciences Authority (2016). Singapore Guidance notes on supply of registered General Sale List (GSL) therapeutic products and other medicinal products via automatic vending machines[Online]. Available on: https://www.hsa.gov.sg/content/dam/HSA/HPRG/Manufacturing_Importation_Distribution/Guidan ce%20documents%20for%20Industry/GUIDE-MQA-029.pdf [Accessed 22 January, 2025].
+
+Holman Tayla (2019). mHealth [Online]. Available on: https://searchhealthit.techtarget.com/definition/mHealth [Accessed 22 January, 2025].
+
+Niemeyer Günter, Preusche Carsten and Hirzinger Gerd (2014). Telerobtics [Online]. Available on: https://www.researchgate.net/publication/227154177_Telerobotics [Accessed 23 January, 2025].
+
+Ministry of Health (2010). New Zealand, Wellington Ministry of Health Consultation on Proposed Amendments to Regulations under the Medicines Act 1981 [Online]. Available at: http://www.moh.govt.nz/[Accessed 23 January, 2025].
+
+Issue Nu:
+
+4
+
+[PAGE 79-80]
+Priyanka V (2016). E-pharmacies Regulation in India: Bringing New Dimensions to Pharma
+
+Sector [Online]. Pharmaceutical Regulatory Affairs, 5, 1-7. Available on: https://www.omicsonline.org/open-access/epharmacies-regulation-in-india-bringing-newdimensions-to-pharmasector-2167-7689-1000175.pdf  [Accessed 23 January, 2025].
+
+Telecommunications Regulatory Authority (2017). Consumer Protection Regulations. The Center for Telehealth and e-Health Law-Washington (2011). Internet Prescribing Summary Iowa, Minnesota, Nebraska, North Dakota, South Dakota and Wisconsin [Online]. Available on: www.ctel.org ([Accessed 23 January, 2025].
+
+The Pharmaceutical Society of Ireland (2019). Guidelines on the Counselling and Medicine Therapy Review in the Supply of Prescribed Medicinal Products from a Retail Pharmacy Business [Online]. Available on: https://www.thepsi.ie/Libraries/Folder_Pharmacy_Practice_Guidance/01_11_Guidelines_ on_Counselling_and_Medicine_Therapy_Review_in_the_Supply_of_Prescribed_Medicinal_ Products.sflb.ashx [Accessed 23 January, 2025].
+
+Ministerial Decision no. (51) of 2021 concerning the health data and information which may be stored or transferred outside the country.
+
+Ministry of Health British Columbia (2013). Telehealth Clinical Guidelines Province of BC Health Authorities [Online]. Available on:
+
+http://www.health.gov.bc.ca/ehealth/telehealth.html [Accessed 24 January, 2025].
+
+National Electronic Security Authority (2014). Security standards and guidance.
+
+UAE Constitution (1971) and its amendments to 2004.
+
+Issue Nu:
+
+4
+
+UAE (2017). Unified Health Professional Qualification Requirements.
+
+Viswanathan M et al (2015). Medication therapy management interventions in outpatient settings. JAMA Intern Med. 2015;175(1):76 - 87.
+
+Wolffsohn James (2008). Eye Essentials: Ophthalmic Imaging. Chapter 7 Teleophthalmology. 2008, Pages 115-125.
+
+36.
+
+World Health Organization (2016). Defining evaluation indicators for telemedicine as a tool for reducing health inequities. Pan American Health Organization [Online]. Available on: iris.paho.org/xmlui/bitstream/handle/123456789/28562/PAHOKBR16006-eng.pdf? [Accessed 23 January, 2025].
+
+Yang Guang-Zhong et al (2017). Medical robotics: Regulatory, ethical, and legal considerations for increasing levels of autonomy. Science Robotics 15 Mar 2017: Vol. 2, Issue 4, eaam8638. DOI: 10.1126/scirobotics.aam8638.
+
+Issue Nu:
+
+4
+
+[PAGE 81-85]
+APPENDIX 1: HYBRID CHRONIC DISEASE CARE MODEL WITH IN-PERSON & TELEHEALTH PATHWAYS
+
+In-person
+
+Issue Nu:
+
+4
+
+Telehealth Hybrid
+
+Issue Nu:
+
+4
+
+This applies to all DHA-licensed healthcare facilities and providers offering telehealth services as part of medical tourism.
+
+o Telehealth consultations for international patients must be conducted remotely by DHA-licensed physicians via DHA-approved secure and encrypted platforms.
+
+o These consultations shall include comprehensive medical history taking, risk assessment, and suitability evaluation for treatment in Dubai.
+
+o Explicit informed consent must be obtained prior to telehealth services, including details on scope, limitations, and confidentiality.
+
+o All medical procedures and treatments are to be performed exclusively by UAElicensed healthcare professionals at DHA-licensed facilities.
+
+o Patient care must comply with all DHA standards and local regulatory requirements.
+
+o Telehealth may be used for limited post-treatment follow-up to support patient recovery and monitor outcomes.
+
+o Follow-up consultations must be conducted by DHA-licensed physicians on DHA-approved secure telehealth platforms.
+
+o Facilities offering medical tourism must ensure telehealth triage and advisory services are delivered exclusively by DHA-licensed physicians using DHAcompliant encrypted platforms.
+
+Issue Nu:
+
+4
+
+o Complete documentation of all telehealth interactions must be maintained according to DHA EMR Guidelines and telehealth standards.
+
+All providers and facilities must adhere to this policy to ensure patient safety, data security, and high standards of care in medical tourism telehealth services.
+
+Issue Nu:
+
+4
+
+26/11/2025
+
+Patient Name
+
+: ___________________________________________________________________________
+
+Date of Birth
+
+: _______________________________
+
+Patient No
+
+:_________________________________
+
+Emirates ID
+
+___________________________
+
+Insurance No. (if applicable) _____________________
+
+1Purpose : To obtain your consent to participate in a teleconsultation in connection with the following service(s) and/or procedure(s)
+
+Patient Health Records
+
+Medical Images
+
+Live audio and video interaction
+
+Output data from medical devices and sound and video files
+
+[PAGE 85-86]
+Electronic systems used will incorporate network and software security protocols to protect confidentiality of patient identification and imaging data and will include measures to safeguard the data and to ensure its integrity against intentional and unintentional corruption in accordance to UAE Laws and Regulations.
+
+3Nature of Teleconsultation : During the teleconsultation
+
+Details of your medical history, examinations, x-rays and tests may be discussed with other healthcare professionals with interactive videos, audio and telecommunication technology.
+
+A physical examination may need to take place.
+
+A non-medical technical person may be present in the telehealth studio to aid in the video transmission.
+
+Audio and/or photo recordings may be taken for accurate diagnosis, treatment and quality control.
+
+4Medical Information and Records : All existing federal laws and local regulations/policies/guidelines regarding access to medical information and copies of your Health Records apply to this teleconsultation. Dissemination of any patient identifiable images or information for this telehealth interaction to other entities will not take place without your consent.
+
+5Confidentiality : Responsible and appropriate efforts have been made to eliminate any confidentiality risks associated with the teleconsultation and all existing confidentiality protections under UAE federal laws and local regulation apply to information disclosed during this teleconsultation.
+
+6Rights : You may withhold or withdraw consent to teleconsultation at any time without affecting your right to future care or treatment.
+
+7Disputes : You agree that any disputes that arise from the teleconsultation will be resolved as per UAE laws and regulations and will be raised with the telehealth provider in the first instance.
+
+8Expected Benefits:
+
+Improves access to medical care by enabling a patient to remain in their home, office (or a remote site) while your DHA licensed physician obtains test results and consults with other DHA licensed physicians at distant/ other sites.
+
+Issue Nu:
+
+4
+
+More efficient medical evaluation and management.
+
+Access to expertise from distant specialist in the UAE or experts outside.
+
+[PAGE 86]
+As with any medical procedures there are potential risks associated with the use of Telehealth, which may include, but not limited to the following:
+
+Information transmission may not be sufficient (e.g. poor resolution of images) to allow appropriate decision making by the consulted physician.
+
+Delays in medical evaluation and treatment could occur due to deficiencies or failure of equipment.
+
+In rare instances, security protocol could fail causing a breach of privacy of personal medical information.
+
+In rare cases, a lack of access to complete health records may result in adverse drug interactions, allergic reactions, or other judgement errors.
+
+10Expected Benefits and Possible Risks : You have been advised of all the risks, consequences and benefits of telehealth. Your treating physician has discussed with you the information provided in a language you can understand. You have had the opportunity to ask questions about the information presented in this form and about the teleconsultation. All your questions have been answered and you understand the written information provided above.
+
+I agree to participate in the teleconsultation for the service(s)/procedure(s) mentioned above.
+
+Signature:
+
+______________________________________________________________________________
+
+If signed by someone other than the patient, indicate relationship: ____________________________________
+
+I refuse to participate in the Teleconsultation for the service(s) / procedures(s) mentioned above.
+
+Signature:
+
+______________________________________________________________________________
+
+If signed by someone other than the patient, indicate relationship: ____________________________________
+
+Date
+
+: _____________________________________
+
+Witness Time
+
+: ______________________________________
+
+: _______________________________________________________________________________
+
+Date
+
+: _______________________________ _________
+
+Time
+
+: ___________________________________
+
+Issue Nu:
+
+4
+
+[PAGE 87-91]
+Issue Nu:
+
+4
+
+APPENDIX 6 : PHARMACY DELIVERY REQUIREMENTS FOR OVER THE COUNTER AND GENERAL ITEMS FOR OUT-PATIENT PHARMACIES.
+
+'Pharmacy Delivery Service' for OTC medicines and General products offered by out -patient pharmacies in Dubai should be done by highly-skilled-licensed-pharmacists in managing effective non-face-to-face communications with patients. This service should be done in a safe and secure atmosphere.
+
+DHA licensed out-patient Pharmacy.
+
+Pharmacies shall seek DHA approval for dispensing medications via delivery system.
+
+'Pharmacy delivery' service shall be conducted by Pharmacy staff 'pharmacy courier' or by third parties, and in both cases; it is under the responsibility of the pharmacist incharge.
+
+'Pharmacy delivery' service done by third parties requires approval from the DHA: the pharmacy has to mention the third party's name in their application form along with photos of the third party's vehicle. In addition to a copy of their contract and an undertaking letter signed by the pharmacist in-charge that he is fully responsible for the delivered medications and items in case of damage or lost.
+
+A telephone order must be reduced to writing or electronic record including time of the call, product/s ordered, customer details, delivery information, and pharmacist details.
+
+The products should be sent in their original manufacturer packs with their original leaflets.
+
+Delivering the products to customers through temperature and humidity-controlled containers according to the manufacturer instructions:
+
+Passive shipping systems:
+
+Insulated Styrofoam Coolers: the walls thickness should be at least ¾ inch from all sides with a seal.
+
+Refrigerant Gel Packs: refrigerated temperature from 0 to15 degrees Celsius. they are reusable, recyclable, and non-toxic.
+
+Cushioning, foam or Packing Peanuts: soft packaging materials to absorb shocks.
+
+[PAGE 92]
+Leak-proof bag and absorbent material to deliver glass bottles (example: cough syrups) safely.
+
+Pharmacist should be able to supply documentary evidence that the pharmaceutical product has not exceeded the acceptable limits temperature and humidity, as determined by the manufacturer's instructions. A temperature -humidity logbook must be signed by the pharmacist in-charge upon sending the products and the patient once received.
+
+The signed temperature-humidity logbook should be retained for at least 3 years as printed hard copies or retrievable electronic forms.
+
+The order should be handled to the person who gave the order. If he/she are unable to receive it, another person who is 18 years old and above can receive the medications only after the customers approval.
+
+It is prohibited to deliver Narcotic, Controlled and Semi-controlled medications via pharmacy delivery system.
+
+[PAGE 93]
+6 A warning message
+
+The product must not be used if the parcel does not match the order, if it is opened or damaged, or if there is any chance the product may be defective.
+
+7 Total amount to pay
+
+Issue Nu:
+
+4
+
+26/11/2025

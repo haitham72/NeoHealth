@@ -1,0 +1,146 @@
+DOC_CODE: MOHAP/UG/LIC-2025
+TITLE: Initial Approval for Licensing - Re-licensing Health Facility (User Guide)
+AUTHORITY: Ministry of Health and Prevention
+TIER: official
+VERSION: 1
+
+=== DOCUMENT TEXT ===
+
+[PAGE 1-3]
+July 2025
+
+User Guide
+
+1
+
+Overview: 3 Main Stakeholders: 3 Customer Portal: Raising an Application to Request For Facility Licensing Initial Approval  4 Customer Portal: Application Update on Facility Licensing Initial Approval 21
+
+This service allows health facilities to obtain the initial approval which is required to get the necessary license to practice and provide health and treatment services in the UAE. Such facilities include public and specialized clinics, medical centers, diagnostic and rehabilitation centers, emergency and home health centers, fertility and recuperation centers, one-day surgery centers and hospitals, and hospitals of different sizes and specialties.
+
+Medical Facility PRO: Primary user of the service. Manage and track the entire application until completion of the service. MOHAP Officer : Reviews the application, verifies the documents, sends back application for any changes/revisions and takes action on the application - Approve/ Reject. MOHAP Engineer: Reviews the site Self-Assessment checklist, reviews and approves the Facility Drawing Plan or provides comments.
+
+[PAGE 4-6]
+Sign-in through UAE Pass and proceed to select the business profile linked to your account.
+
+Click "Continue" after selecting the facility profile.
+
+Click "Services" from the Facility Dashboard
+
+Look for the "Initial Approval For Licensing A Medical Facility" and then click "Start Service"
+
+A drop down menu allows the user to select the application type: "License" or "Relicense."
+
+The "Re-license" option is only available to users with one or more facilities where the license status is auto-cancelled (licenses expired for over 180 days without renewal). Users with no auto-cancelled facilities bypass the re-license step and proceed directly to entering new facility details.
+
+[PAGE 6-9]
+Facility Details.
+
+Core Specialties.
+
+Second Specialties if needed.
+
+Facility Location.
+
+Contact Person Details.
+
+Engineer Consultant Details if available. If you wish to not proceed;
+
+Click on 'Back' to go back to the previous page. OR
+
+Click on the 'Save and Close the Application' to save the application as a draft. This draft will have a validity of 30 days only.
+
+Add the location.
+
+The location can be added manually or through google maps.
+
+If the applicant chooses an Emirate that does not match the one entered via Google Maps, a warning will be displayed by the system.
+
+Add the Contact Person Details
+
+Once all information is added click "Continue"
+
+[PAGE 10-19]
+When re-licensing a facility, the system will check for medical staff with expired staff licenses.
+
+If any of the facility's staff have expired licenses, a warning message will pop up. This is just a heads-up so they can get those cancelled or renewed before the final approval process..
+
+Complete Site self-Assessment of a Medical Facility:
+
+Site self-Assessment checklist is tailored to facility's category/sub-category.
+
+Applicants must select "Yes/No" for each checklist item.
+
+Application cannot proceed if any checklist item is marked "No"; the system informs the applicant of non-eligibility.
+
+Progression to the next step is allowed when all items are marked "Yes."
+
+Applicants will be able to download the Site Self Inspection checklist.
+
+For health facilities under the category of hospitals, specialized hospitals, rehabilitation hospital, one day surgery center, Fertility center and endoscopy center require a facility site assessment report. (shall be prepared and approved by specialized engineer consultants in healthcare design and planning)
+
+Upload the facility self-assessment report and tick the consent box.
+
+The "I understand and agree" checkbox must be confirmed before continuing.
+
+Click "Continue"
+
+In this step the facility owner details, and partner details are added
+
+in case the owner is and individual, you need to add the person details by clicking on "Add Owner."
+
+Add the owner details bu adding their "Emirates ID" and "Date of Birth".
+
+Incase the owner is a company, add the company details and required docuemtns
+
+Incase ther are partners, they can be added in this step. If not click on "Continue" to proceed to the next step.
+
+In this step the requried attacchmed to get the intital approval are added.
+
+once all documents are added click on "Confirm and Add"
+
+Before proceeding with payment, you can review the application and change any section before proceeding to payment.
+
+Click on "Continue"
+
+Review the associated fees and click on "Proceed to Payment."
+
+Government facility: Free
+
+Semi government facility: Free
+
+Private medical facility:
+
+Initial Approval Service Fee: It is as per Facility Category
+
+Category: Hospital → Types: General Hospital, Specialized Hospital, Rehab Hospital: AED 2,000.
+
+Category: External Health Care Facilities → Types: One day Surgery Center, Fertility Center, Oncology Center, Gastroenterology Endoscopy Center, Health Transfer and Ambulances Service Centers, Home Health Care Service Center, Long Term Health Care Homes: AED 2,000.
+
+All Remaining Categories/Types: AED 1,000.
+
+Once the payment is done the request is submitted for review by the backoffice employees
+
+If a payment is done the user can download the receipt or they can find it in the payment tap in their dashboard "More information can be found on the Individual Dashboard Training material"
+
+[PAGE 20]
+22. From the "All Applications" tab, find your application and click "View Details" The user can click on the 'Applications' tab to access all their applications Under this tab, applications are categorized as follows:
+
+All Applications: All Applications regardless of the stage or status
+
+Action Required: Pending user action.
+
+30 days for action when application is sent back for updates/changes.
+
+15 days for action when application is approved, and payment is required to complete the service.
+
+In Progress: Awaiting MOHAP review.
+
+Completed: Successfully processed applications.
+
+Drafts: Saved but not submitted applications.
+
+Rejected: Applications rejected by the Officer or due to service-related conditions such as failing exams in the evaluation services.
+
+Expired: Applications expired due to inaction by the customer.
+
+Click on "Download Initial Approval" to get the approval letter, the user can find the payment receipt by clicking on the "Download your Payment Receipt Here"

@@ -1,0 +1,411 @@
+DOC_CODE: DHA/HRS/HPSD/CG-31
+TITLE: Clinical Guidelines for Virtual Management of Enuresis
+AUTHORITY: Dubai Health Authority
+TIER: official
+VERSION: 1
+
+=== DOCUMENT TEXT ===
+
+[PAGE 1]
+Electronic  copy  is  controlled  under  document  control  procedure.  Hard copy is uncontrolled & under responsibility of beholder.
+
+It  is  allowed ONLY to access and keep this document with who issued, who is responsible and to whom it is applicable.
+
+Information security code:  Open
+
+النسخة الإلكترونية هي النسخة المضبوطة وفق إجراء ضبط الوثائق۔ النسخ الورقية غير مضبوطة وتقع عل ى مسؤولية حاملها۔
+
+يسمح بالوصول وبالاحتفاظ بهذه الوثيقة مع مصدرها أو مع المسؤول عن تطبيقها أو مع المطبق عليهم۔
+
+ Shared -Confidential
+
+ Shared-Sensitive
+
+ Shared-Secret
+
+ مشارك -خاص
+
+ مشارك -سري
+
+تصنيف امن المعلومات:  بيانات مفتوحة
+
+ مشارك -حساس
+
+[PAGE 1-2]
+OF ENURESIS - 20
+
+Version 1
+
+Issue date:
+
+27/07/2021
+
+Effective date:
+
+27/09/2021
+
+Health Policies and Standards Department Health Regulation Sector (2021)
+
+INTRODUCTION
+
+Dubai Health Authority (DHA) is the responsible entity for regulating, licensing and monitoring
+
+health  facilities  and  healthcare  professionals  in  the  Emirate  of  Dubai.  The  Health  Regulation
+
+Sector  (HRS) is  an  integral  part  of  DHA  and  was  founded  to  fulfil  the  following  overarching
+
+strategic objectives:
+
+Objective #1: Regulate the Health Sector and assure appropriate controls are in place for safe,
+
+effective and high-quality care.
+
+Objective  #2:  Position  Dubai  as  a  global  medical  destination  by  introducing  a  value-based,
+
+comprehensive, integrated and high-quality service delivery system.
+
+Objective  #3:  Direct  resources  to  ensure  happy,  healthy  and  safe  environment  for  Dubai
+
+population.
+
+ACKNOWLEDGMENT
+
+This  document  was  developed  for  the  Virtual  Management  of  Enuresis  in  collaboration  with
+
+Subject Matter Experts. The Health Policy and Standards Department would like to acknowledge
+
+and thank these professionals for their dedication toward improving the quality and safety of
+
+healthcare services.
+
+The Health Regulation Sector
+
+Dubai Health Authority
+
+[PAGE 4]
+EXECUTIVE SUMMARY
+
+Telehealth is based on Evidence Based Practice (EBP) which is the conscientious, explicit and
+
+judicious use of current best evidence in making decisions about the care of the individual patient.
+
+It means integrating individual clinical expertise with the best available external clinical evidence
+
+and guidelines from systematic research.
+
+EBP is important because it aims to provide the most effective care virtually, with the aim of
+
+improving patient outcomes.  As health professionals, part of providing a professional service is
+
+ensuring that practice is informed by the best available evidence.
+
+This  clinical  guideline  for  the  virtual  management  of  Enuresis  is  presented  in  the  format
+
+comprising of clinical history/symptoms, differential diagnosis, investigations and management.
+
+Identification of 'Red Flags' or serious conditions associated with the disease is an essential part
+
+of this telehealth guideline as it aids the physician to manage patients safely and appropriately
+
+by  referrals,  if  indicated  during  virtual  telehealth  assessment,  to  ER,  family  physicians  or
+
+specialists for a face to face management.
+
+[PAGE 5]
+Virtual Clinical Assessment :  Is  the  evaluation  of  the  patient's  medical  condition  virtually  via telephone or video call consultations, which may include one or more of the following: patient medical history, physical examination and diagnostic investigations.
+
+Patient : The person who receives the healthcare services or the medical investigation or treatment provided by a DHA licensed healthcare professional.
+
+DHA :
+
+EBP :
+
+ER :
+
+DHA :
+
+EBP :
+
+ER :
+
+Dubai Health Authority
+
+Evidence Based Practice
+
+Emergency Room
+
+Health Regulation Sector
+
+Magnetic Resonance Imaging
+
+Urinary Tract Infection
+
+[PAGE 6]
+The word enuresis is derived from a Greek word (enourein )  that  means 'to void urine.' Enuresis refers to urinary incontinence that occurs in individuals over the age of five years old. It can occur either during the day, diurnal enuresis, or at night, nocturnal enuresis. The term is frequently used to refer to bedwetting that occurs in  children.  The  primary cause of nocturnal enuresis, especially in children, is the inability of the bladder to involuntarily retain urine after the bladder has reached full capacity and the individual has not awakened to voluntarily void the urine.
+
+Secondary causes of enuresis include psychological or medical problems, in which the  enuresis  is  a  consequence  of  another  health  concern.  Patients  undergoing behavioural  or  psychiatric  crises  may  intentionally  or  unintentionally  void  urine spontaneously throughout the day.
+
+1.3.
+
+Enuresis as a condition can be divided into primary and secondary forms.
+
+Primary enuresis is characterized by the patient spontaneously voiding urine since infancy.
+
+Secondary enuresis begins several months or years after birth, after the patient has been adequately toilet trained and has developed the ability to control the bladder.
+
+[PAGE 6-7]
+Telehealth services in DHA licensed Health Facilities.
+
+To support the implementation of Telehealth services for patients with complaints of Enuresis in Dubai Health Authority (DHA) licensed Health Facilities
+
+[PAGE 7-8]
+DHA licensed physicians and health facilities providing Telehealth services.
+
+Exclusion for Telehealth services are as follows
+
+Emergency cases where immediate intervention or referral is required.
+
+Prescribe Narcotics, Controlled or Semi-Controlled medications.
+
+EPIDEMIOLOGY
+
+Enuresis  is  common  during  childhood  but  may  be  present  in  adulthood  due  to physical and cognitive disorders.
+
+The prevalence of this condition increases with age range and is more prevalent in children around the age of five years old. Nearly 10% of children at the age of five have nocturnal enuresis, with 7% being boys, as the condition is approximately two times more prevalent in boys at this age. This value decrease, with about 3% of boys having nocturnal enuresis by the age of 10, and about 2% for girls. These values decrease further as these individuals reach their teen years, in which the condition as a whole becomes significantly less prevalent. Approximately 1% of individuals have enuresis by eighteen years of age.
+
+5.
+
+6.
+
+CLINICAL HISTORY
+
+Assessing a patient's history of enuresis can aid the physician in establishing the possible causes of the condition.
+
+Excessive  hydration  and  nutrition  may  affect  the  patient's  urinary  behavior.  The physician should assess the voiding pattern of the patient, both during the day and night, as well as the patient's sleep habits. Any prior medical, behavioural, psychiatric, or  emotional  conditions  should  be  assessed,  as  enuresis  may  be  secondary  to another disorder.
+
+Symptoms include spontaneous voiding of urine at least 2 times a week over the course of at least 3 months. The patient may have difficulty urinating, a constant urgency to urinate, or the changes in the appearance of the urine. Wetting of the bed or clothes may occur more frequently throughout the day or night. Symptoms of other conditions may be present if enuresis is secondary to another illness.
+
+6.4.
+
+Symptoms include:
+
+6.4.1.
+
+Repeated/frequent bed- and clothing-wetting
+
+6.4.2.
+
+Wetting at least 2 times a week, for at least 3 months
+
+Frequent, urgent and burning urination
+
+[PAGE 9-12]
+The evaluation of the child with nocturnal enuresis includes history and urinalysis. The main goal of the evaluation is to determine whether the child has bladder and bowel dysfunction or enuresis as a manifestation of an underlying medical problem.
+
+History - Important issues to be considered in the history:
+
+Daytime  wetting  or  lower  urinary  tract  symptoms,  including  urgency, holding maneuvers, interrupted micturition, weak stream, and straining. Urologic and neurologic disorders are more common among children with daytime symptoms.
+
+Whether  the  child  ever  had  a  prolonged  period  of  dryness  (i.e.,  six months).
+
+Frequency and trend of nocturnal enuresis (e.g., number of wet nights per week or month, number of episodes per night, time of episodes).
+
+Fluid  intake  diary  -  Consuming  the  majority  of  fluids  during  the  late afternoon and evening may be associated with nocturnal polyuria, which contributes to nocturnal enuresis.
+
+Fluid intake that exceeds maintenance fluid requirements may indicate diabetes mellitus, diabetes insipidus, or primary polydipsia.
+
+Stooling history and history of soiling (to determine whether  there is associated  constipation  or  fecal  incontinence,  an  important  cause  of secondary enuresis)
+
+Determination of which interventions the family has tried and whether they were successful.
+
+Medical history (e.g.,  review  of  systems  for  symptoms  of  sleep  apnea, diabetes,  sickle  cell  disease  or  trait,  urinary  tract  infection,  gait  or neurologic abnormalities).
+
+Family history of nocturnal enuresis.
+
+Social  history  (particularly  important  in  secondary  enuresis  because somatic and psychologic comorbidities are more common among children with secondary enuresis)
+
+Assessment of how the problem has affected the child and family; the risk of treatment resistance is increased in children who are not bothered by their enuresis. Postponement of therapy until the child is motivated may be warranted.
+
+Behavioral  history  or  behavior  screening  questionnaire  (to  screen  for psychiatric comorbidity)
+
+Growth should be assessed as poor growth may indicate renal disease.
+
+Voiding diary - The voiding diary should include:
+
+Timing of daytime voids
+
+Volume of voided urine (to estimate bladder capacity)
+
+Lower  urinary  tract  symptoms  (e.g.,  difficulty  starting  or  stopping stream; dribbling; sensation of incomplete emptying)
+
+Urinalysis - The urinalysis (including specific gravity) is obtained as a screen for diabetic ketoacidosis, diabetes insipidus, water intoxication, and/or occult UTI. To screen for diabetes insipidus and possibly differentiate from water intoxication, the urinalysis should be performed on a first morning void. Urine culture is not necessary unless indicated by white blood cells or nitrites on urinalysis.
+
+Imaging  for  selected  patients - Urologic  imaging  (renal  sonogram  and  voiding cystourethrogram) is reserved for children who have significant daytime complaints, a  history  of  UTI(s)  not  previously  evaluated,  and/or  signs  and  symptoms  of structural urologic abnormalities.
+
+Ultrasonography  may  be  helpful  in  determining  postvoid  residual  volume  and
+
+bladder wall thickness.
+
+Neurologic imaging (usually MRI of the spine) is indicated in children who are noted
+
+to have neurologic abnormalities or abnormalities of the lower lumbosacral spine
+
+and lower extremities.
+
+Issue Date:
+
+Personality,  psychological,  and  emotional  assessments  -  should  be  conducted  as deemed appropriate for patient condition.  This can assess the patients:
+
+Mood
+
+Affect
+
+Speech
+
+Behavior
+
+Response
+
+[PAGE 12-15]
+Refer to APPENDIX 1 for the Virtual Management of Enuresis Algorithm
+
+Management of primary nocturnal enuresis may involve one or a combination of interventions, including:
+
+Education and reassurance (given the high rate of  spontaneous resolution)
+
+Enuresis alarms
+
+Motivational therapy
+
+Medication
+
+The  management  of secondary nocturnal enuresis involves addressing the underlying stressor if one can be identified. However, most children with secondary
+
+enuresis have no identifiable cause and are treated in the same manner as children with primary enuresis.
+
+Goals of treatment - The goals of interventions for nocturnal enuresis include:
+
+To reduce the number of wet nights
+
+To reduce the impact of enuresis on the child and family
+
+To avoid recurrence
+
+To stay dry on particular occasions (e.g., sleepover)
+
+Initial  management - Initial  management  of  enuresis  usually  involves  education and motivational therapy and is directed by the telehealth primary care provider.
+
+Education and advice:
+
+Enuresis is common; it occurs at least once per week in 16% of five-yearolds; enuresis resolves on its own in the majority of children.
+
+Enuresis  is  the  fault  of  neither  the  child  nor  the  caregivers;  children should not be punished for bedwetting.
+
+The impact of bedwetting can be reduced by using bed protection and washable/disposable  products;  using  room  deodorizers;  thoroughly washing  the  child  before  dressing;  and  using  emollients  to  prevent chafing.
+
+Keeping a calendar of wet and dry nights helps to determine the effect of interventions.
+
+The child should attempt to void regularly during the day and just before going to bed (a total of four to seven times); if the child wakes at night, the caregivers should take him/her to the toilet.
+
+High-sugar and caffeine-based drinks should be avoided in children with enuresis, particularly in the evening hours.
+
+Daily  fluid  intake  should  be  concentrated  in  the  morning  and  early afternoon;  fluid  and  solute  intake  should  be  minimized  during  the evening.
+
+The routine use of diapers and pull-ups can interfere with motivation for getting up at night and is generally discouraged
+
+Enuresis  alarms - Enuresis  alarms  are  activated  when  a  sensor,  placed  in  the undergarments or on a bed pad, detects moisture; the arousal devise is usually an auditory alarm and/or a vibrating belt or pager. The type of alarm should be tailored to the child's needs and abilities. The alarms work through conditioning: The child learns  to  wake  or  inhibit  bladder  contraction  in  response  to  the  physiologic conditions present before wetting.
+
+Motivational therapy - Rewards for managing urine voiding, assists in behavioural adjustment (e.g., sticker or star chart)
+
+Medication:
+
+Desmopressin - is a first-line  treatment  for  enuresis  in  children  older than 5 years whose bedwetting has not responded to advice about fluid intake or toileting. It is an alternative to enuresis alarms for children and families  who  seek  rapid  or  short-term  improvement  of  enuresis;  have failed, refused, or are unlikely to adhere to enuresis alarm treatment; and for whom an enuresis alarm is unsuitable.
+
+Oral - Children > 5 years: 200micrograms at bedtime, only increased to 400micrograms if lower dose not effective. Withdraw for at least 1 week for reassessment after 3 months
+
+Anticholinergic  agents  -  such  as  oxybutynin  chloride  (especially  in patients  with  overactive  bladder,  dysfunctional  voiding,  or  neurogenic bladder):
+
+Dosage: 2.5 - 3mg twice daily increased to 5mg 2 - 3 times daily (last dose before bedtime)
+
+[PAGE 16-17]
+There are several possible causes and factors associated with enuresis. A small bladder, as
+
+well as any structural or functional problems with the urinary system, may not allow for the
+
+patient to retain the urine produced during the night. The inability to adequately recognize
+
+that  the  bladder  is  full  may  also  lead  to  spontaneous  voiding.  Other  causes  and  factors
+
+include:
+
+9.1.
+
+Bladder dysfunction (usually associated with daytime symptoms)
+
+Chronic kidney disease (associated with poor growth or weight loss, hypertension, abnormal  urinalysis  [e.g.,  proteinuria,  hematuria],  edema,  and  with  progressive deterioration of kidney function, anorexia, vomiting, weakness, and fatigue)
+
+9.3.
+
+9.4.
+
+Hormone imbalance
+
+-
+
+Especially insufficient production of anti-diuretic hormone
+
+UTI (associated with pyuria or bacteriuria on urinalysis)
+
+Posterior  urethral  valves  (associated  with  incomplete  bladder  emptying  [noted through palpation or percussion of the bladder], straining to void, large volumes of voided  urine,  slow  or  intermittent  urinary  stream,  dribbling  of  urine,  UTIs,  poor weight gain)
+
+9.6.
+
+Ectopic  ureter  in  girls  (associated  with  persistent  dampness  in  underwear  and
+
+absence of dry episodes)
+
+Fecal incontinence or constipation (associated with fecal soiling, infrequent stooling, and palpation of stool in the abdomen)
+
+Sickle  cell  disease  (may  be  associated  with  positive  family  history,  abnormal urinalysis (decreased specific gravity, hematuria, proteinuria)
+
+Seizures  (associated  with  paroxysmal,  stereotyped  behaviors  (e.g.,  staring,  limb movements, loss of tone)
+
+Diabetes mellitus (associated with polyuria, polydipsia, weight loss, and glucosuria)
+
+Diabetes  insipidus  (associated  with  polyuria,  polydipsia,  and  decreased  specific gravity on first morning void)
+
+Sleep apnea
+
+Pinworms (associated with perianal excoriation)
+
+Diabetes - Bed-wetting may indicate diabetes
+
+Chronic constipation - May lead to dysfunctional sphincters or muscle control
+
+[PAGE 17-18]
+Referral to pediatric nephrologist/urologist - Children who  have  clinical or radiographic findings suggestive of renal/urologic abnormality or bladder overactivity should be referred for further evaluation. Such findings include:
+
+Daytime incontinence, urgency, holding measures, increased (≥8 times/day)  or  decreased  (≤3  times/day)  voiding  frequency  (possible bladder dysfunction)
+
+Weak  stream,  use  of  abdominal  pressure,  continuous  incontinence, micturition  in  more  than  one  phase  (possible  neurogenic  bladder  or anatomic abnormalities)
+
+Proteinuria, nausea, weight loss, or fatigue (possible kidney disease)
+
+Excessive  thirst,  need  for  nighttime  drinking  (possible  polydipsia  or kidney disease
+
+Referral  to  an  enuresis  specialist  also  may  be  warranted  for  children  who  have nightly enuresis. Nightly enuresis is associated with increased risk of persistence into adulthood, which may be improved by early intervention and treatment.
+
+Referral to a pediatric neurosurgeon may be warranted for children with clinical or radiographic findings suggestive of occult spinal dysraphism (e.g., abnormalities of the lower lumbosacral spine.
+
+Referral  to  a  sleep  specialist  may  be  warranted  for  children  with  evidence  of adenotonsillar hypertrophy or sleep disordered breathing.
+
+[PAGE 19]
+C. Carolyn Thiedke (2013). Nocturnal Enuresis. American Family Physician, [online] 67(7), pp.1499 - 1506. Available at:
+
+https://www.aafp.org/afp/2003/0401/p1499.html#afp20030401p1499-t1  [Accessed 6 Jul. 2019].
+
+2.
+
+Tu, N. and Baskin, L. (2019). Nocturnal enuresis in children: Management. [online] Uptodate.com. Available at: https://www.uptodate.com/contents/nocturnal-enuresis-inchildrenmanagement?search=enuresis&source=search_result&selectedTitle=1~92&usage_type=def ault&display_rank=1#H60385546 [Accessed 6 Jul. 2019].
+
+Tu, N., Baskin, L. and Arnhym, A. (2019). Nocturnal enuresis in children: Etiology and evaluation. [online] Uptodate.com. Available at: https://www.uptodate.com/contents/nocturnal-enuresis-in-children-etiology-andevaluation?search=enuresis&source=search_result&selectedTitle=2~92&usage_type=defau lt&display_rank=2 [Accessed 6 Jul. 2019].

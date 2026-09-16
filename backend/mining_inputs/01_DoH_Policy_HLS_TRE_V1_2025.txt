@@ -1,0 +1,479 @@
+DOC_CODE: DoH/Policy/HLS/TRE/V1/2025
+TITLE: POLICY FOR TRUSTED RESEARCH ENVIRONMENT (TRE)
+AUTHORITY: Department of Health - Abu Dhabi
+TIER: official
+VERSION: 1
+
+=== DOCUMENT TEXT ===
+
+[PAGE 3]
+The concept of Trusted Research Environments (TREs) has come to the forefront in an era marked by the exponential growth of digital data and the escalating concerns over data privacy and security. High-profile data breaches and increasing privacy concerns have highlighted the urgent need for stringent data governance mechanisms. At the same time, the potential of big data to drive significant breakthroughs in fields such as medicine, public health, and social sciences is more apparent than ever. This dual reality of risk and opportunity necessitates a balanced approach to data management where the access to and use of sensitive information is meticulously controlled to prevent misuse while still enabling transformative societal advancements.
+
+This policy should be comprehensively reviewed, comprehended, and executed alongside DoH regulations and guidelines concerning Healthcare Information, Data Governance, Data Quality, Data Catalogue, Meta Data Management, Cybersecurity, Human Subject Research, Patient Healthcare Data Privacy, Informed Consent, and pertinent UAE legislation on Data Protection and Safety.
+
+[PAGE 3-6]
+The purpose of this Policy is to establish requirements to ensure the integrity, transparency, and ethical conduct of research activities within the health sector of Abu Dhabi. The policy aims to create a secure and collaborative research environment, upholding integrity and ethical compliance to foster innovation and protect sensitive data, ensure confidentiality, and promote interdisciplinary collaboration.
+
+The objectives of this policy are multifaceted to ensure a secure, ethical, and collaborative research environment. These include:
+
+Establish a secure and collaborative research environment.
+
+1.3.2
+
+Uphold standards of research integrity and ethical compliance to facilitate innovative and impactful research outcomes.
+
+Protect sensitive data and ensure participant confidentiality.
+
+Foster interdisciplinary collaboration and innovation.
+
+2
+
+3
+
+4
+
+5
+
+[PAGE 7-8]
+Establishing strong governance structures is fundamental to creating a secure environment for trusted research to ensure integrity, transparency, and compliance. Establishing governance mechanisms in line with the below requirements is vital to fostering accountability and ethical conduct, laying the foundation for a trusted research environment:
+
+Establish a clear organizational structure for the TRE, delineating key roles and responsibilities, and internal and external dependencies, including the formation of a Governance Board, Data Stewardship Committee, and Institutional Review Board.
+
+Ensure that leadership possesses comprehensive knowledge of data governance, ethics, and pertinent privacy laws with particular emphasis on the secure handling and irreversible deidentification of health-related data.
+
+Develop comprehensive data governance policies encompassing data privacy, security, access, sharing and usage, aligning with relevant federal laws and DoH protocols, guidelines, and standards.
+
+Establish and enforce policies ensuring the robust and irreversible de-identification of data, clearly defined consent procedures, legally binding data sharing agreements, and detailed breach notification protocols that prioritize the protection of re-identifiable information.
+
+Allocate essential resources to support ongoing dialogues and transparency initiatives, as outlined in Section 3.2, and implement core principles detailed in Section 3.3 of this Policy.
+
+Ensure that all personnel involved possess the required competence including information security due diligence for their authorized roles and that their performance is periodically assessed.
+
+Integrate ethical considerations into all operations of the TRE, ensuring that data usage benefits society while safeguarding individual privacy at all stages.
+
+Actively engage with stakeholders, including public and patient groups, researchers, healthcare providers, and funders, to cultivate trust and transparency.
+
+Enforce stringent role based access controls based on the principle of least privilege, permitting only authorized individuals to access sensitive data with explicit, time bound authorization.
+
+Implement multi-factor authentication, robust identity verification processes, and regular access reviews to uphold data security.
+
+Implement stringent data security measure including encryption, data masking, and Differential Privacy
+
+Establish full compliance with applicable DoH regulations on data sharing, import/export restriction, and national data sovereignty.
+
+Establish quality management processes, encompassing document control, standard operating procedures (SOPs) management, and quality assurance audits.
+
+Foster a culture of continuous improvement, soliciting feedback from stakeholders and adapting governance practices based on lessons learned and evolving best practices.
+
+Conduct comprehensive periodic risk assessments for all data processing activities, explicitly identifying and mitigating risk of data leakage, re-identification, and addressing potential threats to data privacy and security.
+
+6
+
+Conduct classification of data where certain categories of sensitive data shall remain strictly restricted and shall never be shared, transferred, or exported under any circumstances.
+
+Ensure ongoing compliance with legal and regulatory requirements, adjusting governance practices as needed to reflect changes in the legal landscape.
+
+Develop and implement mandatory training programs for all TRE members, ensuring they comprehend their roles and responsibilities, data privacy laws and techniques to prevent inadvertent or intentional re-identification within the governance framework.
+
+Adherence to data governance standards and protocols during the full life cycle of the TRE implementation.
+
+The TRE program shall include detailed descriptions of roles for data/product owners, and outlining their responsibilities in defining TRE strategy, oversight platform development, reporting structure, membership criteria, escalation hierarchy, and operational metrics.
+
+Promote awareness of data governance policies and ethical considerations among researchers and other stakeholders.
+
+Implement monitoring and evaluation mechanisms to assess the effectiveness of governance policies and practices, with special focus on detecting unauthorized access attempts, potential data misuse, or re-identification vulnerabilities.
+
+Regularly report on governance activities, compliance status, and any breaches or incidents to the Governance Board and relevant stakeholders.
+
+Ensure transparency in governance processes, decision-making, and data use outcomes.
+
+Engage with the public and patients through consultations, advisory groups, and clear communication regarding data usage and protection within the TRE.
+
+[PAGE 8-9]
+Ongoing communication and transparency are essential for building trust in the research ecosystem. These objectives shall be achieved by:
+
+Developing and maintaining more than one communication channel including but not limited to digital platforms, public forums, and direct outreach programs for engaging with the public, participants, patients, researchers, data custodians, funders, and relevant stakeholders.
+
+Utilize plain language to articulate complex concepts, emphasizing the benefits and safeguards associated with data usage in TREs.
+
+Periodically host workshops and forums with patients, public groups, researchers, and data custodians to collaboratively design TRE processes and address concerns.
+
+Ensure comprehensive technical documentation on security designs, data protection measures, and governance structures is provided for independent review to verify compliance with standards and enhance transparency.
+
+Facilitate assessments conducted by DoH, ensuring that records are accessible to offer an impartial evaluation of Trusted Research Environment (TRE) security and effectiveness.
+
+Maintain a public log of data usage, approved research projects, and outputs from TREs to promote accountability.
+
+Offer training for researchers and data custodians on data ethics, privacy protection, and technical aspects of TREs to enhance understanding and capability.
+
+Develop targeted educational initiatives to inform the public and patients about the benefits of TREs for health research.
+
+Design organizational policies and practices governing TREs to be adaptable, effectively
+
+responding to emerging technologies, evolving data protection standards, and stakeholder feedback.
+
+Develop and communicate clear procedures for responding to data breaches or misuse, including immediate stakeholder engagement and transparent investigation processes.
+
+[PAGE 9-11]
+TREs operate under core principles (Figure 1) ensuring integrity, security, and effectiveness in handling sensitive data. These principles support robust, ethically sound research by addressing personnel, project management, and technical systems, fostering public trust, and advancing healthcare.
+
+Figure 1: Core Principles of Trusted Research Environment (Source: Conceptualized from UK Health Data Research Alliance)
+
+9
+
+Organizations must ensure accountability for their employees' actions by ensuring compliance with organizational TRE policies, aligning with this Policy, and confirming the adherence of each individual.
+
+Researchers must promptly inform the TRE of any changes in their institutional affiliations to ensure that their access privileges accurately reflect their current role and project.
+
+[PAGE 11-12]
+All users must sign legally binding terms of use agreements including nondisclosure agreements to ensure the integrity and security of the TRE. These agreements shall strictly prohibit:
+
+Any attempts to re-identify individuals
+
+Exploiting system vulnerabilities
+
+Sharing login credentials
+
+Using data for other purposes
+
+Engaging in any activity that discloses the confidentiality, integrity, or availability of data, systems, or user accounts within the TRE.
+
+Attempting to circumvent access to controls, encryption measures, or audit mechanisms implemented within the TRE.
+
+Failing to report known or suspected security breaches, policy violations, or unauthorized disclosure within a reasonable time frame.
+
+Retaining, duplicating, or exporting data outside the approved TRE
+
+10
+
+infrastructure, unless explicitly authorized in writing by the data controller or custodian.
+
+Implement processes to document and manage declarations of funding, sponsorship, commercial interests, and potential conflicts of interest to maintain trust and integrity in research activities.
+
+[PAGE 12]
+Establish robust procedures for verifying the identity of individuals and maintaining up-to-date records of their information governance training and role-relevant certifications.
+
+Maintain detailed logs of user activities within the TRE and enhance transparency in data usage.
+
+Implement authorization policies to regulate access based on the specific approvals granted to each individual.
+
+Establish clear processes for revoking access to individuals who breach service terms, including the appeals process to uphold fairness and accountability.
+
+All research projects seeking access to TRE data must furnish a thorough project description outlining the project's objectives, methodology, anticipated public benefits, details of funders/sponsors, ethical approvals from relevant IRBs, and the duration of data access required.
+
+Projects must substantiate potential public benefit and provide justification for data use to align with the objectives of the TRE and meet the expectations of data subjects.
+
+Data Custodians are required to facilitate the pre-application process for potential applicants by providing summary statistics, limited query interfaces, or direct responses to specific data queries for informed decisionmaking prior to the submission of a complete application to the DoH.
+
+Assist applicants in preparing their submissions effectively by providing detailed guidance on the data access request process, including prerequisites, timelines, and the decision-making framework.
+
+[PAGE 12-13]
+Data Custodians are required to develop a clear and proportionate data access request form to gather all pertinent project information. This form must prioritize transparency and simplicity, with clearly defined timeframes and requirements to ensure an efficient application procedure.
+
+Applicants must be regularly informed about the status of their application, including any processing delays. A fair and transparent appeals process must be established for applicants whose requests are denied.
+
+Data access requests must include meaningful involvement of patient and
+
+public representatives in the decision-making process, reflecting a commitment to inclusivity and transparency.
+
+Maintain a publicly accessible register of approved projects, updated in realtime, to ensure transparency regarding data usage within the TRE. This register must include lay summaries of projects to make the information accessible to the general public.
+
+[PAGE 13]
+TREs are required to deploy systems for securely storing data, ensuring encryption of individual-level data at rest.
+
+Data shall be encrypted in use, at rest and in transit. Data encryption keys shall be stored separately in an on-premise HSM and must be under the exclusive control of DoH to prevent unauthorized access.
+
+Data Masking to anonymize data and Differential Privacy to ensure no reidentification of data shall be implemented.
+
+Strong Authentication and Authorization mechanism shall be in place including but not limited to Identity Access Management, Privilege Access Management, MFA, SSO etc.
+
+Security designs and implementations must undergo independent audits by the DoH or authorized entities. Disclosure of audit results shall be governed by internal policy, subject to data protection and confidentiality constraints. The outcomes will be publicly disclosed at the discretion of the DoH to ensure transparency and foster trust.
+
+Implement systems to securely monitor researcher activity within the TRE to ensure compliance with "Safe Research Projects" and prevent unauthorized data sharing, in accordance with "Safe Personnel" principles.
+
+TRE providers must furnish assurance statements guaranteeing the conformity of their processes and systems to secure data processing as per DoH Information and Cyber Security regulations.
+
+TRE providers must permit individuals to specify software, research code, reference data, and configurations for deployment within their Safe Systems. These specifications are subject to a review process and security assessment in a sandbox environment before deployment to ensure compliance with TRE policies and security standards.
+
+[PAGE 13]
+Offer a Safe research environment furnished with a comprehensive array of analytical tools. This environment must rigorously prevent data egress, ensuring data cannot be exported or copied to external systems.
+
+Support the import of additional data, software, and algorithms as needed by researchers, subject to a review process to ensure security and compliance with organizational TRE policies and in alignment with this Policy.
+
+Facilitate ongoing collaboration among project members by granting access to internationally recognized and authorized collaboration software within the Safes environment. This shall encompass tools for version control and shared document access, ensuring adherence to global standards.
+
+12
+
+[PAGE 14]
+TREs utilizing public cloud services must be engineered to prevent data access by cloud service providers, ensuring data confidentiality and integrity and implementing "Safe Computing" within the Safe System.
+
+Cloud Security shall align with all the Sovereign Controls established by UAE and the cloud security requirements from DoH.
+
+Establish contractual arrangements with third-party providers alongside security design and engineering, to minimize the risk of data security breaches.
+
+Data stored in the cloud must be encrypted at rest, in use and in transit with encryption key management infrastructure configured to ensure that only Data Custodians control the keys.
+
+TREs must ensure transparency regarding cloud security measures by publishing comprehensive reports on cloud security design and implementation, detailing measures to prevent data access by cloud service providers and maintaining data confidentiality and integrity.
+
+TREs must include the latest security technology stack as per requirement from DoH ICSO.
+
+[PAGE 14]
+3.4.4.1.1
+
+For operational clarity, data held in the TRE are classified into four levels of sensitivity. The level assigned determines whether the data may leave the TRE and what controls apply. Export permissions are enforced through the Airlock process described in Section 3.4.5.
+
+Level 0 Aggregate / non-identifiable. Summary statistics such
+
+as GWAS results, allele frequencies and incidence counts. Export is permitted after statistical-disclosure control and Airlock approval.
+
+Level 1 Variant-call files (gVCF / VCF) and phenotype tables that contain indirect identifiers only. Only Level 0 aggregates derived from these files may pass the Airlock.
+
+Level 2 Alignment files (BAM / CRAM) remain inside the TRE, and only Level 0 aggregates may be exported after statistical-disclosure control and Airlock approval.
+
+Level 3 - Raw sequence feeds such as FASTQ and FAST5 are retained on secure in-house storage and are not released.
+
+[PAGE 14-15]
+Data Custodians are required to share descriptive, semantic, and technical metadata for datasets in both human-readable and machine-readable formats to maximize the accessibility and usability of datasets within the
+
+TRE.
+
+In Safe Data environments, prioritize the clarity and accessibility of data assets to reduce the need for extensive manipulation and analysis, especially
+
+13
+
+when access is restricted to programmatic methods rather than a Virtual Desktop Infrastructure (VDI).
+
+Ensure the effective, scalable, and consistent communication of dataset utility to enhance its usefulness and facilitate the assessment and comparison of datasets from diverse sources on a large scale.
+
+Adopt common data models (i.e., OMOP and FHIR) to enable a collaborative research environment.
+
+Implement provisions to delineate the essential metadata required for organize, and filter datasets based on metadata rather than the raw data itself.
+
+Data must adhere to the principles of Findability, Accessibility, Interoperability, and Reusability (FAIR) to ensure its optimal utilization and effectiveness.
+
+[PAGE 15-16]
+Establish the capacity to construct secure, project-specific workspaces within the safe environment to facilitate the integration of additional sensitive data or support research requiring isolated environments, thus ensuring both privacy and security.
+
+Enable customized provisioning of data within project-specific spaces,
+
+tailored to research requirements and approved project scopes, to support hypothesis-generating research within the broader boundaries of project approval.
+
+Ensure the preservation of data integrity and the enforcement of multitenant security and privacy within project-specific spaces. This involves limiting data access to authorized project members and implementing rigorous data protection measures.
+
+Data provisioned for specific research shall be utilized solely for the scope of the research and shall not be utilized partly or wholly for any other requirements including another research even if approved.
+
+Data provisioned and accessed shall not be shared further or outside the research team approved by the IRB.
+
+[PAGE 16]
+Establish a rigorous Airlock procedure for receiving datasets, software, container images and portable media destined for analysis inside the TRE.
+
+Require every submission to carry a manifest detailing file type, size, data origin, checksum, and the approved research-project reference.
+
+Run automated anti-malware, vulnerability, and checksum validation on all inbound files before human review.
+
+Hold imports in a secure quarantine zone until the TRE Operations Team confirms the manifest, verifies that no direct identifiers or disallowed file types are present and authorizes release to the project workspace.
+
+Assign authorized TRE Operations staff to supervise Airlock import requests, supported by the Data-Custodian oversight group.
+
+Maintain clear documentation and training on approved file formats, container recipes, whitelists and security prerequisites to streamline the import process.
+
+Log the manifest, reviewer ID, decision and date in the permanent audit record, and publish aggregated KPIs such as median turnaround time and rejection rate.
+
+[PAGE 16]
+Establish a legally binding agreement that defines the ownership and intellectual property rights and associated responsibilities. This includes, but is not restricted to, publications, datasets, software, and algorithms developed as integral components of the research process.
+
+Promote the dissemination of research outputs within the confines of legal and ethical requirements.
+
+Establish provisions to foster collaboration while honoring the intellectual property rights of all contributors.
+
+Ensure that organizational policies are in accordance with the terms outlined in research funding agreements, which may specify particular requirements concerning the dissemination and utilization of research outputs.
+
+[PAGE 17]
+Data classified as Level 0 may be exported, subject to panel review and Airlock approval. Levels 1 through 2 remain within the TRE; only derivative Level 0 outputs generated from Levels 1 2 are eligible for export after statistical-disclosure control and Airlock approval (see level definitions in Section 3.4.4.1.1).
+
+Prioritize minimizing data to only what is essential for reporting results, while accommodating cycles of rejection and revision as needed.
+
+Designate personnel to supervise airlock export requests, with support from an oversight group.
+
+Maintain comprehensive documentation and mandatory training programs on export options, summarization techniques, and minimization practices to streamline the review process.
+
+Establish Key Performance Indicators (KPIs) on the speed and efficiency of the export review process within TREs.
+
+Employ statistical disclosure control policies to assess data export requests, with documentation openly available detailing the criteria used for evaluation.
+
+[PAGE 17]
+Implement a mechanism for stably archiving datasets within the TRE that support publications but are restricted from export due to privacy concerns.
+
+Assign externally visible identifiers to these datasets for reference in publications.
+
+Establish provisions to enable temporary access to archived datasets for publication reviewers upon request, ensuring controlled access that upholds the integrity and validation of the research review process.
+
+Offer services within the TRE to archive entire project workspaces for defined durations, facilitating the preservation of intermediate datasets and enabling follow-up or related research.
+
+[PAGE 17]
+Within 30 days of project expiry, the Principal Investigator must submit a Certificate of Return or Destruction (CORD) attesting that all temporary working copies stored in the project workspace have been deleted or migrated to an approved archival location within the TRE, and listing any derivative datasets retained under a new ethics or data-sharing protocol.
+
+As part of the project off-boarding checklist, the TRE Operations Team disables user accounts, removes SSH keys and freezes export logs in accordance with UAE data-retention law.
+
+Each quarter, the TRE Operations Team spot-checks at least ten percent of closed projects to verify the accuracy of submitted CORDs and reports the findings to the Data Custodian oversight group.
+
+16
+
+[PAGE 18]
+Establish a comprehensive Health Information Systems (HIS) to track individual consents and withdrawals.
+
+Ensure that the Safe Return of results to individuals or their healthcare providers is conducted exclusively for participants who have explicitly consented to this process.
+
+Validate that Safe Return processes are backed by ethical approval from DoH, delineating the conditions under which research findings can be returned to the clinical setting for the benefit of individual patients.
+
+Maintain detailed documentation of consent forms and ethical approvals to validate compliance and accountability, serving as a foundation for the ethical management of the Safe Return process.
+
+Data quality including accuracy, integrity, completeness and relevance shall be maintained as per the relevant standards and policies established by DoH from time to time.
+
+Prioritize the overall data quality requirements of clinical data recording by clinicians, emphasizing the potential for research utilization to yield additional clinical insights.
+
+17
+
+[PAGE 19]
+Overseeing  this  policy  implementation  to  ensure  a  safe, secure,  and  trusted  research  environment  within  the Emirate of Abu Dhabi.
+
+Review  and  approval  of  research  protocols,  especially involving human subjects or investigational products.
+
+Conducting audits, inspections, and investigations to ensure compliance.
+
+Engaging  in  public  outreach  to  raise  awareness  about regulatory processes and research integrity.
+
+Safeguarding the rights and well-being of research participants.
+
+Fostering collaboration between stakeholders, healthcare providers, researchers, and industry stakeholders to promote research integrity.
+
+Ensuring  adherence  to  research  integrity  requirements outlined in the policy.
+
+Participating in research activities ethically and transparently.
+
+Reporting any instances of research misconduct or breaches of integrity to the DoH.
+
+Upholding  confidentiality  and  privacy  standards  when handling research data or participant information.
+
+Staying  informed  about  the  DoH  requirements  and  best practices in research integrity.
+
+Collaborating with all involved stakeholders to promote a culture of trust and transparency in research.
+
+Engaging  in  ongoing  education  and  training  to  enhance understanding of research ethics and compliance obligations.
+
+Conducting research with integrity  and transparency, aligning with this policy requirements.
+
+Ensuring data accuracy, reliability, and security throughout the research process.
+
+Incorporating patient perspectives and feedback into research design and implementation.
+
+Collaborating  with  licensed  healthcare  professionals  and the DoH to uphold ethical standards.
+
+Engaging in interdisciplinary collaboration to ensure comprehensive and robust research outcomes.
+
+Innovating  responsibly,  considering  the  potential  impact on patient care and public health.
+
+Participating in continuous education and training to stay updated on research best practices.
+
+Reporting any research integrity breaches or misconduct to the DoH.
+
+Contributing to a culture of trust and accountability within the healthcare research community.
+
+Adhering  to  ethical  practices  when  collecting,  analyzing, and disseminating research data.
+
+Leveraging  analytical  skills  to  interpret  research  findings accurately and ethically
+
+18
+
+[PAGE 20]
+Establishing  and  maintaining institutional policies  and procedures in alignment with this Policy.
+
+Providing resources and support for researchers to conduct human subjects research ethically and responsibly.
+
+Ensuring  compliance  with  the  DoH  requirements  for  the protection of human subjects.
+
+Facilitating Institutional Review Board (IRB) or Ethics Committee  review  and  approval  processes  for  research protocols involving human subjects.
+
+Training  and  educating  researchers,  analysts,  innovators, and staff on ethical conduct and DoH compliance in human subject research.
+
+Monitoring  research  activities  to  ensure  adherence  to approved protocols and ethical standards.
+
+Investigating and addressing any instances of noncompliance or research misconduct promptly and appropriately.
+
+Fostering a culture of ethical research conduct and transparency within the institution through communication and collaboration among stakeholders.
+
+Safeguarding the confidentiality, integrity, and availability of  research  data  in  accordance  with  established  DoH Standards and all Federal and local laws and Regulations of UAE.
+
+Implementing appropriate data management practices to ensure data quality and reliability throughout the research lifecycle.
+
+Facilitating access to research data for authorized purposes while protecting privacy and confidentiality.
+
+Establishing  data  access  and  sharing  agreements  with researchers, analysts, and innovators to ensure compliance with legal and ethical requirements.
+
+Providing support  and guidance to researchers, analysts, and innovators on data handling, storage, and security best practices
+
+Conduct regular internal audits and assessments to monitor  compliance  with  data  protection  measures  and address any vulnerabilities or breaches.
+
+Collaborating with researchers, analysts, innovators, institutional  leaders,  and  DoH  to  promote  transparency and accountability in data custodianship.
+
+Participating in ongoing training and professional development to stay informed about emerging trends and best practices in data management and security.
+
+Stay  informed  about  the  purpose,  risks,  and  benefits  of research participation.
+
+Provide  informed  consent  before  participating  in  any research study.
+
+Advocate  transparency  and  accountability  in  research practices.
+
+Report any  concerns  or  misconduct  observed  during research participation to DoH.
+
+Engage in ongoing education about research ethics and the importance of trusted research environments.
+
+19
+
+[PAGE 21]
+The policy applies to all research endeavors conducted within the healthcare domain, encompassing clinical trials, observational studies, health data analysis, and health services research. It extends to all healthcare professionals, researchers, analysts, innovators, clinicians, administrators, and staff involved in research activities within the organization.
+
+This policy pertains to research involving human subjects, medical records, patient data, biological specimens, genome data, and other healthcare-related information. It applies across various healthcare settings, including hospitals, clinics, research centers, and academic institutions affiliated with healthcare delivery.
+
+The policy implementation spans the entire research continuum, from protocol development and ethical review to data collection, analysis, and dissemination of research outcomes. It is designed to ensure the highest standards of research integrity, ethical conduct, patient safety, and data privacy within the healthcare research environment.
+
+Through comprehensive training, education, and oversight mechanisms, the TRE Policy seeks to foster a culture of trust, collaboration, and excellence in healthcare research, ultimately contributing to improved patient care, healthcare outcomes, and public health.
+
+[PAGE 21]
+DoH may impose sanctions and penalties concerning any breach and /or non-compliance under this Policy in accordance with the disciplinary regulation of the healthcare sector.
+
+A transparent reporting mechanism shall be established for individuals to report suspected violations or concerns regarding research integrity. Reports of non-compliance or research misconduct can be submitted anonymously to encourage open communication and accountability.
+
+Reported incidents shall be promptly investigated by the Abu Dhabi Health Research and Technology Committee (ADHRTC) impartially and thoroughly, involving appropriate documentation, interviews, and evidence collection.
+
+Depending on the severity of the violation, corrective measures may include warnings, sanctions, research protocol revisions, or termination of research funding or privileges.
+
+Setting clear expectations and requirements for research integrity  and  transparency  in  funding  agreements  and grant proposals.
+
+Conducting  due  diligence  to  evaluate  the  credibility  and reliability of  research proposals  and  the integrity of researchers and research institutions.
+
+Monitoring funded research projects to ensure compliance with agreed-upon standards and policies.
+
+Providing guidance and resources to researchers on ethical conduct, data management, and reporting requirements.
+
+Supporting initiatives to promote transparency and reproducibility in research findings.
+
+Investigating claims of research misconduct or breaches of integrity and taking appropriate action, including funding suspension or termination if necessary.
+
+Collaborating  with  research  institutions,  DoH,  and  other stakeholders to address systemic challenges and promote a culture of research integrity.
+
+[PAGE 22]
+The DoH shall ensure ongoing compliance, effectiveness, and improvement of policy implementation by:
+
+Compliance Assessment: Regular audits and assessments will be conducted to ensure adherence to the TRE Policy. Compliance reviews shall encompass various aspects of research activities, including but not limited to ethical standards, data management practices, and protocol adherence.
+
+Data Analysis: The collected data based on predefined indicators related to research integrity, ethical conduct, participant protection, and data security shall be analysed to identify trends, areas of non-compliance, and opportunities for improvement.
+
+Feedback Mechanism and Continuous Improvement: Inputs shall be gathered from stakeholders on policy implementation, informing ongoing refinement efforts. Continuous improvement initiatives shall be guided by monitoring findings, ensuring alignment with evolving standards and practices.
+
+Performance Metrics: KPIs shall be defined to track progress towards policy objectives and compliance.
+
+21
+
+[PAGE 23]
+22

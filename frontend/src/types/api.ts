@@ -1,0 +1,240 @@
+export type DocumentTier = "official" | "research" | "commentary";
+
+export interface HistoryTurn {
+  role: "user" | "assistant";
+  content: string;
+}
+
+export interface Document {
+  id: number;
+  title: string;
+  doc_code: string;
+  version: string;
+  effective_date: string;
+  authority: string;
+  source_url: string | null;
+  superseded: boolean;
+  tier: DocumentTier;
+}
+
+export interface SiblingVersion {
+  id: number;
+  version: string;
+  effective_date: string;
+  superseded: boolean;
+  is_current: boolean;
+}
+
+export interface Abstained {
+  abstained: true;
+  reason: string;
+  top_score?: number;
+  run_id?: string | null;
+  /** Present and true only on guardrail off-topic abstentions: reason is already a
+   * complete polite sentence, rendered directly instead of the legacy frame. */
+  off_topic?: boolean;
+  /** Present and true only on small-talk replies (backend conversation router, which
+   * runs above the cache probe -- no retrieval happened at all). `reason` is a fixed
+   * conversational response, not an abstention explanation. */
+  smalltalk?: boolean;
+  /** Which small-talk intent matched (greeting, thanks, model, ...). Diagnostic only. */
+  intent?: string;
+  /** Present and true only when the safety screen refused the input (prompt
+   * injection). `reason` is the fixed refusal sentence. */
+  blocked?: boolean;
+  /** Present only on guardrail off-topic abstentions: clickable in-scope
+   * alternatives, rendered through the normal FollowUpQuestions component.
+   * Legacy: superseded by suggested_followups, kept in the payload for API
+   * compatibility but no longer rendered. */
+  suggested_questions?: string[];
+  /** Clickable alternatives for the "Continue exploring" panel. On an off-topic
+   * abstention these are mined, dataset-grounded follow-ups matched to the query; on
+   * a small-talk reply they are curated static starters, which carry no document
+   * anchor because no retrieval ran. Both render the same way -- only `question` is
+   * ever read. */
+  suggested_followups?: (SuggestedFollowup | StarterQuestion)[];
+}
+
+export interface BBox {
+  page_no: number;
+  l: number;
+  t: number;
+  r: number;
+  b: number;
+}
+
+export interface RetrievedChunk {
+  chunk_id: number;
+  document_id: number;
+  page: number;
+  page_end: number;
+  heading_path: string[];
+  bboxes: BBox[];
+  text: string;
+  semantic_score: number;
+  rrf: number;
+  used_for_answer: boolean;
+  document?: Document | null;
+}
+
+export type ConfidenceTier = "high" | "medium" | "low";
+
+/** A suggestion with no document behind it -- the curated starters small talk offers,
+ * which never ran retrieval and so have nothing to anchor to. */
+export interface StarterQuestion {
+  question: string;
+}
+
+export interface SuggestedFollowup extends StarterQuestion {
+  doc_code: string;
+  document_id: number;
+  pages: number[];
+  section?: string | null;
+}
+
+export interface Answered {
+  abstained: false;
+  answer: string;
+  model_used?: string;
+  top_score: number;
+  confidence_tier: ConfidenceTier;
+  document: Document;
+  page: number;
+  page_end: number;
+  heading_path: string[];
+  bboxes: BBox[];
+  superseded_excluded: number;
+  sibling_versions?: SiblingVersion[];
+  retrieved_chunks?: RetrievedChunk[];
+  /** Mined, dataset-grounded follow-ups matched to this question server-side.
+   * When present and non-empty the UI prefers these over the static bank. */
+  suggested_followups?: SuggestedFollowup[];
+  run_id?: string | null;
+  cache_hit?: boolean;
+  cache_layer?: "redis" | "postgres" | null;
+  cache_similarity?: number | null;
+  cache_match_mode?: "exact_key_plus_filters" | "query_plus_filters" | null;
+  /** Signed token for the per-result "Remove from cache" control (minted server-side
+   * with each cache hit; absent on fresh answers). */
+  cache_token?: string;
+}
+
+export type AskResponse = Abstained | Answered;
+
+export type Provider = "openai" | "local";
+
+export interface AskRequest {
+  question: string;
+  superseded_filter: boolean;
+  provider: Provider;
+  model?: string;
+  authority_filter?: string | null;
+  history?: HistoryTurn[];
+}
+
+export interface DiffFollowupRequest {
+  doc_code: string;
+  current_document_id: number;
+  cited_text: string;
+  cited_page: number;
+  question: string;
+  provider?: Provider;
+  model?: string;
+}
+
+export interface DiffFollowupResult {
+  available: true;
+  previous_version: string;
+  previous_effective_date: string;
+  explanation: string;
+  cache_hit?: boolean;
+  cache_token?: string;
+}
+
+export interface DiffFollowupUnavailable {
+  available: false;
+  reason: string;
+}
+
+export type DiffFollowupResponse = DiffFollowupResult | DiffFollowupUnavailable;
+
+export interface CrossCheckRegulationRequest {
+  doc_code: string;
+  current_document_id: number;
+  cited_text: string;
+  cited_page: number;
+  question: string;
+  provider?: Provider;
+  model?: string;
+}
+
+export interface RelatedOfficialDocument {
+  doc_code: string;
+  title: string;
+  version: string;
+  authority: string;
+}
+
+export interface CrossCheckRegulationResult {
+  available: true;
+  explanation: string;
+  documents: RelatedOfficialDocument[];
+  cache_hit?: boolean;
+  cache_token?: string;
+}
+
+export interface CrossCheckRegulationUnavailable {
+  available: false;
+  reason: string;
+}
+
+export type CrossCheckRegulationResponse = CrossCheckRegulationResult | CrossCheckRegulationUnavailable;
+
+export interface TraceStep {
+  step: string;
+  detail?: string;
+  title?: string;
+  doc_code?: string;
+  version?: string;
+}
+
+export interface Message {
+  id: string;
+  role: "user" | "assistant";
+  content: string;
+  timestamp: number;
+  /** Only present on assistant messages that resolved to a real answer or
+   * abstention -- absent while a message is still streaming. */
+  response?: AskResponse;
+}
+
+export interface ChatSummary {
+  id: string;
+  title: string | null;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface ChatMessageRecord {
+  role: "user" | "assistant";
+  content: string;
+  response: AskResponse | null;
+  created_at: string;
+}
+
+export interface ChatDetail extends ChatSummary {
+  messages: ChatMessageRecord[];
+}
+
+export type ReportReason = "wrong_citation" | "unrelated" | "incorrect_abstention" | "other";
+
+export interface ReportAnswerRequest {
+  run_id: string;
+  reason: ReportReason;
+  comment?: string;
+}
+
+export interface ReportAnswerResponse {
+  success: boolean;
+  reason?: string;
+}

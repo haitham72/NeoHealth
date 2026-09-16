@@ -1,0 +1,189 @@
+DOC_CODE: DoH/STD/HQS/QPS/V2/2026
+TITLE: Quality and Patient Safety Policy
+AUTHORITY: Department of Health - Abu Dhabi
+TIER: official
+VERSION: 2
+
+=== DOCUMENT TEXT ===
+
+[PAGE 2-3]
+1
+
+The purpose of the Quality and Patient Safety policy is to establish a structured framework that ensures safe, effective and high-quality healthcare delivery. It defines governance mechanism, accountability structures and  best  practices  to  minimize  risks  and  prevent  adverse  outcomes.  The  policy  promotes  continuous improvement, data driven decision making and stakeholders collaboration fostering a culture of safety and excellence within healthcare systems.
+
+[PAGE 6]
+In alignment with international and national health priorities, DoH is committed to ensuring high standards of care and continuous improvement in the healthcare system. Healthcare is guided by the following principles: Patient-Centered Care - Prioritizing patient needs, rights and safety in all healthcare decisions
+
+Evidence-Based Practice - Implementing strategies based on research, data and best practice
+
+Transparency and Accountability - Ensuring clear communication and responsibility among healthcare providers
+
+Continuous Improvement - Encouraging ongoing evaluation and enhancement of healthcare quality.
+
+Regulatory  Compliance - Adhering  to  national  and  international  healthcare  standards  and requirements on Quality and Patient Safety, Data Privacy and Information Security and other regulatory domains.
+
+Ethical  and  Scientific  Integrity  -Explicitly  integrates  ethical  considerations  into  quality  and patient safety framework, ensuring alignment with Federal and Abu Dhabi Laws
+
+Advancing a high performing, patient centered health system through the adoption of robust processes,  evidence-based  practices,  and  integrated  systems  that  strengthen  safety  and quality across all healthcare settings. Healthcare providers shall ensure the following:
+
+Elimination of Avoidable Harm by establishing and enforcing standards, protocols, and monitoring mechanisms that prevent avoidable harm and promote a culture of safety across the continuum of care.
+
+High Reliability Health Systems by embedding high reliability principles into organizational  governance,  clinical  operations,  and  workforce  practices  to  ensure consistent, dependable, and resilient care delivery.
+
+Safety  of  Clinical  Processes  by  standardizing  and  continuously  improving  clinical pathways, procedures, and decision support systems to safeguard patients and reduce variability in care.
+
+Health Worker Education, Skills, and Safety by ensuring all health workers are equipped with the competencies, training, and safe working  environments required to deliver high-quality, patient-centered care
+
+Information, Research, and Risk Management by strengthening data systems, research capabilities,  and  risk  management  frameworks  to  enable  proactive  decision  making, transparency, and continuous improvement.
+
+[PAGE 6-8]
+Healthcare quality domains are key to providing a framework for improving patient outcomes, reducing risks and optimizing healthcare performance. The desired outcomes outlined below are  aligned  with  the  defined  indicators  established  by  DoH  and  will  be  measured  using applicable KPIs set forth by the regulatory authority.
+
+All healthcare facilities licensed by the DoH are responsible for establishing an appropriate structure to support quality and safety.
+
+The  healthcare  facility  shall  establish  and  maintain  a  comprehensive  governance framework  that  delineates  clear  roles,  responsibilities,  protocols,  and  escalation pathways to uphold high standards of care and patient safety across all levels of service delivery through the integration of key operational, clinical, and strategic components, including but not limited to:
+
+Patient  Safety  Event  Reporting  Systems:  Mechanisms  for  timely  identification, documentation, and analysis of incidents that may compromise patient safety, enabling prompt corrective actions and preventive strategies.
+
+Safety  Culture  Measures:  Tools  and  methodologies  to  assess,  promote,  and sustain a culture of safety within healthcare settings, fostering an environment where staff are empowered to prioritize patient safety and speak up without fear.
+
+Quality Indicators: Standardized metrics to evaluate the effectiveness, efficiency, and safety of healthcare services, serving as a foundation for continuous quality improvement and benchmarking.
+
+Integrated Solutions and Improvements: Data-driven approaches that synthesize insights from reporting systems, safety culture assessments, and quality indicators to inform strategic planning and drive system-wide enhancements in patient safety and healthcare quality.
+
+The healthcare facility shall  ensure effective governance and oversight of healthcare facilities; the organization shall implement the following as part of Quality and Patient Safety Program:
+
+Annual Approval and Review: The Healthcare Facility Quality and Patient Safety Program shall be formally approved and reviewed by the designated Governance Body  on  an  annual  basis  to  uphold  regulatory  compliance  and  maintain  high standards of care.
+
+Quarterly Reporting: Healthcare facility performance data shall be submitted to the Governance Body on a quarterly basis to promote transparency, accountability, and timely monitoring of key quality and safety indicators.
+
+Quarterly  Review:  The  Governance  Body  shall  conduct  a  structured  quarterly review  of  reported  performance  data  to  evaluate  operational  effectiveness,
+
+identify areas for improvement, and support evidence-based decision-making.
+
+[PAGE 8-9]
+Inclusion in Annual Governance Evaluation: Healthcare facility performance data provide a comprehensive assessment of system-wide performance and inform strategic planning and policy development.
+
+The healthcare facility shall maintain a strategic approach to quality and patient safety domains, governed by policies, procedures, and protocols, with assurance mechanisms embedded at all levels to drive accountability and continuous improvement.
+
+The healthcare facility shall ensure that all health professionals apply evidence-based practices and maintain current clinical competencies to safeguard patient safety and improve outcomes. Each healthcare facility must also be staffed with a qualified and enough Quality and Patient Safety personnel, appropriate to the volume, scope and complexity of services provided.
+
+The healthcare facility shall ensure robust information security measures are in place, including but not limited to, access control, encryption, audit trails, and compliance with UAE federal and local system integrity in support of patient safety. It is essential to focus on the following key aspects:
+
+Security: Implement comprehensive security protocols to safeguard data against unauthorized  access  and  breaches.  This  includes  using  encryption,  access controls, and conducting regular security audits to maintain data integrity.
+
+Transparency: Establish transparent data management practices to foster trust and accountability. This involves clear documentation of data handling procedures and  ensuring  that  relevant  information  is  accessible  to  authorized personnel.
+
+Reliability: Ensure  that  data  systems  are  reliable  and  consistently  provide accurate  information.  Regular  system  maintenance,  data  validation  processes, and redundancy measures are crucial to prevent data loss and ensure system uptime.
+
+Quality Improvement: Utilize data systems to support continuous improvement in care quality and enhance patient safety. Leveraging data analytics to identify areas for improvement and implementing evidence-based practices is essential.
+
+The  healthcare  facility  shall  conduct  regular  benchmarking  to  compare  healthcare facility performance, identify best practices, and inform targeted quality improvement strategies.
+
+The  healthcare  facilities  shall  comply  with  designated  key  performance  indicators aligned  to  their  scope  of  services  and  professional  practice.  This  includes  but  is  not limited to accurate reporting of quality and patient safety indicators, completeness of all  required  submissions,  adherence  to  specified  timelines,  and  timely  provision  of additional data or information as requested by the Department of Health.
+
+Healthcare  facilities  licensed  by  the  DoH  must  implement  the  following  programs,  among others. Monitoring and evaluation framework will be established to oversee their implementation and assess their impact.
+
+Quality Improvement and Patient Safety
+
+Risk Management
+
+Clinical Audit
+
+Infection Control and Prevention
+
+Occupational Health and Safety
+
+Emergency Preparedness and Business Continuity
+
+Complaints and Suggestions
+
+Mortality and Morbidity
+
+Data and Performance Management / Key Quality Metrics
+
+[PAGE 9]
+Whistleblowing
+
+Bioethics Governance (including but not limited to Biomedical Research, Emerging Technologies)
+
+Health Information Management (including but not limited to Data Privacy and Information Security Management)
+
+Facility Management and Safety
+
+Medication Management & Use
+
+Sustainability  Program  (including  but  not  limited  to  Climate  Impact  reduction, resource stewardship, social responsibility)
+
+The healthcare facility shall implement a rigorous policy and structured framework to achieve patient safety goals, addressing immediate risks while embedding a sustained culture of safety and  quality  care.  All  healthcare  facilities  are  mandated  to  monitor  and  demonstrate  full compliance with key performance indicators (KPIs) related to patient safety, using evidencebased methodologies and best practices aligned with regulatory standards and international benchmarks.
+
+Goal 1 - Identify Patient Correctly
+
+Goal 2 - Improve Effective Communication
+
+Process of reporting critical reports results of diagnostics tests
+
+Standardized process for handover communication
+
+Goal 3 - Improve Safety of High Alert Medications
+
+Processes to improve the safety of high alert medications
+
+Process to improve the safety of look-alike/sound alike medications
+
+Process to manage the safe use of concentrated electrolytes
+
+Goal 4 - Ensure Safe Surgery
+
+Goal 5 - Reduce the Risk of Health Care Associated Infections
+
+The healthcare facility shall conduct systematic clinical review and monitor key performance indicators to enhance patient care, ensure compliance, improve operational efficiency and generate actionable insights for continuous improvement.
+
+The healthcare facility shall foster a positive safety culture that prioritizes patient safety, staff well-being,  and  continuous  improvement  through  structured  approaches  that  integrate leadership commitment and active employee engagement. A  patient safety culture survey shall be conducted every 18 months to assess progress and inform action.
+
+Healthcare  facilities  licensed  by  the  DoH  are  accountable  for  ensuring  adherence  to  the requirements specified in this policy, along with applicable UAE regulations and designated international standards, extending beyond just accreditation and certification.
+
+Regulatory Compliance : Facilities must adhere to all applicable local and international regulations,  ensuring  that  their  operations  align  with  the  highest  standards  of healthcare delivery.
+
+Beyond  Accreditation : Compliance  is not limited to obtaining accreditation or certification. Facilities must continuously meet and maintain the standards set forth by the DoH and other relevant regulatory bodies.
+
+[PAGE 10]
+The  Department  of  Health  collaborates  with  both  internal  and  external  stakeholders  to develop effective collaboration frameworks and clearly defines its roles and responsibilities in implementing and sustaining the initiatives, interventions, objectives, and priorities set forth in this policy.
+
+The Department of Health will offer essential guidance and, when needed, use its regulatory authority to ensure the requirements outlined in this policy are fulfilled.
+
+The Department of Health provides oversight through a structured regulatory framework that ensures health quality, patient safety and compliance.
+
+DoH  is  the  entity  responsible  for  defining  healthcare  quality  and  safety  and  will  set  the performance parameters and indicators to be achieved by all Health Facilities in the Emirate of Abu Dhabi.
+
+The  DoH  will  evaluate  and  inspect  health  facilities  to  ensure  their  adherence  to  the requirements that promote quality and patient safety.
+
+The DoH will hold health facilities accountable if there are any compromises in quality and patient safety or if they fail to meet the required quality and safety standards.
+
+The DoH is responsible for regulating the health system and ensuring all regulatory provisions are enabled to address service gaps, inefficiencies, malpractice or unfairness.
+
+The DoH will provide the necessary stewardship and ensure the requirements set out in this policy are met through its regulatory powers and where necessary, set out further regulatory measures to address current and future health system needs
+
+[PAGE 10-11]
+Healthcare ecosystem stakeholders should work together with the Department of Health to coordinate efforts in optimizing healthcare quality and patient safety initiatives and support the attainment of its objectives.
+
+This policy applies to all stakeholders within the Abu Dhabi healthcare ecosystem, including but not limited to healthcare providers, healthcare professionals (physicians, nurses, pharmacists, dentists, allied healthcare professionals), contracted services, government entities, health insurance companies and any other relevant entities.
+
+No exception to this policy, however, should potential exemptions to this policy arise in the future, they will be reviewed through a formal evaluation process, subject to regulatory approval and alignment with quality and patient safety standards.
+
+DoH can impose sanctions in relation to any breach of requirements under this Policy in accordance with the disciplinary regulation of the Healthcare sector.
+
+[PAGE 11]
+A monitoring and evaluation plan will be implemented to ensure compliance and evaluate the effectiveness of this policy and its components. DoH will serve as the primary regulator for these activities, setting key strategic KPIs aligned with strategic initiatives. Success will be measured through data driven assessments, stakeholders' engagement and transparent reporting.
+
+Key Monitoring Principles:
+
+Performance Metrics: Regular tracking of JAWDA KPIs, Sentinel Events and Incidents Reported
+
+Stakeholders  Feedback:  Identify  gaps  by  reviewing  complaints,  safety  culture  survey,  other  related surveys
+
+Compliance Audits: Conducting audits to ensure adherence to regulatory standards and safety protocol
+
+Benchmarking and Best Practice: Comparing outcomes with regional and international standards to drive excellence
+
+Continuous Improvement: Implementing corrective actions based on trends analysis and root causes.

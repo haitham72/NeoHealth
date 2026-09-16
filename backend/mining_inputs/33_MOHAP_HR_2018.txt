@@ -1,0 +1,960 @@
+DOC_CODE: MOHAP/HR/2018
+TITLE: Hospital Regulation
+AUTHORITY: Ministry of Health and Prevention
+TIER: official
+VERSION: 2
+
+=== DOCUMENT TEXT ===
+
+[PAGE 3]
+The  Health  Regulatory  Authority  in  the  United  Arab  Emirates  (UAE)  represented  by:  the Ministry  of  Health  &  Prevention  (MOHAP),  is  pleased  to  present  the  unified  Hospital Regulation which represents a milestone towards fulfilling the  UAE strategic objectives to improve the healthcare service provision across the country. For the purpose of this document the  Health  Regulatory  Authority  in  the  UAE  shall  be  referred  to  Ministry  of  Health  & Prevention (MOHAP).
+
+This Regulation places an emphasis on hospital care standards. It focuses on the quality of service provision as well as the safety of patients and healthcare professionals in addition to the  design  requirements  of  the  hospitals  in  UAE.  This  regulation  is  compliant  with  UAE federal laws  along  with  international  hospital  accreditation  standards.  This  document provides a base for the  Concerned Authority to assess the performance  of hospitals within their geographical jurisdiction to ensure safe and competent delivery of services.  It will also assist  the  hospitals  in  developing  their  quality  management  systems  and  in  assessing  their own  competence  to  ensure  compliance  with  regulatory  requirements  of  the  Concerned Authority.
+
+The application of this regulation is subject to other local laws and policies as specified by the Concerned Authority within its geographic jurisdiction.
+
+The Hospital Regulation was developed in collaboration with Subject Matter Experts whose contributions  have  been  invaluable.  The  Concerned  Authority  would  like  to  gratefully acknowledge those professionals and to thank them for its dedication to quality in health and its commitment in undertaking such a complex task.
+
+[PAGE 4]
+This  regulation  is  applicable  to  all  hospital  establishments  in  the  UAE  that  are  subject  to licensure  with  the  Concerned  Authority  governing  the  health  sectors  according  to  the geographical areas. All categories of hospitals, inclusive of general and specialty including all governmental,  semi-governmental  and  private  hospitals    in  the  Northern    Emirates  shall comply with this regulation.
+
+The  Concerned  Authority  reserves  the  right  to  amend  the  Hospital  Regulation  stipulated herein  without  prior  notice;  the  latest  version  of  the  regulation  shall  be  published  in  the applicable website http://www.moh.gov.ae, and shall be referred to as the Hospital Regulation in the United Arab Emirates.
+
+The Concerned Authority is the responsible entity  for regulating, licensing and monitoring health facilities and healthcare professionals in the UAE according to its specified geographic jurisdiction.  Through  the  development,  establishment,  and  enforcement  of  this  regulation, which matches best practices for operating  hospitals, the provision of the highest levels of quality and healthcare services at all times shall be ensured.
+
+[PAGE 4-6]
+Accreditation shall refer to that process of evaluation conducted by international accredited organizations  approved  by  the  International  Society  for  Quality  in  Health  Care  (ISQua)  in which certification of competency and quality of service is given to hospitals.
+
+Assisted Reproductive Techniques (ART) shall mean the process of intercourse is bypassed either by insemination (for example, artificial insemination) or fertilization of the oocytes in the  laboratory  environment  (i.e.,  in  vitro  fertilization).  This  includes  but  not  limited  to following procedures: Intra Uterine Insemination (IUI), In vitro Fertilization (IVF), Intracytoplasmic  Sperm  Injection  (ICSI),  Gamete  Intra-fallopian  Transfer  (GIFT),  Zygote Intra-fallopian Transfer (ZIFT).
+
+Cohortin g shall refer to grouping of infectious patients and nursing them within an area of a hospital ward. This is widely recommended as a strategy for controlling transmission of healthcare acquired infection and is often recommended as an overflow strategy when single room isolation is not available. The practice of 'cohorting', in common with other isolation procedures, is associated with successful infection control interventions.
+
+Concerned  Authority shall  refer  to  the  health  regulatory  Authority  in  the  UAE  that  is responsible  for  licensure  of  health  facilities  and  healthcare  professionals  according  to  the defined  geographic  jurisdictions,  the  Ministry  of  Health  &  Prevention  (MOHP)  with  the jurisdiction over the Northern Emirates.
+
+Conventional Radiography  (General  Radiology) shall  mean images  of  the  skull,  chest, abdomen, spine, and extremities produced by the basic radiographic process.
+
+Diagnostic Imaging  Services shall  mean the medical service that utilizes imaging examinations  with  or  without  ionizing  radiation  to  affect  diagnosis.  Techniques  include radiography, tomography, fluoroscopy, ultrasonography, mammography, interventional radiography  (IR),  computed  tomography  (CT),  Positron  emission  tomography  (PET)  Scan and Nuclear Medicine.
+
+Functional  Program shall  mean  a  detailed  plan  prepared  by  the  hospital  investors  and management which describes the project purpose, delivery of care model, facility and service users,  layout/operational  planning,  physical  environment,  projected  operational  use  and demand, Relevant operational circulation patterns, departmental operational relationships and patient/resident, staff, and family/visitor needs.
+
+Healthcare  professional shall  mean  healthcare  personal  working  in  health  facilities  and required to be licensed as per the applicable laws in the UAE.
+
+Health Care Worker (HCW) shall means an individual employed by the hospital, (whether directly, by contract with another entity), provide direct or indirect patient care, this includes but not limited, healthcare professionals,  medical and nursing students, administrative staff and contract employees who either work at or come to the hospital site.
+
+Hospital A health facility in a standalone building with inpatient services for 24 hours use or longer  by  patients  in  the  treatment  of  diseases,  injuries,  deformities,  abnormal  physical  or mental  status,  maternity  cases,  nurseries  and  dispensaries.  A  hospital  provides  critical services such as emergency and intensive patient care. A hospital has higher level of health care management in different fields of medicine and surgery and has ancillary services such as clinical laboratory, radiology and pharmacy. A hospital should have medically equipped ambulance.
+
+[PAGE 6-7]
+General hospital: A facility at which a range of outpatient and inpatient services are offered, mostly within the scope of general medical practitioners. In addition to the following  basic  specialties  of  surgery,  medicine,  orthopedics,  pediatrics,  obstetrics and gynecology and psychiatry.
+
+Specialized hospital: A hospital providing one or two focused specialties/ specialized services.  There  are  wide  a  range  of  possible  specialties  that  could  be  focused  in  a hospital, including spinal injuries, maternity, pediatric, heart, infectious diseases and so on.
+
+Nursing  Home: A  nursing  home  is  a  place  of  residence  for  people  who  require constant nursing care and have significant deficiencies with activity of daily.
+
+Rehabilitation Hospital: A rehabilitation hospital is devoted to the rehabilitation of patients  with  various  neurological,  musculoskeletal,  orthopedic  and  other  medical conditions following stabilization of their acute medical  issues.  The  provided rehabilitation  care  to  patients  is  on  an  inpatient  basis.orthopedic  and  other  medical conditions following stabilization of their acute medical  issues.  The  provided rehabilitation care to patients is on an inpatient basis.
+
+Medical Complaint shall mean expressions of dissatisfaction or concern about a healthcare service made by patients, or their relatives.
+
+Outcome relates  to  the  state  of  health  of  the  individual  or  population  resulting  from  their interaction  with  the  healthcare  system.  It  can  include  lifestyle  improvements,  emotional responses to illness or its care, alterations in levels of pain, morbidity and mortality rates, and increased level of knowledge.
+
+Patient shall mean any individual who receives medical attention, care or treatment by any healthcare professional or admitted in a health facility.
+
+Patient  Safety  Solutions are  defined  as:  "Any  system  design  or  intervention  that  has demonstrated the ability to prevent or mitigate patient harm stemming from the processes of healthcare."
+
+Process relates to what is actually done for the service user and how well it is done. Process indicators measure the activities carried out in the assessment and treatment of service users and are often used to measure compliance with recommended practice, based on evidence or the consensus of experts.
+
+Risk Management is defined as 'a logical and systematic method of establishing the context,
+
+identifying,  analyzing,  evaluating,  treating,  monitoring  and  communicating  risks  associated
+
+with  any  activity,  function  or  process  in  a  way  that  will  enable  organizations  to  minimize
+
+losses and maximize opportunities.
+
+Sentinel Event is defined as an unanticipated occurrence involving death or major permanent
+
+loss of function unrelated to the nature course of the patient illness or underlying condition.
+
+[PAGE 8]
+AII :
+
+CCTV :
+
+CCU :
+
+CFCs :
+
+CPD :
+
+CPR :
+
+CT :
+
+Airborne Infection Isolation
+
+Closed Circuit Television
+
+Coronary Care Unit
+
+Chlorofluorocarbons
+
+Continues Professional Development
+
+Cardio Pulmonary Resuscitation
+
+Computer Tomography
+
+CSD       :      Central Supply Department
+
+CSSD     :      Central Sterile Services Department
+
+FANR :
+
+Federal Authority Nuclear Regulation
+
+GP :
+
+HCW :
+
+HEPA :
+
+HTM :
+
+ICU :
+
+IR :
+
+IV :
+
+LDR :
+
+LDRP :
+
+MOHP  :
+
+MRI :
+
+NICU :
+
+OPD :
+
+OT :
+
+TPN :
+
+General Practitioner
+
+Healthcare worker
+
+High Efficiency Particulate Air
+
+Health Technical Memorandum
+
+Intensive Care Unit
+
+Interventional Radiology
+
+Intravenous
+
+Labor-Delivery-Recovery
+
+Labor-Delivery-Recovery-Postpartum
+
+Ministry of Health & Prevention
+
+Magnetic Resonance Images
+
+Neonatal Intensive Care Unit
+
+Outpatient Department
+
+Operation Theatre
+
+Total Parenteral Nutrition
+
+[PAGE 10]
+This chapter contains the design requirements for hospitals in the UAE. For further information regarding specific design requirements for the concerned authority please visit the website: www.moh.gov.ae
+
+[PAGE 10-12]
+This  section  contains  elements  that  are  common  to  most  types  of  hospitals.  Additional specific requirements are mentioned further in this chapter.
+
+The hospital building shall be a freestanding facility; located on a main road.
+
+Access to the building shall be easy and convenient to people using both public transportation and vehicles.
+
+The hospital  shall  provide  parking  on  the  premises  to  satisfy  the  needs  of  both patients  and  staff.  The  parking  area  shall  be  approved  by  the  local  authorities having jurisdiction.
+
+Consideration shall be given to the anticipated disabled patients as determined by the functional program of the hospital.
+
+Signage shall be provided to direct people unfamiliar with the facility to entrances and parking areas.
+
+Departments' size and layout shall depend on the functional program requirements and organization of services within the hospital.
+
+Sharing of certain hospital functions shall be permitted, provided the layout does not compromise safety standards or medical and nursing practices.
+
+Hospital  design  shall  ensure  appropriate  levels  of  patient  acoustical  and  visual privacy  and  dignity  throughout  the  care  process.  In  multiple-bed  rooms,  visual privacy from casual observation by other patients and visitors shall be provided for each patient.
+
+The  design,  construction,  renovation,  expansion,  equipment,  and  operation  of health facilities are subject to compliance with concerned local and federal laws. This includes but not limited: to hazardous waste materials storage handling, and disposal, medical waste storage and disposal, asbestos use in building materials, elimination the use of Mercury and chlorofluorocarbons (CFCs) in healthcare, etc.
+
+Color  contrast  between  walls,  floors  and  doors  shall  be  considered  as  it  may reduce falling risk of blurred vision patients.
+
+Stairways flooring shall have slip-resistant surfaces.
+
+Slip-resistant  flooring  products  shall  be  considered  for  flooring  surfaces  in  wet areas (e.g. ramps, shower and bath areas) and areas that include water for patient services.
+
+Carpet  cannot  be  used  in  examination  and  treatment  rooms,  if  used  in  patient waiting  areas  and  corridors  carpet  shall  be  glued  or  stretched  tight  and  free  of loose edges or wrinkles and it shall be made from antibacterial material.
+
+Selected  flooring  surfaces  shall  be  easy  to  maintain,  readily  washable,  and appropriately wear-resistant for the location.
+
+Wall finishes shall be washable, bacteria and fungus resistant, moisture-resistant and  smooth,  wall  finish  treatments  shall  not  create  ledges  or  crevices  that  can harbour dust and dirt.
+
+Joints for floor openings for pipes and ducts shall be tightly sealed.
+
+Floor drains shall not be installed in operating and delivery rooms. If floor drain is installed  in  cystoscopy,  it  shall  contain  a  non-splash,  horizontal-flow  flushing bowl beneath the drain plate.
+
+Wired glass; or plastic, break-resistant material that creates no dangerous cutting edges  when  broken  shall  be  used  in  certain  areas  such  as  glass  doors  and sidelights.
+
+Highly polished flooring, walls or finishes that create glare shall be avoided.
+
+All doors between corridors, rooms, or spaces subject to occupancy shall be of the swing type or shall be sliding doors.
+
+Patient's room door swings should be oriented to provide patient privacy.
+
+Curtains  used  throughout  the  hospital  shall  be  washable/cleanable,  bacteria resistant, fireproof and maintained clean at all times.
+
+Each  in-patient  shall  have  access  to  a  toilet  room  without  having  to  enter  a corridor.
+
+Bedpan-washing  fixtures  shall  be  installed  in  dedicated  rooms,  separate  from patient care areas unless located in a toilet room.
+
+The minimum ceiling height shall be  2.7 meters.
+
+Door opening to inpatient bedrooms shall be wide enough for easy movement of bed or stretcher, a minimum clear width of 1.12 meters (3 feet 8 inches) with a frame that is 2.13 meters (7 feet) high is required
+
+Toilets shall be provided for each department. Dedicated toilets should be provided for disabled individuals as per the standards and guidelines.
+
+[PAGE 12-13]
+At least two Operation Theatres shall be available in a general hospital.
+
+The dimension of hospital operation room are the following (Minimum areas) :
+
+Minor 36 square meters
+
+Normal  42 square meters
+
+Major 58 square meters
+
+OT numbers shall be sufficient  to  accommodate the functional  program  of the hospital  and  shall  meet  the  total  bed  capacity  of  the  hospital  according  to  the following:
+
+2.4
+
+There  should  be  sufficient  space  to  accommodate  all  necessary  equipment  and personnel to allow for swift access to patients and all monitoring equipment.
+
+The OT entrance door shall be wide preferably consisting of two parts, which can be opened in either sides or automatic one. Independent dirty exit is recommended in OT.
+
+The  floors,  ceilings,  and  walls  shall  be  created  by  a  continuous  connection. Interior  surfaces  should  be  constructed  of  materials  that  are  monolithic  and impervious to moisture.
+
+The floors and walls should be anti-static, heat resistant, anti-bacterial, anti-fungal and resistant to disinfectants.
+
+OT shall be equipped with the following, but not limited to:
+
+Multi-purpose operation table
+
+Anesthesia machine with adequate vital sign monitors (minimum of one back up anesthesia machine).
+
+Adequate medical gases supply
+
+X-Ray Viewer
+
+Cautery equipment
+
+ECG machine
+
+Emergency/crash cart
+
+Suction machine
+
+Pulse oximeter
+
+Appropriate size pediatric medical equipment  shall be available if services are provided to infants/children
+
+[PAGE 14-16]
+Operation table location shall permit easy movement  of  patients' trolleys however, if obstetric services are provided, an extra dedicated OT is recommended.
+
+Adequate ventilation and air exchange (with at least 25 air changes per hour as per American  Society  of  Heating,  Refrigerating  and  Air-Conditioning  Engineers (ASHRAE)  requirement)  shall  be  maintained  in  the  OT  which  should  be  at positive pressure relative to the adjacent preparation areas.
+
+Minimum of two (2) air supply inlets with proper contamination control filters i.e. High  Efficiency  Particulate  Air  (HEPA)  filters  delivered  at  or  near  the  ceiling, which should not be directed over the operation table, in addition to a minimum of two exhaust outlets located near floor level, bottom exhaust outlets should be at least  75mm  above  the  floor.  Differential  pressure  indicating  device,  humidity indicator,  and  thermometers  should  be  installed  and  should  be  located  for  easy observation.
+
+OT  temperature  shall  be  maintained  between  18-22  °C  with  room  humidity between 35-70% and the temperature and relative humidity set points should be adjustable.
+
+Anesthesia  scavenging  systems:  Each  space  routinely  used  for  administering inhalation  anesthesia  and  inhalation  analgesia  shall  be  served  by  a  scavenging system to vent waste gases.
+
+The scrub facility shall be located adjacent to the OT(s). Ceiling, surfaces or tiles at  this  area  shall  be  smooth,  washable  and  free  of  particular  matter  that  can  be contaminated.
+
+Staff  changing  area  shall  be  separate  for  males  and  females.  It  shall  contain special  entrance  for  the  staff  and  suitable  place  for  changing  of  clothes  with  a minimum of one toilet for the staff in this area. Toilets air pressure should be kept
+
+negative pressure with respect to any adjoining areas and should have minimum 10 air changes per hour.
+
+Sterilizing  area  can  be  located  near  OT(s)  with  adequate  high-speed  autoclave machine. Additional equipment for drying the tools before sterilization may also be  provided  however,  they  shall  be  well  secured  to  avoid  injuries.  Biomedical engineers  shall  keep  indicators  such  as  chemical  tubes  or  strips  to  ensure  the quality of autoclaving. Operation instruments and trolleys can be arranged in this area.
+
+Sterilizing area air pressure should be kept negative pressure with respect to any adjoining  areas  and  should  have  minimum  10  air  changes  per  hour.  Relative humidity should be maintained at 30% to 60%. High efficiency filters should be installed in the air handling system, with adequate  facilities provided  for maintenance, without introducing contamination to the delivery system or the area served.
+
+An  independent  and  adequate  induction  room  can  be  provided  at  operation facility.
+
+Suitable medical store area shall be located in operation facility, adequate number of all types of intravenous solutions, emergency medications, required anesthesia medications, etc. shall be maintained. Store's air pressure should be kept positive pressure  with  respect  to  any  adjoining  areas  and  should  have  minimum  4  air changes per hour. Relative humidity should be maintained at 30% to 60%. High efficiency  filters  should  be  installed  in  the  air  handling  system,  with  adequate facilities  provided  for  maintenance,  without  introducing  contamination  to  the delivery system or the area served. (OT medication should be regularly checked for expiry)
+
+Sufficient supply of different medical gases should be available and adequate for procedure(s)  preformed  (centralized  medical  gas  system  in  accordance  to  HTM 2022 or its equivalent internationally accepted standard is preferable).
+
+Recovery area shall be properly equipped with at least one bed for each operation room. Each recovery area shall be at least 9.0 square meters per bed.
+
+Recovery area air pressure should be kept at balanced pressure with respect to any adjoining  areas  and  should  have  minimum  6  air  changes  per  hour.  Relative humidity should be maintained at 45% to 55%. High efficiency filters should be installed in the air handling system, with adequate  facilities provided  for maintenance, without introducing contamination to the delivery system or the area served.
+
+Back-up  emergency  power  supply  sufficient  to  ensure  patient  protection  and safety in the event of an emergency power cut should be available.
+
+The  OT  entrance  door  must  be  wide  (about  2.13  meters  width)  preferably consisting of two parts, which can be opened in either sides or automatic one.
+
+[PAGE 16-17]
+All general hospital shall provide critical care services that include Intensive Care Unit (ICU) and may include; Coronary Care Unit (CCU), Neonatal Intensive Care Unit  (NICU)  or  Burns  Unit  based  on  the  scope  of  services  available  at  the hospital.
+
+Number of beds per critical care services shall be based on many factors such as: type of services provided in the hospital, bed occupancy rate, etc. In general the hospital  should  provide  one  critical  care  bed  for  each  operation  theater,  but  it should not be less than one critical care bed for every twenty (20) general beds.
+
+The critical care unit has the following necessary equipment and supplies:
+
+Ventilators
+
+Tracheotomy set
+
+Emergency/crash  cart  with  a  plastic  breakable  seal  that  can  be  easily removed  during  emergency.  It  shall  be  equipped  with  defibrillator, necessary drugs and  other  Cardio  Pulmonary  Resuscitation  (CPR)
+
+equipment  and  test  strips.  A  log  book  shall  be  nearby  to  indicate  the maintenance and regular check of the crash cart and its components.
+
+Pulse Oximetry and vital signs monitor
+
+Transfusion pumps
+
+Vital Signs Monitors
+
+Blood gas analyzer with capability for electrolytes measuring should be available in the hospital (preferably at ICU facility).
+
+The  critical  care  beds  shall  be  supplied  with  medical  gases  outlets  (02,  Air, Suction),  enough  numbers  of  electrical  outlets,  examination  lights.  Supply  of medical  gases  should  be  available  and  centralized  medical  gas  system  shall  be according to HTM 2022 or its equivalent internationally accepted standard.
+
+Adequate ventilation and air exchange, with at least 6 air changes per hour as per ASHRAE requirement, shall be maintained in Intensive Care Unit area. Intensive Care Unit should be kept at positive pressure relative to the adjacent areas. The area temperature should be maintained at 21 °C 24 °C and relative humidity 30 % to 60% and should be adjustable. High efficiency filters should be installed in the air  handling  system,  with  adequate  facilities  provided  for  maintenance,  without introducing contamination to the delivery system or the area served.
+
+[PAGE 17-18]
+The  hospital should specify airborne infection isolation (AII) room(s)  for treatment  of  infectious  diseases  based  on  the  needs  of  specific  community  and patient populations served by the hospital.
+
+At least one (1) airborne infection isolation room in the critical care area shall be provided in all general hospitals.
+
+Isolation rooms design requirements shall include but not limited to the following:
+
+Each patient room shall contain only one (1) bed.
+
+The isolation room should be independent from other critical care area.
+
+A  separate  toilet  with  bathtub  (or  shower)  shall  be  provided  for  each patient room.
+
+A hand-washing station shall also be provided for each patient room.
+
+Additional  hand-washing  or  hand-rub  station  outside  the  room  entrance maybe provided.
+
+AII  room  perimeter  walls,  ceilings,  and  floors,  including  penetrations, shall be sealed tightly so that air does not infiltrate the environment from the outside or from other spaces.
+
+Isolation room (Ant room) with access control system
+
+An area for gowning and storage of clean and soiled materials shall be located  either  directly  outside  or  inside  the  entry  door  to  the  patient room.
+
+There  should  be  an  oxygen  source  and  first-aid  kit  available  inside  the room.
+
+Isolation Room Instruments shall include, but not limited to: Intravenous (IV)  solutions,  needles  of  various  gauges,  lumbar  puncture  kit,  liver biopsy kit, liver abscess aspiration kit and pleural fluid and ascitic fluid aspiration kit.
+
+An AII room shall be provided in or near at least one level of nursery care. It shall be separated from the nursery unit with provisions for observing the infant from adjacent nurseries or control area(s).
+
+Adequate ventilation and air exchange, with at least 12 air changes per hour as per ASHRAE requirements,  shall  be  maintained  in  the  Isolation  Room.  The  room should  be  kept  at  negative  pressure  relative  to  the  adjacent  areas.  The  area temperature should be maintained at 24 °C plus or minus 1 °C. High-efficiency filters  should  be  installed  in  the  air  handling  system,  with  adequate  facilities provided  for  maintenance,  without  introducing  contamination  to  the  delivery system or the area served.
+
+[PAGE 19-20]
+General Hospital emergency area shall fulfill the following requirements:
+
+Emergency Entrance: A well-marked, easily accessible entrance at ground level shall  be  available  for  emergency  services.  Access  shall  be  provided  for  both emergency vehicles and pedestrian separately.
+
+Waiting Area: Patients and visitors waiting area(s) shall be located in a way that can  be  under  direct  observation  of  the  reception  staff,  triage  station,  or  control station, with access to a public phone.
+
+Consultation room shall be fitted with a wash basin and the attached faucet can be sensor-regulated or single-lever elbow operated.  Care shall be taken in location and  arrangement  of  fittings  to  provide  the  clearance  required  for  operation  of blade-type handles.
+
+One (1) Triage room
+
+Observation bed area with suitable patient privacy
+
+Minimum of two (2) treatment rooms
+
+Resuscitation Area: with adequate space area, appropriate equipment and emergency medication.
+
+At least one (1) Airborne Infection Isolation (AII) Room
+
+In the emergency area shall be provided with independent exit.
+
+Patient toilet: minimum one (1) for male and another for female. Dedicated toilets should be provided for disabled individuals as per the standards and guidelines.
+
+Storage areas: for general medical/surgical supplies, medications and equipment. The area shall be under staff control and out of the path of normal traffic.
+
+Ambulance  vehicle:  well-equipped  ambulance  vehicle(s)  should  be  ready  with qualified medical staff for patient transportation if required, for more details see
+
+ambulance  requirements in the Ministry of Health &  Prevention website: www.moh.gov.ae.
+
+Sufficient  electrical  outlets  to  meet  medical  equipment  functional  requirements. Electrical outlets  shall  be  clearly  labeled  and  connected to  an  emergency  power supply.
+
+[PAGE 20-21]
+There should be in each location a reliable source of oxygen.
+
+Oxygen piped from a central source is strongly recommended.
+
+There  should  be  backup  supply  of  oxygen  equivalent  to  at  least  a  full cylinder.
+
+Adequate ventilation and air exchange, of at least six (6) air changes per hour as per ASHRAE requirements, shall be maintained in Emergency/Casualty Department. The Department should be kept at equal pressure relative to  the  adjacent  areas. The  area  temperature  should  be  maintained  at  24  °C  plus  or  minus  1  °C  and relative  humidity  30%  to  50%  and  should  be  adjustable.  High-efficiency  filters should be installed in the air handling system, with adequate facilities provided for maintenance, without introducing contamination to the delivery system or the area served.
+
+Emergency unit/department shall be equipped with the following, but not limited to:
+
+Emergency/crash  cart  shall  be  available,  with  a  plastic  breakable  seal that can be easily removed during emergency. It must be equipped with defibrillator, necessary drugs and other CPR equipment and test strips. A log book must be nearby to indicate the maintenance and regular check of the crash cart and its components.
+
+Resuscitation Kit, Cardiac board and Oral airways
+
+Laryngoscope with blades
+
+Diagnostic set
+
+X-ray viewer
+
+Patient trolley with IV stand
+
+Wheelchair
+
+Nebulizer
+
+Autoclave
+
+Refrigerator with temperature control
+
+Floor Lamp (Operating light mobile)
+
+[PAGE 21-22]
+Obstetrical  program  models  vary  widely  in  their  delivery  methodologies.  The models are essentially of three types:
+
+Traditional Model
+
+Labor-Delivery-Recovery (LDR) Model
+
+Labor-Delivery-Recovery-Postpartum (LDRP) Model 1
+
+The  obstetrical  unit  shall  be  located  and  designed  to  prohibit  nonrelated  traffic through the unit. LDR rooms may be located in a separate LDR suite, as part of the cesarean delivery suite, and in the postpartum unit.
+
+When cesarean delivery rooms are located within the obstetrical suite, access and service  arrangements  shall  be  such  that  neither  staff  nor  patients  shall  travel through the cesarean delivery area to access other services.
+
+For LDR and LDRP: minimum clear floor area of 28 square meters (301 square feet)  with  a  minimum  clear  dimension  of  3  meters  (32  feet).  This  includes  an infant stabilization and resuscitation space.
+
+LDR and LDRP rooms shall include an infant stabilization and resuscitation space and the rooms shall be equipped with the following:
+
+Hand washing sink
+
+Satisfactory equipment and supplies required for delivery
+
+1  LDRP and LDR is a single-room maternity care in one room, equipment is moved into the room as needed, rather than moving the patient to the equipped room.
+
+Call systems
+
+Medications
+
+Postpartum unit shall be constructed to meet the needs of the functional program of the hospital with minimum 5 square meters per baby bed.
+
+Newborn  nursery  equipped  with  adequate  infant  beds  and  incubators  for  the premature babies.
+
+Adequate ventilation and air exchange, with at least 25 air changes per hour as per ASHRAE requirements, shall be maintained in Delivery Suite area. Delivery Suite should  be  kept  at  positive  pressure  relative  to  the  adjacent  areas.  The  area temperature should be maintained at 20 - 23 °C and relative humidity 45% to 55% and  should  be  adjustable.  High-efficiency  filters  should  be  installed  in  the  air handling  system,  with  adequate  facilities  provided  for  maintenance,  without introducing contamination to the delivery system or the area served.
+
+[PAGE 22-24]
+All hospitals shall provide inpatient service in distinct areas. The following requirements shall be provided:
+
+Each  inpatient  room  shall  include  enough  space  for  patient  bed(s)  and  other medical equipment.
+
+Walls  shall  be  painted  with  lead  free  color  with  no  sharp  edges.  Every  patient room shall have a window.
+
+Single  patient  rooms  shall  have  exclusive  toilets,  closets,  lockers,  wardrobes, alcoves,  or  vestibules.  These  spaces  should  accommodate  comfortable  furniture for one or two family members without blocking staff member access to patients. The minimum area is 14.9 square meter (width 3.65m & length 3.96 m).
+
+Shared rooms maybe provided in general hospitals and should not exceed two (2) beds in one room ensuring the minimum bed area to be at least 9.5 sq. meters.
+
+In shared inpatient rooms, the enclosed area for each bed shall be provided with curtains  to  ensure  patient  privacy.  The  curtains  shall  be  washable/cleanable, fireproof and maintained clean at all times.
+
+A hand-washing station for the exclusive use of the staff shall be provided to serve each patient room and shall be placed outside the patient toilet.
+
+Door opening to inpatient bedrooms shall be wide enough for easy movement of bed or stretcher.
+
+In multi-story hospital buildings, adequate family visiting areas shall be provided at each floor.
+
+Patient beds shall be of good quality, foldable and mobile. Next to each bed there shall be a food table and a bedside cabinet/ locker.
+
+All toilet doors and setting in inpatient rooms i.e. door opening, safety rails etc. shall comply with disability requirements to ensure patient safety.
+
+Calling system shall be next to each bed.
+
+Adequate electrical sockets for each bed are required.
+
+A reading light shall be provided for each patient.
+
+Suitable area for bathing, dressing and hand washing, etc, (minimum of one (1) toilet  for  inpatient  room  with  two  beds  and  one  (1)  toilet  in  private  inpatient rooms).
+
+Appropriate dedicated area for medical equipment, medications and supplies shall be provided near the inpatient area.
+
+Overnight  accommodation  for  family  members  can  be  provided  in  private inpatient bedrooms.
+
+Nurse station should be provided as space.
+
+Adequate ventilation and air exchange, with at least 6 air changes per hour as per ASHRAE requirements, shall be maintained in inpatient care area. Inpatient care
+
+area  should  be  kept  at  positive  pressure  relative  to  the  adjacent  areas.  The  area temperature should be maintained at 24 °C or less and relative humidity 30 % to 60% and should be adjustable. High efficiency filters should be installed in the air handling  system,  with  adequate  facilities  provided  for  maintenance,  without introducing contamination to the delivery system or the area served.
+
+[PAGE 24-26]
+Outpatient Department/Services shall be in a distinct area in the hospital premises that consist of:
+
+Reception/information counter or desk shall be located to provide visual control of the  entrance  to  the  outpatient  unit  and  shall  be  immediately  apparent  from  that entrance; the information counter shall provide access to patient files and records.
+
+Male and Female waiting area for patients and escorts:
+
+Shall be under staff visual control.
+
+Shall be provided with provision of drinking water and public telephone.
+
+Shall contain not less than two spaces for each examination and/or treatment room.
+
+Where  pediatrics  services  are  provided,  a  separate  controlled  area  for  pediatric patients shall be provided.
+
+Wheelchairs shall be accommodated within the waiting area.
+
+Toilet(s)  for  public  use  shall  be  conveniently  accessible  from  the  waiting  area without passing through patient care or staff work areas or suites. A hand-washing station shall be provided in the toilet room. Dedicated toilets should be provided for disabled individuals as per the standards and guidelines.
+
+Consultation,  and  Treatment  Rooms  space  requirements  shall  depend  on  the services provided and shall meet the following, but not limited to:
+
+For the consultation room, the minimum width is 3.0m and the minimum area with bed is 12.0 square meter and without bed is 9.0 square meter.
+
+For  the  treatment  room,  the  minimum  width  is  2.0  meter  and  the minimum  area  of  7.5 square meters. Rooms  for  minor  treatment, procedures  &  casting  are  15  square  meters.  In  addition,  the  treatment room  arrangement  shall  permit  a  minimum  clearance  of  0.91  meter  (3 feet) at each side and at the foot of the bed.
+
+A counter or shelf space for writing and documentation shall be provided.
+
+Hand washing stations shall be provided. The hand-washing station shall be  equipped  with  a  sensor-regulated  or  single-lever  elbow  operated faucet  and  appropriate  soap  dispensers.  Sinks  shall  be  designed  with deep basins, made of porcelain, stainless steel, or solid surface materials.
+
+Hand  sanitization  dispensers  shall  be  provided  in  addition  to  handwashing stations.
+
+Provisions for hand drying shall be available at all hand-washing stations. Initial
+
+Treatment rooms for minor procedures, specific treatment or casting shall have:
+
+Hand-washing station shall be provided in all treatment rooms.
+
+Documentation space or counter for writing shall be provided.
+
+A lockable refrigerator for medication use.
+
+Locked storage for controlled drugs (if used) shall be provided.
+
+Consultation, examination and treatment rooms shall maintain adequate ventilation and  air  exchange,  with  at  least  6  air  changes  per  hour  as  per  ASHRAE requirements, shall be maintained in Outpatient Service area. Outpatient Service area  should  be  kept  at  positive  pressure  relative  to  the  adjacent  areas.  The  area temperature  should  be  maintained  at  23  °C  plus  or  minus  1°C  and  relative humidity 30% to 60% and should be adjustable. High efficiency filters should be installed in the air handling system, with adequate  facilities provided  for maintenance, without introducing contamination to the delivery system or the area served.
+
+Use of the toilet room provided within the examination and treatment room shall be permitted for specimen collection.
+
+[PAGE 26-28]
+Clinical Laboratory facilities shall be provided for the performance of tests. Each lab shall  be  able  to  cover  the  following  minimum  specialties:  hematology,  clinical chemistry, Immunology and serology, microbiology, anatomic pathology, cytolopathology, and blood banking to meet the expected workload in the hospital functional program.
+
+To  add  microbiology  lab  specification  (2  doors,  separate  air  condition, negative pressure)
+
+Other services may be available on the hospital premises or with written agreement with an external provider. If radiology and diagnostic imaging services outsourced to another diagnostic imaging facility, it shall meet the outsourcing requirements.
+
+Certain  procedures  may  be  performed  on-site  or  provided  through  a  contractual arrangement  with  external  laboratory  service.  These  procedures/tests  shall  be documented.
+
+A specimen collection facility may be located outside the clinical laboratory  area. The blood collection area shall have a work counter, space for patient seating, and hand-washing stations.
+
+The  urine  and  feces  collection  facility  shall  be  equipped  with  a  water  closet  and hand-washing station.
+
+Chemical  safety  provisions.  These  shall  include  emergency  shower,  eye-flushing devices, and appropriate storage for flammable liquids, etc.
+
+Laboratory work areas shall include sinks with water and access to vacuum, gases, tele/data  service,  and  electrical  service  as  needed.  Work  benches  shall  be  0.75 wide.
+
+Work countertops should be made from monolithic, heat resistant, antimicrobial and impermeable material to moisture e.g. Corian, Epoxy resin or Trespa countertops. The floor and walls should be anti-static, heat resistant, anti-bacterial, anti-fungal and resistant to chemicals used for disinfection purposes.
+
+Selected  flooring  surfaces  shall  be  easy  to  maintain,  readily  cleanable,  and appropriately  fire-resistant.  Tiles,  wooden  planks,  carpet  are  not  appropriate. However the joints should be tightly closed
+
+Wall finishes shall be washable, moisture-resistant and smooth.
+
+Facilities and equipment shall be provided for terminal sterilization of contaminated specimens before transport (autoclave or electric oven)
+
+Laboratory fume hoods shall meet the following general standards:
+
+An average fan velocity of at least 75  feet per  minute (0.38 meters per second).
+
+Connection to an exhaust system to the outside that is separate from the building exhaust system.
+
+Location of an exhaust fan at the discharge end of the system.
+
+Inclusion of an exhaust duct system of noncombustible corrosion-resistant material as needed to meet the planned usage of the hood.
+
+If radioactive materials are employed, facilities for long-term storage and disposal of these materials shall be provided.
+
+Storage facilities for reagents, standards, supplies, and stained specimen microscope slides, etc. shall be provided.
+
+Refrigerated blood storage facilities.
+
+Lounge,  locker,  and  toilet  facilities  shall  be  conveniently  located  for  male  and female laboratory staff.
+
+Food items or cosmetics must not be stored in testing areas.
+
+Adequate ventilation and air exchange, with at least 6 air changes per hour as per ASHRAE  requirements,  shall  be  maintained  in  all  Clinical  Laboratory  service area.  The  Laboratory  area  should  be  kept  at  positive  pressure  relative  to  the adjacent areas. The area temperature should be maintained at 21 °C to 24 °C and relative  humidity  30%  to  60%  and  should  be  adjustable.  High-efficiency  filters should be installed in the air handling system, with adequate facilities provided for maintenance, without introducing contamination to the delivery system or the area served.
+
+For  further  information  regarding  Clinical  Laboratory  requirements  visit  Ministry  of Health & Prevention website: www.moh.gov.ae.
+
+[PAGE 28-29]
+The imaging modalities associated with the Radiology Service can include, but not limited to conventional radiography (general radiology), Fluoroscopy, Computer Tomography (CT), Magnetic Resonance Images (MRI) Interventional Radiology (IR), Ultrasound, and Mammography.
+
+Hospital  shall  provide  conventional  radiography  (general  radiology),  ultrasound services and CT within the premises of the hospital to meet the patient needs.
+
+Patient  convenience  and  accessibility  should  be  considered  for  the  planning  and design of the Radiology Department.
+
+The  imaging  modalities  associated  with  the  Radiology  service  can  include  the following:
+
+Conventional radiography room should be with shielded door and at least one  (1)  designated  patient  gowning  area  for  patient  changing  with  safe storage  for  valuables  and  clothing.  The  gowning  area  shall  be  with immediate access to the conventional radiography room.
+
+At least 15 square meters. Room entrance shall not be less 1.20 cm and  2  meters  height  with  shielded  door.  At  least  one  designated
+
+patient  gowning  area  for  patient  changing  with  safe  storage  for valuables and clothing shall be provided.
+
+Ultrasound  room  shall  have  minimum  of  one  examination  bed  and Patient's toilet shall be accessible.
+
+The minimum area for the room is 7.5 square meters.
+
+[PAGE 29-31]
+Shall be at least 24 square meters depending on the machine type and the functional program.
+
+Patient gowning area for patient changing shall be provided.
+
+At  least  one  space  should  be  large  enough  for  staff-assisted dressing.
+
+A control room shall be provided that is designed to accommodate the computer and other controls for the equipment.
+
+A view window (Lead glass) shall be provided to permit full view of the patient.
+
+The  angle  between  the  control  and  equipment  shall  permit  the control operator to see the patient's head all the time.
+
+A patient toilet shall be provided.
+
+If  contrast  media  are  used,  this  area  shall  include  provision  for appropriate emergency equipment and medications must be immediately  available  and  central  oxygen  or  oxygen  cylinder  to treat  adverse  reactions  associated  with  administered  medication. Also the area  shall  include;  crash  cart,  sink,  counter,  and  storage area.
+
+One preparation room, if conveniently located, shall be permitted to serve any number of rooms.
+
+Mammography room; the space requirement is  at least 9 square meters depending on the machine type. Patient gowning area shall be inside the room.
+
+Interventional  Radiology  (IR)  can  be  performed  only  in  hospital  base diagnostic setting.
+
+The  IR  and  /or  cardiac  catheterization  laboratory  is  normally located in a separate suite, but location in the diagnostic imaging area can be permitted provided the appropriate sterile environment is provided.
+
+Space requirements shall meet the following:
+
+Procedure  rooms:  The  number  of  procedure  rooms shall  be  based  on  expected  utilization.  The  procedure room  shall  be  a  minimum  of  400  square  feet  (37.16 square meters) exclusive of fixed cabinets and shelves
+
+Prep, holding, and recovery rooms. The size of the prep, holding, and recovery areas shall be based on expected utilization.
+
+Electrophysiology labs. If electrophysiology labs are also provided in  accordance  with  the  approved  functional  program,  these  labs may be located within and integral  to  the  catheterization  suite  or located in a separate functional area proximate to the cardiac care unit.
+
+Support areas for the IR suite/ cardiac catheterization lab:
+
+Scrub facilities with hands-free operable controls shall be  provided  adjacent  to  the  entrance  of  procedure rooms,  and  shall  be  arranged  to  minimize  incidental splatter  on  nearby  personnel,  medical  equipment,  or supplies.
+
+10.4.5.5.2 Patient prep, holding, and recovery area or room.
+
+A  patient  preparation,  holding,  and  recovery  area  or room shall be provided and arranged to provide visual observation before and after the procedure.
+
+Control room or area. A control room or area shall be provided  and  shall  be  large  enough  to  contain  and provide  for  the  efficient  functioning  of  the  x-ray  and image recording equipment. A view window permitting  full  view  of  the  patient  from  the  control console shall be provided.
+
+Electrical  equipment  room.  An  equipment  room  or enclosure  large  enough  to  contain  x-ray  transformers, power modules, and associated electronics and electrical gear shall be provided.
+
+Viewing room. A viewing room shall be available for use by the cardiac catheterization suite.
+
+A  clean  workroom  or  clean  supply  room  shall  be provided.
+
+A soiled workroom shall be provided.
+
+Film file room shall be available for use by the cardiac catheterization suite.
+
+Housekeeping closet shall be provided.
+
+Support  areas  for  staff clothing and  change  area(s)  shall  be provided and arranged to ensure a traffic pattern so that personnel can enter from outside the suite, change their clothing, and move directly into the cardiac catheterization suite.
+
+Magnetic Resonance Imaging  (MRI);
+
+[PAGE 32-34]
+The MRI room shall be permitted to range from 30.0 square meters to 57.5 square meters, depending  on  the  machine  type and functional program.
+
+Patient gowning area shall be provided.
+
+There should be a control room with full view of the MRI room.
+
+At  least  one  space  should  be  large  enough  for  staff-assisted dressing shall be provided.
+
+A patient holding area according to work load shall be provided.
+
+Hand-washing stations convenient to the MRI room, but need not be within the room should be provided.
+
+A computer room is required.
+
+Cryogen storage is required.
+
+Equipment  installation requirements;
+
+Power conditioning.
+
+Magnetic shielding.
+
+ For  super-conducting  MRI,  cryogen  venting  and  emergency exhaust in accordance with the original equipment manufacturer's specifications.
+
+Adequate space for Coils storage based on the on these   anatomic applications.
+
+Magnetic door interlock should be provided.
+
+MRI Warning light and signs should be provided.
+
+Compatible MRI  medical  equipment  including Anesthesia machine should be provided.
+
+Magnetic  shielding  may  be  required  to  restrict  the  magnetic field plot.
+
+Radio  frequency  shielding  may  be  required  to  attenuate  stray radio frequencies.
+
+The  area  around,  above  and  below  the  MRI  suite  shall  be reviewed and evaluated for the following;
+
+Possible occupancy by person(s) who could have pacemakers or other metal implants.
+
+ Equipment that can be disrupted by a magnetic field. Examples include  but  are  not  limited  to  personal  computers,  monitors,  CT scanners, and nuclear cameras.
+
+Sharing support areas for diagnostic imaging services (e.g. Control desk, reception area, and Consultation area) is permitted.
+
+Corridors  and  doors  shall  be  wide  and  accommodate  wheelchair  (at  least  0.9 meters for doors and 1.5 meters for corridors width).
+
+Minimum of two Toilets one for males and the other for females (based on the radiology services, but one toilets preferably shall be located next to or with direct access from the radiology room).
+
+Patient gowning area with safe storage for valuables and clothing shall be provided (At least this area shall be 1.5 meters x 1.2 meters)
+
+Diagnostic  imaging  services  shall  comply  with  the  FANR  laws  and  regulations regarding  the  use  of  ionizing  radiation  and  radioactive  materials.  For  further information  regarding  FANR  regulations  and  requirements  please  visit  FANR website www.fanr.gov.ae.
+
+Radiation safety protection requirements shall be incorporated into the specifications and the building plans. To meet the FANR requirements; in certain diagnostic  imaging  services  (e.g.  Nuclear  medicine,  Radiotherapy)  the  health facility  needs  a  certified  physicist  or  a  qualified  expert  to  specify  the  type, location, and amount of radiation protection to be installed in accordance with the final approved layout and equipment selections.
+
+Adequate ventilation and air exchange, with at least 6 air changes per hour as per ASHRAE  requirements,  shall  be  maintained  in  all  Diagnostic  Imaging  service area.  The area should be kept at positive pressure relative to the adjacent areas. The  area  temperature  should  be  maintained  at  21  °C  to  24  °C  and  relative humidity 30% to 60% and should be adjustable. High-efficiency filters should be installed in the air handling system, with adequate  facilities provided  for maintenance, without introducing contamination to the delivery system or the area served.
+
+For  further  information  regarding  Diagnostic  Imaging  Services  requirements  visit Ministry  of  Health  &  Prevention  website: www.moh.gov.ae.  to  see  the  Diagnostic Imaging Services Licensure and Regulatory Standards.
+
+[PAGE 34-35]
+The central sterile services department also called sterile processing department (SPD), sterile processing, central supply department (CSD) or central supply. It is integrated area in hospitals and other health care facilities. The operations usually consist of cleaning of previously used devices such as stainless steel tools, with a sterilizing liquid. After drying the device it gets wrapped in a specialized paper bag called aseptor bag, tape-sealed and then sterilized by gas or in steam autoclave.
+
+Air volume will change at least (10) time per hour.
+
+A computer system will be implemented to control.
+
+Hospital can implement Infection Control Policy using CSSD module in the hospital management software, which improves patient safety and checking the controls from time to time.
+
+Responsibility: In charge nurse.
+
+All staff of the central sterile services department is required to follow a strict dress code. No staff is allowed to enter the department with normal clothes.
+
+It contain of the following:
+
+Cleaning and decontamination area for surgical instruments (Negative pressure)
+
+Clean area for inspecting instruments and package chemic with the best quality control system in the world (Positive pressure).
+
+A Sterile store to store the items (Extra positive pressure).
+
+There are common types of equipment used to ensure sterile medical equipment:
+
+Decontaminators: Is usually come in the form of a washer/decontaminator combo and is used to clean items that are heat-tolerant.
+
+Ultrasonic washer
+
+Tunnel washer
+
+Cart washer
+
+[PAGE 35-37]
+The size and type of services to be provided in the pharmacy unit shall depend upon the  type  of  drug  distribution  system  used,  number  of  patients  to  be  served,  and extent of shared or purchased services.
+
+If  the  functional  program  of  the  hospital  requires  dispensing  of  medication  to outpatients,  an  area  for  consultation  and  patient  education  may  be  provided.  In facilities  where  the  main  Pharmacy  cannot  be  located  in  a  position  readily accessible to outpatient's areas due to site constraints, then a dedicated outpatient pharmacy may be provided.
+
+The pharmacy unit shall be located for convenient access, staff control, and security. Direct access to loading dock and bulk storage is required if not located within the main pharmacy unit.
+
+The work environment should promote orderliness and efficiency and minimize the potential for medication errors and contamination of products.
+
+Pharmacy unit  shall  include:  pharmacy,  medication  storage,  compounding,  patient counseling, offices,  information technology and drug information as follow:
+
+Pharmacy: Adequate space, equipment, and supplies shall be available for all professional and administrative functions relating to  pharmacy services. These resources shall meet all applicable laws and regulations;
+
+shall  be  located  in  areas  that  facilitate  the  provision  of  services  to patients, nurses, prescribers, and other healthcare providers; and shall be integrated with the hospital's communication and delivery or transportation systems.
+
+Medication  Storage  and  Preparation  Areas:  There  shall  be  suitable facilities  to  enable  the  receipt,  storage,  and  preparation  of  medications under  proper  conditions  of  sanitation,  temperature,  light,  moisture, ventilation, segregation, and security to ensure medication integrity and personnel safety throughout the hospital.
+
+Compounding  Areas:  suitable  to  enable  the  compounding,  preparation, and labeling of sterile and non-sterile products, including hazardous drug products, in accordance with established quality-assurance procedures.
+
+Patient  Assessment  and  Consultation  Area:  In  outpatient  settings,  a private  area  for  pharmacist-patient  consultations  shall  be  available  to confidentially enhance patients' knowledge of and adherence to prescribed medication regimens.
+
+Office  and  Meeting  Space:  Adequate  office  and  meeting  areas  shall  be available for administrative, educational, and training activities.
+
+Information  Technology:  A  comprehensive  pharmacy  computer  system shall be employed and should be integrated to the fullest extent possible with other hospital information systems and software, including computerized provider order-entry, medication administration, electronic health record, and patient billing systems
+
+Drug  Information:  Adequate  space,  current  resources,  and  informationhandling and communication technology shall be available to facilitate the provision of drug information.
+
+The pharmacy area shall consist of the following, but not limited to:
+
+Dispensing  areas  which  may  include  separate  areas  for  inpatients  and outpatients if applicable
+
+Active store for imprest stock storage, including assembly  and dispatch areas with space allocated for trolley parking
+
+Bulk stores including unpacking area
+
+Secured stores for accountable drugs, refrigerated stores and flammable goods storage
+
+Dispatch area for deliveries to inpatient units
+
+Drug information areas
+
+Staff areas including offices, workstations, staff room, changing room and toilets
+
+Reception and separate waiting areas (male and female) for outpatients
+
+Patient counseling and consult areas
+
+A compounding area  with  a  sink  and  sufficient  counter  space  for  drug preparation.
+
+An area for reviewing and recording
+
+An area for temporary storage, exchange, and restocking of carts
+
+Security  provisions  for  drugs  and  personnel  in  the  dispensing  counter area, if one is provided.
+
+[PAGE 37-39]
+Satellite Pharmacy Units: a series of rooms/ suites in a hospital which is remotely  positioned  from  the  main  Pharmacy  and  yet  managed  by  the staff of the main Pharmacy.
+
+Unit dose systems: involves packaging of each dose of each medication for  patients  in  a  blister  pack  to  provide  easy  and  uniform  medication dispensing.  For  a  unit  dosage  system,  the  Pharmacy  shall  include additional  space  and  equipment  for  supplies,  packaging,  labeling  and storage.
+
+Aseptic  room  and  cytotoxic  room:  are  clean  rooms  for  preparing, manufacturing  of  medications,  cytotoxic,  Total  Parenteral  Nutrition
+
+(TPN)  and  IV  admixture  in  a  sterile  environment.    The  following features shall be considered while designing sterile  manufacturing facility:
+
+The room shall contain laminar flow cabinets and or isolators for sterile manufacturing.
+
+The  room  shall  be  positive  pressure  and  be  accessed  via  an anteroom.
+
+The  room  shall  be  ideally  located  on  the  perimeter  of  the facility  with  an  external  outlook.    Access  via  an  anteroom  is required.
+
+Electronic door management system to prevent the opening of both doors in the anteroom at the same time.
+
+Hand  washing  facilities  shall  be  provided  immediate  outside the  aseptic  (clean)  rooms  in  adjoining  anteroom;  hand  basins are not to be located within the aseptic (clean) rooms.
+
+Provide an intercom system shall be provided between aseptic (clean) rooms and anteroom
+
+High-resolution Close Circuit Television (CCTV) cameras for remote monitoring
+
+Comply with room requirements in relevant international clean room standards for sterile and cytotoxic manufacturing.
+
+Automated dispensing stations may be provided on an inpatient or CCU to dispense prescriptions for patients in that unit. The dispensing  station  remains  under  the  control  of  the  pharmacy unit.
+
+Hand-washing  facilities  shall  be  provided  within  each  separate  room  where  open medication is handled. Sterile suites shall have scrub facilities.
+
+All drug storage areas shall have temperature and humidity controls; internal room temperature shall be kept below 25°C.
+
+The following minimum storage elements, in the form of cabinets, shelves, and/or separate rooms or closets, shall be included, but not limited to:
+
+Bulk storage
+
+Active storage
+
+Refrigerated storage
+
+Volatile  fluids  and  alcohol  storage  with  construction  as  required  by  the relevant regulations for substances involved
+
+Secure storage shall be provided for narcotics and controlled drugs as per MOHAP laws and regulations
+
+Storage for general supplies and equipment not in use
+
+Storage for prescriptions and any documents  required by relevant legislation
+
+Cabinets, shelves, and/or separate rooms or closets shall be provided for bulk and refrigerated storage.
+
+Pharmacy  units  and  pharmacies  are  required  to  be  constructed  so  as  to  be  as secure as practicable from unauthorized access through doors, windows, walls and ceilings, and to be fitted with a security intrusion detector alarm which is control room monitored to a central agency on a 24 hour basis.
+
+Security measures for consideration will include:
+
+Electronic door controls
+
+Movement sensors
+
+Duress alarms to dispensing counters
+
+Security glazing or shutters to dispensing counters
+
+CCTV monitoring for remote monitoring
+
+For  further  information  regarding  pharmacy  requirements  visit  Ministry  of  Health  & Prevention website: www.moh.gov.ae.
+
+[PAGE 40]
+Hospital shall provide necessary allied health services to meet patient needs based on the functional program.
+
+Such services may be provided on the hospital premises or by an external provider with  written  agreement.  The  provided  services  shall  be  in  accordance  with  the Concerned Authority. For further information, please visit Ministry of Health & Prevention website: www.moh.gov.ae..
+
+The  hospital  should  specify  a  separate  department  for  administration.  It  shall  have  a suitable area for the hospital manager, assistants, administration and finance employees.
+
+Reception  Office:  There  should  be  a  reception  office  with  minimum  of  one  (1) supervisor to direct and answer the visitor's enquiries
+
+Admission Office: The hospital may have an admission office for inpatients
+
+Medical Insurance Office.
+
+[PAGE 40-42]
+Each  general  hospital  with  more  than  twenty-five  (25)  beds  shall  provide  a Mortuary  Unit  within  the  hospital  premises.    The  number  of  body  slots  per hospital capacity is 1:25.
+
+Mortuary  Unit  equipment  shall  be  operated  and  maintained  in  accordance  with manufacturer specifications and shall meet the medical equipment requirements in this document.
+
+Mortuary  Unit  fridge  temperature  shall  be  maintained  between  2-  6  °C,  the temperature gauges shall be monitored and recorded daily in a log kept near the fridge;  records  shall  be  maintained  by  the  unit  for  at  least  3  years.  In  case  of temperature variation, biomedical engineers/department shall be contacted
+
+Mortuary Unit shall be maintained clean and disinfected on daily basis, infection control policy shall be available and implemented in the mortuary area.
+
+The hospital shall place a high priority on the care and management of patient and family/patient representative at the end of life.
+
+The  hospital  shall  have  a  system  to  ensure  that  the  care  of  dying  and  deceased patients is managed with dignity and comfort.
+
+The hospital shall maintain also a policy for handling amputated body parts which assure proper management and disposal.
+
+A  written  policy  and  procedure  shall  exist  for  the  management  and  care  of terminally ill patients consistent with Federal and Local regulations.
+
+Withholding and withdrawing life sustaining treatment is not permitted even if it's requested by the patient or his family.
+
+In  case  of  death,  the  patient's  family  wishes  have  to  be  totally  respected  and considered; requests for relatives/friends to view the deceased are made by ward staff or in the Mortuary Unit.
+
+Deceased's family shall make arrangements with the mortuary for the removal of the deceased from the hospital mortuary.
+
+The hospital Mortuary services shall be responsible for overseeing the transportation of deceased patients from wards/departments. Deceased registration shall be maintained by the hospital.
+
+All Cadaver shall be considered infectious, strict infection control measures shall be considered during all body handling procedures. Body should be cleaned and wrapped/placed in mortuary bag if required.
+
+Transportation  of  deceased  patient  infected  with  communicable  disease  shall  be conducted  according  to  article  18  of  the  UAE  Federal  Law  number  27/1981 concerning the Prevention of Communicable Diseases.
+
+All  medical  apparatus  shall  be  removed  prior  to  placing  the  cadaver  in  the mortuary unit.
+
+[PAGE 42]
+Strict  hygienic  conditions  should  be  maintained  in  the  hospital  kitchen  during preparing,  storing  and  serving  food.  Such  services  may  be  provided  on  the hospital premises or by an external provider with written agreement. However, if such  services  are  out-sourced  it  should  fulfill  the  Concerned  Authority  and hygiene requirements of the concerned jurisdiction.
+
+[PAGE 42]
+Hospital  shall  provide  laundry  services  either  on  the  hospital  premises  or  by  an external  provider  with  written  agreement.  If  the  laundry  is  in-house  it  shall  be fully equipped with machines used for cleaning and washing clothes, sheets and covers.
+
+Adequate ventilation and air exchange, with at least 10 air changes per hour as per ASHRAE requirements,  shall  be  maintained  in  Laundry  Service  area.  Laundry Service  area  should  be  kept  at  negative  pressure  relative  to  the  adjacent  areas. High-efficiency  filters  should  be  installed  in  the  air  handling  system,  with adequate facilities  provided  for  maintenance,  without  introducing  contamination to the delivery system or the area served.
+
+[PAGE 42-43]
+Clean  and  hygienic  water  supply  should  be  provided  in  the  hospital.  Water  tanks should be maintained, clean and well closed.
+
+Clean Bathrooms for outpatients should be provided (separate for men and women), every bathroom should have at least one washbasin and commode with soap and
+
+hand dryer. All the staff and patients' toilets should be kept clean. Water drainage and sanitation should be hygienic.
+
+Hand rubs must be available in the toilets and patient rooms.
+
+All hospital drainage and sewage should be connected to general sewerage and be according to the regulations of concerned jurisdiction.
+
+[PAGE 43]
+External services provider shall be managed effetely to provide safe, quality care and services. Many health facilities use external contractor and / or services to provide specific services that are essential to the ongoing operation of the organization e.g. Radiology,    laboratory,  oncology,  pathology,  allied  health,  transport,  laundry, food, cleaning, maintenance, security,  and education.
+
+While a contracted or services agreement is important for both the health facility and service  provider  to  ensure  good  quality  services,  the  fundamental  responsibility for quality shall remain with the main health facility. The health facility  should outline in its services agreements / contracts exactly what services what level of services is expected and evidence with compliance with that service's regulatory or industry standards e.g. compliance with standards for laundry or food services from concerned jurisdiction.

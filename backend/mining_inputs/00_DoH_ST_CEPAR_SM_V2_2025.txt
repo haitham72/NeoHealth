@@ -1,0 +1,372 @@
+DOC_CODE: DoH/ST/CEPAR/SM/V2/2025
+TITLE: –––––- Standard for Stroke Management
+AUTHORITY: Department of Health - Abu Dhabi
+TIER: official
+VERSION: 2
+
+=== DOCUMENT TEXT ===
+
+[PAGE 1-2]
+-----
+
+-
+
+1
+
+[PAGE 3]
+This Standard defines the service specifications, minimum requirements, and eligibility criteria for licensed Healthcare Providers and Facilities  designated as one of various levels of Acute Stroke Centers based on international best practices and evidence-based guidelines; for licensed prehospital patient transport services including EMS, and interfacility transfer ambulance services; for health insurers; for licensed rehabilitation medicine facilities and allied support services; and unified medical operations monitoring and management of Abu Dhabi Stroke Management System operations.
+
+It also defines the eligibility criteria for all stroke services in line with DoH Standard for Centers of Excellence in Stroke, evidence base and international guidance.
+
+It  integrates ongoing analysis and recommendations of the Sheikh Khalifa Stroke Institute (SKSI) from the ongoing partnership, recognizing and role it plays in development of the Stroke Management System in Abu Dhabi.
+
+2
+
+[PAGE 4-7]
+3
+
+4
+
+5
+
+care and likely transfer of care.
+
+Stroke  Management is  a  time-critical  health  emergency  captured  as  Special  Program  Pathways  (SPP)  in  DoH Health Emergency Management (HEM).  The Abu Dhabi Stroke Management System facilitates managing patients along their healthcare journey in a high reliability operational system. Regulators shall implement systems and regulate programs in accordance with these program requirements established through regulation informed by international  standards  and  best  practices  provided  by  objective,  third-party  accreditation/  certification/ verification requirements.  The following actions shall be taken:
+
+[PAGE 7-8]
+Meet the requirements as set out by DoH in this standard to qualify as a Licensed Acute Stroke Center.
+
+Ensure  each  Licensed  Acute  Stroke  Center  has  its  own  operational  guidelines,  policies  and procedures.
+
+Utilize JAWDA KPI and the AHA GWTG Registry.
+
+All Licensed Acute Stroke Centers shall ensure equal access to all patients based on medical needs. The Acute Stroke Centers must:
+
+Provide  clinical  services  in  accordance  with  the  requirements  of  this  Standard,  and  all relevant DoH Standards and Procedures.
+
+Ensure  and  provide  evidence  that  their  practices  reflect  updated  international  best practices to the relevant regulatory body.
+
+Report and submit e-Claims data in accordance with Chapter VI, DoH Healthcare Regulator Manual Version 1.0 on Data Management and as set out in the DoH Data Standards and Procedures (https://www.DoH.gov.ae/en/Shafafiya/dictionary).
+
+Document and monitor quality and safety of clinical care and outcomes of surgical and non-surgical intervention performed on patients, and make these available to  DoH for auditing, as and when requested to do so.
+
+Provide records of Jawda and other relevant indicators as specified in Appendix I to DoH inspectors.
+
+Follow the clinical and regulatory requirements of this Standard irrespective of provision of  Licensed  Stroke  Center  services  to  patients  who  opt  not  to  use  health  insurance coverage (pre-authorization for coverage and health insurance does not apply in this case).
+
+Licensed  healthcare  facilities  seeking  to  be  typed  and  tiered  within  the  Abu  Dhabi  Stroke Management System shall seek certification by an objective, third party organization recognized internationally for stroke management quality and performance improvement such as the American Heart/ Stroke Association (AHA/ ASA).
+
+All facilities shall use the AHA ' Get With The Guidelines (GWTG) ' as the common registry for Stroke Management.
+
+The DoH Stroke Task Force shall establish appropriate Unified Medical Operations
+
+6
+
+Command Center (UMOC) central management access rights to the consolidated  Stroke  Program  G W TG Registry  for  performance  tracking  use  by the Stroke Task Force and Stroke COE Council.
+
+3.1.5.2 Facilities  shall  ensure  the  availability  of  the  following  infrastructural  and  diagnostic requirements:
+
+[PAGE 8-9]
+Healthcare Professionals and Other Requirements:  The table below delineates the staffing requirements for the tiered Stroke Management Programs.
+
+7
+
+Licensed Acute Stroke Center services provided in authorized healthcare facilities must fulfill the following requirements:
+
+Provide  a  range  of  integrated  acute  Stroke  surgical  and  non-surgical  services  and  interventions, based  on  the  Stroke  center  level,  to  support  the  safe  and  effective  care  of  patients  seeking treatment. These include but are not limited to:
+
+[PAGE 9-10]
+Time metrics must be gathered and maintained in a database (and shared with DoH as requested) as a commitment to quality improvement. Stroke Centers should have regular meetings to review these metrics and put in place quality improvement measures.
+
+8
+
+Have available and maintain all equipment, support, interventional needs and supplies necessary for treatment and patient care, according to DoH regulatory requirements and standards and as per updated international best practices.
+
+The  healthcare  facility must  deliver  culturally  and  socially  relevant  patient  education  and information regarding the treatment and care (pre- and post-operation) in accordance with updated international best practices, and consistent with the DoH Patient Charter and relevant DoH policies. Plan  of  care  is  individualized  and  interdisciplinary  with  patient  participation;  patient  informed consent  must  be  sought  and  documented  in  accordance  with  Medical  Liability  law  and  legal requirements for consent.
+
+[PAGE 10-11]
+Healthcare facilities providing pharmacological, surgical, and non-surgical interventions for acute stroke care are required to ensure the following service and management system requirements.
+
+Facilities  provide  seamless  care  in  partnership  with  other  facilities,  including  primary  care  and hospitals,  as  required  for  holistic  patient  care;  and  provide  emergency  services  without  any interruption.
+
+Depending on its corresponding level of care, a Licensed Acute Stroke Center shall be required to maintain volumes of:
+
+Based  on  the  aforementioned  levels  of  Stroke  Centers,  facilities  must  be  able  to  deliver  the treatments, procedures and services needed to stabilize and manage Stroke patients without service availability gaps.
+
+Timely transfer of patients to a higher level of care should be ensured when necessary (i.e. between SRCs, PSCs, and CSCs). As per the local context, urban classification and best practices, referral and rerouting plans will be developed and published as part of the Stroke SPP pathway.
+
+PSCs and CSCs shall accept all referred patients within the Emirate of Abu Dhabi that are deemed to require acute Stroke intervention/care.
+
+SRCs  and  PSCs  in  remote  areas  should  leverage  telemedicine  and  tele  radiology  to  perform assessments  and  provide  treatment  to  patients  with  symptoms  of  acute  Stroke.  Tele  radiology services  must  be  available  24/7  and  Stroke  criteria  must  be  interpreted  within  20  Mins  of completion.
+
+[PAGE 11]
+Core Stroke  Team members at PSC and CSC (neurologist, neurosurgeon, Neuro Intensivist) shall participate  in  at  least  8  hours  of  Stroke  Category  1  Continuing  Education  (CE)  specific  training/ education per year.
+
+At least half of the credit applied toward the CE must be within the physician's specialty or area of practice.
+
+ER Physicians should participate in at least 4-8 hours Category 1 CE every 2 years.
+
+Non-core team members (anesthesiologist, rehabilitation specialists, others) must demonstrate 2 hours of training / education per year.
+
+All emergency department (ED) practitioners shall be educated on acute stroke care protocols.
+
+All staff should be prepared to discuss their stroke education on a yearly basis with a regulatory committee that includes  physicians  within  neuro-interventional  and  endovascular  specialty  with fellowship  training  from  a  Tier  1  country  or  interventional  radiologist  with  thrombectomy experience.
+
+Acute PSC/ CSC must sponsor or participate in at least 2 educational events per year for the public/ community and 2 educational conferences per year for other physicians both internally or externally.
+
+[PAGE 11]
+To protect the rights, safety, and welfare of human subjects involved in medical and/or scientific research in the Emirate of Abu Dhabi, a Licensed CSC must conduct all research in alignment with the DoH Standard on Human Subjects Research.
+
+Participation in patient-centered research shall be approved by the appropriate Institutional Review Board (IRB).
+
+Research must be done under facility and / or university supervision or by an adjunct faculty in an academic institution.
+
+Data Collection- Licensed Acute Stroke Centers shall submit clinical outcomes and specified registry data elements to a national database in alignment with DoH standard.
+
+The Clinical Program shall define staff responsible for collecting data and maintaining the database.
+
+Defined data management staff should participate in continuing education annually.
+
+Payment will follow current reimbursement methodologies as per current Claims & Adjudication rules, with future consideration to reflect all additional compensation under relevant adjustors.
+
+[PAGE 12]
+Development of an Emirate-wide tiering system for stroke management in Abu Dhabi includes three (3) levels  of  capability  of  hospital  care  to  balance  the  maintenance  and  sustainment  costs  of expensive  resources  with  accessibility  to  and  availability  of  timely  health  care  resources.    The development of designated levels of care and inter-facility transfer guidelines will maximize quality of care, ensure patient safety, and promote effective and efficient use of health care resources.
+
+With few exceptions, all stroke cases should be referred to and managed in a Comprehensive Stroke Center.
+
+Primary  Stroke  Centers  will  be  used  for  intermediate  management,  repatriation,  and  regional coverage,  to  provide  more  advanced  care  in  more  remote  regions  as  appropriate.    The determination of appropriate care shall be determined in consultation with the regional CSC.
+
+Acute Stroke Ready Centers shall provide initial management of cases and rapid transfer (Door to Departure KPI <60 min) to the appropriate regional, higher-tier stroke center.
+
+The Stroke TF and Stroke COE Council shall advise on an optimized hub-and-spoke model for regional coverage of CSC's across Abu Dhabi ; on the distribution and tiering of hospitals; on the integration of timely transport and transfer of patients to CSCs; on alternate treatment options when time and/ or distance factor into the treatment timelines; and on processes of the UMOC used to facilitate these.
+
+Both the Stroke TF and Stroke COE Council should consult the expertise of SKSI on a volunteer basis to assist with the above actions.
+
+[PAGE 12]
+Because of the potential for rapid clinical deterioration, patients who present with severe disease or who have the high likelihood of clinical deterioration should be considered for timely transfer to a
+
+CSC. The transfer process should be initiated as early as possible in the patient's course -- 'time is brain'. The following conditions or diagnoses warrant immediate consultation for transfer to a Comprehensive Stroke Center
+
+Hemispheral/Supratentorial bleed or lesion: ( > 30 ml or > 3 cm)
+
+Cerebellar hemorrhage
+
+Brain Stem hemorrhage
+
+Intraventricular hemorrhage
+
+Suspected underlying lesion by imaging (e.g. CTA reveals a possible AVM)
+
+Potential for malignant cerebral edema
+
+Potential need or benefit from intra-arterial recanalization interventions
+
+Perceived  higher  risk  for  symptomatic  intracranial  hemorrhage  (e.g.  difficult  to control        hypertension, malignant hypertension)
+
+Allergic reaction to IV t- PA (after stabilization)
+
+Age dependent (considered especially for age less than 60)
+
+Baseline Modified Rankin of 0 or 1 or baseline independent in activities of daily living (ADL's)
+
+Potential for malignant cerebral edema (e.g. high NIH stroke scale)
+
+[PAGE 12-13]
+Consultation with the appropriate CSC facility shall be initiated as soon as possible
+
+Thrombectomy of M1, intracranial ICA and Basilar artery occlusions are proven therapies recommended by AHA guidelines in carefully selected patients where head and neck CT or MR imaging demonstrates a large artery occlusion AND
+
+Less than 4.5 hours from time of onset (time last known to be at neurologic baseline)
+
+NIH stroke score equal to or greater than 6 (or equivalent); ASPECTS score greater than or equal to 6 (or equivalent); and functionally independent at baseline.
+
+Greater  than  4.5  hours  up  to  20  hours  from  time  of  onset  (time  last  known  to  be  at neurologic baseline) and can be received in the tertiary facility by 22 hours of LKW.
+
+ASPECTS score equal to or greater than 6 or core measurements < 30 ml from CT Perfusion or MRI:
+
+NIH stroke score greater than or equal to 6: and or disabling stroke symptoms
+
+Functionally independent at baseline
+
+Other large artery occlusion patients should be considered based on the above criteria with low threshold for expert consultation:
+
+Middle Cerebral Artery branches M2 or M3
+
+Posterior Cerebral Artery (PCA)
+
+Anterior Cerebral Artery (ACA)
+
+[PAGE 13]
+Pregnancy associated stroke
+
+Pediatric stroke (under age 18)
+
+Any circumstance for which there is a perceived need for higher level of care
+
+Young adult with ischemic stroke
+
+Large cerebellar infarct and anticipation for surgical decompression
+
+History of Sickle Cell Anemia
+
+People of Determination with pre-existing deficits or special needs
+
+There is a goal time of 60 minutes from arrival of the patient at the SRC to departure to the CSC.
+
+There is a goal time of 90 min from acceptance of the patient for transfer by the CSC to arrival at the CSC.
+
+[PAGE 13]
+Circumstances to consider keeping patient at a Primary Stroke Center
+
+Intracerebral Hemorrhage
+
+Small volume (less than 30 ml or < 3cm)
+
+No cerebellar / brain stem involvement
+
+No intraventricular hemorrhage
+
+An alert patient
+
+No suspicion of an underlying lesion such as AVM / Aneurysm
+
+Patients not meeting circumstances as identified in a Comprehensive Center
+
+s/p IV t-PA without special concerns
+
+Unruptured and Asymptomatic Cerebral Aneurysm (consider outpatient clinic referral)
+
+Discussion of goals of care is recommended when making decisions to transfer to a Comprehensive Stroke Center
+
+Situations in which further interventions might be considered futile
+
+Patients with advanced co-morbid disease
+
+Patients with poor baseline level of independent function
+
+Patients identified as DNR
+
+[PAGE 13-14]
+Transfer all Stroke patients to higher level of care.
+
+Transport all stroke patients to higher level of care
+
+[PAGE 14]
+Upon  identification  of  a  patient  who  may  require  transfer,  immediately  contact  the  potential receiving PSC or CSC based on the above criteria.  Regional coverage for all acute Stroke Centers shall be maintained by the UMOC.  Consultation and coordination should be facilitated through the UMOC.
+
+Once transfer is recommended, the consulting facility will reply to the sending facility, within 15 minutes, whether or not a bed will be available for transfer.  If a bed is not available, the consulting facility will advise the sending facility to contact an alternative Comprehensive Stroke Center.
+
+The  transferring  physician  is  responsible  for  contacting  the  accepting  hospital  and  securing  an accepting physician at the receiving facility.  This should be facilitated by the UMOC.
+
+The accepting physician will determine the transfer location e.g. directly to the unit, Interventional Radiology Lab, or the Emergency Department.
+
+[PAGE 14]
+When determining the mode of transport, the following factors shall be considered:
+
+Proper consultation, transfer agreement, and acceptance to the appropriate treatment center.
+
+A complex stroke patient who might benefit from emergent neurosurgical or interventional neuroradiology treatment should have the transfer completed within 6090 minutes of acceptance of patient at the Comprehensive Stroke Center.
+
+Transfer times for all other cases will be determined by the receiving center based on the patient' s diagnosis and clinical status
+
+The  sending  facility  should  inform  the  patient  and  family  that  the  patient  is  being transferred  for  consideration  for  advanced  treatment;  however,  upon  arrival  at  the Comprehensive Stroke Center the patient will be re-evaluated. The appropriateness of advanced treatment and need for critical care transport services will be determined by the receiving center after re-evaluation.
+
+Advanced treatment includes enrollment in a clinical trial as appropriate.
+
+Weather/ground conditions that might inhibit air transport.
+
+What  are  the  transport  times  for  ground  versus  air  transport  from  the referring institution.
+
+The transferring hospital physician should make an assessment as to whether the patient requires                intubation for safe transport to the higher level of care. Should a patient's clinical  status  change  (for  better  or  worse)  prior  to  departure  from  the  hospital,  it  is imperative that the transferring physician inform the receiving physician of the change in clinical status. All reasonable efforts will be made to obtain a reliable cell phone number for the patient and for responsible family members.
+
+The transportation decision should be made by the receiving physician in collaboration with the referring physician based on clinical judgment, with careful consideration given to the above questions.
+
+[PAGE 14]
+Copy of Medical Record including treatment rendered.
+
+Signed consent to transfer patient to receiving facility.
+
+Documentation of medications given; and
+
+X-ray, neuroimaging and laboratory results.  Include a CD with any relevant imaging.
+
+Timeline documenting door-in to door-out from the transferring facility
+
+Do not delay transport while awaiting result.
+
+[PAGE 15]
+Requirements set out are met through its regulatory powers and, where necessary, establish appropriate regulatory and performance measures to address current and future health system needs for maintaining and improving the Stroke Management System and Programs through the following actions:
+
+Participation in Stroke Task Force and Center of Excellence Council activities.
+
+Management of licenses for Stroke Management Facilities in accordance with regulations, accreditation/ certification requirements, and performance metrics.
+
+Auditing of healthcare facility Stroke Management Programs on a regular basis for compliance
+
+Establishment of a robust data driven process for proper typing and tiring of the Stroke Management System.
+
+Implementation of JAWDA key performance indicators (KPI's) and other relevant performance measures to monitor their performance quarterly.
+
+Appropriate cost modeling and reimbursement to ensure proper alignment with regulations and certification requirements to meet internationally recognized standards and best practices that are affordable, efficacious, and available.
+
+The ADPHC shall ensure HEM and SPP systems and program maintenance and sustainment; support to the Stroke Task Force; integration of Stroke Management System operations through the Unified Medical Operations Command Center (UMOC); provide regulatory oversight of HEM and SPP Programs including online and off-line medical direction of pre-hospital and specialized care, rehabilitation, and community support activities.
+
+Task Forces shall be established and supported by ADPHC as per SPP program and standard requirements. They shall ensure the following:
+
+Healthcare facilities are typed and tiered in accordance with their licensed capability and accreditation to provide necessary services to manage acute stroke cases through a system network.
+
+Tiering shall include Acute Stroke Ready Centers (ASRC), Primary Stroke Centers (PSC), and Comprehensive Stroke Centers (CSC), designated as the Abu Dhabi Acute Stroke Management System, and the network operations coordinated through UMOC.
+
+UMOC support requirements for the Stroke Management Pathway System and Programs are developed and maintained including UMOC operational reports, Stroke Management SPP activation protocols, telemedicine and consulting protocols and systems, transfer and transport processes.
+
+The integration with Rehabilitation Services for this SPP System and Stroke Survivor Services.
+
+Quality Assurance and Performance Improvement Programs at the facility, and system level.  This shall include registry data abstraction and data analysis for all stroke related key QA and PIP indicators.
+
+UMOC shall provide the following:
+
+Reports directed by the appropriate SPP Task Force for daily, weekly, monthly Stroke System performance, sentinel events including significant performance breaches, case management outcomes of interest.
+
+Facilitation of Off-line and On-line Medical Direction as per the Medical Direction System standards and protocols.
+
+Get With the Guidelines (GWTG) Central Registry Data Management support.
+
+[PAGE 15-16]
+Emergency  Medical  Service  (EMS)  shall  transport  Stroke  patients  in  a  timely  manner  to  the  closest appropriate facility as per the latest DoH published EMS Stroke protocol and in coordination with the DoH UMOC Medical Direction.
+
+EMS shall preform BE FAST (or similar/ equivalent) stroke screening scale and a stroke severity scale in the field.
+
+Using a hub and spoke model, hyperacute Stroke emergencies in Abu Dhabi city region and Al Ain city region  shall  be  directly  transferred  to  the  closest  designated  Comprehensive  Stroke  center  unless otherwise directed by medical direction.
+
+Hyperacute Stroke emergencies at Al Dhafra region shall be directly transferred to the closest Stroke ready  Emergency  department  if  less  than  30  minutes  driving  time.    If  Driving  time  exceeds  the  30 minutes, then transfer the patient to the closest Emergency department.
+
+Quality metrics of Emergency medical services response, assessment and outcome of stroke emergencies shall be regularly collected for quality improvement and compliance.   Quality metrics shall be submitted by all relevant organizations in order to audit performance and improve patient care.
+
+Healthcare facilities shall comply with the requirements of the UMOC (24/7) via the appropriate established protocol to ensure the following:
+
+Stroke Ready and Primary Stroke Centers shall have Tele-stroke capability with their CSC to decide the acute management and transfer destination of stroke patients.
+
+All facilities shall have risk assessments for stroke patient transfer to determine the appropriate level of care needed during transport.
+
+Stroke ready and Primary Stroke health centers shall have an effective plan in place to carry out an emergent interfacility transfer (IFT) to the appropriate CSC via the Critical Care Transport System (CCTS) for patients with large vessel occlusion or if higher level of care is required.
+
+Non-stroke ready health centers shall have an effective plan in place to carry out an emergent interfacility transfer (IFT) to closest designated Comprehensive Stroke Center via the Critical Care Transport System (CCTS) for patients with hyperacute stroke emergency.
+
+Emergent  Interfacility  transfer  of  Hyperacute  Stroke  with  large  vessel  occlusion  requiring  urgent mechanical thrombectomy in remote regions shall be directly transferred to the closest appropriate CSC. Transfer may need to be by air medical evacuation 'helicopter' when time/ distance or isolation from the  CSC  is  a  factor.  This  is  especially  important  for  the  hospital  at  Delma  Island.  Ground  transport ambulance  is  an  alternate  method  if  rapid  air  medical  evacuation  is  not  available,  preferable,  or appropriate.
+
+Quality metrics of interhospital transfer (IFT) response, assessment and outcome of stroke emergencies shall be regularly collected for quality improvement and compliance.
+
+Teleconsultation  shall  be  available  24/7  coordinated  through  the  DoH  Unified  Medical  Operations Center.
+
+Any unstable patients must be considered for CCTS regardless.
+
+Healthcare Professionals shall ensure maintenance of licensing, skills, experience, and knowledge.
+
+Health Insurers shall ensure adequate coverage and payment services for necessary healthcare.
+
+[PAGE 16-20]
+Monitoring of the Key Performance Measures of  Stroke I Centers will be done through various data systems including JAWDA, Muashir, American Heart Association ' Get with the Guidelines Registry ' certification standards, and operational monitoring and reports developed through the UMOC.
+
+DoH may impose sanctions in relation to any breach of requirements under this standard in accordance with the disciplinary regulation of the healthcare sector
+
+Stroke Unit:  A dedicated, geographically clearly defined area or ward (minimum of 4 beds) in a  hospital, where acute stroke patients are admitted and cared for by a multi-professional team (medical, nursing, and therapy staff) who have specialist knowledge, training, and skills in stroke care with well-defined individual tasks, regular interaction with other disciplines, and stroke leadership. This team shall coordinate stroke care through regular (weekly) multi-professional meetings

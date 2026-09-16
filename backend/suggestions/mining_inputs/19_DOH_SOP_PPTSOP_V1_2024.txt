@@ -1,0 +1,444 @@
+DOC_CODE: DOH/SOP/PPTSOP/V1/2024
+TITLE: Pharmacist and Pharmacy Technician Scope of Practice 1
+AUTHORITY: Department of Health - Abu Dhabi
+TIER: official
+VERSION: 1
+
+=== DOCUMENT TEXT ===
+
+[PAGE 2-6]
+Document Title:
+
+Document Ref. Number:
+
+New / Revised:
+
+Publication Date:
+
+Effective Date:
+
+Document Control:
+
+Applies To:
+
+Owner:
+
+Revision Date:
+
+Revision Period:
+
+Contact:
+
+Pharmacist and Pharmacy Technician Scope of Practice
+
+DOH/SOP/PPTSOP/V1/2024
+
+New
+
+Feb, 2024
+
+Apr, 2024
+
+DOH Strategy and Policies Sector
+
+For example:
+
+DOH licensed Healthcare Providers
+
+DOH licensed Healthcare Providers of dental services
+
+DOH authorized Health Payers
+
+All Health Insurance products and schemes, as applicable.
+
+Healthcare Workforce Sector
+
+Three years from publication date
+
+Feb, 2027
+
+hcws@doh.gov.ae Version:
+
+V1
+
+The purpose of this document is to:
+
+Define the domains of practice, professional roles and responsibilities for pharmacists and pharmacy technicians.
+
+Describe professional boundaries, accountabilities, ethical and legal obligations toward patients and society, of pharmacists and pharmacy technicians.
+
+Serve as a reference to healthcare workforce, healthcare providers, healthcare payers and governance bodies.
+
+This document must be read in conjunction with all UAE and Abu Dhabi laws and regulations related to the practice of pharmacy.
+
+The provisions laid out in this document apply to DOH licensed pharmacists and pharmacy technicians who are currently practicing in the Emirate of Abu Dhabi, and to all healthcare providers, public and private, who provide and operate pharmacy services.
+
+It is the responsibility of the pharmaceutical facility owner and manager to ensure that their workforce members (pharmacists and pharmacy technicians) are and will remain competent, knowledgeable, and skilled to fulfill their assigned roles and responsibilities by offering them the necessary training and retraining.
+
+Pharmacist provides vital services in various health care settings, including but not limited to:
+
+Pharmacy: Inpatient pharmacy or outpatient pharmacy
+
+Drug Store - Medical Store
+
+Scientific Office
+
+[PAGE 6-7]
+Pharmacists and pharmacy technicians are obliged to observe and abide by a set of requirements in any practice setting; accordingly, they must:
+
+Practice in accordance with UAE local and federal laws, ethical values, standards of professional conduct, delineated clinical privileges, and clinical practice protocols and guidelines published by national or international organizations.
+
+Only accept roles and responsibilities within the scope of their license, privileges, knowledge, education, training, clinical skills, professional competencies, and competence.
+
+Update their pharmaceutical knowledge, and enhance their professional, technical, and digital skills continually to achieve best medication treatment outcomes.
+
+Deliver pharmacy services in a licensed facility that provides the appropriate equipment, and other resources necessary for safety and quality of care.
+
+Promote evidence-based practice and safety measures to ensure the best attainable pharmacotherapy outcomes and patient safety.
+
+Adhere to the limitations on their scope of practice that might be imposed within a specific model of care adopted in the Emirate of Abu Dhabi.
+
+Fulfill their reporting obligations to DOH and other pertinent authorities.
+
+Fulfill their obligations to protect patient-related data and information, as well as to respect patient privacy and confidentiality .
+
+Fulfill their obligations under the current Health Insurance Legislations .
+
+Adhere to the mandatory Occupational Safety and Health Code of Practices (CoP).
+
+Avoid conflict of interest during the conduct of their roles and responsibilities.
+
+Coordinate with regulatory authorities during public health emergencies.
+
+[PAGE 7]
+Core activities include those that a licensed pharmacist is expected to be able to perform, depending on the practice settings, safely and professionally including:
+
+Ensuring medical products are stored and handled in optimal storage conditions recommended by the manufacturers and regulatory authorities.
+
+Maintaining the custody of psychotropic, semi-controlled, and narcotic medications.
+
+Providing the necessary information, counseling, and education to patients and community members to ensure the safe and effective use of medical products and compliance with the drug therapy plan.
+
+Selling and Dispensing of Medical Products.
+
+Providing the necessary information and education to the health care workforce to ensure safe, effective, and optimal utilization of medical products.
+
+Ensuring safe and effective use of medical products by providing adequate labeling that carries the information mandated by the applicable standards and regulations.
+
+Carrying out pharmacovigilance activities including but not limited to:
+
+collection, recording of all data and reports of suspected adverse reactions or safety concerns whether from patients, customers, or other healthcare professionals.
+
+submission of quality and safety reports to the concerned authorities (e.g., Adverse Drug Reactions-ADR, and Adverse Events Following Immunization)
+
+h. Carrying out medication stewardship activities.
+
+Carrying out quality assurance activities of all the operations of the facility.
+
+Exercising direct supervision and control over all activities performed by pharmacy technicians, trainees, and other personnel.
+
+Participating in projects that aim to enhance the quality and safety of care.
+
+Development of policies, procedures, or guidelines to govern the operations within the facility.
+
+[PAGE 8]
+5.2.2.1. Pharmacists working in outpatient pharmacies 14  can assume several professional roles and responsibilities, including but not limited to:
+
+Dispensing medical products.
+
+Collaborating with physicians in medication reconciliation.
+
+Safeguarding and managing the custody of psychotropic and semi-controlled medicines.
+
+Inventory management to maintain optimum stock levels that meet patients' needs.
+
+Compounding non-sterile medicines. See subclause 6.4 for compounding training requirements.
+
+Being a faculty member (preceptor) to deliver training for pharmacy trainees. 15
+
+Administering vaccines for population age groups of 18 years and above. 16
+
+Note: The pharmacy must be permitted by DOH to provide vaccination services.
+
+h. Performing the following non-diagnostic Point of Care Tests (POCT), for example:
+
+a finger-prick test to monitor Blood Glucose levels.
+
+a finger-prick test to monitor Hemoglobin A1C
+
+a finger-prick test to monitor Blood Lipids
+
+a finger-prick test Prothrombin time and International Normalized Ratio (INR)
+
+Measuring blood pressure
+
+[PAGE 8]
+Note (1): Pharmacist must advise the patient to consult with physician in case of abnormal results detected during these tests.
+
+Note (2): See subclause 6.6. for training requirements related to safe use, handling, and disposal of sharp items.
+
+[PAGE 8-10]
+5.2.2.2. Clinical Pharmacists can assume several professional roles and responsibilities 17-18 , depending on the practice settings (e.g., inpatient or outpatient) including but not limited to:
+
+Co-managing medication therapy, including determining, modifying, optimizing, or monitoring the drug therapy plan, in collaboration 19  with the prescriber and care team.
+
+Requesting the monitoring of vital signs including body temperature, pulse rate, respiration rate, and blood pressure, when deemed necessary to manage the drug therapy plan.
+
+Ordering the lab tests necessary to manage the drug therapy plan.
+
+Keeping the treating physician abreast of the implementation of the drug therapy plan and any modification thereto.
+
+Following up with patient and keeping the treating physician and care team abreast of patient compliance with the drug therapy plan.
+
+Ensuring that the prescribed or amended drug therapy plan is in accordance with the rules,
+
+14  In terms of pharmaceutical facilities licensed by DOH, a standalone community pharmacy is also licensed as an Outpatient Pharmacy.
+
+15  Upon fulfilling the requirements of DOH Set of Standards for Healthcare Education and Training
+
+16  DOH Standard on Administration of Vaccines in Outpatient Pharmacies (2022)
+
+17  See American College of Clinical Pharmacy -ACCP (undated) Scope of Practice for Clinical Pharmacists
+
+18  See American College of Clinical Pharmacy -ACCP (2023) Standards of Practice for Clinical Pharmacists
+
+19  See DOH Standard on Collaborative Practice Agreement Between Physician and Advanced Healthcare Professionals (2023)
+
+protocol, or standard of care. g. Documenting drug therapy plan and particulars thereto directly in the patient's medical record and ensuring timely notification is shared with the prescriber and care team about the plan. h. Collaborating with physicians in medication reconciliation on admission, during phase of care changes and at discharge. i. Administering vaccines for population age groups of 18 years and above. 20 Note: The pharmacy must be permitted by DOH to provide vaccination services j. Being a faculty member (preceptor) to deliver training for pharmacy trainees and residents. 21 k. Membership in committees (e.g., the Pharmacy & Therapeutics Committee). l. Clinical pharmacist may enter into a collaborative practice agreement 22  with physicians to provide protocol-based 23  pharmaceutical care. 5.2.2.3. Inpatient Pharmacist can assume several professional roles and responsibilities, depending on the practice settings, including but not limited to: a. Collaborating with physicians in medication reconciliation on admission, during phase of care changes and at discharge. b. Being a faculty member (preceptor) to deliver training for pharmacy trainees. 24 c. Preparing and dispensing of medicines to wards and medication rooms. d. Compounding sterile and non-sterile medicines. See subclause 6.4 for compounding training requirements. e. Inventory management in the pharmacy, medication rooms, and wards including crash cart and floor stock to maintain optimum stock levels that meet patients' needs . f. Being a responsible person in charge of managing and keeping the custody of semi-controlled, psychotropic, and narcotics. g. Managing the inpatient pharmacy day-to-day operations. h. Membership in committees (e.g., the Pharmacy & Therapeutics Committee). i. Participating in projects that aim to enhance the quality and safety of care. j. Carrying out quality assurance / quality control activities of all the operations and equipment of the facility. 5.2.2.4. Nuclear Pharmacist can assume several professional roles and responsibilities, depending on the practice settings, including but not limited to: a. Procurement of radiopharmaceuticals from authorized suppliers. b. Inventory management to maintain optimum stock levels of radiopharmaceuticals and other medications that meet patients' needs. c. Preparation of radiopharmaceuticals prescribed by a physician.
+
+20  DOH Standard on Administration of Vaccines in Outpatient Pharmacies (2022)
+
+21  Upon fulfilling the requirements of DOH Set of Standards for Healthcare Education and Training
+
+22  See DOH Standard on Collaborative Practice Agreement Between Physician and Advanced Healthcare Professionals (2023)
+
+23  See DOH (2023) Guidelines for Standard Treatment Guidelines
+
+24  Upon fulfilling the requirements of DOH Set of Standards for Healthcare Education and Training
+
+Compounding of sterile and non-sterile radiopharmaceuticals prescribed by a physician. See subclause 6.4 for compounding training requirements.
+
+Repackaging of radiopharmaceuticals.
+
+Dispensing of radiopharmaceuticals.
+
+Safety management of radiopharmaceuticals.
+
+Carrying out quality assurance / quality control activities of all the operations and equipment of the facility.
+
+Ensuring compliance with applicable laws, regulations, and standards pertinent to radiopharmaceuticals.
+
+Record keeping.
+
+Membership in committees (e.g., the Pharmacy & Therapeutics Committee).
+
+Being a faculty member (preceptor) to deliver training for pharmacy trainees. 25
+
+[PAGE 10-11]
+Pharmacists can assume several professional roles and responsibilities in drug stores, including but not limited to:
+
+Ensuring the efficiency and integrity of the supply chain of medical products.
+
+Inventory management to maintain optimum stock levels that meet population needs.
+
+Ensuring medical products are registered with or authorized by the pertinent authority in UAE.
+
+Ensuring medical products are procured from legitimate and authorized sources.
+
+Ensuring that the storage of medical products follows manufacturer 's recommendations in terms of temperature, humidity, segregation, etc.
+
+Monitoring and documenting transportation (inbound and outbound) and storage conditions of medical products utilizing calibrated state-of-the-art technology for temperature and humidity logging and following manufacturer's recommendations and regulatory requirements.
+
+Utilizing alarm systems to ensure out-of-range transportation and storage conditions of medical products are identified and addressed in a timely manner following regulatory and manufacture 's requirements.
+
+Safeguarding the custody of psychotropic, semi-controlled or narcotics and ensuring they are stored and managed following the applicable laws, regulations, and standards.
+
+Supervising the receiving of medical products against purchase orders.
+
+Ensuring that medical products are received, checked, quarantined, released, or rejected following standard operating procedures.
+
+Distributing narcotic, psychotropic, and semi-controlled medicines to authorized entities.
+
+Documenting transactions in psychotropic / semi-controlled or narcotic registers.
+
+Generating and sharing mandatory reports with the concerned authorities.
+
+Delivering medical products following manufacturer 's recommendations and in compliance with applicable laws, regulations, and standards.
+
+Managing expired and damaged medical products in compliance with applicable laws,
+
+25  Upon fulfilling the requirements of DOH Set of Standards for Healthcare Education and Training
+
+regulations, and standards.
+
+Following a standard operating procedure to manage recalled products , whether manufacturer's voluntarily recall or regulatory recall, in compliance with applicable laws, regulations, and standards.
+
+Following a standard operating procedure to manage medical products returned from customer in compliance with applicable laws, regulations, and standards.
+
+Record-keeping of drug store operations including procurement, storage, distribution, delivery, and managing of expired, damaged, recalled or returned medical products.
+
+Carrying out quality assurance of all the operations of the store.
+
+Ensuring compliance with occupational health and safety regulations and standards.
+
+Being a faculty member (preceptor) to deliver training for pharmacy trainees. 26
+
+[PAGE 11-12]
+Pharmacist in scientific office can assume several professional roles and responsibilities, including but not limited to:
+
+Providing necessary drug information on medical products represented by the office.
+
+Ensuring that the marketing of medical products represented by the office observes the good marketing practice and code of ethics.
+
+Ensuring the accuracy of marketing information utilized for marketing of medical products represented by the office.
+
+Ensuring the information disseminated during the marketing of medical products is consistent with the information submitted and approved by the Ministry of Health and Prevention.
+
+Supporting and participating in scientific events, symposia, workshops, meetings, and Continuing Professional Development (CPD) activities in areas related to the medical products represented by the office.
+
+Staying abreast of all the research and post-marketing scientific studies related to the medical products represented by the office.
+
+Following up with the Ministry of Health and Prevention about the registration of medical products.
+
+Training of medical representatives.
+
+Providing free medical samples for promotion and registration purposes.
+
+Ensuring that the free medical samples are stored, handled, and registered following MOHAP, DOH and manufacturer 's recommendations.
+
+Carrying out Pharmacovigilance activities.
+
+5.2.2.7. Pharmacist in Oncology Setting can assume several professional roles and responsibilities, depending on the practice settings (inpatient or outpatient), including but not limited to:
+
+Being a faculty member (preceptor) to deliver training for pharmacy trainees. 27
+
+b. Reviewing and verifying chemotherapy prescriptions to ensure safety, effectiveness, appropriateness, optimization and compliance with treatment protocols or individual treatment plan.
+
+26  Upon fulfilling the requirements of DOH Set of Standards for Healthcare Education and Training
+
+27  Upon fulfilling the requirements of DOH Set of Standards for Healthcare Education and Training
+
+Ensuring the safe dispensing of chemotherapy medicines following applicable standards and guidelines. d. Compounding of sterile and non-sterile chemotherapy medicines. See subclause 6.4 for compounding training requirements. e. Inventory management to maintain optimum stock levels that meet patients' needs. f. Being a responsible person in charge of managing and keeping the custody of semi-controlled, psychotropic, and narcotics. g. Managing the pharmacy day-to-day operations. h. Membership in committees (e.g., the Pharmacy & Therapeutics Committee). i. Collaborating with care team to device and review chemotherapy treatment protocols and order sets. j. Collaborating 28  with the prescriber and care team to manage the complications 29  , side effects, toxicity, and adverse drug reactions 30  of chemotherapy treatment. k. Providing the necessary information and education to health care workforce to ensure the safe and effective use of chemotherapy medicines. l. Providing the necessary information, counseling, and education to patients and community members to ensure the safe and effective use of chemotherapy medicines. m. Ensuring safe storage of chemotherapy medicines in compliance with manufacturer recommendations and applicable standards and guidelines. n. Carrying out quality assurance / quality control activities of all the operations and equipment of the facility.
+
+[PAGE 12]
+Pharmacists may engage in other activities including but not limited to:
+
+Research and clinical trials.
+
+Manufacturing of pharmaceutical and medical products (production, quality control, research, and development, etc.) in licensed pharmaceutical manufacturing facilities.
+
+Providing technical consultation and advice as subject matter experts within the realm of their expertise.
+
+Authoring, reviewing, and publishing journal articles.
+
+Management and leadership roles in healthcare facilities.
+
+Serving as a member of a specialty related committee or taskforce.
+
+Providing technical advice.
+
+28  See International Pharmaceutical Federation-FIP (2022) Cancer care A handbook for pharmacists.
+
+29  See Hematology/Oncology Pharmacy Association-HOPA (2014) The Role of Hematology/Oncology Pharmacists
+
+30  See U.S. Department of Veterans Affairs Veterans Health Administration Pharmacy Benefits Management (PBM) Services Clinical Pharmacy Practice Office (CPPO) (2021); Clinical Pharmacist Practitioner (CPP) Role in Oncology
+
+[PAGE 13]
+5.2.2.9.1. Pharmacist can specialize in number of fields including but not limited to:
+
+Compounding
+
+Oncology
+
+Cardiology
+
+Critical care
+
+Geriatric
+
+Infectious diseases
+
+Nuclear pharmacy
+
+Nutrition support
+
+Pediatric pharmacy
+
+Pharmacotherapy
+
+Psychiatry
+
+Medication Safety
+
+Drug information
+
+Ambulatory Care
+
+Clinical Pharmacology
+
+Clinical Toxicology
+
+Pharmaceutical industry
+
+5.2.2.9.2. Specialized Pharmacists are expected to discharge their roles and responsibilities guided by the principles under subclause 5.1.
+
+5.2.2.9.3. A specialist pharmacist going back to general pharmacy practice, must maintain and demonstrate proficiency in core competencies to perform the core activities listed in subclause 5.2.1.
+
+[PAGE 13]
+5.3.1. Pharmacy technicians can assume several professional non-discretionary roles and responsibilities, depending on the practice settings, under the direct supervision and control of a licensed pharmacist, including but not limited to:
+
+Dispensing over-the-counter medical products.
+
+Preparing prescription medicinal products for dispensing by a pharmacist.
+
+Compounding of medicines. See subclause 6.4 for compounding training requirements.
+
+Providing the necessary non-clinical information to healthcare workforce, patients, and community members about the storage and expiry date of medicine.
+
+Carrying out quality assurance of pharmaceutical care in different practice settings within the realm of their expertise.
+
+Working in pharmaceutical and medical products industry (production, quality control, research, and development, etc.) within the realm of their expertise.
+
+Carrying out pharmacovigilance activities assigned to them by a supervising pharmacist.
+
+h. Data entry (see exclusion in sub-clause 5.3.2.e ).
+
+Supply-chain tasks such as inventory management (non-psychotropic; non-semi-CD; non-narcotic); receiving consignments from suppliers, observing storage conditions, receiving, and preparing orders, etc.
+
+[PAGE 14]
+Receive nor dispense narcotic, psychotropic, or semi-controlled medicines.
+
+Dispense prescription-only-medicines.
+
+Counsel patients
+
+Be assigned the role of Qualified Person Responsible for Pharmacovigilance (QPPV).
+
+Enter information in psychotropic, semi-controlled or narcotic register.
+
+Perform any pharmacy task that may require prior knowledge of pharmacotherapy or pharmacology, including but not limited to the assessment of patients or their drug therapy plans, or interpretation of clinical findings. 31
+
+Note: Pharmacist may delegate to a pharmacy technician only those non-discretionary tasks that are appropriate to their level of knowledge, training, expertise, and competency.
+
+[PAGE 14]
+Pharmacists and pharmacy technicians are obliged to complete all the training that is necessary for the delivery of safe and quality pharmacy services and pharmaceutical care. Examples of such trainings are provided below:
+
+As a general requirement, pharmacists utilizing any equipment, system, or device in their scope of work must complete equipment, system, or device-specific training / retraining, including operating; safety; calibration; monitoring; etc.
+
+Pharmacists must be trained, certified, and permitted by DOH as a vaccinator to be able to administer vaccine shots. 32
+
+Pharmacists who request the privilege to provide first aid must complete a DOH approved training.
+
+Pharmacists and pharmacy technicians who are assigned sterile or non-sterile compounding responsibilities must:
+
+complete a certified training in compounding, which covers the necessary didactic, hands-on and competency assessment components.
+
+complete an annual retraining course that ensures they maintain the necessary compounding knowledge, skills, and competencies.
+
+Pharmacists and pharmacy technicians who are assigned responsibilities in radio pharmacy must complete all the training/ retraining mandated by the Federal Authority for Nuclear Regulation (FANR).
+
+Outpatient pharmacists must be trained in the safe use, handling, and disposal of sharp items (needles and lancets) and infection prevention and control measures before being able to perform nondiagnostic Point of Care Tests (POCT).
+
+31  See The National Association of Pharmacy Regulatory Authorities (NAPRA) (2021) Pharmacy Technicians' Scope of Practice in Canadian Jurisdictions
+
+32  For further details see DOH Standard on Administration of Vaccines in Outpatient Pharmacies (2022)

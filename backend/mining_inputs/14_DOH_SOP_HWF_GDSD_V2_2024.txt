@@ -1,0 +1,1038 @@
+DOC_CODE: DOH/SOP/HWF/GDSD/V2/2024
+TITLE: General Dentist and Specialist Dentist Scope of Practice
+AUTHORITY: Department of Health - Abu Dhabi
+TIER: official
+VERSION: 2
+
+=== DOCUMENT TEXT ===
+
+[PAGE 2]
+Document Title:
+
+Document Ref. Number:
+
+New / Revised:
+
+Publication Date:
+
+Effective Date:
+
+Document Control:
+
+Applies To:
+
+Owner:
+
+Revision Date:
+
+Revision Period:
+
+Contact:
+
+General Dentist and Specialist Dentist Scope of Practice
+
+DOH/SOP/HWF/GDSD/V2/2024
+
+Revised
+
+November, 2024
+
+January, 202 5
+
+DoH Strategy Sector
+
+DoH licensed Healthcare Providers
+
+DoH licensed Healthcare Providers of dental services.
+
+DoH authorized Health Payers.
+
+All Health Insurance products and schemes, as applicable.
+
+Healthcare Workforce Planning Division - Healthcare Workforce Sector.
+
+January-2027
+
+2 years
+
+HCWS@doh.gov.ae Version:
+
+V2
+
+[PAGE 3]
+Acknowledgment ..............................................................................................................................................................  3
+
+Preface  ..............................................................................................................................................................................  4
+
+1.Definitions and Abbreviations ........................................................................................................................................  5
+
+2. Purpose of the Scope of Practice   ...................................................................................................................................  7
+
+3. Scope.............................................................................................................................................................................  7
+
+4. Practice Settings  ...........................................................................................................................................................  7
+
+5. Standard of Proficiency   .................................................................................................................................................  8
+
+5.1
+
+General Principles ..............................................................................................................................................  8
+
+5.2
+
+5.3
+
+5.4
+
+5.5
+
+5.6
+
+5.7
+
+5.8
+
+5.9
+
+5.10
+
+5.11
+
+General Obligations   ...........................................................................................................................................  8
+
+The Scope of Practice of General Dentists...........................................................................................................  9
+
+Endodontists' Scope of Practice
+
+.......................................................................................................................  11
+
+Periodontists' Scope of Practice
+
+.......................................................................................................................  12
+
+Prosthodontists' Scope of Practice
+
+...................................................................................................................  15
+
+Oral Surgeons' Scope of Practice
+
+.....................................................................................................................  16
+
+Pediatric Dentists' Scope of Practice
+
+................................................................................................................  19
+
+Orthodontists' Scope of Practices
+
+...................................................................................................................  21
+
+Special Care Dentists' Scope of Practice
+
+..........................................................................................................  22
+
+Other professional roles of dentists   .................................................................................................................  24
+
+6. Specific Learning Requirement / Privileging Requirement   ...........................................................................................  24
+
+6.1
+
+Specialist dentist practicing general dentistry  ...................................................................................................  24
+
+6.2
+
+6.3
+
+6.4
+
+6.5
+
+6.6
+
+6.7
+
+6.8
+
+Performing dental implantology  .......................................................................................................................  24
+
+Use of LASER in dental practice ........................................................................................................................  24
+
+Administration of Local anesthesia  ..................................................................................................................  24
+
+Administration of Inhalation Sedation (anxiolysis), and utilization of other sedation modalities  .....................  24
+
+Restorative dentistry  .......................................................................................................................................  25
+
+Performing Non-Surgical Cosmetic Procedures  ................................................................................................  25
+
+Obstructive Sleep Apnea  .................................................................................................................................  25
+
+7.Exempted from Scope ..................................................................................................................................................  25
+
+8. Relevant Reference Documents  ..................................................................................................................................  26
+
+[PAGE 4-5]
+The Dentists' SCOPE OF PRACTICE revision project team is indebted to a number of subject matter experts from the practice and academia for their collaboration throughout the revision process. By contributing their time, efforts, expertise, and insights, they were instrumental in completing the revision task.
+
+The Department of Health (DoH) developed this regulatory instrument to enable dentists to provide quality health care services, acknowledging their training and entitlement to their professional title. It is expected that all dentists practice their professional duties to the best of their abilities while abiding by UAE legislations, including Federal Law No. (5) of 2019 on the Regulation of Practice of the Human Medicine Profession, which states: 'The Physician shall practice the Profession within the limits of the License granted to him/her and the License of the Health Facility where he/she works.
+
+[PAGE 8]
+The purpose of this document is to:
+
+Define the clinical dental care domains and the relevant competencies required to keep up with the terms of professional license issued by the DoH to General Dentists and other Dental Specialists including the following (not an inclusive list):
+
+Endodontists,
+
+Periodontists,
+
+Prosthodontists,
+
+Pediatric dentists,
+
+Orthodontists,
+
+Oral surgeons,
+
+Special care dentists, and
+
+Restorative dentists.
+
+Set up professional boundaries, accountabilities, ethical and legal obligations toward patients and the community.
+
+Serve as a reference to regulatory authority, healthcare providers, healthcare payers, and healthcare professionals.
+
+This document must be read in conjunction with all UAE and Abu Dhabi laws and regulations related to the practice of dentistry.
+
+[PAGE 8]
+The provisions laid out in this document apply to DoH licensed General Dentists (general dental practitioners) and Specialist Dentists (listed under clause 2.1.) and to all healthcare providers who provide and operate dental services.
+
+Dental Services can be provided in a variety of licensed health care settings, including:
+
+Hospitals
+
+Medical and Dental Centers
+
+Primary Health care Centers
+
+Specialized Clinics
+
+Mobile Health Units
+
+One Day Surgery Center
+
+School Clinics
+
+Home Care Services
+
+General Dental Clinic
+
+Tele-Medicine Provider
+
+Other practice settings upon licensure from DoH
+
+[PAGE 9]
+Dentists may assume different roles within the continuum of dental care depending on their education, training, competencies, experience, license and clinical privileges. Dentists must consider the following principles before requesting or accepting a delineation of clinical privileges:
+
+The primary interest of dentists is always the patient.
+
+Dentists may not perform any procedure or intervention that may compromise patient safety or will not add value to the outcomes of dental care.
+
+Dentists must not perform a task that is beyond their competence or exceeds the scope of their license, except in cases of emergency to save people's lives. 1
+
+Dentists must not perform a task which cannot be performed using the resources available to them, except in emergency cases. 2
+
+Dentists should refer patients whose care requires interventions that are beyond their scope of practice or necessitate a different practice setting for better outcomes of care.
+
+[PAGE 9]
+Dentists are obliged to observe and abide by a set of requirements in any practice setting; accordingly, they must:
+
+Practice in accordance with UAE local and federal laws, ethical values, standards of professional conduct, delineated clinical privileges, and clinical practice protocols, standards and guidelines published by DoH, national or international organizations.
+
+Update their medical knowledge, and continually enhance their professional, technical, and digital skills to achieve the best dental treatment outcomes.
+
+Deliver dental services in a licensed facility that provides the appropriate equipment and other resources necessary for patient safety and quality of care.
+
+Utilize and promote evidence-based practice and safety measures to ensure the best attainable dental care outcomes and patient safety.
+
+Adhere to the limitations on their scope of practice that might be imposed within a specific model of care implemented by DoH.
+
+Fulfill their reporting obligations to DoH and other pertinent authorities.
+
+Fulfill their obligations to protect patient-related data and information, as well as to respect patient privacy and confidentiality.
+
+Fulfill their obligations under the current Health insurance legislations.
+
+Adhere to the Occupational Safety and Health Code of Practices
+
+Avoid conflict of interest while conducting their roles and responsibilities.
+
+Coordinate and collaborate with regulatory authorities during public health emergencies.
+
+[PAGE 9-10]
+Understand patients' differences and cultural values , and treat them with respect regardless of their religion, color, social and ethnic background.
+
+Comply with radiation safety measures and apply ALARA principle, using the best imaging method and technique for disease diagnosis and image quality with the lowest radiation exposure possible.
+
+Fulfil their professional and ethical responsibilities toward patients who chose to undergo elective and cosmetic dental intervention, by informing them about the level of necessity, risks, benefits, available evidence and expected outcomes.
+
+1 Sub-article (1) of Article (24) of Federal Law No. (5) of 2019 on the Regulation of Practice of Human Medicine Profession
+
+2 Sub-article (2) of Article (24) of Federal Law No. (5) of 2019 on the Regulation of Practice of Human Medicine Profession
+
+The Scope of Practice of General Dentists
+
+The scope of practice of General Dentists spans several areas of dental care:
+
+General Dentists manage the ailments, conditions and diseases of the oral cavity, teeth, and associated anatomical structures.
+
+In order to respond to patient needs, general dentists are expected to:
+
+Record the patient's health condition , personal and family medical history before diagnosis and treatment
+
+Evaluate and diagnose diseases and pain of intraoral and extraoral tissues.
+
+Identify patient oral care needs and treatment options.
+
+Identify TMJ disorders and refer the patient to specialist care.
+
+Engage patients in developing a treatment plan that responds to their needs and achieves the optimum outcomes of dental care
+
+Detect signs and symptoms of diseases beyond the oral cavity, such as diabetes, cardiovascular disease, substance abuse, eating disorders and refer the patient to specialist care.
+
+Detect signs and symptoms of non-accidental injuries, abuse, or neglect in children and vulnerable populations groups and report the observations through the facility reporting channels.
+
+Identify the complexity of the condition, disease, interventions, and patient expectations, using their clinical judgment and guided by the following representations of a simple case :
+
+A Simple Prosthodontics Case involves patients who are dentate, partially dentate, or edentulous, with a crown-to-root ratio within normal limits, where their treatment does not require occlusal adjustments, vertical dimension alterations, or modifications to surrounding tissues or edentulous ridges, or does not require high aesthetic consideration.
+
+A Simple Periodontics Case is defined as a case that does not present with any of the following: periodontal pocket depths of more than 5 mm, substantial subgingival calculus, vertical bony defects, bone loss more than 15% of the coronal third of the involved tooth, or individuals with uncontrolled diabetes with HbA1c levels >7%.
+
+A Simple Endodontics Case is defined as any case that fulfills the criteria of Low Difficulty or Moderate Difficulty established by the American Association of Endodontists (AAE-Endodontic Case Difficulty Assessment Form and Guidelines.)
+
+A Simple Oral Surgery Case is defined as any patient who does not present with the following: tooth-teeth/root(s) that are of unusual anatomic structure, located close to vital anatomic structure, associated or close to pathologic tissue, associated with uncontrolled systematic disease, with history of ineffective anesthesia, and cases that known or judged to require substantial removal of surrounding bone or significant complications. The patient also does not present with any of the following: dentoalveolar fractures that require plating or archbar placement; orofacial space infection; long standing lesions and ulcers.
+
+Consult and collaborate with other healthcare professionals as part of multi-disciplinary or interdisciplinary care team to manage patients whose healthcare requires interventions from different disciplines.
+
+Treat oral diseases and follow up with patients.
+
+Manage dental caries by means of prevention and restorations utilizing concepts of minimal invasive oral care.
+
+Perform periodontal, endodontic, oral surgery and prosthodontic dental procedures and treatments (see Table (1) and Table (2) under Subclause 5.3.3 ) in response to patient's dental care needs.
+
+Take and interpret intraoral and extraoral images to diagnose and record dental pathologies.
+
+Use appropriate adjunctive tests, such as thermal and electrical vitality tests, transillumination, selective anesthesia, to diagnose oral diseases.
+
+[PAGE 11]
+Provide emergency dental treatment to the best of their ability and refer the patient to a specialized emergency care when necessary.
+
+Provide preventive dental care for the teeth such as dental prophylaxis, oral hygiene education, oral habit education, and dietary counseling.
+
+Provide awareness, counseling, and education to patients and community members to promote and maintain their oral health.
+
+Promote awareness of safety issues that affect children and highlight factors and practices that reduce or increase risk to child safety at home and in the community. Work in partnership with parents to prevent unintentional injuries and diseases of the child.
+
+Provide preventive, restorative, and surgical care to cooperative pediatric patients, involving parents in all decisions regarding the child's safety, oral health and wellbeing . Refer precooperative, un-cooperative, anxious and medically compromised young children to specialist care.
+
+Refer patients whose dental care necessitates treatment under general anesthesia to a relevant specialist care.
+
+Prescribe medications within the scope of dental care, adhering to pertinent regulations and ensuring the rational use of medications.
+
+[PAGE 11-12]
+Dental procedures are divided into two broad categories based on the clinical training and qualifications of general dentists: core procedures and non-core procedures.
+
+Core procedures: These are the clinical procedures that licensed general dentists are expected to be able to perform (Table 1)
+
+Non-core procedures: These are clinical procedures that may be performed by a dentist after completing a certifying competency-based training (Table 2).
+
+Endodontists evaluate, diagnose, treat, and follow up with patients presenting with diseases and injuries of the pulp and associated periradicular tissues. The scope of practice of endodontists includes:
+
+[PAGE 12]
+Record the patient's health condition , personal and family medical history before diagnosis and treatment.
+
+Provide general oral health evaluation.
+
+Provide specific endodontic evaluation of dental pulp and periapical tissues of the teeth, inclusive of medical and dental history, clinical examination of occlusion, teeth, and surrounding structures, diagnosis of orofacial pain. In addition to formulating a treatment plan that considers the tooth/teeth health and the patient's overall wellbeing.
+
+Take and interpret intraoral and extraoral diagnostic images, including x-rays and Cone Beam Computed Tomography (CBCT).
+
+Use appropriate adjunctive tests, such as thermal and electrical vitality tests, transillumination, selective anesthesia, to diagnose oral diseases.
+
+Detect signs and symptoms of diseases beyond the oral cavity, such as diabetes, cardiovascular disease, substance abuse, eating disorders and refer the patient to specialist care.
+
+Detect signs and symptoms of non-accidental injuries, abuse, or neglect in children and vulnerable populations groups and report the observations through the facility reporting channels.
+
+Consult and collaborate with other healthcare professionals as part of multi-disciplinary care team to manage patients whose healthcare requires interventions from different disciplines of medicine.
+
+Provide emergency dental treatment to the best of their ability and refer the patient to specialized care when necessary.
+
+Provide preventive dental care for the teeth including dental prophylaxis, oral hygiene education, oral habit education, and dietary counseling.
+
+Provide awareness, counseling, and education to patients and community members to promote and maintain their oral health.
+
+Prescribe medications within the scope of dental care, adhering to pertinent regulations and the principle of rational use of medications.
+
+[PAGE 12-13]
+Manage odontogenic infections of pulp origin.
+
+5.4.6.2 Provide endodontic treatment for both medically fit patients and those diagnosed with medical conditions after consultation with their primary physician, when needed. 5.4.6.3 Provide endodontic treatment for anxious adults and children (by utilizing anxiety management techniques, or collaborative approach with other dental specialists or by exploration of other treatment options). 5.4.6.4 Collaborate with a multidisciplinary team to evaluate, diagnose and plan of tooth/teeth undergoing endodontic treatment for cases with multiple dental needs such as full mouth rehabilitation cases. This includes elective endodontic therapy. 5.4.6.5 Provide non-surgical endodontic treatment for primary and permanent teeth using mechanical and chemical preparation techniques as well as obturation techniques and materials. 5.4.6.6 Provide root canal treatment for immature teeth utilizing evidence-based and best practice techniques (i.e., regeneration, apexification, and vital pulp therapies).
+
+Provide endodontic treatment for complicated cases such as:
+
+Root canal re-treatment.
+
+Pulp system with separated instrument, posts, unusual root anatomy (i.e., dilaceration), and root canal system with anomalies (i.e., pulp stones, calcified canals).
+
+Repair pathologic or iatrogenic defect in the canal system: resorption, and perforation.
+
+Manage perio-endo lesion.
+
+Manage longitudinal tooth fracture and root fracture.
+
+Removal of the dental posts from root canal system space.
+
+Bleach teeth.
+
+[PAGE 13-14]
+Manage dentoalveolar injuries and their complications.
+
+Follow up on endodontic treatment over teeth that have peri-radicular pathologies over a period of time to ensure healing necessary before final restoration.
+
+Perform vital pulp therapy.
+
+Surgical Procedures
+
+Management of lesions of endodontic origin including but not limited to:
+
+Surgical drainage: Incision and drainage, and cortical trephination.
+
+Periradicular surgery: cyst enucleation, curettage, biopsy, and guided tissue and bone regeneration during periapical surgeries.
+
+Corrective surgery: Perforation repair, mechanical (iatrogenic), resorptive (external and internal), root resection, and hemisection.
+
+Apicectomy
+
+Intentional replantation.
+
+Tooth transplantation in collaboration with oral surgeons or maxillofacial surgeons.
+
+Restorative Dentistry
+
+Restore vital and nonvital teeth utilizing different restorative procedures, techniques and materials. including:
+
+Temporary, interim, and permanent restorations for both primary and permanent dentition.
+
+Direct and indirect restorations using different techniques such as inlays, onlays, crowns.
+
+Restorations with intra-canal support i.e. posts and core.
+
+Provide local anesthesia through topical, infiltration, and regional block anesthesia confined to the mouth
+
+Periodontists ' Scope of Practice
+
+Periodontists evaluate, diagnose, treat, and follow up with patients presenting with diseases of the supporting and surrounding tissues of the teeth or their substitutes. The scope of practice of periodontists includes:
+
+Record the patient's health condition , personal and family medical history before diagnosis and treatment.
+
+[PAGE 14]
+Provide general oral health evaluation.
+
+Provide specific periodontal evaluation: inclusive of medical and dental history, clinical examination of occlusion, teeth, and teeth supporting structure (Periodontium). In addition to identify risk factors, diagnose periodontal diseases, and formulate treatment plans that consider the tooth/teeth health and the patient's overall wellbeing.
+
+Evaluate TMJ and head and neck tissues. Diagnose TMJ dysfunctions and manage them by collaborating with other dental specialists as per the case need.
+
+Take and interpret intraoral and extraoral diagnostic images, including Cone Beam Computed Tomography (CBCT) as they relate to periodontal and dental implant therapy.
+
+Utilize adjunctive medical laboratory investigations to diagnose oral pathologies and plan the surgical procedure accordingly.
+
+Use appropriate adjunctive tests, such as thermal and electrical vitality tests, transillumination, selective anesthesia, to diagnose oral diseases.
+
+Detect signs and symptoms of diseases beyond the oral cavity, such as diabetes, cardiovascular disease, substance abuse, eating disorders and refer the patient to specialist care.
+
+Detect signs and symptoms of non-accidental injuries, abuse, or neglect in children and vulnerable populations groups and report the observations through the facility reporting channels.
+
+Consult and collaborate with other healthcare professionals as part of multi-disciplinary care team to manage patients whose healthcare requires interventions from different disciplines of medicine.
+
+Provide emergency dental treatment to the best of their ability and refer the patient to specialized care when necessary.
+
+[PAGE 14]
+Provide dental prophylaxis, oral hygiene education, oral habit education, and dietary counseling, in addition to the application of medicament to treat and protect from oral and dental pathologies.
+
+Provide treatment plans for general dentists and hygienists in relation to management of periodontal disease.
+
+Provide monitoring and maintenance for the periodontium and the tissues around dental implant.
+
+Oral disease management
+
+Manage patients with periodontal diseases and related conditions by diagnosing, developing a comprehensive treatment plan, and providing the required intervention. In addition to monitoring the disease progression and treatment outcomes.
+
+Consult and collaborate with other healthcare professionals as part of multi-specialty care team, to manage patients with pre-malignant disorder of the oral cavity.
+
+[PAGE 14-15]
+Manage periodontal diseases in patients with history of cancer therapy.
+
+Manage periodontal diseases in medically compromised patients.
+
+Manage plaque-induced and non-plaque-related periodontal diseases and disorders of the periodontium using non-surgical management techniques, which may include:
+
+Biofilm control
+
+Mechanical scaling and root planing therapy including periodontal curettage
+
+Local and systemic adjunctive therapies; and
+
+Occlusal therapy and splinting for periodontal reasons.
+
+Manage plaque-induced and non-plaque-related periodontal diseases and disorders of the periodontium using surgical management techniques of soft and hard tissues, which may include:
+
+Resective periodontal surgical procedures: Examples includes periodontal open flap debridement, apically positioned flap, root resection, curettage, subgingival irrigation and debridement, gingivoplasty, gingivectomy, periodontal osseous surgery, flap procedures, functional crown lengthening surgery, osteoplasty, osteotomy, vestibuloplasty, alveoloplasty, excision of mucous extravasation and mucous retention cysts, biopsies, frenectomy, and removal of exostosis.
+
+Regenerative and reconstructive periodontal surgical procedures: Examples includes periodontal osseous grafting -Autogenous and non-autogenous-, guided tissue regeneration, guided bone regeneration, use of biologics, and utilization of tissue substitutes, where appropriate.
+
+Periodontal plastic and aesthetic surgical procedures: Examples include gingival augmentation, root coverage procedures, and aesthetic crown lengthening surgery.
+
+Other surgical Procedures:
+
+Repair of soft/hard tissue defects i.e. oroantral fistula management, vestibuplasty procedures alveolar bone and soft tissue ridge augmentation.
+
+Periodontal therapy in conjunction with orthodontic procedures such as surgical exposure of unerupted tooth, and managing gingival/periodontal recession, gingivectomies, frenectomies.
+
+Maintain and enhance alveolar ridge height and thickness to receive implant i.e. socket preservation, and internal sinus lift.
+
+Provide Surgical endodontic therapy including:
+
+Apicectomy, root amputation, and hemi-section in collaboration with the endodontist who would assume the responsibility for completion of the case.
+
+Removal of tooth/teeth & remaining roots (simple, surgical & impacted extractions) in the course of periodontal and implant therapy.
+
+Resection of tooth/root.
+
+[PAGE 15]
+Provide local anesthesia through topical, infiltration, and regional block anesthesia confined to the mouth.
+
+Prescribe medications within the scope of dental care, adhering to pertinent regulations and the principle of rational use of medications
+
+[PAGE 15]
+Evaluate the patient to identify different clinical needs with special consideration to periodontal health. Refer the complex dental implant cases to oral and maxillofacial surgeons and prosthodontists for advanced surgical and prosthodontic procedures respectively.
+
+Collaborate with other dental specialists to formulate a treatment plan that best suits the patients' needs and overall wellbeing.
+
+Work as an effective member of a multidisciplinary team to execute the plan with the vision of best treatment outcomes.
+
+Work to develop dental implant site by means of soft tissue, and hard tissues preservation or reconstruction, Examples:
+
+Ridge augmentation
+
+Internal sinus floor elevation
+
+Minimal traumatic extraction.
+
+Alveolar ridge preservation
+
+Increase keratinized tissues around implant.
+
+Lateral/external sinus lift
+
+Dental implant surgical placement as per the planned treatment with the multidisciplinary team (or prosthodontists). 5.5.7.6 Insertion of implant-supported prostheses (provided that the case is simple - refer to Subclause 5.3.2.7 (a) for the definition of a simple prosthodontics case).
+
+[PAGE 15-16]
+Dental implant monitoring and maintenance procedures.
+
+5.5.7.8 Dental implant complications: management of short term and long-term complications that may occur around dental implants through non-surgical and surgical management of periimplant disease including implant removal.
+
+[PAGE 16-17]
+Prosthodontists evaluate, diagnose, treat, and follow up with patients presenting with conditions 'associated with missing or deficient teeth and/or oral and maxillofacial tissues' (35) . The scope of practice of prosthodontist includes:
+
+Evaluation
+
+Record the patient's health condition, personal and family medical history before diagnosis and treatment.
+
+Provide general oral health evaluation.
+
+Provide specific prosthodontic evaluation: inclusive of medical and dental history, clinical examination of occlusion, teeth, and teeth supporting structure (root and Periodontium), identification of risk factors, diagnosis and treatment plan with specific consideration to mastication, speech, and aesthetics and their impact on the patient wellbeing, and monitoring the treatment provided impact and outcomes.
+
+Evaluate geriatric patients requiring prosthodontic treatment considering their oral-dental needs and the impact on their nutrition and quality of life.
+
+Evaluate and tailor treatment plans in collaboration with oral and maxillofacial surgeons for patients requiring orofacial or maxillofacial prosthetic care considering their other dental needs and overall wellbeing.
+
+Take and interpret intraoral and extraoral diagnostic images, including Cone Beam Computed Tomography (CBCT) as they relate to occlusion, dental health and dental implant therapy.
+
+Use appropriate adjunctive tests, such as thermal and electrical vitality tests, transillumination, selective anesthesia, to diagnose oral diseases.
+
+Detect signs and symptoms of diseases beyond the oral cavity, such as diabetes, cardiovascular disease, substance abuse, eating disorders and refer the patient to specialist care.
+
+Detect signs and symptoms of non-accidental injuries, abuse, or neglect in children and vulnerable populations groups and report the observations through the facility reporting channels.
+
+Consult and collaborate with other healthcare professionals as part of multi-disciplinary care team to manage patients whose healthcare requires interventions from different disciplines of medicine.
+
+Provide emergency dental treatment to the best of their ability, and refer the patient to specialized care when necessary
+
+Provide preventive dental care for the teeth including dental prophylaxis, oral hygiene education, oral habit education, and dietary counseling.
+
+Provide awareness, counseling, and education to patients and community members to promote and maintain their oral health.
+
+Oral disease management
+
+Diagnose and manage malfunction related to occlusion, mastication, aesthetics, and speech for healthy patients, geriatric patients, and patients with special needs with predictable restorative and prosthodontic treatments.
+
+Collaborate with a multidisciplinary team to evaluate, diagnose and plan treatment for patients with multiple dental treatment needs, complex dental presentations, and / or patients with medical conditions affecting the oral cavity or complicating the dental rehabilitation treatment.
+
+Manage patients who require full mouth rehabilitation with re-organized approach including:
+
+Interim protheses for patients require full mouth rehabilitation
+
+Management of dentate patients with fixed protheses
+
+Management of partially dentate patients with crowns and fixed bridges
+
+Management of partially dentate patient with removable partial dentures
+
+Immediate maxillary and/or mandibular denture
+
+Teeth/implant supported overdenture
+
+Complete maxillary and/or mandibular denture
+
+Denture repair procedures including rebase/reline procedure
+
+Management partially dentate and/or fully edentulous patients referred with implant supported prostheses
+
+Management patients need aesthetic rehabilitation
+
+Evaluate TMJ and head and neck tissues. Diagnose TMJ dysfunctions and manage them by collaborating with other dental specialists as per the case need.
+
+[PAGE 17]
+Manage Orofacial disease through:
+
+Evaluate (as part of a multidisciplinary team) patients with craniofacial defects, cleft lip/palate, head and neck cancer, and craniofacial trauma.
+
+Formulate treatment plan (as part of a craniofacial multidisciplinary team) during different treatment phases: pre-surgical planning, resection and re-constructive procedures in the hospital operating room, and fabrication and insertion of the definitive prosthesis.
+
+Manage soft/hard tissue defects of patients with maxillofacial and craniofacial defects by means of orofacial prosthesis and obturators.
+
+Analgesia
+
+Provide local anesthesia through topical, infiltration, and regional block anesthesia confined to the mouth and face.
+
+Prescribing of Medications
+
+Prescribe medications within the scope of dental care, adhering to pertinent regulations and the principle of rational use of medications
+
+Dental Implantology (refer to Subclause 6.2 for further details)
+
+Evaluate the patient to identify different clinical needs with special consideration to mastication, speech, and aesthetics. Refer the complex dental implant cases to oral and maxillofacial surgeons for advanced surgical procedures
+
+Collaborate with other dental specialists to formulate implant treatment plan that best suits the patients' needs and overall wellbeing.
+
+Work as an effective member of a multidisciplinary team to execute the plan with the vision of best implant treatment outcomes.
+
+Maintain and enhance alveolar ridge height and thickness to receive implant such as ridge preservation and augmentation procedures internal sinus left.
+
+[PAGE 17-18]
+Provision of dental implant restorations and prostheses such as:
+
+Implant-supported crowns
+
+Implant-supported fixed partial dentures
+
+Implant-supported overdentures
+
+Implant supported fixed complete dentures
+
+Repair of implant-supported prosthesis
+
+Dental implant monitoring and maintenance procedures.
+
+Management of dental implant complications.
+
+Oral Surgeons ' Scope of Practice
+
+Oral Surgeons deal with the diagnosis and management of pathology of the mouth and jaws through surgical intervention. The scope of practice of oral surgeons include:
+
+Record the patient's health condition , personal and family medical history before diagnosis and treatment.
+
+Provide general oral health evaluation.
+
+Provide specific oral health evaluation: inclusive of medical and dental history, clinical examination of occlusion, teeth, periodontium, peri-radicular tissues, mucosal tissue health, salivary glands dysfunction, oral cancer screening, oral hygiene evaluation along with identification of risk factors, diagnosis and treatment of odontogenic and all other oral infections and pathologies while con sidering patients' mastication, speech, and aesthetic s and its impact on their wellbeing. In addition to monitoring the treatment provided impacts and outcomes.
+
+Diagnose oral cancer and pre-malignant diseases.
+
+Provide head and neck evaluation. Diagnose dentofacial deformity.
+
+Collaborate with multi-disciplinary team to evaluate and plan the management for patients requiring dentoalveolar surgery.
+
+Evaluate and diagnose dental and non-dental chronic orofacial pain
+
+Evaluate and diagnose TMJ dysfunctions and manage them by collaborating with other dental specialists as per the case need.
+
+Take and interpret intraoral and extraoral diagnostic images, including Cone Beam Computed Tomography (CBCT) as they relate to occlusion and dental implant therapy.
+
+Utilize adjunctive medical laboratory investigations to diagnose oral pathologies and plan the surgical procedure accordingly
+
+[PAGE 18]
+Admit patients to inpatient care and one day surgery care when the case warrants admission.
+
+Use appropriate adjunctive tests, such as thermal and electrical vitality tests, transillumination,
+
+selective anesthesia, to diagnose oral diseases.
+
+Detect signs and symptoms of diseases beyond the oral cavity, such as diabetes, cardiovascular disease, substance abuse, eating disorders and refer the patient to specialist care.
+
+Detect signs and symptoms of non-accidental injuries, abuse, or neglect in children and vulnerable populations groups and report the observations through the facility reporting channels.
+
+Consult and collaborate with other healthcare professionals as part of multi-disciplinary care team to manage patients whose healthcare requires interventions from different disciplines of medicine.
+
+Oral Emergency management
+
+5.7.2.1 Provide emergency dental treatment to the best of their ability and refer the patient to specialized care when necessary 5.7.2.2 Diagnose and manage dento-alveolar trauma and maxillofacial injuries. For severe or complex fractures of the facial skeleton refer to a maxillofacial surgeon. 5.7.2.3 Manage TMJ dislocation and pain.
+
+[PAGE 18-19]
+5.7.3.1 Provide preventive dental care for the teeth including dental prophylaxis, oral hygiene education, oral habit education, and dietary counseling 5.7.3.2 Provide awareness, counseling, and education to patients and community members to promote and maintain their oral health
+
+Oral Disease Management
+
+Manage pre-malignant lesions of the oral cavity such as leukoplakias or erythroplakias
+
+Manage oral health of patients undergoing cancer therapy, organ transplant and other conditions that require concurrent oral intervention during the course of medical care.
+
+Manage patients with a history of cancer therapy (evaluation, diagnosis, intervention, and referral whenever needed).
+
+Collaborate with other dental specialist colleagues to fulfil the surgical component of patient oral care as part of a full mouth rehabilitation treatment plan.
+
+Tooth Extraction (simple and complex) including impacted, submerged, hemisection, root amputation, and those in un-usual anatomic locations. Which may or may not involve elevation of muco-periosteal flap and bone resection
+
+Surgical removal of pathological tissues resulting from pulpal pathosis
+
+Surgical exposure of unerupted tooth
+
+Socket preservation
+
+Minor oral surgeries of the soft tissue and hard tissue, including alveoloplasty, apically repositioned flap, autogenous/non-autogenous graft, excision of intra oral sialolith, excision of mucous extravasation and mucous retention cysts, curettage, biopsy, frenectomy, intra-oral incision and drainage, open flap debridement, oroantral fistula management, tooth reimplantation, vestibuloplasty, removal of exostosis, partial ostectomy and gummy smile correction.
+
+Apicectomy
+
+External and internal sinus lift
+
+Ridge augmentation
+
+Surgical management of dentoalveolar traumas and fractures.
+
+Surgical management of post-surgical complications.
+
+Provide local anesthesia through topical, infiltration, and regional block anesthesia confined to the face
+
+Prescribe medications within the scope of dental care, adhering to pertinent regulations and the principle of rational use of medications
+
+[PAGE 19-20]
+Dental Implantology (refer to Subclause 6.2 for further details)
+
+Evaluate the patient to identify different clinical needs with special consideration to periodontal health, occlusion, alveolar ridges height and thickness, and their relation to vital structures. In addition to the patient's medical history.
+
+Collaborate with other dental specialists to formulate a treatment plan that best suits the patients' needs and overall wellbeing.
+
+Work as an effective member of a multidisciplinary team to execute the plan with the vision of best treatment outcomes.
+
+Work to develop dental implant site by means of soft tissue, and hard tissues preservation or reconstruction, Examples:
+
+Ridge augmentation
+
+Internal and external sinus floor elevation
+
+Minimal traumatic extraction.
+
+Alveolar ridge preservation
+
+Dental implant surgical placement as per the planned treatment with the multidisciplinary team (or Prosthodontist).
+
+Insertion of implant-supported prostheses (provided that the case is simple - refer to Subclause 5.3.2.7 (a) for the definition of a simple prosthodontics case).
+
+Dental implant monitoring and maintenance.
+
+Dental implant complications: management of short term and long-term complications that may occur around dental implants through non-surgical and surgical management of periimplant disease including implant removal.
+
+[PAGE 20]
+Utilization of sedation (refer to Subclause 6.5 ).
+
+Treat patients under General Anesthesia.
+
+Pediatric dentists provide preventive, therapeutic and surgical dental care for children from birth through adolescence until they reach 18 years of age; and those with special needs.
+
+The scope of practice of pediatric dentists include:
+
+[PAGE 20-21]
+Record the patient's health condition , personal and family medical history before diagnosis and treatment.
+
+Provide general and specific oral health evaluation.
+
+Provide comprehensive child assessment: evaluation of young children and children with medical, genetic, and behavioral conditions through system-oriented physical examinations, clinical assessments, parental interviews, and laboratory tests in addition to growth and development evaluation based on physical, motor, sensory, and cognitive assessment.
+
+Evaluate and formulate a multidisciplinary treatment plan for children born with orofacial defects/abnormalities i.e. cleft lip and palate.
+
+Formulate an individualized treatment plan considering the child's cognitive development and acceptance of the treatment, parents' preference, child 's coping skills, and the extent of the disease among other factors.
+
+Detect signs and symptoms of non-accidental injuries, abuse, or neglect in children and vulnerable populations groups and report the observations through the facility reporting channels.
+
+Take and interpret intraoral and extraoral images radiographs to diagnose dental pathologies.
+
+Use appropriate adjunctive tests, such as thermal and electrical vitality tests, transillumination, selective anesthesia, to diagnose oral diseases.
+
+Detect signs and symptoms of diseases beyond the oral cavity, such as diabetes, cardiovascular disease, substance abuse, and eating disorders among others and refer the patient to specialist care.
+
+Consult and collaborate with other healthcare professionals as part of multi-disciplinary care team to manage patients whose healthcare requires interventions from different disciplines of medicine.
+
+Complete ongoing treatment and arrange for the transition of pediatric patients to adult dental care once they approach 18 years of age, in coordination with the patients and families, unless patients have special needs for dental care that cannot be accessed through another general or specialist dentist.
+
+Identify and manage dentofacial trauma promptly and provide short and long-term plans and refer the patient to specialized care when necessary.
+
+Prescribe medications within the scope of dental care, adhering to pertinent regulations and the principle of rational use of medications.
+
+Prevention of Oral Disease
+
+Provide preventive dental care for the teeth including dental prophylaxis, oral hygiene education, oral habit education, and dietary counseling.
+
+Provide awareness, counseling, and education to patients and community members to promote and maintain their oral health.
+
+Provide a risk-based prevention plan that takes into consideration the changing dynamics in risk factors.
+
+Assess the risk and provide age-specific dental trauma prevention education to both child and guardian.
+
+During the provision of dental care, pediatric dentists should manage the behaviors of infants, anxious children and adolescents, and children with delayed cognitive development through behavior guidance and utilization of non-pharmacological techniques, or pharmacological techniques including anxiolysis, sedation, and treatment under general anesthesia (refer to Subclause 6.5 ).
+
+Diagnose and manage oral manifestations and related complications of medically compromised child patients.
+
+Manage periodontal lesions and diseases, including gingival and periodontal diseases and refer advanced cases to specialist care.
+
+Manage dental caries by means of prevention and restorations utilizing concepts of minimal invasive oral care. Restorative procedures include (but are not limited to):
+
+Temporary, interim, and permanent restorations for both primary and permanent dentition
+
+Direct and indirect restorations using different techniques such as inlays, onlays, veneers, and partial crowns
+
+Permanent and provisional crowns for primary and permanent teeth utilizing different techniques (pre-fabricated, chair side, and lab fabricated).
+
+Manage TMJ disorders in the child population in collaboration with other specialties care.
+
+Manage primary and permanent teeth with structural abnormalities and developmental defects such as enamel hypo-mineralization, and amelogenesis imperfecta
+
+Improve tooth color and appearance by means of different techniques such as enameloplasty, microabrasion, single tooth bleaching (vital/non-vital), and provisional veneers.
+
+Collaborate with the child's physician(s) to provide dental/oral care to patients who require it in a hospital setting.
+
+Collaborate with orthodontists to manage the primary and mixed dentitions occlusion, which includes (but not limited to):
+
+Space management in the primary and mixed dentition by means of space maintenance, balancing and compensation extractions.
+
+Correction of a simple malocclusions in the primary and mixed dentition including the following presentations:
+
+Simple anterior and posterior crossbites
+
+Functional occlusal shift.
+
+Management of malocclusion resulting from dentoalveolar growth utilizing interceptive orthodontics techniques.
+
+Manage malocclusion resulting from dental anomalies such as exposure of impacted teeth management of submerged teeth, and adjustment of micro & macro teeth.
+
+[PAGE 21-22]
+Refer children with malocclusion to specialist orthodontist at the appropriate time.
+
+Surgical Procedures
+
+Simple extraction of erupted tooth / roots
+
+Removal of tooth / fracture or residual roots that requires uncomplicated surgical extraction
+
+Conduct minor oral surgery such as - (only after applying clinical judgement of the complexity of the case):
+
+frenectomy, tongue tie, mucocele removal, and removal of foreign body
+
+Surgical exposure of impacted teeth in children.
+
+c) Surgical removal of supernumerary teeth.
+
+d) Decoronation of ankylosed infraoccluded teeth.
+
+5.8.7.1 Manage vital and non-vital pulp therapy in primary and permanent teeth Manage vital and non-vital pulp therapy in immature permanent teeth including regenerative
+
+endodontic therapy.
+
+Manage dento-alveolar injuries and complications
+
+[PAGE 22]
+Replace missing tooth/teeth using interim fixed or removable prostheses including but not limited to immediate partial dentures, partial dentures, and bridges.
+
+Provide chair-side, pre-fabricated, and lab-fabricated (provisional) crowns and veneers for teeth with developmental abnormalities for the child population with consideration of managing symptoms, improving function and aesthetics while preparing the case for a permanent solution in adulthood.
+
+Work as effective member of multidisciplinary team to manage children with rare conditions such as craniofacial and orofacial abnormalities i.e. ectodermal dysplasia.
+
+Provide emergency dental treatment to the best of their ability and refer the patient to a specialized emergency care when necessary.
+
+Administration of local anesthesia.
+
+[PAGE 22]
+Orthodontists focus on the diagnosis, prevention, interception, and treatment of all forms of malocclusion of the teeth and associated alterations in their surrounding structures. The scope of practice of Orthodontists include:
+
+[PAGE 22]
+Record the patient's health condition , personal and family medical history before diagnosis and treatment.
+
+Provide general oral health evaluation.
+
+Provide specific orthodontic evaluation: Conduct comprehensive orthodontic assessments including assessment of skeletal growth, occlusal relationships, facial and smile esthetics, and diagnose skeletal, dental and soft tissue conditions to formulate individualized treatment plans.
+
+Evaluate oral functions such as speech, swallowing and mastication, in addition to breathing.
+
+Take and interpret intraoral and extraoral diagnostic images, including x-rays and Cone Beam Computed Tomography (CBCT).
+
+Use advanced diagnostic techniques to plan the treatment for patient with malocclusion with or without orthognathic abnormalities
+
+Diagnose oral-facial pain of pulpal and periradicular origin
+
+Identify non-dental chronic orofacial pain and refer the cases to the related specialty.
+
+Use appropriate adjunctive tests, such as thermal and electrical vitality tests, transillumination, selective anesthesia, to diagnose oral diseases.
+
+Assess the risk-to-benefit ratio for each patient seeking orthodontic treatment and communicate the risks of orthodontic treatment clearly with patients.
+
+Detect signs and symptoms of diseases beyond the oral cavity, such as diabetes, cardiovascular disease, substance abuse, eating disorders and refer the patient to specialist care.
+
+Detect signs and symptoms of non-accidental injuries, abuse, or neglect in children and vulnerable populations groups and report the observations through the facility reporting channels.
+
+Consult and collaborate with other healthcare professionals as part of multi-disciplinary care team to manage patients whose healthcare requires interventions from different disciplines of medicine.
+
+Provide emergency dental treatment to the best of their ability and refer the patient to specialized care when necessary.
+
+[PAGE 22]
+Provide dental prophylaxis, oral hygiene education, oral habit education, and dietary counseling as part of continues monitoring and motivation of patients.
+
+[PAGE 23]
+Manage cases with malocclusion and or dentofacial growth abnormalities of all age groups and different medical and behavioral disabilities.
+
+Collaborate with other dental specialties to execute (interdisciplinary) treatment plans to address all dental needs prior, during and post orthodontic treatment.
+
+Apply evidence-based orthodontic techniques whenever available in addition to best practices in the management of different malocclusions and craniofacial abnormalities.
+
+Work as an effective member in multidisciplinary team to manage malocclusion and other craniofacial abnormalities in patients with unusual conditions such as:
+
+Patient with cleft lip and palate,
+
+Patient with under oncology therapy or with history of cancer therapy
+
+Patient with periodontal disease
+
+Patient with history of dentoalveolar trauma
+
+Patient with TMJ disorders.
+
+Work as an effective member in a multidisciplinary team to treat and manage major dentofacial abnormalities prior, during and after orthognathic surgery.
+
+Take and maintain pre-operative and post-operative images and radiographs to assess, monitor and record treatment progression.
+
+Analgesia
+
+Provide local anesthesia through topical, infiltration, and regional block anesthesia confined to the mouth
+
+[PAGE 23]
+Prescribe medications within the scope of dental care, adhering to pertinent regulations and the principle of rational use of medications
+
+Special care dentists focus on addressing oral health care needs of people with an intellectual disability, medical, physical, or psychiatric conditions that require special individual dental treatment plans. The scope of practice of Special care dentists include:
+
+[PAGE 23-24]
+Record the patient's health condition , personal and family medical history before diagnosis and treatment.
+
+Provide general oral health evaluation.
+
+Provide specific oral health evaluation: evaluation of children and adult individuals with medical, genetic, and behavioral conditions through system-oriented physical examinations, clinical assessments, parental/guardian interviews, and laboratory tests with focus to prevent oral disease, treat oral disease, restore oral health and function to enhance patient quality of life.
+
+Diagnose malocclusion, dental decay, caries risk assessment, periodontal disease, oral hygiene status, oral mucosal lesions, salivary glands dysfunction, TMJ disorders, oral cancer, teeth anomalies, and orofacial defects/abnormalities.
+
+Take and interpret intraoral and extraoral diagnostic images, including x-rays and Cone Beam Computed Tomography (CBCT)
+
+Formulate an individualized treatment plan considering the individual's cognitive development, acceptance of the treatment, and the extent of the disease among other factors.
+
+Detect signs and symptoms of non-accidental injuries, abuse, or neglect in children and
+
+vulnerable populations groups and report the observations through the facility reporting channels. 5.10.1.8 Use appropriate adjunctive tests, such as thermal and electrical vitality tests, transillumination, selective anesthesia, to diagnose oral diseases. 5.10.1.9 Detect signs and symptoms of diseases beyond the oral cavity, such as diabetes, cardiovascular disease, substance abuse, and eating disorders among others and refer the patient to specialist care 5.10.1.10 Consult and collaborate with other healthcare professionals as part of multi-disciplinary care team to manage patients whose healthcare requires interventions from different disciplines of medicine.
+
+Oral Emergency management
+
+Provide emergency dental treatment to the best of their ability, stabilizing the case and referring the patient to specialized emergency care when necessary
+
+Prevention of Oral disease
+
+Provide dental prophylaxis, oral hygiene education, oral habit education, and dietary
+
+counseling, in addition to the application of medicament to treat and protect from oral and dental pathologies. 5.10.3.2 Provide treatment plans for primary care practitioners /hygienist in relation to management of periodontal disease. 5.10.3.3 Provide monitoring and maintenance for the periodontium around dental implant
+
+Oral Disease Management
+
+Manage dental caries using prevention and restoration techniques, following a conservative approach to the case presented. 5.10.4.2 Manage gingival and periodontal conditions. 5.10.4.3 Identify and manage conditions such as chronic orofacial pain, oral mucositis, bisphosphonaterelated osteonecrosis of the jaws, oral pathology related to radiation therapy, dry mouth conditions, and other soft tissue or hard tissue mucosal lesions, referring patient to specialist care when needed. 5.10.4.4 Manage TMJ disorders in patients with special needs in collaboration with other specialties care. 5.10.4.5 During the provision of dental care, special care dentists should manage the behavior, anxiety and dental phobia of individuals with medical condition and special needs of all age groups through behavior guidance, and utilization of non-pharmacological techniques, or pharmacological techniques including anxiolysis, sedation, and treatment under general anesthesia (refer to Subclause 6.5 ). 5.10.4.6 Collaborate with healthcare workers of different relevant professions to provide oral/dental care for individuals with special needs. 5.10.4.7 Diagnose and manage oral disease and /or oral manifestations of medical conditions/medications in individuals with special need (medically compromised, physically disabled, cognitive disabled). 5.10.4.8 Manage patient under cancer therapy (pre-cancer therapy, during cancer therapy, and post cancer therapy).
+
+Surgical Procedures
+
+[PAGE 24-25]
+Simple extraction of erupted tooth / roots
+
+Removal of tooth / fracture or residual roots that requires uncomplicated surgical extraction
+
+Endodontics treatment
+
+Manage vital and non-vital pulp therapy in primary and permanent teeth
+
+Prosthodontics
+
+Provide replacement of lost teeth using different fixed and removable prostheses
+
+Formulate treatment plan (as part of a multidisciplinary team) for complicated cases that require full mouth rehabilitation. Taking into consideration patients' behavior and ability for self-care, medical condition, and quality of life. The multidisciplinary team typically involves periodontists, endodontists, oral surgeon and prosthodontists.
+
+Administration of local anesthesia
+
+Prescribe medications within the scope of dental care, adhering to pertinent regulations and the principle of rational use of medications
+
+Dentists may engage in other activities including but not limited to:
+
+Authoring, reviewing, and publishing journal articles
+
+Assuming certain responsibilities in healthcare education and training programs as a supervisor, faculty member, lecturer, or a program director
+
+Issuing medical reports
+
+Issuing sick leave in accordance with the pertinent regulations
+
+Providing technical consultation as subject matter expert
+
+Conducting and participating in research projects
+
+Serving as a member of a specialty-related committee or taskforce
+
+Management and leadership roles in healthcare facilities
+
+Some dental specialists choose to continue to provide general dentistry procedures throughout their career. The facility's clinical privileging body must delineate the requested procedures only after evaluating evidence of competency to perform those procedures.
+
+[PAGE 25]
+Both general and specialists' dentists who wish to provide dental implantology procedures must undertake a competency-based training in dental implantology, and  obtain DoH approval to do so (for more information on the training requirements refer to DoH Standard for Clinical Privileging of Healthcare Workforce and Clinical Services. DOH/HCWS/SD/CLNPRVLG-CS/2. Annex 1: Minimum Requirements for Dental Implantology Privileges)
+
+DoH approval to practice dental implantology must be further affirmed through the healthcare facility privileging system by granting the dentist a detailed list of procedures that is relevant to their profession's scope of practice along other determinants including the case complexity (for more information about the training requirements and privileging requirements refer to DoH Standard for Clinical Privileging of Healthcare Workforce and Clinical Services.)
+
+[PAGE 25]
+The use of LASER in dentistry is considered transformational to patient care. Dentists who wish to utilize a particular LASER in their practice are required to be competent in using that type of LASER through a competency-based training inclusive of LASER safety.
+
+Note: LASER devices are subject to Ministry of Health and Prevention -MOHAP classification, registration and importation requirements.
+
+Dentists utilizing local anesthesia in their practice must maintain a valid Basic Life Support (BLS) certificate.
+
+[PAGE 26]
+The use of Inhalation Sedation (Anxiolysis) in dentistry as a means of anxiety and dental phobia management requires specific training. The training is commonly conducted as part of the postgraduation specialty training programs in pediatric dentistry, special care dentistry and oral surgery. It can also be offered as a standalone certifying competency-based training. Dentists who wish to utilize anxiolytic techniques in their practice must show evidence of competence that satisfies the facility clinical privileges committee requirements and maintain a valid BLS.
+
+The utilization of other sedation modalities in dentistry as a means of anxiety and dental phobia management requires specific training. The training is commonly conducted as part of the postgraduation specialty training programs in pediatric dentistry, special care dentistry and oral surgery. It can also be offered as a standalone certifying competency-based training. Specialist dentists who wish to utilize sedation in their practice must show evidence of training and competence that satisfy the facility clinical privileges committee requirements. Additionally, they must maintain a valid age-appropriate Advance Life Support certificate (ACLS or PALS).
+
+[PAGE 26]
+Dentists specialized in restorative dentistry, practice within the scope of practice of general dentists with focus on disease prevention and teeth restorations. They also may possess varying levels of expanded skills in the fields of endodontics, periodontics, and prosthodontics. The expanded functions are determined and granted through the facility clinical privileging system based on evidence of training and competency.
+
+Restorative dentists who wish to practice dental implant must fulfil the requirement listed in Clause 6.2.
+
+Consultant and specialist dentists may perform certain Non-Surgical Cosmetic Procedures, provided they undertake relevant certifying competency-based training, and obtain DoH approval to do so (for more information on the training requirements refer to DoH Standard for Healthcare Professionals Performing Non-
+
+Performing Non-Surgical Cosmetic Procedures Surgical Cosmetic Procedures.)
+
+[PAGE 26]
+Obstructive Sleep apnea must be diagnosed by a physician who specialized in sleep medicine.
+
+If the physician prescribes an obstructive sleep apnea appliance, a trained dentist who has completed relevant certifying competency-based training may provide the prescribed appliance.

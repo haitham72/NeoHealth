@@ -1,0 +1,544 @@
+DOC_CODE: DoH/ST/SCTMHS/HQS/V1/2026
+TITLE: Standard of Care for Tele-Mental Health Services TEMPLATE 5: Standard
+AUTHORITY: Department of Health - Abu Dhabi
+TIER: official
+VERSION: 1
+
+=== DOCUMENT TEXT ===
+
+[PAGE 3]
+This document specifies the service requirements for the DoH Standard of Care for Tele-mental health services.
+
+The purpose of this document is to define the regulatory requirements for the safe, ethical and high-quality  provision  of  mental  health  services  delivered  remotely  using  telecommunications technology. It is not to replicate the office but rather to enhance services through accessibility.
+
+This document aims to:
+
+Improve access to mental health services across geographic and service barriers
+
+Ensure equivalence of quality between tele-mental health and in-person mental health care
+
+Safeguard patient confidentiality, data security, and privacy
+
+Establish clear clinical governance, documentation, and operational requirements
+
+Define provider qualifications, scope of practice, and accountability
+
+These service requirements apply to:
+
+Healthcare  providers  licensed  by  DoH  in  the  Emirate  of  Abu  Dhabi  delivering  tele-mental health services
+
+All psychiatrists, psychologists, and mental health professionals providing psychiatric consultation remotely
+
+All digital platforms and technology systems used to deliver tele-mental health services, which must comply with Federal Law No. 2 of 2019 on the use of Information and Communication Technology (ICT) in Health Fields and DoH data security standards.
+
+All patients receiving tele-mental health services
+
+This standard must be read in conjunction with the cabinet resolution no. 40 of 2019 concerning the  implementing  regulations  of  federal  decree  law  no.  4  of  2016  on  medical  liability  and  its annexes, federal law no. 10 of 2023 concerning mental health, the DoH Standard for Tele-medicine, Standard for Specialized Mental Healthcare Services, Standard of Care for Depression and Anxiety Disorders and Standard of Care for ADHD.
+
+[PAGE 4-5]
+A DoH license is required for the provision of tele-mental health services.
+
+A facility may seek a license to provide tele-mental health through:
+
+Application for a new facility license to provide tele-mental health services standalone.
+
+Application to add tele-mental health service under an existing DoH licensed facility.
+
+Facilities providing tele-mental health services need to fulfill one of the following facility types, with tele-mental health explicitly listed as a service:
+
+'Tele - Medicine Provider' facility type + Tele-mental health service name or facility sub-type
+
+'Center' facility type + Tele-mental health service name
+
+'Hospital' facility type + Tele-mental health service name
+
+'Clinic - Specialized' facility type + Tele-mental health service name.
+
+The provision of tele-mental health services requires the following minimum specialties:
+
+Psychiatry (DoH licensed) or,
+
+Psychology (DoH licensed)
+
+Additional counseling-based allied health specialties can be included such as social work
+
+The  healthcare  facility  shall  be  fully  integrated  with  the  Malaffi  health  information  exchange platform, ensuring real-time transmission of medical record data.
+
+The healthcare facility shall comply with all the regulatory requirements including, but not limited to, healthcare provider  manual, healthcare professional manual, complaint management, consent, laboratory, Infection control,  first aid training, waste management, fire safety, Unified Healthcare Professional Qualification Requirements (PQR), Medication management, Abu Dhabi occupational safety  and  health  system  framework,  Abu  Dhabi  Healthcare  Information  and  Cyber  Security [ADHICS] Standard, DoH  Data and Digital Governance Standards and DoH  standard on Telemedicine.
+
+The healthcare facility shall comply with the requirements of Abu Dhabi Healthcare Information Security Program and shall be AAMEN Certified.
+
+All diagnosis, counseling and treatment elements of tele-mental health services must comply with the specifications outlined in Cabinet Resolution No. 40, 2019 Governing Tele-Health Services.
+
+[PAGE 5]
+All  healthcare professionals must hold an active DoH professional license and work within  their scope of practice and as per their granted privileges.
+
+All  relevant  DoH-licensed  healthcare  professionals  must  complete  the  Information  and  Cyber Security Awareness courses assigned through the Abu Dhabi Healthcare Cyberlearning Program
+
+All healthcare professionals involved in tele-mental health services must complete and maintain up-to-date training in quality improvement and patient safety, including methodologies such as incident reporting, root cause analysis, risk mitigation strategies and safe telehealth practices as an integral part of their ongoing professional development.
+
+All healthcare providers of tele-mental health services must demonstrate competency in:
+
+Telehealth ethics
+
+Digital confidentiality
+
+Crisis management in remote settings
+
+Healthcare providers of tele-mental health must ensure that it:
+
+Assesses  its  staff's  training  needs  and  provides  training  in  telehealth  technologies,  where identified as necessary.
+
+Maintains up to date records of its staff's telehealth training,  including  the  competencies mentioned in 3.2.4, whenever conducted.
+
+[PAGE 6]
+Tele-mental health may be used for
+
+Initial Mental Health Assessment; permitted when:
+
+Adequate clinical evaluation can be conducted remotely
+
+Patient identity can be verified
+
+Risk assessment is possible
+
+Follow Up Consultations; including:
+
+Medication monitoring
+
+Psychotherapy and psychoeducation
+
+Progress review
+
+Psychotherapy; including:
+
+Cognitive Behavioral Therapy (CBT)
+
+Psychodynamic therapy
+
+Supportive therapy
+
+Behavioral therapy
+
+Tele-mental health should not be used when:
+
+Immediate physical examination is required,
+
+Severe cognitive impairment prevents meaningful participation,
+
+There is significant risk of violence or self-harm without emergency support,
+
+Referral to in-person services is required if any of the above criteria is met,
+
+The patient must be educated on the reasons the service is inappropriate for him/her.
+
+Patients with the criteria below must meet the requirements outlined below:
+
+Patients experiencing acute psychiatric emergencies
+
+Tele-mental health can only be offered for psychiatric emergencies if the provider has an affiliated physical facility offering specialized mental health care.
+
+Any  such  cases  should  be  promptly  handled  as  per  escalation  procedure  for  immediate transfer if needed.
+
+Severe cognitive or sensory impairment
+
+Patients with severe cognitive impairment preventing meaningful participation can receive tele-mental health services after an initial assessment is completed in-person.
+
+All consultations must include the patient's primary caretaker or next of kin while the patient is observed via video.
+
+[PAGE 7]
+DoH licensed tele-mental health service providers must also have the right physical infrastructure for the tele-mental health areas to preserve the privacy, access to and confidentiality of case details
+
+Providers  must  comply  with  Information  and  Communication  Technology  (ICT)  requirements outlined in the DoH Standard on Tele-Medicine and Cabinet Resolution No. 40, 2019 Governing TeleHealth Services including:
+
+Providers  of  tele-medicine  services  must  have  in  place  data  management  systems  and protocols that maintain the confidentiality of gathered personal/patient information and that access to, use, sharing and transmission and reporting of such data complies with relevant DoH regulations.
+
+Ensure the availability of the right ICT infrastructure and supportive environment for the telemedicine service provided including:
+
+Availability of the requisite range of equipment and that equipment choice, maintenance and servicing  support  quality  and  timely  or  real-time,  as  appropriate,  transmission  of  relevant information and/or data and/or medical imaging results.
+
+ICT Policies, procedures and systems to assure the safe, effective and secure transmission of health information and its confidentiality.
+
+Regular  monitoring  and  assessment  of  the  ICT  infrastructure  and  supportive  environment  to assure their effectiveness.
+
+ICT policies, procedures and systems that meet the Abu Dhabi Digital Authority (ADDA) and DoH technical and security regulatory requirements and that afford a high degree of interoperability.
+
+Protocols  for  network  security,  confidentiality,  privacy  and  connectivity  and  protection  of confidentiality with regular assessments to ensure the effectiveness of all systems.
+
+Systems in place to ensure sufficient availability of the network for critical connectivity.
+
+Standard  procedures  for  any  emergency  event  or  technical  failures  for  communication equipment, devices and IT systems to assure the security and protection of the patient health records.
+
+[PAGE 7]
+Prior to initiating any teleconsultation the healthcare professional must verify the patient's:
+
+Full name
+
+Date of birth
+
+Emirates ID
+
+Physical location
+
+Contact number
+
+Emergency contact
+
+[PAGE 8]
+The patient must provide explicit informed consent prior to initiating consultation
+
+All  consent  must  be  documented  in  the  patient's  medical  record  and  comply  with  DoH  'Patient Consent S tandard'
+
+All  patients must be provided with a documented technical failure plan that clearly specifies the steps required in cases of technical difficulties
+
+Informed  consent  must  be  renewed  periodically  every  3  months  in  addition  to  the  following circumstances:
+
+Any changes to treatment
+
+Any changes to technology modality (e.g. video to audio)
+
+Any new risks that arise
+
+Documentation of consent must include, but not limited to:
+
+Date and time of consent
+
+Name of provider obtaining consent
+
+Nature of tele-mental health
+
+Risks and limitations
+
+Confidentiality
+
+Emergency procedures
+
+Patient understanding of the information provided
+
+Patient's capacity for decision -making
+
+Patient agreement
+
+[PAGE 8]
+Healthcare professionals must ensure that tele-mental health consultations occur in private, secure environments.
+
+Healthcare  professionals  must  ensure  no  unauthorized  individuals  during  tele-mental  health consultations.
+
+Healthcare professionals should encourage patients to participate from a private location and avoid public spaces.
+
+Patients should make the necessary arrangements to ensure the privacy of their location.
+
+Every patient must be informed of all his or her rights and responsibilities, including his or her right to protect the confidentiality of his or her information.
+
+Recording of tele-mental health consultations is prohibited.
+
+In cases of recording for teaching purposes, patient consent must be obtained and clearly documented.
+
+[PAGE 9]
+The clinical standard of tele-mental health must be equivalent to in-person care.
+
+Special attention must be given to non-verbal cues including eye movement patterns, changes in posture, etc.
+
+All teleconsultations require video + audio assessment. Cases of audio-only consultations require clear, documented clinical justification.
+
+[PAGE 9]
+Patient assessment must include, but not limited to
+
+Patient suitability for tele-mental health services including, but not limited to:
+
+Patient comfort with remote care
+
+Privacy at patient location
+
+Ability to engage effectively
+
+Presenting complaint including duration of symptoms and functional impact
+
+Psychiatric history
+
+Family psychiatric history
+
+Medical history
+
+Response to treatment (for follow-ups)
+
+Medication side effects, where applicable
+
+Medication history
+
+Psychosocial assessment
+
+Mental status examination including cognition, insight and judgement
+
+Clinical interview
+
+Physical symptoms; if physical examination is required, a referral for in-person assessment must be arranged
+
+Risk assessment
+
+Suicide and safety risk must be conducted on initial assessment and repeated as clinically indicated.
+
+Assessment  of  violence  risk  and  safeguarding  concerns  should  be  documented  as clinically indicated.
+
+[PAGE 9]
+Healthcare  professionals  must  use  recognized  classification  systems  such  as  Diagnostic Statistic Manual (latest version) or International Classification of Diseases.
+
+The use of any standardized tools for assessment/ diagnosis must be clearly documented.
+
+[PAGE 10]
+The  psychiatrist  or  psychologist  must  develop  a documented ,  patient-centered  treatment plan in collaboration with the patient that considers the patient's severity, complexity and preference for treatment modalities including a minimum of:
+
+When medication is prescribed, the following additional parameters must be included in the documented treatment plan
+
+3.10.6.1.1
+
+Patient's goals of treatment
+
+Outcome measures
+
+Baseline assessment or initial scores of any tools used e.g. pHQ-9, GAD-7
+
+Treatment modalities to be used and the discipline responsible for each e.g. psychiatry, psychology
+
+3.10.6.1.5
+
+3.10.6.1.6
+
+Planned review dates of treatment plan
+
+Discharge framework
+
+Referrals required to other multidisciplinary teams
+
+Review of the risks and benefits of the prescribed medication
+
+History of previous treatment
+
+3.10.6.2.3
+
+Pharmacovigilance
+
+Timeframe for therapeutic response
+
+Patient consent, and his or her right to withdrawal
+
+Discussion of the medication management plan with the patient providing information about reasons for offering pharmaceutical treatment, suitable choice and dose of medication (preference should be given to the use of generic medications), expectations upon  initiating therapy, expected onset of therapeutic effects and expected or potential adverse
+
+or withdrawal effects
+
+[PAGE 10-11]
+All  tele-mental  health  consultations  must  be  documented  in  the  Electronic  Health  Record (EHR) and must include, at minimum:
+
+Date and time of consultation
+
+Modality  used  (video/  audio).  For  non-video  consultations  must  include  documented justification
+
+Identity verification confirmation
+
+Informed consent confirmation
+
+Clinical assessment as per 3.10.4
+
+Diagnosis
+
+Treatment plan as per 3.10.6.1 and 3.10.6.2
+
+Prescriptions
+
+Follow-up plans
+
+All  patient  and  family  education  including  the  topics  covered,  materials  shared,  and evidence of patient and/or family understanding.
+
+[PAGE 11]
+To provide any prescriptions, tele-mental health services must have 'tele - prescribing' listed as a service type in the licensing of the provider.
+
+Psychiatric  medications  prescribed  through  tele-mental  health must  comply  with  'DoH standard  for  the  Management  of  Narcotics,  Psychotropic  and  Semi-Controlled  Medicinal Products' and 'Standard for Prescribing High - Risk Controlled Analgesics' .
+
+A sufficient, documented clinical assessment including comprehensive medication reconciliation must be conducted prior to prescribing any medication.
+
+A clear, well documented treatment plan must be in place prior to prescribing any medication
+
+All medications prescribed must be supported by the patient's diagnostic .
+
+The following medications cannot be prescribed through tele-mental health:
+
+Clozapine
+
+Long-acting injectables
+
+Ketamine therapy
+
+Lithium
+
+The following medications can only be prescribed via tele-mental health as a continuation of treatment following an in-person assessment for initiation:
+
+Stimulants
+
+Sedative-hypnotics (excluding hypnotic benzodiazepines)
+
+Benzodiazepines
+
+[PAGE 11-12]
+Continuation of stimulant therapy via tele-mental health requires the following:
+
+Evaluation of treatment response
+
+Assessment of adverse effects
+
+Screening for substance use disorder
+
+Sedative-Hypnotics safeguarding
+
+Continuation of Sedative-Hypnotic therapy via tele-mental health requires the following:
+
+Documentation of sleep disorder
+
+Monitoring of medication effectiveness and side effects
+
+Documentation of comorbid psychiatric conditions
+
+Documented justification of use beyond 4-week duration, in addition to
+
+Documented periodic reassessment of benefit vs. risk
+
+Documented  shared  decision-making,  reflecting  multidisciplinary care.
+
+Monitoring for dependence and tolerance
+
+Continuation of benzodiazepine treatment may be permitted if:
+
+The patient is stabilized on treatment
+
+History of medication misuse has been assessed including substance use disorder history and drug-seeking behavior
+
+National platform for controlled medication has been reviewed
+
+[PAGE 12]
+All tele-mental health providers must comply with DoH tele-medicine requirements outlined in 'DoH Standard on Tele - medicine' .
+
+Facilities providing tele-mental health must develop protocols and pathways that address:
+
+Patient eligibility for tele-mental health
+
+Prescribing practices and polypharmacy monitoring
+
+Suicide risk management
+
+Emergency escalation procedures
+
+Safeguarding procedures
+
+Confidentiality and information governance
+
+Incident reporting, including but not limited to:
+
+Adverse medication events
+
+Breaches of confidentiality
+
+Technology failures affecting patient care
+
+Safeguarding concerns
+
+Facilities  must  develop  systems  to  monitor  the  quality  and  safety  of  tele-mental  health services, including but not limited to:
+
+Patient outcomes
+
+Documentation completeness
+
+Suicide risk assessment rates
+
+Follow up compliance
+
+Rates of non-video consultations
+
+Referral rates for in-person care
+
+Patient experience
+
+[PAGE 13]
+Providers must have crisis intervention protocols with clear referral pathways for escalating care and coordination with emergency departments.
+
+Telemedicine providers providing tele-mental health must have affiliations with providers within the ecosystem to facilitate in-person escalation of care.
+
+Healthcare  professionals must  ensure  the  patient's  emergency  contacts  are  documented  in  the patient's Health Electronic Record.
+
+Healthcare professionals must verify the patient's location at each consultation .
+
+[PAGE 13-14]
+Tele-mental  health  services  for  children  and  adolescents  must  be  provided  by  a  Child  and Adolescent psychiatrist and/or child psychologist.
+
+All  tele-mental  health  consultations  require  video  +  audio  assessment.  Cases  of  audio-only consultations require clear, documented clinical justification.
+
+Patients under the age of 18 years old require (documented) informed consent from a parent or legal guardian.
+
+Children under the age of 14 years old require the parent or legal guardian to be present during the start of the consultation.
+
+Children under the age of 10 years old require the parent or legal guardian to be present during the entire consultation.
+
+The  clinician  may  request  private  discussion  time  with  the  minor,  where  developmentally appropriate.
+
+Providers must conduct a safeguarding assessment for patients under the age of 18 years old which includes an assessment of:
+
+Abuse
+
+Neglect
+
+Bullying
+
+Exploitation
+
+Patients not suitable for tele-mental health include:
+
+Very young children (<7 years old)
+
+Severe developmental disorders requiring physical observation
+
+Acute behavioral crises
+
+Mandatory documentation for patients under the age of 18 includes, but not limited to:
+
+Minor's full name and date of birth
+
+Parent or guardian's name and relationship to the patient
+
+Parent  or  guardian's  identity  verification  using  minimum  2  identifiers  e.g.  (Emirates  ID, passport number, date of birth)
+
+Parent or guardian's contact details
+
+Confirmation that tele-mental health was explained
+
+Date and time of consent
+
+Whether parent or guardian was present + duration of presence
+
+Any private discussions with the patient excluding the parent or guardian
+
+Explanation of confidentiality
+
+Safeguarding assessment including any concerns identified and actions taken
+
+[PAGE 14-15]
+Healthcare facilities shall meet the service specifications and requirements set out in this standard and other relevant federal and local regulations.
+
+Healthcare  professionals  must  provide  services  within  licensed  facilities  that  are  equipped  with  the necessary resources, equipment, and support to ensure patient safety and quality of care, as per DoH licensing and accreditation requirements.
+
+Billing and reimbursement shall be in accordance with Standard Provider Contract, DoH Mandatory Tariff and associated Claims and Adjudication Rules, and the Claims and Adjudication Standard. All documents are available from the DoH website: https://www.doh.gov.ae/shafafiya.
+
+A monitoring and evaluation framework is in place to evaluate the effectiveness, outcomes, and impact of this Standard, and where necessary changes to ensure continuous improvement within the health system  in  line  with  emerging  new  developments  in  healthcare  sciences,  medical  practices,  and healthcare education and training.
+
+Percentage of Patients on Antipsychotic Medication(s) Who Had Complete Routine Investigation and ECG performed within 12 months prior to prescription
+
+Percentage of Patients Who Were Concurrently Prescribed Three or More Different Antipsychotic Medications
+
+Percentage of Patients Who Were Concurrently Prescribed Two or More Different Benzodiazepines
+
+Percentage of Patients Receiving Psychotherapy Who Achieved a Reduction in Depression Symptoms
+
+Percentage of Patients Receiving Psychotherapy Who Achieved a Reduction in Anxiety Symptoms
+
+Percentage of First Available Appointment for Patients Referred for Mental Health Services
+
+DoH may impose sanctions in relation to any breach of requirements under this Standard in accordance with the disciplinary regulation of the healthcare sector.
+
+NA

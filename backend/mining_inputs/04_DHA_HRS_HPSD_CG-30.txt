@@ -1,0 +1,674 @@
+DOC_CODE: DHA/HRS/HPSD/CG-30
+TITLE: Clinical Guidelines for Virtual Management of Headaches in Adults
+AUTHORITY: Dubai Health Authority
+TIER: official
+VERSION: 2
+
+=== DOCUMENT TEXT ===
+
+[PAGE 1]
+Electronic  copy  is  controlled  under  document  control  procedure.  Hard copy is uncontrolled & under responsibility of beholder.
+
+It  is  allowed ONLY to access and keep this document with who issued, who is responsible and to whom it is applicable.
+
+·
+
+Information security code:
+
+ Open
+
+النسخة الإلكترونية هي النسخة المضبوطة وفق إجراء ضبط الوثائق۔ النسخ الورقية غير مضبوطة وتقع عل ى مسؤولية حاملها۔
+
+يسمح بالوصول وبالاحتفاظ بهذه الوثيقة مع مصدرها أو مع المسؤول عن تطبيقها أو مع المطبق عليهم۔
+
+ Shared -Confidential
+
+ Shared-Sensitive
+
+ Shared-Secret
+
+ مشارك -خاص
+
+ مشارك -سري
+
+تصنيف امن المعلومات:  بيانات مفتوحة
+
+ مشارك -حساس
+
+[PAGE 1]
+OF HEADACHE IN ADULTS - 19
+
+Version 2
+
+Issue date: 21/02/2024
+
+Effective date: 21/04/2024
+
+Health Policies and Standards Department Health Regulation Sector (2024)
+
+[PAGE 2-3]
+Health Regulation Sector (HRS) forms an integral part of Dubai Health Authority (DHA) and is mandated by DHA Law No. (14) of the year (2021) amending some clauses of law No. (6) of 2018 pertaining to the Dubai Health Authority (DHA), to undertake several functions including but not limited to:
+
+Developing regulation, policy, standards, guidelines to improve quality and patient safety and promote the growth and development of the health sector;
+
+Licensure and inspection of health facilities as well as healthcare professionals and ensuring compliance to best practice;
+
+Managing patient complaints and assuring patient and physician rights are upheld;
+
+Governing the use of narcotics, controlled and semi-controlled medications;
+
+Strengthening health tourism and assuring ongoing growth; and
+
+Assuring management of health informatics, e-health and promoting innovation.
+
+The DHA Telehealth Clinical Guidelines aim to fulfil the following overarching DHA Strategic Priorities (2026):
+
+Pioneering Human-centered health system to promote trust, safety, quality and care for patients and their families.
+
+Make Dubai a lighthouse for healthcare governance, integration and regulation.
+
+Leading global efforts to combat epidemics and infectious diseases and prepare for disasters.
+
+Pioneering prevention efforts against non-communicable diseases.
+
+Become a global digital health hub.
+
+Foster healthcare education, research and innovation .
+
+[PAGE 3]
+The Health Policy and Standards Department (HPSD) developed this Guideline in collaboration with Subject Matter Experts and would like to acknowledge and thank these health professionals for their dedication toward improving quality and safety of healthcare services in the Emirate of Dubai.
+
+Health Regulation Sector Dubai Health Authority
+
+[PAGE 4-5]
+Clinical Guidelines for Virtual Management of Headaches in Adults
+
+Code:
+
+DHA/HRS/HPSD/CG-30
+
+Issue Nu:
+
+2
+
+Issue Date:
+
+21/02/2024
+
+Effective Date:
+
+21/04/2024
+
+Revision Date:
+
+EXECUTIVE SUMMARY
+
+Telehealth is based on Evidence Based Practice (EBP) which is the conscientious, explicit and
+
+judicious use of current best evidence in making decisions about the care of the individual patient.
+
+It means integrating individual clinical expertise with the best available external clinical evidence
+
+and guidelines from systematic research.
+
+EBP is important because it aims to provide the most effective care virtually, with the aim of
+
+improving patient outcomes.  As health professionals, part of providing a professional service is
+
+ensuring that practice is informed by the best available evidence.
+
+This guideline is presented in the format comprising of clinical history/symptoms, differential
+
+diagnosis,  investigations  and  management.  Identification  of  'Red  Flags'  or  serious  conditions
+
+associated with the disease is an essential part of this telehealth guideline as it aids the physician
+
+to manage patients safely and appropriately by referrals to ER, family physicians or specialists for
+
+a face to face management.
+
+Headache is one of the most common and debilitating pain conditions in the world. According to
+
+the World Health Organization, almost half of the adults in the world have had a headache in the
+
+past  year.  The  World  Health  Organization  also  names  headache  the  third  leading  cause  of
+
+disability in the world and the number one cause of disability in individuals under the age of 50.
+
+Headaches are a major cause of absenteeism from work and school. They also cause a heavy
+
+personal toll in terms of social life, family life, and anxiety and depression due to fear of the next
+
+headache. Headaches affect people of all races, ages, and geographical location
+
+[PAGE 6]
+Virtual Clinical Assessment :  Is  the  evaluation  of  the  patient's  medical  condition  virtually  via telephone or video call consultations, which may include one or more of the following: patient medical history, physical examination and diagnostic investigations.
+
+Patient : The person who receives the healthcare services or the medical investigation or treatment provided by a DHA licensed healthcare professional.
+
+[PAGE 7-9]
+1.
+
+BACKGROUND
+
+1.1.
+
+Headaches are a major cause of absenteeism from work and school. They also cause
+
+a heavy personal toll in terms of social life, family life, and anxiety and depression
+
+due to fear of the next headache. Headaches affect people of all races, ages, and
+
+geographical location.
+
+2.
+
+3.
+
+4.
+
+5.
+
+SCOPE
+
+2.1.
+
+Telehealth services in DHA licensed Health Facilities.
+
+PURPOSE
+
+3.1.
+
+To support the implementation of Telehealth services for patients with complaints
+
+of Headache in Dubai Health Authority (DHA) licensed Health Facilities
+
+APPLICABILITY
+
+4.1.
+
+DHA licensed physicians and health facilities providing Telehealth services.
+
+4.2.
+
+Exclusion for Telehealth services are as follows
+
+4.2.1.
+
+Emergency cases where immediate intervention or referral is required.
+
+4.2.2.
+
+Prescribe Narcotics, Controlled or Semi-Controlled medications.
+
+RECOMMENDATION
+
+5.1.
+
+Causes and Pathophysiology
+
+5.1.1.
+
+Headache pain results from signals interacting among the brain, blood
+
+vessels, and surrounding nerves. During a headache, specific nerves of
+
+the blood vessels are activated and send pain signals to the brain. It's not clear, however, why these signals are activated in the first place.
+
+There is a migraine 'pain center,' or generator, in the mid -brain area. A migraine begins when overactive nerve cells send out impulses to the blood vessels. This causes the release of prostaglandins, serotonin, and other substances that cause swelling of the blood vessels in the vicinity of the nerve endings, resulting in pain.
+
+Headaches that occur suddenly (acute onset) are usually caused by an illness, infection, cold, or fever. Other conditions that can cause an acute headache include sinusitis, pharyngitis, or otitis.
+
+In some cases, the headaches may be the result of a blow to the head (trauma) or, rarely, a sign of a more serious medical condition.
+
+Common  triggers  of  tension-typeheadaches  or  migraine  headaches include:
+
+Emotional stress related to family and friends, work, or school
+
+Alcohol use
+
+Skipping meals
+
+Changes in sleep patterns
+
+Excessive medication use
+
+Depression
+
+Clinical Guidelines for Virtual Management of Headaches in Adults
+
+Code:
+
+DHA/HRS/HPSD/CG-30
+
+Issue Nu:
+
+2
+
+Issue Date:
+
+21/02/2024
+
+Effective Date:
+
+21/04/2024
+
+Revision Date:
+
+Effective Date:
+
+21/04/2024
+
+[PAGE 9-10]
+Other causes of headaches include eye strain or neck and back strain caused by poor posture
+
+Headaches and Hereditary
+
+Headaches,  especially  migraines,  have  a  tendency  to  run  in  families. Children who have migraines usually have at least one parent who also suffers from the condition. Headaches also can be triggered by certain environmental factors that are shared in a fam ily's household, such as:
+
+Second-hand tobacco smoke
+
+Strong odors from household chemicals or perfumes
+
+Exposure to certain allergens
+
+Eating certain foods
+
+Stress, pollution, noise, lighting, and weather changes are other environmental  factors  that  can  trigger  headaches  for  some  people. People with migraines may inherit abnormalities in certain areas of the brain, as well as the tendency to be affected by certain migraine triggers, such as fatigue, bright lights, weather changes, and others.
+
+Types of Headaches
+
+A comprehensive headache classification guide was established by the International Headache Society and includes more than 150 headache
+
+Clinical Guidelines for Virtual Management of Headaches in Adults
+
+Code:
+
+DHA/HRS/HPSD/CG-30
+
+Issue Nu:
+
+2
+
+Issue Date:
+
+21/02/2024
+
+Revision Date:
+
+categories. Based on research, a practical headache classification divides headache into two main categories primary and secondary headaches.
+
+Primary headaches
+
+Primary headaches are those that are not the result of another medical condition.  The  category  includes  tension-type,  migraine,  and  cluster headaches.
+
+Tension-type headaches are the most common type of headache. They tend to be mild to moderate, non-throbbing, and occur on both sides of the  head  (bilateral).  They  usually  do  not  get  worse  during  routine activities  (bending  over,  walking  stairs,  etc.)  Because  tension-type headaches tend to be mild, patients usually treat them successfully with over-the-counter medications. Patients should be aware that using overthe-counter medications too often can lead to long term (chronic) daily headache.
+
+Migraines are the second most common type of primary headaches. The exact  cause  of  migraines  is  unknown,  although  they  are  caused  by changes in the nerves and blood vessels. Migraines are also related to changes in the brain and inherited abnormalities in certain areas of the brain. Migraine pain is moderate to severe, often described as pounding or throbbing. Migraines can last from 4 hours to 3 days and usually occur
+
+Clinical Guidelines for Virtual Management of Headaches in Adults
+
+Issue Nu:
+
+2
+
+[PAGE 10-14]
+Issue Date:
+
+21/02/2024
+
+less than 15 times per month. Migraine symptoms include sensitivity to light, noise or odors, nausea or vomiting; loss of appetite; and stomach upset or abdominal pain.
+
+Cluster headaches are the most severe, type of primary headache. The pain of a cluster headache is intense and has a burning or stabbing quality that is throbbing or constant. The pain is so severe that most patients with cluster headache cannot sit still and will often pace during an attack. The pain is located behind one eye or in the eye region, without changing sides. The term 'cluster headache' refers to headaches that come in a group, or cluster.  Cluster  headaches occur one to eight times per day during  a  cluster  period,  which  may  last  2  weeks  to  3  months.  The headaches may disappear completely (go into "remission") for months or years, only to recur.
+
+New daily persistent headaches (NDPH) start abruptly as a headache that is new to the patient. The patient is able to pinpoint the brief period of  time  (within  72  hour)  when  the  headache  appeared.  While  these headaches may not be related to other diseases, they tend to be constant or persistent without any remission, located on both sides of the head (bilateral), and don't respond to many medications.
+
+21/02/2024
+
+Refer to APPENDIX 1 for characteristics of migraine, tension-type and cluster headache syndromes.
+
+Secondary headaches
+
+Secondary  headaches,  or  those  that  result  from  another  medical  or neurological condition, that includes:
+
+Sinus headaches are associated with a deep and constant pain in the cheekbones, forehead, or bridge of the nose. The pain usually gets worse  with  sudden  head  movement  or  straining  and  occurs  with other acute sinus symptoms, such as nasal discharge, foul taste in the mouth, a feeling of fullness in the ears, fever, facial swelling, and pain over the involved sinus.
+
+Cervicogenic  headache should be considered in patients with neck pain and occipital head pain, with or without pain radiation to other head regions (or face), when pain is precipitated or aggravated by neck movements or sustained neck postures and there are abnormalities  on  examination  of  the  neck  (abnormal  movement, muscle tone, or muscle tenderness). If the headache occurs after neck trauma  and  persists  for  more  than  3  months,  the  term  "chronic headache  attributed  to  whiplash  injury"  should  be  used.  Caution: Patients with migraine often complain of neck discomfort during a
+
+Clinical Guidelines for Virtual Management of Headaches in Adults
+
+Code:
+
+DHA/HRS/HPSD/CG-30
+
+Issue Nu:
+
+2
+
+Issue Date:
+
+21/02/2024
+
+Effective Date:
+
+21/04/2024
+
+Revision Date:
+
+21/02/2029                     Page 12 of 36
+
+headache and may have muscular tender points. These appear to be secondary to the migraine pain, and do not necessarily indicate a neck disorder as cause of the headache.
+
+Post-traumatic headache should be diagnosed when a new headache disorder begins within 7 days of a head injury. These may occur even after  a  mild  head  injury.  If  the  headache  persists  for  more  than  3 months, it is termed a chronic posttraumatic headache.
+
+Temporomandibular disorder should be considered in patients with headache and/or facial pain who have painful jaw clicking, jaw locking, tenderness of muscles of mastication, tenderness of the temporomandibular joints, or limitation of mandibular movement.
+
+There are many potential reasons for secondary headache, such as:
+
+Blood vessel disorders in the head or neck, such as a brain aneurysm, a carotid artery tear, or inflammation (temporal arteritis)
+
+Infection, such as meningitis or encephalitis
+
+Medication  related:  The  medication  may  be  the  direct  cause  of headaches.  For  example,  headache  is  a  side  effect  of  the  blood pressure medicine nifedipine.
+
+Withdrawal  headache.  Headaches  can  occur  when  a  substance  or medication is suddenly stopped. Examples include caffeine
+
+withdrawal headache or headache after abruptly stopping long term
+
+use of pain relievers.
+
+[PAGE 14-16]
+The appropriate evaluation of headache complaints includes the following:
+
+Rule  out  serious  underlying  pathology  and  look  for  other  secondary causes of headache
+
+Determine the type of primary headache using the patient history as the primary diagnostic tool. There may be overlap in symptoms, particularly between  migraine  and  tension-type  headache  (TTH)  and  between migraine and some secondary causes of headache such as sinus disease.
+
+A  systematic  case  history  is  the  single  most  important  factor  in  establishing  a headache  diagnosis  and  determining  the  future  work-up  and  treatment  plan. Imaging is not necessary in the vast majority of patients presenting with headache. Nevertheless,  brain  imaging  is  warranted  in  the  patients  with  danger  signs suggesting a secondary cause of headache
+
+History and evaluation
+
+A thorough history can determine the need for further investigations and imaging exams. A systematic history should include the following:
+
+Age at onset · Presence or absence of aura and prodrome
+
+Frequency, intensity, and duration of attack
+
+Number of headache days per month
+
+Time and mode of onset
+
+Quality, site, and radiation of pain
+
+Associated symptoms and abnormalities
+
+Family history of migraine
+
+Precipitating and relieving factors
+
+Exacerbation or relief with change in position (e.g., lying flat versus upright)
+
+Effect of activity on pain
+
+Relationship with food/alcohol
+
+Response to any previous treatment
+
+Review of current medications
+
+Any recent change in vision
+
+Association with recent trauma Any recent changes in sleep, exercise, weight, or diet
+
+State of general health
+
+Change in work or lifestyle (disability)
+
+Change in method of birth control (women)
+
+Possible association with environmental factors
+
+Effects of menstrual cycle and exogenous hormones (women)
+
+Assessment of the mental status should be carried out by the treating doctor  virtually.  The  examination  of  an  adult  (via  video  call)  with headache complaints should include:
+
+Level of orientation
+
+Level of consciousness
+
+Speech
+
+Face - look for any weakness/ deviation etc.
+
+Low-risk  features:  The  following  features  can  serve  as  indicators  of patients who are unlikely to have serious underlying cause for headache
+
+Age ≤50 years
+
+Features typical of primary headaches
+
+History of similar headache
+
+No abnormal neurologic findings
+
+No concerning change in usual headache pattern
+
+No high-risk comorbid conditions
+
+No new or concerning findings
+
+Patients with headache who meet these criteria do not require referral and imaging.
+
+Clinical Guidelines for Virtual Management of Headaches in Adults
+
+Code:
+
+DHA/HRS/HPSD/CG-30
+
+Issue Nu:
+
+2
+
+Issue Date:
+
+21/02/2024
+
+Revision Date:
+
+[PAGE 17]
+The  mnemonic  SNOOP  is  a  reminder  of  the  danger  signs  ("red  flags")  for  the presence of serious underlying disorders that can cause acute or subacute headache.
+
+S ystemic symptoms, illness, or condition (e.g., fever, weight loss, cancer, pregnancy, immunocompromised state, including HIV)
+
+N eurologic symptoms (e.g., confusion, impaired alertness or consciousness, blurred vision, focal neurologic symptoms, neck rigidity, or seizures)
+
+O nset is new  (particularly for age >50  years) or sudden (e.g., "thunderclap")
+
+O ther associated conditions or features (e.g., head trauma, drug use, or toxic  exposure;  headache  awakens  from  sleep,  is  worse  with  Valsalva manoeuvres, or is precipitated by cough, exertion, or sexual activity)
+
+P revious headache history with headache progression or change in attack frequency, severity, or clinical features
+
+Any of these findings should prompt referral for face to face assessment and further investigation,  including  brain  imaging  with  magnetic  resonance  imaging  (MRI)  or computed tomography (CT).
+
+[PAGE 18-19]
+A small proportion of patients present with serious or life-threatening headaches require referral for emergency diagnosis and treatment. These include:
+
+Sudden  onset  "thunderclap"  headache - Severe  headache  of  sudden onset (i.e., that reaches maximal intensity within a few seconds or less than  one  minute  after  the  onset  of  pain)  is  known  as  thunderclap headache because its explosive and unexpected nature is likened to a "clap of thunder." Thunderclap headache requires urgent evaluation as such headaches may be harbingers of subarachnoid haemorrhage and other potentially ominous etiologies.
+
+Acute or subacute neck pain or headache with Horner syndrome and/or neurologic deficit - Cervical artery dissection is usually associated with local  symptoms  including  neck  pain  or  headache,  and  often  results  in ischemic stroke or transient ischemic attack.
+
+Headache  with  suspected  meningitis  or  encephalitis - Fever,  altered mental  status,  with  or  without  nuchal  rigidity  may  indicate  central nervous system infection.
+
+Headache  with  global  or  focal  neurologic  deficit  or  blurred  vision - Headache  is  the  primary  symptom  of  increased  ICP,  which  should  be
+
+suspected when accompanied by blurred vision, focal neurologic deficit, or repeated episodes of nausea and vomiting.
+
+Headache with orbital or periorbital symptoms - Headache with visual impairment,  periorbital  pain,  or  ophthalmoplegia  could  indicate  acute angle closure glaucoma, infection, inflammation, or tumor involving the orbits.
+
+Headache and possible carbon monoxide exposure.
+
+[PAGE 19-20]
+Imaging is usually not warranted for patients with a stable migraine pattern and a normal neurologic assessment, although a lower threshold for imaging is reasonable for patients with atypical migraine features or in patients who do not fulfil the strict definition of migraine. As an example, imaging is indicated for patients presenting with recent-onset headache that is featureless (i.e., bilateral, non-throbbing, without nausea and without sensitivity to light, sound, or smell). However, imaging for no other  reason  than  reassurance  is  sometimes  performed  in  clinical  practice.  It  is important that the clinician provide the patient with a clear explanation of both the diagnosis and the reason for imaging, especially if it is being performed in someone suspected of having primary headache
+
+Imaging - CT or MRI of the head is the preferred imaging exam for headache and common modalities used to diagnose many causes of secondary headache. Choice of
+
+exact  body  part  (e.g.,  head,  neck,  face)  and  use  of  contrast  varies  with  clinical scenario.
+
+Indications  for  imaging - Patients  with  the  danger  signs  or  other  features suggesting a secondary headache source will require imaging
+
+Lumbar  puncture - LP  for  CSF  analysis  is  urgently  indicated  in  patients  with headache  when  there  is  clinical  suspicion  of  subarachnoid  haemorrhage  in  the setting of a negative or normal head CT. In addition, LP is indicated when there is clinical suspicion of an infectious, inflammatory, or neoplastic aetiology of headache.
+
+Telemedicine physician will refer patients to concerned specialist if CT scan, MRI, LP or any further investigation as needed.
+
+[PAGE 20-21]
+Refer to APPENDIX 1 for the Virtual Management of Headache in Adults Algorithm.
+
+The  proper  treatment  will  depend  on  several  factors,  including  the  type  and frequency  of  the  headache  and  its  cause.  Not  all  headaches  require  medication management. Treatment may include education, counselling, stress management as well as medications. T he treatment prescribed will be tailored to meet the patient's specific needs.
+
+Headache  education  includes  identifying  and  recording  what  triggers headache, such as lack of sleep, not eating at regular times, eating certain
+
+foods or additives, caffeine, environment, or stress. Avoiding headache triggers is an important step in successfully treating the headaches.
+
+Counselling  in  the  form  of  one-on-one  sessions,  group  therapy,  or support groups can help patient  identify  headache  triggers  and  teach them useful coping techniques.
+
+Stress management. To successfully treat headaches, it is important to identify what causes or triggers the headaches. Patient should learn ways to cope or remove  the  stressful activities or events. Relaxation techniques are helpful  in  managing  stress  and  include  deep  breathing exercises, progressive muscle relaxation, mental imagery relaxation.
+
+Medications. There are three types of headache medications, including symptomatic relief, abortive (treats an individual attack), and preventive medications (reduce the frequency and severity of individual attacks).
+
+Some people can treat their headaches without medications. Patient can apply  an  ice  pack  or  heating  pad  to  any  tight  areas  in  the  neck  and shoulders or also can try massaging the area.
+
+[PAGE 21-24]
+Migraine Headache:
+
+Migraine  is  a  common  and  disabling  primary  headache  disorder. Practice has gradually shifted from a treatment paradigm involving
+
+21/02/2024
+
+gradually  escalating  abortive  therapy  towards  now  starting  with combination therapy - non-steroidal anti-inflammatory drugs (NSAIDs) or paracetamol and triptan.
+
+Triptan  plus  NSAIDs  combination  was  more  effective  than  other acute migraine approaches, including triptan monotherapy, therefore, offers patients the best hope of rapid migraine resolution for an acute attack. The guideline's recommendation includes an antiemetic, even if  nausea  is  not  pronounced,  to  counter  gastric  stasis  and  so facilitating tablet absorption and pain relief. The European Medicines Agency issued a warning about domperidone being associated with a small risk of sudden cardiac death and fatal arrhythmias, particularly in  those  aged  over  60  years.  They  recommended  avoiding  its prolonged use or doses above 30 mg  daily. Patients taking medications that prolong the electrocardiography Q wave to T wave interval should avoid it and those with cardiac comorbidities should exercise caution.
+
+Acute Migraine Management
+
+National Institute of Health and Care Excellence (NICE) guidelines
+
+Combination therapy: triptan + non-steroidal anti-inflammatory drug (NSAID) or paracetamol + antiemetic
+
+21/02/2024
+
+Alternatively (per patient request): a single agent (triptan, NSAID or paracetamol) ± antiemetic
+
+NSAID
+
+Aspirin 600 - 900 mg (ideally effervescent)
+
+Ibuprofen 600 - 800 mg
+
+Naproxen 500 - 1000 mg
+
+Diclofenac 50 - 75 mg (or 100 mg suppository)
+
+Tolfenamic acid 200 mg
+
+Antiemetics for nausea and/or as a prokinetics such as
+
+Domperidone 10 mg up to three times a day (or 60 mg suppository)
+
+Metoclopramide 10 mg
+
+The triptans It is advised to use a triptan at the start of the headache phase of a migraine attack, since there is no evidence of efficacy if taken during preceding aura. Using a triptan at the start of the headache may reduce  headache  recurrence,  prevent  disability  and  possibly  reduce central  sensitisation.  The  difficulty  arises  in  chronic  migraines,  since taking  the  triptan  early  can  lead  to  a  pattern  of  increasing  use  and medication-overuse  headache.  We  should  try  to  help  these  people  to identify  early  features  that  might  indicate  an  ensuing  severe  migraine attack,  as  the  triptan  should  be  reserved  for  these  headaches.  It  is
+
+Issue Nu:
+
+2
+
+21/02/2024
+
+Effective Date:
+
+important to explain that the triptan should be used, on average, on no more than 2 days per week (10 days per month) to reduce the risk of a triptan-overuse headache.
+
+The triptans - eletriptan, naratriptan, rizatriptan, sumatriptan, zolmitriptan - are  5HT1B/1D  receptor  agonists  with  vasoconstrictive effects on blood vessels. The choice of triptan depends on efficacy, side effects,  the  duration  of  the  headache,  coexisting  vomiting,  the  most effective use of a triptan depends partly upon its route of administration. Thus, the most effective sumatriptan preparation for acute relief at 2 h (based  on  numbers  needed  to  treat)  was  subcutaneous  6  mg,  then intranasal 20 mg and then oral 100 mg formulations. While subcutaneous sumatriptan is most effective, it has more adverse events and costs more than triptans by other routes. The route of administration of the triptan is therefore best tailored to the individual's migraine attack. For example, if the migraine has a rapid onset, patients may  try  a  fast-acting  oral  triptan  such  as  rizatriptan,  zolmitriptan  or eletriptan,  or  nasal  preparations  that  are  faster  still  (zolmitriptan  and sumatriptan); alternatively, the subcutaneous sumatriptan, which has the fastest onset of action.
+
+[PAGE 25-26]
+We find the triptans to be well tolerated overall. The reported incidence of minor adverse effects does not differ markedly between the triptans but depends on speed of onset of action; people taking subcutaneous sumatriptan report more  adverse effects than those taking oral sumatriptan.  The  triptans  with  a  longer  half-life  and  slower  onset  of action, such as naratriptan have fewer side effects. The adverse effects of  the  oral  triptans  are  similar,  although  dizziness  and  sedation  occur more  with  rizatriptan  and  zolmitriptan  than  with  sumatriptan  and naratriptan  There  are  cardiovascular  safety  concerns  associated  with triptan use due to the presence of 5HT1B receptors on vascular smooth muscle.  We  avoid  triptans  in  people  with  uncontrolled  hypertension, cardiovascular and/or cerebrovascular disease. However, in clinical trials, cardiovascular complications were fewer than one per million exposed, and a recent systematic review of cardiovascular safety data identified no  strong  cardiovascular  safety  issues.  Triptan  sensations  such  as burning or tingling in the chest or limbs are relatively common (7%), but clinicians can reassure patients that this is not associated with cardiac ischaemia
+
+Triptans in pregnancy and breast feeding
+
+The  major  concern  for  migraine  medications  during  pregnancy  is  of potential teratogenicity. Practice during pregnancy  is to  continue triptans  only  if  benefit  outweighs  risk.  The  current  NICE  headache guideline states that triptans can and should be considered for pregnant patients experiencing disabling headache attacks when other therapies have proven unhelpful and when patients have been counselled about their use in pregnancy. Triptans are generally considered compatible with breast feeding as less than 10% of the drug dose appears in breast milk; however, there are no large studies in this area.
+
+[PAGE 26-28]
+Migraine  preventative  treatments  aim  to  reduce  the  frequency  and severity of attacks and may help reduce the frequency of analgesic use. It  is  usually  unrealistic  for  patients  to  expect  complete  headache cessation and it can be useful to have a discussion with patients about realistic goals of treatment. Prophylactic treatment is typically considered  if  there  are  more  than  four  migraine  days  per  month. However, preventative therapy may also be given for less frequent but very disabling attacks.
+
+21/02/2024
+
+Most  medications  used  as  preventatives  were  originally  used  for  a different indication,  and the evidence for individual agents varies. The agents  used  can  be  classified  into  antiepileptic  drugs,  beta  blockers, antidepressants, serotonergic antagonists (which will require a face to face consultation), calcium channel antagonists, angiotensin modulators (ACE  inhibitors  and  angiotensin-receptor  inhibitors),  nutrients  and herbal products.
+
+The current NICE guideline suggests first trying either topiramate or a beta  blocker.  If  both  are  ineffective  or  contraindicated,  then  consider acupuncture, botulinum toxin or riboflavin.
+
+It is important to note that topiramate, flunarizine and beta blockers can exacerbate depression. Weight gain can be a concern with beta blockers, pizotifen,  flunarizine  and  valproate.  Beta  blockers  cannot  be  used  in people with asthma (candesartan is a useful alternative with equivalent efficacy  to  propranolol).  Topiramate  can  reduce  the  efficacy  of  the contraceptive pill. Also, many agents are potentially teratogenic and this should be mentioned to women of childbearing age. The general rules of thumb are to start treatment at a low dose, gradually increasing to an initial target dose. If there is no effect and no significant side effects, the dose  can  be  further  increased  for  some  drugs.  We  continue  the
+
+medication for at least 3 months to evaluate efficacy. If effective (about a 50% improvement) the drug may be continued for 6 months, although there is some evidence of fewer rebound headaches if continued for 12 months.
+
+Refer  to  APPENDIX  3  for  summary  of  medication  used  to  prevent migraine.
+
+[PAGE 28-29]
+For  patients  with  pure  episodic  tension-type  headache  (TTH),  we recommend treatment with simple analgesics such as nonsteroidal antiinflammatory drugs (NSAIDs) or aspirin. Reasonable choices include a single dose of ibuprofen (400 mg), naproxen sodium (220 mg or 550 mg) or aspirin (650 to 1000 mg). Acetaminophen (1000 mg) is probably less effective than NSAIDs or aspirin, but is preferred in pregnancy.
+
+The combination of caffeine with the simple analgesics acetaminophen, aspirin,  or  ibuprofen  is  more  effective  for  the  treatment  of  TTH  than simple analgesic monotherapy, although side effects are likely to be more frequent with combination therapy. The role of caffeine combined with NSAIDs other than ibuprofen has not been adequately examined. For patients with TTH  that  is  unresponsive  or poorly responsive to monotherapy  with  simple  analgesics,  caffeine  combined  with  simple
+
+analgesics is used. A reasonable choice is a single dose of two tablets of combined acetaminophen 250 mg, aspirin 250 mg, and caffeine 65 mg.
+
+Cluster headache:
+
+Treatment strategies are either abortive (acute pain relief), transitional or prophylactic. The first-line abortive strategy is subcutaneous sumatriptan 6 mg (maximum two per day), with most people obtaining pain relief within 15 min (effective in 75%). If this cannot be used or tolerated,  intranasal  sumatriptan  20  mg  or  zolmitriptan  5  mg  are alternatives but can take up to 30 min for their full effect. Home oxygen can be very useful at high flow, 100% concentration, via a non-rebreathe mask at 12 - 15 L/min for up to 20 min.
+
+[PAGE 29-31]
+Referral Criteria to Family Physician/ Specialist
+
+Headaches that are increasing in intensity or frequency over time
+
+Headaches that require daily use of pain-relieving medications
+
+Headache not responding to medication
+
+Patient needs CT scan, MRI, or any further investigation
+
+Any atypical headache presentation
+
+Older than 50 years
+
+Referral to ER
+
+Headache that occurs after a head injury
+
+Headache associated with:
+
+Fever
+
+Vomiting
+
+Neck stiffness
+
+Blurred vision
+
+Difficulty speaking
+
+Numbness or weakness of the arms or legs
+
+Altered mental status of Loss of consciousness
+
+Very severe headache that comes on suddenly
+
+Severe headache in pregnancy
+
+Tenderness over temporal artery.
+
+Metamorphosis. [Internet]. Treatment for Headache Pain. [cited 2022 Apr 26]. Available from: https://metamorphosispain.com/home/pain-management-services/treatment-for-headachepain/
+
+Wooton, R., Wippold F., and Whealy M., [Internet]. Evaluation of headache in adults. UpToDate. [updated 2021; cited 2022 Apr 26]. Available from:
+
+https://www.uptodate.com/contents/evaluation-of-headache-in-adults
+
+Sinclair, A., Sturrock, A., Davies, B., and Matharu, M., Headache management: pharmacological approaches. Pract Neurol. 2015;15:411-423
+
+APPENDIX 1 - CHARACTERISTICS OF MIGRAINE, TENSION-TYPE AND CLUSTER

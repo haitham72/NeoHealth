@@ -1,0 +1,279 @@
+{
+  "DOH/SOP/DADH/V2": {
+    "status": "done",
+    "kept": 6,
+    "source": "suggestions.w7.jsonl",
+    "at": "2026-09-13T19:48:00"
+  },
+  "DHA/HRS/HLD/MA-1": {
+    "status": "done",
+    "kept": 10,
+    "source": "suggestions.w7.jsonl",
+    "at": "2026-09-13T19:48:00"
+  },
+  "DOH/HRM/REG-01": {
+    "status": "done",
+    "kept": 10,
+    "source": "suggestions.w4.jsonl",
+    "at": "2026-09-13T19:48:00"
+  },
+  "DoH/ST/CEPAR/SM/V2/2025": {
+    "status": "done",
+    "kept": 3,
+    "source": "recheck (loaded to DB)",
+    "at": "2026-09-13T19:50:06"
+  },
+  "DoH/Policy/HLS/TRE/V1/2025": {
+    "status": "done",
+    "kept": 10,
+    "dropped": 0,
+    "verified": "external",
+    "output": "suggestions.w01.jsonl",
+    "at": "2026-09-13T19:52:30"
+  },
+  "DHA/HRS/HPSD/CG-24": {
+    "status": "done",
+    "kept": 10,
+    "dropped": 0,
+    "verified": "external",
+    "output": "suggestions.w02.jsonl",
+    "at": "2026-09-13T19:52:30"
+  },
+  "DoH/SD/ARTPX/V": {
+    "status": "done",
+    "kept": 10,
+    "dropped": 0,
+    "verified": "external",
+    "output": "suggestions.w03.jsonl",
+    "at": "2026-09-13T19:52:30"
+  },
+  "DHA/HRS/HPSD/CG-30": {
+    "status": "done",
+    "kept": 10,
+    "dropped": 0,
+    "verified": "external",
+    "output": "suggestions.w04.jsonl",
+    "at": "2026-09-13T19:52:30"
+  },
+  "DoH/ST/CPHW-CS/HLME/V3/2025": {
+    "status": "done",
+    "kept": 10,
+    "dropped": 0,
+    "verified": "external",
+    "output": "suggestions.w05.jsonl",
+    "at": "2026-09-13T19:52:30"
+  },
+  "DoH/ST/DGS/DDGO/V1/2025": {
+    "status": "done",
+    "kept": 10,
+    "dropped": 0,
+    "verified": "external",
+    "output": "suggestions.w06.jsonl",
+    "at": "2026-09-13T19:52:30"
+  },
+  "DHA/HRS/HPSD/CG-35": {
+    "status": "done",
+    "kept": 10,
+    "dropped": 0,
+    "verified": "external",
+    "output": "suggestions.w07.jsonl",
+    "at": "2026-09-13T19:52:30"
+  },
+  "DHA/HRS/HPSD/CG-46": {
+    "status": "done",
+    "kept": 10,
+    "dropped": 0,
+    "verified": "external",
+    "output": "suggestions.w08.jsonl",
+    "at": "2026-09-13T19:52:30"
+  },
+  "DOH/STR/CPL/3/2023": {
+    "status": "done",
+    "kept": 10,
+    "dropped": 0,
+    "verified": "external",
+    "output": "suggestions.w09.jsonl",
+    "at": "2026-09-13T19:54:53"
+  },
+  "DoH/POL/HLME/HWWP/V1": {
+    "status": "done",
+    "kept": 9,
+    "dropped": 0,
+    "verified": "external",
+    "output": "suggestions.w10.jsonl",
+    "at": "2026-09-13T19:54:53"
+  },
+  "DoH/STD/HQS/QPS/V2/2026": {
+    "status": "done",
+    "kept": 10,
+    "dropped": 0,
+    "verified": "external",
+    "output": "suggestions.w11.jsonl",
+    "at": "2026-09-13T19:54:53"
+  },
+  "DoH/ST/SCTMHS/HQS/V1/2026": {
+    "status": "done",
+    "kept": 10,
+    "dropped": 0,
+    "verified": "external",
+    "output": "suggestions.w12.jsonl",
+    "at": "2026-09-13T19:54:53"
+  },
+  "DHA/HRS/HPSD/ST-22": {
+    "status": "done",
+    "kept": 10,
+    "dropped": 0,
+    "verified": "external",
+    "output": "suggestions.w13.jsonl",
+    "at": "2026-09-13T19:54:53"
+  },
+  "DOH/SOP/HWF/GDSD/V2/2024": {
+    "status": "done",
+    "kept": 10,
+    "dropped": 0,
+    "verified": "external",
+    "output": "suggestions.w14.jsonl",
+    "at": "2026-09-13T19:54:53"
+  },
+  "DoH/Policy/HCWS/HWG/V1/2024": {
+    "status": "done",
+    "kept": 9,
+    "dropped": 0,
+    "verified": "external",
+    "output": "suggestions.w15.jsonl",
+    "at": "2026-09-13T19:54:53"
+  },
+  "DoH/Policy/TRP-OMM/HPS/V1/2025": {
+    "status": "done",
+    "kept": 10,
+    "dropped": 0,
+    "verified": "external",
+    "output": "suggestions.w16.jsonl",
+    "at": "2026-09-13T19:54:53"
+  },
+  "DHA/HRS/HPSD/CG-31": {
+    "status": "done",
+    "kept": 10,
+    "dropped": 0,
+    "verified": "external",
+    "output": "suggestions.w17.jsonl",
+    "at": "2026-09-13T19:54:53"
+  },
+  "DoH/ST/DDGO/AR/V1/2026": {
+    "status": "done",
+    "kept": 5,
+    "dropped": 0,
+    "verified": "external",
+    "output": "suggestions.w18.jsonl",
+    "at": "2026-09-13T19:56:31"
+  },
+  "DOH/SOP/PPTSOP/V1/2024": {
+    "status": "done",
+    "kept": 5,
+    "dropped": 0,
+    "verified": "external",
+    "output": "suggestions.w19.jsonl",
+    "at": "2026-09-13T19:56:31"
+  },
+  "DOH/ST/HCFS/SSMHS/V1/2024": {
+    "status": "done",
+    "kept": 5,
+    "dropped": 0,
+    "verified": "external",
+    "output": "suggestions.w20.jsonl",
+    "at": "2026-09-13T19:56:31"
+  },
+  "DHA/HRS/HLD/MA-2": {
+    "status": "done",
+    "kept": 5,
+    "dropped": 0,
+    "verified": "external",
+    "output": "suggestions.w21.jsonl",
+    "at": "2026-09-13T19:56:31"
+  },
+  "DHA/HRS/HPSD/ST-27": {
+    "status": "done",
+    "kept": 5,
+    "dropped": 0,
+    "verified": "external",
+    "output": "suggestions.w22.jsonl",
+    "at": "2026-09-13T19:56:31"
+  },
+  "DHA/HRS/HPSD/HP-20": {
+    "status": "done",
+    "kept": 5,
+    "dropped": 0,
+    "verified": "external",
+    "output": "suggestions.w25.jsonl",
+    "at": "2026-09-13T19:56:31"
+  },
+  "DOH/HRM/PROF-01": {
+    "status": "done",
+    "kept": 5,
+    "dropped": 0,
+    "verified": "external",
+    "output": "suggestions.w26.jsonl",
+    "at": "2026-09-13T19:56:31"
+  },
+  "DHA/HRS/HPSD/ST-14": {
+    "sensitive_flags": 2,
+    "routing": "local-only",
+    "note": "flagged in cloud batch + individual; max 2 cloud attempts reached",
+    "status": "skip",
+    "reason": "sensitive; local stopped per policy; never retry",
+    "at": "2026-09-13T20:03:10"
+  },
+  "DHA/HRS/HPSD/ST-25": {
+    "sensitive_flags": 2,
+    "routing": "local-only",
+    "note": "flagged in cloud batch + individual; max 2 cloud attempts reached",
+    "at": "2026-09-13T20:03:10",
+    "status": "skip",
+    "reason": "sensitive; local stopped per policy; never retry"
+  },
+  "RESEARCH/ELHAYEK-01": {
+    "status": "done",
+    "kept": 3,
+    "dropped": 0,
+    "verified": "external",
+    "output": "suggestions.w27.jsonl",
+    "at": "2026-09-13T20:03:10"
+  },
+  "RESEARCH/ELHAYEK-02": {
+    "status": "done",
+    "kept": 3,
+    "dropped": 0,
+    "verified": "external",
+    "output": "suggestions.w28.jsonl",
+    "at": "2026-09-13T20:03:10"
+  },
+  "RESEARCH/ELHAYEK-03": {
+    "status": "done",
+    "kept": 3,
+    "dropped": 0,
+    "verified": "external",
+    "output": "suggestions.w29.jsonl",
+    "at": "2026-09-13T20:03:10"
+  },
+  "MOHAP/HR/2018": {
+    "status": "done",
+    "kept": 3,
+    "dropped": 0,
+    "verified": "external",
+    "output": "suggestions.w30.jsonl",
+    "at": "2026-09-13T20:03:10"
+  },
+  "MOHAP/ODSC/2018": {
+    "status": "done",
+    "kept": 3,
+    "dropped": 0,
+    "verified": "external",
+    "output": "suggestions.w31.jsonl",
+    "at": "2026-09-13T20:03:10"
+  },
+  "MOHAP/UG/LIC-2025": {
+    "status": "skip",
+    "reason": "sensitive flagged (cloud); never retry",
+    "at": "2026-09-13T20:03:10"
+  }
+}

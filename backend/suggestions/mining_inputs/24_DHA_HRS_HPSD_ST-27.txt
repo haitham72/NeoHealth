@@ -1,0 +1,2311 @@
+DOC_CODE: DHA/HRS/HPSD/ST-27
+TITLE: Dubai Health Authority
+AUTHORITY: Dubai Health Authority
+TIER: official
+VERSION: 1
+
+=== DOCUMENT TEXT ===
+
+[PAGE 1]
+ Electronic  copy  is  controlled  under  document  control  procedure.  Hard copy is uncontrolled & under responsibility of beholder.
+
+ It  is allowed ONLY to access and keep this document with who issued, who is responsible and to whom it is applicable.
+
+ Information security code:
+
+ Open
+
+ Shared-Sensitive
+
+ النسخة  الإلكترونية  هي  النسخة  المضبوطة  وفق  إجراء  ضبط  الوثائق۔  النسخ  الورقية  غير مضبوطة وتقع عل ى مسؤولية حاملها۔
+
+ يسمح بالوصول وبالاحتفاظ بهذه الوثيقة مع مصدرها أو مع المسؤول عن تطبيقها أو مع المطبق عليهم۔
+
+ Shared -Confidential
+
+ Shared-Secret
+
+ شارك -سري
+
+ مشارك -سري
+
+ تصنيف امن المعلومات:  بيانات مفتوحة
+
+ مشارك -حساس
+
+[PAGE 1]
+Version 1
+
+Issue Date: 10/03/2022
+
+Effective Date: 10/03/2022
+
+Health Policies and Standards Department
+
+Health Regulation Sector (2022)
+
+[PAGE 2]
+Health Regulation Sector (HRS) forms an integral part of Dubai Health Authority (DHA) and is mandated by DHA Law No. (6) of 2018 to undertake several functions including but not limited to:
+
+ Developing regulation, policy, standards, guidelines to improve quality and patient safety and promote the growth and development of the health sector.
+
+ Licensure and inspection of health facilities as well as healthcare professionals.
+
+ Ensuring compliance to best practice.
+
+ Managing patient complaints and assuring patient and physician rights are upheld.
+
+ Managing health advertisement and marketing of healthcare products.
+
+ Governing the use of narcotics, controlled and semi-controlled medications.
+
+ Strengthening health tourism and assuring ongoing growth.
+
+ Assuring management of health informatics, e-health and promoting innovation.
+
+[PAGE 2]
+The Health Policy and Standards Department (HPSD) developed this Standard in collaboration with Medical Education and Research Department (MERD) and other Subject Matter Experts. HPSD would like to acknowledge and thank these health professionals for their dedication toward improving quality and safety of healthcare services in the Emirate of Dubai.
+
+[PAGE 4]
+Medical  education  and  training  is  essential  to  achieve  and  maintain  a  stable  and  qualified professional  medical  workforce  in  the  Emirate  of  Dubai.  DHA  has  developed  a  standard  for Approved  Practice  Setting  to  assure  the  provision  of  the  highest  levels  of  safety  and  are maintained  within  DHA  licensed  facilities.  The  standards  aligns  with  the  evolving  healthcare needs  and  international  best  practice  and  defines  the  criteria  that  a  healthcare  facility  must satisfy in order to be eligible as an Approved Practice Setting. The standards includes:
+
+ Registration and licensure procedure requirements
+
+ The types of Approved Practice Setting.
+
+ The licensure process for each type of Approved Practice Setting.
+
+ The general requirements for each type of Approved Practice Setting.
+
+ The policies, procedures, protocols and clinical governance that should be in place for the provision of Approved Practice Setting.
+
+The  standard  regulates  the  process  of  both  undergraduates  and  postgraduates'  placement according  to  graduates'  interests;  strategic  needs  and  health  facility  operational  capacity.  The ambition is  to  protect,  promote and improve  healthcare services  in  the  Emirate  of  Dubai  and become  the  number  one  destination  for  medical  education  and  research.  Facilities  seeking  to deliver training are encourage to review the Standard. Eligibility for Approved Practice Setting will  consider existing resources, experience, and academic achievements of the healthcare facility.
+
+[PAGE 5-8]
+Accreditation: is  a  formal  system  to  evaluate  the  quality  of  services  in  competency  of organizations, systems, training programs or health facilities. Advanced  Clinical  Training: is  a  structured  clinical  training  program  in  a  particular  field  or speciality.  This  may  include  residency  programs,  fellowship  programs,  PhD  programs,  Master programs and other post graduate certificates/diplomas. Approved Practice Setting (Clinical Training in Health Facilities): is a health facility that has an effective system for the management of healthcare professionals, systems for identifying and acting upon concerns about healthcare professional's fitness to practice, systems to support the provision of relevant training or continuing professional development, and systems for providing regulatory assurance. Back to Practice Training: is for healthcare professionals who have discontinued their practice for less than ten (10) years for UAE nationals or between two (2) years to five (5) years for nonUAE nationals; the training is available in Approved Practice Setting. Basic Training Program: is a training programs aimed to provide undergraduate Training and Observership Training. Clinical Supervisor: is a trainer who is selected and appropriately trained to be responsible for overseeing a specific trainee's clinical work and providing constructive feedback during a training placement.
+
+Clinical Pharmacy Residency Training: is a training program for graduates in the pharmacy field who  are  interested  in  enhancing  their  professional  expertise  by  enrolling  in  structured postgraduate pharmaceutical professional training. Dental  Fellowship  Training: is  a  training  program  for  graduates  in  the  dental  field  who  are interested  in  enhancing  their  professional  expertise  by  enrolling  in  structured  sub-specialty postgraduate dental professional training. Dental  Residency  Training: is  a  training  program  for  graduates  in  the  dental  field  who  are interested  in  enhancing  their  professional  expertise  by  enrolling  in  structured  postgraduate dental speciality professional training. Discontinuity of Practice: is an extended period of clinical inactivity in the discipline in which one has  been  trained  or  certified.  The  period  of  the  discontinuity  of  practice  considered  in  this document is as per the requirements set out in the UAE Pre-Qualification Requirements (PQR). Experience  Equivalency  Training: is  a  hands  on  clinical  work  experience  gained  by  a  newly graduate  healthcare  professional  for  a  period  of  time  and  it  excludes  volunteer  jobs  or observership. Grievance: is a claim made by a person or an organization, highlighting that there has been a violation,  misinterpretation,  or  inequitable  application  of  any  existing  policy,  procedure,  or regulation. Healthcare Professional: is  a  person who by education, training, certification and licensure is qualified to provide healthcare services.
+
+Intermediate Training Program: is  a  training  program  aimed  to  provide  Internship  Training Program,  Experience  Equivalence  Program,  Practical  Training  Courses  and  Return  Back  to Practice Program. Internship Training Program: is a period of supervised clinical practice pursued by graduates of healthcare programs to consolidate the knowledge gained during their study in Approved Practice Setting. Medical Fellowship Training: is a training program for graduates in the medical field who are interested  in  enhancing  their  professional  expertise  by  enrolling  in  structured  sub-specialty postgraduate medical professional training. Medical Residency Training: is a training for graduates in the medical field who are interested in enhancing their professional expertise by enrolling in structured postgraduate medical-speciality professional training. Observership Program: is healthcare training for national or international healthcare professionals seeking to observe clinical care in a DHA-licensed health facility. During the clinical observership, participants will have the opportunity to interact with clinical teams with regard to care, observing all aspects of clinical care delivery in an Approved Practice Setting. Postgraduate Training Program: is healthcare training programs for postgraduates enrolled in residency  program,  fellowship  programs,  PhD  or  doctorate  program,  Master  program  or postgraduate certificate/diplomas in an Approved Practice Setting, in order to fulfil the degree requirements.
+
+Practical Training Course:
+
+is the provision of a hands on courses, within a licensed health facility
+
+only. This includes but not limited to laser courses, beauty courses or Implantology.
+
+[PAGE 8]
+Primary Source Verification (PSV):
+
+is the process of validating documents required for licensure
+
+for the issuing organization.
+
+Program Director:
+
+is a senior manager, responsible for the developing and maintaining the overall
+
+APS program(s).
+
+Tier:
+
+Is  a  term  used  to  indicate  a  category  of  postgraduate  qualifications  for  physicians  and
+
+dentists as per the Unified Healthcare Professional Qualification Requirements (PQR).
+
+Training supervisor(s):
+
+is responsible for the development and coordination of training program
+
+within APS. This includes and not limited to, identification of training needs, evaluate training
+
+initiatives and processes as well as maintaining training records.
+
+Undergraduate Training:
+
+is healthcare training programs for undergraduate university/college
+
+students registered in an Approved Practice Setting, in order to fulfil the degree requirements.
+
+[PAGE 10]
+Medical practice continues to evolve due to epidemiological and innovative change.  Physicians are therefore  required  to  undergo  continual  medical  education  and  training  to  ensure  acquired skillsets in medical school are kept up to date in line with the latest evidence base. Thus, medical training plays an important role in demonstrating continual professional competence, minimizing risk  and  addressing  patient  concerns.  Emerging  evidence  suggests  that  health  professionals actively seek continuous medical training for several reasons namely; the pursuit of new careers due to new medical career pathways, increase in income and the enhancement competencies and confidence.  In addition, there has been a shift away from individualised training toward team based and system based training. This means institutions seeking to provide medical training are required  to  deliver  training  in  facilities  that  are  appropriately  designed  and  equipped  to accommodate a range of health professional groups and needs. DHA has developed a standard for Approved Practice Setting to ensure medical training in the Emirate of Dubai is continuously delivered to high standard.  The standard sets out the criteria and requirements that a healthcare facility must satisfy in order to be eligible as an Approved Practice Setting for medical training.  Health facilities are encouraged to offer medical training programs  that  are  evidence  based,  innovative  and  dynamic  to  the  needs  of  the  Dubai  health
+
+system.
+
+[PAGE 11]
+The minimum requirements for Approved Practice Setting in DHA licensed health facilities .
+
+To  assure  provision  of  the  highest  levels  of  safety  and  competency  in  providing Approved Practice Setting program(s) for healthcare professionals that meet the licensing requirements of an Approved Practice Setting.
+
+To assure provision of the highest levels of safety and competency in providing basic, intermediate and programs.
+
+To ensure that appropriate policies, systems and processes are standardized and in place for delivery of professional medical education and training.
+
+To standardize and provide a framework for clinical trainings within health facilities in the emirate of Dubai.
+
+DHA licensed healthcare professionals and health facilities involved in the delivery of an Approved Practice Setting program(s).
+
+[PAGE 11-13]
+All health facilities providing Approved Practice Setting (APS) shall adhere to federal and local laws and regulations.
+
+All Health facilities are eligible for licensing an APS.
+
+Health facilities opting to provide APS service shall comply with the DHA licensure and administrative procedures available on the DHA website https://www.dha.gov.ae.
+
+Health facilities may provide APS in the entire facility or a selected department or speciality within the facility.
+
+Licensed health facilities opting to add APS shall apply by submitting a request to the Medical Education & Research Department e-mail trainingfacility@dha.gov.ae.
+
+Application forms for the training programs can be found on the Medical Education & Research Department DHA website:
+
+https://www.dha.gov.ae/en/MedicalEducation/Pages/HFETAccreditation.aspx
+
+APS shall provide one or more of the following programs:
+
+Basic Training Program.
+
+Intermediate Training Program.
+
+Advanced Training Program.
+
+Health  facilities  shall  seek  validity  approval  to  conduct  more  than  one  type  of program.
+
+Each program must receive a separate approval.
+
+Health facilities shall seek permission renewal to continue conducting the training program(s).
+
+The APS request application will be reviewed and assessed by DHA.
+
+If  deemed necessary, DHA may conduct an onsite inspection to ensure the health facility complies with the required criteria. The site visiting team may interview the Program  Director  and/or  other  key  personnel  in  the  health  facility  for  a  better understanding of the APS program.
+
+DHA may issue an approval which will detail professional medical education services approved and will include details of any restrictions and conditions, where applicable.
+
+The validity of each APS program is as follows:
+
+Basic training program - two (2) years;
+
+Intermediate training program - two (2) years;
+
+Advanced training program - four (4) years.
+
+Applications may be approved, returned for correction or rejected.
+
+Where the application contains major changes DHA may request submission of a new application.
+
+Graduates from an APS program, except Basic Training Program, shall meet all PQR requirements in order to obtain license to practice.
+
+For the licensing process, see Appendix 1.
+
+[PAGE 13-15]
+The health facility management shall ensure the following:
+
+The  health  facility  shall  have  a  scientific  committee/organization  to oversee the training.
+
+At least one (1) healthcare professional is appointed as Program Director and/or Training Supervisor coordinating the training program.
+
+Programs are aligned with the scope of services and specialities of the health facility.
+
+Sufficient resources are available to accommodate the intended number of trainees and programs.
+
+Demonstrate adequate volume and variety of cases.
+
+All  trainees,  except  trainees  in  Basic Training  Programs, should receive malpractice medical insurance by the health facility.
+
+The health facility shall provide evidence of written policies and procedures for the different APS programs which may include but not limited to:
+
+Incident Reporting
+
+Patient confidentiality
+
+Consent
+
+Training assessment
+
+Training acceptance
+
+Grievance Procedures
+
+The  health  facility  must  be  aware  of  local  laws  and  guidelines  regarding  patient consent and confidentiality and provides training, when necessary.
+
+Healthcare  professionals  including  trainees,  undertaking  any  form  training  shall enroll in a program aligned with the scope of service for the licensed category.
+
+The health facility  shall retain  information  and documents in connection with the application to all participating institutions Permitted Services.
+
+Health  facilities  with  APS  shall  ensure  provision  of  adequate  and  appropriate resources to support the goals and objectives of the training program, which could include, but not limited to:
+
+A  room  equipped  with  audio-visual  aids  to  accommodate  enrolled trainees, if required for the training.
+
+Access to internet services, computer and/or tablets.
+
+Easy access to educational and research material, which could be in the form of a valid contract with an online medical library.
+
+Lecture or meeting room(s).
+
+[PAGE 15-20]
+Application form for the basic training program can be found in appendix 2.
+
+Basic training program includes the following :
+
+Undergraduate Program
+
+Domestic Students
+
+International students
+
+Observership Program.
+
+Basic  training  program  shall  be  made  available  to  the  following  undergraduate categories:
+
+Physicians
+
+Dentists
+
+Nurses and midwives
+
+Allied health
+
+TCAM
+
+The applicant's experience must be relevant to the title applied for and must have been  accomplished  in  an  appropriate  setting  licensed  by  the  health  regulatory authority in the country of practice.
+
+The applicant's experience must be hands on clinical experience gained by a licensed healthcare  professional  during  a  salaried  employment/contractual  period  and  it excludes volunteer jobs, Observership, or clinical attachment.
+
+All health facilities applying for the Basic Training Program- undergraduate training shall ensure the following:
+
+A formal agreement with an accredited academic institution and should specify the type of Basic Training Program.
+
+The academic institution should be accredited by a UAE governmental body such as MOE or KHDA.
+
+International  academic  institutions  should  be  accredited  by  an equivalent government body.
+
+The training must take place only in the licensed APS health facility.
+
+All  trainees  have  an  active  registration  with  an  accredited  academic institution.
+
+All  trainees  shall  have  a  training  letter  from  their  affiliated  academic institution.
+
+All Basic Training Program(s) may undergo inspection for evaluation.
+
+STANDARD FOUR: INTERMEDIATE TRAINING PROGRAM
+
+Application form for the intermediate training program can be found in appendix 3.
+
+Intermediate Training Program includes the following:
+
+Internship Program
+
+Eligibility:
+
+Physicians
+
+Dentists
+
+Internship program shall be provided only in:
+
+Hospitals
+
+Standalone Day surgical centres
+
+Outpatient clinics
+
+Other  categories  may  be  considered  in  accordance  to  the program
+
+The duration of the internship program will be in accordance to the PQR and speciality, not less than one year.
+
+Experience Equivalency Program
+
+Eligibility Categories are:
+
+Physicians
+
+Dentists
+
+Nurses and Midwives
+
+Allied Health
+
+TCAM
+
+This program may be provided in eligible DHA licensed APS.
+
+Practical Training Courses, this includes but not limited to:
+
+Laser and cosmetic courses
+
+Endoscopy
+
+Implantology.
+
+Back to Practice Program
+
+Eligibility:
+
+Physicians
+
+Dentists
+
+Nurses and midwives
+
+Allied health
+
+TCAM
+
+This program may be provided in all eligible DHA licensed APS.
+
+The experience gained through this  program can be considered for licensing purposes as per the PQR.
+
+All  health  facilities  applying  for  the  Internship  training  program  shall  ensure  the following:
+
+The  formal  agreement  with  an  accredited  academic  institution  should specify Internship Training Program.
+
+Clearly define any relevant specialities and state  the  names  and specialities of professionals assigned as clinical supervisors/trainers.
+
+Clearly  define  the  volume  of  patients  per  year  for  each  mentioned speciality.
+
+STANDARD FIVE: ADVANCED TRAINING PROGRAM
+
+Application form for the advanced training program can be found in appendix 4.
+
+Advanced Training Program includes the following:
+
+Residency Programs:
+
+Medical Residency Program;
+
+Dental Residency Program;
+
+Clinical Pharmacy Program.
+
+Fellowship Program:
+
+Medical Fellowship Program;
+
+Dental Fellowship Program.
+
+Postgraduate certificate programs:
+
+Clinical PhD/Doctorate;
+
+Master Degree;
+
+Post graduate certificate/Diploma.
+
+All  health  facilities  applying  for  the  Advanced  Training  Program  shall  ensure  the following:
+
+An accredited residency program(s) and/or fellowship program(s) by an accrediting body such as, but not limited to the Emirati Board and Arab Board of Health Specialities.
+
+Clearly  defined  scope  and  curriculum  for  the  residency  programs  and fellowship program, where applicable.
+
+Appoint a Program Director and clinical supervisor(s) for each training program.
+
+Ensure that there is a clear evaluation and assessment process for each program.
+
+[PAGE 20-23]
+The health Management team shall ensure the following:
+
+The training program must be adequately funded in order to plan, deliver and sustain the APS program(s).
+
+All Training program(s) should follow evidence based practices.
+
+There is a description of the process, which ensures proper follow up of the trainee's duty fulfilments.
+
+The availability of a training committee that follows up all training related matters.
+
+The provision of appropriate training duration for the trainees.
+
+The provision of adequate volume of patients and variety of cases within the relevant specialities.
+
+There  should  be  job  descriptions  available  for  trainers  and  training supervisors.
+
+There is a mechanism in place for appointing and reviewing teaching staff.
+
+Each clinical trainee should have an assigned clinical supervisor.
+
+The trainee supervisors or trainers of an APS should:
+
+Be a DHA licensed healthcare professional for the related speciality.
+
+Be privileged by the MD of the health facility as per certification, training, experience and competency.
+
+Ensure a minimum experience in clinical practice as follows:
+
+Basic training program - Two (2) years
+
+Intermediate training program - Three (3) years
+
+Advanced training program - Five (5) years
+
+At least one (1) year experience in medical education and are aware of training essentials.
+
+Be present in the clinical training facility at all times during the duration of the training provided.
+
+Provides orientation and supervision for trainees, with a focus on patient safety, privacy, confidentiality and infection control procedures.
+
+Be  responsible  for  the  outcomes  of  the  treatments  and  procedures performed by the trainees on patients.
+
+Provides trainee feedback and evaluation.
+
+Ensure  trainees  maintain  a  logbook  of  clinical  work  and  experience  to ensure satisfactory case diversity and monitoring for the clinical training provided.
+
+Discuss  with  clinical  trainees  regarding  patient  evaluation,  treatment planning,  patient  management,  complications  and  outcomes  of  various cases.
+
+The ratio of the clinical supervisors to the trainees should be indicated clearly by the healthcare facility as per the program.
+
+In the event of a temporary absence of the assigned clinical supervisor or assigned trainer,  the  management  responsible  for  APS  should  assign  another  clinical supervisor or trainer in the same specialty to take over the supervisory and training responsibility.
+
+The management of APS program(s) shall ensure full disclosure to patient(s) and family  members regarding clinical trainees/residents and their involvement in the patient care.
+
+Patient consent form in both Arabic and English shall be available and must cover acceptance of treatment and access to patient health records by the clinical trainee, students and clinical residents.
+
+Trainees in the Intermediate and Advanced training program shall require to hold a valid DHA licensed title to participate in the program(s) as; Trainee, Intern, Resident or Full professional license.
+
+Certain  Practice  Training  Program  may  not  require  license  as  per  DHA evaluation.
+
+All Trainees shall:
+
+Follow instructions of the assigned clinical supervisor.
+
+Wear clinical trainee badge during all working hours.
+
+Sign a confidentiality agreement prior to commencement of the training program.
+
+Maintain a training logbook.
+
+Medical  liability is solely the responsibility of the trainees and  the  Clinical Supervisor/trainer at the health facility offering APS.
+
+Health facility shall ensure that all healthcare professionals and trainees adhere to the DHA Standards for medical advertisement content on social media.
+
+[PAGE 23-24]
+At any time and upon reasonable cause, DHA inspectors and/or any duly authorized representatives may conduct inspections to audit the health facility providing clinical training to determine compliance. These onsite inspections may be scheduled or unannounced.
+
+The management of the health facility providing clinical training should cooperate with  DHA  representatives  and/or  any  authorized  representatives  to  provide requested documentation/files if required.
+
+After  any  inspection  in  which  non-compliance  has  been  identified,  the  authorized inspectors may notify the facility followed by an inspection report.
+
+The management of health facility providing APS should submit to DHA a written plan of correction within fifteen (15) working days after receiving the noncompliance report, if applicable.
+
+A follow up visit maybe conducted by DHA to confirm the corrective action.
+
+If the deficiencies are not fulfilled, APS services of the health facility shall be subject to sanctions as deemed necessary by DHA.
+
+In the event of possible suspension of APS services, the health facility is not allowed to accept any new trainees.
+
+Any Grievance procedures shall be directed to DHA.
+
+[PAGE 25]
+Department of Health- Medical Education (2022). Medical Education. Available on: https://www.doh.gov.ae/en/programs-initiatives/meed   [Accessed 10 January 2022].
+
+2.
+
+Dubai Health care City Authority Regulatory (2016). Approved Practice Setting Standards. Available on https://www.dhcr.gov.ae/Documents/DHCR%20Approved%20Practice%20Setting%20Standards .pdf  [Accessed 10 January 2022].
+
+British Medical Association (2017). Approved practice settings restrictions. Available on: https://www.bma.org.uk/advice/career/applying-for-training/approved-practice-settingsrestrictions  [Accessed 10 January 2022].
+
+Commission for Academic Accreditation (2019). Licensure and Accreditation. Available on: https://www.caa.ae/caa/DesktopDefault.aspx?tabid=58 [Accessed 10 January 2022].
+
+Health Authority Abu Dhabi. (2017). Continuing Medical Education Continuing Professional Development. Available on: https://www.haad.ae/cme/FAQ.aspx [Accessed 10 January 2022].
+
+Medical Council of New Zealand (2013). Policy on accreditation of an approved practice setting. Available on: https://www.mcnz.org.nz/assets/Policies/Policy-on-accreditation-of-an-approvedpractice-setting.pdf  [Accessed 10 January 2022].
+
+Quintero, G.A (2014). Medical education and the healthcare system - why does the curriculum need to be reformed?. BMC Med 12 , 213 (2014). https://doi.org/10.1186/s12916-014-0213-3
+
+The Accreditation Council for Graduate Medical Education International (2019). Accreditation Process. Available on: http://www.acgme-i.org/Requirements-and-Process-Overview/What-isAccreditation [Accessed 10 January 2022].
+
+[PAGE 27]
+طلب تسجيل التدريب الصحي ف ي منشأة صحية -أساسي
+
+Registration of Clinical Training in Health Facility Application-Basic
+
+Requested Training Program
+
+Only one program shall be selected
+
+☐ Undergraduate Program
+
+☐ Observership Program
+
+☐ Physician
+
+Please specify:  Click or tap here to enter text.
+
+☐ Dentist
+
+Please specify:  Click or tap here to enter text.
+
+☐ Nurses and Midwives
+
+Please specify:  Click or tap here to enter text.
+
+☐ Allied health
+
+Please specify:  Click or tap here to enter text.
+
+☐ TCAM
+
+Please specify:  Click or tap here to enter text.
+
+☐ Others
+
+Please specify:  Click or tap here to enter text.
+
+[PAGE 27]
+Full Program
+
+☐
+
+Duration of Theoretical
+
+Training
+
+Duration of Practical Training
+
+Academic Affiliation
+
+Number of Expected Trainees
+
+Facility Capacity for
+
+Trainees
+
+Type of Trainees
+
+Number of Training Rooms
+
+Training Methodology
+
+Total training hours per week
+
+برنامج مكتمل
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Domestic ☐
+
+International ☐
+
+Click or tap here to enter text.
+
+Lecture ☐
+
+Video ☐
+
+Conference ☐
+
+Practical Training ☐
+
+Click or tap here to enter text.
+
+☐ Shared Program
+
+Virtual ☐
+
+Online Training ☐
+
+DHA USE
+
+برنامج مشترك
+
+☐ التواصل الافتراضي
+
+☐ تعلم عن بعد
+
+: الرقم المرجعي
+
+البرنامج التدريبي المطلوب
+
+يتم اختيار برنامج واحد فقط
+
+☐ بر  نامج التعليم الطبي (قبل التخرج)
+
+☐ برنامج الملاحظة المهنية
+
+☐ الأطباء
+
+: Click or tap here to enter text.
+
+الرج اء تحديد
+
+☐ أطباء الأسنان
+
+: Click or tap here to enter text.
+
+الرجاء تحديد
+
+☐ التمريض والقبالة
+
+: الرجاء تحديد Click or tap here to enter text.
+
+☐ المهن الطبية المساعدة
+
+: Click or tap here to enter text.
+
+الرجاء تحديد
+
+☐ الطب التقليدي
+
+: Click or tap here to enter text.
+
+الرجاء تحديد
+
+☐ أخرى
+
+: الرجاء تحديد Click or tap here to enter text.
+
+[PAGE 27]
+☐ Training Unit
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+☐ من خارج الدولة
+
+☐ من داخل الدولة
+
+Click or tap here to enter text.
+
+☐ فيديو
+
+☐ محاضرة
+
+☒ تدريب عملي
+
+☐ مؤتمر
+
+Click or tap here to enter text.
+
+وحدة تدريبية
+
+مدة التدريب النظري
+
+مدة التدريب العملي
+
+الانتساب الأكاديمي
+
+عدد المتدربين المتوقع انضمامهم
+
+الط اقة الاستيعابية للمنشأة
+
+تصنيف المتدربين
+
+عدد غرف التدريب
+
+الوسائل التدريبية المستخدمة
+
+مجموع ساعات التدريب الاسبوعية
+
+إدارة التعليم الطبي والأبحاث
+
+[PAGE 28]
+ Each Application Form is designed for one program only
+
+ Applicant should submit all required supporting documents
+
+ This is not an approval for Academic certificate nor a privilege of practicing the trained skills (if any) without appropriate License issued by health regulation bodies
+
+Payment is to be processed prior to the facility inspection
+
+I/solemnly declare I/we have reviewed the Standards for Health Facilities Providing Medical Training and agree to comply with all requirements and other related DHA Policies and Federal Laws.
+
+The information provided to DHA on the subject is accurate and complete to the best of my knowledge and belief. I understand and agree that, if I make a false or misleading statement or representation in respect to my application, I shall be deemed not to have satisfied the requirements for adding training service. I further acknowledge that DHA has the right to cancel the application and approval for training if any aspects noted within this undertaking are not being met.
+
+الرجاء ذكر أهداف البرنامج التدريبي
+
+[PAGE 28]
+ يتم تقديم طلب منفصل لكل برنامج تدريبي
+
+ تلتزم المنشأة بتقديم الوثائق الداعمة للطلب
+
+ لا يعتبر هذا الطلب موافقة لإصدار شهادات أكاديمية ولا يخول المتدربين صلاحيات ممارسة أي من المهارات المكتسبة إن وجدت بدون الحصول عل ى رخصة من الجهات المعنية الالتزام بإجراءات الدفع قبل الزيارة الميدانية للمنشأة
+
+أصرح رسمي ً ا أنني قد راجعت معايير المرافق الصحية التي تقدم التدريب الصحي وأوافق عل ى الامتثال لجميع المتطلبات وغيرها من سياسات هيئة الصحة بدب ي والقوانين الاتحادية ذات الصلة. المعلومات المقدمة إل ى هيئة الصحة بدب ي حول هذا الموضوع صحيحة وكاملة . وف ي حال انني قدمت بيانات غير صحيحة أو مظللة ف ي ما يتعلق بطلبي فسيعتبر الطلب المقدم من طرف ي غير مستوف ي للشروط ولهيئة الصحة بدب ي الحق ف ي إلغاء الطلب عل ى التدريب أو سحب أية موافقة تصدر لاحقا بهذا الخصوص أو اتخاذ التدابير و الإجراءات اللازمة حيال ذلك.
+
+Click or tap here to enter text.
+
+[PAGE 30]
+The facility has sterilization unit
+
+The facility sufficient number of patients flow to ensure a proper training
+
+Health and Safety Manual that includes all health and safety policies and procedures
+
+Coordinator/Supervisor' experience has the basic principles of teaching, learning and assessment
+
+Comments and remarks:   Click or tap here to enter text.
+
+☐ Yes
+
+☐ No
+
+☐ NA
+
+☐ Yes
+
+☐ No
+
+☐ NA
+
+☐ Yes
+
+☐ No
+
+☐ Yes
+
+☐ NA
+
+☐ No
+
+☐ NA
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+[PAGE 31]
+Reference Number:
+
+Requested Training Program
+
+Only one program shall be selected
+
+☐ Internship Program
+
+☐ Physician
+
+☐ Dentist
+
+☐ Experience Equivalency Program
+
+☐ Physician
+
+Please specify Click or tap here to enter text.
+
+☐ Dentist
+
+Please specify Click or tap here to enter text.
+
+☐ Nurses & Midwives
+
+Please specify Click or tap here to enter text.
+
+☐ Allied health
+
+Please specify Click or tap here to enter text.
+
+☐ TCAM
+
+Please specify Click or tap here to enter text.
+
+☐ Practical - Hands On - Training Courses
+
+☐ Laser
+
+Please specify Click or tap here to enter text.
+
+☐ Cosmetic Courses
+
+Please specify Click or tap here to enter text.
+
+☐ Endoscopy
+
+Please specify Click or tap here to enter text.
+
+☐ Implantology
+
+Please specify Click or tap here to enter text.
+
+☐ Others
+
+Please specify Click or tap here to enter text.
+
+☐ Back to Practice Program
+
+☐ Physician
+
+Please specify Click or tap here to enter text.
+
+☐ Dentist
+
+Please specify Click or tap here to enter text.
+
+☐ Nurses
+
+Please specify Click or tap here to enter text.
+
+☐ Allied health
+
+DHA USE
+
+الرقم المرجعي:
+
+البرنامج التدريبي المطلوب
+
+يتم اختيار برنامج واحد فقط
+
+☐ برنامج الامتياز
+
+☐ الأطباء
+
+☐ أطباء الأسنان
+
+☐ برنامج اكتساب الخبرة
+
+☐ الأطباء
+
+: Click or tap here to enter text.
+
+الرجاء تحديد
+
+☐ أطباء الأسنان
+
+: Click or tap here to enter text.
+
+الرجاء تحديد
+
+☐ التمريض والقبالة
+
+: الرجاء تحديد Click or tap here to enter text.
+
+☐ المهن الطبية المساعدة
+
+: Click or tap here to enter text.
+
+الرجاء تحديد
+
+☐ الطب التقليدي
+
+: Click or tap here to enter text.
+
+الرجاء تحديد
+
+☐ الدورات التدريبية العملية
+
+☐ الليزر
+
+: الرجاء تحديد Click or tap here to enter text.
+
+☐ برامج التجميل
+
+: Click or tap here to enter text.
+
+الرجاء تحديد
+
+☐ المناظير
+
+: Click or tap here to enter text.
+
+الرجاء تحديد
+
+☐ زراعة الأسنان
+
+: Click or tap here to enter text.
+
+الرجاء تحديد
+
+☐ دورات أخرى
+
+: الرجاء تحديد Click or tap here to enter text.
+
+[PAGE 31-32]
+☐ الأطباء
+
+: Click or tap here to enter text.
+
+الرجاء تحديد
+
+☐ أطباء الأسنان
+
+: Click or tap here to enter text.
+
+الرجاء تحديد
+
+☐ التمريض
+
+: الرجاء تحديد Click or tap here to enter text.
+
+☐ المهن الطبية المساعدة
+
+إدارة التعليم الطبي والأبحاث
+
+Please specify Click or tap here to enter text.
+
+☐ TCAM
+
+Please specify Click or tap here to enter text.
+
+☐ Full Program
+
+Duration of
+
+Theoretical Training:
+
+Duration of Practical Training:
+
+Academic Affiliation
+
+Number of Expected Trainees
+
+Facility Capacity for Trainees
+
+Type of Trainees
+
+Number of Training Rooms
+
+Training Methodology
+
+Total training hours
+
+per week
+
+Certificate/Outcome Awarded
+
+Is the Educational Program Approved by MOE/ KHDA
+
+Is the Educational
+
+Program Approved by International Institution Choose an item.
+
+Program Director / Training Supervisor Information
+
+Full  Name:
+
+.Click or tap here to enter text
+
+DHA license No:
+
+Click or tap here to enter text.
+
+Mobile No:
+
+Click or tap here to enter text.
+
+Name Full:
+
+DHA license No. (if available)
+
+Mobile No:
+
+[PAGE 32]
+Name of the Health Facility :
+
+DHA Facility License Number:
+
+Click or tap here to enter text.
+
+Click or tap here to
+
+enter text.
+
+Click or tap here to
+
+enter text.
+
+برنامج مكتمل
+
+Click or tap here to enter
+
+text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+☐ Domestic
+
+Click or tap here to enter text.
+
+☐ Lecture
+
+☐ Conference
+
+Click or tap here to enter text.
+
+Choose an item.
+
+☐ Shared Program
+
+☐ International
+
+☐ Video
+
+☐ virtual
+
+☐ practical training
+
+☐ Online Training
+
+رقم الترخيص المهني:
+
+الهاتف المتحرك:
+
+رقم الترخيص المهني (أن وجد)
+
+Click or tap here to enter text.
+
+: الرجاء تحديد
+
+☐ الطب التقليدي
+
+Click or tap here to enter text.
+
+: الرجاء تحديد
+
+[PAGE 32]
+☐ Training Unit
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+☐ من داخل الدولة
+
+Click or tap here to enter text.
+
+☐ فيديو
+
+☐ محاضرة
+
+☐ تدريب
+
+عملي
+
+☐ مؤتمر
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Choose an item.
+
+وحدة تدريبية
+
+مدة التدريب النظري:
+
+مدة التدريب العمل ي:
+
+الانتساب الأكاديمي
+
+عدد المتدربين المتوقع
+
+انضمامهم
+
+الطاقة الاستيعابية للمنشأة :
+
+تصنيف المتدربين
+
+عدد غرف التدريب
+
+الوسائل التدريبية المستخدمة
+
+مجموع ساعات
+
+التدريب الاسبوعية
+
+شهادة/ مخرجات الممنوحة
+
+هل البرنامج / الشهادة معتمده ا كاديميا ً  من / وزارة التربية والتعليم هيئة المعرفة
+
+Choose an item.
+
+هل البرنامج / الشهادة معتمده اكاديميا دوليا
+
+[PAGE 32-33]
+Click or tap here to enter text.
+
+Specialty:
+
+E-mail:
+
+Specialty:
+
+الهاتف المتحرك:
+
+E-mail:
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+الاسم الكامل:
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+التخصص:
+
+ا لبريد الالكتروني:
+
+الاسم الكامل:
+
+التخصص:
+
+البريد الالكتروني:
+
+اسم المنشأة الصحية :
+
+رقم رخصة المنشأة:
+
+برنامج مشترك
+
+☐ من خارج الدولة
+
+☐ التواصل الافتراضي
+
+☐ تعلم عن بعد
+
+DHA license expiry date
+
+Address:
+
+Landline Number :
+
+Facility Website:
+
+Branches offering the program (if applicable)
+
+Sector:
+
+General Hospital
+
+☐
+
+☐ Specialized Clinic
+
+Day Surgery Center
+
+☐
+
+Other (Specify)
+
+Please specify the training program objective
+
+[PAGE 33]
+ Each Application Form is designed for one program only
+
+ Applicant should submit all required supporting documents
+
+ This is not an approval for Academic certificate nor a privilege of practicing the trained skills (if any) without appropriate License issued by health regulation bodies
+
+Payment is to be processed prior to the facility inspection
+
+I/solemnly declare I/we have reviewed the Standards for Health Facilities Providing Clinical Training and agree to comply with all requirements and other related DHA Policies and Federal Laws.
+
+The information provided to DHA on the subject is accurate and complete to the best of my knowledge and belief. I understand and agree that, if I make a false or misleading statement or representation in respect to my application, I shall be deemed not to have satisfied the requirements for adding training service. I further acknowledge that DHA has the right to cancel the application and approval for training if any aspects noted within this undertaking are not being met.
+
+Kindly, submit completed signed application form through the Medical Education & Research Dept Email trainingfacility@dha.gov.ae
+
+Name of the applicant
+
+Designation
+
+Signature
+
+Name of the Medical Director
+
+Signature of Medical Director
+
+Date
+
+Facility seal
+
+[PAGE 33]
+Remarks
+
+1.
+
+Organizational chart
+
+Accredited Training Objectives/Curriculum
+
+Training Materials & Tools
+
+4.
+
+Target Group for Training Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap to enter a date.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+☐ خاص private
+
+☒ حكومي Government
+
+Specialized Hospital
+
+Primary Healthcare  Center
+
+☐
+
+☒
+
+Clinical support Facility
+
+مستشفى تخصصي
+
+مركز رعاية صحية أولية
+
+تاريخ انتهاء الرخصة:
+
+العنوان:
+
+رقم الهاتف الأرضي :
+
+الموقع الالكترو ن ي للمنشأة الصحية:
+
+الفروع الأخرى التي تقدم البرنامج(أن وجد)
+
+القطاع:
+
+[PAGE 33]
+Pharmacy
+
+صيدلية
+
+☐
+
+Outpatient facility
+
+☐
+
+منشأة صحية مساندة
+
+☐ TCAM
+
+☐
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+منشأة صحية خارجية
+
+الطب التقليدي
+
+أخرى (حدد)
+
+الرجاء ذكر أهداف البرنامج التدريبي
+
+[PAGE 33]
+ يتم تقديم طلب منفصل لكل برنامج تدريبي
+
+ تلتزم المنشأة بتقديم الوثائق الداعمة للطلب
+
+ لا يعتبر هذا الطلب موافقة لإصدار شهادات أكاديمية ولا يخول المتدربين صلاحيات ممارسة أي من المهارات المكتسبة إن وجدت بدون الحصول عل ى رخصة من الجهات المعنية
+
+الالتزام بإجراءات الدفع قبل الزيارة الميدانية للمنشأة
+
+أصرح رسمي ً ا أنني قد راجعت معايير المرافق الصحية التي تقدم التدريب الصحي وأوافق عل ى الامتثال لجميع المتطلبات وغيرها من سياسات هيئة الصحة بد ب ي والقوانين الاتحادية ذات الصلة.
+
+المعلومات المقدمة إل ى هيئة الصحة بدب ي حول هذا الموضوع صحيحة وكاملة . وف ي حال انني قدمت بيانات غير صحيحيه أو مظللة فيما يتعلق بطلبي فسيعتبر الطلب المقدم من طرف ي غير مستوف ي للشروط ولهيئة الصحة بد ب ي الحق ف ي إلغاء الطلب عل ى التدريب أو سحب أية موافقة تصدر لاحقا بهذا الخصوص أو اتخاذ التدابير والإجراءات اللازمة حيال ذلك.
+
+[PAGE 33]
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap to enter a date.
+
+Click or tap to enter a date.
+
+Click or tap here to enter text.
+
+Status
+
+☐ Yes
+
+☐ No
+
+☐ NA
+
+☐ Yes
+
+☐ No
+
+☐ NA
+
+☐ Yes
+
+☐ No
+
+☐ NA
+
+☐ Yes
+
+☐ No
+
+☐ NA
+
+اسم مقدم الطلب:
+
+الصفة الوظيفية
+
+التوقيع
+
+اسم المدير الطبي
+
+توقيع المدير الطبي
+
+التاريخ
+
+ختم المنشأة الصحية:
+
+[PAGE 33-34]
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+مستشفى عام
+
+مركز متخصص
+
+مركز جراحة اليوم الواحد
+
+Eligibility criteria to accept trainees
+
+Number of Continuing Professional Development (CPD) Hrs.
+
+Name of training Program lead with DHA license
+
+Training Rooms Layout
+
+Tool for tracking trainees attendance
+
+Logbook for trainee experience
+
+Valid Trade License
+
+KHDA/MOE Accreditation on the Program/Institute
+
+International/Local Academic Affiliation
+
+Trainers DHA License
+
+15.
+
+Trainers Profile (with
+
+Credentials/Qualification/Experience)
+
+Malpractice Insurance in case of any handson trainings
+
+Training Program Rotation/Plan
+
+Trainee's Evaluation/Competencies Criteria or Method
+
+The facility has sterilization unit
+
+The facility sufficient number of patients flow to ensure a proper training
+
+Health and Safety Manual that includes all health and safety policies and procedures
+
+Coordinator/Supervisor' experience has the basic principles of teaching, learning and assessment
+
+Comments and remarks:   Click or tap here to enter text.
+
+☐ Yes
+
+☐ No
+
+☐ NA
+
+☐ Yes
+
+☐ No
+
+☐ NA
+
+☐ Yes
+
+☐ No
+
+☐ Yes
+
+☐ NA
+
+☐ No
+
+☐ NA
+
+☐ Yes
+
+☐ Yes
+
+☐ Yes
+
+☐ Yes
+
+☐ Yes
+
+☐ Yes
+
+☐ Yes
+
+☐ Yes
+
+☐ Yes
+
+☐ Yes
+
+☐ Yes
+
+☐ Yes
+
+☐ No
+
+☐ NA
+
+☐ No
+
+☐ NA
+
+☐ No
+
+☐ NA
+
+☐ No
+
+☐ NA
+
+☐ No
+
+☐ NA
+
+☐ No
+
+☐ NA
+
+☐ No
+
+☐ NA
+
+☐ No
+
+☐ NA
+
+☐ No
+
+☐ NA
+
+☐ No
+
+☐ NA
+
+☐ No
+
+☐ NA
+
+☐ No
+
+☐ NA
+
+☐ Yes
+
+☐ No
+
+☐ NA
+
+☐ Yes
+
+☐ No
+
+☐ NA
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+[PAGE 35]
+Requested Training Program
+
+SELECT ONLY ONE PROGRAM
+
+☐ Residency Program
+
+☐ Medical
+
+Please specify:  Click or tap here to enter text.
+
+☐ Dental
+
+Please specify:  Click or tap here to enter text.
+
+☐ Clinical Pharmacy
+
+Please specify:  Click or tap here to enter text.
+
+☐ Fellowship Program
+
+☐ Medical
+
+Please specify:  Click or tap here to enter text.
+
+☐ Dental
+
+Please specify:  Click or tap here to enter text.
+
+☐ Postgraduate certificate programs
+
+☐ Clinical PHD/Doctorate
+
+Please specify:  Click or tap here to enter text.
+
+☐ Master Degree;
+
+Please specify:  Click or tap here to enter text.
+
+☐ Post graduate certificate/Diploma
+
+Please specify:  Click or tap here to enter text.
+
+☐ Other
+
+Please specify:  Click or tap here to enter text.
+
+: الرقم المرجعي
+
+البرنامج التدريبي المطلوب
+
+الرجاء اختيار برنامج واحد فقط
+
+☐ برنامج الإقامة
+
+☐ طبي
+
+: الرجاء تحديد Click or tap here to enter text.
+
+☐ طب الأسنان
+
+: Click or tap here to enter text.
+
+الرجاء تحديد
+
+☐ الصيدلة السريرية
+
+: Click or tap here to enter text.
+
+الرجاء تحديد
+
+☐ برنامج الزمالة
+
+☐ طبي
+
+: الرجاء تحديد Click or tap here to enter text.
+
+☐ طب الأسنان
+
+: Click or tap here to enter text.
+
+الرجاء تحديد
+
+☐ برامج شهادات الدراسات العليا:
+
+☐ دكتوراه إكلينيكية / دكتوراه
+
+: Click or tap here to enter text.
+
+الرجاء تحديد
+
+☐ الماجستير
+
+: الرجاء تحديد Click or tap here to enter text.
+
+☐ شهادة الدراسات العليا / دبلوم
+
+Click or tap here to enter text.
+
+: الرجاء تحديد
+
+☐ أخرى
+
+: الرجاء تحديد Click or tap here to enter text.
+
+[PAGE 35-36]
+DHA USE
+
+Type of Trainees
+
+Number of Training
+
+Rooms
+
+Training Methodology
+
+Total training hours per
+
+week
+
+Certificate/Outcome Training
+
+Is the Educational Program Approved by MOE/KHDA
+
+☐ Domestic
+
+Click or tap here to enter text.
+
+☐ Lecture
+
+☐ Video
+
+☐
+
+☐ Conference Practical Training
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Choose an item.
+
+Is the Educational Program Approved by International Institution Choose an item.
+
+Full  Name:
+
+.Click or tap here to enter text
+
+DHA license No:
+
+Mobile No:
+
+Full Name:
+
+DHA license No. (if available)
+
+Mobile No:
+
+Name of the Health  Facility :
+
+DHA Facility License Number:
+
+DHA license expiry date:
+
+Address:
+
+Landline Number :
+
+Facility Website:
+
+Branches offering the program:
+
+Sector:
+
+[PAGE 36]
+General Hospital
+
+Specialized Clinic
+
+Day Surgery Center
+
+Other (Specify)
+
+Please specify the Training Program objective
+
+☐
+
+☐
+
+☐
+
+مستشفى عام
+
+مركز متخصص
+
+مركز جراحة اليوم الواحد
+
+Click or tap here to
+
+enter text.
+
+Click or tap here to
+
+enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to
+
+enter text.
+
+Click or tap here to
+
+enter text.
+
+☐ International
+
+☐ virtual
+
+☐ Online Training
+
+رقم الترخيص المهني:
+
+الهاتف المتحرك:
+
+رقم الترخيص المهني (ان وجد)
+
+☐ من خارج الدولة
+
+☐ من داخل الدولة
+
+Click or tap here to enter text.
+
+☐ التواصل الافتراضي
+
+☐ التعليم عن بعد
+
+☐ فيديو
+
+☐
+
+محاضرة
+
+☐ تدريب عملي
+
+☐ مؤتمر
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Choose an item.
+
+تصنيف المتدربين
+
+عدد غرف التدريب
+
+الوسائل التدريبية المستخدمة
+
+مجموع ساعات التدريب
+
+الاسبوعية
+
+شهادة/ مخرجات التدريب
+
+هل البرنامج / الشهادة معتمده ا كاديميا ً  من / وزارة التربية والتعليم هيئة المعرفة
+
+Choose an item.
+
+هل البرنامج / الشهادة معتمده اكاديميا دوليا
+
+[PAGE 36]
+Click or tap here to enter text.
+
+Specialty
+
+E-mail
+
+Specialty:
+
+الهاتف المتحرك:
+
+E-mail:
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap to enter a date.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+☐ خاص Private
+
+☐ حكومي government
+
+Specialized Hospital
+
+Primary Healthcare Center
+
+Clinical support Facility
+
+الاسم الكامل:
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+التخصص:
+
+البريد الالكتروني:
+
+[PAGE 36]
+الاسم الكامل:
+
+التخصص:
+
+البريد الالكتروني:
+
+اسم المنشأة الصحية :
+
+رقم رخصة المنشأة:
+
+تاريخ انتهاء الرخصة:
+
+العنوان:
+
+رقم الهاتف الأرضي :
+
+الموقع الالكترو ن ي للمنشأة الصحية:
+
+الفروع الأخرى التي تقدم البرنامج
+
+القطاع:
+
+Pharmacy
+
+صيدلية
+
+☐
+
+Outpatient facility
+
+مستشفى تخصصي
+
+مركز رعاية صحية أولية
+
+منشأة صحية مساندة
+
+TCAM
+
+☐
+
+☐
+
+☐
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+منشأة صحية خارجية
+
+الطب التقليدي
+
+☐
+
+☐
+
+أخرى (حدد)
+
+الرجاء ذكر أهداف البرنامج التدريبي
+
+[PAGE 37]
+ Each Application Form is designed for one program only
+
+ Applicant should submit all required supporting documents
+
+ This is not an approval for Academic certificate nor a privilege of practicing the trained skills (if any) without appropriate License issued by health regulation bodies
+
+Payment is to be processed prior to the facility inspection
+
+I/solemnly declare I/we have reviewed the Standards for Health Facilities Providing Clinical Training and agree to comply with all requirements and other related DHA Policies and Federal Laws.
+
+The information provided to DHA on the subject is accurate and complete to the best of my knowledge and belief. I understand and agree that, if I make a false or misleading statement or representation in respect to my application, I shall be deemed not to have satisfied the requirements for adding training service. I further acknowledge that DHA has the right to cancel the application and approval for training if any aspects noted within this undertaking are not being met.
+
+[PAGE 37]
+Name of the applicant
+
+Designation
+
+Signature
+
+Name of the Medical Director
+
+Signature of Medical Director
+
+Date
+
+Facility Seal
+
+Organizational Chart
+
+Accredited Training Objectives/Curriculum
+
+Training materials & tools
+
+Target group for training
+
+Eligibility criteria to accept trainees
+
+Number of Continuing Professional Development (CPD) Hrs.
+
+Name of Training Program lead with DHA license
+
+Training Rooms Layout
+
+Tool for tracking trainees attendance
+
+10. Logbook for trainee experience
+
+Valid Trade License
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+[PAGE 37]
+ يتم تقديم طلب منفصل لكل برنامج تدريبي
+
+ تلتزم المنشأة بتقديم الوثائق الداعمة للطلب
+
+ لا يعتبر هذا الاعتماد موافقة لإصدار شهادات أكاديمية ولا يخول المتدربين صلاحيات ممارسة أي من المهارات المكتسبة إن وجدت بدون الحصول عل ى رخصة من الجهات المعنية
+
+الالتزام بإجراءات الدفع قبل الزيارة الميدانية للمنشأة
+
+أصرح رسمي ً ا أنني قد راجعت معايير المرافق الصحية التي تقدم التدريب الصحي وأوافق عل ى الامتثال لجميع المتطلبات وغيرها من سياسات هيئة الصحة بدب ي والقوانين الفيدرالية ذات الصلة.
+
+المعلومات المقدمة إل ى هيئة الصحة بدب ي حول هذا الموضوع صحيحة وكاملة . وف ي حال انني قدمت بيانات غير صحيحة أو مظللة فيما يتعلق بطلبي فسيعتبر الطلب المقدم من طرف ي غير مستوف ي للشروط ولهيئة الصحة بدب ي الحق ف ي إلغاء الطلب عل ى التدريب أو سحب أية موافقة تصدر لاحقا بهذا الخصوص أو اتخاذ التدابير والإجراءات اللازمة حيال ذلك.
+
+[PAGE 37]
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap to enter a date.
+
+Click or tap to enter a date.
+
+Click or tap here to enter text.
+
+[PAGE 37-38]
+☐ Yes
+
+☐ No
+
+☐ Yes
+
+☐ NA
+
+☐ No
+
+☐ NA
+
+☐ Yes
+
+☐ NA
+
+☐ No
+
+☐ Yes
+
+☐ No
+
+☐ NA
+
+☐ Yes
+
+☐ NA
+
+☐ No
+
+☐ Yes
+
+☐ NA
+
+☐ No
+
+☐ Yes
+
+☐ No
+
+☐ Yes
+
+☐ NA
+
+☐ No
+
+☐ Yes
+
+☐ Yes
+
+☐ Yes
+
+☐ NA
+
+☐ No
+
+☐ NA
+
+☐ No
+
+☐ NA
+
+☐ No
+
+☐ NA
+
+اسم مقدم الطلب
+
+الصفة الوظيفية
+
+التوقيع
+
+اسم المدير الطبي
+
+توقيع المدير الطبي
+
+التاريخ
+
+ختم المنشأة الصحية:
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+KHDA/MOE Accreditation on the Program
+
+/Institute
+
+International/Local Academic Affiliation
+
+Trainers DHA License
+
+Trainers Profile (with
+
+Credentials/Qualification/Experience)
+
+Malpractice Insurance in case of any hands-on trainings
+
+Training Program Rotation/Plan
+
+Trainee's Evaluation/Competencies Criteria or Method
+
+The facility has sterilization unit
+
+The facility sufficient number of patients flow to ensure a proper training
+
+21.
+
+Health and Safety Manual that includes all
+
+health and safety policies and procedures
+
+Coordinator/Supervisor' experience has the basic principles of teaching, learning and
+
+assessment
+
+Comments and remarks:   Click or tap here to enter text.
+
+☐ Yes
+
+☐ Yes
+
+☐ Yes
+
+☐ Yes
+
+☐ Yes
+
+☐ Yes
+
+☐ Yes
+
+☐ Yes
+
+☐ Yes
+
+☐ No
+
+☐ NA
+
+☐ No
+
+☐ NA
+
+☐ No
+
+☐ NA
+
+☐ No
+
+☐ NA
+
+☐ No
+
+☐ NA
+
+☐ No
+
+☐ NA
+
+☐ No
+
+☐ NA
+
+☐ No
+
+☐ NA
+
+☐ No
+
+☐ NA
+
+☐ Yes
+
+☐ No
+
+☐ NA
+
+☐ Yes
+
+☐ No
+
+☐ NA
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.
+
+Click or tap here to enter text.

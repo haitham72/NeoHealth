@@ -1,0 +1,1732 @@
+DOC_CODE: DHA/HRS/HPSD/ST-25
+TITLE: Standards for Urgent Care and Emergency Unit Services
+AUTHORITY: Dubai Health Authority
+TIER: official
+VERSION: 2.1
+
+=== DOCUMENT TEXT ===
+
+[PAGE 1]
+Electronic  copy  is  controlled  under  document  control  procedure.  Hard copy is uncontrolled & under responsibility of beholder.
+
+It  is allowed ONLY to access and keep this document with who issued, who is responsible and to whom it is applicable.
+
+·
+
+Information security code:  Open
+
+ Shared-Sensitive
+
+النسخة  الإلكترونية  هي  النسخة  المضبوطة  وفق  إجراء  ضبط  الوثائق۔  النسخ  الورقية  غير مضبوطة وتقع عل ى مسؤولية حاملها۔
+
+يسمح بالوصول وبالاحتفاظ بهذه الوثيقة مع مصدرها أو مع المسؤول عن تطبيقها أو مع المطبق عليهم۔
+
+ Shared -Confidential
+
+ Shared-Secret
+
+ مشارك -سري
+
+ مشارك -سري
+
+تصنيف امن المعلومات:  بيانات مفتوحة
+
+ مشارك - حساس
+
+[PAGE 1-2]
+Issue date:
+
+Effective date:
+
+26/09/2025
+
+26/11/2025
+
+Health Policies and Standards Department Health Regulation Sector (2025)
+
+[PAGE 2]
+Health Regulation Sector (HRS) forms an integral part of Dubai Health Authority (DHA) and is mandated by DHA Law No. (14) of the year (2021) amending some clauses of law No. (6) of 2018 pertaining to the Dubai Health Authority (DHA), to undertake several functions including but not limited to:
+
+Developing regulations, policy, standards, guidelines to improve quality and patient safety and promote the growth and development of the health sector.
+
+Licensure and inspection of health facilities as well as healthcare professionals and ensuring compliance to best practice.
+
+Managing patient complaints and assuring patient and physician rights are upheld.
+
+Governing the use of narcotics, controlled and semi-controlled medications.
+
+Strengthening health tourism and assuring ongoing growth; and
+
+The Standards for Urgent Care and Emergency Unit Services aims to fulfil the following overarching DHA Strategic Priorities (2022-2026):
+
+Pioneering Human-centered health system to promote trust, safety, quality and care for patients and their families.
+
+Make Dubai a lighthouse for healthcare governance, integration and regulation.
+
+Pioneering prevention efforts against non-communicable diseases.
+
+Foster healthcare education, research and innovation .
+
+Strengthening the economic contribution of the health sector, including health tourism to support Dubai economy .
+
+2.1 -
+
+[PAGE 3]
+The  Health  Policy  and  Standards  Unit  (HPSD)  developed  this  Standard  in  collaboration  with Subject Matter Experts. HPSD would like to acknowledge and thank these health professionals for their dedication toward improving quality and safety of healthcare services in the Emirate of Dubai.
+
+Health Regulation Sector Dubai Health Authority
+
+All rights ©  reserved by the Dubai Health Authority @ 2025. The contents of this document shall not be copied or reproduced in any form without prior written permission from the Authority.
+
+[PAGE 5]
+The purpose of this document is to assure the provision of the highest levels of safety and quality in urgent care and emergency unit services at all times. The standards have been developed to align with the evolving healthcare needs and international best practice. The standards include several aspects required to provide effective, efficient, safe and high-quality urgent care and emergency unit services. The standards include the registration and licensure procedure requirements as well as the licensure of health facilities and professionals. The standards of urgent care and emergency unit services provide clear insight into the differences between each health facility and the minimum requirements that should be met for the establishment of urgent care services and/or emergency unit services.
+
+The standard focuses on the following:
+
+The  health  care  professional  requirements  and  permitted  services  for  urgent  care  and emergency units.
+
+The health facility design requirements for urgent care and emergency services aligned with the DHA Health facility guidelines.
+
+The  policies,  procedures,  protocols  and  clinical  governance  that  should  be  in  place  for  the provision of urgent care and emergency unit services.
+
+The general requirements for patient triage, assessment, stabilisation, admission, referral and management.
+
+2.1 -
+
+[PAGE 6]
+The standards have been updated to reflect current clinical practices and available equipment, as follows:
+
+[PAGE 6]
+A dedicated room for mental health assessments shall be provided, or alternatively, a multi-purpose room that can accommodate mental health assessments and emergency cases as needed.
+
+Mandatory for the referring/transferring facility to ensure continuous safety and clinical stability of the patient until handover and acknowledgment by the receiving facility. As per the DHA Policy for Referral and Transfer of patients between Hospitals.
+
+Portable  ultrasound  is  mandatory  to  be  included  in  ED  for  point-of-care  testing  (POCT),  as  it replaces invasive monitoring
+
+ports rapid diagnostics.
+
+Required Crutches \ Wheelchairs  for basic mobility aids (crutches or wheelchairs) available in ED for patient support and safe movement.
+
+[PAGE 6]
+X-Ray viewer (removed; EMR provides image viewing)
+
+Alcoholmeter (removed; no clinical utility)
+
+Medical Screening Examination (removed; not practiced yet in Dubai)
+
+Central Venous Pressure Monitoring Equipment (removed; replaced by non-invasive systems)
+
+Blood salvage/auto transfusion device (not mandatory for every ED)
+
+Peritoneal lavage instruments and supplies (removed; no longer used)
+
+Sexual assault evidence-collection kit (removed; forensic use only, not for ED)
+
+2.1 -
+
+[PAGE 7]
+AMA  (Against  medical  Advice):
+
+When  a  patient  decides  to  leave  the  DHC  facility  after  an
+
+examination has been completed and a treatment plan recommended, whether it is an inpatient or
+
+an outpatient, this is identified as 'leaving against medical advice.' AMA also includes refusal of a
+
+or specific treatment or procedure.
+
+Canadian Emergency Unit Triage and Acuity Scale:
+
+ll
+
+Five level assessment tool used when many
+
+patients  present  to  the  emergency  unit  simultaneously.  EU  triage  ensures  that  patients  are
+
+prioritized  according  to  the  severity  of  their  presentation.  CTAS  acuity  ranges  from  one  that
+
+requires  immediate  attention  to  five,  which  are  the  walk  in  non-urgent  patients  who  does  not
+
+require emergency attention.
+
+Emergency Unit:
+
+Health facilities that are open 24 hours, 7 days a week. Patients shall be admitted,
+
+transferred or discharged within 4 hours. An emergency unit is consultant-led (onsite emergency
+
+trained  physician),  with  a  multidisciplinary  team  and  nursing  support,  and  possess  diagnostic,
+
+surgical and pharmacy capabilities to manage an emergency or life-threatening patient such as and
+
+not limited to the following conditions:
+
+·
+
+Chest pain or pressure;
+
+·
+
+Difficulty breathing;
+
+Stroke;
+
+·
+
+Pneumonia;
+
+2.1 -
+
+[PAGE 8-9]
+Sudden severe headache, paralysis or weakness;
+
+Head, Neck and Back Trauma;
+
+Severe or uncontrolled bleeding;
+
+Loss of vision;
+
+Compound fracture;
+
+Moderate or severe bleeding;
+
+Convulsions, seizures or loss of consciousness;
+
+Blunt or knife wounds;
+
+Fever in newborn less than 3 months old;
+
+Moderate or severe upper and/or lower respiratory tract infections;
+
+Poisoning;
+
+Severe dehydration;
+
+Severe abdominal pain.
+
+Acute delirium or mental impairment; and
+
+OBs or Gynae-related problems.
+
+Emergency Facility: Refers to DHA licensed Facility that provides emergency care to patients with injury and illness. These facilities are categorised into three groups:
+
+Urgent Care Centres
+
+Emergency Unit
+
+Paediatric Emergency Services
+
+Maternity Emergency Services
+
+Rural Emergency Services
+
+Free Standing Emergency Unit
+
+Emergency Care: is patient care for a medical or surgical emergency condition.
+
+Emergency condition in a hospital setting is a condition manifesting itself by acute symptoms of sufficient severity (including severe pain) such that the absence of immediate medical attention could reasonably be expected to result in either one or more of the following:
+
+Placing the health of the individual (or, with respect to a pregnant woman, the health of the woman or her unborn child) in serious jeopardy,
+
+Serious impairment to bodily functions,
+
+Serious dysfunction of any bodily organ or part,
+
+OR
+
+With respect to a pregnant woman who is having contractions:
+
+o With inadequate time to affect a safe transfer to another hospital before delivery, or
+
+o That transfer may pose a threat to the health or safety of the woman or the unborn child.
+
+[PAGE 9-11]
+Emergency Medicine: is the specialty of providing medical care for unscheduled illness or injury of variable  severity.  Emergency  Medicine  includes  coordination  of  patient  care  across  multiple disciplines and final disposition for discharge or referral for admission further management.
+
+Emergency Severity Index (ESI):
+
+ESI is a five-level emergency triage tool to rapidly identify and
+
+manage patient with acute life or limb threatening conditions. ESI is a five-level emergency unit
+
+triage program where ESI level 1 is the most urgent and ESI level five is the least urgent. ESI level
+
+depends on the patient's presentation acuity and the number of resources the patient requires to
+
+complete his or her assessment.
+
+Freestanding  Emergency  Unit:
+
+A  Freestanding  Emergency  Unit  (FSEU)  is  an  emergency  unit,
+
+physically separate and distinct to its operating hospital, that is adequately staffed by emergency
+
+staff and physicians, and that provides comparable care to a wide range of patients 24 hours, 7
+
+days a week. There are two models for freestanding emergency unit:
+
+·
+
+·
+
+Hospital
+
+-
+
+outpatient Department (HOPD):
+
+A type of freestanding emergency unit (FSEU)
+
+owned and operated by a hospital system. Also known as satellite emergency unit, offsite
+
+emergency unit. A HOPD will follow the same rules, regulations and licensing requirements of
+
+the hospital system that it affiliates.
+
+Independent freestanding emergency Unit:
+
+a type of Freestanding Emergency Unit (FSEU)
+
+owned, in whole or in part, by independent groups or by individuals.
+
+Hazard Vulnerability  Analysis:
+
+A  hazard  vulnerability  analysis  is  a  process  for  identifying  the
+
+hospital's highest vulnerabilities to natural and man
+
+-made hazards and the direct and indirect effect
+
+these hazards may have on the hospital and community.
+
+2.1 - Maternity  Emergency  Services:
+
+Facilities  in  a  hospital  devoted  to  providing  comprehensive
+
+obstetric and maternity emergency care. The maternity emergency unit should be open 24 hours,
+
+7  days  a  week  and  is  consultant-led  (onsite  obstetrics  and  gynaecology  emergency  trained
+
+physician), with a multidisciplinary team and nursing support, and possess diagnostic, surgical and
+
+pharmacy capabilities to manage an emergency or life-threatening maternity patient.
+
+Paediatric Emergency Services:
+
+Facilities situated in a hospital devoted to providing paediatric
+
+emergency medical care for children up to the age of 18. The paediatric emergency unit should be
+
+open 24 hours, 7 days a week and is consultant-led (onsite paediatric emergency trained physician),
+
+with a multidisciplinary team and nursing support, and possess diagnostic, surgical and pharmacy
+
+capabilities to manage an emergency or life-threatening paediatric patient.
+
+Picture archiving and communication system (PACS)
+
+is a modality of imaging technology, which
+
+helps  in  image  transmission  from  the  site  of  image  acquisition  to  multiple  physically  disparate
+
+locations.  This  technology  is  convenient  to  access  multiple  modalities  (radiographs,  CT,  MR,
+
+ultrasound and others) simultaneously at multiple locations within hospitals.
+
+Rural Emergency Services:
+
+Also known as remote emergency units. Emergency units that provide
+
+urgent or emergent care to a community with low population density (defined as being less than
+
+[PAGE 11-13]
+15,000 individuals) or, operate in area of greater physical distance from urban city centres (distance
+
+measured as being more than 100 kilometres).
+
+2.1 - Stable:
+
+is with respect to an emergency medical condition, to provide such medical treatment of
+
+the condition as may be necessary to assure, within reasonable medical probability that no material
+
+deterioration of the condition or delivery of an unborn child/placenta is likely to result from or
+
+occur during the transfer of the individual from a facility.
+
+Thromboelastographic  analyser:
+
+patient's haemostasis during Haemostasis  Analyser  System  to  continuously  monitor  a
+
+surgery, which reduces blood product usage and decreases thrombotic
+
+complications
+
+Transfer:
+
+.
+
+is the movement (including the discharge) of an individual outside a hospital's facilities
+
+at the direction of any person employed by (or affiliated or associated, directly or indirectly, with)
+
+the hospital, but does not include such a movement of an individual who:
+
+·
+
+·
+
+Has been declared dead, or
+
+Leaves the facility without the permission of any such person.
+
+Urgent Care Centres:
+
+It is a walk-in ambulatory clinic providing medical care for minor non-urgent
+
+illnesses or injuries. Urgent Care Centers provides care outside the acute emergency environment;
+
+it is easily accessible and opens 10 - 12 hours, minimum 6 days a week. Urgent care centres include
+
+basic  diagnostic,  surgical  and  pharmacy  services,  are  capable  of  treating  minor  symptoms  and
+
+illnesses such as, and not limited to:
+
+·
+
+Muscle pain;
+
+Mild upper or lower respiratory tract infections;
+
+2.1 -
+
+Headache.
+
+Mild pain such as headache/earache/abdominal pain;
+
+Mild Bleeding;
+
+Minor injuries;
+
+Sprains and joint conditions;
+
+Cuts that do not involve much blood but might need stitches;
+
+Breathing difficulties, such as mild to moderate asthma;
+
+Diagnostic services, including X-rays and laboratory tests;
+
+Eye irritation and redness;
+
+Fever or flu;
+
+Minor broken bones and fractures in fingers or toes;
+
+Moderate back problems;
+
+Severe sore throat or cough;
+
+Skin rashes and infections;
+
+Urinary tract infections; and
+
+Vomiting, diarrhea, or dehydration.
+
+[PAGE 16]
+Emergency  facility  unit 's form  part  of  an  essential  part  of  the  health  system  and  can  be segmented  into  Urgent  Care  Centres,  and  Emergency  Units.  Urgent  care  and  Emergency services play a key role in ensuring patients that require emergency services are efficiently and effectively manage according to their needs by the right healthcare professional. Patients that require urgent care generally suffer from an illness or injury that requires urgent attention.  Functions  of  primary  healthcare  providers  would  be  to  guide  the  patient  to  the correct level of care and treatment and be provide clarity as to which services are provided where, along with providing pathways to access these services reliably. The function of the emergency unit is to receive, stabilise and manage patients (adults and children) who present with a large variety of urgent and non-urgent conditions whether self or otherwise referred. all emergency care services'.
+
+The vision statement for Emergency Care strategy in Dubai was to collaboratively develop and lead on the Strategic direction with the view to be the 'best in class and ensure integration for These standards were developed and implemented by the Dubai Health Authority (DHA) in order to provide the highest quality of emergency and urgent care. DHA uses this opportunity to provide clear standards for  the provision of urgent care and emergency unit services. Furthermore, the standards define the minimum service specifications and requirements for urgent care and emergency unit services in the Emirate of Dubai.
+
+2.1 -
+
+26/11/2025  -
+
+[PAGE 17]
+The management of urgent care and emergency unit services in DHA licensed health facilities .
+
+To  assure  provision  of  the  highest  levels  of  safety  and  quality  in  urgent  care  and emergency unit services in Dubai Health Authority (DHA) licensed health facilities.
+
+DHA licensed healthcare professionals and health facilities providing urgent care and emergency unit services.
+
+[PAGE 17-22]
+All health facilities providing urgent and emergency services shall adhere to federal and local laws and regulations.
+
+Health facilities aiming to provide urgent care and emergency unit services shall comply with the DHA licensure and administrative procedures available on the DHA website https://www.dha.gov.ae.
+
+Licensed health facilities opting to add urgent care and/or emergency unit services shall apply to HRS to obtain permission to provide the required service.
+
+The health facility shall develop the following policies and procedures including but not limited to:
+
+2.1 -
+
+Surge capacity and diversion policy
+
+Disaster management.
+
+Emergency action plan.
+
+Incident reporting.
+
+Sentinel events.
+
+Infection control measures and hazardous waste management.
+
+Medication management.
+
+Patient acceptance criteria.
+
+Patient assessment and admission.
+
+Patient discharge.
+
+Patient referral or transfer.
+
+Registration policy.
+
+Interfacility transfer
+
+Quality improvement plan.
+
+Management of healthcare information.
+
+Patient education and Informed consent.
+
+Patient health record.
+
+Patient privacy.
+
+Staff job description, qualification and education.
+
+Triage and registration system.
+
+The health facility shall maintain documented evidence of the following:
+
+Transfer of critical or complicated cases when required.
+
+Patient discharge.
+
+Hazard Vulnerability Analysis.
+
+Fire Safety, emergency plans, security,
+
+Equipment maintenance services.
+
+Laundry services.
+
+Medical waste management as per Dubai Municipality (DM) requirements.
+
+Housekeeping services.
+
+The health facility shall ensure the availability of the following services:
+
+Social worker.
+
+Finance.
+
+Purchasing.
+
+Facility management.
+
+Human resources.
+
+The health facility shall:
+
+M aintain  charter  of  patients'  rights  and  responsibilities  posted  at  the entrance of the premise in two languages (Arabic and English).
+
+Have  trained  healthcare  professionals  to  manage  cases  as  per  scope  of service.
+
+Install  and  operate  equipment  required  for  provision  of  the  proposed services in accordance to the manufacturer's specifications.
+
+Display  appropriate  signage  with  the  type  of  service  and  working  hours, clearly visible at the entrance of health facility.
+
+Be equipped to provide services and manage case mix including People of Determination and mental health patients.
+
+The  health  facility  shall  have  crutches  and  wheelchairs  available  to patients who need them before or after treatment.
+
+All staff working in urgent care services should receive training in the principles  of  safeguarding  children,  vulnerable  and  older  adults  and identification and management of child protection issues.
+
+The health facility shall ensure it has in place adequate lighting and utilities, including the following:
+
+Temperature controls.
+
+Water taps, sinks and drains.
+
+Medical gases.
+
+Lighting.
+
+Electrical outlets.
+
+Communications.
+
+All UCCs shall align with the DHA Guidelines for Heath facility design; section B, 360Outpatients Unit for further guidance.
+
+All  Emergency  units  shall  align  with  the  DHA  Guidelines  for  Heath  facility  design; section B, 120- Emergency Unit for further guidance.
+
+The health facility shall have IT, Technology and Health Records services which includes and not limited to:
+
+Electronic health records and patient information systems.
+
+Access  to  electronic  forms  and  requests  for  investigations,  pharmacy, catering, and supplies.
+
+Shall develop a plan to integrate electronic medical system with NABIDH project.
+
+Picture  archiving  communications  systems  (PACS)  should  be  in  place  for access to patient imaging results.
+
+Wireless network requirements for ease of communication.
+
+Telehealth technology and support services where applicable.
+
+Availability  of  Computers,  laptops  and  tablets  for  physicians,  nurses,  and administrative staff.
+
+Patient call, nurse assist call, emergency call systems.
+
+Telephones should be available in all offices, at all staff stations, in the clerical area and in all consultation and other clinical rooms.
+
+2.1 -
+
+5.11.10.
+
+The  health  facility  shall  comply  with  the  DHA  Guidelines  for  Managing
+
+Health Records and DHA standards for telehealth services.
+
+Clinical Governance
+
+5.12.1.
+
+The health
+
+committees:
+
+a.
+
+Quality improvement committee.
+
+b.
+
+c.
+
+d.
+
+[PAGE 22]
+e.
+
+f.
+
+Disaster management committee.
+
+Infection control committee.
+
+Code blue committee.
+
+Educational committees for physicians.
+
+Mortality and Morbidity committee.
+
+As per the Executive Regulations Law No. (11) of the year 2013 concerning Health
+
+Insurance  in  Dubai  and  related  administrative  decision;  patients  must  be  granted
+
+immediate  emergency  care  regardless  of  the  facilities  network  of  health  insurance
+
+providers.
+
+5.13.1.
+
+Receiving facility can submit a claim to the insurance provider to cover the cost
+
+of  providing  emergency  services  even  if  they  are  outside  of  the  insurance
+
+network.
+
+The  health  facility  shall  ensure  patient  safety  and  quality  assurance  through  the following:
+
+5.12.
+
+5.13.
+
+facility should include representatives on the following
+
+[PAGE 23-24]
+Use the Canadian emergency unit triage and acuity scale (CTAS) or the emergency severity index (ESI) as reference. Refer to Appendix 1
+
+Level 1 and Level 2 patients must be immediately stabilized prior to sorting out payment status
+
+Nurses trained in urgent and/or emergency services should perform triaging.
+
+Patients who present with severe physiological and/or psychological disturbance shall receive immediate care.
+
+Reassessment  of  patients  every  15-60  minutes  depending  on  the triage level to ensure changes to clinical condition are identified in a timely manner.
+
+Patient Assessment, Diagnosis and Stabilisation:
+
+The health facility should have organizational plans in place to avoid crowding in the health facility.
+
+The health facility shall undertake regular clinical audits, review and monitoring outcomes.
+
+Availability of a multidisciplinary team, possessing the requisite levels of knowledge and training in accordance with their role in providing urgent or emergency care to patients of varied acuity levels.
+
+2.1 -
+
+5.14.2.
+
+d.
+
+The availability  of  a  24-hour  consultant  physician  cover  to  oversee
+
+triage.
+
+[PAGE 24-25]
+a.
+
+Urgent care centres shall transfer patients with an immediate risk or
+
+threat to life, limb, body function or long-term health to an emergency
+
+unit by interfacility ambulance.
+
+Emergency units may refer stable patients to secondary or tertiary care.
+
+c.
+
+Indications for referral to another facility is based on the following
+
+criteria, but not limited to:
+
+i.
+
+ii.
+
+Patient's  need  for  specialized  care  not  available  in  the
+
+receiving facility in terms of expertise and facilities.
+
+For second opinion.
+
+Non-availability of hospital beds.
+
+Ineligibility for treatment in receiving facility.
+
+All health facilities transfer policies must comply with the DHA Patient referral and inter-facility transfer policy.
+
+Referring/transferring  facility  is  accountable  for  the  continuous safety and clinical stability of the patient until handover is completed.
+
+2.1 -
+
+Against  Medical  Advice  (AMA)  should  be  filled  and  signed  by  the patient or eligible caregiver who  refuse treatment or medical recommendations despite medical advice.
+
+Patients should be informed of all the medical risks associated when refusing medical treatment or medical recommendations.
+
+Patients  should  not  be  encouraged  to  fill  leaving  or  discharge AMA and should only be used as a last resource in the event of patient refusal despite medical advice.
+
+Surge and Disaster Preparedness, the health facility shall have:
+
+A unified incident management structure.
+
+Preliminary assessment of the incident and document initial resource needs and availability.
+
+Provide health-related data to DHA to facilitate any necessary shifts into  and  out  of  conventional,  contingency,  and  crisis  standards  of care.
+
+Maintain surveillance  systems to detect and monitor outbreaks of disease after any public health emergency.
+
+[PAGE 26-29]
+6.1.
+
+6.2.
+
+The scope of Urgent Care Center (UCC) is:
+
+To provide a walk-in ambulatory service providing medical care for minor non-urgent illnesses or injuries outside the acute emergency environment for both adults and children of any age.
+
+To  be  able  to  undertake  basic  resuscitation;  stabilisation  and  minor procedures along with medical services provided by General Practitioners or specialists and shall be supported by Registered Nurses.
+
+UCC can be provided in:
+
+6.2.1.
+
+Hospitals.
+
+Day surgical centres.
+
+6.2.3.
+
+Polyclinics.
+
+Standalone urgent care centres.
+
+The health facility providing UCC shall be open at least 10 - 12 hours a day, minimum 6 days a week, with access to comprehensive urgent care services.
+
+6.4.
+
+Health  facilities  providing  urgent  care  services  shall  have  the  following  specifically
+
+designed areas:
+
+6.4.1.
+
+Examination room(s).
+
+Designated isolation room(s).
+
+A separate waiting area.
+
+2.1 -
+
+Patient bathroom(s).
+
+All UCC shall have the following services:
+
+Ancillary services:
+
+On site availability of plain x-ray facilities.
+
+On site point of care testing and shall comply with the DHA standards for Point of care testing.
+
+Access to advanced radiological and laboratory services.
+
+In house
+
+Via an agreement contract
+
+Pharmacology services:
+
+UCC  shall  align  with  the  requirements  of  medication  as  per  DHA Emergency Medication Policy., and Standards For the Management of Crash Carts in Hospitals
+
+Referral and Patient Transfer services:
+
+In addition to the above requirements, there shall be a Memorandum of understanding (MOUs) between the UCC and multiple hospitals to continue patient care once the patient is stabilised.
+
+Additional services:
+
+Social worker services.
+
+Finance services.
+
+Human resources.
+
+Public Relation Officer.
+
+Security.
+
+Patient transport services
+
+All UCC shall have the following minimum staff Requirements:
+
+All healthcare professionals shall hold an active DHA full time professional license and work within their scope of practice.
+
+An UCC shall be led by a DHA licensed Consultant/specialist physician or surgeon.
+
+UCC may be led by a General Practitioner with previous experience in UCCs.
+
+There shall be at least one consultant or specialist physician/surgeon, or specialist/consultant family physician, per shift in the UCC.
+
+All healthcare professionals providing urgent care services shall have the following valid life support courses as per the unified healthcare professional's qualification requirements (PQR ) as follows:
+
+Basic life support (BLS) or cardiopulmonary resuscitation (CPR)
+
+Advanced cardiac life support (ACLS).
+
+At least one (1) healthcare professional with Paediatric advanced life support (PALS).
+
+2.1 -
+
+UCC shall have the minimum medical Equipment and supplies listed in Appendix 2
+
+[PAGE 29-34]
+7.1.
+
+7.2.
+
+The scope of Emergency Unit (EU) is:
+
+To provide evaluation and early management of patients, both adults and children of all ages, whose condition might otherwise be compromised if not attended to immediately.
+
+To  manage life  threatening  and  emergency  medical,  paediatric,  maternal and obstetric conditions.
+
+To manage surgical conditions and procedures such as and not limited to wound management and burns.
+
+To provide surgical interventions such as the insertion of chest drains and needle thoracotomy.
+
+Types of Emergency Units:
+
+7.2.1.
+
+7.2.2.
+
+Hospital Based Emergency Units:
+
+a.
+
+Emergency unit.
+
+b.
+
+c.
+
+Paediatric Emergency unit.
+
+Maternal Emergency unit.
+
+Rural Emergency unit.
+
+Free standing Emergency Units:
+
+2.1 -
+
+Satellite Emergency unit.
+
+Independent Freestanding Emergency unit.
+
+All Emergency services shall be open 24/7, and during public holidays, with unrestricted access to emergency medical care.
+
+Patients shall be admitted, transferred or discharged within a period of four (4) hours.
+
+All emergency units shall have the following designated facility design requirements:
+
+Entrance and reception area, receiving of patients.
+
+Patient waiting areas, with refreshments.
+
+Security room.
+
+Staff station.
+
+Triage Assessment area/ vital sign room.
+
+Designated isolation room(s).
+
+7.4.7.
+
+Patient Resuscitation Bay(s)
+
+a.
+
+Availability of a specialised resuscitation bed.
+
+Enough space is available for a 360-degree access to all parts of the patient for uninterrupted procedures.
+
+Easy access from the ambulance entrance.
+
+Consultation/Examination room(s).
+
+Observation/Short stay room(s).
+
+Assessment/Treatment room(s).
+
+Medication room.
+
+Procedure room(s)
+
+Support areas which should include:
+
+Clean utility room.
+
+Dirty utility room.
+
+Medical Disposal room.
+
+Equipment storeroom.
+
+Staff Areas which should include:
+
+Male and female changing rooms (toilets, shower and lockers).
+
+Staff Room.
+
+Offices and workstations.
+
+Meeting  rooms  that  may  be  used  for  education  and  teaching functions.
+
+Ambulance Receiving Base and Helicopter landing site (HLS)
+
+All Emergency services shall have an ambulance service.
+
+7.4.14.
+
+Helicopter landing site is mandatory in rural emergency services.
+
+Shall conform to Civil Aviation Authority Standards.
+
+Optional areas may include:
+
+Paediatric Assessment/Short Stay.
+
+Short-Stay Unit/Emergency Medical Unit for extended observation and management of patients.
+
+Mental Health Assessment Room is mandatory in EDs
+
+All EUs shall have the following units with 24/7 access to:
+
+Radiology unit.
+
+Laboratory unit
+
+Pharmacy unit
+
+Medical records.
+
+Mortuary unit
+
+All Hospital based EUs shall have the additional following units with 24/7 access to:
+
+Inpatient unit for medical and surgical wards.
+
+Outpatients' unit for patient follow-up and referrals.
+
+Intensive care unit.
+
+Operating unit
+
+Sterile supply unit (SSU) to obtain sterile equipment for surgical emergencies.
+
+Service units such as catering.
+
+All EUs shall have the following services:
+
+Ancillary services:
+
+Radiological diagnostic services which include with but not limited to the following (APPENDIX 3) :
+
+Conventional radiography.
+
+Ultrasonography with doppler.
+
+Computed Tomography (CT) scan.
+
+Access (in house or contract) to Magnetic Resonance Imaging (MRI).
+
+Cardiac services for Doppler studies and 12-Lead ECG and rhythm strips.
+
+Pulmonary services which include but not limited to the following:
+
+Blood gas determination
+
+CO oximetry.
+
+Peak flow determination
+
+Pulse oximetry
+
+Foetal monitoring (non-stress test)/uterine monitoring in applicable facilities.
+
+Laboratory requirements, refer to Appendix 4 and DHA Standards for Clinical Laboratory Services.
+
+Pathology lab.
+
+[PAGE 34]
+List  for  Emergency  Medications  in  all  EUs  shall  be  available  for immediate use as per the DHA Emergency Medication Policy.
+
+[PAGE 34-36]
+All healthcare professionals in the health facility shall hold an active DHA full time professional license and work within their scope of practice.
+
+All the healthcare professionals in the emergency unit shall be privileged as per the DHA Clinical Privileging Policy.
+
+Emergency units shall be led by an Emergency Medicine Consultant.
+
+All  staff  working  in  EU  inclusive  of  physicians,  nursing  and  non-clinical support staff shall report to the EU lead.
+
+There should be at least one consultant or specialist in emergency medicine per shift in all EUs.
+
+The following core specialities should be available, to give advice for patients on a 24-hour basis as part of emergency care.
+
+Medical Physician(s) b. Surgeon(s) c. Paediatric surgeon. d. Anaesthetist with paediatric skills. e. Neonatologist. f. Paediatric critical care specialist. g. Obstetrician. h. phlebotomist 7.8.7. All  healthcare  professionals  providing  emergency  services  shall  have  the following valid life support courses as per the unified healthcare professional's qualification requirements (PQR ) as follows: a. Basic Life Support (BLS) or cardiopulmonary resuscitation (CPR) b. Advanced Cardiac Life Support (ACLS). c. Advanced Trauma Life Support (ATLS) for physicians only d. Advanced Trauma Care for Nurses (ATCN) e. Advanced Life Support in Obstetrics (ALSO) f. Neonatal Resuscitation Program (NRP). Healthcare professionals licensed title Emergency Medicine, are exempted
+
+from having an active certification on the above life support courses.
+
+At least one (1) registered Nurse (RN) trained in paediatric care and PALS certified should be responsible, either directly or in a supervisory role, for the nursing care of attending paediatric patients.
+
+At least one RN nurse trained in Neonatal Resuscitation (NRP)
+
+All EUs shall have the Medical Equipment and Supplies listed in Appendix 5
+
+[PAGE 36-40]
+In addition to the requirements of the general EU, the paediatric EU must be staffed and equipped to deal with the full range of ages and clinical presentations of children that it normally receives .
+
+The scope of Paediatric Emergency Unit is:
+
+To  manage  pediatric  patients  with  major  trauma  and/or  life-threatening conditions.
+
+To manage acute complex presentation and case mix including mental health.
+
+To  have  the  capacity  for  invasive  monitoring  and  short-term  assisted ventilation.
+
+To have the capacity to respond to local major incidents including a role in a formal disaster response plan.
+
+To have a dedicated retrieval service or to transfer and receive critically ill pediatric patients to designated hospitals or centers.
+
+2.1 -
+
+All paediatric emergency services shall be open 24/7 and during public holidays, with unrestricted access to emergency paediatric care.
+
+Must be always prepared to deal with the initial  resuscitation  of  a  child brought in unexpectedly.
+
+In addition to the designated facility requirements in EU, paediatric emergency services shall ensure the following:
+
+The emergency environment must be safe for children .
+
+Children must be separated from distressing sights and sounds of other patients, with some separation from in the main waiting area.
+
+The option of family-member presence must be permitted and encouraged for all aspects of EU care .
+
+The EU must contain enough child-orientated treatment rooms (depending on the proportion of child  EU  attenders) with sufficient space to accommodate family members.
+
+Areas dedicated for children should be clearly designated, furnished, and decorated  in  a  manner  that  is  colourful,  comfortable  and  safe  for  both patients and their parents or guardians.
+
+Breast-feeding and nappy changing rooms should be available.
+
+Critical Care area which includes ICU and NICU.
+
+2.1 -
+
+Emergency  staff  must  give  health  advice  and  explanations  in  a  clear language and ensure mutual understanding .
+
+Guidelines  for  medical  treatment  should  be  available  for  balancing  the wishes of the child, legal responsibility of the guardian and the child's best interests.
+
+In addition to the ancillary services in EU. The following Mandatory services should be provided on-site:
+
+Respiratory Therapy.
+
+Social workers and counsellors.
+
+Mental health services.
+
+Child protective services.
+
+Physical Therapy.
+
+Public Relation Officer.
+
+All  healthcare  professionals  providing  Paediatric  emergency  services  shall  have  the following valid  life  support  courses  as  per  the  unified  healthcare  professional's qualification requirements (PQR) as follows:
+
+Basic Life Support (BLS)
+
+Paediatric Advanced Life Support (PALS).
+
+Neonatal Resuscitation Program (NRP).
+
+2.1 -
+
+Paediatric Emergency services should be staffed with a multi-disciplinary team that includes:
+
+Paediatric EU shall be led by:
+
+Paediatric Emergency Medicine Physician OR
+
+Adult Emergency Medicine Physician OR
+
+General  Paediatric  physician with  minimum  5  years'  experience  in emergency.
+
+At least one paediatric Specialist/Consultant shall be available per shift.
+
+Anaesthesia specialist with an active Paediatric Anaesthesiology certification.
+
+Nursing staff that are trained in paediatric care and are actively certified in PALS.
+
+Emergency or Family Physician specialists who have completed Paediatric medicine training.
+
+Radiographer.
+
+Registration officer.
+
+Quality officer.
+
+Plaster technicians.
+
+Phlebotomist.
+
+Respiratory therapist
+
+8.7.12.
+
+Ancillary services and allied health providers.
+
+The EU shall have in place policies and procedures about child protection and child
+
+abuse including:
+
+8.8.1.
+
+Clinical assessment of a child.
+
+8.8.2.
+
+8.8.3.
+
+Recognition of possible child abuse.
+
+Initial management of a child with possible or suspected abuse.
+
+Notification of appropriate authorities about a case of possible or suspected child abuse.
+
+All  healthcare  professionals  must  be  aware  of  local  laws  and  guidelines  regarding consent to undertake examinations of children . Refer to the DHA Guidelines for Patient Consent.
+
+All  emergency  units  should  be  fully  equipped  with  appropriate  paediatric  sized equipment, refer Appendix 6.
+
+Ambulances in paediatric emergency services should be equipped with paediatric sized equipment as well as space to accommodate a parent or guardian during transportation.
+
+[PAGE 40-45]
+9.1.
+
+The scope of Maternity emergency unit is:
+
+9.1.1.
+
+To handle life-threatening gynaecologic and obstetric conditions.
+
+2.1 -
+
+8.8.
+
+To deliver neonatal emergency services, gynaecological and obstetric care, mental health care, as well as anaesthesia and surgical services on a 24hourly service.
+
+To treat all women with gynaecological and reproductive concerns, including females during pregnancy, during delivery and in their post-partum period.
+
+To provide screening services for sexually transmitted diseases, reproductive  counselling  services  and  females  presenting  for  breast  and reproductive cancer screening.
+
+To provide resuscitative and urgent care, including emergency surgical care, to their patients. These conditions may include but are not limited to:
+
+Pre-eclampsia and eclampsia.
+
+Sepsis,  including  pelvic  inflammatory  disease  (PID),  tubo-ovarian abscesses (TOA), endometritis.
+
+Dysfunctional uterine bleeding, including life-threatening bleeding,
+
+Premature rupture of membranes.
+
+Suspected or ruptured ectopic pregnancies.
+
+Complications of labour including prolonged or obstructed labour.
+
+Post-partum haemorrhage.
+
+Miscarriages.
+
+Emergency Delivery.
+
+2.1 -
+
+Neonatal resuscitation following delivery.
+
+Post-abortion care.
+
+Family planning counselling.
+
+Continuous foetal heart rate monitoring.
+
+Breast disorders, including screening for cancer.
+
+Female  wellness  screening,  including  Pap  smears  and  reproductive cancer screening.
+
+All  Maternal  Emergency  Services  shall  be  open  24/7  with  unrestricted  access  to emergency paediatric care.
+
+All maternity EUs should be adequately designed to receive patients with the layout and equipment as mentioned above in a general Emergency Unit and aligned with the DHA Health facility Guidelines Emergency Unit and should further include:
+
+Breast-feeding and nappy changing rooms should be available.
+
+Critical Care area which includes ICU and NICU.
+
+All  maternity  EU  shall  have  access  to  surgical  consult  services,  labour  and  delivery suites.
+
+In addition to the ancillary services in EU Services. The following Mandatory services should be provided on-site:
+
+Respiratory Therapy.
+
+Social workers and counsellors.
+
+Mental health services.
+
+Child and women protective services.
+
+Physical Therapy.
+
+Public Relation Officer.
+
+All  healthcare  professionals  providing  Maternal  emergency  services  shall  have  the following valid  life  support  courses  as  per  the  unified  healthcare  professional's qualification requirements (PQR) as follows:
+
+Basic Life Support (BLS)
+
+Advanced Life Support in Obstetrics (ALSO)
+
+Neonatal Resuscitation Program (NRP).
+
+Maternity emergency units shall be led by a consultant or specialist Obstetrics and gynaecologist.
+
+Maternity EU shall be staffed by a multi-disciplinary team that includes:
+
+At least one Obstetrics and Gynaecology Specialist/Consultant per shift.
+
+Consultant or specialist Neonatologist per shift.
+
+Anaesthesia specialist with active Neonatal Resuscitation Program (NRP) certification.
+
+Nursing staff that are trained in obstetrics and gynaecology care or that are actively certified in advanced obstetric life support courses.
+
+2.1 -
+
+Registered nursing staff with a minimum requirement of current certification in advanced cardiac life support and paediatric advanced life support.
+
+Midwifes  that  are  actively  certified  in  advanced  obstetrics  life  support courses.
+
+Emergency or Family Physician specialists who have completed Obstetrics or Women's Health Fellowship training .
+
+Radiographer.
+
+Phlebotomist.
+
+Registration officer.
+
+Quality officer.
+
+Plaster technicians.
+
+Ancillary services and allied health providers.
+
+If no surgical or medical services are available, on-site, maternity EUs should have clear policies in place for transfer of patients to other facilities if the need arises.
+
+The EU shall have in place policies and procedures about suspected maternal neglect, sexual abuse, intimate partner violence and child protection.
+
+All Maternal emergency services should be fully equipped with appropriate equipment and  supplies,  including  neonatal  sized  equipment,  maintained  for  the  Maternity Emergency unit. Refer to Appendix 7.
+
+2.1 -
+
+Policies,  Procedures  and  Protocols  other  than  the  general  mentioned  above  are  as follows:
+
+Triage  patients  in  adherence  to  internationally  accepted  and  validated modified triage acuity scores such as:
+
+a.
+
+Modified Early Obstetric Warning Signs (MEOWS).
+
+[PAGE 45]
+Maternal-Foetal Triage Index (MFTI), whenever applicable, in addition to Emergency Severity Index (ESI).
+
+Canadian Triage and Acuity Scale (CTAS) to measure acuity.
+
+During  disaster  event,  it  must  have  plans  set  in  place  for  the  care  of pregnant patients with anticipated induction or scheduled deliveries.
+
+Maternity emergency services must have policies for the appropriate triaging, referral or triaging away of patients depending on the available resources.
+
+Must  unify  triage  acuity  tools  for  the  pregnant  patient  utilized during  disaster  preparedness  and  activation.  These  may  include CTAS, ESI, MFTI, MEOWS, as described above, or The Obstetric Triage by Resource Allocation for Inpatient tool (OB TRAIN).
+
+In the case of disasters or evacuations, special care should be taken not to separate mothers from their new-borns.
+
+2.1 -
+
+[PAGE 46-49]
+The scope of a Free-Standing Emergency Unit (FSEU) is similar to the scope of services  of  an  Emergency  Unit;  except  they  are  not  attached  to  a  hospital.  The services include but not limited to:
+
+Manage high acuity cases and life-threatening emergencies.
+
+Provide initial diagnostic procedures as well as stabilizing interventions to the patients who are acutely ill or injured prior to transfer to a hospitalbased emergency unit.
+
+10.1.3.
+
+Transfer of patients on-campus or to a hospital-based emergency unit.
+
+There are two types of FSEU:
+
+Satellite emergency unit: A type of freestanding emergency unit (FSEU) owned  and  operated  by  a  hospital  system.  Also  known  as  satellite emergency unit, offsite emergency unit. A satellite emergency unit will follow  the  same  rules,  regulations  and  licensing  requirements  of  the hospital system that it affiliates.
+
+Independent  freestanding  emergency  Unit:  a  type  of  Freestanding Emergency Unit (FSEU) owned, in whole or in part, by independent groups or by individuals.
+
+An FSEU shall be capable of treating all age groups.
+
+2.1 -
+
+10.2.
+
+An FSEU shall operate 24/7, and during public holidays, with unrestricted access to emergency care.
+
+The FSEU 's shall have a similar designated facility requirement in EU, however it does not have in-patient capabilities and patients who require further care should be  transferred  to  appropriately  sourced  facilities  through  local  ambulance  EMS systems or HLS.
+
+The FSEU shall require the same ancillary services on-site to that of an EU.
+
+If a unit lacks support services availability, it should ensure timely transfer to other facility for appropriate care.
+
+If  patient  care  mandates  access  to  other  medical  services,  such  as  surgical, orthopaedic,  or  medical  sub-specialties,  then  an  FSEU  should  have  a  clear policy set forth for such patient disposition and transfer to other facility.
+
+Satellite emergency unit shall maintain the same monitoring and oversight of the off-campus emergency unit as it does for any other of its units.
+
+All healthcare professionals providing emergency services in a FSEU shall have the following valid  life  support  courses  as  per  the  unified  healthcare  professional's qualification requirements (PQR) as follows:
+
+Basic Life Support (BLS)
+
+Advanced Cardiac Life Support (ACLS)
+
+Paediatric Advanced Life Support (PALS).
+
+FSEU shall be led by A DHA Licensed Emergency consultant.
+
+Medical and nursing personnel should be qualified in emergency care and staffed to a number that meets the needs anticipated by the facility. The minimum staff requirements in a FSEU is as follows:
+
+Registration officer.
+
+Quality officer.
+
+Medical  staff  practicing  at  the  off-campus  EU  must  be  part  of  the hospital's single organized medical staff as required locally.
+
+Specialist Physicians licensed in emergency medicine care.
+
+General practitioners with experience working in emergency units, who have active certification in advanced life support courses, working under a licensed emergency specialist or a licensed emergency consultant.
+
+Registered  nursing  staff  with  a  minimum  requirement  of  current certification in advanced cardiac life support and paediatric advanced life support.
+
+Radiographer.
+
+Phlebotomist.
+
+Plaster technicians.
+
+Housekeeping services and utility personnel must be available on site as well.
+
+There shall  be  appropriate  equipment  and  supplies  maintained  for  the  FSEC  to include, but not limited to:
+
+Vital sign monitoring equipment, including, but not limited to:
+
+Thermometers.
+
+Cardiac monitors for heart rate monitoring with defibrillating, pacing and cardioversion capabilities.
+
+Oxygen saturation monitors, co-oximetry devices.
+
+Blood pressure monitoring devices with adequately sized cuffs.
+
+Weight Scale.
+
+Point of care devices for rapid glucose and ketone levels check.
+
+Immediately  available  oxygen  with  flow  meters  and  masks  or equivalent with available mechanical suction.
+
+Airway maintenance and resuscitation equipment to include:
+
+Resuscitation bags,
+
+Laryngoscopies,
+
+Blades of varying sizes and shapes,
+
+Endotracheal tubes,
+
+Cricothyrotomy tubes, and
+
+Adapters.
+
+FSEU should include the following devices:
+
+[PAGE 50]
+Ventilation devices.
+
+Nebulization devices.
+
+Spine immobilization  equipment  to  include  rigid  and/or  semi-rigid collars.
+
+Complete  intravenous  infusion  sets  and  cannulation  equipment,  with Intravenous catheter needles of multiple sizes (14 Gauge to 24 Gauge needles), and Intravenous poles and rapid infusers.
+
+Intraosseous  cannulation  equipment  with  adult  and  paediatric  sizes available.
+
+Availability of Adult , Paediatric and neonate crash carts fully equipped with different size equipment and periodically checked.
+
+Otoscope, fundoscopy device, stethoscope, torch and tongue depressors.
+
+Different size splints, bandages and slings.
+
+Laceration repair kit, suturing material, adhesive bandages.
+
+Foley's Catheters of multiple sizes, Coude catheters, Nasogastric tubes.
+
+Newborn  and  paediatric  resuscitation  equipment  and  neonate  crash carts.
+
+Equipment for managing hypothermia (Blankets, warm humidifiers).
+
+Lumbar Puncture sets, Central line cannulation kits, Thoracotomy tubes.
+
+Wheelchairs and mobility assistance devices.
+
+[PAGE 51]
+There  shall  be  appropriate  equipment  and  supplies  maintained  for  the  FreeStanding Emergency Unit as mentioned in Appendix 5 .
+
+[PAGE 51-54]
+Rural EU typically serve smaller, remote communities and provides 24/7 emergency medicine services for urgent or emergent cases to the rural population.
+
+The scope of a Rural Emergency Unit is:
+
+To provide adequate initial diagnostic, treatment and stabilization in lifethreatening emergencies or acute injuries.
+
+To  dedicate  at  least  one  resuscitation  area  to  provide  advanced paediatric, adult, obstetric or trauma life support. Those areas must be fully prepared with equipment and medication.
+
+To transfer of patients to higher level of care if required treatment is not available on-site.
+
+Rural EU must be capable of treating all age groups.
+
+Rural EU facilitate access to specialty care or consultation on a 24-hourly basis. Such services may be provided on-site, via transfer or via tele-health consultation at the discretion and capabilities of the concerned facility.
+
+Permitted services for the rural EU shall include the following:
+
+2.1 -
+
+Diagnostic as well as laboratory services like x-ray, ultrasound, and computed tomography (CT) scanning, routine haematology, chemistry studies, pregnancy testing, and cardiac enzymes available on-site.
+
+Intravenous (IV) medications, including resuscitative medications, IV fluids and narcotics available.
+
+Rural EUs must be staffed with healthcare providers capable of delivering paediatric emergency services, gynaecological and obstetric care, mental health care, as well as anaesthesia services on a 24/7.
+
+If no surgical or medical services are available on-site, tele-health consultation with specialized providers should be utilized.
+
+All healthcare professionals providing rural emergency services shall have the following valid  life  support  courses  as  per  the  unified  healthcare professional's  qualification requirements (PQR) as follows:
+
+Basic Life Support (BLS) or cardiopulmonary resuscitation (CPR)
+
+Advanced Cardiac Life Support (ACLS).
+
+Advanced Trauma Life Support (ATLS) for physicians only
+
+Advanced Trauma Care for Nurses (ATCN)
+
+Paediatric Advance Life Support (PALS)
+
+Prehospital Trauma Life Support (PHTLS)
+
+The Rural EU shall be led by a DHA licensed Emergency Medicine Consultant.
+
+The Rural EU should have the following healthcare professionals:
+
+Specialist Paediatric Emergency Physicians or, Specialist Paediatric physicians with experience working in the EU.
+
+General Practitioners with experience working in emergency units.
+
+Registered Nurses
+
+Radiographer
+
+Phlebotomist
+
+Plaster technicians
+
+Registration Officer
+
+Quality Officer.
+
+Rural EUs shall require the same ancillary services to that of an EU with the following considerations:
+
+Pharmacy services should ensure adequate stocking, storage and dispensing mechanisms for medications in a proper storage unit adhering to local laws and DHA Pharmacy Guidelines.
+
+Telehealth services may be used in rural EUs and should adhere to the DHA standards of Telehealth services. Services includes the following:
+
+Telehealth consultations for:
+
+medical  sub-specialties  such  as  and  not  limited  to:  respiratory, cardiology, gastroenterology, endocrinology, neurology, haematology, and oncology.
+
+Mental health services.
+
+Community services.
+
+Surgical sub-specialties for stable patients not requiring immediate intervention.
+
+If patient care mandates immediate access to other medical services, EUs should have a clear policy set forth for such patient disposition and transfer to other facility.
+
+Rural EUs must communicate with local health authorities in the case an outbreak of disease is detected.
+
+Rural EUs must have local EMS and HLA services to facilitate patient flow and transfers of patients.
+
+There shall be appropriate equipment and supplies maintained for the Rural Emergency Unit as mentioned in Appendix 5 .
+
+[PAGE 55-58]
+American Colleague of Surgeons chapter 23- resources for optimal care of injured patient https://www.facs.org/-/media/files/quality-programs/trauma/vrcresources/clarification_document.ashx  [Accessed 28 August 2021].
+
+ACEP (2021) American College of Emergency Physicians. Definition of an Emergency Service. Available on: https://www.acep.org/patient-care/policy-statements/definition-of-anemergency-service/ [Accessed 10 September 2021].
+
+ACEP (2017). American College of Emergency Physicians. Definition of Rural Emergency Medicine: Available on: https://www.acep.org/patient-care/policy-statements/definition-ofrural-emergency-medicine/ [Accessed 10 September 2021].
+
+ACEP (2020) American College of Emergency Physicians. Freestanding Emergency Units. Available on: https://www.acep.org/globalassets/new-pdfs/policystatements/freestanding-emergency-units.pdf [Accessed 12 September 2021].
+
+ACEP (2012) American College of Emergency Physicians. Health care system surge capacity recognition, preparedness, and response. Policy statement. Annals of emergency medicine. Available on: https://www.acep.org/globalassets/new-pdfs/policy-statements/health-caresystem-surge-capacity-rec-preparedness-response.pdf [Accessed 10 September 2021].
+
+ACEP (2016) American College of Emergency Physicians. Urgent Care Centers. Available on: https://www.acep.org/patient-care/policy-statements/urgent-care-centers/  [Accessed 10 September 2021].
+
+2.1 -
+
+ACEM (2020) Australasian College for Emergency Medicine. Emergency unit disaster preparedness and response. Available on: https://acem.org.au/getmedia/f955b382-891c46d1-aaf6-11f9a695ee35/Policy_on_ED_Disaster_Preparedness_and_Response [Accessed 10 September 2021].
+
+ACEM (2019) Australasian College for Emergency Medicine. Emergency Unit Signage. Available on: https://acem.org.au/getmedia/52f39d06-3cb5-49a5-b76be58d5b4edc17/Policy_on_Emergency_Unit_Signage [Accessed 10 September 2021].
+
+ACEM (2019) Australasian College for Emergency Medicine. Hospital emergency unit
+
+services for children and young persons: Available on: https://acem.org.au/getmedia/2cf3c286-61a4-497d-99220a87af6ad4ed/Policy_on_Hospital_ED_Services_for_Children_and_Young_People [Accessed 08 September 2021].
+
+ACEM (2019) Australasian College for Emergency Medicine. Rural Emergency Care. Available on: https://acem.org.au/getmedia/9639d829-6f60-4523-a5a3-784081b74426/RuHAP [Accessed 08 September 2021].
+
+Alexander, A., & Dark, C. (2019). Freestanding Emergency Units: What Is Their Role in Emergency Care?. Annals Of Emergency Medicine, 74(3), 325-331. https://doi.org/10.1016/j.annemergmed.2019.03.018 [Accessed 08 September 2021].
+
+2.1 -
+
+American College of Obstetrics & Gynecology (2014) preparing for clinical emergencies in obstetrics and gynecology. Obstetrics and gynecology, 123(3), 722 - 725. https://doi.org/10.1097/01.AOG.0000444442.04111.c6  [Accessed 24 October 2021].
+
+Blue Cross and Blue Shield of New Mexico (2012) Urgent Care Center (UCC) Designation Requirements. Available on: https://www.bcbsnm.com/pdf/forms/ucc.pdf [Accessed 08 September 2021].
+
+Burke, R., Simon, E., Keaton, B., Kukral, L., & Jouriles, N. (2019). Clinical differences between visits to adult freestanding and hospital-based emergency units. The American Journal Of Emergency Medicine, 37(4), 639-644. https://doi.og/10.1016/j.ajem.2018.06.070 [Accessed 29 August 2021].
+
+CAEP (2020) Canadian Association of Emergency Physicians. Surge Capacity and the Canadian Emergency Unit: Available on:  https://caep.ca/wpcontent/uploads/2020/03/Surge-Capacity-and-the-Canadian-Emergency-Unit-CLEANMarch23PP.pdf [Accessed 08 September 2021].
+
+Dayton, J., Dark, C., Cruzen, E., & Simon, E. (2018). Acuity, treatment times, and patient experience in Freestanding Emergency Units affiliated with academic institutions. The American Journal Of Emergency Medicine, 36(1), 139-141. https://doi.org/10.1016/j.ajem.2017.07.004 [Accessed 29 August 2021].
+
+17.
+
+Unit of Health (2021). DOH Standards for Emergency Units and Urgent Care Centers. Available on: https://www.doh.gov.ae/-
+
+/media/671B3425F92246459530838413860C47.ashx [Accessed 27 June 2021].
+
+[PAGE 58-60]
+Unit of Health (2017). DOH Policy on Healthcare Emergency & Disaster Management for the Emirate of Abu Dhabi. Available on: https://www.doh.gov.ae/en/resources/policies [Accessed 01 June 2021].
+
+Dubai Health Authority (2019). DHA Health Facility Guidelines 2019: Part B - Health Facility Briefing & Design: 120 - Emergency Unit. Available on: https://eservices.dha.gov.ae/CapacityPlan/HealthFacilityGuidelines/Guidelines/FileContent /Preview/DHAHFG/DHA_part_b_emergency_unit [Accessed 29 June 2021].
+
+20.
+
+Dubai Health Authority (2020). Policy for Patient Referral and Inter-Facility Transfer. Available on:
+
+https://www.dha.gov.ae/Asset%20Library/HealthRegulation/Patient%20Referral%20Polic y.pdf [Accessed 30 June 2021].
+
+Dubai Health Authority trauma center checklist (Rashid Hospital Checklist, RHC). 2020.
+
+Finnell, J. T., Overhage, J. M., & McDonald, C. J. (2005). In support of emergency unit health information technology. AMIA ... Annual Symposium proceedings. AMIA Symposium, 2005, 246 - 250.
+
+Gilboy, N., Tanabe, P., Travers, D., Rosenau, A M., (2020) Implementation Handbook 2020 Edition - Emergency Severity Index (ESI) - A Triage Tool for Emergency Unit Care.
+
+Emergency Nurses Association;  p 111. https://www.ahrq.gov/patientsafety/settings/emergency-dept/esi.html [Accessed 29 August 2021].
+
+Handel, D., & Hedges, J. (2007). Improving Rural Access to Emergency Physicians. Academic Emergency Medicine, 14(6), 562-565. https://doi.org/10.1197/j.aem.2007.02.025 [Accessed 08 September 2021].
+
+Hansen, K., et al., (2020). Updated framework on quality and safety in emergency medicine. Emergency medicine journal: EMJ, 37(7), 437 - 442. https://doi.org/10.1136/emermed-2019-209290 [Accessed 08 September 2021].
+
+Health Facility Guidelines (HFG) 2019 Part B - Health Facility Briefing & Design 120 -
+
+Emergency Unit.
+
+https://eservices.dha.gov.ae/CapacityPlan/HealthFacilityGuidelines/Guidelines/Index/DHA HFG?locale [Accessed 29 August 2021].
+
+Herscovici, D., Boggs, K., Sullivan, A., & Camargo Jr., C. (2020). What is a Freestanding Emergency Unit? Definitions Differ Across Major United States Data Sources. Westjem 21.3 May Issue, 21(3).  https://.doi.org/10.5811/westjem.2020.3.46001  [Accessed 08 September 2021].
+
+International Federation of Emergency Medicine. (2014) Standards of Care for Children in
+
+Emergency Units: International Federation of Emergency Medicine. Available on: https://www.ifem.cc/wp-content/uploads/2016/03/International-Standards-for-Childrenin-Emergency-Units-V2.0-June-2014-1.pdf [Accessed 12 September 2021].
+
+Jones, T., Shaban, R., & Creedy, D. (2015). Practice standards for emergency nursing: An international review. Australasian Emergency Nursing Journal, 18(4), 190-203. https://doi.org/10.1016/j.aenj.2015.08.002  [Accessed 29 August 2021].
+
+Lateef, F. (2006). The emergency medical services in Singapore. Resuscitation, 68(3), 323328. https://doi.org/10.1016/j.resuscitation.2005.12.007  [Accessed 04 September 2021].
+
+Lawner, B., Hirshon, J., Comer, A., Nable, J., Kelly, J., & Alcorta, R. et al. (2016). The impact of a freestanding ED on a regional emergency medical services system. The American Journal Of Emergency Medicine, 34(8), 1342-1346. https://doi.org/10.1016/j.ajem.2015.11.042 [Accessed 04 September 2021].
+
+Markenson, D., & Krug, S. (2009). Developing Pediatric Emergency Preparedness Performance
+
+Measures. Clinical Pediatric Emergency Medicine, 10(3), 229-239. https://doi.org/10.1016/j.cpem.2009.07.002 [Accessed 04 September 2021].
+
+McKinney, J., Keyser, L., Clinton, S., & Pagliano, C. (2018). ACOG Committee Opinion No. 736: Optimizing Postpartum Care. Obstetrics & Gynecology, 132(3), 784-785.
+
+https://doi.org/10.1097/aog.0000000000002849 [Accessed 04 September 2021].
+
+[PAGE 60-61]
+MOH (2021). National Standard for Emergency Units. Available on: http://www.moh.gov.bt/wp-content/uploads/moh-files/National-Standard-For-EmergencyUnit.pdf  [Accessed 04 September 2021].
+
+National Model EMS Guidelines (2017). Available on: https://docplayer.net/53114805National-model-ems-clinical-guidelines.html  [Accessed 04 September 2021].
+
+NHS England (2017). Urgent Treatment Centres. Principles and Standards. Available on: https://www.england.nhs.uk/wp-content/uploads/2017/07/urgent-treatmentcentres%E2%80%93principles-standards.pdf [Accessed 18 October 2021].
+
+Pettker, C., Mascola, M., & Heine, P. (2016). Committee Opinion No. 667: Hospital-Based Triage of Obstetric Patients. Obstetrics & Gynecology, 128(1), e16-e19. https://doi.org/10.1097/aog.0000000000001524 [Accessed 06 September 2021].
+
+Pines, J., Zocchi, M., & Black, B. (2018). A Comparison of Care Delivered in Hospital - based and Freestanding Emergency Units. Academic Emergency Medicine, 25(5), 538-550. https://doi.org/10.1111/acem.13381 [Accessed 06 September 2021].
+
+Quality Standards For Emergency Units And Other Hospital-Based Emergency Care Services. (2017) Available on: https://acem.org.au/getmedia/cbe80f1c-a64e-40ab-998fad57325a206f/Quality-Standards-1st-Edition-2015.aspx [Accessed 06 September 2021].
+
+Remick, K., Gausche-Hill, M., Joseph, M., Brown, K., Snow, S., & Wright, J. (2018). Pediatric Readiness in the Emergency Unit. Pediatrics, 142(5), e20182459.
+
+https://www.doi.org/10.1542/peds.2018-2459 (Accessed 29/08/2021)
+
+Simon, E., Griffin, P., Jouriles, N., Simon, E., & Jouriles, N. (2011). The Impact of Two Freestanding Emergency Units on a Tertiary Care Center. The Journal Of Emergency Medicine, 41(2), 215. https://doi.org/10.1016/j.jemermed.2011.06.099 [Accessed 12 September 2021].
+
+[PAGE 62-66]
+https://iaem.ie/wp-
+
+content/uploads/2013/05/standards_for_ae_depts_in_ireland_1997.pdf [Accessed 12
+
+September 2021].
+
+Zibulewsky, J. (2001). The Emergency Medical Treatment and Active Labor Act (Emtala): What It Is and What It Means for Physicians. Baylor University Medical Center Proceedings, 14(4), 339-346. https://doi.org/10.1080/08998280.2001.11927785 [Accessed 12 September 2021].
+
+APPENDICES
+
+Vital signs measuring and monitor.
+
+Pulse oximetry.
+
+Thermometer.
+
+Glucometer.
+
+Urine analysis (available within 20 minutes).
+
+Otoscopes, fundoscopy, stethoscope.
+
+Torch and tongue depressor.
+
+Laceration repair kit with suturing material.
+
+Nebulizer and steam inhaler.
+
+Splints, crepe bandage and arm sling.
+
+ECG machine.
+
+Crash cart.
+
+AED
+
+Below laboratory capabilities are suggested for an EU that operates 24 hours a day. This list is not comprehensive and can be modifies as guidelines and requirements changes.
+
+[PAGE 68-72]
+The items mentioned below should be available for instant use. The list does not include routine medical or surgical supplies such adhesive bandages, gauze pads and suture material. It does not also include routine office items such as paper, desks, paper clips, and chairs.
+
+o Laryngoscopes, straight and curved blades and stylets.
+
+o Access to Laryngoscope mirror and supplies.
+
+o Laryngeal Mask Airway (LMA).
+
+o Oral and nasal airways.
+
+o Access to Tracheostomy instruments and supplies.
+
+o Access to Neonatal airway kit which includes straight blades, adequately sized masks, bags (T-piece, flow inflating, selfinflating) with manometer, endotracheal tubes, meconium aspirator, bulb syringes.
+
+o Breathing:
+
+o Noninvasive Ventilation System (BIPAP/CPAP).
+
+o Closed-chest drainage device.
+
+o Chest tube instruments and supplies.
+
+o Emergency thoracotomy instruments and supplies.
+
+o End-tidal CO2 monitor or module.
+
+o Nebulizer.
+
+o Pulse oximetry.
+
+o Portable transport ventilator with multiple modes ( IPPV, SIMV, spontaneous, PS).
+
+o Circulation
+
+o Automatic noninvasive physiological monitor.
+
+o Blood/fluid infusion pumps and tubing.
+
+o Cardiac compression board.
+
+o Central venous catheter setups/kits.
+
+o Intraosseous needles insertion equipment available in different sizes for adults and pediatrics.
+
+[PAGE 75]
+APPENDIX 6: EQUIPMENT AND SUPPLIES FOR THE PEDIATRIC EMERGENCY UNIT

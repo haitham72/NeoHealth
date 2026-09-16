@@ -1,0 +1,23 @@
+.env
+node_modules/
+.venv/
+parsed_documents.json
+backend/needs_manual.json
+backend/mining_state.json
+__pycache__/
+*.pyc
+static/
+.superpowers/
+.venv
+venv
+.DS_Store
+supabase/.temp/
+HANDOFF.md
+Agreement/
+# Local tool config -- opencode.json holds a live API key; never commit it.
+opencode.json
+opencode.jsonc
+.opencode/
+
+# Prod corpus backup (paid embeddings) -- never commit.
+corpus_backup.dump

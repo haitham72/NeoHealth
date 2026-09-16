@@ -1,0 +1,114 @@
+# ReguLense seed corpus — DHA + DoH public regulatory PDFs
+# All verified live 2026-08-26. Public documents, no auth, no scraping needed.
+#
+# NOTE THE THREE VERSIONS OF THE SAME LICENSING MANUAL (MA-2). That is the demo.
+# A naive RAG cites the 2023 one. Yours cites v1.3 and says the others are superseded.
+
+# --- DHA/HRS/HLD/MA-2 : Manual for Licensing Healthcare Professionals (3 VERSIONS) ---
+https://www.dha.gov.ae/uploads/082025/Manual%20For%20Licensing%20Healthcare%20Professionals-Final%20(1)2025859775.pdf
+https://www.dha.gov.ae/uploads/052025/Manual%20For%20Licensing%20Healthcare%20Professionals-Final202555984.pdf
+https://www.dha.gov.ae/uploads/032023/Manual%20for%20Licensing%20Healthcare%20Professionals2023347207.pdf
+
+# --- DHA/HRS/HLD/MA-1 : Manual for Licensing Health Facility (2 VERSIONS) ---
+https://www.dha.gov.ae/uploads/122024/Manual%20for%20Licesning%20Health%20Facility-202420241233143.pdf
+https://www.dha.gov.ae/uploads/112021/d8c58659-e72a-4ab2-a1df-3ddd640becf0.pdf
+
+# --- Telehealth (El Hayek's tele-mental-health line) ---
+https://dha.gov.ae/uploads/012023/Standards%20for%20Telehealth%20Services2023158613.pdf
+https://dha.gov.ae/uploads/012023/Telehealth%20Policy2023157244.pdf
+https://dha.gov.ae/uploads/032024/24%20-%20DHA%20Telehealth%20Clinical%20Guidelines%20for%20Virtual%20Management%20of%20Insomnia2024313354.pdf
+https://dha.gov.ae/uploads/032024/13%20-%20DHA%20Telehealth%20Clinical%20Guidelines%20for%20Virtual%20Management%20of%20Dizziness2024312187.pdf
+https://dha.gov.ae/uploads/032024/19%20-%20DHA%20Telehealth%20Clinical%20Guidelines%20for%20Virtual%20Management%20of%20Headache%20in%20Adults2024344630.pdf
+https://www.dha.gov.ae/uploads/112021/9d220abb-99ef-4eb0-bc40-5673e7fe1045.pdf
+
+# --- Facility standards ---
+https://dha.gov.ae/uploads/042022/Standards%20for%20Registration%20of%20Clinical%20Training%20in%20Health%20Facilities-Final2022440570.pdf
+https://dha.gov.ae/uploads/112021/804e26be-e894-4a5f-9174-f1913eec6467.pdf
+https://dha.gov.ae/uploads/042022/Standards%20for%20Urgent%20Care%20and%20Emergency%20Department%20Services2022413782.pdf
+https://www.dha.gov.ae/uploads/062022/health_regulation_5-12-19202263580.pdf
+
+# --- DoH Abu Dhabi (second authority = cross-emirate conflict detection) ---
+https://www.doh.gov.ae/-/media/B8AE2259EF7B4F819BE5F908EB8BB699.ashx
+https://www.doh.gov.ae/-/media/A47D9907918943438EDB512BE9347AB8.ashx
+
+# --- MOHAP (federal -- the actual regulator for Ajman/UAQ/RAK/Fujairah, which have no
+#     separate emirate-level health authority; verified live 2026-08-28) ---
+https://mohap.gov.ae/documents/20117/1212145/Hospital+Regulation.pdf/e2ed0e72-91a1-d918-b861-ce3a776f9060?t=1739112146473
+https://mohap.gov.ae/documents/20117/1212145/One+day+surgery+Center+Regulation-26.pdf/a3e7be1d-4636-d554-278e-a230da823d14?t=1739157308289
+https://mohap.gov.ae/documents/20117/0/Initial+Approval+for+Licensing+-+Re-licensing+Health+Facility++-+ENG.pdf/3cb3975d-64d0-6100-c4d6-fc3d45e05d24?t=1756112314105
+
+# --- RESEARCH (Dr. Samer El Hayek, NeoHealth co-founder/CEO -- tier="research", not
+#     regulation. His only 3 papers on-topic for a UAE health-reg corpus: telepsychiatry/
+#     telehealth policy. URLs are Europe PMC's ?pdf=render mirror -- native PMC now gates
+#     downloads behind a JS proof-of-work challenge that curl/requests can't pass.) ---
+https://europepmc.org/articles/PMC7682595?pdf=render
+https://europepmc.org/articles/PMC7538900?pdf=render
+https://europepmc.org/articles/PMC7296313?pdf=render
+
+# --- EXTRA (bulk discovery 2026-08-26, Qwen search agent -- every URL below was
+#     individually curl-verified as a live application/pdf response before being added
+#     here; a parallel Gemini-sourced batch of 31 URLs was checked the same way and came
+#     back 0/31 real (fabricated DHA paths + sequential-hex DoH .ashx GUIDs that aren't
+#     real GUIDs), so it was discarded entirely rather than partially trusted.) ---
+# --- Patient Safety & Quality Standards ---
+https://www.doh.gov.ae/-/media/8BB67C525EA349CFA9545C4F7B371885.ashx
+https://www.doh.gov.ae/-/media/71A88784310D48119695B9A7D3B301C9.ashx
+https://www.doh.gov.ae/-/media/1888E5CF35E64B4295A53B87B8189589.ashx
+https://www.doh.gov.ae/-/media/Feature/Resources/Standards/2025/20251002_Standard-for-Emergency-Departments-Urgent-Care-Centers.ashx
+https://www.doh.gov.ae/-/media/Feature/Resources/Standards/2025/04082025-_-DOH-Standard-for-Acute-Stroke-Management-in-Abu-Dhabi.ashx
+
+# --- Workforce, Credentialing & Licensing ---
+https://www.dha.gov.ae/uploads/112021/1e67953e-70f7-468e-a29f-8282a1c4aa62.pdf
+https://services.dha.gov.ae/sheryan/wps/contenthandler/!ut/p/digest!L_negPqVWa2FDiru8UDKPw/war/SheryanHomeThemeStatic/themes/Portal8.5/docs/PQR_April_2025.pdf
+https://www.doh.gov.ae/-/media/Feature/Resources/Standards/2025/2072025--Standard-for-Clinical-Privileging-of-Healthcare-Workforce-and-Clinical-Services-for-Publica.ashx
+https://www.doh.gov.ae/-/media/92DF386D4E6547B88FB980CE6D65CE55.ashx
+https://www.doh.gov.ae/-/media/5086C8253FFF4A7F88219102E37BBE8B.ashx
+
+# --- Facility Licensing & Operations ---
+https://www.dha.gov.ae/uploads/102024/Standards%20for%20Human%20Organs%20and%20Tissues%20Donation%20Services%20(Living%20Donor)-%20Final20241022523.pdf
+https://www.dha.gov.ae/uploads/042025/%D9%82%20%D9%88%2048%20%D9%84%D8%B3%D9%86%D8%A9%202025%20%D8%A8%D8%B4%D8%A3%D9%86%20%D8%B3%D8%AC%D9%84%20%D9%82%D9%8A%D8%AF%20%D8%A7%D9%84%D9%85%D9%86%D8%B4%D8%A2%D8%AA%20%D8%A7%D9%84%D8%B5%D8%AD%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AE%D8%A7%D8%B5%D8%A92025434626.pdf
+https://www.doh.gov.ae/-/media/Feature/Muashir/Jawda/Jawda-Quarterly-Submission-Guidelines/Guidelines-for-One-Day-Surgery-Centers.ashx
+https://www.doh.gov.ae/-/media/Feature/Muashir/Jawda/2026/Home-Healthcare-Jawda-Guidance_V9_2026.ashx
+https://www.doh.gov.ae/-/media/F7D2268FEC19448ABDA5D2FE1421A26F.ashx
+https://www.doh.gov.ae/-/media/85112EF843DD4E1D8F08D0C51CCAC21D.ashx
+
+# --- Mental Health Regulation ---
+https://www.doh.gov.ae/-/media/Feature/Muashir/Jawda/Jawda2025/Mental-Health-Services-Jawda-GuidanceV322025.ashx
+https://www.doh.gov.ae/-/media/EB977F268676451E8180B86A06F7254C.ashx
+https://www.doh.gov.ae/-/media/7778F3B9E23246EB83C5D66466EEC95F.ashx
+
+# --- Pharmacy, Laboratory & Clinical Standards ---
+https://www.dha.gov.ae/uploads/112021/97738f8d-7e7e-4448-a533-49cf0843a1bb.PDF
+https://www.doh.gov.ae/-/media/E72D25EFCD6D4559A52FE5B171FF3E23.ashx
+https://www.doh.gov.ae/-/media/E160783B819C479D90E4DF8BAA108737.ashx
+https://www.doh.gov.ae/-/media/ECC2A193AF84440AA795437BC9CCDA48.ashx
+https://www.doh.gov.ae/-/media/5B5FD481D41347CE8F865347BB937A23.ashx
+
+# --- Medical Records & Health Information ---
+https://www.doh.gov.ae/-/media/Feature/Resources/Health-Information-Exchange-standards/Standard-5.ashx
+https://www.doh.gov.ae/-/media/Feature/Resources/Standards/2025/2102025--DataGovernanceStandard.ashx
+https://www.doh.gov.ae/-/media/AFA341921009447CAF724051A0D29AAC.ashx
+
+# --- Insurance, Claims & Billing Regulation ---
+https://www.doh.gov.ae/-/media/Feature/shafifya/Prices/Adjudication-Rules/DOH-Claims-and-Adjudication-Rules-V20251.ashx
+https://www.doh.gov.ae/-/media/A863F6DE8D2C4CBC8279F7666CACC715.ashx
+https://www.doh.gov.ae/-/media/3652DC31CA494EA5BD9235E4AAC1FFFE.ashx
+https://www.doh.gov.ae/-/media/9F8611EF0B7841F28E2AAE4614327F59.ashx
+https://www.doh.gov.ae/-/media/0BE585B5E6814D81913697DD6E644C02.ashx
+https://www.doh.gov.ae/-/media/EAB3C65E8B614555870BA764A495C2C2.ashx
+
+# --- Telehealth & Clinical Guidelines ---
+https://www.dha.gov.ae/uploads/032024/35%20-%20DHA%20Telehealth%20Clinical%20Guidelines%20for%20Virtual%20Management%20of%20Burns2024329667.pdf
+https://www.dha.gov.ae/uploads/062022/Issue%20Sick%20Leave%20Guide%2020202022619814.pdf
+
+# --- General Policy, Governance & AI ---
+https://www.doh.gov.ae/-/media/7EA6916C486A4D6BBA0036C8CD931B11.ashx
+https://www.doh.gov.ae/-/media/Feature/shafifya/standards/coding/DOH-Coding-Manual-CSv2021.ashx
+https://www.doh.gov.ae/-/media/Feature/Resources/Guidelines/DOH-Guideline-on-RWD_RWE-based-clinical-research.ashx
+https://www.doh.gov.ae/-/media/0BB273E72F6F445F8BEE9F87AB78465B.ashx
+https://www.doh.gov.ae/-/media/CBD6B8E5144743E8AE617CA37E83FA01.ashx
+https://www.doh.gov.ae/-/media/E20D8A6D109E45579637151F75E61FD8.ashx
+https://www.doh.gov.ae/-/media/721F474782574B779777D85118BE9FDD.ashx
+https://www.doh.gov.ae/-/media/Feature/Resources/Standards/2025/Responsible-AI-Standard-V1.ashx
+https://www.doh.gov.ae/-/media/EE58BBA0DEFC44719E8A15C19192BC67.ashx
+https://www.doh.gov.ae/-/media/130BB857CFE34C30B4905D76932F0168.ashx

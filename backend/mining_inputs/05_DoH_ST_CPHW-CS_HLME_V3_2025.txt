@@ -1,0 +1,428 @@
+DOC_CODE: DoH/ST/CPHW-CS/HLME/V3/2025
+TITLE: STANDARD FOR CLINICAL PRIVILEGING OF HEALTHCARE WORKFORCE AND CLINICAL SERVICES
+AUTHORITY: Department of Health - Abu Dhabi
+TIER: official
+VERSION: 3
+
+=== DOCUMENT TEXT ===
+
+[PAGE 3]
+The objective of this standard is to:
+
+Outline the processes through which the clinical privileges are granted, maintained, renewed, amended, and withheld (intent to renew, suspend, amend, or withdraw the granted clinical privileges)
+
+Outline the responsibilities of healthcare professionals, healthcare providers, DoH, and other parties ' in relation to healthcare professionals privileging.
+
+This Standard applies to all healthcare workforce and healthcare providers licensed by DoH.
+
+[PAGE 5]
+Healthcare providers must ensure that the experience and clinical privileges of all healthcare professionals are confirmed by the previous employer through a verified copy of the previously approved delineated privileges.
+
+Healthcare providers leadership must consider the ethical principles of integrity and impartiality when writing reference letters and issuing verified copies of the assigned clinical privileges for the healthcare professionals currently or formerly employed by them.  They must ensure that the contents of the issued documents and the information provided are honest and objective. The reference letter must include details related to the performance of the healthcare professional as listed in Appendix 1: Reference Letter.
+
+The healthcare provider shall provide the newly joined healthcare professional with a clinical privileges request form and a list of required supporting documents for completion and submission.
+
+The newly joined healthcare professional submits a list of clinical privileges within their scope and competence along with the required supporting documents.
+
+The Privileging Committee reviews the privilege request and assign temporary clinical privileges in writing based on specific criteria listed in Appendix 2: Defining the Privileges Process.
+
+Healthcare professionals granted temporary clinical privileges must be subjected to a Focused Professional Practice Evaluation Process (FPPE) as set out in Appendix 3: Focused Professional Practice Evaluation (FPPE) of this standard.
+
+The newly joined healthcare professional may only commence delivering care to patients following the delineated temporary clinical privileges.
+
+The duration of the temporary clinical privileges is three months. It coincides with the probation period of the newly joined healthcare professional. It can be extended in writing for a maximum of three additional months.
+
+Towards the expiry of the temporary clinical privileges (at the end of the three-month probationary period), the Privileging Committee decides on the competency of the healthcare professional either to confirm or extend the temporary clinical privileges based on the FPPE outcome, as stipulated in Appendix 3: Focused Professional Practice Evaluation (FPPE).
+
+The confirmed Clinical Privileges are valid for two years unless withdrawn or suspended earlier by the granting healthcare provider or the DoH.
+
+[PAGE 6]
+The Privileging Committee must establish a periodic clinical privileges renewal process. This process ensures all clinical privileges of all healthcare professionals are reviewed every 2 years with the intent to renew, suspend, amend, or withdraw the granted clinical privileges. This process must be documented in writing and must take place even if the clinical privileges remain unchanged.
+
+The Privileging Committee approves in writing the clinical privileges effective periods along with the approved clinical privileges and must maintain these records for twenty-five (25) years from the date of granting, renewal, amendment, suspension, or withdrawal of the clinical privileges.
+
+The clinical privilege process, in all its stages, requires peer recommendations and the outcomes of the Ongoing Professional Practice Evaluation Process (OPPE) for the Privileging Committee to take a decision, as outlined in Appendix 4: The Ongoing Professional Practice Evaluation Process (OPPE).
+
+[PAGE 6]
+The Privileging Committee reviews the delineated clinical privileges once triggered by one or more of the following situations:
+
+Changes in the healthcare facility ' s license or scope, or resources; this includes availability or unavailability of resources such as equipment, manpower, subscription, etc.
+
+Change in the role of the healthcare professional.
+
+A request from the healthcare professional for additional clinical privileges, based on advanced education and training, or other adjustments for any other reason.
+
+An adverse event deemed erroneous or due to failure in providing the standard of care on the part of the Healthcare Professional.
+
+Patients complaint analysis indicating errors or failures to provide the standard of care by the healthcare professional.
+
+An unsatisfactory OPPE outcome due to errors or failures to deliver the standard of care by the healthcare professional.
+
+Based on peer recommendations supported by evidence-based findings or instances of failures to provide the standard of care by the healthcare professional, as well as the recommendation of the healthcare professional ' s manager.
+
+As a result of the final Medical Liability Committees findings of medical errors or failures to provide the standard of care attributable to the healthcare professional.
+
+Changes in the physical or mental health of the healthcare professional.
+
+Introduction of a new medical service or technology.
+
+Upon written request from DoH.
+
+The Privileging Committee may decide to alter the clinical privileges of a healthcare professional to ensure patient safety. Changes in clinical privileges may include the following:
+
+Addition of temporary clinical privileges (requires commencement of an FPPE process).
+
+Suspension of one or more clinical privileges during an adverse event or any performancerelated investigation.
+
+Withdrawal of one or more clinical privileges.
+
+Downgrading the level of the concerned clinical privileges from unsupervised to supervised.
+
+[PAGE 7]
+Healthcare Providers should withdraw a healthcare professional ' s clinical privileges in any of the following situations:
+
+Immediately, if the healthcare professional ceases to be legally entitled to practice, due to the expiration of their DoH license or their medical malpractice insurance policy.
+
+Upon instruction from DoH as a result of findings arising from patient complaints.
+
+Upon DoH announcement of additional controls for a specific clinical procedure.
+
+If the employment contract is terminated or has expired.
+
+If it is found that the healthcare professional provided false information about their qualifications or experience.
+
+If the healthcare professional was not following generally accepted clinical standards in their practice.
+
+If the healthcare professional committed gross medical negligence.
+
+If the healthcare professional was convicted of a serious crime.
+
+If the physical or mental health of the healthcare professional, or their ability to perform a task or make sound decisions, is compromised.
+
+When the healthcare professional continues to make poor clinical decisions or is unable to make clinical decisions within their clinical privileges and continues to consult with colleagues or refer patients to them unnecessarily.
+
+When the healthcare professional is unable to work unsupervised.
+
+When the healthcare professional fails to collaborate with colleagues as part of the work and delivery of care requirements.
+
+In any situation where patient safety is compromised.
+
+[PAGE 7-8]
+The healthcare provider is responsible for establishing a Clinical Privileging Committee or a governance mechanism to oversee and manage the granting and review of clinical privileges and appeals, consistent with the requirements of this standard.
+
+The main aim of the Clinical Privileging Committee is to verify the competency of clinical privilege applicants and grant clinical privileges to ensure that only qualified and competent healthcare professionals provide patient care.
+
+Membership of the Clinical Privileging Committee should comprise representatives of the profession with an appropriate and relevant level of competencies, knowledge, experience, and skills related to the healthcare professional being privileged. It should also include members of related professions, the medical director, and non-physician member representing the Quality and Patient Safety services.
+
+The responsibilities of the Clinical Privileging Committee include:
+
+Defining the information prerequisites for the verification and clinical privileging processes as per this standard ' s requirements.
+
+Recommending the performance evaluation criteria, including FPPE and OPPE processes.
+
+Assigning appropriate written clinical privileges to healthcare professionals within their scope of practice and based on their competence, roles, and responsibilities, as well as according to the
+
+available clinical services and resources in the facility.
+
+Determining the ability of the healthcare professional to perform their delineated privileges either autonomously or under a defined level of supervision.
+
+Establish mechanisms for granting emergency clinical privileges to respond to emergencies, disasters, and crisis situations once declared by the relevant authorities.
+
+Establish mechanisms for granting temporary clinical privileges for short-term, seconded, contracted, and visiting healthcare professionals.
+
+Recommend the commencement of the FPPE processes for newly joined healthcare professionals, clinical privilege changes, and any other situation set out in this Standard.
+
+Clinical privilege renewal, amendment, suspension and withdrawal.
+
+Report the Clinical Privileging Committee ' s recommendations to the facility leadership.
+
+Ensure that the healthcare professionals are informed in writing of their assigned clinical privileges, or any actions taken in relation to their clinical privileging.
+
+Ensure that all Clinical Privileging Committee meetings are documented and kept confidential.
+
+Conduct meetings in fairness and justice, ensuring that there are no conflicts of interest or biased opinions that could affect the decisions of the Clinical Privileging Committee.
+
+[PAGE 8]
+Healthcare Professionals whose requested clinical privileges were denied or altered may submit an appeal for a review of their request within the healthcare provider.
+
+An ad hoc appeal panel, independent from the Clinical Privileging Committee, must be formed to review appeal requests.
+
+Appeal reviews should be conducted with fairness and justice and should identify the issues, confirming the Clinical Privileging Committee ' s decisions, amending, or rejecting appeal requests.
+
+The process should be well-documented, and records should be kept for future reference.
+
+[PAGE 8]
+The healthcare provider must verify the experience and skills of all healthcare professionals who are contracted as part-time, seconded, or visiting healthcare professionals, as well as those permitted to use the operating theatres, by requesting a verified copy of previously approved clinical privileges from previous employer.
+
+The healthcare provider must grant temporary clinical privileges to part-time, seconded, or visiting healthcare professionals, as well as those contracted to use the healthcare provider ' s operating theatres, in accordance with the provisions of this standard.
+
+The healthcare provider must delineate clinical privileges and conduct performance evaluations as stipulated in this standard for all contracted healthcare professionals, regardless of their contract type.
+
+The healthcare provider must ensure the availability of the required medical equipment and resources for the requested procedures.
+
+[PAGE 8-9]
+Healthcare providers operating more than one healthcare facility and providing the same scope of clinical services and capacity in all their facilities can implement a central verification and clinical privileging system across the facilities, as set out in this standard.
+
+Healthcare providers operating multiple facilities with different scopes of clinical services must delineate the healthcare professionals who work in different facilities within the network with a different set of clinical privileges that align with the facility scope of services.
+
+Data from different facilities can be used in the performance evaluation of healthcare professionals.
+
+Privileges for Trainees Supervisors: Healthcare providers must ensure that healthcare professionals supervising trainees are privileged to perform all the clinical procedures and services they supervise.
+
+[PAGE 9]
+The granted clinical privileges shall not restrict the healthcare professionals from taking immediate actions or interventions necessary to save a life in case of an emergency
+
+Note: See Article 12 of Federal Law No. (6) of 2023 on the Practice of Some Medical Professions by Persons Other Than Physicians and Pharmacists (link) ; and Article (24) of Federal Law No. (5) of 2019 Concerning regulating the practice of the profession of human medicine (link); and Article (55) of Federal Law by Decree No. (31) of 2021 Promulgating the Crimes and Penalties Law (Link).
+
+3.10.2. The Privileging Committee (or similar structure) grants healthcare professionals holding DoH temporary licenses with the clinical privileges required to carry their duties during emergencies, disasters, and crisis situations. ( See Doh Policy On Issuing Waivers Of Healthcare Professionals Licensure Requirements During Emergencies, Crises And Disasters (Link))
+
+[PAGE 9-10]
+Clinical privileges are requested by the healthcare professionals and reviewed and approved by the Privileging Committee. The clinical privileges granted must be set within the professional ' s scope of practice.
+
+Healthcare professionals who wish to practice beyond their scope of practice must request permission for the expanded practice. The request must be submitted along with the supporting evidence  through the TAMM portal under additional professional title.https://www.tamm.abudhabi/
+
+Dentists who wish to practice dental implantology must comply with the DoH Requirements for Dental Implantology Practice, Annex 1: Minimum Requirements for Dental Implantology Permission and Privileges Practice.
+
+DoH may restrict healthcare professionals from performing specific clinical procedures; in situations where patient safety is deemed compromised.
+
+Healthcare professionals must practice only within their valid assigned clinical privileges.
+
+Healthcare providers shall be accountable for ensuring that healthcare professionals are assigned clinical privileges within their scope of practice and in accordance with the facility ' s licensed services and available resources, as outlined in Appendix 2: Defining the Clinical Privileges Process.
+
+Healthcare Professionals who require clinical privileges to practice in the Emirates of Abu Dhabi include, but not limited to:
+
+Physicians
+
+. Dentists
+
+Advanced practitioner professionals (APP), such as: Nurse practitioner (NP), Registered Midwife (RM), Certified Registered Nurse Anesthetist (CRNA), Physician Assistant (PA), Podiatrist, and Pre-hospital Care provided by Emergency Medical Services with advanced training.
+
+Pharmacists for direct patient intervention e.g., vaccine administration.
+
+Copies of the delineated clinical privileges of healthcare professionals must be accessible to them and to the team working with them.
+
+Small-sized healthcare providers who do not have an established, organized medical staff structure and Clinical Privileging Committee may seek clinical privileging services from a third party to comply with this Standard
+
+[PAGE 10]
+Establish a robust process in place for privileging healthcare professionals, whether they are working full-time, part-time, seconded, visiting, or contracted to use the operating theatres
+
+Ensure that their employed healthcare professionals are assigned clinical privileges prior to practice.
+
+. Set a well-defined system for verification and privileging healthcare professionals in accordance with this standard.
+
+Publish the clinical privileges process details.
+
+. Ensure that all healthcare professionals are aware of the clinical privileges process.
+
+. Ensure that all healthcare professionals are kept informed, in clear terms, of their assigned clinical privileges.
+
+. Ensure that the approved clinical privileges of all healthcare professionals are accessible to relevant team members participating in patient care delivery.
+
+. Set up a monitoring system, such as OPPE, to assess healthcare professionals ' compliance with the implementation of best clinical practices related to their granted clinical privileges. This process must occur regularly, at a minimum of once a year, as set out in Appendix 4: The Ongoing Professional Practice Evaluation Process (OPPE).
+
+Ensure that an appeal system is in place.
+
+Maintain a record of all clinical privileges granted to the employed healthcare professionals, as well as any changes or limitations that were imposed along with the supporting documents.
+
+. Ensure that the system includes a detailed process of delineating clinical privileges in emergency situations and disasters.
+
+. Ensure that any visiting healthcare professionals undergo the clinical privileges process.
+
+. Ensure that healthcare professionals who are contracted to perform surgical procedures using the operating theatre are verified and granted clinical privileges in accordance with this standard.
+
+. Share an updated list of healthcare professionals ' clinical privileges with the health payers.
+
+Provide a verified copy of previously delineated clinical privilege and a reference letter to the healthcare professional, the recruiting healthcare provider, or DoH whenever requested. All documents should be issued in writing in fairness, without conflicts of interests or biased opinions.
+
+. Ensure that all employed dentists are familiar with the requirements of this Standard and that they comply with it.
+
+Ensure that dental implantology clinical privileges are only granted to employed dentists who are permitted by DoH to expand their practice to include dental implantology.
+
+[PAGE 10-11]
+Provide accurate information to the Clinical Privileging Committee to enable them to make
+
+informed decisions in their verification and clinical privileging process, including prior restrictions or limitations to the assigned clinical privileges.
+
+Request clinical privileges within their scope of practice, training, competencies, and experience.
+
+Provider patient care within their scope of delineated clinical privileges.
+
+. Notify the Clinical Privileging Committee of any changes in their condition that may affect their ability to perform the granted clinical privileges.
+
+Keep a detailed portfolio of their training and a logbook of all invasive procedures performed and its outcomes.
+
+[PAGE 11]
+DoH is responsible for:
+
+Setting the minimum standard for clinical privileging framework for the healthcare providers and healthcare professionals to ensure that care is provided by qualified and competent healthcare professionals.
+
+Update or supplement this standard to ensure that care is provided by qualified and competent healthcare professionals.
+
+. Set the standards and develop processes to permit DoH-licensed physicians to expand their scope of practice.
+
+Set the verification and credentialing requirements for the practice of dental implantology by DoH-licensed general dentists and dental specialists to ensure that care is provided by qualified and competent healthcare professionals.
+
+. Limit, revoke, and suspend clinical privileges of healthcare professionals when deemed necessary for patient safety.
+
+. Ensure that the implementation of this standard is monitored.
+
+. Update the published healthcare professionals list (Shafafiya List) with the expanded practice and clinical privilege ' s relevant information.
+
+[PAGE 11]
+Ensure that reimbursements to healthcare providers are made based on the current and updated clinical privileges of healthcare professionals.
+
+Maintain an updated list of healthcare professionals ' clinical privileges.
+
+Set procedures to support the implementation of this standard.
+
+A monitoring and evaluation framework is in place to assess the effectiveness, outcomes, and impact of this standard, and where necessary, adopt changes to ensure continuous improvement within the health system in line with emerging developments in healthcare sciences, medical practices, and healthcare education and training.
+
+DoH may impose sanctions for any breach of the requirements under this standard, in accordance with the Healthcare Sector Disciplinary Regulations.
+
+[PAGE 14]
+The healthcare provider must provide a reference letter reflecting the current professional status of the healthcare professional upon request from the healthcare professional, a potential employer, and DoH.
+
+The reference letter may include the following:
+
+Quality of patient care and clinical procedural skills.
+
+Medical knowledge, professionalism, and ability to work unsupervised.
+
+Interpersonal and communication skills, and ability to work with his colleagues.
+
+Any health condition that affects the ability to practice (physical or mental).
+
+History of involuntary or voluntary limitation, reduction, or revocation of clinical privileges to practice.
+
+History of involvement in an incident related to a patient complaint, negligence, or medical errors.
+
+History of suspension of DoH license/registration status.
+
+History of involvement in a criminal investigation.
+
+[PAGE 14]
+Each healthcare provider must assign evidence-based and clear clinical privileges to their healthcare professionals within their DoH license scope of practice.
+
+The clinical privileges classification system may comprise a listing of procedures, disease categories, body systems, or specialty areas and may include the following:
+
+Supervised practice
+
+Anatomical regions of the body
+
+Core privileges
+
+High-risk patients by category
+
+Specialty and sub-specialty
+
+Admission privileges
+
+Privileges to prescribe certain medication as per UAE law and DoH regulations.
+
+The decision to grant clinical privileges shall be based on the following assessment and consideration:
+
+The physical and mental abilities of the applicant.
+
+Receiving confirmation on the applicant ' s ability to practice the requested clinical privileges from peers, chairs of departments who have direct knowledge of the applicant ' s abilities and based on the result of an FPPE process.
+
+The Clinical Privileging Committee shall review all privilege requests and assign privileges in accordance with the following criteria:
+
+A verified copy of the previously delineated clinical privileges.
+
+Relevant and current training, including technical knowledge and practical skills.
+
+Relevant and recent experience, including meeting the requirement for a minimal number of procedures successfully and autonomously per annum (for invasive procedures - logbook).
+
+Current competencies.
+
+Ability to perform the requested privileges.
+
+Absence of revoked clinical privileges, limitations, or reductions.
+
+Appropriate supervision and available resources (staff, equipment, and physical facilities within the healthcare facility).
+
+Results of FPPE or OPPE processes.
+
+[PAGE 15]
+FPPE is a process that includes one or more evaluation methods and tools for assessing healthcare professionals on specific clinical privileges.
+
+The Chair of Clinical Service conducts a Focused Professional Practice Evaluation Process (FPPE) of the healthcare professionals who are assigned temporary privileges upon the commencement of their clinical privileges.
+
+FPPE process conducted using, but not limited to, the following elements:
+
+Review of qualitative data, such as:
+
+Concurrent and retrospective medical records such as:
+
+Accuracy and quality of documented information
+
+Description of procedures performed
+
+Appropriateness of ordered tests and procedures performed
+
+Patient outcomes
+
+Patient complaints and incidents
+
+Clinical audit outcomes
+
+Breaches of code of ethics
+
+Peer recommendations
+
+Review of Quantitative data may include:
+
+Post-operative infection rates
+
+Length of stay trends
+
+Medical record delinquency
+
+Authorization of voice or transcription orders within the predefined timeframe
+
+Compliance with core measures
+
+Direct observation may be conducted following a predefined criterion based on clinical guidelines for that specific privilege.
+
+Based on the collected data and evaluation outcomes, a decision may be made to confirm the temporary clinical privileges or extend the evaluation period and performance monitoring.
+
+[PAGE 15-16]
+The Chair of Clinical Service conducts an Ongoing Professional Practice Evaluation Process (OPPE) of the healthcare professionals.
+
+Types of data collected for monitoring diagnostic and treatment techniques consist of qualitative and quantitative data. Examples may include:
+
+Chart review, such as:
+
+Accuracy and quality of documented information
+
+Description of the procedures performed
+
+Appropriateness of ordered tests and procedures performed
+
+Patient outcomes
+
+Clinical audit outcomes
+
+Patient complaints and incidents
+
+Breaches of code of ethics
+
+Unnecessary referrals
+
+Mortality and morbidity data
+
+Peer recommendations
+
+Quantitative data may include:
+
+Post-operative infection rates
+
+Length of stay trends
+
+Medical record delinquency
+
+Authorization of voice or transcription orders within the predefined timeframe
+
+Compliance with core measures
+
+Annex 1: Minimum Requirements for Dental Implantology Permission and Privileges

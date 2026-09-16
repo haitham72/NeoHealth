@@ -1,0 +1,820 @@
+DOC_CODE: DHA/HRS/HPSD/CG-24
+TITLE: Clinical Guidelines for Virtual Management of Dizziness
+AUTHORITY: Dubai Health Authority
+TIER: official
+VERSION: 2
+
+=== DOCUMENT TEXT ===
+
+[PAGE 1]
+Electronic  copy  is  controlled  under  document  control  procedure.  Hard copy is uncontrolled & under responsibility of beholder.
+
+It  is  allowed ONLY to access and keep this document with who issued, who is responsible and to whom it is applicable.
+
+·
+
+Information security code:
+
+ Open
+
+النسخة الإلكترونية هي النسخة المضبوطة وفق إجراء ضبط الوثائق۔ النسخ الورقية غير مضبوطة وتقع عل ى مسؤولية حاملها۔
+
+يسمح بالوصول وبالاحتفاظ بهذه الوثيقة مع مصدرها أو مع المسؤول عن تطبيقها أو مع المطبق عليهم۔
+
+ Shared -Confidential
+
+ Shared-Sensitive
+
+ Shared-Secret
+
+ مشارك -خاص
+
+ مشارك -سري
+
+تصنيف امن المعلومات:  بيانات مفتوحة
+
+ مشارك -حساس
+
+[PAGE 1]
+DIZZINESS - 13
+
+Version 2
+
+Issue date: 21/02/2024
+
+Effective date: 21/04/2024
+
+Health Policies and Standards Department Health Regulation Sector (2024)
+
+[PAGE 2-3]
+Health Regulation Sector (HRS) forms an integral part of Dubai Health Authority (DHA) and is mandated by DHA Law No. (14) of the year (2021) amending some clauses of law No. (6) of 2018 pertaining to the Dubai Health Authority (DHA), to undertake several functions including but not limited to:
+
+Developing regulation, policy, standards, guidelines to improve quality and patient safety and promote the growth and development of the health sector;
+
+Licensure and inspection of health facilities as well as healthcare professionals and ensuring compliance to best practice;
+
+Managing patient complaints and assuring patient and physician rights are upheld;
+
+Governing the use of narcotics, controlled and semi-controlled medications;
+
+Strengthening health tourism and assuring ongoing growth; and
+
+Assuring management of health informatics, e-health and promoting innovation.
+
+The DHA Telehealth Clinical Guidelines aim to fulfil the following overarching DHA Strategic Priorities (2026):
+
+Pioneering Human-centered health system to promote trust, safety, quality and care for patients and their families.
+
+Make Dubai a lighthouse for healthcare governance, integration and regulation.
+
+Leading global efforts to combat epidemics and infectious diseases and prepare for disasters.
+
+Issue Date:
+
+Pioneering prevention efforts against non-communicable diseases.
+
+Become a global digital health hub.
+
+Foster healthcare education, research and innovation .
+
+[PAGE 3]
+The Health Policy and Standards Department (HPSD) developed this Guideline in collaboration with Subject Matter Experts and would like to acknowledge and thank these health professionals for their dedication toward improving quality and safety of healthcare services in the Emirate of Dubai.
+
+Health Regulation Sector Dubai Health Authority
+
+Issue Date:
+
+[PAGE 4-5]
+DHA/HRS/HPSD/CG-24
+
+Issue Nu:
+
+2
+
+Issue Date:
+
+21/02/2024
+
+EXECUTIVE SUMMARY
+
+Telehealth is based on Evidence Based Practice (EBP) which is the conscientious, explicit and
+
+judicious use of current best evidence in making decisions about the care of the individual patient.
+
+It means integrating individual clinical expertise with the best available external clinical evidence
+
+and guidelines from systematic research.
+
+EBP is important because it aims to provide the most effective care virtually, with the aim of
+
+improving patient outcomes.  As health professionals, part of providing a professional service is
+
+ensuring that practice is informed by the best available evidence.
+
+Dizziness is a common complaint and has a very broad list of possible underlying causes. People
+
+with dizziness can experience significant social and occupational morbidity, and establishing the
+
+diagnosis  is  essential  in  view  of  the  wide  variety  of  possible  causes  and  to  enable  effective
+
+management. It is essential that patients who present with dizziness should be given the correct
+
+diagnosis,  both  to  avoid  missing  serious  neurological  causes  and  to  ensure  that  the  right
+
+treatment is given.
+
+This  clinical  guideline  for  the  virtual  management  of  dizziness  is  presented  in  the  format
+
+comprising of clinical history/symptoms, differential diagnosis, investigations and management.
+
+Identification of 'Red Flags' or serious conditions associated with the disease is an essential part
+
+of this telehealth guideline as it aids the physician to manage patients safely and appropriately
+
+by  referrals,  if  indicated  during  virtual  telehealth  assessment,  to  ER,  family  physicians  or
+
+specialists for a face to face management.
+
+Issue Date:
+
+[PAGE 6]
+Virtual Clinical Assessment :  Is  the  evaluation  of  the  patient's  medical  condition  virtually  via telephone or video call consultations, which may include one or more of the following: patient medical history, physical examination and diagnostic investigations.
+
+Patient : The person who receives the healthcare services or the medical investigation or treatment provided by a DHA licensed healthcare professional.
+
+Issue Date:
+
+[PAGE 7-10]
+Dizziness is a nonspecific term which can mean different things to different people, including  true  vertigo,  light-headedness,  weakness  (neurological  impairment), unsteadiness,  feeling  faint  (presyncope),  funny  turns,  visual  disturbance,  or  a psychological problem. The cause of the dizziness can be diagnosed in most cases based on a thorough clinical history and often does not require hospital referral.
+
+The vestibular system is important in balance and comprises the vestibular nuclei in the  brain  stem  and  cerebellum,  and  the  vestibular  apparatus  in  the  inner  ear. Conditions affecting the vestibular system can therefore cause dizziness.
+
+The reported proportion of patients with various etiologies of dizziness approximately:
+
+40% of dizzy patients have peripheral vestibular dysfunction
+
+10% have a central brainstem vestibular lesion
+
+15% have a psychiatric disorder
+
+25% have other problems, such as presyncope and disequilibrium
+
+10% the diagnosis remains uncertain
+
+The  elderly  patients  have  a  higher  incidence  of  central  causes  of  vertigo (approaching 20%) most often due to stroke.
+
+Issue Date:
+
+The patient's description is critical for classifying the etiology of dizziness.
+
+The physical examination generally confirmed but did not make the diagnosis, e.g. Positional  changes  in  symptoms,  orthostatic  blood  pressure  and  pulse  changes, observation  of  gait,  and  detection  of  nystagmus  were  most  helpful  on  physical examination.  Therefore,  obtaining  accurate  history  during  teleconsultation  is  the most  sensitive for identifying vertigo presyncope, psychiatric disorders  and disequilibrium.
+
+Causes of dizziness: Etiology of dizziness is diverse. Causes include:
+
+Cardiovascular:
+
+Postural hypotension.
+
+Cerebrovascular disease (stroke and TIA).
+
+Carotid sinus syndrome.
+
+Vertebrobasilar insufficiency.
+
+Aortic stenosis.
+
+Subclavian steal syndrome.
+
+Cardiac arrhythmias.
+
+Neurological:
+
+Following head injury
+
+Epilepsy
+
+Multiple sclerosis
+
+Issue Nu:
+
+2
+
+Issue Date:
+
+21/02/2024
+
+DHA/HRS/HPSD/CG-24
+
+Parkinsonism
+
+Brain tumors, especially brainstem and cerebellar tumors
+
+Benign intracranial hypertension.
+
+Normal pressure hydrocephalus.
+
+Peripheral  neuropathy (imbalance  or  unsteadiness  may  occur  as  a result  of  peripheral  neuropathy,  spinal  posterior  column  lesions  or cerebellar disease).
+
+Otological:
+
+Ménière's disease.
+
+Benign paroxysmal positional vertigo (BPPV).
+
+Vestibular neuritis and labyrinthitis.
+
+Vestibular migraine (generally presents with attacks of spontaneous or positional vertigo  lasting  seconds  to  days,  with  associated migraine symptoms).
+
+Otosclerosis and Paget's disease of bone.
+
+Middle ear trauma.
+
+Following surgery - e.g., stapedectomy, cochlear implant.
+
+Tumours, cholesteatoma.
+
+Metabolic:
+
+Hypoglycemia
+
+Adrenal insufficiency
+
+Hypothyroidism
+
+Hematological:
+
+Anemia
+
+Hyperviscosity
+
+Psychogenic:
+
+Generalized anxiety
+
+Agoraphobia
+
+Panic attacks
+
+Hyperventilation.
+
+Miscellaneous:
+
+Viral illness
+
+Migraine headaches
+
+Other infections - e.g., acute bacterial infections, Lyme disease, HIV infection.
+
+Ocular: visual impairment
+
+Cervical - e.g., cervical spondylosis
+
+Multisensory  dizziness  syndrome:  occurs  when  there  are  reduced inputs  from  more  than  one  sensory  system  -  e.g.,  reduced  vision, vestibular dysfunction, peripheral neuropathy, autonomic neuropathy
+
+Clinical Guidelines for Virtual Management of Dizziness
+
+Code:
+
+DHA/HRS/HPSD/CG-24
+
+Issue Nu:
+
+2
+
+Issue Date:
+
+21/02/2024
+
+Effective Date:
+
+21/04/2024
+
+Revision Date:
+
+[PAGE 11]
+Telehealth services in DHA licensed Health Facilities.
+
+To support the implementation of Telehealth services for patients with complaints of Dizziness in Dubai Health Authority (DHA) licensed Health Facilities
+
+DHA licensed physicians and health facilities providing Telehealth services.
+
+Exclusion for Telehealth services are as follows
+
+Emergency cases where immediate intervention or referral is required.
+
+Prescribe Narcotics, Controlled or Semi-Controlled medications.
+
+Issue Date:
+
+Autoimmune/connective tissue disorders - e.g., rheumatoid arthritis, systemic lupus erythematosus
+
+Drug  intoxication  -  e.g.,  acute  intoxication  with  alcohol  or  drugs; carbon monoxide poisoning; chronic alcohol misuse
+
+Iatrogenic: side-effect of medication - e.g., antihypertensives, antidepressants, aminoglycoside antibiotics, anti-arrhythmic. Medication is an extremely common cause of dizziness, particularly in older people.
+
+[PAGE 12-14]
+A  thorough  virtual  history  and  examination  usually  provide  a  clear  guide  to  initial investigations, treatment and the need for referral. When a patient calls complaining of dizziness, physician must do the following: Identifying the nature of the presenting symptom. Traditionally, dizziness has usually been categorized into one of four main groups: Vertigo, Presyncope, Disequilibrium and Nonspecific Dizziness.
+
+5.2.
+
+Vertigo
+
+Vertigo is defined as an abnormal sensation of movement, either of the surroundings
+
+or the person. Descriptions of vertigo include spinning, tilting, and moving sideways.
+
+Most cases seen in primary care are due to peripheral vestibular disorders such as
+
+BPPV, acute vestibular neuronitis and Ménière's disease, but causes also include
+
+central nervous system disorders such as vascular incidents or multiple sclerosis.
+
+Distinguishing vertigo from other types of dizziness:  Lack of spinning cannot be
+
+used to exclude vestibular disease. Some patients with pre-syncope from vasovagal
+
+or cardiac disease can interpret their sensation of dizziness as a spinning sensation.
+
+Useful features in establishing the cause of dizziness include:
+
+5.2.1.
+
+Time course: Vertigo is never  continuous for  more  than  a  few  weeks.
+
+Constant  dizziness  lasting  months  is  usually  psychogenic.  A  useful
+
+categorization divides patients with vertigo into those with;
+
+Issue Date:
+
+Code:
+
+21/04/2024
+
+Acute prolonged severe vertigo (e.g., vestibular neuronitis, stroke)
+
+Recurrent  spontaneous  attacks  (e.g.,  Meniere  disease,  vestibular migraine)
+
+Recurrent positionally triggered attacks (benign paroxysmal positional vertigo)
+
+Chronic persistent dizziness (e.g., psychogenic, cerebellar ataxia).
+
+Provoking factors
+
+Spontaneously
+
+Precipitated by maneuvers that change head position or middle ear pressure (e.g., coughing, sneezing, or Valsalva maneuvers).
+
+Positional vertigo and postural presyncope are two common conditions that are frequently confused; Both are associated with dizziness upon standing,  as  when  arising  from  bed.  The  key  to  the  diagnosis  is  to determine whether dizziness can be provoked by maneuvers that change head  position  without  lowering  blood  pressure  or  decreasing  cerebral blood flow. Such maneuvers include lying down, rolling over in bed, and bending the neck back to look up. Dizziness in these settings suggests positional vertigo, not postural presyncope.
+
+Aggravating factors
+
+DHA/HRS/HPSD/CG-24
+
+Issue Nu:
+
+2
+
+Issue Date:
+
+21/02/2024
+
+Effective Date:
+
+Revision Date:
+
+All vertigo is made worse by moving the head. This is a useful feature for distinguishing vertigo from other forms of dizziness.
+
+Associated signs and symptoms
+
+Vertigo whether of central or peripheral origin is generally accompanied by nystagmus and postural instability.
+
+Refer to APPENDIX 1 for clinical features of central versus peripheral vertigo
+
+[PAGE 14-16]
+A feeling of light-headedness, muscular weakness and feeling faint. Features may suggest a specific diagnosis.
+
+Disequilibrium
+
+A sensation of unsteadiness, not localized to the head, that occurs when walking and is relieved with rest. The most common cause of disequilibrium is 'multiple sensory deficits' in elderly patients, who may have deficits with all three balance-preserving senses, i.e. vestibular, visual and proprioceptive.
+
+Disequilibrium may result from;
+
+Peripheral neuropathy
+
+Musculoskeletal disorder interfering with gait
+
+Vestibular disorder
+
+Cerebellar disorder
+
+Issue Date:
+
+Cervical spondylosis.
+
+Nonspecific dizziness
+
+Many  patients  with  dizziness  do  not  have  specific  features  of  vertigo, disequilibrium or presyncope. The history is vague beyond a complaint of dizziness and there are no features that would point to causes in one of the other categories. However, it has been suggested that many people are unable to describe exactly what they mean in these terms and that it may be more helpful to ask about the timing and triggers involved. For example, asking whether it is:
+
+Constant or episodic
+
+Triggered  or  spontaneous  (e.g.,  triggered  by  movement,  specific events, medication, etc)
+
+Associated with other symptoms (e.g., hearing loss, headache, panic attacks, nausea, vomiting)
+
+Psychiatric disorders may be the primary cause of nonspecific dizziness in some cases. One-quarter of such individuals had:
+
+Major depression
+
+Generalized anxiety (as related to Hyperventilation)
+
+Panic disorder
+
+Somatization disorder
+
+Issue Date:
+
+Alcohol dependence
+
+Personality disorder
+
+Patients who have a chief cause of dizziness that is not psychiatric may also have a psychiatric disorder as a contributing factor.
+
+Using  this  line  of  questioning  helps  to  guide  examination,  and narrows down likely diagnoses - for example:
+
+If the dizziness is episodic and triggered, then the causes may include postural hypotension and BPPV.
+
+If dizziness is episodic and not triggered, then the causes may include Ménière's disease, vestibular migraine and anxiety attacks.
+
+If dizziness is persistent and not triggered, consider acute vestibular syndrome (AVS).
+
+AVS is defined as the acute onset of persistent dizziness associated with nausea or vomiting, gait instability, nystagmus, and head-motion intolerance lasting days to  weeks.  The  most  common  cause  is  vestibular  neuritis  (dizziness  only)  or labyrinthitis (dizziness plus hearing loss or tinnitus)
+
+The most frequent central cause is posterior circulation ischemic stroke, generally in the cerebellum or brainstem.
+
+[PAGE 16-17]
+Red flag signs associated with acute dizziness that indicate possible serious conditions include:
+
+DHA/HRS/HPSD/CG-24
+
+Issue Nu:
+
+2
+
+Issue Date:
+
+21/02/2024
+
+Suspected arrhythmia (irregular pulse)
+
+Middle ear trauma.
+
+Infections - e.g., acute bacterial infections, Lyme disease, HIV infection
+
+Visual impairment.
+
+Drug intoxication - e.g., acute intoxication with alcohol or drugs; carbon monoxide poisoning;
+
+Loss of consciousness
+
+Abnormal or focal neurological symptoms or signs. These include
+
+Staggering or ataxic gait
+
+Vomiting
+
+Headache
+
+Double vision, visual loss
+
+Slurred speech
+
+Numbness of the face or body
+
+Weakness
+
+Clumsiness or incoordination
+
+Severe, continuous symptoms for >1 hour
+
+History of recent head injury
+
+New Headache or severe headache
+
+Issue Date:
+
+[PAGE 18-21]
+Doctors should form a hypothesis regarding the type of dizziness to narrow the differential diagnosis, by:
+
+Asking open-ended questions
+
+Listening to the patient's description of his or her symptoms
+
+Checking and gathering additional information from specific questions
+
+Establish the time course
+
+Provoking and aggravating factors
+
+7.1.6.
+
+Concurrent symptoms, age, pre-existing conditions
+
+The following questions should be explored in more detail:
+
+7.2.1.
+
+Actions that provoke symptoms may include:
+
+a.
+
+Change in posture (suggests postural hypotension).
+
+b.
+
+c.
+
+Movement of the head or neck (suggests vertigo from any cause,
+
+cervical spondylosis or vertebral artery syndrome).
+
+Feeling anxious (may indicate hyperventilation).
+
+Associated symptoms may include:
+
+Syncope.
+
+Features suggestive of epilepsy, which need to be considered.
+
+Falls: consider referring for face to face assessment.
+
+Tinnitus or hearing loss/ impairment: suggests a vestibular cause.
+
+Issue Date:
+
+7.2.
+
+Olfactory hallucinations and amnesia, which may suggest a temporal lobe lesion.
+
+Consider medication, since certain medications are associated with vestibular or cerebellar toxicity (cisplatin, aminoglycosides and phenytoin).
+
+Determine the level of anxiety. It may be present without being the only cause, particularly in older people.
+
+Consider a possible cardiovascular cause taking into consideration the following;
+
+Most patients with supraventricular tachycardia experience feeling dizzy.
+
+If symptoms relate to postural changes, consider orthostatic hypotension.
+
+Cardiovascular medications may increase the risk of this occurring.
+
+Stroke or transient ischemic attack may present with dizziness but usually other symptoms are present.
+
+Consider Brainstem signs. The presence of additional neurologic symptoms and/or signs strongly suggests the presence of a central vestibular lesion, for staggering or ataxic gait, vomiting, headache, double vision, visual loss, slurred speech, numbness of the face or body,
+
+Clinical Guidelines for Virtual Management of Dizziness
+
+Code:
+
+DHA/HRS/HPSD/CG-24
+
+Issue Nu:
+
+2
+
+Issue Date:
+
+21/02/2024
+
+Effective Date:
+
+21/04/2024
+
+Revision Date:
+
+21/02/2029                         Page 19 of 31
+
+weakness, clumsiness, or incoordination should be reviewed with the patient.
+
+Review past medical history.
+
+A prior history of migraine suggests that this may be the etiology of vertigo.
+
+The presence of stroke risk factors such as hypertension, diabetes mellitus, smoking, and a history of vascular disease support a diagnosis of vertebrobasilar ischemia
+
+Patients with an episode of vertigo and one or more risk factors have a substantial risk of subsequent stroke.
+
+Past head trauma is a common antecedent to benign paroxysmal positional vertigo. Less commonly, head trauma or barotrauma can cause a perilymphatic fistula.
+
+A family history of vertigo may suggest a rare hereditary channelopathy.
+
+Recurrent episodes
+
+Vestibular neuritis may present with acute, severe dizziness with nausea and vomiting. This causes vertigo that may be severe for a couple of days but resolves over weeks.
+
+Clinical Guidelines for Virtual Management of Dizziness
+
+Code:
+
+DHA/HRS/HPSD/CG-24
+
+Issue Nu:
+
+2
+
+Issue Date:
+
+21/02/2024
+
+Effective Date:
+
+21/04/2024
+
+Recurrent short episodes of dizziness triggered by changes in head position may be caused by BPPV. They last less than a minute.
+
+Central positional vertigo is caused by a lesion affecting the cerebellum or brain stem.
+
+Cerebellar tumor, MS and migrainous vertigo may present with positional vertigo and nystagmus. Gait ataxia, dysarthria, dysdiadochokinesia and intention tremor may be features of cerebellar pathology.
+
+Meniere's disease causes episodes of vertigo associated with hearing loss, tinnitus or ear fullness, which may last for hours.
+
+Recurrent episodes of dizziness that last for minutes may indicate a transient ischemic attack. If the episodes are increasing in frequency this may be suggestive of crescendo transient ischemic attacks.
+
+Recurrent episodes may be indicative of basilar artery occlusion. Auditory symptoms may be present as the anterior inferior cerebellar artery may be involved.
+
+[PAGE 21-25]
+The most useful diagnostic approach in distinguishing different types of dizziness is a thorough history and physical examination (if possible) and additional tests are rarely necessary. However, if the diagnosis is still not obvious, then consider referral to secondary
+
+Clinical Guidelines for Virtual Management of Dizziness
+
+Code:
+
+DHA/HRS/HPSD/CG-24
+
+Issue Nu:
+
+2
+
+Issue Date:
+
+21/02/2024
+
+Revision Date:
+
+care. However, the following initial investigations can be included if clinically deemed necessary (based on clinical history):
+
+Urinalysis: to exclude urinary tract infection.
+
+FBC: to rule out anemia and alcohol abuse.
+
+Renal function, blood glucose, electrolytes, LFTs.
+
+However, referral should be made to secondary care if the following investigations are thought to be necessary:
+
+ECG and ambulatory 24-hour ECG for possible arrhythmia.
+
+Electroencephalography (EEG)
+
+CT or MRI brain scan
+
+Pure tone audiometry
+
+Vestibular function tests (e.g., electronystagmography)
+
+Further investigations suggested by the presentation of each individual patient.
+
+MANAGEMENT
+
+Refer to APPENDIX 2 for the Virtual Management of Dizziness Algorithm
+
+Management depends on the underlying cause but, in general terms, management includes:
+
+Issue Nu:
+
+2
+
+Issue Date:
+
+21/02/2024
+
+Thorough discussion with the patient and explanation of the problem and any underlying cause.
+
+Evaluation and correction of any associated medical problem.
+
+Medication for symptoms of vertigo and any associated nausea or vomiting. Great care should be given in prescribing, especially to the elderly, in view of potential sedative effects and possible increase in risk of falls. Medication should not be prescribed without a thorough assessment of the underlying cause of the dizziness. Options which may be used include anti-emetics, some of which have vestibule-suppressant effects, such as cinnarizine, cyclizine, prochlorperazine, hyoscine and promethazine. In some cases, buccal or rectal administration may be needed if there is significant vomiting.
+
+Vestibular rehabilitation, including correction of remedial problems, a general fitness program, specific exercises to make the balance system less sensitive, psychological assessment and realistic family, social and occupational goals.
+
+Psychological intervention - e.g., cognitive behavioral therapy
+
+Symptomatic Treatment with Medications
+
+DHA/HRS/HPSD/CG-24
+
+Issue Nu:
+
+2
+
+Issue Date:
+
+21/02/2024
+
+Revision Date:
+
+Medications to suppress vestibular symptoms are best used for alleviating acute episodes of vertigo that last at least a few hours or days.
+
+These drugs are not useful for very brief episodes of vertigo, such as benign paroxysmal positional vertigo, except when the frequency of spells is very high.
+
+4 general classes of drugs can be used to suppress the vestibular system (Responses are generally dose related):
+
+The antihistamines are the drugs of choice in most patients; meclizine is the drug of choice in pregnancy.
+
+Benzodiazepines can be sedating and are used when antihistamines are not adequately effective. However, this is a controlled drug and can't be prescribed virtually
+
+The phenothiazine antiemetics (e.g., prochlorperazine, promethazine); more sedating and usually reserved for severe vomiting. Ondansetron, especially the oral disintegrating preparation, may also be helpful for nausea and vomiting associated with acute vertigo.
+
+Side effects are generally minimal:
+
+Sedation, dose limiting.
+
+Extrapyramidal symptoms, risk with phenothiazine antiemetics and metoclopramide but less so with domperidone.
+
+Betahistine 16 mg TID initially preferably with food. Maintenance 24 - 48 mg daily
+
+Symptomatic treatments should be stopped as soon as possible after symptoms and vomiting cease (usually within one or two days) to avoid compromising long-term adaptation to vestibular loss by the brain.
+
+Refer to APPENDIX 3 for Medications for Acute Vertigo
+
+REFERRAL CRITERIA
+
+Referral Criteria to ER
+
+Refer to ER for the following suspected diagnosis:
+
+Suspected arrhythmia (irregular pulse)
+
+Middle ear trauma.
+
+Infections - e.g., acute bacterial infections, Lyme disease, HIV infection
+
+Visual impairment.
+
+Drug intoxication - e.g., acute intoxication with alcohol or drugs; carbon monoxide poisoning;
+
+Loss of consciousness
+
+Abnormal or focal neurological symptoms or signs. These include
+
+Staggering or ataxic gait
+
+[PAGE 26-27]
+Vomiting
+
+Headache
+
+Double vision, visual loss
+
+Slurred speech
+
+Numbness of the face or body
+
+Weakness
+
+Clumsiness or incoordination
+
+Severe, continuous symptoms for >1 hour
+
+History of recent head injury
+
+New Headache or severe headache
+
+Referral Criteria to family physician or Specialist
+
+Previous or suspected history of brain tumor
+
+Symptoms suggestive of Normal pressure hydrocephalus.
+
+Vestibular migraine
+
+Following surgery - e.g., stapedectomy, cochlear implant.
+
+Multisensory dizziness syndrome: occurs when there are reduced inputs from more than one sensory system - e.g., reduced vision, vestibular dysfunction, peripheral neuropathy, autonomic neuropathy.
+
+Symptoms unresponsive to multiple medicines
+
+Worsening symptoms despite trial of medicines
+
+For further investigations which have been listed above.
+
+Suspected Adrenal insufficiency
+
+Cervical spondylosis
+
+[PAGE 28-31]
+Harding, M., and Gronow, H., [Internet]. Dizziness, Giddiness and Feeling Faint. Patient.info. [updated 2019; cited 2022 Apr 1]. Available from: https://patient.info/doctor/dizzinessgiddiness-and-feeling-faint
+
+Branch, W., and Barton, J., [Internet]. Approach to the patient with dizziness. UpToDate. [updated 2022; cited 2022 Apr 1]. Available from: https://www.uptodate.com/contents/approach-to-the-patient-with-dizziness
+
+Edlow, J.A., Gurley, K.L. and Newman-Toker, D.E. (2018). A New Diagnostic Approach to the Adult Patient with Acute Dizziness. The Journal of Emergency Medicine, [online] 54(4), pp.469 - 483. Available at: https://www.ncbi.nlm.nih.gov/pubmed/29395695 [Accessed 17 Jul. 2023].
+
+Issue Date:

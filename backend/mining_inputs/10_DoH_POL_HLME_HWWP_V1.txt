@@ -1,0 +1,136 @@
+DOC_CODE: DoH/POL/HLME/HWWP/V1
+TITLE: Healthcare Workforce Wellbeing Policy
+AUTHORITY: Department of Health - Abu Dhabi
+TIER: official
+VERSION: 1
+
+=== DOCUMENT TEXT ===
+
+[PAGE 3-4]
+This policy outlines the Department of Health (DoH) expectations for healthcare providers to establish and maintain a Comprehensive Workforce Wellbeing program aimed at promoting and protecting the wellbeing of their workforce.
+
+It is of strategic importance to the Department of Health (DoH) that organizations develop and maintain a Comprehensive Workforce Wellbeing Program. This endeavor ensures that healthcare professionals work in a safe, supportive, and positive environment, reinforced by an organizational framework of policies and interventions specifically designed to promote the highest levels of professional wellbeing.
+
+To achieve the objectives of this policy, healthcare providers must design, develop, and implement a comprehensive workforce wellbeing program, comprising both a general wellbeing policy and targeted interventions.
+
+[PAGE 4-5]
+The Comprehensive Workforce Wellbeing Program must be guided by the following principles.
+
+Risk-based: Prioritize organizational policies and interventions that address the most significant threats to staff wellbeing.
+
+Outcomes-based: Develop interventions aimed at achieving specific outcomes to effectively meet identified needs.
+
+Evidence-based: Base policies and interventions on valid and reliable research findings.
+
+Inclusive: Cater to the diverse wellbeing needs of all staff members.
+
+Collaborative: Engage the workforce early in the development, implementation, and refinement of policies and interventions to address their concerns.
+
+Comprehensive: Address all the determinants of professional wellbeing including
+
+the workplace environment, job characteristics, and individual factors 6, 7, 8, 9, 10
+
+Measured: Set clear policy goals and outcomes, establish key performance indicators, regularly monitor progress, and continuously improve interventions.
+
+[PAGE 5]
+Healthcare providers must develop and implement a formal policy that demonstrates leadership commitment to workforce wellbeing. This policy can either be a standalone document or integrated into broader existing organizational policies, such as occupational health and safety policy, workforce mental health policy, employee handbooks, or similar policy tools.
+
+The policy must:
+
+Foster a culture of openness and engagement to ensure that wellbeing interventions effectively address the needs of the workforce.
+
+Mandate a risk-based approach to prioritize actions and achieve desired outcomes.
+
+Require the implementation of evidence-based interventions that address all aspects of workforce wellbeing across organizational levels. These interventions should consider both physical and mental health, and account for various individual and jobrelated factors impacting wellbeing.
+
+Establish the necessary arrangements to ensure the successful implementation and realization of the policy's goals. These arrangements may include:
+
+A designated organizational structure (e.g. a team, taskforce, or committee). 3.2.2.4.2 Budget or funding sources.
+
+[PAGE 5]
+Healthcare providers must implement their policy by identifying the wellbeing needs of their workforce and initiating the necessary interventions to address those needs.
+
+Identify, analyze, and evaluate wellbeing risks.
+
+Assess the baseline status of workforce wellbeing considering both subjective aspects (see Subclause 4.2.4.1) and objective aspects (see Subclause 4.2.4.2).
+
+Plan interventions to address the identified wellbeing needs. Define the desired outcomes and identify key wellbeing indicators to be monitored in addition to baseline indicators already established.
+
+Launch targeted interventions.
+
+Track and analyze wellbeing data and key indicators. Adjust interventions, as necessary.
+
+Note: Interventions should be practical and sustainable. Recognizing that healthcare facilities differ in size and operational capacity, the design and implementation of Workforce Wellbeing Program should be proportionate to each facility's scale and resources.
+
+[PAGE 6]
+DoH must:
+
+Ensure that healthcare providers have an effective Comprehensive Workforce Wellbeing Program in place.
+
+Identify, monitor, and analyze workforce wellbeing indicators using aggregated and segmented data.
+
+Enforce compliance with this policy among all concerned stakeholders.
+
+Verify adherence to the provisions of this policy through audits and inspections.
+
+[PAGE 6-7]
+All healthcare providers must:
+
+Promote and maintain a supportive culture that emphasizes workforce wellbeing.
+
+Implement a comprehensive strategy to enhance staff wellbeing, addressing all factors that may negatively impact their physical and mental health.
+
+Identify and address job-related factors that disrupt employee 's work-life balance.
+
+Ensure that wellbeing program and interventions are effective, efficient and achieve their intended goals by identifying, tracking and analyzing workforce wellbeing indicators:
+
+Subjective wellbeing: Assessed through staff perception indicators gathered via surveys, interviews, and focus groups. Examples include:
+
+Employee perception of happiness in the workplace
+
+Job satisfaction
+
+Objective wellbeing: Measured using metrics such as:
+
+absenteeism rates,
+
+Work-related incidents reported over a period of time,
+
+Retention rate.
+
+Provide training and awareness sessions for managers to help them recognize signs of:
+
+Staff burnout,
+
+Stress,
+
+Low workplace morale,
+
+Work-related mental, physical, or psychosomatic health issues,
+
+Poor social connection and engagement in the workplace,
+
+Physical harm,
+
+Job-related dissatisfaction, etc.
+
+4.2.6 Ensure all employees receive initial and periodic refresher orientations on the organization's policies related to wellbeing, occupational health and safety, code of conduct, whistleblowing and existing support channels, such as complaint and grievance procedures.
+
+[PAGE 7]
+All members of the healthcare workforce must:
+
+Take active responsibility to maintain their own wellbeing.
+
+Strive to achieve a healthy balance between their work and personal life.
+
+Report any organizational incidents or practices that jeopardize their wellbeing through a designated reporting channel.
+
+All licensed healthcare providers
+
+All healthcare workforce members
+
+None
+
+DoH may impose sanctions in relation to any breach of requirements under this Policy in accordance with the Disciplinary Regulations 11 of the Healthcare sector.
+
+DoH will monitor and evaluate the effectiveness, outcomes and impact of this Policy. Any necessary changes to the policy will be made accordingly.
